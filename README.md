@@ -414,7 +414,9 @@ Visión:
 
 #### 4.1.3.2. Software Architecture Context Level Diagrams
 
-<!-- Contenido de Software Architecture Context Level Diagrams -->
+[![structurizr-106404-System-Context-001.png](https://i.postimg.cc/gk8zNZ3q/structurizr-106404-System-Context-001.png)](https://postimg.cc/bsYfvdCs)
+
+[![structurizr-106404-Diagram-Contenedores.png](https://i.postimg.cc/zGF97VrV/structurizr-106404-Diagram-Contenedores.png)](https://postimg.cc/SnjTNQjh)
 
 #### 4.1.3.3. Software Architecture Deployment Diagrams
 
