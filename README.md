@@ -12,15 +12,29 @@
     <br><h3> Integrantes: </h3>
 </div>
 
-<div align="center">
-
-| Member                              |    Code    |
-| :---------------------------------- | :--------: |
-| Aranda Vallejos, Oscar Gabriel      | U202218167 |
-| Ayquipa Ubaldo, Abraham Israel                  | U202218475     |
-| Apellidos, Nombres                  | U20...     |
-| Apellidos, Nombres                  | U20...     |
-
+<div>
+    <table align="center" border="1" cellspacing="0" cellpadding="6">
+        <tr>
+            <th style="text-align:center;">Member</th>
+            <th style="text-align:center;">Code</th>
+        </tr>
+        <tr>
+            <td>Aranda Vallejos, Oscar Gabriel</td>
+            <td>U202218167</td>
+        </tr>
+        <tr>
+            <td>Ayquipa Ubaldo, Abraham Israel</td>
+            <td>U202218475</td>
+        </tr>
+        <tr>
+            <td>Ventura Chancafe, Eduardo Renato</td>
+            <td>U202212645</td>
+        </tr>
+        <tr>
+            <td>La Torre Soto, Andre Sebastian</td>
+            <td>U202217772</td>
+        </tr>
+    </table>
 </div>
 
 <h3 align="center">Septiembre, 2025</h3>
@@ -47,90 +61,42 @@ En esta sección se resumen los avances y modificaciones realizadas durante el c
   <tbody>
     <tr>
       <td>1.0</td>
-      <td>09/09/2025</td>
-      <td>...</td>
+      <td>16/09/2025</td>
+      <td>Aranda Vallejos, Oscar Gabriel</td>
       <td>Creación y estructuración del informe</td>
     </tr>
     <tr>
-      <td>1.X</td>
+      <td>1.2</td>
       <td>17/09/2025</td>
-      <td>Ayquipa, Abraham</td>
+      <td>Ayquipa Ubaldo, Abraham Israel</td>
       <td>
         Capítulo I: Introducción,  
         Capítulo II: Requirements Elicitation & Analysis
       </td>
     </tr>
     <tr>
-      <td>1.X</td>
-      <td>Fecha</td>
-      <td>Apellido, Nombre</td>
-      <td>...</td>
+      <td>1.4</td>
+      <td>19/09/2025</td>
+      <td>Aranda Vallejos, Oscar Gabriel</td>
+      <td>Capítulo III, Capítulo IV</td>
     </tr>
     <tr>
-      <td>1.X</td>
-      <td>Fecha</td>
-      <td>Apellido, Nombre</td>
-      <td>...</td>
+      <td>1.6</td>
+      <td>19/09/2025</td>
+      <td>La Torre Soto, Andre Sebastian</td>
+      <td>Actualización del Capítulo II</td>
     </tr>
     <tr>
-      <td>1.X</td>
-      <td>Fecha</td>
-      <td>Apellido, Nombre</td>
-      <td>...</td>
+      <td>1.8</td>
+      <td>19/09/2025</td>
+      <td>Ventura Chancafe, Eduardo Renato</td>
+      <td>Actualización del Capítulo III</td>
     </tr>
     <tr>
-      <td>1.X</td>
-      <td>Fecha</td>
-      <td>Apellido, Nombre</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <td>1.X</td>
-      <td>Fecha</td>
-      <td>Apellido, Nombre</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <td>1.X</td>
-      <td>Fecha</td>
-      <td>Apellido, Nombre</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <td>1.X</td>
-      <td>Fecha</td>
-      <td>Apellido, Nombre</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <td>1.X</td>
-      <td>Fecha</td>
-      <td>Apellido, Nombre</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <td>1.X</td>
-      <td>Fecha</td>
-      <td>Apellido, Nombre</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <td>1.X</td>
-      <td>Fecha</td>
-      <td>Apellido, Nombre</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <td>1.X</td>
-      <td>Fecha</td>
-      <td>Apellido, Nombre</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <td>1.X</td>
-      <td>Fecha</td>
-      <td>Apellido, Nombre</td>
-      <td>...</td>
+      <td>2.0</td>
+      <td>20/09/2025</td>
+      <td>Aranda Vallejos, Oscar Gabriel</td>
+      <td>Actualización del Capítulo IV</td>
     </tr>
   </tbody>
 </table>
