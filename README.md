@@ -702,24 +702,38 @@ En este capítulo, nos centraremos en los requerimientos que necesita cumplir nu
 En esta parte se registran las preguntas empleadas durante las entrevistas, incluyendo tanto aquellas de carácter general que aplican a todos los segmentos objetivo como las formuladas específicamente para cada uno de ellos.
 
 ### Preguntas Generales
-1. ¿Cuál es tu nombre?
+1. ¿Cuál es tu nombre completo?
 2. ¿Qué edad tienes?
 3. ¿Dónde vives actualmente?
+4. ¿Cuál es tu ocupación principal?
+5. ¿Qué nivel de experiencia tienes con tecnologías digitales (smartphones, aplicaciones web, etc.)?
+6. ¿Con qué frecuencia utilizas aplicaciones móviles en tu trabajo diario?
+7. ¿Qué dispositivos tecnológicos utilizas regularmente?
+8. ¿Cuáles son los principales desafíos que enfrentas en tu trabajo relacionado con el café?
 
-### Preguntas segmento 1: Trabajadores del sector salud
-1. ¿Cuál es el principal desafío que enfrenta actualmente en la clasificación de granos de café post-cosecha?
+### Preguntas Segmento 1: Productores de café
+1. ¿Cuántos años llevas dedicándote a la producción de café?
+2. ¿Cuál es el tamaño aproximado de tu plantación de café?
+3. ¿Cuál es el principal desafío que enfrentas en la clasificación de granos de café post-cosecha?
+4. ¿Cómo realizas actualmente la clasificación de granos y qué dificultades encuentras en ese proceso?
+5. ¿Qué impacto económico tienen los rechazos de lotes debido a problemas de calidad?
+6. ¿Qué porcentaje de tu producción se ve afectado por problemas de clasificación?
+7. ¿Qué tan abierto estarías a utilizar una tecnología que automatice la clasificación de granos con inteligencia artificial?
+8. ¿Qué características o beneficios esperarías de una herramienta tecnológica para apoyar la selección y clasificación del café?
+9. ¿Qué rango de costo considerarías razonable para una solución que te ayude a mejorar la calidad y reducir pérdidas en tu café?
+10. ¿Estarías dispuesto a capacitarte en el uso de nuevas tecnologías si esto mejora tu productividad?
 
-2. ¿Cómo realizan actualmente la clasificación de granos y qué dificultades encuentran en ese proceso?
-
-3. ¿Qué impacto económico tienen los rechazos de lotes debido a problemas de calidad?
-
-4. ¿Qué tan abierto estaría a utilizar una tecnología que automatice la clasificación de granos con inteligencia artificial?
-
-5. ¿Qué características o beneficios esperaría de una herramienta tecnológica para apoyar la selección y clasificación del café?
-
-6. ¿Qué nivel de experiencia tiene usted o su equipo con dispositivos tecnológicos como smartphones, cámaras digitales o plataformas web?
-
-7. ¿Qué rango de costo consideraría razonable para una solución que le ayude a mejorar la calidad y reducir pérdidas en su café?
+### Preguntas Segmento 2: Compradores y comercializadores de café
+1. ¿Qué rol desempeñas en la cadena de comercialización del café?
+2. ¿Cuántos años de experiencia tienes en la compra/comercialización de café?
+3. ¿Cuáles son los criterios más importantes que utilizas para evaluar la calidad del café?
+4. ¿Qué problemas frecuentes encuentras en la calidad del café que recibes de los productores?
+5. ¿Cómo impacta la inconsistencia en la calidad del café en tu negocio?
+6. ¿Qué herramientas o métodos utilizas actualmente para evaluar la calidad del café?
+7. ¿Qué tan importante es para ti tener información detallada sobre la clasificación y calidad del café antes de comprarlo?
+8. ¿Estarías interesado en una plataforma que te permita verificar la calidad del café mediante análisis automatizado?
+9. ¿Qué funcionalidades valorarías más en una herramienta digital para la evaluación de café?
+10. ¿Cómo crees que una mejor clasificación automática del café podría beneficiar tu negocio?
 
 ### 2.2.2. Registro de entrevistas
 
