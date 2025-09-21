@@ -682,24 +682,38 @@ En este capítulo, nos centraremos en los requerimientos que necesita cumplir nu
 En esta parte se registran las preguntas empleadas durante las entrevistas, incluyendo tanto aquellas de carácter general que aplican a todos los segmentos objetivo como las formuladas específicamente para cada uno de ellos.
 
 ### Preguntas Generales
-1. ¿Cuál es tu nombre?
+1. ¿Cuál es tu nombre completo?
 2. ¿Qué edad tienes?
 3. ¿Dónde vives actualmente?
+4. ¿Cuál es tu ocupación principal?
+5. ¿Qué nivel de experiencia tienes con tecnologías digitales (smartphones, aplicaciones web, etc.)?
+6. ¿Con qué frecuencia utilizas aplicaciones móviles en tu trabajo diario?
+7. ¿Qué dispositivos tecnológicos utilizas regularmente?
+8. ¿Cuáles son los principales desafíos que enfrentas en tu trabajo relacionado con el café?
 
-### Preguntas segmento 1: Trabajadores del sector salud
-1. ¿Cuál es el principal desafío que enfrenta actualmente en la clasificación de granos de café post-cosecha?
+### Preguntas Segmento 1: Productores pequeños y medianos de café
+1. ¿Cuántos años llevas dedicándote a la producción de café?
+2. ¿Cuál es el tamaño aproximado de tu plantación de café?
+3. ¿Cuál es el principal desafío que enfrentas en la clasificación de granos de café post-cosecha?
+4. ¿Cómo realizas actualmente la clasificación de granos y qué dificultades encuentras en ese proceso?
+5. ¿Qué impacto económico tienen los rechazos de lotes debido a problemas de calidad en el mercado internacional?
+6. ¿Qué porcentaje de tu producción se ve afectado por problemas de clasificación?
+7. ¿Qué limitaciones de recursos enfrentas para acceder a tecnologías de clasificación avanzadas?
+8. ¿Qué tan abierto estarías a utilizar una tecnología que automatice la clasificación de granos con inteligencia artificial?
+9. ¿Qué características esperarías de una solución tecnológica que sea asequible y fácil de usar?
+10. ¿Cómo crees que una mejor clasificación podría ayudarte a posicionar tu café con estándares de calidad consistentes?
 
-2. ¿Cómo realizan actualmente la clasificación de granos y qué dificultades encuentran en ese proceso?
-
-3. ¿Qué impacto económico tienen los rechazos de lotes debido a problemas de calidad?
-
-4. ¿Qué tan abierto estaría a utilizar una tecnología que automatice la clasificación de granos con inteligencia artificial?
-
-5. ¿Qué características o beneficios esperaría de una herramienta tecnológica para apoyar la selección y clasificación del café?
-
-6. ¿Qué nivel de experiencia tiene usted o su equipo con dispositivos tecnológicos como smartphones, cámaras digitales o plataformas web?
-
-7. ¿Qué rango de costo consideraría razonable para una solución que le ayude a mejorar la calidad y reducir pérdidas en su café?
+### Preguntas Segmento 2: Cooperativas cafetaleras
+1. ¿Cuántos productores están asociados a su cooperativa?
+2. ¿Qué volúmenes de café procesan mensualmente?
+3. ¿Cuál es su rol principal en la cadena de valor del café (exportación, comercialización nacional, etc.)?
+4. ¿Qué desafíos enfrentan al estandarizar la calidad entre lotes de diferentes productores?
+5. ¿Cómo impacta la variabilidad en la calidad del café en sus operaciones comerciales?
+6. ¿Qué herramientas utilizan actualmente para garantizar la calidad del café de sus asociados?
+7. ¿Qué tan importante es para ustedes contar con sistemas de trazabilidad para brindar transparencia a compradores?
+8. ¿Estarían interesados en una solución costo-eficiente que ayude a estandarizar la calidad entre diferentes lotes?
+9. ¿Qué funcionalidades valorarían más en una plataforma que se integre con sistemas de trazabilidad?
+10. ¿Cómo creen que una mejor clasificación automática podría maximizar el valor del café en mercados internacionales?
 
 ### 2.2.2. Registro de entrevistas
 
@@ -707,31 +721,31 @@ En esta parte se registran las preguntas empleadas durante las entrevistas, incl
 
 **Entrevista 1:**
 
-- **Nombres:** xxxxxxxxxx
-- **Apellidos:** xxxxxxxxxx
-- **Edad:** xxxxxxxxxx
-- **Lugar de residencia:** xxxxxxxxxx, xxxxxxxxxx
+- **Nombres:** Jean Piere
+- **Apellidos:** Grandez Mansilla
+- **Edad:** 22 años
+- **Lugar de residencia:** Jaén, Cajamarca
 
 **Evidencia de la entrevista:**  
-<img src="assets/images/interviews/>
+<img src="assets/images/entrevistas/entrevista1JeanPiere.png">
 
-**Enlace de la entrevista:** []()
+**Enlace de la entrevista:** [Entrevista Segmento 1 Jean Piere](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212645_upc_edu_pe/Edy04IJqoWNPvbTURmUjrbkBJ_mygJjSHfwF0REPbK_U7w?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=x5l6mm)
 **Resumen de la entrevista:**  
-xxxxxxxxxx
+Jean Piere, de 22 años y encargado de logística en el cafetal familiar en Jaén, identifica la clasificación manual de granos como su principal cuello de botella. Describe el proceso como lento, subjetivo y costoso, generando pérdidas económicas de hasta un 25% por castigos en el precio. Muestra un gran interés en adoptar una solución tecnológica que ofrezca precisión, velocidad y, fundamentalmente, reportes de datos para mejorar la negociación y la eficiencia. Considera clave un modelo de negocio accesible, como una suscripción, con un claro retorno de inversión para profesionalizar la finca.
 
 **Entrevista 2:**
 
-- **Nombres:** xxxxxxxxxx
-- **Apellidos:** xxxxxxxxxx
-- **Edad:** xxxxxxxxxx
-- **Lugar de residencia:** xxxxxxxxxx, xxxxxxxxxx
+- **Nombres:**  Jorge Sanchez
+- **Apellidos:** Guiterrez Ramirez
+- **Edad:** 38
+- **Lugar de residencia:** Cajamarca, Perú.
 
 **Evidencia de la entrevista:**  
-<img src="assets/images/interviews/>
+<img src="assets/images/entrevistas/entrevista2.png">
 
-**Enlace de la entrevista:** []()
+**Enlace de la entrevista:** [Entrevista Segmento 1 Jorge Sanchez](https://upcedupe-my.sharepoint.com/personal/u202218167_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202218167%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202520%2D1asi0728%2D7291%2DDevBeans%2Dneedfinding%2Dsprint%2D1%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ea6af07d3%2D9d5c%2D4d3b%2D9bad%2D4820684ce577)
 **Resumen de la entrevista:**  
-xxxxxxxxxx
+Pedro es productor de café desde hace más de 20 años y administra una finca de 3 hectáreas. Realiza la clasificación de granos de forma manual con su familia, lo que describe como un proceso lento y cansado. Señala que a veces recibe hasta un 20% menos de pago cuando no cumple con los estándares de calidad. Estima que entre el 10% y 15% de su producción se ve afectada por problemas de clasificación. Indica que estaría abierto a usar una tecnología con inteligencia artificial siempre que sea sencilla y asequible.
 
 #### **Segmento 2: Cooperativas cafetaleras**
 
@@ -778,11 +792,20 @@ XXXXXXXXXXXXXXXXX
 
 ### 2.3.1. User Personas
 
-<!-- Contenido de User Personas -->
+##### Segmento 1: Productores Individuales
+
+<img src="assets/images/needfinding/UserPersona1.png">
+
+
+##### Segmento 2: Cooperativas cafeteras
+
+<img src="assets/images/needfinding/UserPersona2.png">
 
 ### 2.3.2. User Task Matrix
 
-<!-- Contenido de User Task Matrix -->
+<img src="assets/images/needfinding/UserTaxmatriz.png">
+
+<img src="assets/images/needfinding/UserTaxmatriz2.png">
 
 ### 2.3.3. User Journey Mapping
 
@@ -790,15 +813,19 @@ XXXXXXXXXXXXXXXXX
 
 ### 2.3.4. Empathy Mapping
 
-<!-- Contenido de Empathy Mapping -->
+##### Jose Ramirez
+
+<img src="assets/images/needfinding/EmpathyMapProductores.png">
+
+
+##### Luis Torres (Representante de la cooperativa)
+
+<img src="assets/images/needfinding/EmpathyMapCooperativas.png">
 
 ### 2.3.5. As-is Scenario Mapping
 
-<!-- Contenido de As-is Scenario Mapping -->
-
-## 2.4. Ubiquitous Language
-
-<!-- Contenido de Ubiquitous Language -->
+<img src="assets/images/needfinding/asIsMapping.jpg">
+El proceso parte con captura de datos no estandarizada y registros dispersos. Las alianzas son informales y el acceso a hardware resulta caro e intermitente. La clasificación es manual, con criterios variables entre turnos y tiempos impredecibles. El reporte llega tarde, casi sin trazabilidad ni métricas objetivas, por lo que las decisiones se toman por intuición. En lo cognitivo predomina la idea de que la tecnología es “lejana”, y emocionalmente hay frustración, cansancio e incertidumbre ante auditorías y precios castigados.
 
 ---
 
@@ -1469,11 +1496,7 @@ Como productor en zona con conectividad limitada, deseo usar funcionalidades bá
 
 ## 3.3. Impact Mapping
 
-### Segmento 1: Productores
-[![Impact-Map-Productores.png](https://i.postimg.cc/TYXTfdrT/Impact-Map-Productores.png)](https://postimg.cc/CdJ34VP2)
-
-### Segmento 2: Cooperativas
-[![Impact-Map-Cooperativas.png](https://i.postimg.cc/prQbpjDR/Impact-Map-Cooperativas.png)](https://postimg.cc/dZ0SfLHx)
+<!-- Contenido de Impact Mapping -->
 
 ## 3.4. Product Backlog
 
