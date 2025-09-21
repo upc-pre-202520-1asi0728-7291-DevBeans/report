@@ -826,7 +826,7 @@ XXXXXXXXXXXXXXXXX
 
 ## 3.1. To-Be Scenario Mapping
 
-<!-- Contenido de To-Be Scenario Mapping -->
+[![to-be-bean.jpg](https://i.postimg.cc/MGtSYV4T/to-be-bean.jpg)](https://postimg.cc/NyySs9Qq)
 
 ## 3.2. User Stories
 
@@ -1489,8 +1489,11 @@ Como productor en zona con conectividad limitada, deseo usar funcionalidades bá
 
 ## 3.3. Impact Mapping
 
-<!-- Contenido de Impact Mapping -->
-<!-- Necesito las user personas -->
+### Segmento 1: Productores
+[![Impact-Map-Productores.png](https://i.postimg.cc/TYXTfdrT/Impact-Map-Productores.png)](https://postimg.cc/CdJ34VP2)
+
+### Segmento 2: Cooperativas
+[![Impact-Map-Cooperativas.png](https://i.postimg.cc/prQbpjDR/Impact-Map-Cooperativas.png)](https://postimg.cc/dZ0SfLHx)
 
 ## 3.4. Product Backlog
 
