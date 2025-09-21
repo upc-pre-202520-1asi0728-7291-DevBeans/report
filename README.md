@@ -711,29 +711,29 @@ En esta parte se registran las preguntas empleadas durante las entrevistas, incl
 7. ¿Qué dispositivos tecnológicos utilizas regularmente?
 8. ¿Cuáles son los principales desafíos que enfrentas en tu trabajo relacionado con el café?
 
-### Preguntas Segmento 1: Productores de café
+### Preguntas Segmento 1: Productores pequeños y medianos de café
 1. ¿Cuántos años llevas dedicándote a la producción de café?
 2. ¿Cuál es el tamaño aproximado de tu plantación de café?
 3. ¿Cuál es el principal desafío que enfrentas en la clasificación de granos de café post-cosecha?
 4. ¿Cómo realizas actualmente la clasificación de granos y qué dificultades encuentras en ese proceso?
-5. ¿Qué impacto económico tienen los rechazos de lotes debido a problemas de calidad?
+5. ¿Qué impacto económico tienen los rechazos de lotes debido a problemas de calidad en el mercado internacional?
 6. ¿Qué porcentaje de tu producción se ve afectado por problemas de clasificación?
-7. ¿Qué tan abierto estarías a utilizar una tecnología que automatice la clasificación de granos con inteligencia artificial?
-8. ¿Qué características o beneficios esperarías de una herramienta tecnológica para apoyar la selección y clasificación del café?
-9. ¿Qué rango de costo considerarías razonable para una solución que te ayude a mejorar la calidad y reducir pérdidas en tu café?
-10. ¿Estarías dispuesto a capacitarte en el uso de nuevas tecnologías si esto mejora tu productividad?
+7. ¿Qué limitaciones de recursos enfrentas para acceder a tecnologías de clasificación avanzadas?
+8. ¿Qué tan abierto estarías a utilizar una tecnología que automatice la clasificación de granos con inteligencia artificial?
+9. ¿Qué características esperarías de una solución tecnológica que sea asequible y fácil de usar?
+10. ¿Cómo crees que una mejor clasificación podría ayudarte a posicionar tu café con estándares de calidad consistentes?
 
-### Preguntas Segmento 2: Compradores y comercializadores de café
-1. ¿Qué rol desempeñas en la cadena de comercialización del café?
-2. ¿Cuántos años de experiencia tienes en la compra/comercialización de café?
-3. ¿Cuáles son los criterios más importantes que utilizas para evaluar la calidad del café?
-4. ¿Qué problemas frecuentes encuentras en la calidad del café que recibes de los productores?
-5. ¿Cómo impacta la inconsistencia en la calidad del café en tu negocio?
-6. ¿Qué herramientas o métodos utilizas actualmente para evaluar la calidad del café?
-7. ¿Qué tan importante es para ti tener información detallada sobre la clasificación y calidad del café antes de comprarlo?
-8. ¿Estarías interesado en una plataforma que te permita verificar la calidad del café mediante análisis automatizado?
-9. ¿Qué funcionalidades valorarías más en una herramienta digital para la evaluación de café?
-10. ¿Cómo crees que una mejor clasificación automática del café podría beneficiar tu negocio?
+### Preguntas Segmento 2: Cooperativas cafetaleras
+1. ¿Cuántos productores están asociados a su cooperativa?
+2. ¿Qué volúmenes de café procesan mensualmente?
+3. ¿Cuál es su rol principal en la cadena de valor del café (exportación, comercialización nacional, etc.)?
+4. ¿Qué desafíos enfrentan al estandarizar la calidad entre lotes de diferentes productores?
+5. ¿Cómo impacta la variabilidad en la calidad del café en sus operaciones comerciales?
+6. ¿Qué herramientas utilizan actualmente para garantizar la calidad del café de sus asociados?
+7. ¿Qué tan importante es para ustedes contar con sistemas de trazabilidad para brindar transparencia a compradores?
+8. ¿Estarían interesados en una solución costo-eficiente que ayude a estandarizar la calidad entre diferentes lotes?
+9. ¿Qué funcionalidades valorarían más en una plataforma que se integre con sistemas de trazabilidad?
+10. ¿Cómo creen que una mejor clasificación automática podría maximizar el valor del café en mercados internacionales?
 
 ### 2.2.2. Registro de entrevistas
 
