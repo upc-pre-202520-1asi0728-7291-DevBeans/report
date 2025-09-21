@@ -741,17 +741,17 @@ En esta parte se registran las preguntas empleadas durante las entrevistas, incl
 
 **Entrevista 1:**
 
-- **Nombres:** xxxxxxxxxx
-- **Apellidos:** xxxxxxxxxx
-- **Edad:** xxxxxxxxxx
-- **Lugar de residencia:** xxxxxxxxxx, xxxxxxxxxx
+- **Nombres:** Jean Piere
+- **Apellidos:** Grandez Mansilla
+- **Edad:** 22 años
+- **Lugar de residencia:** Jaén, Cajamarca
 
 **Evidencia de la entrevista:**  
-<img src="assets/images/interviews/>
+<img src="assets/images/entrevistas/entrevista1JeanPiere.png">
 
-**Enlace de la entrevista:** []()
+**Enlace de la entrevista:** [Entrevista Segmento 1 Jean Piere](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212645_upc_edu_pe/Edy04IJqoWNPvbTURmUjrbkBJ_mygJjSHfwF0REPbK_U7w?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=x5l6mm)
 **Resumen de la entrevista:**  
-xxxxxxxxxx
+Jean Piere, de 22 años y encargado de logística en el cafetal familiar en Jaén, identifica la clasificación manual de granos como su principal cuello de botella. Describe el proceso como lento, subjetivo y costoso, generando pérdidas económicas de hasta un 25% por castigos en el precio. Muestra un gran interés en adoptar una solución tecnológica que ofrezca precisión, velocidad y, fundamentalmente, reportes de datos para mejorar la negociación y la eficiencia. Considera clave un modelo de negocio accesible, como una suscripción, con un claro retorno de inversión para profesionalizar la finca.
 
 **Entrevista 2:**
 
