@@ -828,7 +828,8 @@ XXXXXXXXXXXXXXXXX
 
 ### 2.3.5. As-is Scenario Mapping
 
-<!-- Contenido de As-is Scenario Mapping -->
+<img src="assets/images/needfinding/asIsMapping.jpg">
+El proceso parte con captura de datos no estandarizada y registros dispersos. Las alianzas son informales y el acceso a hardware resulta caro e intermitente. La clasificación es manual, con criterios variables entre turnos y tiempos impredecibles. El reporte llega tarde, casi sin trazabilidad ni métricas objetivas, por lo que las decisiones se toman por intuición. En lo cognitivo predomina la idea de que la tecnología es “lejana”, y emocionalmente hay frustración, cansancio e incertidumbre ante auditorías y precios castigados.
 
 ## 2.4. Ubiquitous Language
 
