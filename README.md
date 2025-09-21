@@ -12,15 +12,29 @@
     <br><h3> Integrantes: </h3>
 </div>
 
-<div align="center">
-
-| Member                              |    Code    |
-| :---------------------------------- | :--------: |
-| Aranda Vallejos, Oscar Gabriel      | U202218167 |
-| Ayquipa Ubaldo, Abraham Israel                  | U202218475     |
-| Apellidos, Nombres                  | U20...     |
-| Apellidos, Nombres                  | U20...     |
-
+<div>
+    <table align="center" border="1" cellspacing="0" cellpadding="6">
+        <tr>
+            <th style="text-align:center;">Member</th>
+            <th style="text-align:center;">Code</th>
+        </tr>
+        <tr>
+            <td>Aranda Vallejos, Oscar Gabriel</td>
+            <td>U202218167</td>
+        </tr>
+        <tr>
+            <td>Ayquipa Ubaldo, Abraham Israel</td>
+            <td>U202218475</td>
+        </tr>
+        <tr>
+            <td>Ventura Chancafe, Eduardo Renato</td>
+            <td>U202212645</td>
+        </tr>
+        <tr>
+            <td>La Torre Soto, Andre Sebastian</td>
+            <td>U202217772</td>
+        </tr>
+    </table>
 </div>
 
 <h3 align="center">Septiembre, 2025</h3>
@@ -47,90 +61,42 @@ En esta sección se resumen los avances y modificaciones realizadas durante el c
   <tbody>
     <tr>
       <td>1.0</td>
-      <td>09/09/2025</td>
-      <td>...</td>
+      <td>16/09/2025</td>
+      <td>Aranda Vallejos, Oscar Gabriel</td>
       <td>Creación y estructuración del informe</td>
     </tr>
     <tr>
-      <td>1.X</td>
+      <td>1.2</td>
       <td>17/09/2025</td>
-      <td>Ayquipa, Abraham</td>
+      <td>Ayquipa Ubaldo, Abraham Israel</td>
       <td>
         Capítulo I: Introducción,  
         Capítulo II: Requirements Elicitation & Analysis
       </td>
     </tr>
     <tr>
-      <td>1.X</td>
-      <td>Fecha</td>
-      <td>Apellido, Nombre</td>
-      <td>...</td>
+      <td>1.4</td>
+      <td>19/09/2025</td>
+      <td>Aranda Vallejos, Oscar Gabriel</td>
+      <td>Capítulo III, Capítulo IV</td>
     </tr>
     <tr>
-      <td>1.X</td>
-      <td>Fecha</td>
-      <td>Apellido, Nombre</td>
-      <td>...</td>
+      <td>1.6</td>
+      <td>19/09/2025</td>
+      <td>La Torre Soto, Andre Sebastian</td>
+      <td>Actualización del Capítulo II</td>
     </tr>
     <tr>
-      <td>1.X</td>
-      <td>Fecha</td>
-      <td>Apellido, Nombre</td>
-      <td>...</td>
+      <td>1.8</td>
+      <td>19/09/2025</td>
+      <td>Ventura Chancafe, Eduardo Renato</td>
+      <td>Actualización del Capítulo III</td>
     </tr>
     <tr>
-      <td>1.X</td>
-      <td>Fecha</td>
-      <td>Apellido, Nombre</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <td>1.X</td>
-      <td>Fecha</td>
-      <td>Apellido, Nombre</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <td>1.X</td>
-      <td>Fecha</td>
-      <td>Apellido, Nombre</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <td>1.X</td>
-      <td>Fecha</td>
-      <td>Apellido, Nombre</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <td>1.X</td>
-      <td>Fecha</td>
-      <td>Apellido, Nombre</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <td>1.X</td>
-      <td>Fecha</td>
-      <td>Apellido, Nombre</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <td>1.X</td>
-      <td>Fecha</td>
-      <td>Apellido, Nombre</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <td>1.X</td>
-      <td>Fecha</td>
-      <td>Apellido, Nombre</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <td>1.X</td>
-      <td>Fecha</td>
-      <td>Apellido, Nombre</td>
-      <td>...</td>
+      <td>2.0</td>
+      <td>20/09/2025</td>
+      <td>Aranda Vallejos, Oscar Gabriel</td>
+      <td>Actualización del Capítulo IV</td>
     </tr>
   </tbody>
 </table>
@@ -146,7 +112,7 @@ En esta sección se resumen los avances y modificaciones realizadas durante el c
 | Repositorio de la documentación    | https://github.com/upc-pre-202520-1asi0728-7291-DevBeans/report         |
 | Organización del proyecto     | https://github.com/upc-pre-202520-1asi0728-7291-DevBeans                    |
 
-<!--LO COMPLETARE DESPUES -->
+[![Captura-de-pantalla-2025-09-20-234150.png](https://i.postimg.cc/WbP9wnFw/Captura-de-pantalla-2025-09-20-234150.png)](https://postimg.cc/grNqY3Kx)
 
 <br>
 
@@ -312,6 +278,14 @@ ABET – EAC - Student Outcome 5
         <p><b>Abraham Ayquipa Ubaldo</b></p>
         <p><b>TB1:</b> Durante el desarrollo del proyecto, participé activamente en la elaboración de los capítulos iniciales, presentando con claridad y objetividad los perfiles de la startup y del equipo. Expliqué el enfoque Lean UX y sus componentes clave, como los Problem Statements, Assumptions e Hipótesis, adaptando el lenguaje según el público. También contribuí al análisis competitivo y al diseño de entrevistas, comunicando los resultados de forma estructurada y comprensible para distintos niveles jerárquicos y especialidades.</p>
         <br>
+        <p><b>Andre La torre Soto</b></p>
+        <p><b>TB1:</b> Durante el desarrollo del proyecto, participé activamente en la fase de Needfinding, recopilando y organizando información clave sobre el contexto del sector cafetalero. Contribuí en la caracterización de los segmentos de usuarios, identificando sus principales problemáticas y necesidades a través de la construcción de User Personas y Journey Mappings. Además, elaboré los Problem Statements de manera clara y fundamentada, comunicando los hallazgos con un lenguaje accesible tanto para especialistas como para audiencias generales. Finalmente, apoyé en la integración de estos resultados dentro del marco metodológico, asegurando que las evidencias recopiladas sirvieran como base para el planteamiento de hipótesis y el diseño posterior de la solución tecnológica.</p>
+        <br>
+        <p><b>Aranda Vallejos, Oscar Gabriel</b></p>
+        <p><b>TB1:</b> Durante el desarrollo del proyecto, me enfoqué en la arquitectura de software y el diseño técnico del sistema BeanDetect AI. Comuniqué de manera clara y objetiva los conceptos arquitectónicos complejos a través de presentaciones técnicas, explicando la implementación de Domain-Driven Design y los patrones CQRS. Adapté mi comunicación según la audiencia, presentando diagramas C4 y UML de forma comprensible tanto para desarrolladores como para stakeholders no técnicos. Facilité la comprensión de la arquitectura de microservicios y bounded contexts, asegurando que todos los miembros del equipo pudieran contribuir efectivamente al proyecto.</p>
+        <br>
+        <p><b>Ventura Chancafe, Eduardo</b></p>
+        <p><b>TB1:</b> Durante el desarrollo del proyecto, me concentré en el análisis y diseño de procesos de negocio a través de la elaboración de scenario mappings As-Is y To-Be. Comuniqué de forma clara y objetiva los flujos de trabajo actuales y los procesos optimizados propuestos, adaptando mi presentación para que fuera comprensible tanto para stakeholders técnicos como de negocio. Expliqué las mejoras y transformaciones digitales necesarias en el sector cafetalero, facilitando la comprensión de cómo la solución tecnológica impactaría en los procesos existentes y generaría valor agregado para los usuarios finales.</p>
       </td>
       <td>
         <p><b>TB1:</b> Como equipo, demostramos la capacidad de comunicar nuestras ideas y resultados de manera clara y objetiva, adaptándonos a distintos públicos dentro del entorno del proyecto de ingeniería. A través de exposiciones orales, logramos transmitir conceptos técnicos y estratégicos con precisión, facilitando la comprensión entre personas de diversas especialidades y niveles jerárquicos, lo que fortaleció la toma de decisiones y el avance coordinado del proyecto.</p>
@@ -321,7 +295,13 @@ ABET – EAC - Student Outcome 5
       <td><b>Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerarquicos, en el marco del desarrollo de un proyecto en ingeniería.</b></td>
       <td>
         <p><b>Abraham Ayquipa Ubaldo</b></p>
-        <p><b>TB1:</b> Contribuí a la redacción clara y estructurada de los capítulos iniciales del proyecto, abordando desde la descripción de la startup y los perfiles del equipo hasta el análisis de la problemática y la aplicación del proceso Lean UX. Redacté con objetividad los Problem Statements, Assumptions e Hipótesis, facilitando su comprensión para públicos técnicos y no técnicos. También participé en el análisis competitivo y en la documentación de entrevistas, asegurando que los resultados fueran comunicados de forma precisa y accesible para distintos niveles jerárquicos y especialidades..</p>
+        <p><b>TB1:</b> Contribuí a la redacción clara y estructurada de los capítulos iniciales del proyecto, abordando desde la descripción de la startup y los perfiles del equipo hasta el análisis de la problemática y la aplicación del proceso Lean UX. Redacté con objetividad los Problem Statements, Assumptions e Hipótesis, facilitando su comprensión para públicos técnicos y no técnicos. También participé en el análisis competitivo y en la documentación de entrevistas, asegurando que los resultados fueran comunicados de forma precisa y accesible para distintos niveles jerárquicos y especialidades.</p>
+        <p><b>Andre La torre Soto</b></p>
+        <p><b>TB1:</b> Contribuí a la redacción clara y estructurada de la sección de Needfinding, abarcando desde la identificación del contexto sectorial y los segmentos de usuarios hasta la construcción de User Personas y Journey Mappings. Redacté con objetividad los Problem Statements, asegurando que las necesidades y desafíos de los productores y cooperativas fueran expresados de forma comprensible tanto para públicos técnicos como no técnicos. Asimismo, participé en la síntesis de los hallazgos y en su vinculación con las etapas posteriores del proyecto, promoviendo que los insumos obtenidos orientaran de manera efectiva el diseño y validación de la solución.</p>
+        <p><b>Aranda Vallejos, Oscar Gabriel</b></p>
+        <p><b>TB1:</b> Contribuí a la documentación técnica del proyecto mediante la elaboración de diagramas C4 y UML que representan la arquitectura del sistema BeanDetect AI. Redacté documentación detallada de los bounded contexts, aplicando principios de Domain-Driven Design de forma clara y estructurada. Mi escritura técnica abarcó desde especificaciones de alto nivel comprensibles para stakeholders de negocio hasta diagramas de clases detallados para desarrolladores. Aseguré que la documentación arquitectónica fuera accesible para diferentes audiencias, facilitando la comprensión del diseño técnico tanto para especialistas en software como para profesionales de otras áreas del proyecto.</p>
+        <p><b>Ventura Chancafe, Eduardo</b></p>
+        <p><b>TB1:</b> Contribuí a la documentación del proyecto mediante la elaboración detallada de scenario mappings As-Is y To-Be, describiendo de manera objetiva y estructurada los procesos actuales y futuros en el sector cafetalero. Redacté análisis comparativos que permitieron identificar oportunidades de mejora y puntos de transformación digital. Mi escritura técnica se enfocó en hacer comprensibles los flujos de trabajo complejos para audiencias diversas, desde productores cafeteros hasta desarrolladores de software. Aseguré que la documentación de procesos sirviera como puente entre las necesidades del negocio y las especificaciones técnicas del sistema.</p>
       </td>
       <td>
         <p><b>TB1:</b> Como equipo, logramos expresar nuestras ideas y resultados por escrito con claridad y objetividad, adaptando el contenido para que fuera comprensible y relevante para públicos diversos, tanto técnicos como no técnicos. Esta capacidad de comunicación escrita fortaleció la documentación del proyecto de ingeniería, facilitando la toma de decisiones y el trabajo colaborativo entre distintos niveles jerárquicos.</p>
@@ -355,8 +335,8 @@ Convertirnos en la plataforma líder en automatización y aseguramiento de calid
 | :------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | <img src="https://i.postimg.cc/6qRCcvNF/Captura-de-pantalla-2024-09-08-151747.png"> | **Aranda Vallejos, Oscar Gabriel** <br> Tengo 20 años y soy estudiante de la carrera de Ingeniería de Software, poseo conocimientos básicos en Unity, C++ y diseño web. Me considero una persona preparada y perseverante en cumplir con los objetivos del proyecto; además, siempre estoy dispuesto a aprender nuevos conceptos.            |
 | <img src="./assets/images/members/abrahamAyquipa.jpeg"> | **Ayquipa Ubaldo, Abraham Israel** <br> Soy estudiante de la carrera de ingeniería de software, actualmente cursando el 8to ciclo de carrera. Aunque soy fullstack developer, tengo más inclinación por el desarrollo frontend. Mi stack arranca con Next.js(Framework de React) + Typescript para el front y Node.js + Express.js + MongoDB para el back. Como todo buen programador, me considero un eterno estudiante, por lo que me encuentro en este momento estudiando Docker y Redis.. |
-| photo | **Apellido, Nombres** <br> Tengo 21 años, actualmente me encuentro cruzando mi 7mo ciclo de la carrera de ingeniería de software en la UPC. Me gusta jugar videojuegos y practicar natación, soy un gran aficionado de la tecnología y del ensamblaje de computadoras. Me considero una persona dispuesta siempre a aprender tecnologías nuevas, creativa y responsable.         |
-| photo | **Apellido, Nombres** <br> Me gusta mucho aprender cosas nuevas sobre mi carrera, trabajar en equipo de manera proactiva y lograr los objetivos junto a mis compañeros. Me considero una persona ambiciosa, ya que mi meta es llegar a obtener un alto cargo en una empresa que me agrade o formar mi propia empresa relacionada al software. Gracias a ello siempre podré trabajar en algo que me guste y llevar una vida cómoda. Cuento con conocimientos de C + + y HTML. |
+| <img src="./assets/images/members/Latorre.png"> | **La torre, Andre Sebastian** <br> Soy André Sebastián La Torre Soto, actualmente me encuentro en el octavo ciclo de la carrera de Ingeniería de Software. Durante mi transcurso en la universidad he logrado aprender acerca de varios lenguajes y herramientas como pueden ser Python, C++, JavaScript, SQL, desarrollo web y móvil. Elegí esta carrera por mi afinidad con las matemáticas y las nuevas tecnologías. Soy alguien que disfruta el aprender y mejorar lo aprendido, a pesar de que esto a veces resulte difícil. Espero poder aportar de manera positiva en este grupo para que juntos todos podamos alcanzar nuestras metas.         |
+| <img src="./assets/images/members/eduardoVentura.jpg"> | **Eduardo, Eduardo** <br> Estudiante universitario que cursa su 8vo ciclo. Dentro del startup me encargo con el desarrollo del diseño ,QA y gestión del equipo, pues tengo conocimientos adicionales a los de mi sector. Además, apoyaré en el desarrollo del código trabajando de forma cohesionada con mis compañeros. Asimismo, cuento con conocimientos en herramientas como HTML, CSS, JavaScript, Python, C++, Cypress, NodeJs, NestJs y Agile Project Management. |
 
 
 ## 1.2. Solution Profile
@@ -1580,9 +1560,6 @@ https://lucid.app/lucidchart/5207a245-2b65-413c-b65f-055daf5730ba/edit?viewport_
 Para dar inicio con el diseño de nuestro software, es de suma importancia el uso de los Domain Message Flows Modeling, ya que nos permite ilustrar la transferencia de información entre los diferentes componentes que interactúan en nuestro sistema conjunto. Además, el uso de esta metodología permite detectar problemas potenciales en la lógica del negocio de manera más rápida y sencilla.
 
 <!-- Contenido de Domain Message Flows Modeling -->
-[![Captura-de-pantalla-2025-09-20-140350.png](https://i.postimg.cc/NFzHwW5r/Captura-de-pantalla-2025-09-20-140350.png)](https://postimg.cc/p5KTfcQ2)
-
-[![Captura-de-pantalla-2025-09-20-140426.png](https://i.postimg.cc/NGz9LvjK/Captura-de-pantalla-2025-09-20-140426.png)](https://postimg.cc/G9vhSNYR)
 
 #### 4.1.1.3 Bounded Context Canvases
 
