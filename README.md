@@ -678,6 +678,18 @@ La Domain Layer del IAM & Profile Bounded Context encapsula la lógica de negoci
 
 [![structurizr-106404-IAMProfile-Component-Diagram.png](https://i.postimg.cc/GpcLQ8Tt/structurizr-106404-IAMProfile-Component-Diagram.png)](https://postimg.cc/G45n3pQn)
 
+### 4.2.1.6.  Bounded Context Software Architecture Code Level Diagrams
+
+En esta sección se presentan los diagramas UML a nivel de código para el contexto determinado.
+
+#### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams
+
+[![Captura-de-pantalla-2025-09-20-185251.png](https://i.postimg.cc/mgLP82nd/Captura-de-pantalla-2025-09-20-185251.png)](https://postimg.cc/dLfQ0vwd)
+
+#### 4.2.1.6.2. Bounded Context Database Design Diagram
+
+[![Captura-de-pantalla-2025-09-20-185333.png](https://i.postimg.cc/bvdsfVpk/Captura-de-pantalla-2025-09-20-185333.png)](https://postimg.cc/SXFyWrXx)
+
 
 ---
 
@@ -919,6 +931,18 @@ La Domain Layer del Coffee Lot Management Bounded Context encapsula la lógica d
 ### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams
 
 [![structurizr-106404-Coffee-Lot-Component-Diagram.png](https://i.postimg.cc/JnFRMp6H/structurizr-106404-Coffee-Lot-Component-Diagram.png)](https://postimg.cc/JDjfQ5WR)
+
+### 4.2.2.6.  Bounded Context Software Architecture Code Level Diagrams
+
+En esta sección se presentan los diagramas UML a nivel de código para el contexto determinado.
+
+#### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams
+
+[![Captura-de-pantalla-2025-09-20-185124.png](https://i.postimg.cc/vmv6GxVw/Captura-de-pantalla-2025-09-20-185124.png)](https://postimg.cc/JyGhqnxp)
+
+#### 4.2.2.6.2. Bounded Context Database Design Diagram
+
+[![Captura-de-pantalla-2025-09-20-185158.png](https://i.postimg.cc/5NvBZ0nb/Captura-de-pantalla-2025-09-20-185158.png)](https://postimg.cc/Czhn8w3Q)
 
 
 ---
@@ -1242,6 +1266,18 @@ La Domain Layer del Grain Classification Bounded Context encapsula la lógica de
 ### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams
 
 [![structurizr-106404-Grain-Classification-Component-Diagram.png](https://i.postimg.cc/W3zsBBnP/structurizr-106404-Grain-Classification-Component-Diagram.png)](https://postimg.cc/WFRRrfC9)
+
+### 4.2.3.6.  Bounded Context Software Architecture Code Level Diagrams
+
+En esta sección se presentan los diagramas UML a nivel de código para el contexto determinado.
+
+#### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams
+
+[![Captura-de-pantalla-2025-09-20-184956.png](https://i.postimg.cc/yx8mMXQG/Captura-de-pantalla-2025-09-20-184956.png)](https://postimg.cc/hzNQxxq8)
+
+#### 4.2.3.6.2. Bounded Context Database Design Diagram
+
+[![Captura-de-pantalla-2025-09-20-185024.png](https://i.postimg.cc/PqnmXkVY/Captura-de-pantalla-2025-09-20-185024.png)](https://postimg.cc/qNQtwWTv)
 
 
 ---
@@ -1575,6 +1611,17 @@ La Domain Layer del Traceability & Certification Bounded Context encapsula la l�
 
 [![structurizr-106404-Traceability-Component-Diagram.png](https://i.postimg.cc/jS6qPQ5B/structurizr-106404-Traceability-Component-Diagram.png)](https://postimg.cc/nXzttmq1)
 
+### 4.2.4.6.  Bounded Context Software Architecture Code Level Diagrams
+
+En esta sección se presentan los diagramas UML a nivel de código para el contexto determinado.
+
+#### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams
+
+[![Captura-de-pantalla-2025-09-20-184806.png](https://i.postimg.cc/G3KzX97N/Captura-de-pantalla-2025-09-20-184806.png)](https://postimg.cc/Yj4192wf)
+
+#### 4.2.4.6.2. Bounded Context Database Design Diagram
+
+[![Captura-de-pantalla-2025-09-20-184712.png](https://i.postimg.cc/xCKpfRPT/Captura-de-pantalla-2025-09-20-184712.png)](https://postimg.cc/FdHVG0q2)
 
 ---
 
@@ -1904,14 +1951,24 @@ La Domain Layer del Reporting & Analytics Bounded Context encapsula la lógica d
 
 [![structurizr-106404-Reporting-Component-Diagram.png](https://i.postimg.cc/1zJ9YmDH/structurizr-106404-Reporting-Component-Diagram.png)](https://postimg.cc/SXYFnpT2)
 
+### 4.2.5.6.  Bounded Context Software Architecture Code Level Diagrams
+
+En esta sección se presentan los diagramas UML a nivel de código para el contexto determinado.
+
+#### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams
+
+[![Captura-de-pantalla-2025-09-20-183847.png](https://i.postimg.cc/cHVkZz3z/Captura-de-pantalla-2025-09-20-183847.png)](https://postimg.cc/TLJJJCCj)
+
+#### 4.2.5.6.2. Bounded Context Database Design Diagram
+
+[![Captura-de-pantalla-2025-09-20-184546.png](https://i.postimg.cc/2yQstYtG/Captura-de-pantalla-2025-09-20-184546.png)](https://postimg.cc/H8LvJqd8)
+
 
 ---
 
 ## 4.2.6. Bounded Context: User Support
 
-El **User Support Bounded Context** gestiona el soporte técnico y atención al cliente, incluyendo canales como WhatsApp, soporte telefónico y documentación de ayuda.
-
-El **User Support Bounded Context** gestiona el soporte técnico y atención al cliente para el sistema BeanDetect AI, proporcionando un sistema de tickets centralizado donde productores y cooperativas pueden reportar problemas, hacer consultas y recibir asistencia técnica especializada en clasificación cafetalera.
+El **User Support Bounded Context** gestiona el soporte técnico y atención al cliente, incluyendo canales como WhatsApp, soporte telefónico y documentación de ayuda. Además gestiona tickets de solicitudes para grabar la fecha en la base de datos.
 
 ### 4.2.6.1. Domain Layer
 
@@ -2159,6 +2216,18 @@ La Domain Layer del User Support Bounded Context encapsula la lógica de negocio
 
 [![structurizr-106404-User-Support-Component-Diagram.png](https://i.postimg.cc/YCBqvyp1/structurizr-106404-User-Support-Component-Diagram.png)](https://postimg.cc/CzJVt7n1)
 
+### 4.2.6.6.  Bounded Context Software Architecture Code Level Diagrams
+
+En esta sección se presentan los diagramas UML a nivel de código para el contexto determinado.
+
+#### 4.2.6.6.1. Bounded Context Domain Layer Class Diagrams
+
+[![Captura-de-pantalla-2025-09-20-183028.png](https://i.postimg.cc/RhS91qs9/Captura-de-pantalla-2025-09-20-183028.png)](https://postimg.cc/ygbws6Cr)
+
+#### 4.2.6.6.2. Bounded Context Database Design Diagram
+
+[![Captura-de-pantalla-2025-09-20-182449.png](https://i.postimg.cc/BbTLb880/Captura-de-pantalla-2025-09-20-182449.png)](https://postimg.cc/bSvNFwHC)
+
 
 ---
 
@@ -2182,4 +2251,14 @@ Identificar sistemas externos es importante para definir con claridad los límit
 
 # Anexos
 
-<!-- Contenido de los anexos -->
+## Figuras
+
+### TB1
+
+#### Database Diagram
+[![1-11zon.png](https://i.postimg.cc/8z7mtH9X/1-11zon.png)](https://postimg.cc/G41Dpkcv)
+
+#### Class Diagram
+
+[![beans-diagram-class.png](https://i.postimg.cc/h4M8n6q3/beans-diagram-class.png)](https://postimg.cc/Z0BvFfnr)
+
