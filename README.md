@@ -812,15 +812,29 @@ XXXXXXXXXXXXXXXXX
 
 ### 2.3.1. User Personas
 
-<!-- Contenido de User Personas -->
+Segmento 1: Productores Individuales
+
+<img src="assets/images/needfinding/UserPersona1.png">
+
+
+Segmento 2: Cooperativas cafeteras
+<img src="assets/images/needfinding/UserPersona2.png">
 
 ### 2.3.2. User Task Matrix
 
-<!-- Contenido de User Task Matrix -->
 
 ### 2.3.3. User Journey Mapping
 
-<!-- Contenido de User Journey Mapping -->
+En este documento, presentamos dos User Journey Maps que ilustran las experiencias actuales de dos segmentos clave dentro del contexto de nuestro proyecto
+
+Jose Ramirez
+
+<img src="assets/images/needfinding/Mapping1.png">
+
+
+Luis Torres (Representante de la cooperativa)
+<img src="assets/images/needfinding/Mapping2.png">
+
 
 ### 2.3.4. Empathy Mapping
 
