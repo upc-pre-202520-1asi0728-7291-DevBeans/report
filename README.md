@@ -3393,7 +3393,7 @@ Identificar sistemas externos es importante para definir con claridad los límit
 
 # Bibliografía
 
-<!-- Contenido de la bibliografía -->
+Brown, S. (s.f.). *The C4 model*. https://c4model.com/
 
 ---
 
@@ -3410,3 +3410,13 @@ Identificar sistemas externos es importante para definir con claridad los límit
 
 [![beans-diagram-class.png](https://i.postimg.cc/h4M8n6q3/beans-diagram-class.png)](https://postimg.cc/Z0BvFfnr)
 
+## Videos
+
+### TB1
+
+#### Exposición
+
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218167_upc_edu_pe/EbnQ4lfhO5xMgzpNYDoHRPgBwUoL_oFi_Eh4wyIIYKtItQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=pE1xYm
+
+#### Entrevistas de Needfinding
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218167_upc_edu_pe/EbacacS3n11GmQli8ek0ltABesH4olt1EDMLUzs-FrNg6w?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=xJtssj
