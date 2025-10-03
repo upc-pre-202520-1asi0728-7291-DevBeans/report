@@ -222,18 +222,28 @@ En esta sección se resumen los avances y modificaciones realizadas durante el c
 - [Capítulo I: Introducción](#capítulo-i-introducción-1)
   - [1.1. Startup Profile](#11-startup-profile)
     - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
+    - [Misión](#misión)
+    - [Visión](#visión)
     - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
   - [1.2. Solution Profile](#12-solution-profile)
     - [1.2.1. Antecedentes y problemática](#121-antecedentes-y-problemática)
+    - [Antecedentes](#antecedentes)
+    - [Problemática (Método 5W y 2H)](#problemática-método-5w-y-2h)
     - [1.2.2. Lean UX Process](#122-lean-ux-process)
       - [1.2.2.1. Lean UX Problem Statements](#1221-lean-ux-problem-statements)
+    - [Problem Statement](#problem-statement)
+    - [Dominio](#dominio)
+    - [Segmentos de Clientes](#segmentos-de-clientes)
+    - [Puntos de Dolor](#puntos-de-dolor)
+    - [Visión / Estrategia](#visión--estrategia)
+    - [Segmento Inicial](#segmento-inicial)
       - [1.2.2.2. Lean UX Assumptions](#1222-lean-ux-assumptions)
-        - [**Business Outcomes:**](#business-outcomes)
-        - [**Users:**](#users)
-        - [**User Outcomes \& Benefits:**](#user-outcomes--benefits)
-        - [**Feature Assumptions:**](#feature-assumptions)
-        - [**Business Assumptions:**](#business-assumptions)
-        - [**User Assumptions:**](#user-assumptions)
+    - [Business Outcomes](#business-outcomes)
+    - [Users](#users)
+    - [User Outcomes \& Benefits](#user-outcomes--benefits)
+    - [Feature Assumptions](#feature-assumptions)
+    - [Business Assumptions](#business-assumptions)
+    - [User Assumptions](#user-assumptions)
       - [1.2.2.3. Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
       - [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)
   - [1.3. Segmentos objetivo](#13-segmentos-objetivo)
@@ -244,7 +254,8 @@ En esta sección se resumen los avances y modificaciones realizadas durante el c
   - [2.2. Entrevistas](#22-entrevistas)
     - [2.2.1. Diseño de entrevistas](#221-diseño-de-entrevistas)
     - [Preguntas Generales](#preguntas-generales)
-    - [Preguntas segmento 1: Trabajadores del sector salud](#preguntas-segmento-1-trabajadores-del-sector-salud)
+    - [Preguntas Segmento 1: Productores pequeños y medianos de café](#preguntas-segmento-1-productores-pequeños-y-medianos-de-café)
+    - [Preguntas Segmento 2: Cooperativas cafetaleras](#preguntas-segmento-2-cooperativas-cafetaleras)
     - [2.2.2. Registro de entrevistas](#222-registro-de-entrevistas)
       - [**Segmento 1: Productores pequeños y medianos de café**](#segmento-1-productores-pequeños-y-medianos-de-café)
       - [**Segmento 2: Cooperativas cafetaleras**](#segmento-2-cooperativas-cafetaleras)
@@ -253,14 +264,79 @@ En esta sección se resumen los avances y modificaciones realizadas durante el c
       - [**Análisis de Preguntas Especificas**](#análisis-de-preguntas-especificas)
   - [2.3. Needfinding](#23-needfinding)
     - [2.3.1. User Personas](#231-user-personas)
+        - [Segmento 1: Productores Individuales](#segmento-1-productores-individuales)
+        - [Segmento 2: Cooperativas cafeteras](#segmento-2-cooperativas-cafeteras)
     - [2.3.2. User Task Matrix](#232-user-task-matrix)
     - [2.3.3. User Journey Mapping](#233-user-journey-mapping)
     - [2.3.4. Empathy Mapping](#234-empathy-mapping)
+        - [Jose Ramirez](#jose-ramirez)
+        - [Luis Torres (Representante de la cooperativa)](#luis-torres-representante-de-la-cooperativa)
     - [2.3.5. As-is Scenario Mapping](#235-as-is-scenario-mapping)
-  - [2.4. Ubiquitous Language](#24-ubiquitous-language)
 - [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification-1)
   - [3.1. To-Be Scenario Mapping](#31-to-be-scenario-mapping)
   - [3.2. User Stories](#32-user-stories)
+    - [Gestión de Usuarios](#gestión-de-usuarios)
+    - [Gestión de Lotes de Café](#gestión-de-lotes-de-café)
+    - [Clasificación Automática de Granos](#clasificación-automática-de-granos)
+    - [Reportes y Análisis](#reportes-y-análisis)
+    - [Integración de certificados de trazabilidad](#integración-de-certificados-de-trazabilidad)
+    - [Soporte Accesible](#soporte-accesible)
+    - [Configuración Adaptable del Sistema](#configuración-adaptable-del-sistema)
+    - [Navegación y Funcionalidades de la Landing Page](#navegación-y-funcionalidades-de-la-landing-page)
+    - [Funcionalidades de Idioma y Accesibilidad](#funcionalidades-de-idioma-y-accesibilidad)
+  - [Criterios de Aceptación](#criterios-de-aceptación)
+    - [US01: Registro de Productor Pequeño/Mediano](#us01-registro-de-productor-pequeñomediano)
+    - [Criterios de Aceptación:](#criterios-de-aceptación-1)
+  - [US02: Registro de Cooperativa Cafetalera](#us02-registro-de-cooperativa-cafetalera)
+    - [Criterios de Aceptación:](#criterios-de-aceptación-2)
+  - [US03: Autenticación de Usuarios](#us03-autenticación-de-usuarios)
+    - [Criterios de Aceptación:](#criterios-de-aceptación-3)
+  - [US04: Gestión de Perfil de Productor](#us04-gestión-de-perfil-de-productor)
+    - [Criterios de Aceptación:](#criterios-de-aceptación-4)
+  - [US05: Gestión de Perfil de Cooperativa](#us05-gestión-de-perfil-de-cooperativa)
+    - [Criterios de Aceptación:](#criterios-de-aceptación-5)
+  - [US06: Creación de Lotes](#us06-creación-de-lotes)
+    - [Criterios de Aceptación:](#criterios-de-aceptación-6)
+  - [US07: Edición de Información de Lote](#us07-edición-de-información-de-lote)
+    - [Criterios de Aceptación:](#criterios-de-aceptación-7)
+  - [US08: Visualización de Lotes por Productor](#us08-visualización-de-lotes-por-productor)
+    - [Criterios de Aceptación:](#criterios-de-aceptación-8)
+  - [US09: Visualización de Lotes por Cooperativa](#us09-visualización-de-lotes-por-cooperativa)
+    - [Criterios de Aceptación:](#criterios-de-aceptación-9)
+  - [US10: Búsqueda Rápida de Lotes](#us10-búsqueda-rápida-de-lotes)
+    - [Criterios de Aceptación:](#criterios-de-aceptación-10)
+  - [US11: Eliminación de Lotes](#us11-eliminación-de-lotes)
+    - [Criterios de Aceptación:](#criterios-de-aceptación-11)
+  - [US12: Detección de Defectos Críticos](#us12-detección-de-defectos-críticos)
+    - [Criterios de Aceptación:](#criterios-de-aceptación-12)
+  - [US13: Análisis de Color y Uniformidad](#us13-análisis-de-color-y-uniformidad)
+    - [Criterios de Aceptación:](#criterios-de-aceptación-13)
+  - [US14: Clasificación por Estándares Internacionales](#us14-clasificación-por-estándares-internacionales)
+    - [Criterios de Aceptación:](#criterios-de-aceptación-14)
+  - [US15: Reporte Simple de Clasificación](#us15-reporte-simple-de-clasificación)
+    - [Criterios de Aceptación:](#criterios-de-aceptación-15)
+  - [US16: Reporte Consolidado para Cooperativas](#us16-reporte-consolidado-para-cooperativas)
+    - [Criterios de Aceptación:](#criterios-de-aceptación-16)
+  - [US17: Exportación para Compradores](#us17-exportación-para-compradores)
+    - [Criterios de Aceptación:](#criterios-de-aceptación-17)
+  - [US18: Comparación Histórica de Calidad](#us18-comparación-histórica-de-calidad)
+    - [Criterios de Aceptación:](#criterios-de-aceptación-18)
+  - [US19: Alertas de Calidad Crítica](#us19-alertas-de-calidad-crítica)
+    - [Criterios de Aceptación:](#criterios-de-aceptación-19)
+  - [US20: Códigos QR para Lotes](#us20-códigos-qr-para-lotes)
+    - [Criterios de Aceptación:](#criterios-de-aceptación-20)
+  - [US21: Certificación Digital Automática](#us21-certificación-digital-automática)
+    - [Criterios de Aceptación:](#criterios-de-aceptación-21)
+  - [US22: Integración con Blockchain](#us22-integración-con-blockchain)
+    - [Criterios de Aceptación:](#criterios-de-aceptación-22)
+  - [US23: Reportes de Transparencia para Consumidores](#us23-reportes-de-transparencia-para-consumidores)
+    - [Criterios de Aceptación:](#criterios-de-aceptación-23)
+  - [US24: Soporte por WhatsApp](#us24-soporte-por-whatsapp)
+    - [Criterios de Aceptación:](#criterios-de-aceptación-24)
+  - [US25: Soporte Telefónico en Horarios Rurales](#us25-soporte-telefónico-en-horarios-rurales)
+    - [Criterios de Aceptación:](#criterios-de-aceptación-25)
+  - [US26: Modo Offline para Zonas Rurales](#us26-modo-offline-para-zonas-rurales)
+    - [Criterios de Aceptación:](#criterios-de-aceptación-26)
   - [3.3. Impact Mapping](#33-impact-mapping)
   - [3.4. Product Backlog](#34-product-backlog)
 - [Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design-1)
@@ -273,20 +349,188 @@ En esta sección se resumen los avances y modificaciones realizadas durante el c
     - [4.1.3. Software Architecture](#413-software-architecture)
       - [4.1.3.1. Software Architecture System Landscape Diagram](#4131-software-architecture-system-landscape-diagram)
       - [4.1.3.2. Software Architecture Context Level Diagrams](#4132-software-architecture-context-level-diagrams)
-      - [4.1.3.3. Software Architecture Deployment Diagrams](#4133-software-architecture-deployment-diagrams)
-  - [4.2. Tactical-Level Domain-Driven Design](#42-tactical-level-domain-driven-design)
-    - [4.2.1. Bounded Context: IAM](#421-bounded-context-iam)
-      - [4.2.1.1. Domain Layer](#4211-domain-layer)
-      - [4.2.1.2. Interface Layer](#4212-interface-layer)
-      - [4.2.1.3. Application Layer](#4213-application-layer)
-      - [4.2.1.4. Infrastructure Layer](#4214-infrastructure-layer)
-      - [4.2.1.6. Bounded Context Software Architecture Component Level Diagrams](#4216-bounded-context-software-architecture-component-level-diagrams)
-      - [4.2.1.7. Bounded Context Software Architecture Code Level Diagrams](#4217-bounded-context-software-architecture-code-level-diagrams)
-        - [4.2.1.7.1. Bounded Context Domain Layer Class Diagrams](#42171-bounded-context-domain-layer-class-diagrams)
-        - [4.2.1.7.2. Bounded Context Database Design Diagram](#42172-bounded-context-database-design-diagram)
+      - [4.1.3.3. Software Architecture Container Level Diagrams](#4133-software-architecture-container-level-diagrams)
+      - [4.1.3.4. Software Architecture Deployment Diagrams](#4134-software-architecture-deployment-diagrams)
+- [4.2. Tactical-Level Domain-Driven Design](#42-tactical-level-domain-driven-design)
+  - [4.2.1. Bounded Context: IAM \& Profile](#421-bounded-context-iam--profile)
+    - [4.2.1.1. Domain Layer](#4211-domain-layer)
+      - [**Aggregates**](#aggregates)
+      - [**Entities**](#entities)
+      - [**Value Objects**](#value-objects)
+      - [**Commands**](#commands)
+      - [**Queries**](#queries)
+      - [**Events**](#events)
+    - [4.2.1.2. Interface Layer](#4212-interface-layer)
+      - [**Controllers**](#controllers)
+      - [**Resources**](#resources)
+      - [**Transformers**](#transformers)
+    - [4.2.1.3. Application Layer](#4213-application-layer)
+      - [**Command Services**](#command-services)
+      - [**Query Services**](#query-services)
+    - [4.2.1.4. Infrastructure Layer](#4214-infrastructure-layer)
+      - [**Persistencia (JPA Repositories)**](#persistencia-jpa-repositories)
+      - [4.2.1.5. Bounded Context Software Architecture Component Level Diagrams](#4215-bounded-context-software-architecture-component-level-diagrams)
+    - [4.2.1.6.  Bounded Context Software Architecture Code Level Diagrams](#4216--bounded-context-software-architecture-code-level-diagrams)
+      - [4.2.1.6.1. Bounded Context Domain Layer Class Diagrams](#42161-bounded-context-domain-layer-class-diagrams)
+      - [4.2.1.6.2. Bounded Context Database Design Diagram](#42162-bounded-context-database-design-diagram)
+  - [4.2.2. Bounded Context: Coffee Lot Management](#422-bounded-context-coffee-lot-management)
+    - [4.2.2.1. Domain Layer](#4221-domain-layer)
+      - [**Aggregates**](#aggregates-1)
+      - [**Entities**](#entities-1)
+      - [**Value Objects**](#value-objects-1)
+      - [**Commands**](#commands-1)
+      - [**Queries**](#queries-1)
+      - [**Events**](#events-1)
+    - [4.2.2.2. Interface Layer](#4222-interface-layer)
+      - [**Controllers**](#controllers-1)
+      - [**Resources**](#resources-1)
+      - [**Transformers**](#transformers-1)
+    - [4.2.2.3. Application Layer](#4223-application-layer)
+      - [**Command Services**](#command-services-1)
+      - [**Query Services**](#query-services-1)
+      - [**Domain Services**](#domain-services)
+    - [4.2.2.4. Infrastructure Layer](#4224-infrastructure-layer)
+      - [**Persistencia (JPA Repositories)**](#persistencia-jpa-repositories-1)
+      - [**External Services Integration**](#external-services-integration)
+      - [**Event Handling**](#event-handling)
+    - [4.2.2.5. Bounded Context Software Architecture Component Level Diagrams](#4225-bounded-context-software-architecture-component-level-diagrams)
+    - [4.2.2.6.  Bounded Context Software Architecture Code Level Diagrams](#4226--bounded-context-software-architecture-code-level-diagrams)
+      - [4.2.2.6.1. Bounded Context Domain Layer Class Diagrams](#42261-bounded-context-domain-layer-class-diagrams)
+      - [4.2.2.6.2. Bounded Context Database Design Diagram](#42262-bounded-context-database-design-diagram)
+  - [4.2.3. Bounded Context: Grain Classification](#423-bounded-context-grain-classification)
+    - [4.2.3.1. Domain Layer](#4231-domain-layer)
+      - [**Aggregates**](#aggregates-2)
+      - [**Entities**](#entities-2)
+      - [**Value Objects**](#value-objects-2)
+      - [**Commands**](#commands-2)
+      - [**Queries**](#queries-2)
+      - [**Events**](#events-2)
+    - [4.2.3.2. Interface Layer](#4232-interface-layer)
+      - [**Controllers**](#controllers-2)
+      - [**Resources**](#resources-2)
+      - [**Transformers**](#transformers-2)
+    - [4.2.3.3. Application Layer](#4233-application-layer)
+      - [**Command Services**](#command-services-2)
+      - [**Query Services**](#query-services-2)
+      - [**Domain Services**](#domain-services-1)
+    - [4.2.3.4. Infrastructure Layer](#4234-infrastructure-layer)
+      - [**Persistencia (JPA Repositories)**](#persistencia-jpa-repositories-2)
+      - [**External Services Integration**](#external-services-integration-1)
+      - [**Event Handling**](#event-handling-1)
+    - [4.2.3.5. Bounded Context Software Architecture Component Level Diagrams](#4235-bounded-context-software-architecture-component-level-diagrams)
+    - [4.2.3.6.  Bounded Context Software Architecture Code Level Diagrams](#4236--bounded-context-software-architecture-code-level-diagrams)
+      - [4.2.3.6.1. Bounded Context Domain Layer Class Diagrams](#42361-bounded-context-domain-layer-class-diagrams)
+      - [4.2.3.6.2. Bounded Context Database Design Diagram](#42362-bounded-context-database-design-diagram)
+  - [4.2.4. Bounded Context: Traceability \& Certification](#424-bounded-context-traceability--certification)
+    - [4.2.4.1. Domain Layer](#4241-domain-layer)
+      - [**Aggregates**](#aggregates-3)
+      - [**Entities**](#entities-3)
+      - [**Value Objects**](#value-objects-3)
+      - [**Commands**](#commands-3)
+      - [**Queries**](#queries-3)
+      - [**Events**](#events-3)
+    - [4.2.4.2. Interface Layer](#4242-interface-layer)
+      - [**Controllers**](#controllers-3)
+      - [**Resources**](#resources-3)
+      - [**Transformers**](#transformers-3)
+    - [4.2.4.3. Application Layer](#4243-application-layer)
+      - [**Command Services**](#command-services-3)
+      - [**Query Services**](#query-services-3)
+      - [**Domain Services**](#domain-services-2)
+    - [4.2.4.4. Infrastructure Layer](#4244-infrastructure-layer)
+      - [**Persistencia (JPA Repositories)**](#persistencia-jpa-repositories-3)
+      - [**External Services Integration**](#external-services-integration-2)
+      - [**Event Handling**](#event-handling-2)
+    - [4.2.4.5. Bounded Context Software Architecture Component Level Diagrams](#4245-bounded-context-software-architecture-component-level-diagrams)
+    - [4.2.4.6.  Bounded Context Software Architecture Code Level Diagrams](#4246--bounded-context-software-architecture-code-level-diagrams)
+      - [4.2.4.6.1. Bounded Context Domain Layer Class Diagrams](#42461-bounded-context-domain-layer-class-diagrams)
+      - [4.2.4.6.2. Bounded Context Database Design Diagram](#42462-bounded-context-database-design-diagram)
+  - [4.2.5. Bounded Context: Reporting \& Analytics](#425-bounded-context-reporting--analytics)
+    - [4.2.5.1. Domain Layer](#4251-domain-layer)
+      - [**Aggregates**](#aggregates-4)
+      - [**Entities**](#entities-4)
+      - [**Value Objects**](#value-objects-4)
+      - [**Commands**](#commands-4)
+      - [**Queries**](#queries-4)
+      - [**Events**](#events-4)
+    - [4.2.5.2. Interface Layer](#4252-interface-layer)
+      - [**Controllers**](#controllers-4)
+      - [**Resources**](#resources-4)
+      - [**Transformers**](#transformers-4)
+    - [4.2.5.3. Application Layer](#4253-application-layer)
+      - [**Command Services**](#command-services-4)
+      - [**Query Services**](#query-services-4)
+      - [**Domain Services**](#domain-services-3)
+    - [4.2.5.4. Infrastructure Layer](#4254-infrastructure-layer)
+      - [**Persistencia (JPA Repositories)**](#persistencia-jpa-repositories-4)
+      - [**External Services Integration**](#external-services-integration-3)
+      - [**Event Handling**](#event-handling-3)
+    - [4.2.5.5. Bounded Context Software Architecture Component Level Diagrams](#4255-bounded-context-software-architecture-component-level-diagrams)
+    - [4.2.5.6.  Bounded Context Software Architecture Code Level Diagrams](#4256--bounded-context-software-architecture-code-level-diagrams)
+      - [4.2.5.6.1. Bounded Context Domain Layer Class Diagrams](#42561-bounded-context-domain-layer-class-diagrams)
+      - [4.2.5.6.2. Bounded Context Database Design Diagram](#42562-bounded-context-database-design-diagram)
+  - [4.2.6. Bounded Context: User Support](#426-bounded-context-user-support)
+    - [4.2.6.1. Domain Layer](#4261-domain-layer)
+      - [**Aggregates**](#aggregates-5)
+      - [**Entities**](#entities-5)
+      - [**Value Objects**](#value-objects-5)
+      - [**Commands**](#commands-5)
+      - [**Queries**](#queries-5)
+      - [**Events**](#events-5)
+    - [4.2.6.2. Interface Layer](#4262-interface-layer)
+      - [**Controllers**](#controllers-5)
+      - [**Resources**](#resources-5)
+      - [**Transformers**](#transformers-5)
+    - [4.2.6.3. Application Layer](#4263-application-layer)
+      - [**Command Services**](#command-services-5)
+      - [**Query Services**](#query-services-5)
+      - [**Domain Services**](#domain-services-4)
+    - [4.2.6.4. Infrastructure Layer](#4264-infrastructure-layer)
+      - [**Persistencia (JPA Repositories)**](#persistencia-jpa-repositories-5)
+      - [**External Services Integration**](#external-services-integration-4)
+      - [**Event Handling**](#event-handling-4)
+    - [4.2.6.5. Bounded Context Software Architecture Component Level Diagrams](#4265-bounded-context-software-architecture-component-level-diagrams)
+    - [4.2.6.6.  Bounded Context Software Architecture Code Level Diagrams](#4266--bounded-context-software-architecture-code-level-diagrams)
+      - [4.2.6.6.1. Bounded Context Domain Layer Class Diagrams](#42661-bounded-context-domain-layer-class-diagrams)
+      - [4.2.6.6.2. Bounded Context Database Design Diagram](#42662-bounded-context-database-design-diagram)
+- [Capítulo V: Tactical-Level Software Design](#capítulo-v-tactical-level-software-design)
+- [Capítulo VI: Solution UX Design.](#capítulo-vi-solution-ux-design)
+  - [6.1. Style Guidelines.](#61-style-guidelines)
+    - [6.1.1. General Style Guidelines.](#611-general-style-guidelines)
+      - [Branding:](#branding)
+      - [Tipografías:](#tipografías)
+      - [Colores:](#colores)
+      - [Margin:](#margin)
+      - [Responsive y breakpoints:](#responsive-y-breakpoints)
+    - [6.1.2. Web, Mobile \& Devices Style Guidelines.](#612-web-mobile--devices-style-guidelines)
+      - [6.1.2.1. Web \& Devices Style Guidelines.](#6121-web--devices-style-guidelines)
+      - [6.1.2.2. Mobile \& Devices Style Guidelines.](#6122-mobile--devices-style-guidelines)
+  - [6.2. Information Architecture.](#62-information-architecture)
+    - [6.2.2. Labeling Systems.](#622-labeling-systems)
+    - [6.2.3. Searching Systems.](#623-searching-systems)
+    - [6.2.4. SEO Tags and Meta Tags.](#624-seo-tags-and-meta-tags)
+    - [6.2.5. Navigation Systems.](#625-navigation-systems)
+  - [6.3. Landing Page UI Design.](#63-landing-page-ui-design)
+    - [6.3.1. Landing Page Wireframe.](#631-landing-page-wireframe)
+      - [6.3.1.1. Landing Page Wireframe - Web version](#6311-landing-page-wireframe---web-version)
+      - [6.3.1.2. Landing Page Wireframe - Mobile version](#6312-landing-page-wireframe---mobile-version)
+    - [6.3.2. Landing Page Mock-up.](#632-landing-page-mock-up)
+      - [6.3.2.1. Landing Page Mock-up - Web version](#6321-landing-page-mock-up---web-version)
+      - [6.3.2.2. Landing Page Mock-up - Mobile version](#6322-landing-page-mock-up---mobile-version)
+  - [6.4. Applications UX/UI Design.](#64-applications-uxui-design)
+    - [6.4.1. Applications Wireframes.](#641-applications-wireframes)
+    - [6.4.2. Applications Wireflow Diagrams.](#642-applications-wireflow-diagrams)
 - [Conclusiones](#conclusiones-1)
 - [Bibliografía](#bibliografía-1)
 - [Anexos](#anexos-1)
+  - [Figuras](#figuras)
+    - [TB1](#tb1)
+      - [Database Diagram](#database-diagram)
+      - [Class Diagram](#class-diagram)
+  - [Videos](#videos)
+    - [TB1](#tb1-1)
+      - [Exposición](#exposición)
+      - [Entrevistas de Needfinding](#entrevistas-de-needfinding)
 
 ### [Conclusiones](#conclusiones)
 ### [Bibliografía](#bibliografía)
@@ -3428,9 +3672,139 @@ En esta sección se presentan los diagramas UML a nivel de código para el conte
 
 [![Captura-de-pantalla-2025-09-20-182449.png](https://i.postimg.cc/BbTLb880/Captura-de-pantalla-2025-09-20-182449.png)](https://postimg.cc/bSvNFwHC)
 
+---
+# Capítulo V: Tactical-Level Software Design
+
 
 ---
+# Capítulo VI: Solution UX Design.
+## 6.1. Style Guidelines.
+### 6.1.1. General Style Guidelines.
+#### Branding: 
+Aunque en un principio optamos por la creación de un isotipo, sentimos que saturaba la esencia de la aplicación, por lo que la final optamos por un diseño minimalista y moderno en representado en un imagotipo con los colores representativos de nuestra marca.  
 
+<img src="./assets/images/solutionUxDesign/logo.png" style="display: block; margin: 0 auto;"/>
+
+#### Tipografías:
+Para las tipografías optamos por usar 3 variaciones de roboto(regular, italic semibold, black) y 2 variaciones de Plus Jakarta Sans(light, regular).
+
+<img src="./assets/images/solutionUxDesign/robotoFont.png" style="display: block; margin: 0 auto;"/>
+<img src="./assets/images/solutionUxDesign/jakartaFont.png" style="display: block; margin: 0 auto;"/>
+
+#### Colores:
+En cuanto a nuestra paleta de colores, esta consta únicamente de 2, los cuales son un azul(#5766F5) y un verde con un matiz claro(#1EC089).
+
+#### Margin:
+Se optó por hacer uso de margin de elementos pequeños: verticalmente: 32px, horizontalmente 32px y para elementos grandes: verticalmente: 32px, horizontalmente 48px.
+
+#### Responsive y breakpoints:
+Teniendo en cuenta que todos los diseños tienen que ser responsive nosotros optamos por definir los siguiente breakpoints, mimos que los podrias etiquetar como:
+- sm: pantallas menores a 640px.
+- lg: pantallas menores a 1024px.
+- xl: pantallas menores a 1280px.
+
+### 6.1.2. Web, Mobile & Devices Style Guidelines.
+#### 6.1.2.1. Web & Devices Style Guidelines.
+Como se mencionó anteriormente se buscó que la landing fuese mucho más limpia por lo que el navbar no tiene iconos y el margin de 40px entre elementos ul y li mejora la UI.
+
+<img src="./assets/images/solutionUxDesign/landing1.png" style="display: block; margin: 0 auto;"/>
+
+Se tiene a su vez un un article con algunas características acerca de nuestro producto.
+
+<img src="./assets/images/solutionUxDesign/landing2.png" style="display: block; margin: 0 auto;"/>
+
+En la sección de Costumers presentamos un article con las opiniones de algunos de nuestros clientes con los que ya hayamos trabajado.
+
+<img src="./assets/images/solutionUxDesign/landing3.png" style="display: block; margin: 0 auto;"/>
+
+Y finalmente se puede ver un article en la sección de pricing con algunos de nuestros planes de suscripción. Sin olvidar otro article con información acerca de donde nos encontramos e información de contacto y el footer.
+
+<img src="./assets/images/solutionUxDesign/landing4.png" style="display: block; margin: 0 auto;"/>
+
+Importante: la web está diseñada a su vez para ser responsive, con plena compatibilidad con Android y IOS.
+
+#### 6.1.2.2. Mobile & Devices Style Guidelines.
+
+## 6.2. Information Architecture.
+En lo referente a la organización visual del contenido, se optará por aplicar el patrón de jerarquía visual para estructurar las secciones. La relevancia de las oraciones se determinará según el tamaño de la fuente, siendo las frases u oraciones de 48px (3 rem) las más destacadas, seguidas por aquellas de 32px (2 rem), luego 24px (1.5 rem), y finalmente 16px (1 rem). Además, se implementará una organización matricial ordenada para presentar las características del producto y los planes de pago.  
+
+En otro aspecto, en cuanto a los esquemas de categorización, se empleará la categorización basada en la audiencia, dado que se cuenta con dos segmentos objetivo diferentes. Adicionalmente, se utilizará la categorización cronológica para el registro de entradas, especialmente cuando los usuarios accedan a bases de datos con información temporal. En este caso, las entradas más recientes tendrán prioridad y se mostrarán al principio para facilitar la visualización del contenido en orden temporal.
+
+### 6.2.2. Labeling Systems.
+En el landing page, hemos optado por reducir el uso de iconos representativos en los enlaces y, en su lugar, dar prioridad al texto con botones destacados. Esto nos permite mantener la estética minimalista del landing page. Además, hemos incluido iconos de colores para identificar nuestras redes sociales y otros elementos.
+
+- Navbar:
+<img src="./assets/images/solutionUxDesign/navbar.png" style="display: block; margin: 0 auto;"/>  
+- Socialmedia icons:
+<img src="./assets/images/solutionUxDesign/socialmedia.png" style="display: block; margin: 0 auto;"/>
+
+### 6.2.3. Searching Systems.
+La aplicación contará con un sistema de filtros por fecha en los registros de clasificación post-cosecha, permitiendo a los usuarios buscar y visualizar resultados según fechas específicas. Esto facilitará el seguimiento histórico de lotes y la trazabilidad de cada proceso.
+
+Además, se implementarán filtros por pestañas en los siguientes casos:
+
+- Para productores: podrán consultar sus lotes clasificados según el estado, como “En análisis”, “Clasificado” o “Listo para exportación”. Esto les permitirá visualizar rápidamente el avance de sus procesos y tomar decisiones informadas.
+
+- Para técnicos de calidad o cooperativas: dentro de cada lote, podrán revisar el estado de los granos en etapas como “En revisión”, “Con defectos detectados”, “Aprobado”.
+
+<img src="./assets/images/solutionUxDesign/searchComponent.png" style="display: block; margin: 0 auto;"/>
+
+### 6.2.4. SEO Tags and Meta Tags.
+- Landing Page: 
+```html
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+<title>BeanDetect AI | Clasificación Inteligente de Café</title>
+<meta name="keywords" content="DevBeans, BeanDetect AI, clasificación de café, inteligencia artificial, visión por computadora, calidad de café, trazabilidad, post-cosecha, café de exportación, defectos de grano, sostenibilidad cafetalera">
+<meta name="description" content="BeanDetect AI es una solución basada en inteligencia artificial para clasificar granos de café post-cosecha con precisión, reduciendo pérdidas y mejorando la rentabilidad de productores pequeños y medianos.">
+```
+
+- Web Application: 
+```html
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+<title>DevBeans App | Panel de Clasificación y Trazabilidad</title>
+<meta name="keywords" content="DevBeans App, BeanDetect, clasificación de café, trazabilidad, análisis de calidad, IA cafetera, exportación, defectos de grano, plataforma cafetalera, sostenibilidad">
+<meta name="description" content="Accede al panel de DevBeans para visualizar clasificaciones de café, gestionar trazabilidad y conectar con certificaciones. Una herramienta colaborativa para productores y técnicos del sector cafetalero.">
+```
+
+### 6.2.5. Navigation Systems.
+La estructura de navegación de nuestra aplicación se fundamentará en un componente de interfaz de usuario ampliamente utilizado: el sidebar. Este sidebar contendrá todas las opciones disponibles en la aplicación, organizadas de manera jerárquica. Es importante destacar que el contenido del sidebar variará según el tipo de usuario que acceda a la aplicación.
+
+## 6.3. Landing Page UI Design.
+En esta sección, presentamos nuestra propuesta de diseño de interfaz de usuario (UI) para el Landing Page. Explicamos cómo traducimos nuestras decisiones de diseño y arquitectura de información en una experiencia visualmente atractiva y funcional. El Landing Page es la primera impresión de nuestro sitio web, por lo que es crucial que refleje nuestra marca, comunique claramente nuestros mensajes clave y guíe a los usuarios hacia las acciones deseadas. Destacaremos los principios de diseño y consideraciones estratégicas que hemos utilizado para crear una experiencia de usuario efectiva y memorable.
+
+### 6.3.1. Landing Page Wireframe.
+Enlace de figma: https://www.figma.com/design/ockCQUwKAM1FR422KyQtyB/DETECT-BEAN-AI?node-id=0-1&t=vedLmHFdBBNAiSda-1
+
+#### 6.3.1.1. Landing Page Wireframe - Web version
+<img src="./assets/images/solutionUxDesign/wireframeWeb.jpg" style="display: block; margin: 0 auto;"/>
+
+#### 6.3.1.2. Landing Page Wireframe - Mobile version
+<img src="./assets/images/solutionUxDesign/wireframeMobile.jpg" style="display: block; margin: 0 auto;"/>
+
+### 6.3.2. Landing Page Mock-up.
+Enlace de figma: https://www.figma.com/design/ockCQUwKAM1FR422KyQtyB/DETECT-BEAN-AI?node-id=0-1&t=vedLmHFdBBNAiSda-1
+
+#### 6.3.2.1. Landing Page Mock-up - Web version
+<img src="./assets/images/solutionUxDesign/mockupWeb.jpg" style="display: block; margin: 0 auto;"/>
+
+#### 6.3.2.2. Landing Page Mock-up - Mobile version
+<img src="./assets/images/solutionUxDesign/mockupMobile.jpg" style="display: block; margin: 0 auto;"/>
+
+## 6.4. Applications UX/UI Design.
+
+### 6.4.1. Applications Wireframes.
+
+### 6.4.2. Applications Wireflow Diagrams.
+
+---
 
 # Conclusiones
 
@@ -3444,12 +3818,20 @@ Identificar sistemas externos es importante para definir con claridad los límit
 
 En este hito, logramos mostrar una primera versión operativa del sistema BeanDetect AI, desarrollado para identificar y clasificar granos de café. Esta entrega representa un progreso importante, dado que nos posibilitó verificar la arquitectura sugerida, ratificar la integración de los módulos iniciales y recibir comentarios anticipados en relación con la facilidad de uso y la exactitud del sistema. Por lo tanto, hemos llegado a la conclusión de que este resultado es fundamental para el proyecto, ya que establece las bases para el avance de los entregables posteriores y garantiza que las mejoras y optimizaciones se lleven a cabo sobre un prototipo validado.
 
-
 ---
 
 # Bibliografía
+- Brown, S. (s.f.). The C4 model. https://c4model.com/
+- Chollet, F. (2018). Deep Learning with Python. https://www.manning.com/books/deep-learning-with-python
+- OpenCV Team. (s.f.). OpenCV Documentation. https://docs.opencv.org/
+- Microsoft Azure. (s.f.). Computer Vision API. https://learn.microsoft.com/en-us/azure/cognitive-services/computer-vision/
+- GitHub. (s.f.). Awesome Computer Vision. https://github.com/jbhuang0604/awesome-computer-vision
+- FAO. (2021). Digital Agriculture Report: Rural transformation enabled by digital tools. https://www.fao.org/documents/card/en/c/cb4476en
+- GS1. (s.f.). Traceability in Agriculture. https://www.gs1.org/industries/agriculture
+- TensorFlow. (s.f.). TensorFlow for Agriculture. https://www.tensorflow.org/agriculture
+- ISO. (s.f.). ISO 22000: Food safety management systems. https://www.iso.org/iso-22000-food-safety-management.html
 
-Brown, S. (s.f.). *The C4 model*. https://c4model.com/
+DevBeans. (2025). BeanDetect AI Technical Overview. [Documento interno]
 
 ---
 
