@@ -78,7 +78,7 @@ En esta sección se resumen los avances y modificaciones realizadas durante el c
       <td>1.4</td>
       <td>19/09/2025</td>
       <td>Aranda Vallejos, Oscar Gabriel</td>
-      <td>Capítulo III, Capítulo IV</td>
+      <td>Desarrollo del Capítulo III y Capítulo IV</td>
     </tr>
     <tr>
       <td>1.6</td>
@@ -97,6 +97,40 @@ En esta sección se resumen los avances y modificaciones realizadas durante el c
       <td>20/09/2025</td>
       <td>Aranda Vallejos, Oscar Gabriel</td>
       <td>Actualización del Capítulo IV</td>
+    </tr>
+    <tr>
+      <td>2.2</td>
+      <td>03/11/2025</td>
+      <td>
+      Ayquipa Ubaldo, Abraham Israel<br>La Torre Soto, Andre Sebastian
+      </td>
+      <td>Desarrollo del Capítulo VI</td>
+    </tr>
+    <tr>
+      <td>2.4</td>
+      <td>04/11/2025</td>
+      <td>Aranda Vallejos, Oscar Gabriel</td>
+      <td>Desarrollo del Capítulo V</td>
+    </tr>
+    <tr>
+      <td>2.6</td>
+      <td>03/11/2025</td>
+      <td>
+      Ayquipa Ubaldo, Abraham Israel<br>Aranda Vallejos, Oscar Gabriel
+      </td>
+      <td>Desarrollo del sistema de identificación y clasificación de granos de café</td>
+    </tr>
+    <tr>
+      <td>2.8</td>
+      <td>06/11/2025</td>
+      <td>Ventura Chancafe, Eduardo Renato</td>
+      <td>Desarrollo de la primera versión de la Landing Page</td>
+    </tr>
+    <tr>
+      <td>3.0</td>
+      <td>06/11/2025</td>
+      <td>Ventura Chancafe, Eduardo Renato</td>
+      <td>Desarrollo de la primera versión del Web Frontend</td>
     </tr>
   </tbody>
 </table>
@@ -276,35 +310,53 @@ ABET – EAC - Student Outcome 5
       <td><b>Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerarquicos, en el marco del desarrollo de un proyecto en ingeniería.</b></td>
       <td>
         <p><b>Abraham Ayquipa Ubaldo</b></p>
-        <p><b>TB1:</b> Durante el desarrollo del proyecto, participé activamente en la elaboración de los capítulos iniciales, presentando con claridad y objetividad los perfiles de la startup y del equipo. Expliqué el enfoque Lean UX y sus componentes clave, como los Problem Statements, Assumptions e Hipótesis, adaptando el lenguaje según el público. También contribuí al análisis competitivo y al diseño de entrevistas, comunicando los resultados de forma estructurada y comprensible para distintos niveles jerárquicos y especialidades.</p>
+        <p><b>TB1:</b> Durante el desarrollo del proyecto, participé activamente en la elaboración de los capítulos iniciales, presentando con claridad y objetividad los perfiles de la startup y del equipo. Expliqué el enfoque Lean UX y sus componentes clave, como los Problem Statements, Assumptions e Hipótesis, adaptando el lenguaje según el público. También contribuí al análisis competitivo y al diseño de entrevistas, comunicando los resultados de forma estructurada y comprensible para distintos niveles jerárquicos y especialidades.<br>
+        <b>TP:</b> Comuniqué al equipo el cumplimiento y avance del módulo de análisis de imágenes de granos de café, así como las tecnologías y el dataset necesario para continuar con la implementación del sistema.
+        </p>
         <br>
         <p><b>Andre La torre Soto</b></p>
-        <p><b>TB1:</b> Durante el desarrollo del proyecto, participé activamente en la fase de Needfinding, recopilando y organizando información clave sobre el contexto del sector cafetalero. Contribuí en la caracterización de los segmentos de usuarios, identificando sus principales problemáticas y necesidades a través de la construcción de User Personas y Journey Mappings. Además, elaboré los Problem Statements de manera clara y fundamentada, comunicando los hallazgos con un lenguaje accesible tanto para especialistas como para audiencias generales. Finalmente, apoyé en la integración de estos resultados dentro del marco metodológico, asegurando que las evidencias recopiladas sirvieran como base para el planteamiento de hipótesis y el diseño posterior de la solución tecnológica.</p>
+        <p><b>TB1:</b> Durante el desarrollo del proyecto, participé activamente en la fase de Needfinding, recopilando y organizando información clave sobre el contexto del sector cafetalero. Contribuí en la caracterización de los segmentos de usuarios, identificando sus principales problemáticas y necesidades a través de la construcción de User Personas y Journey Mappings. Además, elaboré los Problem Statements de manera clara y fundamentada, comunicando los hallazgos con un lenguaje accesible tanto para especialistas como para audiencias generales. Finalmente, apoyé en la integración de estos resultados dentro del marco metodológico, asegurando que las evidencias recopiladas sirvieran como base para el planteamiento de hipótesis y el diseño posterior de la solución tecnológica.<br>
+        <b>TP:</b> Comuniqué al equipo el cumplimiento y avance del diseño UX y UI requerido.
+        </p>
         <br>
         <p><b>Aranda Vallejos, Oscar Gabriel</b></p>
-        <p><b>TB1:</b> Durante el desarrollo del proyecto, me enfoqué en la arquitectura de software y el diseño técnico del sistema BeanDetect AI. Comuniqué de manera clara y objetiva los conceptos arquitectónicos complejos a través de presentaciones técnicas, explicando la implementación de Domain-Driven Design y los patrones CQRS. Adapté mi comunicación según la audiencia, presentando diagramas C4 y UML de forma comprensible tanto para desarrolladores como para stakeholders no técnicos. Facilité la comprensión de la arquitectura de microservicios y bounded contexts, asegurando que todos los miembros del equipo pudieran contribuir efectivamente al proyecto.</p>
+        <p><b>TB1:</b> Durante el desarrollo del proyecto, me enfoqué en la arquitectura de software y el diseño técnico del sistema BeanDetect AI. Comuniqué de manera clara y objetiva los conceptos arquitectónicos complejos a través de presentaciones técnicas, explicando la implementación de Domain-Driven Design y los patrones CQRS. Adapté mi comunicación según la audiencia, presentando diagramas C4 y UML de forma comprensible tanto para desarrolladores como para stakeholders no técnicos. Facilité la comprensión de la arquitectura de microservicios y bounded contexts, asegurando que todos los miembros del equipo pudieran contribuir efectivamente al proyecto.
+        <br><b>TP:</b> Comuniqué al equipo el cumplimiento y avance del módulo de clasificación de imágenes de granos de café
+        </p>
         <br>
         <p><b>Ventura Chancafe, Eduardo</b></p>
-        <p><b>TB1:</b> Durante el desarrollo del proyecto, me concentré en el análisis y diseño de procesos de negocio a través de la elaboración de scenario mappings As-Is y To-Be. Comuniqué de forma clara y objetiva los flujos de trabajo actuales y los procesos optimizados propuestos, adaptando mi presentación para que fuera comprensible tanto para stakeholders técnicos como de negocio. Expliqué las mejoras y transformaciones digitales necesarias en el sector cafetalero, facilitando la comprensión de cómo la solución tecnológica impactaría en los procesos existentes y generaría valor agregado para los usuarios finales.</p>
+        <p><b>TB1:</b> Durante el desarrollo del proyecto, me concentré en el análisis y diseño de procesos de negocio a través de la elaboración de scenario mappings As-Is y To-Be. Comuniqué de forma clara y objetiva los flujos de trabajo actuales y los procesos optimizados propuestos, adaptando mi presentación para que fuera comprensible tanto para stakeholders técnicos como de negocio. Expliqué las mejoras y transformaciones digitales necesarias en el sector cafetalero, facilitando la comprensión de cómo la solución tecnológica impactaría en los procesos existentes y generaría valor agregado para los usuarios finales.<br>
+        <b>TP:</b> Comuniqué al equipo el avance de la implementación del diseño del aplicación web en su primera versión para el sprint actual.
+        </p>
       </td>
       <td>
-        <p><b>TB1:</b> Como equipo, demostramos la capacidad de comunicar nuestras ideas y resultados de manera clara y objetiva, adaptándonos a distintos públicos dentro del entorno del proyecto de ingeniería. A través de exposiciones orales, logramos transmitir conceptos técnicos y estratégicos con precisión, facilitando la comprensión entre personas de diversas especialidades y niveles jerárquicos, lo que fortaleció la toma de decisiones y el avance coordinado del proyecto.</p>
+        <p><b>TB1:</b> Como equipo, hemos concluido que demostrar la capacidad de comunicar nuestras ideas y resultados de manera clara y objetiva es fundamental para lograr una propuesta de valor que permita satisfacer los objetivos y necesidades del proyecto. Por ello, nos hemos enfocado en facilitar la comprensión entre los stakeholders mediante las exposiciones de documentación y el registro de entrevistas, lo cual fortaleció la toma de decisiones y el avance coordinado del proyecto.<br><b>TP:</b> Concluimos que para implementar un producto de software con tecnologías emergentes es necesario contar con un plan de acción, una arquitectura definida y un diseño previamente planteado y aprobado por el equipo.
+        </p>
       </td>
     </tr>
     <tr>
       <td><b>Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerarquicos, en el marco del desarrollo de un proyecto en ingeniería.</b></td>
       <td>
         <p><b>Abraham Ayquipa Ubaldo</b></p>
-        <p><b>TB1:</b> Contribuí a la redacción clara y estructurada de los capítulos iniciales del proyecto, abordando desde la descripción de la startup y los perfiles del equipo hasta el análisis de la problemática y la aplicación del proceso Lean UX. Redacté con objetividad los Problem Statements, Assumptions e Hipótesis, facilitando su comprensión para públicos técnicos y no técnicos. También participé en el análisis competitivo y en la documentación de entrevistas, asegurando que los resultados fueran comunicados de forma precisa y accesible para distintos niveles jerárquicos y especialidades.</p>
+        <p><b>TB1:</b> Contribuí a la redacción clara y estructurada de los capítulos iniciales del proyecto, abordando desde la descripción de la startup y los perfiles del equipo hasta el análisis de la problemática y la aplicación del proceso Lean UX. Redacté con objetividad los Problem Statements, Assumptions e Hipótesis, facilitando su comprensión para públicos técnicos y no técnicos. También participé en el análisis competitivo y en la documentación de entrevistas, asegurando que los resultados fueran comunicados de forma precisa y accesible para distintos niveles jerárquicos y especialidades.
+        <br> <b>TP:</b> Documenté los diseños de los mockups de la aplicación web y de la landing page de manera que sea entendible para todo rango de audiencia.</p>
+        <br>
         <p><b>Andre La torre Soto</b></p>
-        <p><b>TB1:</b> Contribuí a la redacción clara y estructurada de la sección de Needfinding, abarcando desde la identificación del contexto sectorial y los segmentos de usuarios hasta la construcción de User Personas y Journey Mappings. Redacté con objetividad los Problem Statements, asegurando que las necesidades y desafíos de los productores y cooperativas fueran expresados de forma comprensible tanto para públicos técnicos como no técnicos. Asimismo, participé en la síntesis de los hallazgos y en su vinculación con las etapas posteriores del proyecto, promoviendo que los insumos obtenidos orientaran de manera efectiva el diseño y validación de la solución.</p>
+        <p><b>TB1:</b> Contribuí a la redacción clara y estructurada de la sección de Needfinding, abarcando desde la identificación del contexto sectorial y los segmentos de usuarios hasta la construcción de User Personas y Journey Mappings. Redacté con objetividad los Problem Statements, asegurando que las necesidades y desafíos de los productores y cooperativas fueran expresados de forma comprensible tanto para públicos técnicos como no técnicos. Asimismo, participé en la síntesis de los hallazgos y en su vinculación con las etapas posteriores del proyecto, promoviendo que los insumos obtenidos orientaran de manera efectiva el diseño y validación de la solución.
+        <br> <b>TP:</b> Documenté los diseños de los wireframes de la aplicación web y de la landing page de manera que sea entendible para todo rango de audiencia.</p>
+        <br>
         <p><b>Aranda Vallejos, Oscar Gabriel</b></p>
-        <p><b>TB1:</b> Contribuí a la documentación técnica del proyecto mediante la elaboración de diagramas C4 y UML que representan la arquitectura del sistema BeanDetect AI. Redacté documentación detallada de los bounded contexts, aplicando principios de Domain-Driven Design de forma clara y estructurada. Mi escritura técnica abarcó desde especificaciones de alto nivel comprensibles para stakeholders de negocio hasta diagramas de clases detallados para desarrolladores. Aseguré que la documentación arquitectónica fuera accesible para diferentes audiencias, facilitando la comprensión del diseño técnico tanto para especialistas en software como para profesionales de otras áreas del proyecto.</p>
+        <p><b>TB1:</b> Contribuí a la documentación técnica del proyecto mediante la elaboración de diagramas C4 y UML que representan la arquitectura del sistema BeanDetect AI. Redacté documentación detallada de los bounded contexts, aplicando principios de Domain-Driven Design de forma clara y estructurada. Mi escritura técnica abarcó desde especificaciones de alto nivel comprensibles para stakeholders de negocio hasta diagramas de clases detallados para desarrolladores. Aseguré que la documentación arquitectónica fuera accesible para diferentes audiencias, facilitando la comprensión del diseño técnico tanto para especialistas en software como para profesionales de otras áreas del proyecto.
+        <br> <b>TP:</b> Documenté el nivel táctico del diseño de la solución de manera concisa para evitar confusiones y comuniqué por escrito su avance al equipo de desarrollo.</p>
+        <br>
         <p><b>Ventura Chancafe, Eduardo</b></p>
-        <p><b>TB1:</b> Contribuí a la documentación del proyecto mediante la elaboración detallada de scenario mappings As-Is y To-Be, describiendo de manera objetiva y estructurada los procesos actuales y futuros en el sector cafetalero. Redacté análisis comparativos que permitieron identificar oportunidades de mejora y puntos de transformación digital. Mi escritura técnica se enfocó en hacer comprensibles los flujos de trabajo complejos para audiencias diversas, desde productores cafeteros hasta desarrolladores de software. Aseguré que la documentación de procesos sirviera como puente entre las necesidades del negocio y las especificaciones técnicas del sistema.</p>
+        <p><b>TB1:</b> Contribuí a la documentación del proyecto mediante la elaboración detallada de scenario mappings As-Is y To-Be, describiendo de manera objetiva y estructurada los procesos actuales y futuros en el sector cafetalero. Redacté análisis comparativos que permitieron identificar oportunidades de mejora y puntos de transformación digital. Mi escritura técnica se enfocó en hacer comprensibles los flujos de trabajo complejos para audiencias diversas, desde productores cafeteros hasta desarrolladores de software. Aseguré que la documentación de procesos sirviera como puente entre las necesidades del negocio y las especificaciones técnicas del sistema.
+        <br> <b>TP:</b> Documenté las secciones implementadas de la aplicación web para un mejor entendimiento y para una visualización sencilla de sus componentes y páginas.</p>
+        </p>
       </td>
       <td>
-        <p><b>TB1:</b> Como equipo, logramos expresar nuestras ideas y resultados por escrito con claridad y objetividad, adaptando el contenido para que fuera comprensible y relevante para públicos diversos, tanto técnicos como no técnicos. Esta capacidad de comunicación escrita fortaleció la documentación del proyecto de ingeniería, facilitando la toma de decisiones y el trabajo colaborativo entre distintos niveles jerárquicos.</p>
+        <p><b>TB1:</b> Como equipo, logramos expresar nuestras ideas y resultados por escrito con claridad y objetividad, adaptando el contenido para que fuera comprensible y relevante para públicos diversos, tanto técnicos como no técnicos. Con ello, hemos concluido que esta capacidad de comunicación escrita fortaleció la documentación del proyecto de ingeniería, facilitando la toma de decisiones y el trabajo colaborativo.
+        <br> <b>TP:</b> Concluimos que la capacidad de comunicar nuestros avances y resultados de manera escrita permitió al equipo mantener una documentación clara, estructurada y accesible, asegurando la alineación entre las diferentes áreas técnicas y de negocio, lo cual resultó fundamental para la validación y desarrollo del sistema BeanDetect AI.</p>
       </td>
     </tr>
   </tbody>
@@ -3387,6 +3439,10 @@ En esta sección se presentan los diagramas UML a nivel de código para el conte
 Identificar contextos candidatos es un paso clave para gestionar la complejidad en el desarrollo de sistemas. Se trata de un análisis minucioso que busca entender los elementos centrales del sistema y sus interconexiones. A partir de ahí, se procede a agrupar estos elementos en 'contextos delimitados' lógicos y coherentes. Esta separación no solo facilita el diseño y la implementación, sino que también tiene como meta principal potenciar la escalabilidad, el desempeño y la mantenibilidad del sistema resultante.
 
 Identificar sistemas externos es importante para definir con claridad los límites del sistema y comprender las dependencias con su entorno. Este análisis permite reconocer qué funcionalidades provienen de terceros, qué servicios deben integrarse y qué restricciones externas condicionan el diseño. Además, visibiliza riesgos asociados, como la disponibilidad o confiabilidad de dichos sistemas, y orienta la planificación de mecanismos de integración, seguridad y monitoreo. En consecuencia, este paso no solo aporta a la correcta delimitación de responsabilidades, sino que también fortalece la robustez y resiliencia de la arquitectura.
+
+**TP**<br>
+
+En este hito, logramos mostrar una primera versión operativa del sistema BeanDetect AI, desarrollado para identificar y clasificar granos de café. Esta entrega representa un progreso importante, dado que nos posibilitó verificar la arquitectura sugerida, ratificar la integración de los módulos iniciales y recibir comentarios anticipados en relación con la facilidad de uso y la exactitud del sistema. Por lo tanto, hemos llegado a la conclusión de que este resultado es fundamental para el proyecto, ya que establece las bases para el avance de los entregables posteriores y garantiza que las mejoras y optimizaciones se lleven a cabo sobre un prototipo validado.
 
 
 ---
