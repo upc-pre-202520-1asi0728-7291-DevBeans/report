@@ -1132,7 +1132,7 @@ La imagen ilustra el User Journey Map de un productor individual de café durant
 
 ##### Segmento 2: Cooperativas cafeteras
 
-[![Mapa-de-Experiencia-Operativa-de-la-Cooperativa-Agr-cola-De-la-Captura-de-Datos-a-la-Mejora-Continu.png](https://i.postimg.cc/fR4f9M6G/Mapa-de-Experiencia-Operativa-de-la-Cooperativa-Agr-cola-De-la-Captura-de-Datos-a-la-Mejora-Continu.png)](https://postimg.cc/F7ZStXFp)
+[![Mapa-de-Experiencia-Operativa-de-la-Cooperativa-Agr-cola-De-la-Captura-de-Datos-a-la-Mejora-Continu.png](https://i.postimg.cc/9Xk3RNCK/Mapa-de-Experiencia-Operativa-de-la-Cooperativa-Agr-cola-De-la-Captura-de-Datos-a-la-Mejora-Continu.png)](https://postimg.cc/Dm1pR6WP)
 
 <!-- Descripcion -->
 La imagen muestra el User Journey Map de una cooperativa cafetalera, detallando el flujo operativo desde la recepción de lotes de diferentes productores, la coordinación de procesos de clasificación y consolidación de reportes, hasta la integración con sistemas de trazabilidad y la entrega de resultados a los asociados. Se identifican los principales retos, necesidades y oportunidades de optimización en la experiencia colectiva, destacando cómo la digitalización y automatización pueden mejorar la gestión, la transparencia y la toma de decisiones dentro de la cooperativa.
