@@ -12,29 +12,15 @@
     <br><h3> Integrantes: </h3>
 </div>
 
-<div>
-    <table align="center" border="1" cellspacing="0" cellpadding="6">
-        <tr>
-            <th style="text-align:center;">Member</th>
-            <th style="text-align:center;">Code</th>
-        </tr>
-        <tr>
-            <td>Aranda Vallejos, Oscar Gabriel</td>
-            <td>U202218167</td>
-        </tr>
-        <tr>
-            <td>Ayquipa Ubaldo, Abraham Israel</td>
-            <td>U202218475</td>
-        </tr>
-        <tr>
-            <td>Ventura Chancafe, Eduardo Renato</td>
-            <td>U202212645</td>
-        </tr>
-        <tr>
-            <td>La Torre Soto, Andre Sebastian</td>
-            <td>U202217772</td>
-        </tr>
-    </table>
+<div align="center">
+
+| Member                              |    Code    |
+| :---------------------------------- | :--------: |
+| Aranda Vallejos, Oscar Gabriel      | U202218167 |
+| Ayquipa Ubaldo, Abraham Israel                  | U202218475     |
+| Apellidos, Nombres                  | U20...     |
+| Apellidos, Nombres                  | U20...     |
+
 </div>
 
 <h3 align="center">Septiembre, 2025</h3>
@@ -61,14 +47,14 @@ En esta sección se resumen los avances y modificaciones realizadas durante el c
   <tbody>
     <tr>
       <td>1.0</td>
-      <td>16/09/2025</td>
-      <td>Aranda Vallejos, Oscar Gabriel</td>
+      <td>09/09/2025</td>
+      <td>...</td>
       <td>Creación y estructuración del informe</td>
     </tr>
     <tr>
-      <td>1.2</td>
+      <td>1.X</td>
       <td>17/09/2025</td>
-      <td>Ayquipa Ubaldo, Abraham Israel</td>
+      <td>Ayquipa, Abraham</td>
       <td>
         Capítulo I: Introducción,  
         Capítulo II: Requirements Elicitation & Analysis
@@ -146,7 +132,7 @@ En esta sección se resumen los avances y modificaciones realizadas durante el c
 | Repositorio de la documentación    | https://github.com/upc-pre-202520-1asi0728-7291-DevBeans/report         |
 | Organización del proyecto     | https://github.com/upc-pre-202520-1asi0728-7291-DevBeans                    |
 
-[![Captura-de-pantalla-2025-09-20-234150.png](https://i.postimg.cc/WbP9wnFw/Captura-de-pantalla-2025-09-20-234150.png)](https://postimg.cc/grNqY3Kx)
+<!--LO COMPLETARE DESPUES -->
 
 <br>
 
@@ -222,28 +208,18 @@ En esta sección se resumen los avances y modificaciones realizadas durante el c
 - [Capítulo I: Introducción](#capítulo-i-introducción-1)
   - [1.1. Startup Profile](#11-startup-profile)
     - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
-    - [Misión](#misión)
-    - [Visión](#visión)
     - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
   - [1.2. Solution Profile](#12-solution-profile)
     - [1.2.1. Antecedentes y problemática](#121-antecedentes-y-problemática)
-    - [Antecedentes](#antecedentes)
-    - [Problemática (Método 5W y 2H)](#problemática-método-5w-y-2h)
     - [1.2.2. Lean UX Process](#122-lean-ux-process)
       - [1.2.2.1. Lean UX Problem Statements](#1221-lean-ux-problem-statements)
-    - [Problem Statement](#problem-statement)
-    - [Dominio](#dominio)
-    - [Segmentos de Clientes](#segmentos-de-clientes)
-    - [Puntos de Dolor](#puntos-de-dolor)
-    - [Visión / Estrategia](#visión--estrategia)
-    - [Segmento Inicial](#segmento-inicial)
       - [1.2.2.2. Lean UX Assumptions](#1222-lean-ux-assumptions)
-    - [Business Outcomes](#business-outcomes)
-    - [Users](#users)
-    - [User Outcomes \& Benefits](#user-outcomes--benefits)
-    - [Feature Assumptions](#feature-assumptions)
-    - [Business Assumptions](#business-assumptions)
-    - [User Assumptions](#user-assumptions)
+        - [**Business Outcomes:**](#business-outcomes)
+        - [**Users:**](#users)
+        - [**User Outcomes \& Benefits:**](#user-outcomes--benefits)
+        - [**Feature Assumptions:**](#feature-assumptions)
+        - [**Business Assumptions:**](#business-assumptions)
+        - [**User Assumptions:**](#user-assumptions)
       - [1.2.2.3. Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
       - [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)
   - [1.3. Segmentos objetivo](#13-segmentos-objetivo)
@@ -254,8 +230,7 @@ En esta sección se resumen los avances y modificaciones realizadas durante el c
   - [2.2. Entrevistas](#22-entrevistas)
     - [2.2.1. Diseño de entrevistas](#221-diseño-de-entrevistas)
     - [Preguntas Generales](#preguntas-generales)
-    - [Preguntas Segmento 1: Productores pequeños y medianos de café](#preguntas-segmento-1-productores-pequeños-y-medianos-de-café)
-    - [Preguntas Segmento 2: Cooperativas cafetaleras](#preguntas-segmento-2-cooperativas-cafetaleras)
+    - [Preguntas segmento 1: Trabajadores del sector salud](#preguntas-segmento-1-trabajadores-del-sector-salud)
     - [2.2.2. Registro de entrevistas](#222-registro-de-entrevistas)
       - [**Segmento 1: Productores pequeños y medianos de café**](#segmento-1-productores-pequeños-y-medianos-de-café)
       - [**Segmento 2: Cooperativas cafetaleras**](#segmento-2-cooperativas-cafetaleras)
@@ -264,80 +239,14 @@ En esta sección se resumen los avances y modificaciones realizadas durante el c
       - [**Análisis de Preguntas Especificas**](#análisis-de-preguntas-especificas)
   - [2.3. Needfinding](#23-needfinding)
     - [2.3.1. User Personas](#231-user-personas)
-        - [Segmento 1: Productores Individuales](#segmento-1-productores-individuales)
-        - [Segmento 2: Cooperativas cafeteras](#segmento-2-cooperativas-cafeteras)
     - [2.3.2. User Task Matrix](#232-user-task-matrix)
     - [2.3.3. User Journey Mapping](#233-user-journey-mapping)
     - [2.3.4. Empathy Mapping](#234-empathy-mapping)
-        - [Jose Ramirez](#jose-ramirez)
-        - [Luis Torres (Representante de la cooperativa)](#luis-torres-representante-de-la-cooperativa)
     - [2.3.5. As-is Scenario Mapping](#235-as-is-scenario-mapping)
   - [2.4. Ubiquitous Language](#24-ubiquitous-language)
 - [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification-1)
   - [3.1. To-Be Scenario Mapping](#31-to-be-scenario-mapping)
   - [3.2. User Stories](#32-user-stories)
-    - [Gestión de Usuarios](#gestión-de-usuarios)
-    - [Gestión de Lotes de Café](#gestión-de-lotes-de-café)
-    - [Clasificación Automática de Granos](#clasificación-automática-de-granos)
-    - [Reportes y Análisis](#reportes-y-análisis)
-    - [Integración de certificados de trazabilidad](#integración-de-certificados-de-trazabilidad)
-    - [Soporte Accesible](#soporte-accesible)
-    - [Configuración Adaptable del Sistema](#configuración-adaptable-del-sistema)
-    - [Navegación y Funcionalidades de la Landing Page](#navegación-y-funcionalidades-de-la-landing-page)
-    - [Funcionalidades de Idioma y Accesibilidad](#funcionalidades-de-idioma-y-accesibilidad)
-  - [Criterios de Aceptación](#criterios-de-aceptación)
-    - [US01: Registro de Productor Pequeño/Mediano](#us01-registro-de-productor-pequeñomediano)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-1)
-  - [US02: Registro de Cooperativa Cafetalera](#us02-registro-de-cooperativa-cafetalera)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-2)
-  - [US03: Autenticación de Usuarios](#us03-autenticación-de-usuarios)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-3)
-  - [US04: Gestión de Perfil de Productor](#us04-gestión-de-perfil-de-productor)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-4)
-  - [US05: Gestión de Perfil de Cooperativa](#us05-gestión-de-perfil-de-cooperativa)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-5)
-  - [US06: Creación de Lotes](#us06-creación-de-lotes)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-6)
-  - [US07: Edición de Información de Lote](#us07-edición-de-información-de-lote)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-7)
-  - [US08: Visualización de Lotes por Productor](#us08-visualización-de-lotes-por-productor)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-8)
-  - [US09: Visualización de Lotes por Cooperativa](#us09-visualización-de-lotes-por-cooperativa)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-9)
-  - [US10: Búsqueda Rápida de Lotes](#us10-búsqueda-rápida-de-lotes)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-10)
-  - [US11: Eliminación de Lotes](#us11-eliminación-de-lotes)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-11)
-  - [US12: Detección de Defectos Críticos](#us12-detección-de-defectos-críticos)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-12)
-  - [US13: Análisis de Color y Uniformidad](#us13-análisis-de-color-y-uniformidad)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-13)
-  - [US14: Clasificación por Estándares Internacionales](#us14-clasificación-por-estándares-internacionales)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-14)
-  - [US15: Reporte Simple de Clasificación](#us15-reporte-simple-de-clasificación)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-15)
-  - [US16: Reporte Consolidado para Cooperativas](#us16-reporte-consolidado-para-cooperativas)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-16)
-  - [US17: Exportación para Compradores](#us17-exportación-para-compradores)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-17)
-  - [US18: Comparación Histórica de Calidad](#us18-comparación-histórica-de-calidad)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-18)
-  - [US19: Alertas de Calidad Crítica](#us19-alertas-de-calidad-crítica)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-19)
-  - [US20: Códigos QR para Lotes](#us20-códigos-qr-para-lotes)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-20)
-  - [US21: Certificación Digital Automática](#us21-certificación-digital-automática)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-21)
-  - [US22: Integración con Blockchain](#us22-integración-con-blockchain)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-22)
-  - [US23: Reportes de Transparencia para Consumidores](#us23-reportes-de-transparencia-para-consumidores)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-23)
-  - [US24: Soporte por WhatsApp](#us24-soporte-por-whatsapp)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-24)
-  - [US25: Soporte Telefónico en Horarios Rurales](#us25-soporte-telefónico-en-horarios-rurales)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-25)
-  - [US26: Modo Offline para Zonas Rurales](#us26-modo-offline-para-zonas-rurales)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-26)
   - [3.3. Impact Mapping](#33-impact-mapping)
   - [3.4. Product Backlog](#34-product-backlog)
 - [Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design-1)
@@ -364,14 +273,6 @@ En esta sección se resumen los avances y modificaciones realizadas durante el c
 - [Conclusiones](#conclusiones-1)
 - [Bibliografía](#bibliografía-1)
 - [Anexos](#anexos-1)
-  - [Figuras](#figuras)
-    - [TB1](#tb1)
-      - [Database Diagram](#database-diagram)
-      - [Class Diagram](#class-diagram)
-  - [Videos](#videos)
-    - [TB1](#tb1-1)
-      - [Exposición](#exposición)
-      - [Entrevistas de Needfinding](#entrevistas-de-needfinding)
 
 ### [Conclusiones](#conclusiones)
 ### [Bibliografía](#bibliografía)
@@ -395,53 +296,21 @@ ABET – EAC - Student Outcome 5
       <td><b>Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerarquicos, en el marco del desarrollo de un proyecto en ingeniería.</b></td>
       <td>
         <p><b>Abraham Ayquipa Ubaldo</b></p>
-        <p><b>TB1:</b> Durante el desarrollo del proyecto, participé activamente en la elaboración de los capítulos iniciales, presentando con claridad y objetividad los perfiles de la startup y del equipo. Expliqué el enfoque Lean UX y sus componentes clave, como los Problem Statements, Assumptions e Hipótesis, adaptando el lenguaje según el público. También contribuí al análisis competitivo y al diseño de entrevistas, comunicando los resultados de forma estructurada y comprensible para distintos niveles jerárquicos y especialidades.<br>
-        <b>TP:</b> Comuniqué al equipo el cumplimiento y avance del módulo de análisis de imágenes de granos de café, así como las tecnologías y el dataset necesario para continuar con la implementación del sistema.
-        </p>
+        <p><b>TB1:</b> Durante el desarrollo del proyecto, participé activamente en la elaboración de los capítulos iniciales, presentando con claridad y objetividad los perfiles de la startup y del equipo. Expliqué el enfoque Lean UX y sus componentes clave, como los Problem Statements, Assumptions e Hipótesis, adaptando el lenguaje según el público. También contribuí al análisis competitivo y al diseño de entrevistas, comunicando los resultados de forma estructurada y comprensible para distintos niveles jerárquicos y especialidades.</p>
         <br>
-        <p><b>Andre La torre Soto</b></p>
-        <p><b>TB1:</b> Durante el desarrollo del proyecto, participé activamente en la fase de Needfinding, recopilando y organizando información clave sobre el contexto del sector cafetalero. Contribuí en la caracterización de los segmentos de usuarios, identificando sus principales problemáticas y necesidades a través de la construcción de User Personas y Journey Mappings. Además, elaboré los Problem Statements de manera clara y fundamentada, comunicando los hallazgos con un lenguaje accesible tanto para especialistas como para audiencias generales. Finalmente, apoyé en la integración de estos resultados dentro del marco metodológico, asegurando que las evidencias recopiladas sirvieran como base para el planteamiento de hipótesis y el diseño posterior de la solución tecnológica.<br>
-        <b>TP:</b> Comuniqué al equipo el cumplimiento y avance del diseño UX y UI requerido.
-        </p>
-        <br>
-        <p><b>Aranda Vallejos, Oscar Gabriel</b></p>
-        <p><b>TB1:</b> Durante el desarrollo del proyecto, me enfoqué en la arquitectura de software y el diseño técnico del sistema BeanDetect AI. Comuniqué de manera clara y objetiva los conceptos arquitectónicos complejos a través de presentaciones técnicas, explicando la implementación de Domain-Driven Design y los patrones CQRS. Adapté mi comunicación según la audiencia, presentando diagramas C4 y UML de forma comprensible tanto para desarrolladores como para stakeholders no técnicos. Facilité la comprensión de la arquitectura de microservicios y bounded contexts, asegurando que todos los miembros del equipo pudieran contribuir efectivamente al proyecto.
-        <br><b>TP:</b> Comuniqué al equipo el cumplimiento y avance del módulo de clasificación de imágenes de granos de café
-        </p>
-        <br>
-        <p><b>Ventura Chancafe, Eduardo</b></p>
-        <p><b>TB1:</b> Durante el desarrollo del proyecto, me concentré en el análisis y diseño de procesos de negocio a través de la elaboración de scenario mappings As-Is y To-Be. Comuniqué de forma clara y objetiva los flujos de trabajo actuales y los procesos optimizados propuestos, adaptando mi presentación para que fuera comprensible tanto para stakeholders técnicos como de negocio. Expliqué las mejoras y transformaciones digitales necesarias en el sector cafetalero, facilitando la comprensión de cómo la solución tecnológica impactaría en los procesos existentes y generaría valor agregado para los usuarios finales.<br>
-        <b>TP:</b> Comuniqué al equipo el avance de la implementación del diseño del aplicación web en su primera versión para el sprint actual.
-        </p>
       </td>
       <td>
-        <p><b>TB1:</b> Como equipo, hemos concluido que demostrar la capacidad de comunicar nuestras ideas y resultados de manera clara y objetiva es fundamental para lograr una propuesta de valor que permita satisfacer los objetivos y necesidades del proyecto. Por ello, nos hemos enfocado en facilitar la comprensión entre los stakeholders mediante las exposiciones de documentación y el registro de entrevistas, lo cual fortaleció la toma de decisiones y el avance coordinado del proyecto.<br><b>TP:</b> Concluimos que para implementar un producto de software con tecnologías emergentes es necesario contar con un plan de acción, una arquitectura definida y un diseño previamente planteado y aprobado por el equipo.
-        </p>
+        <p><b>TB1:</b> Como equipo, demostramos la capacidad de comunicar nuestras ideas y resultados de manera clara y objetiva, adaptándonos a distintos públicos dentro del entorno del proyecto de ingeniería. A través de exposiciones orales, logramos transmitir conceptos técnicos y estratégicos con precisión, facilitando la comprensión entre personas de diversas especialidades y niveles jerárquicos, lo que fortaleció la toma de decisiones y el avance coordinado del proyecto.</p>
       </td>
     </tr>
     <tr>
       <td><b>Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerarquicos, en el marco del desarrollo de un proyecto en ingeniería.</b></td>
       <td>
         <p><b>Abraham Ayquipa Ubaldo</b></p>
-        <p><b>TB1:</b> Contribuí a la redacción clara y estructurada de los capítulos iniciales del proyecto, abordando desde la descripción de la startup y los perfiles del equipo hasta el análisis de la problemática y la aplicación del proceso Lean UX. Redacté con objetividad los Problem Statements, Assumptions e Hipótesis, facilitando su comprensión para públicos técnicos y no técnicos. También participé en el análisis competitivo y en la documentación de entrevistas, asegurando que los resultados fueran comunicados de forma precisa y accesible para distintos niveles jerárquicos y especialidades.
-        <br> <b>TP:</b> Documenté los diseños de los mockups de la aplicación web y de la landing page de manera que sea entendible para todo rango de audiencia.</p>
-        <br>
-        <p><b>Andre La torre Soto</b></p>
-        <p><b>TB1:</b> Contribuí a la redacción clara y estructurada de la sección de Needfinding, abarcando desde la identificación del contexto sectorial y los segmentos de usuarios hasta la construcción de User Personas y Journey Mappings. Redacté con objetividad los Problem Statements, asegurando que las necesidades y desafíos de los productores y cooperativas fueran expresados de forma comprensible tanto para públicos técnicos como no técnicos. Asimismo, participé en la síntesis de los hallazgos y en su vinculación con las etapas posteriores del proyecto, promoviendo que los insumos obtenidos orientaran de manera efectiva el diseño y validación de la solución.
-        <br> <b>TP:</b> Documenté los diseños de los wireframes de la aplicación web y de la landing page de manera que sea entendible para todo rango de audiencia.</p>
-        <br>
-        <p><b>Aranda Vallejos, Oscar Gabriel</b></p>
-        <p><b>TB1:</b> Contribuí a la documentación técnica del proyecto mediante la elaboración de diagramas C4 y UML que representan la arquitectura del sistema BeanDetect AI. Redacté documentación detallada de los bounded contexts, aplicando principios de Domain-Driven Design de forma clara y estructurada. Mi escritura técnica abarcó desde especificaciones de alto nivel comprensibles para stakeholders de negocio hasta diagramas de clases detallados para desarrolladores. Aseguré que la documentación arquitectónica fuera accesible para diferentes audiencias, facilitando la comprensión del diseño técnico tanto para especialistas en software como para profesionales de otras áreas del proyecto.
-        <br> <b>TP:</b> Documenté el nivel táctico del diseño de la solución de manera concisa para evitar confusiones y comuniqué por escrito su avance al equipo de desarrollo.</p>
-        <br>
-        <p><b>Ventura Chancafe, Eduardo</b></p>
-        <p><b>TB1:</b> Contribuí a la documentación del proyecto mediante la elaboración detallada de scenario mappings As-Is y To-Be, describiendo de manera objetiva y estructurada los procesos actuales y futuros en el sector cafetalero. Redacté análisis comparativos que permitieron identificar oportunidades de mejora y puntos de transformación digital. Mi escritura técnica se enfocó en hacer comprensibles los flujos de trabajo complejos para audiencias diversas, desde productores cafeteros hasta desarrolladores de software. Aseguré que la documentación de procesos sirviera como puente entre las necesidades del negocio y las especificaciones técnicas del sistema.
-        <br> <b>TP:</b> Documenté las secciones implementadas de la aplicación web para un mejor entendimiento y para una visualización sencilla de sus componentes y páginas.</p>
-        </p>
+        <p><b>TB1:</b> Contribuí a la redacción clara y estructurada de los capítulos iniciales del proyecto, abordando desde la descripción de la startup y los perfiles del equipo hasta el análisis de la problemática y la aplicación del proceso Lean UX. Redacté con objetividad los Problem Statements, Assumptions e Hipótesis, facilitando su comprensión para públicos técnicos y no técnicos. También participé en el análisis competitivo y en la documentación de entrevistas, asegurando que los resultados fueran comunicados de forma precisa y accesible para distintos niveles jerárquicos y especialidades..</p>
       </td>
       <td>
-        <p><b>TB1:</b> Como equipo, logramos expresar nuestras ideas y resultados por escrito con claridad y objetividad, adaptando el contenido para que fuera comprensible y relevante para públicos diversos, tanto técnicos como no técnicos. Con ello, hemos concluido que esta capacidad de comunicación escrita fortaleció la documentación del proyecto de ingeniería, facilitando la toma de decisiones y el trabajo colaborativo.
-        <br> <b>TP:</b> Concluimos que la capacidad de comunicar nuestros avances y resultados de manera escrita permitió al equipo mantener una documentación clara, estructurada y accesible, asegurando la alineación entre las diferentes áreas técnicas y de negocio, lo cual resultó fundamental para la validación y desarrollo del sistema BeanDetect AI.</p>
+        <p><b>TB1:</b> Como equipo, logramos expresar nuestras ideas y resultados por escrito con claridad y objetividad, adaptando el contenido para que fuera comprensible y relevante para públicos diversos, tanto técnicos como no técnicos. Esta capacidad de comunicación escrita fortaleció la documentación del proyecto de ingeniería, facilitando la toma de decisiones y el trabajo colaborativo entre distintos niveles jerárquicos.</p>
       </td>
     </tr>
   </tbody>
@@ -472,8 +341,8 @@ Convertirnos en la plataforma líder en automatización y aseguramiento de calid
 | :------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | <img src="https://i.postimg.cc/6qRCcvNF/Captura-de-pantalla-2024-09-08-151747.png"> | **Aranda Vallejos, Oscar Gabriel** <br> Tengo 20 años y soy estudiante de la carrera de Ingeniería de Software, poseo conocimientos básicos en Unity, C++ y diseño web. Me considero una persona preparada y perseverante en cumplir con los objetivos del proyecto; además, siempre estoy dispuesto a aprender nuevos conceptos.            |
 | <img src="./assets/images/members/abrahamAyquipa.jpeg"> | **Ayquipa Ubaldo, Abraham Israel** <br> Soy estudiante de la carrera de ingeniería de software, actualmente cursando el 8to ciclo de carrera. Aunque soy fullstack developer, tengo más inclinación por el desarrollo frontend. Mi stack arranca con Next.js(Framework de React) + Typescript para el front y Node.js + Express.js + MongoDB para el back. Como todo buen programador, me considero un eterno estudiante, por lo que me encuentro en este momento estudiando Docker y Redis.. |
-| <img src="./assets/images/members/Latorre.png"> | **La torre, Andre Sebastian** <br> Soy André Sebastián La Torre Soto, actualmente me encuentro en el octavo ciclo de la carrera de Ingeniería de Software. Durante mi transcurso en la universidad he logrado aprender acerca de varios lenguajes y herramientas como pueden ser Python, C++, JavaScript, SQL, desarrollo web y móvil. Elegí esta carrera por mi afinidad con las matemáticas y las nuevas tecnologías. Soy alguien que disfruta el aprender y mejorar lo aprendido, a pesar de que esto a veces resulte difícil. Espero poder aportar de manera positiva en este grupo para que juntos todos podamos alcanzar nuestras metas.         |
-| <img src="./assets/images/members/eduardoVentura.jpg"> | **Eduardo, Eduardo** <br> Estudiante universitario que cursa su 8vo ciclo. Dentro del startup me encargo con el desarrollo del diseño ,QA y gestión del equipo, pues tengo conocimientos adicionales a los de mi sector. Además, apoyaré en el desarrollo del código trabajando de forma cohesionada con mis compañeros. Asimismo, cuento con conocimientos en herramientas como HTML, CSS, JavaScript, Python, C++, Cypress, NodeJs, NestJs y Agile Project Management. |
+| photo | **Apellido, Nombres** <br> Tengo 21 años, actualmente me encuentro cruzando mi 7mo ciclo de la carrera de ingeniería de software en la UPC. Me gusta jugar videojuegos y practicar natación, soy un gran aficionado de la tecnología y del ensamblaje de computadoras. Me considero una persona dispuesta siempre a aprender tecnologías nuevas, creativa y responsable.         |
+| photo | **Apellido, Nombres** <br> Me gusta mucho aprender cosas nuevas sobre mi carrera, trabajar en equipo de manera proactiva y lograr los objetivos junto a mis compañeros. Me considero una persona ambiciosa, ya que mi meta es llegar a obtener un alto cargo en una empresa que me agrade o formar mi propia empresa relacionada al software. Gracias a ello siempre podré trabajar en algo que me guste y llevar una vida cómoda. Cuento con conocimientos de C + + y HTML. |
 
 
 ## 1.2. Solution Profile
@@ -819,38 +688,24 @@ En este capítulo, nos centraremos en los requerimientos que necesita cumplir nu
 En esta parte se registran las preguntas empleadas durante las entrevistas, incluyendo tanto aquellas de carácter general que aplican a todos los segmentos objetivo como las formuladas específicamente para cada uno de ellos.
 
 ### Preguntas Generales
-1. ¿Cuál es tu nombre completo?
+1. ¿Cuál es tu nombre?
 2. ¿Qué edad tienes?
 3. ¿Dónde vives actualmente?
-4. ¿Cuál es tu ocupación principal?
-5. ¿Qué nivel de experiencia tienes con tecnologías digitales (smartphones, aplicaciones web, etc.)?
-6. ¿Con qué frecuencia utilizas aplicaciones móviles en tu trabajo diario?
-7. ¿Qué dispositivos tecnológicos utilizas regularmente?
-8. ¿Cuáles son los principales desafíos que enfrentas en tu trabajo relacionado con el café?
 
-### Preguntas Segmento 1: Productores pequeños y medianos de café
-1. ¿Cuántos años llevas dedicándote a la producción de café?
-2. ¿Cuál es el tamaño aproximado de tu plantación de café?
-3. ¿Cuál es el principal desafío que enfrentas en la clasificación de granos de café post-cosecha?
-4. ¿Cómo realizas actualmente la clasificación de granos y qué dificultades encuentras en ese proceso?
-5. ¿Qué impacto económico tienen los rechazos de lotes debido a problemas de calidad en el mercado internacional?
-6. ¿Qué porcentaje de tu producción se ve afectado por problemas de clasificación?
-7. ¿Qué limitaciones de recursos enfrentas para acceder a tecnologías de clasificación avanzadas?
-8. ¿Qué tan abierto estarías a utilizar una tecnología que automatice la clasificación de granos con inteligencia artificial?
-9. ¿Qué características esperarías de una solución tecnológica que sea asequible y fácil de usar?
-10. ¿Cómo crees que una mejor clasificación podría ayudarte a posicionar tu café con estándares de calidad consistentes?
+### Preguntas segmento 1: Trabajadores del sector salud
+1. ¿Cuál es el principal desafío que enfrenta actualmente en la clasificación de granos de café post-cosecha?
 
-### Preguntas Segmento 2: Cooperativas cafetaleras
-1. ¿Cuántos productores están asociados a su cooperativa?
-2. ¿Qué volúmenes de café procesan mensualmente?
-3. ¿Cuál es su rol principal en la cadena de valor del café (exportación, comercialización nacional, etc.)?
-4. ¿Qué desafíos enfrentan al estandarizar la calidad entre lotes de diferentes productores?
-5. ¿Cómo impacta la variabilidad en la calidad del café en sus operaciones comerciales?
-6. ¿Qué herramientas utilizan actualmente para garantizar la calidad del café de sus asociados?
-7. ¿Qué tan importante es para ustedes contar con sistemas de trazabilidad para brindar transparencia a compradores?
-8. ¿Estarían interesados en una solución costo-eficiente que ayude a estandarizar la calidad entre diferentes lotes?
-9. ¿Qué funcionalidades valorarían más en una plataforma que se integre con sistemas de trazabilidad?
-10. ¿Cómo creen que una mejor clasificación automática podría maximizar el valor del café en mercados internacionales?
+2. ¿Cómo realizan actualmente la clasificación de granos y qué dificultades encuentran en ese proceso?
+
+3. ¿Qué impacto económico tienen los rechazos de lotes debido a problemas de calidad?
+
+4. ¿Qué tan abierto estaría a utilizar una tecnología que automatice la clasificación de granos con inteligencia artificial?
+
+5. ¿Qué características o beneficios esperaría de una herramienta tecnológica para apoyar la selección y clasificación del café?
+
+6. ¿Qué nivel de experiencia tiene usted o su equipo con dispositivos tecnológicos como smartphones, cámaras digitales o plataformas web?
+
+7. ¿Qué rango de costo consideraría razonable para una solución que le ayude a mejorar la calidad y reducir pérdidas en su café?
 
 ### 2.2.2. Registro de entrevistas
 
@@ -858,31 +713,31 @@ En esta parte se registran las preguntas empleadas durante las entrevistas, incl
 
 **Entrevista 1:**
 
-- **Nombres:** Jean Piere
-- **Apellidos:** Grandez Mansilla
-- **Edad:** 22 años
-- **Lugar de residencia:** Jaén, Cajamarca
+- **Nombres:** xxxxxxxxxx
+- **Apellidos:** xxxxxxxxxx
+- **Edad:** xxxxxxxxxx
+- **Lugar de residencia:** xxxxxxxxxx, xxxxxxxxxx
 
 **Evidencia de la entrevista:**  
-<img src="assets/images/entrevistas/entrevista1JeanPiere.png">
+<img src="assets/images/interviews/>
 
-**Enlace de la entrevista:** [Entrevista Segmento 1 Jean Piere](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212645_upc_edu_pe/Edy04IJqoWNPvbTURmUjrbkBJ_mygJjSHfwF0REPbK_U7w?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=x5l6mm)
+**Enlace de la entrevista:** []()
 **Resumen de la entrevista:**  
-Jean Piere, de 22 años y encargado de logística en el cafetal familiar en Jaén, identifica la clasificación manual de granos como su principal cuello de botella. Describe el proceso como lento, subjetivo y costoso, generando pérdidas económicas de hasta un 25% por castigos en el precio. Muestra un gran interés en adoptar una solución tecnológica que ofrezca precisión, velocidad y, fundamentalmente, reportes de datos para mejorar la negociación y la eficiencia. Considera clave un modelo de negocio accesible, como una suscripción, con un claro retorno de inversión para profesionalizar la finca.
+xxxxxxxxxx
 
 **Entrevista 2:**
 
-- **Nombres:**  Jorge Sanchez
-- **Apellidos:** Guiterrez Ramirez
-- **Edad:** 38
-- **Lugar de residencia:** Cajamarca, Perú.
+- **Nombres:** xxxxxxxxxx
+- **Apellidos:** xxxxxxxxxx
+- **Edad:** xxxxxxxxxx
+- **Lugar de residencia:** xxxxxxxxxx, xxxxxxxxxx
 
 **Evidencia de la entrevista:**  
-<img src="assets/images/entrevistas/entrevista2.png">
+<img src="assets/images/interviews/>
 
-**Enlace de la entrevista:** [Entrevista Segmento 1 Jorge Sanchez](https://upcedupe-my.sharepoint.com/personal/u202218167_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202218167%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202520%2D1asi0728%2D7291%2DDevBeans%2Dneedfinding%2Dsprint%2D1%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ea6af07d3%2D9d5c%2D4d3b%2D9bad%2D4820684ce577)
+**Enlace de la entrevista:** []()
 **Resumen de la entrevista:**  
-Pedro es productor de café desde hace más de 20 años y administra una finca de 3 hectáreas. Realiza la clasificación de granos de forma manual con su familia, lo que describe como un proceso lento y cansado. Señala que a veces recibe hasta un 20% menos de pago cuando no cumple con los estándares de calidad. Estima que entre el 10% y 15% de su producción se ve afectada por problemas de clasificación. Indica que estaría abierto a usar una tecnología con inteligencia artificial siempre que sea sencilla y asequible.
+xxxxxxxxxx
 
 #### **Segmento 2: Cooperativas cafetaleras**
 
@@ -1327,7 +1182,7 @@ Como productor pequeño o mediano de café, deseo registrarme en BeanDetect AI c
 
 ---
 
-### US02: Registro de Cooperativa Cafetalera
+## US02: Registro de Cooperativa Cafetalera
 **Relacionado con (Epic ID):** EP01  
 **Descripción:**  
 Como administrador de cooperativa cafetalera, deseo registrar mi organización para gestionar la clasificación de múltiples productores asociados.
@@ -1346,7 +1201,7 @@ Como administrador de cooperativa cafetalera, deseo registrar mi organización p
 
 ---
 
-### US03: Autenticación de Usuarios
+## US03: Autenticación de Usuarios
 **Relacionado con (Epic ID):** EP01  
 **Descripción:**  
 Como usuario registrado (productor o cooperativa), deseo iniciar sesión de forma segura para acceder a los servicios de clasificación según mi perfil.
@@ -1373,7 +1228,7 @@ Como usuario registrado (productor o cooperativa), deseo iniciar sesión de form
 
 ---
 
-### US04: Gestión de Perfil de Productor
+## US04: Gestión de Perfil de Productor
 **Relacionado con (Epic ID):** EP01  
 **Descripción:**  
 Como productor pequeño/mediano, deseo mantener actualizada la información de mi finca para personalizar mi experiencia.
@@ -1394,7 +1249,7 @@ Como productor pequeño/mediano, deseo mantener actualizada la información de m
 
 ---
 
-### US05: Gestión de Perfil de Cooperativa
+## US05: Gestión de Perfil de Cooperativa
 **Relacionado con (Epic ID):** EP01  
 **Descripción:**  
 Como cooperativa, deseo gestionar información de mis productores asociados y volúmenes de procesamiento para optimizar operaciones.
@@ -1413,7 +1268,7 @@ Como cooperativa, deseo gestionar información de mis productores asociados y vo
 
 ---
 
-### US06: Creación de Lotes
+## US06: Creación de Lotes
 **Relacionado con (Epic ID):** EP02  
 **Descripción:**  
 Como productor o cooperativa, deseo registrar mis lotes con información básica para organizar mi producción de forma eficiente.
@@ -1434,7 +1289,7 @@ Como productor o cooperativa, deseo registrar mis lotes con información básica
 
 ---
 
-### US07: Edición de Información de Lote
+## US07: Edición de Información de Lote
 **Relacionado con (Epic ID):** EP02  
 **Descripción:**  
 Como productor o cooperativa, deseo editar datos de mis lotes cuando detecte errores o cambios en la información de cosecha.
@@ -1455,7 +1310,7 @@ Como productor o cooperativa, deseo editar datos de mis lotes cuando detecte err
 
 ---
 
-### US08: Visualización de Lotes por Productor
+## US08: Visualización de Lotes por Productor
 **Relacionado con (Epic ID):** EP02  
 **Descripción:**  
 Como productor, deseo ver todos mis lotes en una vista simple para revisar mi histórico de producción sin complejidad técnica.
@@ -1479,7 +1334,7 @@ Como productor, deseo ver todos mis lotes en una vista simple para revisar mi hi
 
 ---
 
-### US09: Visualización de Lotes por Cooperativa
+## US09: Visualización de Lotes por Cooperativa
 **Relacionado con (Epic ID):** EP02  
 **Descripción:**  
 Como cooperativa, deseo visualizar lotes agrupados por productor asociado para facilitar la gestión y seguimiento de múltiples orígenes.
@@ -1503,7 +1358,7 @@ Como cooperativa, deseo visualizar lotes agrupados por productor asociado para f
 
 ---
 
-### US10: Búsqueda Rápida de Lotes
+## US10: Búsqueda Rápida de Lotes
 **Relacionado con (Epic ID):** EP02  
 **Descripción:**  
 Como usuario, deseo buscar lotes por fecha, productor o variedad para acceder rápidamente a información específica.
@@ -1526,7 +1381,7 @@ Como usuario, deseo buscar lotes por fecha, productor o variedad para acceder r�
 
 ---
 
-### US11: Eliminación de Lotes
+## US11: Eliminación de Lotes
 **Relacionado con (Epic ID):** EP02  
 **Descripción:**  
 Como usuario, deseo eliminar lotes erróneos o duplicados para mantener limpia mi base de datos de producción.
@@ -1551,7 +1406,7 @@ Como usuario, deseo eliminar lotes erróneos o duplicados para mantener limpia m
 
 ---
 
-### US12: Detección de Defectos Críticos
+## US12: Detección de Defectos Críticos
 **Relacionado con (Epic ID):** EP03  
 **Descripción:**  
 Como productor o cooperativa, deseo que el sistema detecte defectos que causan rechazos internacionales para prevenir pérdidas económicas.
@@ -1569,7 +1424,7 @@ Como productor o cooperativa, deseo que el sistema detecte defectos que causan r
 
 ---
 
-### US13: Análisis de Color y Uniformidad
+## US13: Análisis de Color y Uniformidad
 **Relacionado con (Epic ID):** EP03  
 **Descripción:**  
 Como productor o cooperativa, deseo medir objetivamente color y tamaño para estandarizar calidad entre lotes.
@@ -1592,7 +1447,7 @@ Como productor o cooperativa, deseo medir objetivamente color y tamaño para est
 
 ---
 
-### US14: Clasificación por Estándares Internacionales
+## US14: Clasificación por Estándares Internacionales
 **Relacionado con (Epic ID):** EP03  
 **Descripción:**  
 Como productor o cooperativa, deseo obtener clasificación automática según estándares de exportación reconocidos para acceder a mejores precios.
@@ -1615,7 +1470,7 @@ Como productor o cooperativa, deseo obtener clasificación automática según es
 
 ---
 
-### US15: Reporte Simple de Clasificación
+## US15: Reporte Simple de Clasificación
 **Relacionado con (Epic ID):** EP04  
 **Descripción:**  
 Como productor, deseo un reporte fácil de entender que muestre el porcentaje de café apto para exportación vs. mercado local.
@@ -1638,7 +1493,7 @@ Como productor, deseo un reporte fácil de entender que muestre el porcentaje de
 
 ---
 
-### US16: Reporte Consolidado para Cooperativas
+## US16: Reporte Consolidado para Cooperativas
 **Relacionado con (Epic ID):** EP04  
 **Descripción:**  
 Como cooperativa, deseo reportes consolidados que comparen la calidad entre diferentes productores asociados.
@@ -1656,7 +1511,7 @@ Como cooperativa, deseo reportes consolidados que comparen la calidad entre dife
 
 ---
 
-### US17: Exportación para Compradores
+## US17: Exportación para Compradores
 **Relacionado con (Epic ID):** EP04  
 **Descripción:**  
 Como productor o cooperativa, deseo exportar certificados de calidad en formatos reconocidos internacionalmente para presentar a compradores.
@@ -1674,7 +1529,7 @@ Como productor o cooperativa, deseo exportar certificados de calidad en formatos
 
 ---
 
-### US18: Comparación Histórica de Calidad
+## US18: Comparación Histórica de Calidad
 **Relacionado con (Epic ID):** EP04  
 **Descripción:**  
 Como cooperativa, deseo comparar calidad por temporadas para identificar patrones y mejorar prácticas agrícolas.
@@ -1692,7 +1547,7 @@ Como cooperativa, deseo comparar calidad por temporadas para identificar patrone
 
 ---
 
-### US19: Alertas de Calidad Crítica
+## US19: Alertas de Calidad Crítica
 **Relacionado con (Epic ID):** EP04  
 **Descripción:**  
 Como usuario, deseo recibir alertas inmediatas cuando un lote tenga alto porcentaje de defectos para tomar acciones correctivas.
@@ -1710,7 +1565,7 @@ Como usuario, deseo recibir alertas inmediatas cuando un lote tenga alto porcent
 
 ---
 
-### US20: Códigos QR para Lotes
+## US20: Códigos QR para Lotes
 **Relacionado con (Epic ID):** EP05  
 **Descripción:**  
 Como productor o cooperativa, deseo generar códigos QR únicos por lote que permitan a compradores verificar origen, calidad y proceso de clasificación.
@@ -1728,7 +1583,7 @@ Como productor o cooperativa, deseo generar códigos QR únicos por lote que per
 
 ---
 
-### US21: Certificación Digital Automática
+## US21: Certificación Digital Automática
 **Relacionado con (Epic ID):** EP05  
 **Descripción:**  
 Como cooperativa que exporta, deseo generar certificados digitales de calidad automáticamente para agilizar procesos de comercialización internacional.
@@ -1751,7 +1606,7 @@ Como cooperativa que exporta, deseo generar certificados digitales de calidad au
 
 ---
 
-### US22: Integración con Blockchain
+## US22: Integración con Blockchain
 **Relacionado con (Epic ID):** EP05  
 **Descripción:**  
 Como cooperativa innovadora, deseo la opción de registrar datos de clasificación en blockchain para mayor transparencia y confianza del mercado.
@@ -1769,7 +1624,7 @@ Como cooperativa innovadora, deseo la opción de registrar datos de clasificaci�
 
 ---
 
-### US23: Reportes de Transparencia para Consumidores
+## US23: Reportes de Transparencia para Consumidores
 **Relacionado con (Epic ID):** EP05  
 **Descripción:**  
 Como cooperativa con marca propia, deseo generar reportes de transparencia que mis consumidores finales puedan consultar sobre el origen del café.
@@ -1787,7 +1642,7 @@ Como cooperativa con marca propia, deseo generar reportes de transparencia que m
 
 ---
 
-### US24: Soporte por WhatsApp
+## US24: Soporte por WhatsApp
 **Relacionado con (Epic ID):** EP06  
 **Descripción:**  
 Como usuario con acceso limitado a internet, deseo recibir soporte técnico básico a través de WhatsApp para resolver dudas rápidamente.
@@ -1805,7 +1660,7 @@ Como usuario con acceso limitado a internet, deseo recibir soporte técnico bás
 
 ---
 
-### US25: Soporte Telefónico en Horarios Rurales
+## US25: Soporte Telefónico en Horarios Rurales
 **Relacionado con (Epic ID):** EP06  
 **Descripción:**  
 Como productor en zona rural, deseo soporte telefónico en horarios que se adapten a mis rutinas de trabajo de campo.
@@ -1828,7 +1683,7 @@ Como productor en zona rural, deseo soporte telefónico en horarios que se adapt
 
 ---
 
-### US26: Modo Offline para Zonas Rurales
+## US26: Modo Offline para Zonas Rurales
 **Relacionado con (Epic ID):** EP07  
 **Descripción:**  
 Como productor en zona con conectividad limitada, deseo usar funcionalidades básicas de clasificación sin requerir internet constante.
@@ -1853,7 +1708,17 @@ Como productor en zona con conectividad limitada, deseo usar funcionalidades bá
 
 ## 3.3. Impact Mapping
 
-<!-- Contenido de Impact Mapping -->
+**Segmento 1: Productores Individuales**
+
+[![Impact-Map-Productores.png](https://i.postimg.cc/FRQyBvy0/Impact-Map-Productores.png)](https://postimg.cc/XZQBrTDv)
+
+La imagen muestra el Impact Mapping para el segmento de productores individuales de café. Se visualizan los objetivos principales del sistema, los actores involucrados (productores), los impactos esperados en sus actividades y las funcionalidades clave que permitirán alcanzar dichos objetivos. El mapa ayuda a entender cómo la solución BeanDetect AI contribuye a reducir pérdidas económicas, mejorar la calidad del café y facilitar el acceso a mercados internacionales, estableciendo una relación clara entre acciones, resultados y beneficios para el productor.
+
+**Segmento 2: Cooperativas cafeteras**
+
+[![Impact-Map-Cooperativas.png](https://i.postimg.cc/HxCwhmwZ/Impact-Map-Cooperativas.png)](https://postimg.cc/rdQRDvYx)
+
+La imagen presenta el Impact Mapping para el segmento de cooperativas cafetaleras. En el diagrama se identifican los objetivos estratégicos de la cooperativa, los actores clave (administradores, técnicos y productores asociados), los impactos deseados en la gestión colectiva y las funcionalidades del sistema que permiten lograrlos. El mapa destaca cómo la solución facilita la estandarización de calidad, la optimización de procesos grupales, la generación de reportes consolidados y la integración con sistemas de trazabilidad, fortaleciendo la competitividad y transparencia de la cooperativa en el mercado.
 
 ## 3.4. Product Backlog
 
@@ -1890,6 +1755,7 @@ Asimismo, utilizamos la herramienta "Planning Poker Online" para poder votar en 
 | 26     | US03           | Autenticación de Usuarios                 | Como usuario registrado (productor o cooperativa), deseo iniciar sesión de forma segura para acceder a los servicios de clasificación según mi perfil. | 2            |
 
 ---
+
 
 # Capítulo IV: Solution Software Design
 
@@ -1968,16 +1834,53 @@ Asimismo, utilizamos la herramienta "Planning Poker Online" para poder votar en 
 
 # Conclusiones
 
-<!-- Contenido de las conclusiones -->
+**TB1**<br>
+
+Identificar contextos candidatos es un paso clave para gestionar la complejidad en el desarrollo de sistemas. Se trata de un análisis minucioso que busca entender los elementos centrales del sistema y sus interconexiones. A partir de ahí, se procede a agrupar estos elementos en 'contextos delimitados' lógicos y coherentes. Esta separación no solo facilita el diseño y la implementación, sino que también tiene como meta principal potenciar la escalabilidad, el desempeño y la mantenibilidad del sistema resultante.
+
+Identificar sistemas externos es importante para definir con claridad los límites del sistema y comprender las dependencias con su entorno. Este análisis permite reconocer qué funcionalidades provienen de terceros, qué servicios deben integrarse y qué restricciones externas condicionan el diseño. Además, visibiliza riesgos asociados, como la disponibilidad o confiabilidad de dichos sistemas, y orienta la planificación de mecanismos de integración, seguridad y monitoreo. En consecuencia, este paso no solo aporta a la correcta delimitación de responsabilidades, sino que también fortalece la robustez y resiliencia de la arquitectura.
+
+**TP**<br>
+
+En este hito, logramos mostrar una primera versión operativa del sistema BeanDetect AI, desarrollado para identificar y clasificar granos de café. Esta entrega representa un progreso importante, dado que nos posibilitó verificar la arquitectura sugerida, ratificar la integración de los módulos iniciales y recibir comentarios anticipados en relación con la facilidad de uso y la exactitud del sistema. Por lo tanto, hemos llegado a la conclusión de que este resultado es fundamental para el proyecto, ya que establece las bases para el avance de los entregables posteriores y garantiza que las mejoras y optimizaciones se lleven a cabo sobre un prototipo validado.
 
 ---
 
 # Bibliografía
+- Brown, S. (s.f.). The C4 model. https://c4model.com/
+- Chollet, F. (2018). Deep Learning with Python. https://www.manning.com/books/deep-learning-with-python
+- OpenCV Team. (s.f.). OpenCV Documentation. https://docs.opencv.org/
+- Microsoft Azure. (s.f.). Computer Vision API. https://learn.microsoft.com/en-us/azure/cognitive-services/computer-vision/
+- GitHub. (s.f.). Awesome Computer Vision. https://github.com/jbhuang0604/awesome-computer-vision
+- FAO. (2021). Digital Agriculture Report: Rural transformation enabled by digital tools. https://www.fao.org/documents/card/en/c/cb4476en
+- GS1. (s.f.). Traceability in Agriculture. https://www.gs1.org/industries/agriculture
+- TensorFlow. (s.f.). TensorFlow for Agriculture. https://www.tensorflow.org/agriculture
+- ISO. (s.f.). ISO 22000: Food safety management systems. https://www.iso.org/iso-22000-food-safety-management.html
 
-<!-- Contenido de la bibliografía -->
+DevBeans. (2025). BeanDetect AI Technical Overview. [Documento interno]
 
 ---
 
 # Anexos
 
-<!-- Contenido de los anexos -->
+## Figuras
+
+### TB1
+
+#### Database Diagram
+[![1-11zon.png](https://i.postimg.cc/8z7mtH9X/1-11zon.png)](https://postimg.cc/G41Dpkcv)
+
+#### Class Diagram
+
+[![beans-diagram-class.png](https://i.postimg.cc/h4M8n6q3/beans-diagram-class.png)](https://postimg.cc/Z0BvFfnr)
+
+## Videos
+
+### TB1
+
+#### Exposición
+
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218167_upc_edu_pe/EbnQ4lfhO5xMgzpNYDoHRPgBwUoL_oFi_Eh4wyIIYKtItQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=pE1xYm
+
+#### Entrevistas de Needfinding
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218167_upc_edu_pe/EbacacS3n11GmQli8ek0ltABesH4olt1EDMLUzs-FrNg6w?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=xJtssj
