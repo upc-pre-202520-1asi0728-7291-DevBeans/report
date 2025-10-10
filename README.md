@@ -1792,7 +1792,17 @@ Como productor en zona con conectividad limitada, deseo usar funcionalidades bá
 
 ## 3.3. Impact Mapping
 
-<!-- Contenido de Impact Mapping -->
+**Segmento 1: Productores Individuales**
+
+[![Impact-Map-Productores.png](https://i.postimg.cc/FRQyBvy0/Impact-Map-Productores.png)](https://postimg.cc/XZQBrTDv)
+
+La imagen muestra el Impact Mapping para el segmento de productores individuales de café. Se visualizan los objetivos principales del sistema, los actores involucrados (productores), los impactos esperados en sus actividades y las funcionalidades clave que permitirán alcanzar dichos objetivos. El mapa ayuda a entender cómo la solución BeanDetect AI contribuye a reducir pérdidas económicas, mejorar la calidad del café y facilitar el acceso a mercados internacionales, estableciendo una relación clara entre acciones, resultados y beneficios para el productor.
+
+**Segmento 2: Cooperativas cafeteras**
+
+[![Impact-Map-Cooperativas.png](https://i.postimg.cc/HxCwhmwZ/Impact-Map-Cooperativas.png)](https://postimg.cc/rdQRDvYx)
+
+La imagen presenta el Impact Mapping para el segmento de cooperativas cafetaleras. En el diagrama se identifican los objetivos estratégicos de la cooperativa, los actores clave (administradores, técnicos y productores asociados), los impactos deseados en la gestión colectiva y las funcionalidades del sistema que permiten lograrlos. El mapa destaca cómo la solución facilita la estandarización de calidad, la optimización de procesos grupales, la generación de reportes consolidados y la integración con sistemas de trazabilidad, fortaleciendo la competitividad y transparencia de la cooperativa en el mercado.
 
 ## 3.4. Product Backlog
 
