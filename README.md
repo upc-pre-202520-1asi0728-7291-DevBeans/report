@@ -1092,27 +1092,61 @@ XXXXXXXXXXXXXXXXX
 
 <img src="assets/images/needfinding/UserPersona1.png">
 
+<!-- Descripcion de imagen -->
+La imagen muestra la ficha de un User Persona representativo de los productores individuales de café. Se detallan datos demográficos, nivel de experiencia, principales necesidades, frustraciones y objetivos relacionados con la clasificación post-cosecha. Incluye una fotografía ilustrativa, un resumen de su contexto laboral y las motivaciones que lo impulsan a buscar soluciones tecnológicas accesibles para mejorar la calidad de su producción.
 
 ##### Segmento 2: Cooperativas cafeteras
 
 <img src="assets/images/needfinding/UserPersona2.png">
 
+<!-- Descripcion de imagen -->
+La imagen presenta el perfil de un User Persona correspondiente a una cooperativa cafetalera. Se describen características clave como el número de asociados, los retos para estandarizar la calidad entre lotes, necesidades de trazabilidad y expectativas respecto a la adopción de tecnología. El perfil incluye información sobre el rol del representante, sus responsabilidades y los beneficios esperados al implementar herramientas de clasificación automatizada y generación de reportes para la cooperativa.
+
+
 ### 2.3.2. User Task Matrix
 
+##### Segmento 1: Productores Individuales
+
 <img src="assets/images/needfinding/UserTaxmatriz.png">
+<!-- Descripcion -->
+La imagen muestra la matriz de tareas (User Task Matrix) correspondiente a los productores individuales de café. En ella se identifican y organizan las principales actividades que estos usuarios realizan durante el proceso de clasificación post-cosecha, como el registro de lotes, la inspección manual de granos, el registro de defectos y la generación de reportes. La matriz permite visualizar el flujo de tareas, su frecuencia y el nivel de dificultad percibido, ayudando a detectar oportunidades de mejora y automatización mediante la solución propuesta.
+
+
+##### Segmento 2: Cooperativas cafeteras
 
 <img src="assets/images/needfinding/UserTaxmatriz2.png">
+<!-- Descripcion -->
+La imagen presenta la matriz de tareas (User Task Matrix) para el segmento de cooperativas cafetaleras. Se detallan las actividades clave que realiza este tipo de usuario, como la gestión de múltiples lotes de diferentes productores, la coordinación de procesos de clasificación, la consolidación de reportes de calidad y la integración con sistemas de trazabilidad. La matriz facilita la comprensión de los puntos críticos y cuellos de botella en la operación de las cooperativas, sirviendo como base para priorizar funcionalidades en el desarrollo del sistema.
+
 
 ### 2.3.3. User Journey Mapping
 
-<!-- Contenido de User Journey Mapping -->
+##### Segmento 1: Productores Individuales
+
+[![Journey-Map-Productor.png](https://i.postimg.cc/vZ6ZxsW1/Journey-Map-Productor.png)](https://postimg.cc/WdTvxxYj)
+
+<!-- Descripcion -->
+La imagen ilustra el User Journey Map de un productor individual de café durante el proceso de clasificación post-cosecha. Se representan las etapas clave que atraviesa el usuario, desde la recolección y registro de lotes, pasando por la inspección manual y la identificación de defectos, hasta la generación de reportes y la toma de decisiones comerciales. El mapa visualiza las emociones, puntos de dolor y oportunidades de mejora en cada fase, permitiendo identificar momentos críticos donde la solución tecnológica puede aportar mayor valor y eficiencia.
+
+
+
+##### Segmento 2: Cooperativas cafeteras
+
+[![Mapa-de-Experiencia-Operativa-de-la-Cooperativa-Agr-cola-De-la-Captura-de-Datos-a-la-Mejora-Continu.png](https://i.postimg.cc/fR4f9M6G/Mapa-de-Experiencia-Operativa-de-la-Cooperativa-Agr-cola-De-la-Captura-de-Datos-a-la-Mejora-Continu.png)](https://postimg.cc/F7ZStXFp)
+
+<!-- Descripcion -->
+La imagen muestra el User Journey Map de una cooperativa cafetalera, detallando el flujo operativo desde la recepción de lotes de diferentes productores, la coordinación de procesos de clasificación y consolidación de reportes, hasta la integración con sistemas de trazabilidad y la entrega de resultados a los asociados. Se identifican los principales retos, necesidades y oportunidades de optimización en la experiencia colectiva, destacando cómo la digitalización y automatización pueden mejorar la gestión, la transparencia y la toma de decisiones dentro de la cooperativa.
+
 
 ### 2.3.4. Empathy Mapping
+
+##### Segmento 1: Productores Individuales
 
 ##### Jose Ramirez
 
 <img src="assets/images/needfinding/EmpathyMapProductores.png">
 
+##### Segmento 2: Cooperativas cafeteras
 
 ##### Luis Torres (Representante de la cooperativa)
 
@@ -1122,6 +1156,193 @@ XXXXXXXXXXXXXXXXX
 
 <img src="assets/images/needfinding/asIsMapping.jpg">
 El proceso parte con captura de datos no estandarizada y registros dispersos. Las alianzas son informales y el acceso a hardware resulta caro e intermitente. La clasificación es manual, con criterios variables entre turnos y tiempos impredecibles. El reporte llega tarde, casi sin trazabilidad ni métricas objetivas, por lo que las decisiones se toman por intuición. En lo cognitivo predomina la idea de que la tecnología es “lejana”, y emocionalmente hay frustración, cansancio e incertidumbre ante auditorías y precios castigados.
+
+
+## 2.4. Ubiquitous Language
+
+### Producción y Cultivo
+
+1. **Finca (Farm)**
+   - Propiedad agrícola donde se cultiva café. Pertenece a un productor independiente y posee características específicas como ubicación geográfica, hectáreas cultivadas, altitud, tipo de suelo y variedades de café cultivadas.
+
+2. **Cooperativa Cafetalera (Coffee Cooperative)**
+   - Organización de múltiples productores independientes que se asocian para procesar, comercializar y escalar su producción. Posee capacidad de procesamiento centralizada y gestiona productores asociados.
+
+3. **Productor Independiente (Independent Producer)**
+   - Productor de café que opera de forma individual sin asociarse a una cooperativa, gestionando su propio lote de producción.
+
+4. **Cosecha (Harvest)**
+   - El acto de recolectar los frutos (cerezas) del café maduro de la planta. Ocurre en períodos específicos según la región y variedad cultivada.
+
+5. **Fecha de Cosecha (Harvest Date)**
+   - Momento específico en que se recolecta el café. Dato crítico para trazabilidad y cálculo de temporada de producción.
+
+6. **Hectárea (Hectare)**
+   - Unidad de medida de superficie terrestre equivalente a 10,000 m². Utilizada para cuantificar extensión de terreno dedicado al cultivo de café.
+
+7. **Capacidad de Procesamiento (Processing Capacity)**
+   - Volumen máximo de café que una cooperativa o instalación puede procesar en un período específico, medido típicamente en kilogramos anuales.
+
+### Conceptos de Lotes y Trazabilidad
+
+8. **Lote de Café (Coffee Lot)**
+    - Cantidad discreta de café cosechado, procesado y clasificado como unidad individual. Posee número único de identificación, información de origen, fecha de cosecha y cantidad específica. Es la unidad fundamental de trazabilidad en BeanDetect AI.
+
+9. **Número de Lote (Lot Number)**
+    - Identificador único asignado a cada lote de café siguiendo patrón específico (PROD-YYYY-NNNN). Permite trazabilidad completa del lote en el sistema.
+
+10. **Trazabilidad (Traceability)**
+    - Capacidad de seguimiento completo de un lote desde su origen en la finca hasta el consumidor final, incluyendo todas las etapas de procesamiento, clasificación y certificación. Garantiza transparencia y autenticidad.
+
+### Conceptos de Clasificación y Calidad
+
+11. **Clasificación Automática (Automated Classification)**
+    - Proceso de análisis de granos de café utilizando inteligencia artificial y análisis de imágenes para determinar calidad, detectar defectos y asignar grado según estándares internacionales.
+
+12. **Sesión de Clasificación (Classification Session)**
+    - Período de tiempo delimitado durante el cual se analizan granos de un lote específico. Tiene estado (iniciada, en progreso, completada), contador de granos procesados y resultados consolidados.
+
+13. **Grano de Café (Coffee Bean/Grain)**
+    - Unidad individual de análisis. Cada grano es fotografiado y analizado para detectar defectos, medir tamaño, color y características de forma.
+
+14. **Defecto (Defect)**
+    - Anomalía o imperfección en un grano que reduce su calidad comercial.
+
+15. **Grano Negro (Black Bean)**
+    - Grano completamente oscuro/negro debido a fermentación excesiva o enfermedad. Causa rechazo automático en clasificaciones comerciales.
+
+16. **Grano Verde Agrio (Sour Bean)**
+    - Grano con fermentación anormal que produce aromas desagradables. Rechazado por compradores debido a impacto negativo en taza.
+
+17. **Grano Semi Crudo (Light Bean)**
+    - Grano de tueste ligero que suele percibirse como semi crudo.
+
+18. **Severidad del Defecto (Defect Severity)**
+    - Clasificación del impacto del defecto: Bajo (Low), Medio (Medium), Alto (High), Crítico (Critical). Determina si el grano es comercializable.
+
+19. **Precisión del Algoritmo (Confidence Score)**
+    - Puntuación porcentual (0.0-1.0) que indica el nivel de certeza del modelo de IA al detectar un defecto o característica. Threshold mínimo típicamente 0.85.
+
+### Estándares de Calidad
+
+20. **Grado de Calidad (Quality Grade)**
+    - Clasificación final del café según estándares internacionales: A, B, C, Specialty, Premium. Basado en SCA (Specialty Coffee Association) y estándares ICO.
+
+21. **Puntuación SCA (SCA Score)**
+    - Puntuación numérica en escala de 100 que representa calidad general del café. Rango 80-100 es specialty; 75-79 es muy bueno; 70-74 es bueno; bajo 70 no es comercializable internacionalmente.
+
+22. **Café Apto para Exportación (Export-Ready Coffee)**
+    - Café que cumple requisitos mínimos de calidad para comercialización internacional. Incluye métricas de defectos bajos, color uniforme, tamaño consistente.
+
+### Conceptos de Verificación y Autenticación
+
+23. **Código QR de Trazabilidad (QR Code)**
+    - Código de matriz única generado para cada lote que embebe información de origen, clasificación, certificaciones. Permite verificación instantánea por consumidores o compradores.
+
+24. **Blockchain**
+    - Tecnología de registro distribuido e inmutable utilizada para garantizar integridad y transparencia de datos de clasificación y trazabilidad.
+
+25. **Hash Blockchain (Blockchain Hash)**
+    - Identificador criptográfico único que representa una transacción o registro en la cadena blockchain. Garantiza inmutabilidad.
+
+26. **Firma Digital (Digital Signature)**
+    - Firma criptográfica que verifica autenticidad e integridad de certificados digitales. Imposible de falsificar.
+
+27. **Métrica de Calidad (Quality Metrics)**
+    - Conjunto de indicadores cuantitativos que miden calidad del café: grado promedio, porcentaje de exportabilidad, tasa de defectos, porcentaje specialty.
+
+28. **Reporte de Clasificación (Classification Report)**
+    - Documento que consolida resultados de una sesión de clasificación, incluyendo grado final, métricas de defectos, recomendaciones comerciales.
+
+29. **Reporte Consolidado (Consolidated Report)**
+    - Análisis agregado de múltiples lotes, típicamente para cooperativa. Compara calidad entre productores asociados.
+
+30. **Análisis de Tendencias (Trend Analysis)**
+    - Estudio de patrones históricos en métricas de calidad a lo largo del tiempo. Identifica mejoras o deterioros en procesos.
+
+31. **Pronóstico (Forecast)**
+    - Predicción estadística de métricas futuras basada en tendencias históricas y patrones estacionales.
+
+32. **Comparativa Histórica (Historical Comparison)**
+    - Análisis que compara métricas de calidad entre diferentes períodos temporales para identificar evolución.
+
+33. **Dashboard Interactivo (Interactive Dashboard)**
+    - Interfaz visual que presenta métricas en tiempo real con capacidad de filtrado, personalización y actualización automática.
+
+34. **Widget**
+    - Componente visual individual en un dashboard que muestra métrica o visualización específica.
+
+35. **Alerta de Calidad (Quality Alert)**
+    - Notificación automática disparada cuando métricas caen por debajo de thresholds establecidos, alertando sobre posibles problemas.
+
+36. **Autenticación (Authentication)**
+    - Proceso de verificación de identidad del usuario mediante credenciales (email y contraseña).
+
+37. **Autorización (Authorization)**
+    - Proceso de verificación de permisos del usuario para acceder a recursos específicos del sistema.
+
+### Conceptos de Soporte Técnico
+
+38. **Ticket de Soporte (Support Ticket)**
+    - Caso de soporte documentado que registra problema reportado por usuario, incluyendo categoría, descripción, estado y historial de mensajes.
+
+39. **Estado del Ticket (Ticket Status)**
+    - Etapa del ciclo de vida del ticket: Abierto, En Progreso, Resuelto, Cerrado.
+
+40. **Mensaje de Ticket (Ticket Message)**
+    - Intercambio individual de comunicación dentro del ticket entre usuario y equipo de soporte.
+
+41. **Tiempo de Resolución (Resolution Time)**
+    - Período entre creación del ticket y su resolución final, medido en horas o días.
+
+### Conceptos Técnicos del Sistema
+
+42. **Bounded Context**
+    - Límite explícito dentro del dominio que define conjunto específico de responsabilidades y conceptos únicos. BeanDetect AI posee 6 bounded contexts: IAM & Profile, Coffee Lot Management, Grain Classification, Traceability & Certification, Reporting & Analytics, User Support.
+
+43. **Agregado (Aggregate)**
+    - Conjunto de entidades y objetos de valor ligados juntos que actúan como unidad en operaciones de cambio. Cada bounded context tiene agregados específicos.
+
+44. **Entidad (Entity)**
+    - Objeto con identidad única dentro del dominio que cambia a lo largo del tiempo. Diferente de objetos de valor por poseer ciclo de vida.
+
+45. **Objeto de Valor (Value Object)**
+    - Objeto sin identidad propia que representa concepto simple del dominio. Inmutable y definido completamente por sus atributos.
+
+46. **Servicio de Dominio (Domain Service)**
+    - Lógica de negocio que no pertenece naturalmente a una entidad o agregado específico. Implementa operaciones transversales complejas.
+
+47. **Evento de Dominio (Domain Event)**
+    - Suceso significativo en el dominio que dispara lógica adicional. Ejemplo: "UserRegisteredEvent", "ClassificationCompletedEvent".
+
+48. **Comando (Command)**
+    - Solicitud de acción que intenta cambiar estado del sistema. Ejemplo: "RegisterCoffeeLotCommand", "StartClassificationCommand".
+
+49. **Consulta (Query)**
+    - Solicitud de información del sistema que no altera su estado. Ejemplo: "GetCoffeeLotByIdQuery", "GetTrendAnalysisQuery".
+
+---
+
+## Resumen de Términos Clave Agrupados
+
+### Por Contexto de Negocio
+
+**Producción y Cultivo:** Finca, Cosecha, Variedad, Altitud, Procesamiento, Secado, Capacidad de Procesamiento
+
+**Lotes y Trazabilidad:** Lote de Café, Número de Lote, Cantidad, Origen, Trazabilidad, Etapa del Viaje
+
+**Clasificación y Calidad:** Clasificación Automática, Sesión de Clasificación, Grano, Defecto, Grado de Calidad, Puntuación SCA, Exportabilidad
+
+**Certificaciones:** Certificación, Certificación Orgánica, Comercio Justo, Rainforest Alliance, UTZ, Bird Friendly, Certificado Digital
+
+**Verificación:** Código QR, Blockchain, Firma Digital, Verificación de Origen, Estado de Verificación
+
+**Análisis y Reportes:** Métrica de Calidad, KPI, Reporte, Análisis de Tendencias, Dashboard
+
+**Gestión Técnica:** Bounded Context, Agregado, Entidad, Objeto de Valor, Comando, Consulta
+
+Este lenguaje ubicuo asegura que todos los stakeholders (desarrolladores, domain experts, productores, cooperativas) comprendan los conceptos clave del sistema de manera consistente y precisa.
+
 
 ---
 
@@ -1266,7 +1487,7 @@ Como productor pequeño o mediano de café, deseo registrarme en BeanDetect AI c
 
 ---
 
-## US02: Registro de Cooperativa Cafetalera
+### US02: Registro de Cooperativa Cafetalera
 **Relacionado con (Epic ID):** EP01  
 **Descripción:**  
 Como administrador de cooperativa cafetalera, deseo registrar mi organización para gestionar la clasificación de múltiples productores asociados.
@@ -1285,7 +1506,7 @@ Como administrador de cooperativa cafetalera, deseo registrar mi organización p
 
 ---
 
-## US03: Autenticación de Usuarios
+### US03: Autenticación de Usuarios
 **Relacionado con (Epic ID):** EP01  
 **Descripción:**  
 Como usuario registrado (productor o cooperativa), deseo iniciar sesión de forma segura para acceder a los servicios de clasificación según mi perfil.
@@ -1312,7 +1533,7 @@ Como usuario registrado (productor o cooperativa), deseo iniciar sesión de form
 
 ---
 
-## US04: Gestión de Perfil de Productor
+### US04: Gestión de Perfil de Productor
 **Relacionado con (Epic ID):** EP01  
 **Descripción:**  
 Como productor pequeño/mediano, deseo mantener actualizada la información de mi finca para personalizar mi experiencia.
@@ -1333,7 +1554,7 @@ Como productor pequeño/mediano, deseo mantener actualizada la información de m
 
 ---
 
-## US05: Gestión de Perfil de Cooperativa
+### US05: Gestión de Perfil de Cooperativa
 **Relacionado con (Epic ID):** EP01  
 **Descripción:**  
 Como cooperativa, deseo gestionar información de mis productores asociados y volúmenes de procesamiento para optimizar operaciones.
@@ -1352,7 +1573,7 @@ Como cooperativa, deseo gestionar información de mis productores asociados y vo
 
 ---
 
-## US06: Creación de Lotes
+### US06: Creación de Lotes
 **Relacionado con (Epic ID):** EP02  
 **Descripción:**  
 Como productor o cooperativa, deseo registrar mis lotes con información básica para organizar mi producción de forma eficiente.
@@ -1373,7 +1594,7 @@ Como productor o cooperativa, deseo registrar mis lotes con información básica
 
 ---
 
-## US07: Edición de Información de Lote
+### US07: Edición de Información de Lote
 **Relacionado con (Epic ID):** EP02  
 **Descripción:**  
 Como productor o cooperativa, deseo editar datos de mis lotes cuando detecte errores o cambios en la información de cosecha.
@@ -1394,7 +1615,7 @@ Como productor o cooperativa, deseo editar datos de mis lotes cuando detecte err
 
 ---
 
-## US08: Visualización de Lotes por Productor
+### US08: Visualización de Lotes por Productor
 **Relacionado con (Epic ID):** EP02  
 **Descripción:**  
 Como productor, deseo ver todos mis lotes en una vista simple para revisar mi histórico de producción sin complejidad técnica.
@@ -1418,7 +1639,7 @@ Como productor, deseo ver todos mis lotes en una vista simple para revisar mi hi
 
 ---
 
-## US09: Visualización de Lotes por Cooperativa
+### US09: Visualización de Lotes por Cooperativa
 **Relacionado con (Epic ID):** EP02  
 **Descripción:**  
 Como cooperativa, deseo visualizar lotes agrupados por productor asociado para facilitar la gestión y seguimiento de múltiples orígenes.
@@ -1442,7 +1663,7 @@ Como cooperativa, deseo visualizar lotes agrupados por productor asociado para f
 
 ---
 
-## US10: Búsqueda Rápida de Lotes
+### US10: Búsqueda Rápida de Lotes
 **Relacionado con (Epic ID):** EP02  
 **Descripción:**  
 Como usuario, deseo buscar lotes por fecha, productor o variedad para acceder rápidamente a información específica.
@@ -1465,7 +1686,7 @@ Como usuario, deseo buscar lotes por fecha, productor o variedad para acceder r�
 
 ---
 
-## US11: Eliminación de Lotes
+### US11: Eliminación de Lotes
 **Relacionado con (Epic ID):** EP02  
 **Descripción:**  
 Como usuario, deseo eliminar lotes erróneos o duplicados para mantener limpia mi base de datos de producción.
@@ -1490,7 +1711,7 @@ Como usuario, deseo eliminar lotes erróneos o duplicados para mantener limpia m
 
 ---
 
-## US12: Detección de Defectos Críticos
+### US12: Detección de Defectos Críticos
 **Relacionado con (Epic ID):** EP03  
 **Descripción:**  
 Como productor o cooperativa, deseo que el sistema detecte defectos que causan rechazos internacionales para prevenir pérdidas económicas.
@@ -1508,7 +1729,7 @@ Como productor o cooperativa, deseo que el sistema detecte defectos que causan r
 
 ---
 
-## US13: Análisis de Color y Uniformidad
+### US13: Análisis de Color y Uniformidad
 **Relacionado con (Epic ID):** EP03  
 **Descripción:**  
 Como productor o cooperativa, deseo medir objetivamente color y tamaño para estandarizar calidad entre lotes.
@@ -1531,7 +1752,7 @@ Como productor o cooperativa, deseo medir objetivamente color y tamaño para est
 
 ---
 
-## US14: Clasificación por Estándares Internacionales
+### US14: Clasificación por Estándares Internacionales
 **Relacionado con (Epic ID):** EP03  
 **Descripción:**  
 Como productor o cooperativa, deseo obtener clasificación automática según estándares de exportación reconocidos para acceder a mejores precios.
@@ -1554,7 +1775,7 @@ Como productor o cooperativa, deseo obtener clasificación automática según es
 
 ---
 
-## US15: Reporte Simple de Clasificación
+### US15: Reporte Simple de Clasificación
 **Relacionado con (Epic ID):** EP04  
 **Descripción:**  
 Como productor, deseo un reporte fácil de entender que muestre el porcentaje de café apto para exportación vs. mercado local.
@@ -1577,7 +1798,7 @@ Como productor, deseo un reporte fácil de entender que muestre el porcentaje de
 
 ---
 
-## US16: Reporte Consolidado para Cooperativas
+### US16: Reporte Consolidado para Cooperativas
 **Relacionado con (Epic ID):** EP04  
 **Descripción:**  
 Como cooperativa, deseo reportes consolidados que comparen la calidad entre diferentes productores asociados.
@@ -1595,7 +1816,7 @@ Como cooperativa, deseo reportes consolidados que comparen la calidad entre dife
 
 ---
 
-## US17: Exportación para Compradores
+### US17: Exportación para Compradores
 **Relacionado con (Epic ID):** EP04  
 **Descripción:**  
 Como productor o cooperativa, deseo exportar certificados de calidad en formatos reconocidos internacionalmente para presentar a compradores.
@@ -1613,7 +1834,7 @@ Como productor o cooperativa, deseo exportar certificados de calidad en formatos
 
 ---
 
-## US18: Comparación Histórica de Calidad
+### US18: Comparación Histórica de Calidad
 **Relacionado con (Epic ID):** EP04  
 **Descripción:**  
 Como cooperativa, deseo comparar calidad por temporadas para identificar patrones y mejorar prácticas agrícolas.
@@ -1631,7 +1852,7 @@ Como cooperativa, deseo comparar calidad por temporadas para identificar patrone
 
 ---
 
-## US19: Alertas de Calidad Crítica
+### US19: Alertas de Calidad Crítica
 **Relacionado con (Epic ID):** EP04  
 **Descripción:**  
 Como usuario, deseo recibir alertas inmediatas cuando un lote tenga alto porcentaje de defectos para tomar acciones correctivas.
@@ -1649,7 +1870,7 @@ Como usuario, deseo recibir alertas inmediatas cuando un lote tenga alto porcent
 
 ---
 
-## US20: Códigos QR para Lotes
+### US20: Códigos QR para Lotes
 **Relacionado con (Epic ID):** EP05  
 **Descripción:**  
 Como productor o cooperativa, deseo generar códigos QR únicos por lote que permitan a compradores verificar origen, calidad y proceso de clasificación.
@@ -1667,7 +1888,7 @@ Como productor o cooperativa, deseo generar códigos QR únicos por lote que per
 
 ---
 
-## US21: Certificación Digital Automática
+### US21: Certificación Digital Automática
 **Relacionado con (Epic ID):** EP05  
 **Descripción:**  
 Como cooperativa que exporta, deseo generar certificados digitales de calidad automáticamente para agilizar procesos de comercialización internacional.
@@ -1690,7 +1911,7 @@ Como cooperativa que exporta, deseo generar certificados digitales de calidad au
 
 ---
 
-## US22: Integración con Blockchain
+### US22: Integración con Blockchain
 **Relacionado con (Epic ID):** EP05  
 **Descripción:**  
 Como cooperativa innovadora, deseo la opción de registrar datos de clasificación en blockchain para mayor transparencia y confianza del mercado.
@@ -1708,7 +1929,7 @@ Como cooperativa innovadora, deseo la opción de registrar datos de clasificaci�
 
 ---
 
-## US23: Reportes de Transparencia para Consumidores
+### US23: Reportes de Transparencia para Consumidores
 **Relacionado con (Epic ID):** EP05  
 **Descripción:**  
 Como cooperativa con marca propia, deseo generar reportes de transparencia que mis consumidores finales puedan consultar sobre el origen del café.
@@ -1726,7 +1947,7 @@ Como cooperativa con marca propia, deseo generar reportes de transparencia que m
 
 ---
 
-## US24: Soporte por WhatsApp
+### US24: Soporte por WhatsApp
 **Relacionado con (Epic ID):** EP06  
 **Descripción:**  
 Como usuario con acceso limitado a internet, deseo recibir soporte técnico básico a través de WhatsApp para resolver dudas rápidamente.
@@ -1744,7 +1965,7 @@ Como usuario con acceso limitado a internet, deseo recibir soporte técnico bás
 
 ---
 
-## US25: Soporte Telefónico en Horarios Rurales
+### US25: Soporte Telefónico en Horarios Rurales
 **Relacionado con (Epic ID):** EP06  
 **Descripción:**  
 Como productor en zona rural, deseo soporte telefónico en horarios que se adapten a mis rutinas de trabajo de campo.
@@ -1767,7 +1988,7 @@ Como productor en zona rural, deseo soporte telefónico en horarios que se adapt
 
 ---
 
-## US26: Modo Offline para Zonas Rurales
+### US26: Modo Offline para Zonas Rurales
 **Relacionado con (Epic ID):** EP07  
 **Descripción:**  
 Como productor en zona con conectividad limitada, deseo usar funcionalidades básicas de clasificación sin requerir internet constante.
