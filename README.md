@@ -203,7 +203,7 @@ En esta sección se resumen los avances y modificaciones realizadas durante el c
 - [3.3. Impact Mapping](#33-impact-mapping)
 - [3.4. Product Backlog](#34-product-backlog)
 
-### [Capítulo IV: Strategic-Level Software Design](#capítulo-iv-solution-software-design)
+### [Capítulo IV: Strategic-Level Software Design](#capítulo-iv-strategic-level-software-design)
 
 ### [Capítulo V: Tactical-Level Software Design](#capítulo-v-tactical-level-software-design)
  
