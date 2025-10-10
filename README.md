@@ -3802,9 +3802,12 @@ Enlace de figma: https://www.figma.com/design/ockCQUwKAM1FR422KyQtyB/DETECT-BEAN
 
 ### 6.4.1. Applications Wireframes.
 
+Los wireframes de la aplicación fueron desarrollados utilizando la herramienta Figma en el siguiente enlace:
+https://www.figma.com/design/g2Q08oeYK9nbmza7fBzN21/Dev-Beans?node-id=1-2
+
 ### 6.4.2. Applications Wireflow Diagrams.
 
----
+--- <!-- En proceso >
 
 # Conclusiones
 
