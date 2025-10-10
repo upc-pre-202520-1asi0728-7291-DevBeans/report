@@ -203,298 +203,11 @@ En esta sección se resumen los avances y modificaciones realizadas durante el c
 - [3.3. Impact Mapping](#33-impact-mapping)
 - [3.4. Product Backlog](#34-product-backlog)
 
-### [Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design)
-- [Project Report Collaboration Insights](#project-report-collaboration-insights)
-- [Contenido](#contenido)
-  - [Tabla de Contenidos](#tabla-de-contenidos)
-    - [Registro de Versiones del Informe](#registro-de-versiones-del-informe-1)
-    - [Project Report Collaboration Insights](#project-report-collaboration-insights-1)
-    - [Contenido](#contenido-1)
-    - [Student Outcomes](#student-outcomes)
-    - [Capítulo I: Introducción](#capítulo-i-introducción)
-    - [Capítulo II: Requirements Elicitation \& Analysis](#capítulo-ii-requirements-elicitation--analysis)
-    - [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
-    - [Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design)
-    - [Conclusiones](#conclusiones)
-    - [Bibliografía](#bibliografía)
-    - [Anexos](#anexos)
-- [Student Outcome](#student-outcome)
-- [Capítulo I: Introducción](#capítulo-i-introducción-1)
-  - [1.1. Startup Profile](#11-startup-profile)
-    - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
-    - [Misión](#misión)
-    - [Visión](#visión)
-    - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
-  - [1.2. Solution Profile](#12-solution-profile)
-    - [1.2.1. Antecedentes y problemática](#121-antecedentes-y-problemática)
-    - [Antecedentes](#antecedentes)
-    - [Problemática (Método 5W y 2H)](#problemática-método-5w-y-2h)
-    - [1.2.2. Lean UX Process](#122-lean-ux-process)
-      - [1.2.2.1. Lean UX Problem Statements](#1221-lean-ux-problem-statements)
-    - [Problem Statement](#problem-statement)
-    - [Dominio](#dominio)
-    - [Segmentos de Clientes](#segmentos-de-clientes)
-    - [Puntos de Dolor](#puntos-de-dolor)
-    - [Visión / Estrategia](#visión--estrategia)
-    - [Segmento Inicial](#segmento-inicial)
-      - [1.2.2.2. Lean UX Assumptions](#1222-lean-ux-assumptions)
-    - [Business Outcomes](#business-outcomes)
-    - [Users](#users)
-    - [User Outcomes \& Benefits](#user-outcomes--benefits)
-    - [Feature Assumptions](#feature-assumptions)
-    - [Business Assumptions](#business-assumptions)
-    - [User Assumptions](#user-assumptions)
-      - [1.2.2.3. Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
-      - [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)
-  - [1.3. Segmentos objetivo](#13-segmentos-objetivo)
-- [Capítulo II: Requirements Elicitation \& Analysis](#capítulo-ii-requirements-elicitation--analysis-1)
-  - [2.1. Competidores](#21-competidores)
-    - [2.1.1. Análisis competitivo](#211-análisis-competitivo)
-    - [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
-  - [2.2. Entrevistas](#22-entrevistas)
-    - [2.2.1. Diseño de entrevistas](#221-diseño-de-entrevistas)
-    - [Preguntas Generales](#preguntas-generales)
-    - [Preguntas Segmento 1: Productores pequeños y medianos de café](#preguntas-segmento-1-productores-pequeños-y-medianos-de-café)
-    - [Preguntas Segmento 2: Cooperativas cafetaleras](#preguntas-segmento-2-cooperativas-cafetaleras)
-    - [2.2.2. Registro de entrevistas](#222-registro-de-entrevistas)
-      - [**Segmento 1: Productores pequeños y medianos de café**](#segmento-1-productores-pequeños-y-medianos-de-café)
-      - [**Segmento 2: Cooperativas cafetaleras**](#segmento-2-cooperativas-cafetaleras)
-    - [2.2.3. Análisis de entrevistas](#223-análisis-de-entrevistas)
-      - [**Análisis de Preguntas Generales**](#análisis-de-preguntas-generales)
-      - [**Análisis de Preguntas Especificas**](#análisis-de-preguntas-especificas)
-  - [2.3. Needfinding](#23-needfinding)
-    - [2.3.1. User Personas](#231-user-personas)
-        - [Segmento 1: Productores Individuales](#segmento-1-productores-individuales)
-        - [Segmento 2: Cooperativas cafeteras](#segmento-2-cooperativas-cafeteras)
-    - [2.3.2. User Task Matrix](#232-user-task-matrix)
-    - [2.3.3. User Journey Mapping](#233-user-journey-mapping)
-    - [2.3.4. Empathy Mapping](#234-empathy-mapping)
-        - [Jose Ramirez](#jose-ramirez)
-        - [Luis Torres (Representante de la cooperativa)](#luis-torres-representante-de-la-cooperativa)
-    - [2.3.5. As-is Scenario Mapping](#235-as-is-scenario-mapping)
-- [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification-1)
-  - [3.1. To-Be Scenario Mapping](#31-to-be-scenario-mapping)
-  - [3.2. User Stories](#32-user-stories)
-    - [Gestión de Usuarios](#gestión-de-usuarios)
-    - [Gestión de Lotes de Café](#gestión-de-lotes-de-café)
-    - [Clasificación Automática de Granos](#clasificación-automática-de-granos)
-    - [Reportes y Análisis](#reportes-y-análisis)
-    - [Integración de certificados de trazabilidad](#integración-de-certificados-de-trazabilidad)
-    - [Soporte Accesible](#soporte-accesible)
-    - [Configuración Adaptable del Sistema](#configuración-adaptable-del-sistema)
-    - [Navegación y Funcionalidades de la Landing Page](#navegación-y-funcionalidades-de-la-landing-page)
-    - [Funcionalidades de Idioma y Accesibilidad](#funcionalidades-de-idioma-y-accesibilidad)
-  - [Criterios de Aceptación](#criterios-de-aceptación)
-    - [US01: Registro de Productor Pequeño/Mediano](#us01-registro-de-productor-pequeñomediano)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-1)
-  - [US02: Registro de Cooperativa Cafetalera](#us02-registro-de-cooperativa-cafetalera)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-2)
-  - [US03: Autenticación de Usuarios](#us03-autenticación-de-usuarios)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-3)
-  - [US04: Gestión de Perfil de Productor](#us04-gestión-de-perfil-de-productor)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-4)
-  - [US05: Gestión de Perfil de Cooperativa](#us05-gestión-de-perfil-de-cooperativa)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-5)
-  - [US06: Creación de Lotes](#us06-creación-de-lotes)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-6)
-  - [US07: Edición de Información de Lote](#us07-edición-de-información-de-lote)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-7)
-  - [US08: Visualización de Lotes por Productor](#us08-visualización-de-lotes-por-productor)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-8)
-  - [US09: Visualización de Lotes por Cooperativa](#us09-visualización-de-lotes-por-cooperativa)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-9)
-  - [US10: Búsqueda Rápida de Lotes](#us10-búsqueda-rápida-de-lotes)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-10)
-  - [US11: Eliminación de Lotes](#us11-eliminación-de-lotes)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-11)
-  - [US12: Detección de Defectos Críticos](#us12-detección-de-defectos-críticos)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-12)
-  - [US13: Análisis de Color y Uniformidad](#us13-análisis-de-color-y-uniformidad)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-13)
-  - [US14: Clasificación por Estándares Internacionales](#us14-clasificación-por-estándares-internacionales)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-14)
-  - [US15: Reporte Simple de Clasificación](#us15-reporte-simple-de-clasificación)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-15)
-  - [US16: Reporte Consolidado para Cooperativas](#us16-reporte-consolidado-para-cooperativas)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-16)
-  - [US17: Exportación para Compradores](#us17-exportación-para-compradores)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-17)
-  - [US18: Comparación Histórica de Calidad](#us18-comparación-histórica-de-calidad)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-18)
-  - [US19: Alertas de Calidad Crítica](#us19-alertas-de-calidad-crítica)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-19)
-  - [US20: Códigos QR para Lotes](#us20-códigos-qr-para-lotes)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-20)
-  - [US21: Certificación Digital Automática](#us21-certificación-digital-automática)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-21)
-  - [US22: Integración con Blockchain](#us22-integración-con-blockchain)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-22)
-  - [US23: Reportes de Transparencia para Consumidores](#us23-reportes-de-transparencia-para-consumidores)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-23)
-  - [US24: Soporte por WhatsApp](#us24-soporte-por-whatsapp)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-24)
-  - [US25: Soporte Telefónico en Horarios Rurales](#us25-soporte-telefónico-en-horarios-rurales)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-25)
-  - [US26: Modo Offline para Zonas Rurales](#us26-modo-offline-para-zonas-rurales)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-26)
-  - [3.3. Impact Mapping](#33-impact-mapping)
-  - [3.4. Product Backlog](#34-product-backlog)
-- [Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design-1)
-  - [4.1. Strategic-Level Domain-Driven Design](#41-strategic-level-domain-driven-design)
-    - [4.1.1. Event Storming](#411-event-storming)
-      - [4.1.1.1 Candidate Context Discovery](#4111-candidate-context-discovery)
-      - [4.1.1.2 Domain Message Flows Modeling](#4112-domain-message-flows-modeling)
-      - [4.1.1.3 Bounded Context Canvases](#4113-bounded-context-canvases)
-    - [4.1.2. Context Mapping](#412-context-mapping)
-    - [4.1.3. Software Architecture](#413-software-architecture)
-      - [4.1.3.1. Software Architecture System Landscape Diagram](#4131-software-architecture-system-landscape-diagram)
-      - [4.1.3.2. Software Architecture Context Level Diagrams](#4132-software-architecture-context-level-diagrams)
-      - [4.1.3.3. Software Architecture Container Level Diagrams](#4133-software-architecture-container-level-diagrams)
-      - [4.1.3.4. Software Architecture Deployment Diagrams](#4134-software-architecture-deployment-diagrams)
-- [4.2. Tactical-Level Domain-Driven Design](#42-tactical-level-domain-driven-design)
-  - [4.2.1. Bounded Context: IAM \& Profile](#421-bounded-context-iam--profile)
-    - [4.2.1.1. Domain Layer](#4211-domain-layer)
-      - [**Aggregates**](#aggregates)
-      - [**Entities**](#entities)
-      - [**Value Objects**](#value-objects)
-      - [**Commands**](#commands)
-      - [**Queries**](#queries)
-      - [**Events**](#events)
-    - [4.2.1.2. Interface Layer](#4212-interface-layer)
-      - [**Controllers**](#controllers)
-      - [**Resources**](#resources)
-      - [**Transformers**](#transformers)
-    - [4.2.1.3. Application Layer](#4213-application-layer)
-      - [**Command Services**](#command-services)
-      - [**Query Services**](#query-services)
-    - [4.2.1.4. Infrastructure Layer](#4214-infrastructure-layer)
-      - [**Persistencia (JPA Repositories)**](#persistencia-jpa-repositories)
-      - [4.2.1.5. Bounded Context Software Architecture Component Level Diagrams](#4215-bounded-context-software-architecture-component-level-diagrams)
-    - [4.2.1.6.  Bounded Context Software Architecture Code Level Diagrams](#4216--bounded-context-software-architecture-code-level-diagrams)
-      - [4.2.1.6.1. Bounded Context Domain Layer Class Diagrams](#42161-bounded-context-domain-layer-class-diagrams)
-      - [4.2.1.6.2. Bounded Context Database Design Diagram](#42162-bounded-context-database-design-diagram)
-  - [4.2.2. Bounded Context: Coffee Lot Management](#422-bounded-context-coffee-lot-management)
-    - [4.2.2.1. Domain Layer](#4221-domain-layer)
-      - [**Aggregates**](#aggregates-1)
-      - [**Entities**](#entities-1)
-      - [**Value Objects**](#value-objects-1)
-      - [**Commands**](#commands-1)
-      - [**Queries**](#queries-1)
-      - [**Events**](#events-1)
-    - [4.2.2.2. Interface Layer](#4222-interface-layer)
-      - [**Controllers**](#controllers-1)
-      - [**Resources**](#resources-1)
-      - [**Transformers**](#transformers-1)
-    - [4.2.2.3. Application Layer](#4223-application-layer)
-      - [**Command Services**](#command-services-1)
-      - [**Query Services**](#query-services-1)
-      - [**Domain Services**](#domain-services)
-    - [4.2.2.4. Infrastructure Layer](#4224-infrastructure-layer)
-      - [**Persistencia (JPA Repositories)**](#persistencia-jpa-repositories-1)
-      - [**External Services Integration**](#external-services-integration)
-      - [**Event Handling**](#event-handling)
-    - [4.2.2.5. Bounded Context Software Architecture Component Level Diagrams](#4225-bounded-context-software-architecture-component-level-diagrams)
-    - [4.2.2.6.  Bounded Context Software Architecture Code Level Diagrams](#4226--bounded-context-software-architecture-code-level-diagrams)
-      - [4.2.2.6.1. Bounded Context Domain Layer Class Diagrams](#42261-bounded-context-domain-layer-class-diagrams)
-      - [4.2.2.6.2. Bounded Context Database Design Diagram](#42262-bounded-context-database-design-diagram)
-  - [4.2.3. Bounded Context: Grain Classification](#423-bounded-context-grain-classification)
-    - [4.2.3.1. Domain Layer](#4231-domain-layer)
-      - [**Aggregates**](#aggregates-2)
-      - [**Entities**](#entities-2)
-      - [**Value Objects**](#value-objects-2)
-      - [**Commands**](#commands-2)
-      - [**Queries**](#queries-2)
-      - [**Events**](#events-2)
-    - [4.2.3.2. Interface Layer](#4232-interface-layer)
-      - [**Controllers**](#controllers-2)
-      - [**Resources**](#resources-2)
-      - [**Transformers**](#transformers-2)
-    - [4.2.3.3. Application Layer](#4233-application-layer)
-      - [**Command Services**](#command-services-2)
-      - [**Query Services**](#query-services-2)
-      - [**Domain Services**](#domain-services-1)
-    - [4.2.3.4. Infrastructure Layer](#4234-infrastructure-layer)
-      - [**Persistencia (JPA Repositories)**](#persistencia-jpa-repositories-2)
-      - [**External Services Integration**](#external-services-integration-1)
-      - [**Event Handling**](#event-handling-1)
-    - [4.2.3.5. Bounded Context Software Architecture Component Level Diagrams](#4235-bounded-context-software-architecture-component-level-diagrams)
-    - [4.2.3.6.  Bounded Context Software Architecture Code Level Diagrams](#4236--bounded-context-software-architecture-code-level-diagrams)
-      - [4.2.3.6.1. Bounded Context Domain Layer Class Diagrams](#42361-bounded-context-domain-layer-class-diagrams)
-      - [4.2.3.6.2. Bounded Context Database Design Diagram](#42362-bounded-context-database-design-diagram)
-  - [4.2.4. Bounded Context: Traceability \& Certification](#424-bounded-context-traceability--certification)
-    - [4.2.4.1. Domain Layer](#4241-domain-layer)
-      - [**Aggregates**](#aggregates-3)
-      - [**Entities**](#entities-3)
-      - [**Value Objects**](#value-objects-3)
-      - [**Commands**](#commands-3)
-      - [**Queries**](#queries-3)
-      - [**Events**](#events-3)
-    - [4.2.4.2. Interface Layer](#4242-interface-layer)
-      - [**Controllers**](#controllers-3)
-      - [**Resources**](#resources-3)
-      - [**Transformers**](#transformers-3)
-    - [4.2.4.3. Application Layer](#4243-application-layer)
-      - [**Command Services**](#command-services-3)
-      - [**Query Services**](#query-services-3)
-      - [**Domain Services**](#domain-services-2)
-    - [4.2.4.4. Infrastructure Layer](#4244-infrastructure-layer)
-      - [**Persistencia (JPA Repositories)**](#persistencia-jpa-repositories-3)
-      - [**External Services Integration**](#external-services-integration-2)
-      - [**Event Handling**](#event-handling-2)
-    - [4.2.4.5. Bounded Context Software Architecture Component Level Diagrams](#4245-bounded-context-software-architecture-component-level-diagrams)
-    - [4.2.4.6.  Bounded Context Software Architecture Code Level Diagrams](#4246--bounded-context-software-architecture-code-level-diagrams)
-      - [4.2.4.6.1. Bounded Context Domain Layer Class Diagrams](#42461-bounded-context-domain-layer-class-diagrams)
-      - [4.2.4.6.2. Bounded Context Database Design Diagram](#42462-bounded-context-database-design-diagram)
-  - [4.2.5. Bounded Context: Reporting \& Analytics](#425-bounded-context-reporting--analytics)
-    - [4.2.5.1. Domain Layer](#4251-domain-layer)
-      - [**Aggregates**](#aggregates-4)
-      - [**Entities**](#entities-4)
-      - [**Value Objects**](#value-objects-4)
-      - [**Commands**](#commands-4)
-      - [**Queries**](#queries-4)
-      - [**Events**](#events-4)
-    - [4.2.5.2. Interface Layer](#4252-interface-layer)
-      - [**Controllers**](#controllers-4)
-      - [**Resources**](#resources-4)
-      - [**Transformers**](#transformers-4)
-    - [4.2.5.3. Application Layer](#4253-application-layer)
-      - [**Command Services**](#command-services-4)
-      - [**Query Services**](#query-services-4)
-      - [**Domain Services**](#domain-services-3)
-    - [4.2.5.4. Infrastructure Layer](#4254-infrastructure-layer)
-      - [**Persistencia (JPA Repositories)**](#persistencia-jpa-repositories-4)
-      - [**External Services Integration**](#external-services-integration-3)
-      - [**Event Handling**](#event-handling-3)
-    - [4.2.5.5. Bounded Context Software Architecture Component Level Diagrams](#4255-bounded-context-software-architecture-component-level-diagrams)
-    - [4.2.5.6.  Bounded Context Software Architecture Code Level Diagrams](#4256--bounded-context-software-architecture-code-level-diagrams)
-      - [4.2.5.6.1. Bounded Context Domain Layer Class Diagrams](#42561-bounded-context-domain-layer-class-diagrams)
-      - [4.2.5.6.2. Bounded Context Database Design Diagram](#42562-bounded-context-database-design-diagram)
-  - [4.2.6. Bounded Context: User Support](#426-bounded-context-user-support)
-    - [4.2.6.1. Domain Layer](#4261-domain-layer)
-      - [**Aggregates**](#aggregates-5)
-      - [**Entities**](#entities-5)
-      - [**Value Objects**](#value-objects-5)
-      - [**Commands**](#commands-5)
-      - [**Queries**](#queries-5)
-      - [**Events**](#events-5)
-    - [4.2.6.2. Interface Layer](#4262-interface-layer)
-      - [**Controllers**](#controllers-5)
-      - [**Resources**](#resources-5)
-      - [**Transformers**](#transformers-5)
-    - [4.2.6.3. Application Layer](#4263-application-layer)
-      - [**Command Services**](#command-services-5)
-      - [**Query Services**](#query-services-5)
-      - [**Domain Services**](#domain-services-4)
-    - [4.2.6.4. Infrastructure Layer](#4264-infrastructure-layer)
-      - [**Persistencia (JPA Repositories)**](#persistencia-jpa-repositories-5)
-      - [**External Services Integration**](#external-services-integration-4)
-      - [**Event Handling**](#event-handling-4)
-    - [4.2.6.5. Bounded Context Software Architecture Component Level Diagrams](#4265-bounded-context-software-architecture-component-level-diagrams)
-    - [4.2.6.6.  Bounded Context Software Architecture Code Level Diagrams](#4266--bounded-context-software-architecture-code-level-diagrams)
-      - [4.2.6.6.1. Bounded Context Domain Layer Class Diagrams](#42661-bounded-context-domain-layer-class-diagrams)
-      - [4.2.6.6.2. Bounded Context Database Design Diagram](#42662-bounded-context-database-design-diagram)
-- [Capítulo V: Tactical-Level Software Design](#capítulo-v-tactical-level-software-design)
-- [Capítulo VI: Solution UX Design.](#capítulo-vi-solution-ux-design)
+### [Capítulo IV: Strategic-Level Software Design](#capítulo-iv-solution-software-design)
+
+### [Capítulo V: Tactical-Level Software Design](#capítulo-v-tactical-level-software-design)
+ 
+### [Capítulo VI: Solution UX Design.](#capítulo-vi-solution-ux-design)
   - [6.1. Style Guidelines.](#61-style-guidelines)
     - [6.1.1. General Style Guidelines.](#611-general-style-guidelines)
       - [Branding:](#branding)
@@ -1841,17 +1554,27 @@ Asimismo, utilizamos la herramienta "Planning Poker Online" para poder votar en 
 ---
 
 
-# Capítulo IV: Solution Software Design
+# Capítulo IV: Strategic-Level Software Design  
 
-## 4.1. Strategic-Level Domain-Driven Design
+## 4.1. Strategic-Level Attribute-Driven Design. 
+### 4.1.1. Design Purpose. 
+### 4.1.2. Attribute-Driven Design Inputs. 
+#### 4.1.2.1. Primary Functionality (Primary User Stories). 
+#### 4.1.2.2. Quality Attribute Scenarios. 
+#### 4.1.2.3. Constraints. 
+### 4.1.3. Architectural Drivers Backlog. 
+### 4.1.4. Architectural Design Decisions. 
+### 4.1.5. Quality Attribute Scenario Refinements. 
 
-### 4.1.1. Event Storming
+## 4.2. Strategic-Level Domain-Driven Design. 
+
+### 4.2.1. EventStorming. 
 
 Con el objetivo de que todos los integrantes puedan mantener la misma comprensión del dominio de nuestro producto de software, se llevó a cabo una sesión de Event Storming de aproximadamente 1 hora. Esto permitió que nosotros como equipo organizaramos nuestras ideas y pensamientos para identificar los eventos clave, comandos, usuarios y agregados del sistema, lo cuales son importantes para ofrecer una primera visión integral de este.
 
 [![Captura-de-pantalla-2025-09-17-164413.png](https://i.postimg.cc/h4VRmT50/Captura-de-pantalla-2025-09-17-164413.png)](https://postimg.cc/grc7FXdw)
 
-#### 4.1.1.1 Candidate Context Discovery
+### 4.2.2. Candidate Context Discovery. 
 
 En esta sección se visualizan nuestros bounded context candidatos, los cuales se formaron a partir del event storming:
 
@@ -1883,18 +1606,17 @@ https://lucid.app/lucidchart/5207a245-2b65-413c-b65f-055daf5730ba/edit?viewport_
 
 [![Captura-de-pantalla-2025-09-20-150745.png](https://i.postimg.cc/6QchktGp/Captura-de-pantalla-2025-09-20-150745.png)](https://postimg.cc/rddWW6JB)
 
-
-#### 4.1.1.2 Domain Message Flows Modeling
+### 4.2.3. Domain Message Flows Modeling. 
 
 Para dar inicio con el diseño de nuestro software, es de suma importancia el uso de los Domain Message Flows Modeling, ya que nos permite ilustrar la transferencia de información entre los diferentes componentes que interactúan en nuestro sistema conjunto. Además, el uso de esta metodología permite detectar problemas potenciales en la lógica del negocio de manera más rápida y sencilla.
 
-<!-- Contenido de Domain Message Flows Modeling -->
+[![Captura-de-pantalla-2025-10-10-060714.png](https://i.postimg.cc/nzBxYyZg/Captura-de-pantalla-2025-10-10-060714.png)](https://postimg.cc/R6S2vbWL)
 
-#### 4.1.1.3 Bounded Context Canvases
+[![Captura-de-pantalla-2025-10-10-060727.png](https://i.postimg.cc/LXLSBcR0/Captura-de-pantalla-2025-10-10-060727.png)](https://postimg.cc/9RmscNDG)
+
+### 4.2.4. Bounded Context Canvases.  
 
 Los Bounded Context Canvas ayudan a definir claramente los límites de un bounded context y a capturar en un solo lugar la información clave del contexto, como el propósito, los usuarios principales, el lenguaje ubicuo, las entidades, reglas de negocio y relaciones con otros contextos.
-
-<!-- Contenido de Bounded Context Canvases -->
 
 **Bounded Context: IAM & Profile**
 
@@ -1921,16 +1643,13 @@ Los Bounded Context Canvas ayudan a definir claramente los límites de un bounde
 [![bc-canvas-6.jpg](https://i.postimg.cc/RZ21JmWg/bc-canvas-6.jpg)](https://postimg.cc/mPN1K0N9)
 
 
+### 4.2.5. Context Mapping. 
 
+FALTA
 
+## 4.3. Software Architecture. 
 
-### 4.1.2. Context Mapping
-
-<!-- Contenido de Context Mapping -->
-
-### 4.1.3. Software Architecture
-
-#### 4.1.3.1. Software Architecture System Landscape Diagram
+### 4.3.1. Software Architecture System Landscape Diagram.
 
 En el diseño de la arquitectura del sistema se empleó el modelo C4, específicamente los diagramas de Context y Container, con el fin de representar de manera jerárquica y clara los diferentes niveles de abstracción. El Context Diagram permitió identificar a los actores externos y su interacción con el sistema, mientras que el Container Diagram detalló los principales componentes lógicos, servicios y aplicaciones que conforman la solución, así como sus relaciones. Adicionalmente, se incluyó un Deployment Diagram, que describe cómo los distintos elementos se distribuyen en la nube. 
 
@@ -1938,30 +1657,34 @@ Para el desarrollo de los diagramas C4 se utilizó la plataforma de Structurizr 
 
 [![structurizr-106404-Dev-Beans-Diagram-Contenedores-key.png](https://i.postimg.cc/Kcs2Mp51/structurizr-106404-Dev-Beans-Diagram-Contenedores-key.png)](https://postimg.cc/kD8zrczC)
 
-#### 4.1.3.2. Software Architecture Context Level Diagrams
+### 4.3.2. Software Architecture Context Level Diagrams. 
 
 El Context Diagram muestra el sistema como una “caja negra” y lo ubica dentro de su ecosistema. En este nivel se identifican los usuarios, sistemas externos y actores clave, junto con las interacciones que tienen con la solución propuesta.
 
 [![structurizr-106404-Diagrama-Contexto.png](https://i.postimg.cc/cJq18k0R/structurizr-106404-Diagrama-Contexto.png)](https://postimg.cc/5X3Wh3Hy)
 
-#### 4.1.3.3. Software Architecture Container Level Diagrams
+### 4.3.3. Software Architecture Container Level Diagrams. 
 
 El Container Diagram descompone el sistema en sus principales contenedores de software (aplicaciones, bases de datos, APIs, bounded contexts, etc) y define cómo se comunican entre sí.
 
 [![structurizr-106404-Dev-Beans-Diagram-Contenedores.png](https://i.postimg.cc/c1fzsDbq/structurizr-106404-Dev-Beans-Diagram-Contenedores.png)](https://postimg.cc/CdL7740J)
 
-#### 4.1.3.4. Software Architecture Deployment Diagrams
+### 4.3.4. Software Architecture Deployment Diagrams. 
 
 [![Captura-de-pantalla-2025-09-20-172320.png](https://i.postimg.cc/TYwP8WtD/Captura-de-pantalla-2025-09-20-172320.png)](https://postimg.cc/xqwQMqDf)
 
 
-# 4.2. Tactical-Level Domain-Driven Design
 
-## 4.2.1. Bounded Context: IAM & Profile
+
+
+
+# Capítulo V: Tactical-Level Software Design
+
+## 5.1. Bounded Context: IAM & Profile
 
 El **IAM & Profile Bounded Context** es responsable de gestionar la autenticación, autorización y perfiles de usuarios en el sistema BeanDetect AI. Este contexto asegura que los usuarios (Productores Independientes y Cooperativas) puedan registrarse, iniciar sesión y gestionar sus perfiles de manera segura, cumpliendo con los estándares de seguridad y privacidad.
 
-### 4.2.1.1. Domain Layer
+### 5.1.1. Domain Layer
 
 La Domain Layer del IAM & Profile Bounded Context encapsula la lógica de negocio relacionada con la gestión de usuarios y perfiles. En esta capa se definen los elementos principales del dominio: agregados, entidades y objetos de valor que representan los conceptos clave del sistema.
 
@@ -2069,7 +1792,7 @@ La Domain Layer del IAM & Profile Bounded Context encapsula la lógica de negoci
    - Se dispara cuando se actualiza un perfil.
    - **Atributos**: `userId`, `updatedFields`.
 
-### 4.2.1.2. Interface Layer
+### 5.1.2. Interface Layer
 
 #### **Controllers**
 1. **AuthController**
@@ -2098,7 +1821,7 @@ La Domain Layer del IAM & Profile Bounded Context encapsula la lógica de negoci
 2. **UserResourceFromEntityAssembler**
 3. **ProfileResourceFromEntityAssembler**
 
-### 4.2.1.3. Application Layer
+### 5.1.3. Application Layer
 
 #### **Command Services**
 1. **UserCommandServiceImpl**
@@ -2115,7 +1838,7 @@ La Domain Layer del IAM & Profile Bounded Context encapsula la lógica de negoci
 2. **ProfileQueryServiceImpl**
    - **Métodos**: `handle(GetProducerProfileQuery)`, `handle(GetCooperativeProfileQuery)`
 
-### 4.2.1.4. Infrastructure Layer
+### 5.1.4. Infrastructure Layer
 
 #### **Persistencia (JPA Repositories)**
 1. **UserRepository**
@@ -2128,30 +1851,30 @@ La Domain Layer del IAM & Profile Bounded Context encapsula la lógica de negoci
 3. **CooperativeProfileRepository**
    - `findByUserId(Long userId)`
 
-#### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
+### 4.1.5. Bounded Context Software Architecture Component Level Diagrams
 
 [![structurizr-106404-IAMProfile-Component-Diagram.png](https://i.postimg.cc/GpcLQ8Tt/structurizr-106404-IAMProfile-Component-Diagram.png)](https://postimg.cc/G45n3pQn)
 
-### 4.2.1.6.  Bounded Context Software Architecture Code Level Diagrams
+### 5.1.6.  Bounded Context Software Architecture Code Level Diagrams
 
 En esta sección se presentan los diagramas UML a nivel de código para el contexto determinado.
 
-#### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams
+#### 5.1.6.1. Bounded Context Domain Layer Class Diagrams
 
 [![Captura-de-pantalla-2025-09-20-185251.png](https://i.postimg.cc/mgLP82nd/Captura-de-pantalla-2025-09-20-185251.png)](https://postimg.cc/dLfQ0vwd)
 
-#### 4.2.1.6.2. Bounded Context Database Design Diagram
+#### 5.1.6.2. Bounded Context Database Design Diagram
 
 [![Captura-de-pantalla-2025-09-20-185333.png](https://i.postimg.cc/bvdsfVpk/Captura-de-pantalla-2025-09-20-185333.png)](https://postimg.cc/SXFyWrXx)
 
 
 ---
 
-## 4.2.2. Bounded Context: Coffee Lot Management
+## 5.2. Bounded Context: Coffee Lot Management
 
 El **Coffee Lot Management Bounded Context** es responsable de gestionar la información y el ciclo de vida de los lotes de café en el sistema. Este contexto permite a productores y cooperativas registrar, visualizar, editar y eliminar lotes de café, incluyendo detalles como fecha de cosecha, variedad, origen y cantidad.
 
-### 4.2.2.1. Domain Layer
+### 5.2.1. Domain Layer
 
 La Domain Layer del Coffee Lot Management Bounded Context encapsula la lógica de negocio relacionada con la gestión del ciclo de vida de los lotes de café, desde su registro inicial hasta su estado final de envío.
 
@@ -2271,7 +1994,7 @@ La Domain Layer del Coffee Lot Management Bounded Context encapsula la lógica d
    - Se dispara cuando se elimina un lote.
    - **Atributos**: `lotId`, `lotNumber`, `deletionReason`.
 
-### 4.2.2.2. Interface Layer
+### 5.2.2. Interface Layer
 
 #### **Controllers**
 1. **CoffeeLotController**
@@ -2311,7 +2034,7 @@ La Domain Layer del Coffee Lot Management Bounded Context encapsula la lógica d
 3. **UpdateCoffeeLotCommandFromResourceAssembler**
    - Convierte `UpdateCoffeeLotResource` a `UpdateCoffeeLotCommand`.
 
-### 4.2.2.3. Application Layer
+### 5.2.3. Application Layer
 
 #### **Command Services**
 1. **CoffeeLotCommandServiceImpl**
@@ -2351,7 +2074,7 @@ La Domain Layer del Coffee Lot Management Bounded Context encapsula la lógica d
    - **Propósito**: Verifica autenticidad de información de origen.
    - **Métodos**: `verifyOriginData(OriginData data)`.
 
-### 4.2.2.4. Infrastructure Layer
+### 5.2.4. Infrastructure Layer
 
 #### **Persistencia (JPA Repositories)**
 1. **CoffeeLotRepository**
@@ -2382,30 +2105,30 @@ La Domain Layer del Coffee Lot Management Bounded Context encapsula la lógica d
 
 ---
 
-### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams
+### 5.2.5. Bounded Context Software Architecture Component Level Diagrams
 
 [![structurizr-106404-Coffee-Lot-Component-Diagram.png](https://i.postimg.cc/JnFRMp6H/structurizr-106404-Coffee-Lot-Component-Diagram.png)](https://postimg.cc/JDjfQ5WR)
 
-### 4.2.2.6.  Bounded Context Software Architecture Code Level Diagrams
+### 5.2.6.  Bounded Context Software Architecture Code Level Diagrams
 
 En esta sección se presentan los diagramas UML a nivel de código para el contexto determinado.
 
-#### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams
+#### 5.2.6.1. Bounded Context Domain Layer Class Diagrams
 
 [![Captura-de-pantalla-2025-09-20-185124.png](https://i.postimg.cc/vmv6GxVw/Captura-de-pantalla-2025-09-20-185124.png)](https://postimg.cc/JyGhqnxp)
 
-#### 4.2.2.6.2. Bounded Context Database Design Diagram
+#### 5.2.6.2. Bounded Context Database Design Diagram
 
 [![Captura-de-pantalla-2025-09-20-185158.png](https://i.postimg.cc/5NvBZ0nb/Captura-de-pantalla-2025-09-20-185158.png)](https://postimg.cc/Czhn8w3Q)
 
 
 ---
 
-## 4.2.3. Bounded Context: Grain Classification
+## 5.3. Bounded Context: Grain Classification
 
 El **Grain Classification Bounded Context** es el corazón del sistema BeanDetect AI, responsable de la clasificación automática de granos de café utilizando inteligencia artificial para el análisis de imágenes por computadora. Este contexto procesa imágenes de granos, detecta defectos y mide parámetros de calidad.
 
-### 4.2.3.1. Domain Layer
+### 5.3.1. Domain Layer
 
 La Domain Layer del Grain Classification Bounded Context encapsula la lógica de negocio más compleja del sistema, incluyendo algoritmos de clasificación, detección de defectos y cálculo de métricas de calidad basadas en estándares internacionales del café.
 
@@ -2569,7 +2292,7 @@ La Domain Layer del Grain Classification Bounded Context encapsula la lógica de
    - Se dispara al actualizar modelo de IA.
    - **Atributos**: `oldVersion`, `newVersion`, `improvementMetrics`.
 
-### 4.2.3.2. Interface Layer
+### 5.3.2. Interface Layer
 
 #### **Controllers**
 1. **ClassificationController**
@@ -2619,7 +2342,7 @@ La Domain Layer del Grain Classification Bounded Context encapsula la lógica de
 3. **DefectDetectionResourceFromEntityAssembler**
    - Convierte entidad `DefectDetection` a `DefectDetectionResource`.
 
-### 4.2.3.3. Application Layer
+### 5.3.3. Application Layer
 
 #### **Command Services**
 1. **ClassificationCommandServiceImpl**
@@ -2671,7 +2394,7 @@ La Domain Layer del Grain Classification Bounded Context encapsula la lógica de
      - `segmentGrains(Image image)`: Separa granos individuales en imagen.
      - `calibrateColorProfile(Image image)`: Calibra perfil de colores.
 
-### 4.2.3.4. Infrastructure Layer
+### 5.3.4. Infrastructure Layer
 
 #### **Persistencia (JPA Repositories)**
 1. **ClassificationSessionRepository**
@@ -2717,30 +2440,30 @@ La Domain Layer del Grain Classification Bounded Context encapsula la lógica de
      - `handle(DefectDetectedEvent)`: Alerta sistemas de calidad.
      - `handle(ModelRecalibrationEvent)`: Actualiza configuraciones dependientes.
 
-### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams
+### 5.3.5. Bounded Context Software Architecture Component Level Diagrams
 
 [![structurizr-106404-Grain-Classification-Component-Diagram.png](https://i.postimg.cc/W3zsBBnP/structurizr-106404-Grain-Classification-Component-Diagram.png)](https://postimg.cc/WFRRrfC9)
 
-### 4.2.3.6.  Bounded Context Software Architecture Code Level Diagrams
+### 5.3.6.  Bounded Context Software Architecture Code Level Diagrams
 
 En esta sección se presentan los diagramas UML a nivel de código para el contexto determinado.
 
-#### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams
+#### 5.3.6.1. Bounded Context Domain Layer Class Diagrams
 
 [![Captura-de-pantalla-2025-09-20-184956.png](https://i.postimg.cc/yx8mMXQG/Captura-de-pantalla-2025-09-20-184956.png)](https://postimg.cc/hzNQxxq8)
 
-#### 4.2.3.6.2. Bounded Context Database Design Diagram
+#### 5.3.6.2. Bounded Context Database Design Diagram
 
 [![Captura-de-pantalla-2025-09-20-185024.png](https://i.postimg.cc/PqnmXkVY/Captura-de-pantalla-2025-09-20-185024.png)](https://postimg.cc/qNQtwWTv)
 
 
 ---
 
-## 4.2.4. Bounded Context: Traceability & Certification
+## 5.4. Bounded Context: Traceability & Certification
 
 El **Traceability & Certification Bounded Context** es responsable de proporcionar trazabilidad y certificación digital para los lotes de café en el sistema BeanDetect AI. Este contexto garantiza la transparencia, confianza e inmutabilidad de los registros mediante tecnología blockchain, generando certificados digitales, códigos QR y manteniendo registros auditables desde el origen hasta el consumidor final.
 
-### 4.2.4.1. Domain Layer
+### 5.4.1. Domain Layer
 
 La Domain Layer del Traceability & Certification Bounded Context encapsula la lógica de negocio relacionada con la trazabilidad completa, certificación digital y verificación de autenticidad de los lotes de café según estándares internacionales de comercio justo y sostenibilidad.
 
@@ -2904,7 +2627,7 @@ La Domain Layer del Traceability & Certification Bounded Context encapsula la l�
    - Se dispara al revocar un certificado.
    - **Atributos**: `certificateId`, `revocationReason`, `timestamp`.
 
-### 4.2.4.2. Interface Layer
+### 5.4.2. Interface Layer
 
 #### **Controllers**
 1. **TraceabilityController**
@@ -2955,7 +2678,7 @@ La Domain Layer del Traceability & Certification Bounded Context encapsula la l�
 3. **CertificateResourceFromEntityAssembler**
    - Convierte entidad `Certificate` a `CertificateResource`.
 
-### 4.2.4.3. Application Layer
+### 5.4.3. Application Layer
 
 #### **Command Services**
 1. **TraceabilityCommandServiceImpl**
@@ -3016,7 +2739,7 @@ La Domain Layer del Traceability & Certification Bounded Context encapsula la l�
      - `verifySatelliteImagery(Coordinates coords)`: Verifica con imágenes satelitales.
      - `validateClimateData(OriginData data)`: Valida datos climáticos.
 
-### 4.2.4.4. Infrastructure Layer
+### 5.4.4. Infrastructure Layer
 
 #### **Persistencia (JPA Repositories)**
 1. **TraceabilityRecordRepository**
@@ -3061,29 +2784,29 @@ La Domain Layer del Traceability & Certification Bounded Context encapsula la l�
      - `handle(CoffeeLotClassifiedEvent)`: Registra etapa de clasificación.
      - `handle(CertificateIssuedEvent)`: Actualiza estado de trazabilidad.
 
-### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams
+### 5.4.5. Bounded Context Software Architecture Component Level Diagrams
 
 [![structurizr-106404-Traceability-Component-Diagram.png](https://i.postimg.cc/jS6qPQ5B/structurizr-106404-Traceability-Component-Diagram.png)](https://postimg.cc/nXzttmq1)
 
-### 4.2.4.6.  Bounded Context Software Architecture Code Level Diagrams
+### 5.4.6.  Bounded Context Software Architecture Code Level Diagrams
 
 En esta sección se presentan los diagramas UML a nivel de código para el contexto determinado.
 
-#### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams
+#### 5.4.6.1. Bounded Context Domain Layer Class Diagrams
 
 [![Captura-de-pantalla-2025-09-20-184806.png](https://i.postimg.cc/G3KzX97N/Captura-de-pantalla-2025-09-20-184806.png)](https://postimg.cc/Yj4192wf)
 
-#### 4.2.4.6.2. Bounded Context Database Design Diagram
+#### 5.4.6.2. Bounded Context Database Design Diagram
 
 [![Captura-de-pantalla-2025-09-20-184712.png](https://i.postimg.cc/xCKpfRPT/Captura-de-pantalla-2025-09-20-184712.png)](https://postimg.cc/FdHVG0q2)
 
 ---
 
-## 4.2.5. Bounded Context: Reporting & Analytics
+## 5.5. Bounded Context: Reporting & Analytics
 
 El **Reporting & Analytics Bounded Context** es responsable de transformar datos operacionales en insights accionables para productores y cooperativas en el sistema BeanDetect AI. Este contexto genera reportes comprehensivos, análisis de tendencias, dashboards interactivos y alertas automáticas basadas en métricas de calidad, rendimiento de cosecha y patrones históricos de producción cafetalera.
 
-### 4.2.5.1. Domain Layer
+### 5.5.1. Domain Layer
 
 La Domain Layer del Reporting & Analytics Bounded Context encapsula la lógica de negocio relacionada con la generación de reportes, cálculo de métricas agregadas, análisis de tendencias y generación de insights para la toma de decisiones en la industria cafetalera.
 
@@ -3255,7 +2978,7 @@ La Domain Layer del Reporting & Analytics Bounded Context encapsula la lógica d
    - Se dispara al completar análisis de tendencias.
    - **Atributos**: `analysisId`, `trendDirection`, `forecast`.
 
-### 4.2.5.2. Interface Layer
+### 5.5.2. Interface Layer
 
 #### **Controllers**
 1. **ReportController**
@@ -3306,7 +3029,7 @@ La Domain Layer del Reporting & Analytics Bounded Context encapsula la lógica d
 3. **QualityMetricsResourceFromEntityAssembler**
    - Convierte entidad `QualityMetrics` a `QualityMetricsResource`.
 
-### 4.2.5.3. Application Layer
+### 5.5.3. Application Layer
 
 #### **Command Services**
 1. **ReportCommandServiceImpl**
@@ -3359,7 +3082,7 @@ La Domain Layer del Reporting & Analytics Bounded Context encapsula la lógica d
      - `checkThresholds(MetricValue value)`: Verifica thresholds configurados.
      - `generateAlert(AlertCondition condition)`: Genera alerta apropiada.
 
-### 4.2.5.4. Infrastructure Layer
+### 5.5.4. Infrastructure Layer
 
 #### **Persistencia (JPA Repositories)**
 1. **ReportRepository**
@@ -3401,30 +3124,30 @@ La Domain Layer del Reporting & Analytics Bounded Context encapsula la lógica d
      - `handle(ClassificationCompletedEvent)`: Actualiza métricas con nueva clasificación.
      - `handle(CoffeeLotRegisteredEvent)`: Actualiza estadísticas de producción.
 
-### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams
+### 5.5.5. Bounded Context Software Architecture Component Level Diagrams
 
 [![structurizr-106404-Reporting-Component-Diagram.png](https://i.postimg.cc/1zJ9YmDH/structurizr-106404-Reporting-Component-Diagram.png)](https://postimg.cc/SXYFnpT2)
 
-### 4.2.5.6.  Bounded Context Software Architecture Code Level Diagrams
+### 5.5.6.  Bounded Context Software Architecture Code Level Diagrams
 
 En esta sección se presentan los diagramas UML a nivel de código para el contexto determinado.
 
-#### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams
+#### 5.5.6.1. Bounded Context Domain Layer Class Diagrams
 
 [![Captura-de-pantalla-2025-09-20-183847.png](https://i.postimg.cc/cHVkZz3z/Captura-de-pantalla-2025-09-20-183847.png)](https://postimg.cc/TLJJJCCj)
 
-#### 4.2.5.6.2. Bounded Context Database Design Diagram
+#### 5.5.6.2. Bounded Context Database Design Diagram
 
 [![Captura-de-pantalla-2025-09-20-184546.png](https://i.postimg.cc/2yQstYtG/Captura-de-pantalla-2025-09-20-184546.png)](https://postimg.cc/H8LvJqd8)
 
 
 ---
 
-## 4.2.6. Bounded Context: User Support
+## 5.6. Bounded Context: User Support
 
 El **User Support Bounded Context** gestiona el soporte técnico y atención al cliente, incluyendo canales como WhatsApp, soporte telefónico y documentación de ayuda. Además gestiona tickets de solicitudes para grabar la fecha en la base de datos.
 
-### 4.2.6.1. Domain Layer
+### 5.6.1. Domain Layer
 
 La Domain Layer del User Support Bounded Context encapsula la lógica de negocio relacionada con la gestión de tickets de soporte y el intercambio de mensajes entre usuarios y el equipo de soporte técnico. Además, genera los tickets de la solicitud a la consulta para que la hora quede registrada.
 
@@ -3547,7 +3270,7 @@ La Domain Layer del User Support Bounded Context encapsula la lógica de negocio
    - Se dispara al resolver ticket.
    - **Atributos**: `ticketId`, `resolutionTime`, `userId`.
 
-### 4.2.6.2. Interface Layer
+### 5.6.2. Interface Layer
 
 #### **Controllers**
 1. **SupportTicketController**
@@ -3591,7 +3314,7 @@ La Domain Layer del User Support Bounded Context encapsula la lógica de negocio
 3. **TicketMessageResourceFromEntityAssembler**
    - Convierte entidad `TicketMessage` a `TicketMessageResource`.
 
-### 4.2.6.3. Application Layer
+### 5.6.3. Application Layer
 
 #### **Command Services**
 1. **SupportTicketCommandServiceImpl**
@@ -3628,7 +3351,7 @@ La Domain Layer del User Support Bounded Context encapsula la lógica de negocio
      - `canUserUpdateTicket(Long userId, SupportTicket ticket)`: Verifica permisos.
      - `validateTicketContent(String title, String description)`: Valida contenido.
 
-### 4.2.6.4. Infrastructure Layer
+### 5.6.4. Infrastructure Layer
 
 #### **Persistencia (JPA Repositories)**
 1. **SupportTicketRepository**
@@ -3666,27 +3389,24 @@ La Domain Layer del User Support Bounded Context encapsula la lógica de negocio
      - `handle(TicketMessageAddedEvent)`: Procesa nuevo mensaje.
      - `handle(TicketResolvedEvent)`: Procesa resolución y actualiza métricas.
 
-### 4.2.6.5. Bounded Context Software Architecture Component Level Diagrams
+### 5.6.5. Bounded Context Software Architecture Component Level Diagrams
 
 [![structurizr-106404-User-Support-Component-Diagram.png](https://i.postimg.cc/YCBqvyp1/structurizr-106404-User-Support-Component-Diagram.png)](https://postimg.cc/CzJVt7n1)
 
-### 4.2.6.6.  Bounded Context Software Architecture Code Level Diagrams
+### 5.6.6.  Bounded Context Software Architecture Code Level Diagrams
 
 En esta sección se presentan los diagramas UML a nivel de código para el contexto determinado.
 
-#### 4.2.6.6.1. Bounded Context Domain Layer Class Diagrams
+#### 5.6.6.1. Bounded Context Domain Layer Class Diagrams
 
 [![Captura-de-pantalla-2025-09-20-183028.png](https://i.postimg.cc/RhS91qs9/Captura-de-pantalla-2025-09-20-183028.png)](https://postimg.cc/ygbws6Cr)
 
-#### 4.2.6.6.2. Bounded Context Database Design Diagram
+#### 5.6.6.2. Bounded Context Database Design Diagram
 
 [![Captura-de-pantalla-2025-09-20-182449.png](https://i.postimg.cc/BbTLb880/Captura-de-pantalla-2025-09-20-182449.png)](https://postimg.cc/bSvNFwHC)
 
 ---
-# Capítulo V: Tactical-Level Software Design
 
-
----
 # Capítulo VI: Solution UX Design.
 ## 6.1. Style Guidelines.
 ### 6.1.1. General Style Guidelines.
