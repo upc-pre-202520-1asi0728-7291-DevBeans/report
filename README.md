@@ -4275,7 +4275,7 @@ Esta sección presenta la propuesta de Wireflows para la aplicación, diseñados
 
 #### User Goal 1: Implementar la productividad del cultivo
 
-**User Persona:** Juan Pérez (Productor de café, Finca El Cafetal)
+**User Persona:** José Ramírez (Productor de café en finca familiar)
 
 **Descripción del Flujo:**
 
@@ -4350,7 +4350,7 @@ Este wireflow describe el proceso mediante el cual un productor de café registr
 
 #### User Goal 2: Mejorar la gestión financiera y logística de la cooperativa
 
-**User Persona:** Oscar Gabriel Aranda (Representante Legal de Cooperativa, Cooperativa Cafetera del Sur)
+**User Persona:** Luis Torres (Representante Legal de Cooperativa, Cooperativa Valle Verde)
 
 **Descripción del Flujo:**
 
