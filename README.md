@@ -760,17 +760,17 @@ Pedro es productor de café desde hace más de 20 años y administra una finca d
 
 **Entrevista 1:**
 
-- **Nombres:** xxxxxxxxxx
-- **Apellidos:** xxxxxxxxxx
-- **Edad:** xxxxxxxxxx
-- **Lugar de residencia:** xxxxxxxxxx, xxxxxxxxxx
+- **Nombres:** Luis Alberto Cárdenas
+- **Apellidos:** Cárdenas Huamán
+- **Edad:** 32
+- **Lugar de residencia:** Villa Rica, Region de pasco
 
 **Evidencia de la entrevista:**  
-<img src="assets/images/interviews/>
+<img src="assets/images/entrevistas/Entrevista3.png">
 
-**Enlace de la entrevista:** []()
+**Enlace de la entrevista:** [Entrevista Segmento 1 Luis Cardenas](https://youtu.be/W1BOgYHrgEE)
 **Resumen de la entrevista:**  
-xxxxxxxxxx
+Luis Alberto Cárdenas Huamán tiene 42 años y es gerente de la Cooperativa Agraria Cafetalera Valle Verde, ubicada en Villa Rica, Pasco. Con más de 260 productores asociados, la cooperativa procesa entre 45 y 60 toneladas de café pergamino al mes, enfocándose en la exportación de café verde certificado. Luis explica que uno de los mayores retos es mantener una calidad uniforme entre los lotes debido a la variabilidad en los procesos de beneficio y secado de cada productor. Actualmente utilizan registros manuales y un laboratorio básico para el control de calidad, aunque reconoce la necesidad de herramientas digitales más eficientes. Considera que la trazabilidad es clave para generar confianza en los compradores internacionales y está interesado en soluciones tecnológicas costo-eficientes que ayuden a estandarizar la calidad. Además, cree que una clasificación automática del café permitiría identificar mejor los lotes premium, mejorar la consistencia de los envíos y aumentar el valor del producto en los mercados internacionales.
 
 **Entrevista 2:**
 
