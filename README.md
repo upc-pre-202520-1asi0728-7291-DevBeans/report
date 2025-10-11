@@ -1957,8 +1957,302 @@ Este patrón optimiza costos mientras mantiene alta calidad de servicio:
     - `POST /api/v1/classifications`: Ejecutar clasificación (US12)
     - `GET /api/v1/reports/consolidated`: Reporte consolidado cooperativa (US16)
     - `POST /api/v1/exports/pdf`: Generar certificado PDF (US17)
+  - **Performance**: Respuesta ≤3 segundos
+  - **Autenticación**: Bearer token JWT en header Authorization
+
+**Implicaciones arquitectónicas:**
+- Monitoreo de costos en tiempo real con AWS Cost Explorer + alertas cuando spend proyectado >$450
+- Cache invalidation strategy: invalidar cache al crear/editar lotes, mantener para reads
+- Spot Instance interruption handling: Kubernetes node drain hooks para migrar pods gracefully
+- MLflow server deployment: ECS Fargate con RDS PostgreSQL backend, S3 artifact store
+- API versioning strategy: path-based (`/api/v1`, `/api/v2`), deprecation policy de 6 meses
+- Observability stack: Prometheus metrics, Jaeger distributed tracing, ELK para logs centralizados
+
 
 ### 4.1.5. Quality Attribute Scenario Refinements. 
+
+En esta sección se especifica la relación de escenarios priorizados para atributos de calidad. Se presenta la versión final de los escenarios refinados en orden de prioridad, después de finalizar el proceso de Quality Attribute Workshop. Cada escenario se coloca como un cuadro con la estructura especificada.
+
+#### Scenario Refinement for Scenario 1: Performance en Clasificación de Lotes
+
+**Scenario(s):** Performance - Tiempo de Respuesta en Clasificación
+
+**Business Goals:** Garantizar experiencia de usuario fluida que no genere frustración en productores y cooperativas durante el proceso crítico de clasificación de café, maximizando la productividad operacional.
+
+**Relevant Quality Attributes:** Performance, Usability
+
+| Scenario Components | Detalles |
+|---------------------|----------|
+| **Stimulus:** | Productor captura imagen de muestra de 500 granos y solicita clasificación completa |
+| **Stimulus Source:** | Usuario (productor o cooperativa) desde aplicación móvil Android en zona rural |
+| **Environment:** | Operación normal con hasta 50 usuarios concurrentes clasificando lotes simultáneamente, red 3G con latencia 200-500ms |
+| **Artifact (if Known):** | Sistema completo: App móvil → API Gateway → ML Inference Service (TensorFlow Serving) → Database |
+| **Response:** | El sistema procesa imagen en dispositivo con modelo TFLite (detección preliminar), envía a cloud para clasificación definitiva en background, retorna resultados completos con: identificación de defectos por tipo y cantidad, clasificación por severidad (crítico/mayor/menor), porcentaje de café apto para exportación vs mercado local, recomendaciones comerciales |
+| **Response Measure:** | Tiempo total ≤5 segundos (P95), desglosado en: captura y preprocessing ≤1s, inferencia local ≤2s, inferencia cloud ≤2s (cuando disponible), rendering UI ≤0.5s. Feedback visual progresivo: barra de progreso actualizada cada 500ms |
+
+**Questions:** 
+- ¿Cómo manejar timeout si inferencia cloud excede 5 segundos en redes lentas?
+- ¿Es aceptable mostrar resultado preliminar (90% accuracy) inmediatamente y actualizar con resultado definitivo (95% accuracy) cuando cloud responda?
+
+**Issues:** 
+- Cold start de contenedores Kubernetes puede agregar 2-3 segundos en primera request del día
+- Imágenes de alta resolución (>5MB) pueden exceder timeout en conexiones 2G
+- Balance entre accuracy y latency: modelo más complejo mejora precisión pero aumenta tiempo de inferencia
+
+---
+
+#### Scenario Refinement for Scenario 2: Availability en Temporada Alta de Cosecha
+
+**Scenario(s):** Availability - Disponibilidad durante Temporada Crítica
+
+**Business Goals:** Asegurar que el sistema esté disponible durante los meses críticos de cosecha (abril-agosto) cuando los productores procesan la mayoría de su producción anual, evitando pérdidas económicas por clasificación retrasada.
+
+**Relevant Quality Attributes:** Availability, Reliability
+
+| Scenario Components | Detalles |
+|---------------------|----------|
+| **Stimulus:** | Múltiples usuarios intentan acceder al sistema simultáneamente durante horario pico (8am-12pm) en temporada de cosecha |
+| **Stimulus Source:** | 200 usuarios concurrentes (mix 70% productores, 30% cooperativas) |
+| **Environment:** | Operación normal en temporada alta con carga 4x mayor que promedio mensual, potencial fallo de zona de disponibilidad AWS |
+| **Artifact (if Known):** | Infraestructura completa: Load Balancer → Kubernetes Pods (API + ML Service) → RDS Multi-AZ → Redis Cluster |
+| **Response:** | Sistema permanece operativo y responsive. En caso de fallo de AZ: Load balancer redirige tráfico automáticamente a AZ secundaria en ≤30 segundos, RDS failover automático a standby replica en ≤60 segundos, notificación a equipo DevOps vía PagerDuty, logs detallados de incidente para post-mortem |
+| **Response Measure:** | Disponibilidad ≥99.5% mensual (máximo 3.6 horas downtime/mes), RTO (Recovery Time Objective) ≤5 minutos, RPO (Recovery Point Objective) ≤1 minuto (pérdida máxima de datos), tasa de error <0.5% requests |
+
+**Questions:** 
+- ¿Deberíamos implementar multi-region deployment para tolerar fallo completo de región AWS?
+- ¿Cómo comunicamos downtime planificado a usuarios en zonas rurales sin acceso constante a email?
+
+**Issues:** 
+- Costo de infraestructura Multi-AZ agrega ~$100/mes al presupuesto
+- Testing de disaster recovery requiere ambiente staging que replique producción fielmente
+- Definir SLA diferenciado: usuarios free tier pueden experimentar degradación antes que premium
+
+---
+
+#### Scenario Refinement for Scenario 3: Usability para Productores con Baja Alfabetización Digital
+
+**Scenario(s):** Usability - Primera Clasificación sin Capacitación
+
+**Business Goals:** Minimizar barrera de entrada tecnológica para maximizar adopción entre productores pequeños/medianos, muchos con educación primaria y limitada experiencia con smartphones.
+
+**Relevant Quality Attributes:** Usability, Accessibility
+
+| Scenario Components | Detalles |
+|---------------------|----------|
+| **Stimulus:** | Productor nuevo (55 años, educación primaria, primer smartphone) intenta realizar su primera clasificación de lote después de registrarse |
+| **Stimulus Source:** | Usuario productor sin capacitación previa ni soporte técnico presente |
+| **Environment:** | Primera interacción con la aplicación, sin acceso a tutoriales o manuales, ambiente ruidoso de beneficio de café |
+| **Artifact (if Known):** | Interfaz móvil completa: onboarding flow → creación de lote → captura de imagen → visualización de resultados |
+| **Response:** | Sistema guía al usuario paso a paso con: tutorial interactivo de 3 pasos con imágenes ilustrativas (no texto denso), instrucciones de voz en español (opcional quechua/aymara para soporte multilenguaje US24, US25), validación en tiempo real de cada paso con feedback visual (✓ verde, ✗ rojo), tooltips contextuales, confirmación antes de acciones críticas (eliminar lote US11), mensajes de éxito con lenguaje no técnico (¡Tu café está listo para exportar! vs Grade 1 Specialty compliant) |
+| **Response Measure:** | ≥85% de usuarios completan primera clasificación exitosamente en ≤10 minutos sin ayuda externa, tasa de abandono <15% en flujo de onboarding, NPS (Net Promoter Score) ≥40 en encuesta post-primera clasificación, ≤3 taps promedio para completar tarea común |
+
+**Questions:** 
+- ¿Deberíamos ofrecer modo "ultra simple" con funcionalidad reducida pero más intuitiva?
+- ¿Cómo balancear simplicidad con completitud de información para usuarios avanzados (cooperativas)?
+
+**Issues:** 
+- Producción de contenido en quechua/aymara requiere hablantes nativos para validación (TS07)
+- Testing de usabilidad debe realizarse en campo con usuarios reales, no en lab urbano
+- Accesibilidad para usuarios con discapacidad visual/motora no está cubierta en MVP
+
+---
+
+#### Scenario Refinement for Scenario 4: Security ante Intentos de Acceso No Autorizado
+
+**Scenario(s):** Security - Protección de Datos Sensibles
+
+**Business Goals:** Proteger información confidencial de productores y cooperativas (volúmenes de producción, calidad, ubicaciones) que podría ser explotada por competidores o intermediarios maliciosos, cumpliendo Ley 29733.
+
+**Relevant Quality Attributes:** Security, Privacy, Compliance
+
+| Scenario Components | Detalles |
+|---------------------|----------|
+| **Stimulus:** | Atacante externo intenta acceder a datos de clasificación de lotes de una cooperativa mediante: fuerza bruta de credenciales, inyección SQL en endpoints de API, token JWT robado/expirado, escalación de privilegios (productor intentando acceder a datos de cooperativa) |
+| **Stimulus Source:** | Atacante malicioso desde dirección IP no reconocida, múltiples intentos fallidos de autenticación |
+| **Environment:** | Sistema en producción conectado a internet público, tráfico mixto legítimo y malicioso |
+| **Artifact (if Known):** | Capa de seguridad completa: WAF (Web Application Firewall) → API Gateway → Auth Service (JWT validation) → RBAC middleware → Encrypted Database |
+| **Response:** | Sistema detecta y bloquea ataque: rate limiting bloquea IP después de 5 intentos fallidos en 15 min, WAF detecta y bloquea patrones de inyección SQL, tokens JWT expirados rechazados con HTTP 401 (US03), RBAC middleware valida permisos antes de cada operación, todos los intentos logueados en audit trail inmutable, alerta automática a admin de cooperativa y equipo seguridad vía email/SMS, IP atacante agregada a blocklist por 24h |
+| **Response Measure:** | 100% de intentos de acceso no autorizados bloqueados exitosamente, tiempo de detección ≤1 segundo, alerta generada en ≤1 segundo post-detección, audit log con retención 1 año, encriptación AES-256 para datos en reposo, TLS 1.3 para datos en tránsito, cero incidentes de data breach en producción |
+
+**Questions:** 
+- ¿Deberíamos implementar detección de anomalías basada en ML para identificar patrones de ataque sofisticados?
+- ¿Cómo manejar casos de falsos positivos que bloquean usuarios legítimos?
+
+**Issues:** 
+- Cumplimiento GDPR no es requisito inmediato pero debe considerarse para expansión futura
+- Penetration testing profesional agrega $5K-10K de costo anual
+- Definir proceso de incident response: quién responde, en qué timeframe, cómo se comunica a usuarios afectados
+
+---
+
+#### Scenario Refinement for Scenario 5: Reliability del Modelo de ML
+
+**Scenario(s):** Reliability - Consistencia en Precisión de Clasificación
+
+**Business Goals:** Mantener confianza de usuarios en la tecnología de clasificación, evitando pérdida de credibilidad por resultados inconsistentes o degradación de precisión que podría causar rechazo del sistema.
+
+**Relevant Quality Attributes:** Reliability, Accuracy
+
+| Scenario Components | Detalles |
+|---------------------|----------|
+| **Stimulus:** | Sistema procesa 1000 lotes de diferentes productores durante un mes completo de operación continua |
+| **Stimulus Source:** | Mix de productores (variedades: Caturra, Typica, Bourbon) y cooperativas procesando lotes en diferentes condiciones de iluminación y calidad de cámara |
+| **Environment:** | Operación continua en producción durante temporada alta, variabilidad en calidad de imágenes capturadas, diferentes contextos regionales (Junín, Cajamarca, Cusco) |
+| **Artifact (if Known):** | Modelo de ML completo: preprocessing pipeline → TFLite model (mobile) → TensorFlow Serving (cloud) → post-processing → validation |
+| **Response:** | Sistema mantiene precisión estable durante todo el período: detección de defectos críticos consistente (negro, quebrado, insectos, hongos US12), clasificación por severidad precisa, mediciones de color y uniformidad (US13) confiables, validación automática detecta drift en distribución de datos, alertas tempranas si métricas caen por debajo de umbrales, reentrenamiento automático programado semanalmente |
+| **Response Measure:** | Precisión ≥95% en detección de defectos críticos mantenida durante 30 días consecutivos, F1-score ≥0.93 constante, varianza en accuracy <2% entre semanas, falsos positivos ≤5%, tasa de drift detectado <1% de lotes, tiempo de recuperación ante degradación ≤4 horas mediante reentrenamiento |
+
+**Questions:** 
+- ¿Cómo manejar casos donde variedades de café no representadas en training data generan resultados imprecisos?
+- ¿Deberíamos implementar feedback loop donde Q Graders validen resultados y mejoren modelo continuamente?
+
+**Issues:** 
+- Dataset inicial de entrenamiento debe ser suficientemente diverso (≥10,000 imágenes US12)
+- Validación manual de resultados requiere acceso a Q Graders certificados (costoso)
+- Necesidad de monitoreo activo de model drift en producción con herramientas especializadas
+
+---
+
+#### Scenario Refinement for Scenario 6: Scalability ante Crecimiento Rápido
+
+**Scenario(s):** Scalability - Expansión de Base de Usuarios
+
+**Business Goals:** Soportar crecimiento orgánico de la plataforma sin interrupciones de servicio, manteniendo costos operativos controlados y permitiendo expansión a nuevas regiones cafetaleras.
+
+**Relevant Quality Attributes:** Scalability, Performance, Cost-Efficiency
+
+| Scenario Components | Detalles |
+|---------------------|----------|
+| **Stimulus:** | Base de usuarios crece de 100 a 1000 usuarios activos en 6 meses debido a campañas de marketing y recomendaciones boca-a-boca |
+| **Stimulus Source:** | Nuevos productores y cooperativas registrándose (US01, US02) en regiones adicionales (expansión de Junín a Cajamarca, San Martín, Puno) |
+| **Environment:** | Crecimiento orgánico sostenido con picos durante temporada de cosecha, aumento proporcional en volumen de lotes procesados, incremento en almacenamiento de imágenes y certificados |
+| **Artifact (if Known):** | Infraestructura completa: Kubernetes cluster → horizontal pod autoscaling → RDS read replicas → S3 storage → CDN → Redis cache |
+| **Response:** | Sistema escala automáticamente sin intervención manual: Kubernetes HPA aumenta pods de API y ML inference basado en CPU/memoria, RDS read replicas distribuyen carga de queries, S3 lifecycle policies mueven datos antiguos a Glacier, CDN cachea certificados PDF globalmente, Redis cache reduce 60% queries a BD, costos por usuario reducen 20% mediante economías de escala |
+| **Response Measure:** | Tiempo de respuesta se mantiene ≤5 segundos con 10x usuarios, throughput aumenta linealmente con recursos, costo por usuario cae de $1.00 a $0.80/mes, auto-scaling responde en ≤2 minutos a cambios de carga, zero downtime durante scaling events, utilización de recursos optimizada (70-80% CPU promedio) |
+
+**Questions:** 
+- ¿Cuál es el límite superior realista de usuarios antes de requerir re-arquitectura significativa?
+- ¿Deberíamos implementar multi-region deployment para soportar expansión internacional futura?
+
+**Issues:** 
+- Presupuesto de $500/mes limita capacidad máxima a ~500 usuarios en fase inicial (DR12)
+- Necesidad de dimensionamiento cuidadoso de base de datos para evitar cuellos de botella
+- Monitoreo proactivo de métricas de escalabilidad antes de que usuarios experimenten degradación
+
+---
+
+#### Scenario Refinement for Scenario 7: Offline Functionality en Zonas Remotas
+
+**Scenario(s):** Offline - Operación sin Conectividad
+
+**Business Goals:** Garantizar productividad de usuarios en zonas rurales con conectividad intermitente o inexistente, evitando que limitaciones de infraestructura impidan adopción de la tecnología.
+
+**Relevant Quality Attributes:** Availability, Usability, Resilience
+
+| Scenario Components | Detalles |
+|---------------------|----------|
+| **Stimulus:** | Productor en zona rural sin cobertura celular intenta clasificar lote recién cosechado |
+| **Stimulus Source:** | Usuario productor desde aplicación móvil Android sin conexión a internet durante 4-6 horas de jornada en campo |
+| **Environment:** | Zona rural remota sin conectividad 2G/3G/4G, dispositivo móvil con batería limitada (30-50% restante), modelo TFLite previamente descargado |
+| **Artifact (if Known):** | Aplicación móvil completa: local database (Realm/SQLite) → TFLite model → preprocessing pipeline → UI layer → sync queue |
+| **Response:** | Sistema opera completamente offline (US26): usuario crea nuevo lote (US06) con validación local, captura imagen con cámara, procesa clasificación básica con modelo local (90% accuracy), visualiza resultados preliminares con gráficos (US15), almacena hasta 100 lotes localmente, muestra indicador claro de modo offline, encola datos para sincronización posterior, al recuperar conexión sincroniza automáticamente todos los datos pendientes y actualiza con resultados definitivos del cloud (95% accuracy) |
+| **Response Measure:** | 100% de funcionalidad crítica disponible offline, tiempo de clasificación local ≤3 segundos, almacenamiento de ≥100 lotes sin degradación, consumo de batería ≤5% por hora de uso, sincronización completa en ≤2 minutos al recuperar conexión, conflictos de sincronización <1% de casos, mensajes claros indicando funciones limitadas offline |
+
+**Questions:** 
+- ¿Cómo priorizar qué lotes sincronizar primero cuando usuario tiene conectividad limitada (ej: solo 2 minutos de conexión)?
+- ¿Deberíamos permitir exportar certificados PDF offline con marca de agua "Pendiente de verificación"?
+
+**Issues:** 
+- Tamaño de app ≤50MB limita cantidad de modelos ML que pueden incluirse (TS01)
+- Balance entre funcionalidad offline y complejidad de sincronización
+- Necesidad de educación de usuarios sobre limitaciones de precisión en modo offline
+
+---
+
+#### Scenario Refinement for Scenario 8: Interoperability con Sistemas Externos
+
+**Scenario(s):** Interoperability - Integración con ERP de Cooperativa
+
+**Business Goals:** Facilitar integración con sistemas existentes de cooperativas para evitar doble entrada de datos y maximizar valor agregado de BeanDetect AI dentro del ecosistema tecnológico del cliente.
+
+**Relevant Quality Attributes:** Interoperability, Usability, Maintainability
+
+| Scenario Components | Detalles |
+|---------------------|----------|
+| **Stimulus:** | Cooperativa con sistema ERP existente (ej: SAP, Odoo) solicita integración para importar automáticamente datos de clasificación |
+| **Stimulus Source:** | Sistema externo ERP de cooperativa haciendo requests HTTP a API REST de BeanDetect AI |
+| **Environment:** | Operación normal con múltiples integraciones concurrentes, diferentes versiones de sistemas ERP, variabilidad en formatos de datos requeridos |
+| **Artifact (if Known):** | API REST completa: API Gateway → authentication layer → business logic → database → response formatter |
+| **Response:** | Sistema expone API REST bien documentada (US15, US17): endpoints para consultar lotes, obtener clasificaciones, descargar reportes consolidados (US16), exportar datos en JSON/CSV/Excel, webhooks para notificar eventos (nueva clasificación completada), documentación OpenAPI 3.0 interactiva con ejemplos, SDKs en lenguajes comunes (Python, JavaScript), soporte técnico para integración, rate limiting transparente con headers informativos |
+| **Response Measure:** | API responde en ≤2 segundos para queries simples, documentación OpenAPI actualizada automáticamente, ejemplos funcionales para casos de uso comunes, uptime de API ≥99.9%, tasa de errores de integración <0.1%, tiempo promedio de integración por cliente ≤5 días laborables, soporte para versionado de API sin breaking changes |
+
+**Questions:** 
+- ¿Deberíamos ofrecer integraciones pre-construidas con ERPs populares (Odoo, SAP B1) o solo API genérica?
+- ¿Cómo manejar limitaciones de rate limiting para cooperativas grandes con alto volumen de requests?
+
+**Issues:** 
+- Mantenimiento de compatibilidad backward cuando API evoluciona
+- Necesidad de ambientes sandbox para que clientes prueben integraciones sin afectar producción
+- Soporte técnico para integraciones puede consumir recursos significativos del equipo
+
+---
+
+#### Scenario Refinement for Scenario 9: Maintainability del Sistema ML
+
+**Scenario(s):** Maintainability - Actualización de Modelo sin Downtime
+
+**Business Goals:** Permitir mejora continua del modelo de clasificación sin interrumpir servicio a usuarios, manteniendo competitividad tecnológica y precisión actualizada.
+
+**Relevant Quality Attributes:** Maintainability, Availability, Reliability
+
+| Scenario Components | Detalles |
+|---------------------|----------|
+| **Stimulus:** | Equipo de ML entrena nueva versión del modelo con dataset ampliado (15,000 imágenes) que mejora accuracy de 95% a 97% |
+| **Stimulus Source:** | Equipo de desarrollo/data science ejecutando pipeline CI/CD de MLOps |
+| **Environment:** | Sistema en producción con usuarios activos, modelo actual sirviendo requests en tiempo real, necesidad de zero-downtime deployment |
+| **Artifact (if Known):** | Pipeline MLOps completo: MLflow → model registry → CI/CD (GitHub Actions) → Kubernetes deployment → canary release → monitoring |
+| **Response:** | Sistema actualiza modelo sin interrupciones: nueva versión pasa validación automática (accuracy ≥95%, F1 ≥0.93), deploy a staging para smoke tests, gradual rollout (5% → 25% → 100% tráfico en 24h), monitoring continuo de métricas clave, comparación A/B entre modelo actual y candidato, rollback automático si accuracy cae >2%, notificación a equipo de on-call, documentación automática de cambios en model registry |
+| **Response Measure:** | Deployment completo en ≤15 minutos, zero-downtime garantizado, rollback automático en ≤2 minutos si detecta problemas, precisión mantenida o mejorada en 100% de deployments, tasa de rollbacks <5%, logs completos de cambios para auditoría, sincronización de modelo mobile (TFLite) a dispositivos en ≤48 horas |
+
+**Questions:** 
+- ¿Cómo forzar actualización de modelo mobile en dispositivos que no se conectan frecuentemente?
+- ¿Deberíamos mantener múltiples versiones de modelo en producción simultáneamente para A/B testing?
+
+**Issues:** 
+- Reentrenamiento de modelo debe completarse en ≤4 horas para iteraciones rápidas (TS09, DR14)
+- Necesidad de dataset continuamente actualizado con nuevas variedades y defectos
+- Coordinación entre actualización de modelo cloud y mobile para evitar inconsistencias
+
+---
+
+#### Scenario Refinement for Scenario 10: Blockchain Transparency para Premium Users
+
+**Scenario(s):** Blockchain - Registro Inmutable de Certificaciones
+
+**Business Goals:** Diferenciación competitiva mediante transparencia verificable, permitiendo a cooperativas premium demostrar trazabilidad completa a compradores internacionales exigentes.
+
+**Relevant Quality Attributes:** Transparency, Security, Innovation
+
+| Scenario Components | Detalles |
+|---------------------|----------|
+| **Stimulus:** | Cooperativa con suscripción premium completa clasificación de lote de café especial y solicita registro en blockchain |
+| **Stimulus Source:** | Usuario cooperativa desde dashboard web después de obtener certificación de calidad |
+| **Environment:** | Operación normal con múltiples cooperativas premium, red Polygon Layer 2 operativa, precios de gas fees estables |
+| **Artifact (if Known):** | Sistema completo: Backend API → Smart Contract (Solidity) → Polygon network → IPFS (opcional) → Frontend verification UI |
+| **Response:** | Sistema registra certificación en blockchain (US22): genera hash SHA-256 del certificado PDF, crea transacción en smart contract con metadata (lote_id, timestamp, standard, producer_id), espera confirmación de bloque, emite evento on-chain, actualiza base de datos con transaction hash y URL de verificación, genera QR code (US20) que vincula a explorador blockchain, muestra confirmación visual en UI con enlace a Polygonscan, permite a cualquier persona verificar autenticidad escaneando QR |
+| **Response Measure:** | Tiempo total de registro ≤30 segundos desde solicitud hasta confirmación, costo de gas fees ≤$0.02 por transacción, 100% de transacciones exitosas (con retry automático en caso de falla), hash inmutable verificable perpetuamente, URL pública accesible sin autenticación, interfaz de verificación intuitiva para compradores no técnicos |
+
+**Questions:** 
+- ¿Deberíamos soportar múltiples blockchains (Ethereum mainnet, Polygon, BSC) para dar opciones a clientes?
+- ¿Cómo manejar migraciones si cambiamos de blockchain o smart contract en el futuro?
+
+**Issues:** 
+- Volatilidad de gas fees en redes blockchain puede afectar costos
+- Educación de usuarios sobre qué significa "blockchain" y cómo verificar
+- Necesidad de mantener claves privadas seguras para firmar transacciones
+- Consideraciones ambientales de uso de blockchain (aunque Polygon es Proof-of-Stake con bajo impacto)
+
+---
 
 ## 4.2. Strategic-Level Domain-Driven Design. 
 
@@ -2039,7 +2333,9 @@ Los Bounded Context Canvas ayudan a definir claramente los límites de un bounde
 
 ### 4.2.5. Context Mapping. 
 
-<!--FALTA-->
+[![Captura-de-pantalla-2025-10-10-205037.png](https://i.postimg.cc/NM9nn537/Captura-de-pantalla-2025-10-10-205037.png)](https://postimg.cc/S24V2NNJ)
+<!--descripcion-->
+La imagen muestra el Context Mapping de los bounded contexts identificados para el sistema BeanDetect AI. Se visualizan las relaciones y dependencias entre los principales contextos, como IAM & Profile, Coffee Lot Management, Grain Classification, Traceability & Certification y Reporting & Analytics. El diagrama ilustra los tipos de relaciones (por ejemplo, Partnership, Shared Kernel, Customer/Supplier) y los flujos de información clave entre contextos, permitiendo entender cómo se integran y colaboran los distintos módulos del sistema para soportar los procesos de negocio de la solución.
 
 ## 4.3. Software Architecture. 
 
