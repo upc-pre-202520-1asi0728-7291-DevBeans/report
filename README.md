@@ -939,7 +939,20 @@ Los hallazgos confirman una alta alineación entre las necesidades de los usuari
 
 ### 2.3.3. User Journey Mapping
 
-<!-- Contenido de User Journey Mapping -->
+##### Segmento 1: Productores Individuales
+
+[![Journey-Map-Productor.png](https://i.postimg.cc/vZ6ZxsW1/Journey-Map-Productor.png)](https://postimg.cc/WdTvxxYj)
+
+<!-- Descripcion -->
+La imagen ilustra el User Journey Map de un productor individual de café durante el proceso de clasificación post-cosecha. Se representan las etapas clave que atraviesa el usuario, desde la recolección y registro de lotes, pasando por la inspección manual y la identificación de defectos, hasta la generación de reportes y la toma de decisiones comerciales. El mapa visualiza las emociones, puntos de dolor y oportunidades de mejora en cada fase, permitiendo identificar momentos críticos donde la solución tecnológica puede aportar mayor valor y eficiencia.
+
+
+##### Segmento 2: Cooperativas cafeteras
+
+[![Mapa-de-Experiencia-Operativa-de-la-Cooperativa-Agr-cola-De-la-Captura-de-Datos-a-la-Mejora-Continu.png](https://i.postimg.cc/9Xk3RNCK/Mapa-de-Experiencia-Operativa-de-la-Cooperativa-Agr-cola-De-la-Captura-de-Datos-a-la-Mejora-Continu.png)](https://postimg.cc/Dm1pR6WP)
+
+<!-- Descripcion -->
+La imagen muestra el User Journey Map de una cooperativa cafetalera, detallando el flujo operativo desde la recepción de lotes de diferentes productores, la coordinación de procesos de clasificación y consolidación de reportes, hasta la integración con sistemas de trazabilidad y la entrega de resultados a los asociados. Se identifican los principales retos, necesidades y oportunidades de optimización en la experiencia colectiva, destacando cómo la digitalización y automatización pueden mejorar la gestión, la transparencia y la toma de decisiones dentro de la cooperativa.
 
 ### 2.3.4. Empathy Mapping
 
