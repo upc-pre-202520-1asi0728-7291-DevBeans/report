@@ -4256,6 +4256,7 @@ Esta pantalla muestra la sección de gestión de lotes de café. Los usuarios pu
 Esta pantalla muestra el form de creación de un nuevo lote de granos de café para su consecuente clasificación automática.<br>
 
 **Wireframe 6: Reporting & Analytics**
+
 [![Reportes.png](https://i.postimg.cc/gjPPqVxc/Reportes.png)](https://postimg.cc/Vr4Tzb92)
 
 La imagen corresponde a la sección de reportes, donde se generan y visualizan informes de clasificación, calidad y trazabilidad. Los usuarios pueden descargar reportes, analizar tendencias históricas y comparar resultados entre lotes o productores.<br>
