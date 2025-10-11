@@ -4225,22 +4225,212 @@ Enlace de figma: https://www.figma.com/design/ockCQUwKAM1FR422KyQtyB/DETECT-BEAN
 Los wireframes de la aplicación fueron desarrollados utilizando la herramienta Figma en el siguiente enlace:
 https://www.figma.com/design/g2Q08oeYK9nbmza7fBzN21/Dev-Beans?node-id=1-2
 
+**Wireframe 1: Registro de usuarios**
+
 [![Registro-como-cooperativa.png](https://i.postimg.cc/vTddLr4B/Registro-como-cooperativa.png)](https://postimg.cc/1nMTyNch)
+
+La imagen muestra la pantalla de registro para cooperativas cafetaleras. El formulario solicita datos clave como nombre de la cooperativa, representante legal, número de asociados, correo electrónico, teléfono y contraseña. El diseño es claro y accesible, facilitando el alta de nuevas organizaciones en la plataforma. Además tendra una barra conformada por dos botones seleccionables para acceder al registro del otro tipo de usuario.<br>
+
+**Wireframe 2: Inicio de sesión**
 
 [![Inicio-de-sesi-n.png](https://i.postimg.cc/8cVVBR7C/Inicio-de-sesi-n.png)](https://postimg.cc/TLQSTWq8)
 
+Esta imagen corresponde a la pantalla de inicio de sesión. Permite a productores y cooperativas acceder a sus cuentas ingresando correo electrónico y contraseña. Incluye opciones para recuperación de contraseña y registro, priorizando la simplicidad y seguridad.<br>
+
+**Wireframe 3: Dashboard**
+
 [![Dashboard.png](https://i.postimg.cc/prttYfmX/Dashboard.png)](https://postimg.cc/wyFP9s5S)
+
+La imagen presenta el dashboard principal de la aplicación. Aquí los usuarios visualizan métricas clave como cantidad de lotes, calidad promedio, lotes listos para exportar y defectos críticos detectados. El dashboard ofrece accesos rápidos a las principales funcionalidades y se adapta según el tipo de usuario.<br>
+
+**Wireframe 4: Coffee Lot Management**
 
 [![Lotes.png](https://i.postimg.cc/J0WWcNsr/Lotes.png)](https://postimg.cc/ZBjgJyP2)
 
+Esta pantalla muestra la sección de gestión de lotes de café. Los usuarios pueden ver la lista de lotes registrados, su estado (pendiente, clasificado, certificado), fechas y acceder a acciones como editar, eliminar o iniciar clasificación. La interfaz facilita el seguimiento y organización de la producción.<br>
+
+**Wireframe 5: Adding Coffee Lot**
+
+[![Creaci-n-de-nuevo-lote.png](https://i.postimg.cc/rsLLC1DL/Creaci-n-de-nuevo-lote.png)](https://postimg.cc/WFSKsJm9)
+
+Esta pantalla muestra el form de creación de un nuevo lote de granos de café para su consecuente clasificación automática.<br>
+
+**Wireframe 6: Reporting & Analytics**
 [![Reportes.png](https://i.postimg.cc/gjPPqVxc/Reportes.png)](https://postimg.cc/Vr4Tzb92)
 
+La imagen corresponde a la sección de reportes, donde se generan y visualizan informes de clasificación, calidad y trazabilidad. Los usuarios pueden descargar reportes, analizar tendencias históricas y comparar resultados entre lotes o productores.<br>
+
+**Wireframe 7: Settings**
+
 [![Ajustes.png](https://i.postimg.cc/J0WWcNs1/Ajustes.png)](https://postimg.cc/hzMwK78w)
+
+Esta pantalla muestra la sección de ajustes de la aplicación. Permite modificar información personal, cambiar contraseña, configurar preferencias de idioma y notificaciones, y gestionar opciones avanzadas como integración con sistemas externos.<br>
 
 
 ### 6.4.2. Applications Wireflow Diagrams.
 
---- <!-- En proceso >
+Esta sección presenta la propuesta de Wireflows para la aplicación, diseñados para visualizar de manera clara y secuencial los pasos que sigue un usuario para alcanzar un objetivo específico (User goal) dentro del sistema. Para cada User goal relevante, se ha considerado el User Persona correspondiente y se ha elaborado un Wireflow que ilustra la ruta típica de interacción, mostrando cómo las acciones del usuario provocan cambios en las pantallas (Wireframes) y el estado de la aplicación.
+
+
+#### User Goal 1: Implementar la productividad del cultivo
+
+**User Persona:** Juan Pérez (Productor de café, Finca El Cafetal)
+
+**Descripción del Flujo:**
+
+Este wireflow describe el proceso mediante el cual un productor de café registra y gestiona nuevos lotes de café para monitorear y mejorar la productividad de su cultivo. El flujo comienza cuando el productor accede a la aplicación y se registra como usuario individual, posteriormente visualiza el dashboard y procede a crear nuevos lotes.
+
+**Flujo Secuencial:**
+
+1. **Pantalla Inicial - Registro de Usuario (Wireframe 1):** El usuario accede a la aplicación y selecciona la opción "Productor" en la barra de selección de tipo de usuario. Completa el formulario de registro con información personal:
+   - Nombre completo del productor
+   - Correo electrónico
+   - Teléfono
+   - Nombre de la finca
+   - Contraseña y confirmación
+
+2. **Acción - Crear Cuenta:** El usuario hace clic en el botón de registro para crear su cuenta como productor.
+
+3. **Pantalla Secundaria - Inicio de Sesión (Wireframe 2):** Después del registro exitoso, el usuario es dirigido a la pantalla de inicio de sesión donde ingresa sus credenciales (correo electrónico y contraseña) para acceder a la plataforma.
+
+4. **Acción - Autenticación:** El usuario ingresa sus datos y hace clic en "Iniciar Sesión".
+
+5. **Pantalla Terciaria - Dashboard (Wireframe 3):** Una vez autenticado, el usuario visualiza el dashboard principal que muestra métricas clave de su operación:
+   - **Total de Lotes:** 24 (+3 este mes)
+   - **Calidad Promedio:** 85.5% (+2.3% vs mes anterior)
+   - **Listos para Exportar:** 18 (75% del total)
+   - **Defectos Críticos:** 3 (-2 vs mes anterior)
+   
+   El dashboard también muestra una sección "Lotes Recientes" con los últimos registros (LOT-2024-001, LOT-2024-002, LOT-2024-003).
+
+6. **Acción - Navegar a Gestión de Lotes:** El usuario hace clic en la opción "Lotes" del menú lateral para acceder a la gestión completa de lotes.
+
+7. **Pantalla Cuaternaria - Coffee Lot Management (Wireframe 4):** El usuario visualiza la página "Gestión de Lotes" con la tabla "Lotes Registrados" que muestra:
+   - ID del lote (LOT-2024-001, LOT-2024-002, LOT-2024-003)
+   - Fecha de cosecha
+   - Peso en kilogramos
+   - Variedad (Caturra, Castillo, Colombia)
+   - Proceso (Lavado, Natural, Honey)
+   - Calidad (Premium, Estándar)
+   - Estado (Clasificado, En proceso)
+   - Acciones disponibles (ver, editar, eliminar)
+
+8. **Acción - Crear Nuevo Lote:** El usuario hace clic en el botón "Nuevo Lote" ubicado en la esquina superior derecha.
+
+9. **Pantalla Quincuagésima - Adding Coffee Lot (Wireframe 5):** Se abre un modal titulado "Crear Nuevo Lote" donde el usuario ingresa información detallada del nuevo lote:
+   - **ID del Lote:** Identificador único (ej: LOT-2024-004)
+   - **Fecha de Cosecha:** Selecciona fecha en formato dd/mm/aaaa
+   - **Peso (kg):** Cantidad de café recolectado (ej: 500 kg)
+   - **Variedad:** Selecciona de opciones disponibles (Caturra, Castillo, Colombia, etc.)
+   - **Proceso:** Selecciona tipo de procesamiento (Lavado, Natural, Honey)
+
+10. **Validación de Datos:** El sistema valida que todos los campos obligatorios estén completos y sean válidos.
+
+11. **Acción - Crear Lote:** El usuario hace clic en "Crear Lote" para guardar la información.
+
+12. **Confirmación - Lote Registrado:** El sistema registra el nuevo lote y el usuario es redirigido a la tabla de lotes donde aparece el nuevo registro con estado inicial "En proceso" o "Clasificado".
+
+13. **Acción Complementaria - Visualizar Reportes:** El usuario puede hacer clic en "Reportes" del menú lateral para monitorear la productividad.
+
+14. **Pantalla Sexta - Reporting & Analytics (Wireframe 6):** El usuario visualiza la sección "Reportes y Certificados" que muestra análisis detallados:
+   - **Calidad Promedio:** 85.5% (con variación de +2.3% vs mes anterior)
+   - **Lotes Certificados:** 18 de 24 lotes totales
+   - **Defectos Detectados:** 3 (con variación de -2 vs mes anterior)
+   - **Distribución de Calidad:** Gráfico que muestra:
+     - Premium (90-100%): 45%
+     - Estándar (75-89%): 35%
+     - Básico (60-74%): 20%
+
+**Resultado Esperado:** El productor ha completado exitosamente el ciclo de registro, autenticación, visualización de métricas y creación de nuevos lotes. Sistema ahora monitorea la productividad del cultivo proporcionando datos en tiempo real sobre calidad, clasificación y defectos detectados, permitiendo al productor optimizar sus operaciones y mejorar la rentabilidad de su finca.
+
+<!--Falta IMAGENES-->
+
+---
+
+#### User Goal 2: Mejorar la gestión financiera y logística de la cooperativa
+
+**User Persona:** Oscar Gabriel Aranda (Representante Legal de Cooperativa, Cooperativa Cafetera del Sur)
+
+**Descripción del Flujo:**
+
+Este wireflow describe el proceso mediante el cual un representante legal de una cooperativa registra la organización en BeanDetect AI para mejorar la gestión financiera y logística. El flujo permite acceder a herramientas avanzadas de reportes, análisis y configuración que optimizan la comercialización de café a nivel organizacional.
+
+**Flujo Secuencial:**
+
+1. **Pantalla Inicial - Registro de Usuario (Wireframe 1):** El usuario accede a la aplicación y visualiza el formulario "Crear Cuenta". Selecciona la opción "Cooperativa" en la barra de selección de tipo de usuario. Completa el formulario organizacional con información crítica:
+   - **Nombre de la Cooperativa:** "Cooperativa Cafetera del Sur"
+   - **Correo Electrónico:** Email corporativo para comunicaciones
+   - **Teléfono:** Número de contacto directo de la organización
+   - **NIT / Registro Legal:** Identificación legal única
+   - **Nombre del Representante Legal:** Responsable autorizado
+   - **Contraseña:** Credenciales seguras para acceso
+
+2. **Validación:** El sistema verifica que el NIT sea válido, que no exista otra cooperativa registrada con el mismo identificador, y que todos los campos requeridos estén completos.
+
+3. **Acción - Crear Cuenta de Cooperativa:** El usuario hace clic en "Crear Cuenta de Cooperativa".
+
+4. **Pantalla Secundaria - Inicio de Sesión (Wireframe 2):** Después del registro exitoso, el usuario es dirigido a la pantalla de inicio de sesión. Ingresa el correo electrónico y contraseña de la cooperativa para acceder a la plataforma.
+
+5. **Acción - Autenticación:** El usuario hace clic en "Iniciar Sesión".
+
+6. **Pantalla Terciaria - Dashboard (Wireframe 3):** Una vez autenticado, el usuario visualiza el dashboard principal adaptado para cooperativas que muestra métricas agregadas:
+   - **Total de Lotes:** 24 lotes de todos los productores afiliados (+3 este mes)
+   - **Calidad Promedio:** 85.5% (+2.3% vs mes anterior)
+   - **Listos para Exportar:** 18 lotes certificados (75% del total)
+   - **Defectos Críticos:** 3 lotes con defectos (-2 vs mes anterior)
+   
+   La sección "Lotes Recientes" muestra los últimos registros de la cooperativa.
+
+7. **Acción - Navegar a Gestión de Lotes:** El usuario puede explorar la sección "Lotes" para visualizar todos los lotes de productores afiliados.
+
+8. **Pantalla Cuaternaria - Coffee Lot Management (Wireframe 4):** El usuario visualiza la tabla "Lotes Registrados" de toda la cooperativa, que incluye:
+   - Identificación completa de cada lote
+   - Datos de productor y finca
+   - Fechas y pesos de cosecha
+   - Variedad y proceso utilizado
+   - Clasificación de calidad actual
+   - Estado del lote en la cadena de suministro
+
+9. **Acción - Acceder a Reportes Estratégicos:** El usuario hace clic en "Reportes" del menú lateral para acceder a herramientas analíticas.
+
+10. **Pantalla Quinta - Reporting & Analytics (Wireframe 6):** El usuario visualiza la sección "Reportes y Certificados" con análisis estratégicos de la cooperativa:
+    - **Calidad Promedio:** 85.5% (con variación +2.3% vs mes anterior)
+    - **Lotes Certificados:** 18 de 24 lotes totales (75% de certificación)
+    - **Defectos Detectados:** 3 (con variación -2 vs mes anterior, mejora del 40%)
+    - **Distribución de Calidad:** Gráfico de barras horizontales mostrando:
+      - Premium (90-100%): 45% de los lotes
+      - Estándar (75-89%): 35% de los lotes
+      - Básico (60-74%): 20% de los lotes
+
+11. **Análisis Financiero y Logístico:** Basado en los reportes, la cooperativa puede:
+    - **Optimizar ingresos:** Identificar que el 45% de lotes son Premium (mayor valor comercial)
+    - **Planificar exportaciones:** 18 lotes certificados están listos para envío internacional
+    - **Control de calidad:** Detectar 3 defectos críticos requiere seguimiento
+    - **Tendencias:** Mejora del 40% en defectos vs mes anterior indica efectividad operativa
+
+12. **Acción - Configurar Parámetros Organizacionales:** El usuario hace clic en "Configuración" del menú lateral.
+
+13. **Pantalla Sexta - Settings (Wireframe 7):** El usuario accede a la sección de ajustes donde puede:
+    - **Actualizar Información Personal:** Nombre del representante legal, correo, teléfono
+    - **Información de la Cooperativa:** Nombre, ubicación, NIT
+    - **Preferencias de Notificaciones:** Configurar alertas para defectos críticos, lotes listos para exportar, etc.
+    - **Opciones Avanzadas:** Integración con sistemas externos, exportación de datos
+
+14. **Guardado de Cambios:** El usuario hace clic en "Guardar Cambios" para aplicar las configuraciones.
+
+**Resultado Esperado:** El representante legal de la cooperativa ha completado exitosamente el ciclo de registro organizacional, autenticación y acceso a herramientas avanzadas de gestión. La cooperativa dispone ahora de:
+- **Visibilidad completa** de todos los lotes de productores afiliados
+- **Análisis financiero** basado en clasificación de calidad (45% Premium = mayor rentabilidad)
+- **Planificación logística** con 18 lotes certificados listos para exportación
+- **Monitoreo de calidad** con detección temprana de defectos
+- **Tendencias históricas** para optimización continua
+
+Esta información integral permite a la cooperativa mejorar significativamente la gestión financiera y logística, aumentar márgenes de ganancia, fortalecer relaciones comerciales con compradores internacionales y posicionarse competitivamente en el mercado global de café.
+
+<!--Falta IMAGENES-->
+
+---
+
 
 # Conclusiones
 
