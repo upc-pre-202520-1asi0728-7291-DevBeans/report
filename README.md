@@ -955,7 +955,7 @@ El proceso parte con captura de datos no estandarizada y registros dispersos. La
 
 ## Criterios de Aceptación
 
-### US01: Registro de Productor Pequeño/Mediano
+## US01: Registro de Productor Pequeño/Mediano
 **Relacionado con (Epic ID):** EP01  
 **Descripción:**  
 Como productor pequeño o mediano de café, deseo registrarme en BeanDetect AI con información básica de mi finca para acceder a tecnología de clasificación asequible.
@@ -1556,14 +1556,408 @@ Asimismo, utilizamos la herramienta "Planning Poker Online" para poder votar en 
 
 # Capítulo IV: Strategic-Level Software Design  
 
-## 4.1. Strategic-Level Attribute-Driven Design. 
-### 4.1.1. Design Purpose. 
-### 4.1.2. Attribute-Driven Design Inputs. 
-#### 4.1.2.1. Primary Functionality (Primary User Stories). 
-#### 4.1.2.2. Quality Attribute Scenarios. 
-#### 4.1.2.3. Constraints. 
-### 4.1.3. Architectural Drivers Backlog. 
-### 4.1.4. Architectural Design Decisions. 
+## 4.1. Strategic-Level Attribute-Driven Design
+
+### 4.1.1. Design Purpose
+
+El objetivo del diseño arquitectónico de BeanDetect AI es desarrollar una solución tecnológica sólida y ampliable que facilite el acceso a tecnología de clasificación de café de calidad superior, tanto para los productores medianos y pequeños como para las cooperativas cafetaleras en Perú. La arquitectura tiene que tratar el problema principal detectado: la falta de protocolos automatizados y precisos para clasificar granos de café según estándares de calidad, lo cual restringe la competitividad y la posibilidad de acceder a mercados premium en estos segmentos.
+
+La solución está dirigida a satisfacer las necesidades de dos segmentos clave: 
+
+- Primer segmento - Productores Independientes: Necesitan un instrumento intuitivo y asequible que les posibilite clasificar su producción de manera objetiva y precisa, disminuir las pérdidas por rechazos en exportación y optimizar su posición comercial sin tener que depender únicamente de clasificadores manuales o intermediarios. 
+
+- Segundo Segmento - Cooperativas de Café: Para fortalecer la transparencia de su cadena de valor y facilitar el comercio internacional, se requiere que administren la clasificación de varios productores asociados de forma consolidada, que unifiquen la calidad entre diversas procedencias y que produzcan reportes comparativos y certificaciones digitales.
+
+Para ello, el diseño arquitectónico tiene que asegurar que la solución sea accesible en áreas con poca conectividad, conserve estándares elevados de exactitud al detectar fallas críticas por medio de visión artificial y posibilite la escalabilidad futura para incluir funciones novedosas como blockchain y certificación digital.
+
+### 4.1.2. Attribute-Driven Design Inputs
+
+#### 4.1.2.1. Primary Functionality (Primary User Stories)
+
+En esta sección se especifican los Epics o User Stories que tienen mayor relevancia en términos de requisitos funcionales y que tienen impacto sobre la arquitectura de la solución. Se han seleccionado las historias de usuario con mayor impacto arquitectónico basándose en su complejidad técnica (Story Points) y su relevancia para los objetivos del negocio.
+
+| Epic / User Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
+|----------------------|---------|-------------|-------------------------|---------------------------|
+| US12 | Detección de Defectos Críticos | Como productor o cooperativa, deseo que el sistema detecte defectos que causan rechazos internacionales para prevenir pérdidas económicas. | - El sistema debe identificar y cuantificar defectos críticos (negro, quebrado, dañado por insectos, hongos)<br>- Clasificar defectos por nivel de impacto (crítico, mayor, menor)<br>- Precisión mínima del 95% en detección de defectos categoría 1<br>- Tiempo de procesamiento no mayor a 3 segundos por imagen | Epic: Clasificación Inteligente |
+| US14 | Clasificación por Estándares Internacionales | Como productor o cooperativa, deseo obtener clasificación automática según estándares de exportación reconocidos para acceder a mejores precios. | - Aplicar criterios específicos de estándares seleccionados (SCA, ICO, FNC)<br>- Generar pre-certificado de calidad automáticamente<br>- Mostrar clasificación según diferentes organismos internacionales<br>- Calcular puntaje SCA con precisión de ±2 puntos vs. catador Q Grader | Epic: Clasificación Inteligente |
+| US13 | Análisis de Color y Uniformidad | Como productor o cooperativa, deseo medir objetivamente color y tamaño para estandarizar calidad entre lotes de diferentes productores asociados. | - Medir color según escala estándar de café (verde, amarillo, marrón claro)<br>- Calcular coeficientes de variación para tamaño y color<br>- Comparar resultados con estándares internacionales (SCA, SCAA)<br>- Convertir mediciones RGB a escala Agtron | Epic: Clasificación Inteligente |
+| US22 | Integración con Blockchain | Como cooperativa innovadora, deseo la opción de registrar datos de clasificación en blockchain para mayor transparencia y confianza del mercado. | - Ofrecer registro opcional en blockchain para suscripción premium<br>- Generar hash inmutable de todos los datos de clasificación<br>- Tiempo de registro no mayor a 30 segundos<br>- Optimizar costos de transacción (gas fees) | Epic: Innovación y Diferenciación |
+| US26 | Modo Offline para Zonas Rurales | Como productor en zona con conectividad limitada, deseo usar funcionalidades básicas de clasificación sin requerir internet constante. | - Procesar clasificación localmente usando modelos descargados previamente<br>- Sincronizar automáticamente todos los datos pendientes al recuperar conexión<br>- Mostrar mensajes claros indicando funciones disponibles en modo offline<br>- Almacenamiento local de hasta 100 lotes | Epic: Accesibilidad Rural |
+| US16 | Reporte Consolidado para Cooperativas | Como cooperativa, deseo reportes consolidados que comparen la calidad entre diferentes productores asociados para optimizar procesos grupales. | - Mostrar ranking de calidad entre productores asociados<br>- Visualizar evolución de calidad por productor en el tiempo<br>- Gráficos de distribución de defectos por origen<br>- Exportación a PDF y Excel | Epic: Gestión Cooperativa |
+| US06 | Creación de Lotes | Como productor o cooperativa, deseo registrar mis lotes con información básica (fecha cosecha, variedad, origen) para organizar mi producción de forma eficiente. | - Crear lote con ID único automático<br>- Validar código de lote no duplicado, sugerir alternativas<br>- Campos obligatorios: código único, fecha cosecha, variedad, origen, peso estimado<br>- Mostrar lote en lista de lotes activos | Epic: Gestión de Producción |
+
+#### 4.1.2.2. Quality Attribute Scenarios 
+
+En esta sección se incluye la especificación de los escenarios de atributos de calidad que tienen mayor impacto en la arquitectura de la solución. Los atributos de calidad priorizados son aquellos críticos para el éxito del negocio y la experiencia de usuario en el contexto de productores de café en zonas rurales.
+
+| Atributo | Fuente | Estímulo | Artefacto | Entorno | Respuesta | Medida |
+|----------|---------|----------|-----------|---------|-----------|---------|
+| Performance | Usuario (productor/cooperativa) | Solicitud de clasificación de lote con 500 granos | Módulo de Visión Artificial (ML Model) | Operación normal con carga de hasta 50 usuarios concurrentes | El sistema procesa las imágenes, ejecuta el modelo de ML y retorna resultados de clasificación | Tiempo de respuesta ≤ 5 segundos para clasificación completa de un lote |
+| Availability | Usuario en zona rural | Intento de acceso al sistema en horario pico de cosecha | Sistema completo (Frontend, Backend, Base de Datos) | Operación normal durante temporada alta (abril-agosto) | El sistema permanece operativo y responde a las solicitudes | Disponibilidad ≥ 99.5% mensual (máximo 3.6 horas de downtime/mes) |
+| Usability | Productor pequeño con bajo nivel tecnológico | Primera interacción con interfaz de clasificación de lotes | Interfaz de usuario (Web/Mobile App) | Usuario nuevo sin capacitación previa | El usuario completa exitosamente el proceso de clasificación | ≥ 85% de usuarios completan primera clasificación sin ayuda externa en ≤ 10 minutos |
+| Reliability | Sistema de clasificación | Procesamiento de 1000 lotes durante un mes | Modelo de ML y pipeline de procesamiento de imágenes | Operación continua en producción | El sistema mantiene precisión constante sin degradación | Precisión ≥ 95% en detección de defectos críticos mantenida durante 30 días consecutivos |
+| Scalability | Crecimiento de base de usuarios | Incremento de 100 a 1000 usuarios activos en 6 meses | Infraestructura cloud (compute, storage, database) | Expansión a nuevas regiones cafetaleras | El sistema escala recursos automáticamente sin intervención manual | Tiempo de respuesta se mantiene ≤ 5 seg con aumento de 10x en usuarios; costo por usuario reduce en 20% |
+| Security | Atacante externo | Intento de acceso no autorizado a datos de clasificación de lotes | Sistema de autenticación y autorización | Conexión desde internet público | El sistema bloquea acceso, registra intento y notifica al administrador | 100% de intentos de acceso no autorizados bloqueados; alertas generadas en ≤ 1 segundo |
+| Interoperability | Sistema externo (ERP de cooperativa) | Solicitud de exportación de datos de clasificación vía API | API REST del backend | Integración con sistema de terceros | El sistema expone datos en formato estándar (JSON) mediante endpoints documentados | API responde con datos correctos en ≤ 2 segundos; documentación OpenAPI disponible |
+| Maintainability | Equipo de desarrollo | Actualización del modelo de ML con nueva versión mejorada | Módulo de ML y pipeline CI/CD | Ambiente de desarrollo y staging | El sistema permite actualizar modelo sin downtime y rollback si es necesario | Deployment de nueva versión ≤ 15 minutos; rollback automático si accuracy cae > 2% |
+
+#### 4.1.2.3. Constraints 
+
+En esta sección se incluyen las restricciones técnicas, de negocio y regulatorias que limitan las opciones de diseño arquitectónico. Estas restricciones son impuestas por el cliente, el contexto del negocio o limitaciones tecnológicas inherentes al dominio.
+
+| Technical Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
+|--------------------|---------|-------------|-------------------------|---------------------------|
+| TS01 | Compatibilidad con Conectividad Limitada | El sistema debe operar en zonas rurales con conectividad intermitente (2G/3G) y latencia alta (>500ms). Las funcionalidades críticas deben estar disponibles offline. | - Aplicación móvil funcional sin internet para clasificación básica<br>- Sincronización automática diferida<br>- Tamaño de app ≤ 50MB<br>- Consumo de datos ≤ 10MB por sesión promedio | US26 - Modo Offline |
+| TS02 | Restricción Presupuestaria de Infraestructura | El costo operativo mensual de infraestructura cloud no debe exceder $500 USD para soportar hasta 500 usuarios activos en fase inicial. | - Uso de servicios cloud con pricing optimizado<br>- Auto-scaling basado en demanda<br>- Implementación de caching efectivo<br>- Monitoreo de costos en tiempo real | Todos los User Stories |
+| TS03 | Compatibilidad con Dispositivos de Gama Baja | La aplicación móvil debe funcionar en smartphones Android desde versión 8.0 con al menos 2GB RAM y cámara de 8MP. | - App instalable en dispositivos con Android 8.0+<br>- Consumo de RAM ≤ 300MB<br>- Capturas de imágenes de calidad suficiente con cámaras básicas<br>- Interfaz responsive adaptada a pantallas pequeñas | US12, US13, US14 - Clasificación |
+| TS04 | Cumplimiento de Protección de Datos | El sistema debe cumplir con la Ley de Protección de Datos Personales del Perú (Ley N° 29733) y estar preparado para alineación futura con GDPR. | - Consentimiento explícito para uso de datos personales<br>- Encriptación de datos en tránsito y reposo<br>- Derecho de acceso, rectificación y eliminación de datos<br>- Auditoría de accesos a información sensible | US03 - Autenticación |
+| TS05 | Precisión Mínima del Modelo de ML | El modelo de clasificación debe alcanzar precisión ≥95% en detección de defectos críticos y ≥90% en clasificación general, validado contra dataset anotado por Q Graders certificados. | - Métricas de accuracy, precision, recall documentadas<br>- Validación cruzada con dataset de al menos 10,000 imágenes<br>- F1-score ≥ 0.93 para defectos críticos<br>- Matriz de confusión con falsos positivos ≤ 5% | US12, US14 - Clasificación |
+| TS06 | Tecnología de Procesamiento de Imágenes | Debe utilizarse framework de Deep Learning compatible con despliegue en edge devices y cloud (TensorFlow Lite, PyTorch Mobile u ONNX Runtime). | - Modelo exportable a formato optimizado (TFLite/ONNX)<br>- Inferencia en móvil ≤ 3 segundos<br>- Tamaño de modelo ≤ 20MB<br>- Soporte para cuantización de modelo | US12, US13, US14 - Clasificación |
+| TS07 | Interfaz Multilenguaje | La interfaz debe estar disponible en español con soporte futuro para quechua y aymara (lenguas indígenas prevalentes en zonas cafetaleras). | - Sistema de i18n implementado<br>- Textos externalizados en archivos de recursos<br>- Selector de idioma en configuración<br>- Validación con usuarios nativos | US01, US02 - Registro |
+| TS08 | Integración con Sistemas de Pago | El sistema debe integrarse con pasarelas de pago locales (Niubiz, Culqi) para suscripciones y transacciones, soportando tarjetas y billeteras digitales (Yape, Plin). | - SDK de pasarelas integrado<br>- Flujo de checkout seguro (PCI DSS compliant)<br>- Soporte para pagos recurrentes<br>- Webhooks para confirmación de pago | Modelo de negocio |
+| TS09 | Tiempo Máximo de Entrenamiento de Modelo | El reentrenamiento del modelo de ML con nuevos datos no debe exceder 4 horas para permitir iteraciones rápidas y mejora continua. | - Pipeline de entrenamiento automatizado<br>- Uso de GPUs en cloud para entrenamiento<br>- Versionado de modelos con MLflow o similar<br>- Validación automática post-entrenamiento | US12 - Detección de Defectos |
+| TS10 | Arquitectura Cloud-Native | El sistema debe desplegarse en arquitectura cloud-native utilizando servicios administrados para reducir overhead operativo, con preferencia por AWS o Google Cloud Platform. | - Uso de servicios PaaS/SaaS sobre IaaS<br>- Containerización con Docker<br>- Orquestación con Kubernetes o servicios equivalentes<br>- Infrastructure as Code (Terraform/CloudFormation) | Todos los User Stories |
+
+En esta sección se establece el conjunto de Architectural Drivers acordados por el equipo, resultado del proceso iterativo del Quality Attribute Workshop. El Architectural Drivers Backlog incluye los Functional Drivers seleccionados, los Quality Attribute Drivers priorizados y todos los Constraints identificados. Los drivers están ordenados por importancia para stakeholders y su impacto en la complejidad técnica de la arquitectura.
+
+| Driver ID | Título de Driver | Descripción | Importancia para Stakeholders (High, Medium, Low) | Impacto en Architecture Technical Complexity (High, Medium, Low) |
+|-----------|------------------|-------------|---------------------------------------------------|------------------------------------------------------------------|
+| DR01 | Detección Precisa de Defectos Críticos | Implementar modelo de ML capaz de detectar automáticamente defectos críticos en granos de café (insectos, hongos, granos negros, quebrados) con precisión ≥95%, utilizando visión artificial sobre imágenes capturadas con cámara de smartphone. | High | High |
+| DR02 | Modo Offline Funcional | Permitir clasificación básica de lotes sin conexión a internet, con sincronización automática al recuperar conectividad. Crítico para zonas rurales con infraestructura limitada. | High | High |
+| DR03 | Performance en Clasificación | Garantizar tiempo de respuesta ≤5 segundos para clasificación completa de un lote, incluyendo procesamiento de imagen, inferencia de ML y generación de reporte. | High | High |
+| DR04 | Disponibilidad del Sistema | Mantener disponibilidad ≥99.5% mensual para asegurar acceso durante temporadas críticas de cosecha, con recuperación automática ante fallos. | High | Medium |
+| DR05 | Usabilidad para Usuarios No Técnicos | Diseñar interfaz intuitiva que permita a productores con bajo nivel tecnológico completar primera clasificación exitosamente en ≤10 minutos sin capacitación previa. | High | Low |
+| DR06 | Escalabilidad de Infraestructura | Soportar crecimiento de 100 a 1000+ usuarios activos sin degradación de performance, con auto-scaling automático y optimización de costos (reducción 20% costo/usuario). | High | High |
+| DR07 | Clasificación por Estándares Internacionales | Implementar algoritmos de clasificación según estándares SCA, SCAA y comercio justo, con asignación automática de grados de calidad y cálculo de puntaje SCA. | High | Medium |
+| DR08 | Reportes Consolidados para Cooperativas | Generar dashboards comparativos que agreguen datos de múltiples productores, con visualizaciones de distribución de calidad, ranking y exportación a PDF/Excel. | Medium | Medium |
+| DR09 | Seguridad de Datos | Implementar autenticación segura, encriptación de datos sensibles, y cumplimiento con Ley de Protección de Datos Personales del Perú (Ley N°29733). | High | Medium |
+| DR10 | Integración con Blockchain | Permitir registro opcional de certificados de calidad en blockchain (Ethereum/Polygon) para transparencia y verificación pública, con optimización de gas fees. | Medium | High |
+| DR11 | Compatibilidad con Dispositivos de Gama Baja | Asegurar funcionamiento en smartphones Android 8.0+ con 2GB RAM y cámara 8MP, con app ≤50MB y consumo RAM ≤300MB. | High | Medium |
+| DR12 | Restricción Presupuestaria Cloud | Mantener costo operativo mensual ≤$500 USD para infraestructura cloud soportando hasta 500 usuarios, mediante servicios optimizados y caching efectivo. | High | Medium |
+| DR13 | Análisis de Color y Uniformidad | Medir objetivamente color (RGB a Agtron), tamaño y uniformidad de granos, con detección de granos decolorados o inmaduros para estandarización entre lotes. | Medium | Medium |
+| DR14 | Mantenibilidad del Modelo ML | Facilitar actualización del modelo de ML con deployment ≤15 minutos, rollback automático si accuracy cae >2%, y reentrenamiento ≤4 horas. | Medium | Medium |
+| DR15 | Interoperabilidad con Sistemas Externos | Exponer API REST documentada (OpenAPI) para integración con ERPs de cooperativas, con respuesta ≤2 segundos y datos en formato JSON estándar. | Medium | Low |
+| DR16 | Certificación Digital Automática | Generar certificados digitales de calidad en formatos internacionales (PDF) con QR de verificación para agilizar comercialización internacional. | Medium | Low |
+| DR17 | Arquitectura Cloud-Native | Desplegar en arquitectura cloud-native usando servicios administrados (AWS/GCP), containerización Docker, orquestación Kubernetes e Infrastructure as Code. | Medium | Medium |
+| DR18 | Soporte Multilenguaje | Implementar i18n con español base y preparación para quechua/aymara, con textos externalizados y validación con usuarios nativos. | Low | Low |
+| DR19 | Integración con Pasarelas de Pago | Integrar con pasarelas locales (Niubiz, Culqi) para suscripciones, soportando tarjetas y billeteras digitales (Yape, Plin) con cumplimiento PCI DSS. | Medium | Low |
+| DR20 | Precisión Mínima Validada del Modelo | Validar modelo contra dataset anotado por Q Graders certificados, alcanzando F1-score ≥0.93 para defectos críticos y matriz de confusión con falsos positivos ≤5%. | High | Medium |
+
+### 4.1.4. Architectural Design Decisions 
+
+En esta sección el equipo redacta la explicación del proceso seguido en los Stages del Quality Attribute Workshop, resumiendo para cada iteración cuáles fueron los Drivers considerados, las tácticas y patrones evaluados y los criterios para llegar a las decisiones de diseño arquitectónico.
+
+#### Iteración 1: Fundamentos de la Arquitectura y Procesamiento de ML
+
+**Drivers considerados:**
+- DR01: Detección Precisa de Defectos Críticos (High/High)
+- DR03: Performance en Clasificación (High/High)
+- DR06: Escalabilidad de Infraestructura (High/High)
+- DR17: Arquitectura Cloud-Native (Medium/Medium)
+
+**Tácticas y patrones evaluados:**
+
+Para abordar estos drivers críticos, se evaluaron los siguientes patrones arquitectónicos:
+
+1. **Microservices Architecture**: Permite desacoplar el servicio de procesamiento de ML del resto del sistema, facilitando escalado independiente y actualización sin afectar otros componentes.
+
+2. **Serverless Computing**: AWS Lambda/Google Cloud Functions para ejecutar inferencia de ML bajo demanda, con auto-scaling automático y pago por uso.
+
+3. **Event-Driven Architecture**: Uso de colas de mensajes (SQS, Pub/Sub) para procesamiento asíncrono de imágenes, mejorando throughput y resiliencia.
+
+4. **API Gateway Pattern**: Punto único de entrada para todas las requests, con rate limiting, caching y routing inteligente.
+
+5. **Model Serving Patterns**:
+   - **Embedded Model**: Modelo ejecutándose en el mismo servicio de la aplicación
+   - **Model as a Service**: Servicio dedicado para inferencia de ML (TensorFlow Serving, TorchServe)
+   - **Hybrid Approach**: Modelo ligero en edge (mobile) para funcionalidad offline + modelo completo en cloud para mayor precisión
+
+| Driver ID | Título de Driver | Pattern 1: Serverless + Model as Service | Pattern 2: Microservices + Embedded Model | Pattern 3: Hybrid Edge-Cloud (SELECCIONADO) |
+|-----------|------------------|-------------------------------------------|-------------------------------------------|----------------------------------------------|
+|           |                  | Pro | Con | Pro | Con | Pro | Con |
+| DR01 | Detección Precisa de Defectos Críticos | Permite usar modelos más complejos y actualizados en cloud sin limitaciones de dispositivo | Requiere siempre conectividad para máxima precisión | Modelo completo siempre disponible pero requiere más recursos de servidor | Menor flexibilidad para A/B testing de modelos | Mejor de ambos mundos: modelo básico offline + modelo avanzado online cuando hay conexión | Complejidad en mantener dos versiones del modelo sincronizadas |
+| DR03 | Performance en Clasificación | Cold start de Lambda puede agregar 1-3 segundos de latencia inicial | Requiere pre-warming o provisioned concurrency (costo adicional) | Menor latencia al evitar cold starts, respuesta más predecible | Requiere gestión de capacidad y provisioning manual | Inferencia local en móvil más rápida (<2 seg), cloud solo cuando se necesita precisión máxima | Modelo mobile debe ser comprimido/cuantizado |
+| DR06 | Escalabilidad de Infraestructura | Auto-scaling perfecto, paga solo por uso real, maneja picos automáticamente | Límites de concurrency pueden requerir ajustes para picos extremos | Escalado más controlado pero requiere configuración de auto-scaling groups | Riesgo de sobre-provisioning o sub-provisioning | Edge computing reduce carga en cloud dramáticamente, escala naturalmente con número de dispositivos | Sincronización de modelos a múltiples clientes puede generar tráfico |
+| DR17 | Arquitectura Cloud-Native | Nativamente serverless, cumple perfectamente con paradigma cloud-native | Vendor lock-in más fuerte (difícil migrar de AWS Lambda a GCP Functions) | Contenedores Kubernetes nativos, portabilidad entre clouds | Más overhead operativo (gestión de clusters, etc.) | Combina beneficios de edge computing con servicios cloud administrados | Requiere estrategia de deployment más compleja |
+
+**Decisión seleccionada: Pattern 3 - Hybrid Edge-Cloud Architecture**
+
+**Justificación:**
+
+El patrón híbrido edge-cloud fue seleccionado porque ofrece el mejor balance entre los drivers críticos:
+
+- **DR01 (Detección Precisa)**: Permite tener un modelo TensorFlow Lite cuantizado en el dispositivo móvil para detección básica (~90% accuracy) que identifica defectos primarios (negro, quebrado, dañado por insectos), y un modelo completo en cloud (TensorFlow Serving) para clasificación definitiva cuando hay conectividad (≥95% accuracy) que incluye clasificación por severidad (crítico, mayor, menor).
+
+- **DR03 (Performance)**: La inferencia local en el dispositivo proporciona respuesta inmediata (<2 segundos) para feedback inicial al usuario cumpliendo el tiempo de procesamiento de 3 segundos por imagen, mientras el procesamiento en cloud se ejecuta en background cuando hay conexión para validación final.
+
+- **DR06 (Escalabilidad)**: Al procesar localmente las funciones básicas, se reduce drásticamente la carga en la infraestructura cloud. Estimamos que 70% de las clasificaciones pueden completarse en el dispositivo, requiriendo cloud solo para validación final o casos complejos, optimizando costos y permitiendo el crecimiento de 100 a 1000+ usuarios.
+
+- **DR17 (Cloud-Native)**: Utiliza contenedores Docker para el servicio de ML en cloud, desplegados en Kubernetes (GKE/EKS), con TensorFlow Serving para inferencia. La arquitectura es portable entre providers y permite actualización independiente de componentes.
+
+**Implicaciones arquitectónicas:**
+- Requiere pipeline CI/CD dual: uno para modelo mobile (TFLite) optimizado a ≤20MB y otro para modelo cloud (TensorFlow)
+- Necesita estrategia de sincronización de versiones de modelos con control de versiones MLflow
+- Implementar lógica de fallback: si cloud falla, el resultado local es válido (con advertencia de precisión reducida ~90% vs 95%)
+- Diseñar API de inferencia con respuesta progresiva (resultado preliminar rápido + resultado definitivo asíncrono)
+- Sistema de descarga previa de modelos para garantizar funcionamiento offline
+
+#### Iteración 2: Disponibilidad y Modo Offline
+
+**Drivers considerados:**
+- DR02: Modo Offline Funcional (High/High)
+- DR04: Disponibilidad del Sistema (High/Medium)
+- DR11: Compatibilidad con Dispositivos de Gama Baja (High/Medium)
+
+**Tácticas y patrones evaluados:**
+
+1. **Offline-First Architecture**: Toda la lógica de aplicación funciona primero offline, con sincronización como capa adicional.
+
+2. **Local-First Software**: Base de datos local (SQLite, Realm) como fuente de verdad, con replicación bidireccional a cloud.
+
+3. **Progressive Web App (PWA)**: Service Workers para caching de assets y funcionalidad offline limitada.
+
+4. **Conflict-Free Replicated Data Types (CRDTs)**: Para resolver conflictos automáticamente durante sincronización.
+
+5. **Multi-Region Deployment con CDN**: Distribución geográfica para reducir latencia y mejorar disponibilidad.
+
+| Driver ID | Título de Driver | Pattern 1: Offline-First con SQLite | Pattern 2: PWA con Service Workers | Pattern 3: Local-First con Sync Engine (SELECCIONADO) |
+|-----------|------------------|--------------------------------------|-------------------------------------|-------------------------------------------------------|
+|           |                  | Pro | Con | Pro | Con | Pro | Con |
+| DR02 | Modo Offline Funcional | Funcionalidad completa offline garantizada, sin diferencias con modo online | Base de datos local puede crecer y afectar performance en dispositivos limitados | Rápida implementación con tecnologías web estándar | Limitaciones de almacenamiento (5-50MB según navegador) | Combina robustez de base de datos nativa con sincronización inteligente y capacidad para 100 lotes | Complejidad en resolución de conflictos |
+| DR04 | Disponibilidad del Sistema | Sistema siempre "disponible" desde perspectiva del usuario aunque cloud esté caído | Datos pueden quedar desactualizados por períodos largos | Service Worker mantiene app funcionando aunque servidor caiga | Funcionalidad offline limitada comparada con app nativa | Alta disponibilidad percibida + sincronización eventual garantiza consistencia, cumple ≥99.5% disponibilidad | Requiere monitoreo de estado de sincronización |
+| DR11 | Compatibilidad con Dispositivos Gama Baja | SQLite muy eficiente en memoria y almacenamiento | Operaciones de sincronización masiva pueden consumir mucha batería | Menor huella de recursos al ser web-based | Performance inferior en procesamiento intensivo (imágenes) | Optimizado para dispositivos con recursos limitados mediante lazy loading, cumple ≤300MB RAM | Requiere testing exhaustivo en dispositivos objetivo |
+
+**Decisión seleccionada: Pattern 3 - Local-First Architecture con Sync Engine**
+
+**Justificación:**
+
+El patrón Local-First con motor de sincronización ofrece la mejor solución para el contexto de productores en zonas rurales:
+
+- **DR02 (Modo Offline)**: Toda la funcionalidad crítica está disponible sin conexión: registro de lotes con validación local, clasificación básica con modelo TFLite local procesando localmente usando modelos descargados previamente, y visualización de histórico. El motor de sincronización maneja automáticamente la replicación cuando hay conectividad, sincronizando todos los datos pendientes. Soporta almacenamiento de hasta 100 lotes localmente. El sistema muestra mensajes claros indicando qué funciones están disponibles en modo offline.
+
+- **DR04 (Disponibilidad)**: Desde la perspectiva del usuario, el sistema está "siempre disponible". Los datos se sincronizan en background de forma oportunista, cumpliendo con el requisito de ≥99.5% disponibilidad mensual. Implementamos estrategia de "eventual consistency" donde los datos se propagan cuando las condiciones de red lo permiten, garantizando máximo 3.6 horas de downtime mensual percibido.
+
+- **DR11 (Dispositivos Gama Baja)**: La base de datos local (Realm o SQLite con wrapper optimizado) es extremadamente eficiente en memoria, cumpliendo con el límite de ≤300MB de RAM. Implementamos paginación y lazy loading para evitar cargar todo el dataset en memoria. El modelo ML local (TFLite) está optimizado con cuantización de 8 bits para ejecutarse en dispositivos con solo 2GB RAM y cámaras de 8MP, con tamaño de app ≤50MB.
+
+**Estrategia de sincronización:**
+- **Optimistic UI**: Cambios reflejados inmediatamente en UI local, sincronización en background sin bloquear usuario
+- **Conflict Resolution**: Last-Write-Wins para campos editables (peso, notas, fecha cosecha); preservación de ambas versiones para campos críticos (resultados de clasificación) con flag de revisión manual
+- **Sync Priorities**: Cola con prioridades - clasificaciones nuevas (alta), ediciones de lotes (media), sincronización de reportes (baja)
+- **Bandwidth Awareness**: Sincronización de imágenes en alta calidad solo en WiFi (≤10MB por sesión), versiones comprimidas (50% calidad JPEG) en datos móviles
+- **Differential Sync**: Solo sincronizar cambios delta, no documentos completos, reduciendo consumo de datos
+
+**Implicaciones arquitectónicas:**
+- Backend debe exponer API de sincronización eficiente con endpoints de delta-sync
+- Implementar queue system robusto (Redis Queue o AWS SQS) para manejar sincronización asíncrona con retry exponencial
+- UI debe indicar claramente estado de sincronización con iconos (synced ✓, pending ⟳, offline ✕)
+- Sistema de versionado de documentos para detectar y resolver conflictos
+- Implementar circuit breaker para evitar reintentos infinitos cuando cloud está caído
+
+#### Iteración 3: Seguridad y Gestión Multiusuario
+
+**Drivers considerados:**
+- DR09: Seguridad de Datos (High/Medium)
+- DR08: Reportes Consolidados para Cooperativas (Medium/Medium)
+- DR05: Usabilidad para Usuarios No Técnicos (High/Low)
+
+**Tácticas y patrones evaluadas:**
+
+1. **Role-Based Access Control (RBAC)**: Control de acceso basado en roles (Productor, Cooperativa Admin, Cooperativa Viewer).
+
+2. **Multi-Tenancy Patterns**:
+   - **Shared Database, Shared Schema**: Todos los tenants comparten misma BD y esquema, separación por tenant_id
+   - **Shared Database, Separate Schema**: Cada tenant tiene su propio schema en misma BD
+   - **Separate Database**: Cada tenant tiene BD independiente
+
+3. **OAuth 2.0 + JWT**: Autenticación delegada con tokens de corta duración y refresh tokens.
+
+4. **Encryption at Rest and in Transit**: TLS 1.3 para tránsito, AES-256 para datos en reposo.
+
+5. **Audit Logging**: Registro inmutable de todas las operaciones sensibles para cumplimiento normativo.
+
+| Driver ID | Título de Driver | Pattern 1: RBAC + Shared DB/Schema | Pattern 2: RBAC + Separate Schema | Pattern 3: RBAC + Separate DB + JWT (SELECCIONADO) |
+|-----------|------------------|-------------------------------------|-----------------------------------|-----------------------------------------------------|
+|           |                  | Pro | Con | Pro | Con | Pro | Con |
+| DR09 | Seguridad de Datos | Simple implementación, bajo costo operativo | Riesgo de data leakage entre tenants por error de query | Mejor aislamiento que shared schema | Complejidad en migraciones de schema | Máximo aislamiento entre cooperativas, cumple Ley 29733 con encriptación por tenant | Mayor complejidad operativa y costos de BD |
+| DR08 | Reportes Consolidados para Cooperativas | Queries de agregación simples con GROUP BY | Performance degradada con millones de registros | Queries más eficientes al reducir scope | Necesita cross-schema queries para reportes consolidados | Perfecto para generar rankings y comparativos entre productores asociados sin interferencia | Requiere data warehouse separado para analytics cross-tenant |
+| DR05 | Usabilidad para Usuarios No Técnicos | UI puede ser más simple al tener modelo de datos unificado | Confusión si usuarios ven hints de otros tenants | Balance razonable entre simplicidad y seguridad | Complejidad en switching entre schemas | Experiencia personalizada por tipo de usuario (productor vs cooperativa), dashboards específicos | Overhead inicial en onboarding |
+
+**Decisión seleccionada: Pattern 3 - RBAC + Separate Database + JWT Authentication**
+
+**Justificación:**
+
+Este patrón ofrece el nivel de seguridad y segregación necesario para el contexto de cooperativas:
+
+- **DR09 (Seguridad)**: Máximo aislamiento de datos entre cooperativas cumple con Ley N°29733. Cada cooperativa tiene su BD independiente con encriptación AES-256 por tenant. JWT con RS256 para autenticación, tokens de corta duración (15 min) con refresh tokens (7 días). Sistema de auditoría registra todos los accesos a información sensible con alertas en ≤1 segundo ante intentos no autorizados. Implementación de 2FA opcional para administradores de cooperativas.
+
+- **DR08 (Reportes Consolidados)**: Cada cooperativa puede generar reportes comparativos entre sus productores asociados sin riesgo de ver datos de otras cooperativas. Queries optimizadas al reducir scope a una sola BD. Data warehouse separado (BigQuery/Redshift) para analytics agregados anónimos cross-tenant. Rankings de productores por calidad, distribución de defectos, evolución temporal con exportación a PDF/Excel.
+
+- **DR05 (Usabilidad)**: Experiencia personalizada por rol:
+  - **Productores**: Dashboard simple mostrando sus lotes, histórico de clasificaciones, reporte visual con gráficos circulares (verde=apto exportación, amarillo=mercado local, rojo=descarte)
+  - **Cooperativas**: Dashboard administrativo con vista agrupada por productor, resumen consolidado, gestión de permisos para múltiples administradores
+
+**Roles definidos:**
+- **Producer**: Acceso completo a sus propios lotes, clasificaciones y reportes. Puede crear, editar y eliminar sus lotes sin procesar.
+- **Cooperative Admin**: Gestión completa de productores asociados, acceso a todos los lotes de la cooperativa, generación de reportes consolidados, configuración de permisos.
+- **Cooperative Viewer**: Solo lectura de reportes consolidados y estadísticas, sin capacidad de modificación.
+- **System Admin**: Gestión de plataforma, acceso a logs de auditoría, configuración global.
+
+**Implicaciones arquitectónicas:**
+- Connection pooling por tenant con límites configurables para evitar resource starvation
+- Middleware de autenticación que valida JWT y extrae tenant_id para routing a BD correcta
+- Schema migration strategy: scripts versionados aplicados a cada tenant DB de forma controlada
+- Backup strategy: respaldos diarios por tenant con retención de 30 días, cumpliendo derecho de acceso y eliminación
+- API Gateway con rate limiting por tenant (100 req/min productor, 500 req/min cooperativa)
+
+#### Iteración 4: Generación de Reportes y Certificaciones
+
+**Drivers considerados:**
+- DR07: Clasificación por Estándares Internacionales (High/Medium)
+- DR16: Certificación Digital Automática (Medium/Low)
+- DR10: Integración con Blockchain (Medium/High)
+
+**Tácticas y patrones evaluados:**
+
+1. **Template Engine Pattern**: Generación de documentos usando templates (Handlebars, Jinja2) con datos dinámicos.
+
+2. **PDF Generation Strategies**:
+   - **HTML-to-PDF**: Render HTML/CSS a PDF (Puppeteer, WeasyPrint)
+   - **PDF Libraries**: Generación programática (PDFKit, ReportLab)
+   - **Serverless PDF**: AWS Lambda con headless Chrome
+
+3. **Standards Implementation**:
+   - **Rules Engine**: Motor de reglas configurable para diferentes estándares (SCA, SCAA, ICO, FNC)
+   - **Plugin Architecture**: Sistema de plugins para agregar nuevos estándares sin recompilar
+
+4. **Blockchain Integration Patterns**:
+   - **On-Chain Storage**: Almacenar todos los datos en blockchain
+   - **Hybrid Approach**: Hash en blockchain, datos completos en IPFS
+   - **Proof of Existence**: Solo hash del certificado en blockchain
+
+| Driver ID | Título de Driver | Pattern 1: HTML-to-PDF + Rules Engine | Pattern 2: PDF Library + Plugin Architecture | Pattern 3: Serverless PDF + Rules Engine + Blockchain Hash (SELECCIONADO) |
+|-----------|------------------|----------------------------------------|----------------------------------------------|---------------------------------------------------------------------------|
+|           |                  | Pro | Con | Pro | Con | Pro | Con |
+| DR07 | Clasificación por Estándares Internacionales | Templates HTML fáciles de editar y previsualizar | Inconsistencias entre navegadores en rendering | Control total sobre layout y elementos PDF | Curva de aprendizaje empinada para crear templates complejos | Combina flexibilidad de templates HTML con escalabilidad serverless, soporta múltiples estándares (SCA, ICO, FNC) | Cold start puede agregar latencia inicial |
+| DR16 | Certificación Digital Automática | Generación rápida de certificados profesionales con CSS | Difícil agregar elementos avanzados (códigos de barras, firmas digitales) | Fácil integración de QR codes, firmas digitales y watermarks | Requiere más código para cada tipo de certificado | Pre-certificados generados automáticamente post-clasificación, firma digital verificable, formatos según destino (EU, USA, Asia) | Requiere servicio de firma digital externo |
+| DR10 | Integración con Blockchain | Puede incluir hash en template pero requiere integración custom | No nativo para blockchain | Igual que Pattern 1 | Igual que Pattern 1 | Registro opcional en blockchain Polygon (low gas fees), hash inmutable SHA-256 del PDF, tiempo ≤30 segundos | Costo adicional de transacciones blockchain |
+
+**Decisión seleccionada: Pattern 3 - Serverless PDF Generation + Rules Engine + Blockchain Hash**
+
+**Justificación:**
+
+Este patrón proporciona la flexibilidad y escalabilidad necesarias para certificación internacional:
+
+- **DR07 (Clasificación por Estándares)**: Rules Engine implementado con JSON Schema + validación custom para cada estándar:
+  - **SCA (Specialty Coffee Association)**: Scoring de 0-100 puntos, categorías (Specialty ≥80, Premium 75-79, Standard 70-74, Below Standard <70)
+  - **SCAA**: Defectos primarios (valor 1) y secundarios (valor 0.2), máximo 5 defectos para Specialty Grade
+  - **ICO (International Coffee Organization)**: Clasificación por tamaño de grano (pantalla 18+, 17, 16, etc.)
+  - **FNC (Federación Nacional de Cafeteros)**: Estándares colombianos adaptables al contexto peruano
+  
+  Sistema genera pre-certificado automáticamente cuando lote cumple estándares, con puntaje SCA calculado con precisión de ±2 puntos. Comparación múltiple simultánea para mostrar clasificación según diferentes organismos.
+
+- **DR16 (Certificación Digital)**: AWS Lambda con Puppeteer renderiza templates HTML con branding personalizado por cooperativa. Certificados incluyen:
+  - Header con logo de cooperativa y sellos de estándares cumplidos
+  - Información del lote (origen, fecha, variedad, peso)
+  - Resultados de clasificación con gráficos de distribución de defectos
+  - Código QR para verificación pública (vincula a US20)
+  - Firma digital PKCS#7 con certificado X.509
+  - Formatos adaptados: EU (énfasis en trazabilidad), USA (scoring SCA), Asia (información de origen)
+  
+  Generación ≤5 segundos por certificado, almacenamiento en S3 con URLs firmadas temporales.
+
+- **DR10 (Integración Blockchain)**: Para cooperativas con suscripción premium, implementación opcional de registro en Polygon (Layer 2 de Ethereum con gas fees ~$0.01):
+  - Hash SHA-256 del PDF certificado se registra en smart contract
+  - Metadata: tenant_id, lote_id, timestamp, certification_standard
+  - Smart contract emite evento con hash y URL de verificación pública
+  - Frontend muestra enlace a explorador de blockchain (Polygonscan)
+  - Tiempo total de registro ≤30 segundos (confirmación de bloque)
+  
+  Sistema mantiene mapping hash→PDF_URL en base de datos para verificación sin necesidad de descentralizar todo el almacenamiento (enfoque híbrido más eficiente que IPFS).
+
+**Implicaciones arquitectónicas:**
+- Lambda functions con provisioned concurrency (warm pool) para reducir cold starts críticos
+- S3 lifecycle policies: PDFs activos en S3 Standard, >90 días a S3 Glacier para optimizar costos
+- CloudFront CDN para distribución global de certificados públicos
+- API de verificación pública sin autenticación para que compradores validen certificados
+- Smart contracts auditables y upgradeables usando patrón Proxy para corregir bugs sin perder histórico
+- Queue system para procesar registros blockchain en background sin bloquear generación de PDF
+
+#### Iteración 5: Optimización de Costos y Mantenibilidad
+
+**Drivers considerados:**
+- DR12: Restricción Presupuestaria Cloud (High/Medium)
+- DR14: Mantenibilidad del Modelo ML (Medium/Medium)
+- DR15: Interoperabilidad con Sistemas Externos (Medium/Low)
+
+**Tácticas y patrones evaluados:**
+
+1. **Cost Optimization Tactics**:
+   - **Reserved Instances vs Spot Instances**: Compromiso de capacidad con descuento vs instancias interrumpibles
+   - **Auto-Scaling Policies**: Scale-up/down basado en métricas (CPU, memory, custom metrics)
+   - **Caching Strategies**: Redis/Memcached para queries frecuentes, CDN para assets estáticos
+
+2. **ML Model Management**:
+   - **Model Versioning**: MLflow, DVC (Data Version Control)
+   - **A/B Testing Framework**: Gradual rollout de nuevos modelos
+   - **Monitoring & Observability**: Prometheus + Grafana, AWS CloudWatch, custom metrics
+
+3. **API Design Patterns**:
+   - **RESTful API**: Arquitectura tradicional con endpoints por recurso
+   - **GraphQL**: Query language flexible, cliente decide qué datos necesita
+   - **gRPC**: Protocol buffers para comunicación eficiente entre servicios
+
+| Driver ID | Título de Driver | Pattern 1: Reserved Instances + MLflow + REST | Pattern 2: Spot Instances + DVC + GraphQL | Pattern 3: Hybrid Cloud + MLflow + REST + Aggressive Caching (SELECCIONADO) |
+|-----------|------------------|------------------------------------------------|-------------------------------------------|------------------------------------------------------------------------------|
+|           |                  | Pro | Con | Pro | Con | Pro | Con |
+| DR12 | Restricción Presupuestaria Cloud | Costos predecibles, descuentos 30-50% vs on-demand | Requiere compromiso de 1-3 años, menos flexible | Costos hasta 90% menores para workloads tolerantes a interrupciones | Inestabilidad en availability, no apto para servicios críticos | Combina Reserved para servicios críticos + Spot para ML training, caching agresivo reduce 80% queries a BD, cumple ≤$500/mes para 500 usuarios | Complejidad en gestión de múltiples tipos de instancias |
+| DR14 | Mantenibilidad del Modelo ML | MLflow tracking de experimentos, versionado de modelos, UI intuitiva | Requiere servidor MLflow dedicado | DVC para versionar datasets grandes con Git | Curva de aprendizaje, integración menos madura | MLflow con artifact store en S3, deployment ≤15 minutos, rollback automático si accuracy cae >2%, reentrenamiento ≤4 horas con GPUs on-demand | Necesita pipeline CI/CD robusto |
+| DR15 | Interoperabilidad con Sistemas Externos | REST bien establecido, amplia compatibilidad, fácil debugging | Overfetching/underfetching de datos | GraphQL evita overfetching, schema fuertemente tipado | Mayor complejidad en backend, caching más difícil | REST API con OpenAPI 3.0 spec, respuesta ≤2 segundos, formato JSON estándar, fácil integración con ERPs | Requiere documentación exhaustiva |
+
+**Decisión seleccionada: Pattern 3 - Hybrid Cloud Strategy + MLflow + REST API + Aggressive Caching**
+
+**Justificación:**
+
+Este patrón optimiza costos mientras mantiene alta calidad de servicio:
+
+- **DR12 (Restricción Presupuestaria)**: Estrategia híbrida de compute:
+  - **Servicios críticos** (API Gateway, Auth Service, Database): AWS Reserved Instances con descuento 40%, siempre disponibles
+  - **ML Inference** (clasificación): Kubernetes cluster con mix de Reserved (baseline) + Spot Instances (burst), tolerancia a interrupciones con queue retry
+  - **ML Training**: 100% Spot Instances con checkpointing cada 10 min, ahorro 70% vs on-demand
+  - **Caching agresivo**:
+    - Redis Cluster para sesiones de usuario, resultados de clasificaciones recientes (TTL 24h): reduce 60% queries a BD
+    - CloudFront CDN para certificados PDF, imágenes de lotes: reduce 80% transferencia de S3
+    - API response caching con ETags: reduce latencia 50% para endpoints de reportes
+  
+  **Proyección de costos mensuales para 500 usuarios:**
+  - Compute (EKS Reserved + Spot): $180
+  - Database (RDS PostgreSQL Multi-AZ): $120
+  - Storage (S3 + Glacier): $40
+  - Redis Cache: $50
+  - ML Inference (GPU spot): $60
+  - CDN + Data Transfer: $30
+  - **Total: $480/mes** ✓ Cumple límite de $500
+
+- **DR14 (Mantenibilidad ML)**: Pipeline completo de MLOps:
+  - **MLflow Tracking**: Logs de experimentos con métricas (accuracy, precision, recall, F1-score), hiperparámetros, artifacts (modelos, plots)
+  - **Model Registry**: Versionado semántico (v1.2.3), estados (Staging, Production, Archived)
+  - **CI/CD Pipeline**:
+    1. Training con GPU spot instances, early stopping si val_loss no mejora en 10 epochs
+    2. Validación automática: accuracy ≥95%, F1 ≥0.93, falsos positivos ≤5%
+    3. Deploy a Staging, smoke tests automatizados
+    4. Gradual rollout: 5% → 25% → 100% de tráfico en 24h
+    5. Monitoring continuo: si accuracy cae >2%, rollback automático en 2 minutos
+  - **Retraining**: Pipeline automatizado trigger semanal con nuevos datos anotados, completa en ≤4 horas
+  - **A/B Testing**: Framework custom para comparar modelo actual vs candidato, decisión basada en métricas estadísticas
+
+- **DR15 (Interoperabilidad)**: REST API con diseño pragmático:
+  - **OpenAPI 3.0 Specification**: Documentación autogenerada con Swagger UI, ejemplos de requests/responses
+  - **Endpoints principales**:
+    - `POST /api/v1/batches`: Crear lote (US06)
+    - `GET /api/v1/batches/{id}`: Obtener detalles de lote
+    - `POST /api/v1/classifications`: Ejecutar clasificación (US12)
+    - `GET /api/v1/reports/consolidated`: Reporte consolidado cooperativa (US16)
+    - `POST /api/v1/exports/pdf`: Generar certificado PDF (US17)
+
 ### 4.1.5. Quality Attribute Scenario Refinements. 
 
 ## 4.2. Strategic-Level Domain-Driven Design. 
@@ -1645,7 +2039,7 @@ Los Bounded Context Canvas ayudan a definir claramente los límites de un bounde
 
 ### 4.2.5. Context Mapping. 
 
-FALTA
+<!--FALTA-->
 
 ## 4.3. Software Architecture. 
 
