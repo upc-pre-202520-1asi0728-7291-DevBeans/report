@@ -4225,6 +4225,19 @@ Enlace de figma: https://www.figma.com/design/ockCQUwKAM1FR422KyQtyB/DETECT-BEAN
 Los wireframes de la aplicación fueron desarrollados utilizando la herramienta Figma en el siguiente enlace:
 https://www.figma.com/design/g2Q08oeYK9nbmza7fBzN21/Dev-Beans?node-id=1-2
 
+[![Registro-como-cooperativa.png](https://i.postimg.cc/vTddLr4B/Registro-como-cooperativa.png)](https://postimg.cc/1nMTyNch)
+
+[![Inicio-de-sesi-n.png](https://i.postimg.cc/8cVVBR7C/Inicio-de-sesi-n.png)](https://postimg.cc/TLQSTWq8)
+
+[![Dashboard.png](https://i.postimg.cc/prttYfmX/Dashboard.png)](https://postimg.cc/wyFP9s5S)
+
+[![Lotes.png](https://i.postimg.cc/J0WWcNsr/Lotes.png)](https://postimg.cc/ZBjgJyP2)
+
+[![Reportes.png](https://i.postimg.cc/gjPPqVxc/Reportes.png)](https://postimg.cc/Vr4Tzb92)
+
+[![Ajustes.png](https://i.postimg.cc/J0WWcNs1/Ajustes.png)](https://postimg.cc/hzMwK78w)
+
+
 ### 6.4.2. Applications Wireflow Diagrams.
 
 --- <!-- En proceso >
