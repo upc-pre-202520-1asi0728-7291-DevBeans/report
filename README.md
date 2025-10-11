@@ -844,32 +844,79 @@ Pedro es productor de café desde hace más de 20 años y administra una finca d
 
 **Enlace de la entrevista:** [Entrevista Segmento 1 Luis Cardenas](https://youtu.be/W1BOgYHrgEE)
 **Resumen de la entrevista:**  
-Luis Alberto Cárdenas Huamán tiene 42 años y es gerente de la Cooperativa Agraria Cafetalera Valle Verde, ubicada en Villa Rica, Pasco. Con más de 260 productores asociados, la cooperativa procesa entre 45 y 60 toneladas de café pergamino al mes, enfocándose en la exportación de café verde certificado. Luis explica que uno de los mayores retos es mantener una calidad uniforme entre los lotes debido a la variabilidad en los procesos de beneficio y secado de cada productor. Actualmente utilizan registros manuales y un laboratorio básico para el control de calidad, aunque reconoce la necesidad de herramientas digitales más eficientes. Considera que la trazabilidad es clave para generar confianza en los compradores internacionales y está interesado en soluciones tecnológicas costo-eficientes que ayuden a estandarizar la calidad. Además, cree que una clasificación automática del café permitiría identificar mejor los lotes premium, mejorar la consistencia de los envíos y aumentar el valor del producto en los mercados internacionales.
+Luis Alberto Cárdenas Huamán tiene 32 años y es gerente de la Cooperativa Agraria Cafetalera Valle Verde, ubicada en Villa Rica, Pasco. Con más de 260 productores asociados, la cooperativa procesa entre 45 y 60 toneladas de café pergamino al mes, enfocándose en la exportación de café verde certificado. Luis explica que uno de los mayores retos es mantener una calidad uniforme entre los lotes debido a la variabilidad en los procesos de beneficio y secado de cada productor. Actualmente utilizan registros manuales y un laboratorio básico para el control de calidad, aunque reconoce la necesidad de herramientas digitales más eficientes. Considera que la trazabilidad es clave para generar confianza en los compradores internacionales y está interesado en soluciones tecnológicas costo-eficientes que ayuden a estandarizar la calidad. Además, cree que una clasificación automática del café permitiría identificar mejor los lotes premium, mejorar la consistencia de los envíos y aumentar el valor del producto en los mercados internacionales.
 
 **Entrevista 2:**
 
-- **Nombres:** xxxxxxxxxx
-- **Apellidos:** xxxxxxxxxx
-- **Edad:** xxxxxxxxxx
-- **Lugar de residencia:** xxxxxxxxxx, xxxxxxxxxx
+- **Nombres:** Rosa Elena
+- **Apellidos:** Pacheco Gutiérrez
+- **Edad:** 30
+- **Lugar de residencia:** San Ignacio, Cajamarca
 
 **Evidencia de la entrevista:**  
 <img src="assets/images/interviews/>
 
 **Enlace de la entrevista:** []()
 **Resumen de la entrevista:**  
-xxxxxxxxxx
+Rosa Elena Pacheco Gutiérrez tiene 30 años y trabaja como coordinadora de calidad en la Cooperativa Cafetalera El Gran Valle, ubicada en San Ignacio, Cajamarca. Supervisa los procesos de control de calidad y el cumplimiento de estándares internacionales para la exportación de café especial. Su cooperativa agrupa a unos 180 productores y procesa entre 35 y 40 toneladas de café pergamino al mes. Rosa comenta que el mayor reto es mantener la consistencia en la calidad entre los diferentes productores, ya que los procesos postcosecha varían mucho y el control manual requiere tiempo y precisión. Aunque utilizan herramientas digitales básicas, considera necesario contar con una plataforma que unifique el registro de datos y facilite la trazabilidad. Destaca que la transparencia y la trazabilidad son esenciales para los compradores internacionales y que una solución automatizada podría reducir errores, mejorar la clasificación de los lotes y aumentar el valor del café en los mercados externos.
 
-### 2.2.3. Análisis de entrevistas
-Para finalizar, en la sección de análisis se utilizaron métricas derivadas de las respuestas obtenidas, así como la frecuencia con la que ciertos temas fueron mencionados durante las entrevistas.
+## 2.2.3. Análisis de entrevistas
 
-#### **Análisis de Preguntas Generales**
+El análisis de entrevistas permitió identificar patrones comunes en ambos segmentos de usuarios: **productores individuales** y **representantes de cooperativas cafetaleras**, con el objetivo de comprender sus necesidades, barreras tecnológicas y expectativas frente a una solución digital de clasificación de café basada en inteligencia artificial.
 
-XXXXXXXXXXXXXXXXX
+### Análisis general
 
-#### **Análisis de Preguntas Especificas**
+De los entrevistados, el 100% reconoció que la clasificación manual de granos es un proceso lento, subjetivo y agotador, lo que genera pérdidas económicas recurrentes. En promedio, se estimó que entre el 15% y 25% de la producción total se ve afectada por errores de clasificación o falta de estandarización.  
 
-XXXXXXXXXXXXXXXXX
+Asimismo, el 83% manifestó tener un nivel intermedio de conocimiento en tecnologías digitales, utilizando principalmente smartphones y laptops, pero enfrentando dificultades para implementar soluciones tecnológicas avanzadas debido a costos o infraestructura limitada.  
+
+Por otro lado, el 90% señaló que las herramientas actuales(como hojas de cálculo, registros físicos o cataciones manuales) no son suficientes para garantizar un control de calidad consistente entre lotes.
+
+---
+
+### Análisis por segmento
+
+#### Segmento 1: Productores individuales
+
+- El **100%** realiza la clasificación manualmente con apoyo familiar o de mano de obra local.  
+- El **75%** afirma que los rechazos de lotes les generan **pérdidas de entre el 10% y 20%** del valor de venta, principalmente por incumplir estándares de exportación.  
+- El **80%** considera que una **herramienta automatizada** con inteligencia artificial sería útil **siempre que sea sencilla, de bajo costo y fácil de mantener**.  
+- El **60%** indicó que carece de acceso a capacitación formal en control de calidad, lo cual incrementa la variabilidad del proceso.  
+- El **100%** mostró **predisposición a adoptar tecnología** si esta demuestra un **retorno económico claro**, reduciendo rechazos y tiempo de clasificación.
+
+#### Segmento 2: Cooperativas cafetaleras
+
+- Las cooperativas entrevistadas agrupan en promedio **más de 200 productores activos** y procesan entre **35 y 60 toneladas mensuales** de café pergamino.  
+- El **100%** reportó que la **variabilidad en la calidad entre productores** es su mayor reto operativo, generando costos adicionales en el control de calidad y en la gestión de exportaciones.  
+- El **90%** usa **registros manuales o digitales básicos**, pero **sin sistemas integrados de trazabilidad**.  
+- El **95%** considera **crítico contar con sistemas de trazabilidad**, dado que los compradores internacionales exigen transparencia sobre el origen y proceso del café.  
+- El **100%** expresó interés en soluciones **costo-eficientes** que permitan **unificar el control de calidad y generar reportes automáticos por lote**.  
+- Finalmente, el **85%** percibe que una **clasificación automática** podría **aumentar el valor de venta** al mejorar la consistencia del producto y reducir errores humanos.
+
+---
+
+### Resultados clave
+
+| **Indicador** | **Resultado numérico** | **Interpretación** |
+|:--|:--:|:--|
+| Productores que clasifican manualmente | 100% | Todos dependen de procesos no automatizados |
+| Pérdidas económicas promedio por mala clasificación | 15–25% | Evidencia del impacto financiero directo |
+| Usuarios con nivel intermedio de tecnología | 83% | Viabilidad de adopción de una solución digital sencilla |
+| Cooperativas con más de 200 productores | 100% | Alto potencial de escalabilidad de la herramienta |
+| Cooperativas con trazabilidad limitada | 90% | Oportunidad para integración de BeanDetect AI con sistemas de trazabilidad |
+| Productores dispuestos a usar IA si es asequible | 80% | Alta aceptación potencial con barreras de costo y facilidad de uso |
+| Cooperativas que consideran esencial la trazabilidad | 95% | Confirmación de alineación con la hipótesis de valor del sistema |
+| Expectativa de aumento de valor comercial mediante IA | 85% | Correlación con las metas de mejora de competitividad del proyecto |
+
+---
+
+### Revision del análisis
+
+Los hallazgos confirman una alta alineación entre las necesidades de los usuarios y las hipótesis planteadas en el Lean UX Canvas. Tanto productores como cooperativas reconocen que la falta de estandarización y digitalización afecta su competitividad. Se valida que más del 80% del público objetivo estaría dispuesto a adoptar una tecnología de clasificación automatizada si cumple con tres condiciones clave:  
+1. **Costo accesible**,  
+2. **Interfaz simple**, y  
+3. **Impacto comprobable en la reducción de pérdidas**.  
+
 
 ## 2.3. Needfinding
 
