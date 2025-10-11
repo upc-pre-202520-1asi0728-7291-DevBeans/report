@@ -204,8 +204,82 @@ En esta sección se resumen los avances y modificaciones realizadas durante el c
 - [3.4. Product Backlog](#34-product-backlog)
 
 ### [Capítulo IV: Strategic-Level Software Design](#capítulo-iv-strategic-level-software-design)
+- [4.1. Strategic-Level Attribute-Driven Design](#41-strategic-level-attribute-driven-design)
+   - [4.1.1. Design Purpose](#411-design-purpose)
+   - [4.1.2. Attribute-Driven Design Inputs](#412-attribute-driven-design-inputs)
+      - [4.1.2.1. Primary Functionality (Primary User Stories)](#4121-primary-functionality-primary-user-stories)
+      - [4.1.2.2. Quality Attribute Scenarios](#4122-quality-attribute-scenarios)
+      - [4.1.2.3. Constraints](#4123-constraints)
+   - [4.1.3. Architectural Drivers Backlog](#413-architectural-drivers-backlog)
+   - [4.1.4. Architectural Design Decisions](#414-architectural-design-decisions)
+   - [4.1.5. Quality Attribute Scenario Refinements](#415-quality-attribute-scenario-refinements)
+- [4.2. Strategic-Level Domain-Driven Design](#42-strategic-level-domain-driven-design)
+   - [4.2.1. EventStorming](#421-eventstorming)
+   - [4.2.2. Candidate Context Discovery](#422-candidate-context-discovery)
+   - [4.2.3. Domain Message Flows Modeling](#423-domain-message-flows-modeling)
+   - [4.2.4. Bounded Context Canvases](#424-bounded-context-canvases)
+   - [4.2.5. Context Mapping](#425-context-mapping)
+- [4.3. Software Architecture](#43-software-architecture)
+   - [4.3.1. Software Architecture System Landscape Diagram](#431-software-architecture-system-landscape-diagram)
+   - [4.3.2. Software Architecture Context Level Diagrams](#432-software-architecture-context-level-diagrams)
+   - [4.3.3. Software Architecture Container Level Diagrams](#433-software-architecture-container-level-diagrams)
+   - [4.3.4. Software Architecture Deployment Diagrams](#434-software-architecture-deployment-diagrams)
 
 ### [Capítulo V: Tactical-Level Software Design](#capítulo-v-tactical-level-software-design)
+- [5.1. Bounded Context: IAM & Profile](#51-bounded-context-iam--profile)
+   - [5.1.1. Domain Layer](#511-domain-layer)
+   - [5.1.2. Interface Layer](#512-interface-layer)
+   - [5.1.3. Application Layer](#513-application-layer)
+   - [5.1.4. Infrastructure Layer](#514-infrastructure-layer)
+   - [5.1.5. Bounded Context Software Architecture Component Level Diagrams](#515-bounded-context-software-architecture-component-level-diagrams)
+   - [5.1.6. Bounded Context Software Architecture Code Level Diagrams](#516--bounded-context-software-architecture-code-level-diagrams)
+      - [5.1.6.1. Bounded Context Domain Layer Class Diagrams](#5161-bounded-context-domain-layer-class-diagrams)
+      - [5.1.6.2. Bounded Context Database Design Diagram](#5162-bounded-context-database-design-diagram)
+- [5.2. Bounded Context: Coffee Lot Management](#52-bounded-context-coffee-lot-management)
+   - [5.2.1. Domain Layer](#521-domain-layer)
+   - [5.2.2. Interface Layer](#522-interface-layer)
+   - [5.2.3. Application Layer](#523-application-layer)
+   - [5.2.4. Infrastructure Layer](#524-infrastructure-layer)
+   - [5.2.5. Bounded Context Software Architecture Component Level Diagrams](#525-bounded-context-software-architecture-component-level-diagrams)
+   - [5.2.6. Bounded Context Software Architecture Code Level Diagrams](#526-bounded-context-software-architecture-code-level-diagrams)
+      - [5.2.6.1. Bounded Context Domain Layer Class Diagrams](#5261-bounded-context-domain-layer-class-diagrams)
+      - [5.2.6.2. Bounded Context Database Design Diagram](#5262-bounded-context-database-design-diagram)
+- [5.3. Bounded Context: Grain Classification](#53-bounded-context-grain-classification)
+   - [5.3.1. Domain Layer](#531-domain-layer)
+   - [5.3.2. Interface Layer](#532-interface-layer)
+   - [5.3.3. Application Layer](#533-application-layer)
+   - [5.3.4. Infrastructure Layer](#534-infrastructure-layer)
+   - [5.3.5. Bounded Context Software Architecture Component Level Diagrams](#535-bounded-context-software-architecture-component-level-diagrams)
+   - [5.3.6. Bounded Context Software Architecture Code Level Diagrams](#536-bounded-context-software-architecture-code-level-diagrams)
+      - [5.3.6.1. Bounded Context Domain Layer Class Diagrams](#5361-bounded-context-domain-layer-class-diagrams)
+      - [5.3.6.2. Bounded Context Database Design Diagram](#5362-bounded-context-database-design-diagram)
+- [5.4. Bounded Context: Traceability & Certification](#54-bounded-context-traceability--certification)
+   - [5.4.1. Domain Layer](#541-domain-layer)
+   - [5.4.2. Interface Layer](#542-interface-layer)
+   - [5.4.3. Application Layer](#543-application-layer)
+   - [5.4.4. Infrastructure Layer](#544-infrastructure-layer)
+   - [5.4.5. Bounded Context Software Architecture Component Level Diagrams](#545-bounded-context-software-architecture-component-level-diagrams)
+   - [5.4.6. Bounded Context Software Architecture Code Level Diagrams](#546-bounded-context-software-architecture-code-level-diagrams)
+      - [5.4.6.1. Bounded Context Domain Layer Class Diagrams](#5461-bounded-context-domain-layer-class-diagrams)
+      - [5.4.6.2. Bounded Context Database Design Diagram](#5462-bounded-context-database-design-diagram)
+- [5.5. Bounded Context: Reporting & Analytics](#55-bounded-context-reporting--analytics)
+   - [5.5.1. Domain Layer](#551-domain-layer)
+   - [5.5.2. Interface Layer](#552-interface-layer)
+   - [5.5.3. Application Layer](#553-application-layer)
+   - [5.5.4. Infrastructure Layer](#554-infrastructure-layer)
+   - [5.5.5. Bounded Context Software Architecture Component Level Diagrams](#555-bounded-context-software-architecture-component-level-diagrams)
+   - [5.5.6. Bounded Context Software Architecture Code Level Diagrams](#556-bounded-context-software-architecture-code-level-diagrams)
+      - [5.5.6.1. Bounded Context Domain Layer Class Diagrams](#5561-bounded-context-domain-layer-class-diagrams)
+      - [5.5.6.2. Bounded Context Database Design Diagram](#5562-bounded-context-database-design-diagram)
+- [5.6. Bounded Context: User Support](#56-bounded-context-user-support)
+   - [5.6.1. Domain Layer](#561-domain-layer)
+   - [5.6.2. Interface Layer](#562-interface-layer)
+   - [5.6.3. Application Layer](#563-application-layer)
+   - [5.6.4. Infrastructure Layer](#564-infrastructure-layer)
+   - [5.6.5. Bounded Context Software Architecture Component Level Diagrams](#565-bounded-context-software-architecture-component-level-diagrams)
+   - [5.6.6. Bounded Context Software Architecture Code Level Diagrams](#566-bounded-context-software-architecture-code-level-diagrams)
+      - [5.6.6.1. Bounded Context Domain Layer Class Diagrams](#5661-bounded-context-domain-layer-class-diagrams)
+      - [5.6.6.2. Bounded Context Database Design Diagram](#5662-bounded-context-database-design-diagram)
  
 ### [Capítulo VI: Solution UX Design.](#capítulo-vi-solution-ux-design)
   - [6.1. Style Guidelines.](#61-style-guidelines)
@@ -1618,6 +1692,8 @@ En esta sección se incluyen las restricciones técnicas, de negocio y regulator
 | TS09 | Tiempo Máximo de Entrenamiento de Modelo | El reentrenamiento del modelo de ML con nuevos datos no debe exceder 4 horas para permitir iteraciones rápidas y mejora continua. | - Pipeline de entrenamiento automatizado<br>- Uso de GPUs en cloud para entrenamiento<br>- Versionado de modelos con MLflow o similar<br>- Validación automática post-entrenamiento | US12 - Detección de Defectos |
 | TS10 | Arquitectura Cloud-Native | El sistema debe desplegarse en arquitectura cloud-native utilizando servicios administrados para reducir overhead operativo, con preferencia por AWS o Google Cloud Platform. | - Uso de servicios PaaS/SaaS sobre IaaS<br>- Containerización con Docker<br>- Orquestación con Kubernetes o servicios equivalentes<br>- Infrastructure as Code (Terraform/CloudFormation) | Todos los User Stories |
 
+### 4.1.3. Architectural Drivers Backlog 
+
 En esta sección se establece el conjunto de Architectural Drivers acordados por el equipo, resultado del proceso iterativo del Quality Attribute Workshop. El Architectural Drivers Backlog incluye los Functional Drivers seleccionados, los Quality Attribute Drivers priorizados y todos los Constraints identificados. Los drivers están ordenados por importancia para stakeholders y su impacto en la complejidad técnica de la arquitectura.
 
 | Driver ID | Título de Driver | Descripción | Importancia para Stakeholders (High, Medium, Low) | Impacto en Architecture Technical Complexity (High, Medium, Low) |
@@ -2541,7 +2617,7 @@ La Domain Layer del IAM & Profile Bounded Context encapsula la lógica de negoci
 3. **CooperativeProfileRepository**
    - `findByUserId(Long userId)`
 
-### 4.1.5. Bounded Context Software Architecture Component Level Diagrams
+### 5.1.5. Bounded Context Software Architecture Component Level Diagrams
 
 [![structurizr-106404-IAMProfile-Component-Diagram.png](https://i.postimg.cc/GpcLQ8Tt/structurizr-106404-IAMProfile-Component-Diagram.png)](https://postimg.cc/G45n3pQn)
 
