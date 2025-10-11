@@ -842,7 +842,7 @@ Pedro es productor de café desde hace más de 20 años y administra una finca d
 **Evidencia de la entrevista:**  
 <img src="assets/images/entrevistas/Entrevista3.png">
 
-**Enlace de la entrevista:** [Entrevista Segmento 1 Luis Cardenas](https://youtu.be/W1BOgYHrgEE)
+**Enlace de la entrevista:** [Entrevista Segmento 2 Luis Cardenas](https://youtu.be/W1BOgYHrgEE)
 **Resumen de la entrevista:**  
 Luis Alberto Cárdenas Huamán tiene 32 años y es gerente de la Cooperativa Agraria Cafetalera Valle Verde, ubicada en Villa Rica, Pasco. Con más de 260 productores asociados, la cooperativa procesa entre 45 y 60 toneladas de café pergamino al mes, enfocándose en la exportación de café verde certificado. Luis explica que uno de los mayores retos es mantener una calidad uniforme entre los lotes debido a la variabilidad en los procesos de beneficio y secado de cada productor. Actualmente utilizan registros manuales y un laboratorio básico para el control de calidad, aunque reconoce la necesidad de herramientas digitales más eficientes. Considera que la trazabilidad es clave para generar confianza en los compradores internacionales y está interesado en soluciones tecnológicas costo-eficientes que ayuden a estandarizar la calidad. Además, cree que una clasificación automática del café permitiría identificar mejor los lotes premium, mejorar la consistencia de los envíos y aumentar el valor del producto en los mercados internacionales.
 
@@ -854,9 +854,9 @@ Luis Alberto Cárdenas Huamán tiene 32 años y es gerente de la Cooperativa Agr
 - **Lugar de residencia:** San Ignacio, Cajamarca
 
 **Evidencia de la entrevista:**  
-<img src="assets/images/interviews/>
+<img src="assets/images/entrevistas/entrevista4.png">
 
-**Enlace de la entrevista:** []()
+**Enlace de la entrevista:** [Entrevista Segmento 2](https://youtu.be/bDB1FmLW5vo)
 **Resumen de la entrevista:**  
 Rosa Elena Pacheco Gutiérrez tiene 30 años y trabaja como coordinadora de calidad en la Cooperativa Cafetalera El Gran Valle, ubicada en San Ignacio, Cajamarca. Supervisa los procesos de control de calidad y el cumplimiento de estándares internacionales para la exportación de café especial. Su cooperativa agrupa a unos 180 productores y procesa entre 35 y 40 toneladas de café pergamino al mes. Rosa comenta que el mayor reto es mantener la consistencia en la calidad entre los diferentes productores, ya que los procesos postcosecha varían mucho y el control manual requiere tiempo y precisión. Aunque utilizan herramientas digitales básicas, considera necesario contar con una plataforma que unifique el registro de datos y facilite la trazabilidad. Destaca que la transparencia y la trazabilidad son esenciales para los compradores internacionales y que una solución automatizada podría reducir errores, mejorar la clasificación de los lotes y aumentar el valor del café en los mercados externos.
 
