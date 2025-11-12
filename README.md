@@ -203,298 +203,85 @@ En esta sección se resumen los avances y modificaciones realizadas durante el c
 - [3.3. Impact Mapping](#33-impact-mapping)
 - [3.4. Product Backlog](#34-product-backlog)
 
-### [Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design)
-- [Project Report Collaboration Insights](#project-report-collaboration-insights)
-- [Contenido](#contenido)
-  - [Tabla de Contenidos](#tabla-de-contenidos)
-    - [Registro de Versiones del Informe](#registro-de-versiones-del-informe-1)
-    - [Project Report Collaboration Insights](#project-report-collaboration-insights-1)
-    - [Contenido](#contenido-1)
-    - [Student Outcomes](#student-outcomes)
-    - [Capítulo I: Introducción](#capítulo-i-introducción)
-    - [Capítulo II: Requirements Elicitation \& Analysis](#capítulo-ii-requirements-elicitation--analysis)
-    - [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
-    - [Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design)
-    - [Conclusiones](#conclusiones)
-    - [Bibliografía](#bibliografía)
-    - [Anexos](#anexos)
-- [Student Outcome](#student-outcome)
-- [Capítulo I: Introducción](#capítulo-i-introducción-1)
-  - [1.1. Startup Profile](#11-startup-profile)
-    - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
-    - [Misión](#misión)
-    - [Visión](#visión)
-    - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
-  - [1.2. Solution Profile](#12-solution-profile)
-    - [1.2.1. Antecedentes y problemática](#121-antecedentes-y-problemática)
-    - [Antecedentes](#antecedentes)
-    - [Problemática (Método 5W y 2H)](#problemática-método-5w-y-2h)
-    - [1.2.2. Lean UX Process](#122-lean-ux-process)
-      - [1.2.2.1. Lean UX Problem Statements](#1221-lean-ux-problem-statements)
-    - [Problem Statement](#problem-statement)
-    - [Dominio](#dominio)
-    - [Segmentos de Clientes](#segmentos-de-clientes)
-    - [Puntos de Dolor](#puntos-de-dolor)
-    - [Visión / Estrategia](#visión--estrategia)
-    - [Segmento Inicial](#segmento-inicial)
-      - [1.2.2.2. Lean UX Assumptions](#1222-lean-ux-assumptions)
-    - [Business Outcomes](#business-outcomes)
-    - [Users](#users)
-    - [User Outcomes \& Benefits](#user-outcomes--benefits)
-    - [Feature Assumptions](#feature-assumptions)
-    - [Business Assumptions](#business-assumptions)
-    - [User Assumptions](#user-assumptions)
-      - [1.2.2.3. Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
-      - [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)
-  - [1.3. Segmentos objetivo](#13-segmentos-objetivo)
-- [Capítulo II: Requirements Elicitation \& Analysis](#capítulo-ii-requirements-elicitation--analysis-1)
-  - [2.1. Competidores](#21-competidores)
-    - [2.1.1. Análisis competitivo](#211-análisis-competitivo)
-    - [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
-  - [2.2. Entrevistas](#22-entrevistas)
-    - [2.2.1. Diseño de entrevistas](#221-diseño-de-entrevistas)
-    - [Preguntas Generales](#preguntas-generales)
-    - [Preguntas Segmento 1: Productores pequeños y medianos de café](#preguntas-segmento-1-productores-pequeños-y-medianos-de-café)
-    - [Preguntas Segmento 2: Cooperativas cafetaleras](#preguntas-segmento-2-cooperativas-cafetaleras)
-    - [2.2.2. Registro de entrevistas](#222-registro-de-entrevistas)
-      - [**Segmento 1: Productores pequeños y medianos de café**](#segmento-1-productores-pequeños-y-medianos-de-café)
-      - [**Segmento 2: Cooperativas cafetaleras**](#segmento-2-cooperativas-cafetaleras)
-    - [2.2.3. Análisis de entrevistas](#223-análisis-de-entrevistas)
-      - [**Análisis de Preguntas Generales**](#análisis-de-preguntas-generales)
-      - [**Análisis de Preguntas Especificas**](#análisis-de-preguntas-especificas)
-  - [2.3. Needfinding](#23-needfinding)
-    - [2.3.1. User Personas](#231-user-personas)
-        - [Segmento 1: Productores Individuales](#segmento-1-productores-individuales)
-        - [Segmento 2: Cooperativas cafeteras](#segmento-2-cooperativas-cafeteras)
-    - [2.3.2. User Task Matrix](#232-user-task-matrix)
-    - [2.3.3. User Journey Mapping](#233-user-journey-mapping)
-    - [2.3.4. Empathy Mapping](#234-empathy-mapping)
-        - [Jose Ramirez](#jose-ramirez)
-        - [Luis Torres (Representante de la cooperativa)](#luis-torres-representante-de-la-cooperativa)
-    - [2.3.5. As-is Scenario Mapping](#235-as-is-scenario-mapping)
-- [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification-1)
-  - [3.1. To-Be Scenario Mapping](#31-to-be-scenario-mapping)
-  - [3.2. User Stories](#32-user-stories)
-    - [Gestión de Usuarios](#gestión-de-usuarios)
-    - [Gestión de Lotes de Café](#gestión-de-lotes-de-café)
-    - [Clasificación Automática de Granos](#clasificación-automática-de-granos)
-    - [Reportes y Análisis](#reportes-y-análisis)
-    - [Integración de certificados de trazabilidad](#integración-de-certificados-de-trazabilidad)
-    - [Soporte Accesible](#soporte-accesible)
-    - [Configuración Adaptable del Sistema](#configuración-adaptable-del-sistema)
-    - [Navegación y Funcionalidades de la Landing Page](#navegación-y-funcionalidades-de-la-landing-page)
-    - [Funcionalidades de Idioma y Accesibilidad](#funcionalidades-de-idioma-y-accesibilidad)
-  - [Criterios de Aceptación](#criterios-de-aceptación)
-    - [US01: Registro de Productor Pequeño/Mediano](#us01-registro-de-productor-pequeñomediano)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-1)
-  - [US02: Registro de Cooperativa Cafetalera](#us02-registro-de-cooperativa-cafetalera)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-2)
-  - [US03: Autenticación de Usuarios](#us03-autenticación-de-usuarios)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-3)
-  - [US04: Gestión de Perfil de Productor](#us04-gestión-de-perfil-de-productor)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-4)
-  - [US05: Gestión de Perfil de Cooperativa](#us05-gestión-de-perfil-de-cooperativa)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-5)
-  - [US06: Creación de Lotes](#us06-creación-de-lotes)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-6)
-  - [US07: Edición de Información de Lote](#us07-edición-de-información-de-lote)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-7)
-  - [US08: Visualización de Lotes por Productor](#us08-visualización-de-lotes-por-productor)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-8)
-  - [US09: Visualización de Lotes por Cooperativa](#us09-visualización-de-lotes-por-cooperativa)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-9)
-  - [US10: Búsqueda Rápida de Lotes](#us10-búsqueda-rápida-de-lotes)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-10)
-  - [US11: Eliminación de Lotes](#us11-eliminación-de-lotes)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-11)
-  - [US12: Detección de Defectos Críticos](#us12-detección-de-defectos-críticos)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-12)
-  - [US13: Análisis de Color y Uniformidad](#us13-análisis-de-color-y-uniformidad)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-13)
-  - [US14: Clasificación por Estándares Internacionales](#us14-clasificación-por-estándares-internacionales)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-14)
-  - [US15: Reporte Simple de Clasificación](#us15-reporte-simple-de-clasificación)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-15)
-  - [US16: Reporte Consolidado para Cooperativas](#us16-reporte-consolidado-para-cooperativas)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-16)
-  - [US17: Exportación para Compradores](#us17-exportación-para-compradores)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-17)
-  - [US18: Comparación Histórica de Calidad](#us18-comparación-histórica-de-calidad)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-18)
-  - [US19: Alertas de Calidad Crítica](#us19-alertas-de-calidad-crítica)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-19)
-  - [US20: Códigos QR para Lotes](#us20-códigos-qr-para-lotes)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-20)
-  - [US21: Certificación Digital Automática](#us21-certificación-digital-automática)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-21)
-  - [US22: Integración con Blockchain](#us22-integración-con-blockchain)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-22)
-  - [US23: Reportes de Transparencia para Consumidores](#us23-reportes-de-transparencia-para-consumidores)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-23)
-  - [US24: Soporte por WhatsApp](#us24-soporte-por-whatsapp)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-24)
-  - [US25: Soporte Telefónico en Horarios Rurales](#us25-soporte-telefónico-en-horarios-rurales)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-25)
-  - [US26: Modo Offline para Zonas Rurales](#us26-modo-offline-para-zonas-rurales)
-    - [Criterios de Aceptación:](#criterios-de-aceptación-26)
-  - [3.3. Impact Mapping](#33-impact-mapping)
-  - [3.4. Product Backlog](#34-product-backlog)
-- [Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design-1)
-  - [4.1. Strategic-Level Domain-Driven Design](#41-strategic-level-domain-driven-design)
-    - [4.1.1. Event Storming](#411-event-storming)
-      - [4.1.1.1 Candidate Context Discovery](#4111-candidate-context-discovery)
-      - [4.1.1.2 Domain Message Flows Modeling](#4112-domain-message-flows-modeling)
-      - [4.1.1.3 Bounded Context Canvases](#4113-bounded-context-canvases)
-    - [4.1.2. Context Mapping](#412-context-mapping)
-    - [4.1.3. Software Architecture](#413-software-architecture)
-      - [4.1.3.1. Software Architecture System Landscape Diagram](#4131-software-architecture-system-landscape-diagram)
-      - [4.1.3.2. Software Architecture Context Level Diagrams](#4132-software-architecture-context-level-diagrams)
-      - [4.1.3.3. Software Architecture Container Level Diagrams](#4133-software-architecture-container-level-diagrams)
-      - [4.1.3.4. Software Architecture Deployment Diagrams](#4134-software-architecture-deployment-diagrams)
-- [4.2. Tactical-Level Domain-Driven Design](#42-tactical-level-domain-driven-design)
-  - [4.2.1. Bounded Context: IAM \& Profile](#421-bounded-context-iam--profile)
-    - [4.2.1.1. Domain Layer](#4211-domain-layer)
-      - [**Aggregates**](#aggregates)
-      - [**Entities**](#entities)
-      - [**Value Objects**](#value-objects)
-      - [**Commands**](#commands)
-      - [**Queries**](#queries)
-      - [**Events**](#events)
-    - [4.2.1.2. Interface Layer](#4212-interface-layer)
-      - [**Controllers**](#controllers)
-      - [**Resources**](#resources)
-      - [**Transformers**](#transformers)
-    - [4.2.1.3. Application Layer](#4213-application-layer)
-      - [**Command Services**](#command-services)
-      - [**Query Services**](#query-services)
-    - [4.2.1.4. Infrastructure Layer](#4214-infrastructure-layer)
-      - [**Persistencia (JPA Repositories)**](#persistencia-jpa-repositories)
-      - [4.2.1.5. Bounded Context Software Architecture Component Level Diagrams](#4215-bounded-context-software-architecture-component-level-diagrams)
-    - [4.2.1.6.  Bounded Context Software Architecture Code Level Diagrams](#4216--bounded-context-software-architecture-code-level-diagrams)
-      - [4.2.1.6.1. Bounded Context Domain Layer Class Diagrams](#42161-bounded-context-domain-layer-class-diagrams)
-      - [4.2.1.6.2. Bounded Context Database Design Diagram](#42162-bounded-context-database-design-diagram)
-  - [4.2.2. Bounded Context: Coffee Lot Management](#422-bounded-context-coffee-lot-management)
-    - [4.2.2.1. Domain Layer](#4221-domain-layer)
-      - [**Aggregates**](#aggregates-1)
-      - [**Entities**](#entities-1)
-      - [**Value Objects**](#value-objects-1)
-      - [**Commands**](#commands-1)
-      - [**Queries**](#queries-1)
-      - [**Events**](#events-1)
-    - [4.2.2.2. Interface Layer](#4222-interface-layer)
-      - [**Controllers**](#controllers-1)
-      - [**Resources**](#resources-1)
-      - [**Transformers**](#transformers-1)
-    - [4.2.2.3. Application Layer](#4223-application-layer)
-      - [**Command Services**](#command-services-1)
-      - [**Query Services**](#query-services-1)
-      - [**Domain Services**](#domain-services)
-    - [4.2.2.4. Infrastructure Layer](#4224-infrastructure-layer)
-      - [**Persistencia (JPA Repositories)**](#persistencia-jpa-repositories-1)
-      - [**External Services Integration**](#external-services-integration)
-      - [**Event Handling**](#event-handling)
-    - [4.2.2.5. Bounded Context Software Architecture Component Level Diagrams](#4225-bounded-context-software-architecture-component-level-diagrams)
-    - [4.2.2.6.  Bounded Context Software Architecture Code Level Diagrams](#4226--bounded-context-software-architecture-code-level-diagrams)
-      - [4.2.2.6.1. Bounded Context Domain Layer Class Diagrams](#42261-bounded-context-domain-layer-class-diagrams)
-      - [4.2.2.6.2. Bounded Context Database Design Diagram](#42262-bounded-context-database-design-diagram)
-  - [4.2.3. Bounded Context: Grain Classification](#423-bounded-context-grain-classification)
-    - [4.2.3.1. Domain Layer](#4231-domain-layer)
-      - [**Aggregates**](#aggregates-2)
-      - [**Entities**](#entities-2)
-      - [**Value Objects**](#value-objects-2)
-      - [**Commands**](#commands-2)
-      - [**Queries**](#queries-2)
-      - [**Events**](#events-2)
-    - [4.2.3.2. Interface Layer](#4232-interface-layer)
-      - [**Controllers**](#controllers-2)
-      - [**Resources**](#resources-2)
-      - [**Transformers**](#transformers-2)
-    - [4.2.3.3. Application Layer](#4233-application-layer)
-      - [**Command Services**](#command-services-2)
-      - [**Query Services**](#query-services-2)
-      - [**Domain Services**](#domain-services-1)
-    - [4.2.3.4. Infrastructure Layer](#4234-infrastructure-layer)
-      - [**Persistencia (JPA Repositories)**](#persistencia-jpa-repositories-2)
-      - [**External Services Integration**](#external-services-integration-1)
-      - [**Event Handling**](#event-handling-1)
-    - [4.2.3.5. Bounded Context Software Architecture Component Level Diagrams](#4235-bounded-context-software-architecture-component-level-diagrams)
-    - [4.2.3.6.  Bounded Context Software Architecture Code Level Diagrams](#4236--bounded-context-software-architecture-code-level-diagrams)
-      - [4.2.3.6.1. Bounded Context Domain Layer Class Diagrams](#42361-bounded-context-domain-layer-class-diagrams)
-      - [4.2.3.6.2. Bounded Context Database Design Diagram](#42362-bounded-context-database-design-diagram)
-  - [4.2.4. Bounded Context: Traceability \& Certification](#424-bounded-context-traceability--certification)
-    - [4.2.4.1. Domain Layer](#4241-domain-layer)
-      - [**Aggregates**](#aggregates-3)
-      - [**Entities**](#entities-3)
-      - [**Value Objects**](#value-objects-3)
-      - [**Commands**](#commands-3)
-      - [**Queries**](#queries-3)
-      - [**Events**](#events-3)
-    - [4.2.4.2. Interface Layer](#4242-interface-layer)
-      - [**Controllers**](#controllers-3)
-      - [**Resources**](#resources-3)
-      - [**Transformers**](#transformers-3)
-    - [4.2.4.3. Application Layer](#4243-application-layer)
-      - [**Command Services**](#command-services-3)
-      - [**Query Services**](#query-services-3)
-      - [**Domain Services**](#domain-services-2)
-    - [4.2.4.4. Infrastructure Layer](#4244-infrastructure-layer)
-      - [**Persistencia (JPA Repositories)**](#persistencia-jpa-repositories-3)
-      - [**External Services Integration**](#external-services-integration-2)
-      - [**Event Handling**](#event-handling-2)
-    - [4.2.4.5. Bounded Context Software Architecture Component Level Diagrams](#4245-bounded-context-software-architecture-component-level-diagrams)
-    - [4.2.4.6.  Bounded Context Software Architecture Code Level Diagrams](#4246--bounded-context-software-architecture-code-level-diagrams)
-      - [4.2.4.6.1. Bounded Context Domain Layer Class Diagrams](#42461-bounded-context-domain-layer-class-diagrams)
-      - [4.2.4.6.2. Bounded Context Database Design Diagram](#42462-bounded-context-database-design-diagram)
-  - [4.2.5. Bounded Context: Reporting \& Analytics](#425-bounded-context-reporting--analytics)
-    - [4.2.5.1. Domain Layer](#4251-domain-layer)
-      - [**Aggregates**](#aggregates-4)
-      - [**Entities**](#entities-4)
-      - [**Value Objects**](#value-objects-4)
-      - [**Commands**](#commands-4)
-      - [**Queries**](#queries-4)
-      - [**Events**](#events-4)
-    - [4.2.5.2. Interface Layer](#4252-interface-layer)
-      - [**Controllers**](#controllers-4)
-      - [**Resources**](#resources-4)
-      - [**Transformers**](#transformers-4)
-    - [4.2.5.3. Application Layer](#4253-application-layer)
-      - [**Command Services**](#command-services-4)
-      - [**Query Services**](#query-services-4)
-      - [**Domain Services**](#domain-services-3)
-    - [4.2.5.4. Infrastructure Layer](#4254-infrastructure-layer)
-      - [**Persistencia (JPA Repositories)**](#persistencia-jpa-repositories-4)
-      - [**External Services Integration**](#external-services-integration-3)
-      - [**Event Handling**](#event-handling-3)
-    - [4.2.5.5. Bounded Context Software Architecture Component Level Diagrams](#4255-bounded-context-software-architecture-component-level-diagrams)
-    - [4.2.5.6.  Bounded Context Software Architecture Code Level Diagrams](#4256--bounded-context-software-architecture-code-level-diagrams)
-      - [4.2.5.6.1. Bounded Context Domain Layer Class Diagrams](#42561-bounded-context-domain-layer-class-diagrams)
-      - [4.2.5.6.2. Bounded Context Database Design Diagram](#42562-bounded-context-database-design-diagram)
-  - [4.2.6. Bounded Context: User Support](#426-bounded-context-user-support)
-    - [4.2.6.1. Domain Layer](#4261-domain-layer)
-      - [**Aggregates**](#aggregates-5)
-      - [**Entities**](#entities-5)
-      - [**Value Objects**](#value-objects-5)
-      - [**Commands**](#commands-5)
-      - [**Queries**](#queries-5)
-      - [**Events**](#events-5)
-    - [4.2.6.2. Interface Layer](#4262-interface-layer)
-      - [**Controllers**](#controllers-5)
-      - [**Resources**](#resources-5)
-      - [**Transformers**](#transformers-5)
-    - [4.2.6.3. Application Layer](#4263-application-layer)
-      - [**Command Services**](#command-services-5)
-      - [**Query Services**](#query-services-5)
-      - [**Domain Services**](#domain-services-4)
-    - [4.2.6.4. Infrastructure Layer](#4264-infrastructure-layer)
-      - [**Persistencia (JPA Repositories)**](#persistencia-jpa-repositories-5)
-      - [**External Services Integration**](#external-services-integration-4)
-      - [**Event Handling**](#event-handling-4)
-    - [4.2.6.5. Bounded Context Software Architecture Component Level Diagrams](#4265-bounded-context-software-architecture-component-level-diagrams)
-    - [4.2.6.6.  Bounded Context Software Architecture Code Level Diagrams](#4266--bounded-context-software-architecture-code-level-diagrams)
-      - [4.2.6.6.1. Bounded Context Domain Layer Class Diagrams](#42661-bounded-context-domain-layer-class-diagrams)
-      - [4.2.6.6.2. Bounded Context Database Design Diagram](#42662-bounded-context-database-design-diagram)
-- [Capítulo V: Tactical-Level Software Design](#capítulo-v-tactical-level-software-design)
-- [Capítulo VI: Solution UX Design.](#capítulo-vi-solution-ux-design)
+### [Capítulo IV: Strategic-Level Software Design](#capítulo-iv-strategic-level-software-design)
+- [4.1. Strategic-Level Attribute-Driven Design](#41-strategic-level-attribute-driven-design)
+   - [4.1.1. Design Purpose](#411-design-purpose)
+   - [4.1.2. Attribute-Driven Design Inputs](#412-attribute-driven-design-inputs)
+      - [4.1.2.1. Primary Functionality (Primary User Stories)](#4121-primary-functionality-primary-user-stories)
+      - [4.1.2.2. Quality Attribute Scenarios](#4122-quality-attribute-scenarios)
+      - [4.1.2.3. Constraints](#4123-constraints)
+   - [4.1.3. Architectural Drivers Backlog](#413-architectural-drivers-backlog)
+   - [4.1.4. Architectural Design Decisions](#414-architectural-design-decisions)
+   - [4.1.5. Quality Attribute Scenario Refinements](#415-quality-attribute-scenario-refinements)
+- [4.2. Strategic-Level Domain-Driven Design](#42-strategic-level-domain-driven-design)
+   - [4.2.1. EventStorming](#421-eventstorming)
+   - [4.2.2. Candidate Context Discovery](#422-candidate-context-discovery)
+   - [4.2.3. Domain Message Flows Modeling](#423-domain-message-flows-modeling)
+   - [4.2.4. Bounded Context Canvases](#424-bounded-context-canvases)
+   - [4.2.5. Context Mapping](#425-context-mapping)
+- [4.3. Software Architecture](#43-software-architecture)
+   - [4.3.1. Software Architecture System Landscape Diagram](#431-software-architecture-system-landscape-diagram)
+   - [4.3.2. Software Architecture Context Level Diagrams](#432-software-architecture-context-level-diagrams)
+   - [4.3.3. Software Architecture Container Level Diagrams](#433-software-architecture-container-level-diagrams)
+   - [4.3.4. Software Architecture Deployment Diagrams](#434-software-architecture-deployment-diagrams)
+
+### [Capítulo V: Tactical-Level Software Design](#capítulo-v-tactical-level-software-design)
+- [5.1. Bounded Context: IAM & Profile](#51-bounded-context-iam--profile)
+   - [5.1.1. Domain Layer](#511-domain-layer)
+   - [5.1.2. Interface Layer](#512-interface-layer)
+   - [5.1.3. Application Layer](#513-application-layer)
+   - [5.1.4. Infrastructure Layer](#514-infrastructure-layer)
+   - [5.1.5. Bounded Context Software Architecture Component Level Diagrams](#515-bounded-context-software-architecture-component-level-diagrams)
+   - [5.1.6. Bounded Context Software Architecture Code Level Diagrams](#516--bounded-context-software-architecture-code-level-diagrams)
+      - [5.1.6.1. Bounded Context Domain Layer Class Diagrams](#5161-bounded-context-domain-layer-class-diagrams)
+      - [5.1.6.2. Bounded Context Database Design Diagram](#5162-bounded-context-database-design-diagram)
+- [5.2. Bounded Context: Coffee Lot Management](#52-bounded-context-coffee-lot-management)
+   - [5.2.1. Domain Layer](#521-domain-layer)
+   - [5.2.2. Interface Layer](#522-interface-layer)
+   - [5.2.3. Application Layer](#523-application-layer)
+   - [5.2.4. Infrastructure Layer](#524-infrastructure-layer)
+   - [5.2.5. Bounded Context Software Architecture Component Level Diagrams](#525-bounded-context-software-architecture-component-level-diagrams)
+   - [5.2.6. Bounded Context Software Architecture Code Level Diagrams](#526-bounded-context-software-architecture-code-level-diagrams)
+      - [5.2.6.1. Bounded Context Domain Layer Class Diagrams](#5261-bounded-context-domain-layer-class-diagrams)
+      - [5.2.6.2. Bounded Context Database Design Diagram](#5262-bounded-context-database-design-diagram)
+- [5.3. Bounded Context: Grain Classification](#53-bounded-context-grain-classification)
+   - [5.3.1. Domain Layer](#531-domain-layer)
+   - [5.3.2. Interface Layer](#532-interface-layer)
+   - [5.3.3. Application Layer](#533-application-layer)
+   - [5.3.4. Infrastructure Layer](#534-infrastructure-layer)
+   - [5.3.5. Bounded Context Software Architecture Component Level Diagrams](#535-bounded-context-software-architecture-component-level-diagrams)
+   - [5.3.6. Bounded Context Software Architecture Code Level Diagrams](#536-bounded-context-software-architecture-code-level-diagrams)
+      - [5.3.6.1. Bounded Context Domain Layer Class Diagrams](#5361-bounded-context-domain-layer-class-diagrams)
+      - [5.3.6.2. Bounded Context Database Design Diagram](#5362-bounded-context-database-design-diagram)
+- [5.4. Bounded Context: Traceability & Certification](#54-bounded-context-traceability--certification)
+   - [5.4.1. Domain Layer](#541-domain-layer)
+   - [5.4.2. Interface Layer](#542-interface-layer)
+   - [5.4.3. Application Layer](#543-application-layer)
+   - [5.4.4. Infrastructure Layer](#544-infrastructure-layer)
+   - [5.4.5. Bounded Context Software Architecture Component Level Diagrams](#545-bounded-context-software-architecture-component-level-diagrams)
+   - [5.4.6. Bounded Context Software Architecture Code Level Diagrams](#546-bounded-context-software-architecture-code-level-diagrams)
+      - [5.4.6.1. Bounded Context Domain Layer Class Diagrams](#5461-bounded-context-domain-layer-class-diagrams)
+      - [5.4.6.2. Bounded Context Database Design Diagram](#5462-bounded-context-database-design-diagram)
+- [5.5. Bounded Context: Reporting & Analytics](#55-bounded-context-reporting--analytics)
+   - [5.5.1. Domain Layer](#551-domain-layer)
+   - [5.5.2. Interface Layer](#552-interface-layer)
+   - [5.5.3. Application Layer](#553-application-layer)
+   - [5.5.4. Infrastructure Layer](#554-infrastructure-layer)
+   - [5.5.5. Bounded Context Software Architecture Component Level Diagrams](#555-bounded-context-software-architecture-component-level-diagrams)
+   - [5.5.6. Bounded Context Software Architecture Code Level Diagrams](#556-bounded-context-software-architecture-code-level-diagrams)
+      - [5.5.6.1. Bounded Context Domain Layer Class Diagrams](#5561-bounded-context-domain-layer-class-diagrams)
+      - [5.5.6.2. Bounded Context Database Design Diagram](#5562-bounded-context-database-design-diagram)
+- [5.6. Bounded Context: User Support](#56-bounded-context-user-support)
+   - [5.6.1. Domain Layer](#561-domain-layer)
+   - [5.6.2. Interface Layer](#562-interface-layer)
+   - [5.6.3. Application Layer](#563-application-layer)
+   - [5.6.4. Infrastructure Layer](#564-infrastructure-layer)
+   - [5.6.5. Bounded Context Software Architecture Component Level Diagrams](#565-bounded-context-software-architecture-component-level-diagrams)
+   - [5.6.6. Bounded Context Software Architecture Code Level Diagrams](#566-bounded-context-software-architecture-code-level-diagrams)
+      - [5.6.6.1. Bounded Context Domain Layer Class Diagrams](#5661-bounded-context-domain-layer-class-diagrams)
+      - [5.6.6.2. Bounded Context Database Design Diagram](#5662-bounded-context-database-design-diagram)
+ 
+### [Capítulo VI: Solution UX Design.](#capítulo-vi-solution-ux-design)
   - [6.1. Style Guidelines.](#61-style-guidelines)
     - [6.1.1. General Style Guidelines.](#611-general-style-guidelines)
       - [Branding:](#branding)
@@ -1047,42 +834,89 @@ Pedro es productor de café desde hace más de 20 años y administra una finca d
 
 **Entrevista 1:**
 
-- **Nombres:** xxxxxxxxxx
-- **Apellidos:** xxxxxxxxxx
-- **Edad:** xxxxxxxxxx
-- **Lugar de residencia:** xxxxxxxxxx, xxxxxxxxxx
+- **Nombres:** Luis Alberto Cárdenas
+- **Apellidos:** Cárdenas Huamán
+- **Edad:** 32
+- **Lugar de residencia:** Villa Rica, Region de pasco
 
 **Evidencia de la entrevista:**  
-<img src="assets/images/interviews/>
+<img src="assets/images/entrevistas/Entrevista3.png">
 
-**Enlace de la entrevista:** []()
+**Enlace de la entrevista:** [Entrevista Segmento 2 Luis Cardenas](https://youtu.be/W1BOgYHrgEE)
 **Resumen de la entrevista:**  
-xxxxxxxxxx
+Luis Alberto Cárdenas Huamán tiene 32 años y es gerente de la Cooperativa Agraria Cafetalera Valle Verde, ubicada en Villa Rica, Pasco. Con más de 260 productores asociados, la cooperativa procesa entre 45 y 60 toneladas de café pergamino al mes, enfocándose en la exportación de café verde certificado. Luis explica que uno de los mayores retos es mantener una calidad uniforme entre los lotes debido a la variabilidad en los procesos de beneficio y secado de cada productor. Actualmente utilizan registros manuales y un laboratorio básico para el control de calidad, aunque reconoce la necesidad de herramientas digitales más eficientes. Considera que la trazabilidad es clave para generar confianza en los compradores internacionales y está interesado en soluciones tecnológicas costo-eficientes que ayuden a estandarizar la calidad. Además, cree que una clasificación automática del café permitiría identificar mejor los lotes premium, mejorar la consistencia de los envíos y aumentar el valor del producto en los mercados internacionales.
 
 **Entrevista 2:**
 
-- **Nombres:** xxxxxxxxxx
-- **Apellidos:** xxxxxxxxxx
-- **Edad:** xxxxxxxxxx
-- **Lugar de residencia:** xxxxxxxxxx, xxxxxxxxxx
+- **Nombres:** Rosa Elena
+- **Apellidos:** Pacheco Gutiérrez
+- **Edad:** 30
+- **Lugar de residencia:** San Ignacio, Cajamarca
 
 **Evidencia de la entrevista:**  
-<img src="assets/images/interviews/>
+<img src="assets/images/entrevistas/entrevista4.png">
 
-**Enlace de la entrevista:** []()
+**Enlace de la entrevista:** [Entrevista Segmento 2](https://youtu.be/bDB1FmLW5vo)
 **Resumen de la entrevista:**  
-xxxxxxxxxx
+Rosa Elena Pacheco Gutiérrez tiene 30 años y trabaja como coordinadora de calidad en la Cooperativa Cafetalera El Gran Valle, ubicada en San Ignacio, Cajamarca. Supervisa los procesos de control de calidad y el cumplimiento de estándares internacionales para la exportación de café especial. Su cooperativa agrupa a unos 180 productores y procesa entre 35 y 40 toneladas de café pergamino al mes. Rosa comenta que el mayor reto es mantener la consistencia en la calidad entre los diferentes productores, ya que los procesos postcosecha varían mucho y el control manual requiere tiempo y precisión. Aunque utilizan herramientas digitales básicas, considera necesario contar con una plataforma que unifique el registro de datos y facilite la trazabilidad. Destaca que la transparencia y la trazabilidad son esenciales para los compradores internacionales y que una solución automatizada podría reducir errores, mejorar la clasificación de los lotes y aumentar el valor del café en los mercados externos.
 
-### 2.2.3. Análisis de entrevistas
-Para finalizar, en la sección de análisis se utilizaron métricas derivadas de las respuestas obtenidas, así como la frecuencia con la que ciertos temas fueron mencionados durante las entrevistas.
+## 2.2.3. Análisis de entrevistas
 
-#### **Análisis de Preguntas Generales**
+El análisis de entrevistas permitió identificar patrones comunes en ambos segmentos de usuarios: **productores individuales** y **representantes de cooperativas cafetaleras**, con el objetivo de comprender sus necesidades, barreras tecnológicas y expectativas frente a una solución digital de clasificación de café basada en inteligencia artificial.
 
-XXXXXXXXXXXXXXXXX
+### Análisis general
 
-#### **Análisis de Preguntas Especificas**
+De los entrevistados, el 100% reconoció que la clasificación manual de granos es un proceso lento, subjetivo y agotador, lo que genera pérdidas económicas recurrentes. En promedio, se estimó que entre el 15% y 25% de la producción total se ve afectada por errores de clasificación o falta de estandarización.  
 
-XXXXXXXXXXXXXXXXX
+Asimismo, el 83% manifestó tener un nivel intermedio de conocimiento en tecnologías digitales, utilizando principalmente smartphones y laptops, pero enfrentando dificultades para implementar soluciones tecnológicas avanzadas debido a costos o infraestructura limitada.  
+
+Por otro lado, el 90% señaló que las herramientas actuales(como hojas de cálculo, registros físicos o cataciones manuales) no son suficientes para garantizar un control de calidad consistente entre lotes.
+
+---
+
+### Análisis por segmento
+
+#### Segmento 1: Productores individuales
+
+- El **100%** realiza la clasificación manualmente con apoyo familiar o de mano de obra local.  
+- El **75%** afirma que los rechazos de lotes les generan **pérdidas de entre el 10% y 20%** del valor de venta, principalmente por incumplir estándares de exportación.  
+- El **80%** considera que una **herramienta automatizada** con inteligencia artificial sería útil **siempre que sea sencilla, de bajo costo y fácil de mantener**.  
+- El **60%** indicó que carece de acceso a capacitación formal en control de calidad, lo cual incrementa la variabilidad del proceso.  
+- El **100%** mostró **predisposición a adoptar tecnología** si esta demuestra un **retorno económico claro**, reduciendo rechazos y tiempo de clasificación.
+
+#### Segmento 2: Cooperativas cafetaleras
+
+- Las cooperativas entrevistadas agrupan en promedio **más de 200 productores activos** y procesan entre **35 y 60 toneladas mensuales** de café pergamino.  
+- El **100%** reportó que la **variabilidad en la calidad entre productores** es su mayor reto operativo, generando costos adicionales en el control de calidad y en la gestión de exportaciones.  
+- El **90%** usa **registros manuales o digitales básicos**, pero **sin sistemas integrados de trazabilidad**.  
+- El **95%** considera **crítico contar con sistemas de trazabilidad**, dado que los compradores internacionales exigen transparencia sobre el origen y proceso del café.  
+- El **100%** expresó interés en soluciones **costo-eficientes** que permitan **unificar el control de calidad y generar reportes automáticos por lote**.  
+- Finalmente, el **85%** percibe que una **clasificación automática** podría **aumentar el valor de venta** al mejorar la consistencia del producto y reducir errores humanos.
+
+---
+
+### Resultados clave
+
+| **Indicador** | **Resultado numérico** | **Interpretación** |
+|:--|:--:|:--|
+| Productores que clasifican manualmente | 100% | Todos dependen de procesos no automatizados |
+| Pérdidas económicas promedio por mala clasificación | 15–25% | Evidencia del impacto financiero directo |
+| Usuarios con nivel intermedio de tecnología | 83% | Viabilidad de adopción de una solución digital sencilla |
+| Cooperativas con más de 200 productores | 100% | Alto potencial de escalabilidad de la herramienta |
+| Cooperativas con trazabilidad limitada | 90% | Oportunidad para integración de BeanDetect AI con sistemas de trazabilidad |
+| Productores dispuestos a usar IA si es asequible | 80% | Alta aceptación potencial con barreras de costo y facilidad de uso |
+| Cooperativas que consideran esencial la trazabilidad | 95% | Confirmación de alineación con la hipótesis de valor del sistema |
+| Expectativa de aumento de valor comercial mediante IA | 85% | Correlación con las metas de mejora de competitividad del proyecto |
+
+---
+
+### Revision del análisis
+
+Los hallazgos confirman una alta alineación entre las necesidades de los usuarios y las hipótesis planteadas en el Lean UX Canvas. Tanto productores como cooperativas reconocen que la falta de estandarización y digitalización afecta su competitividad. Se valida que más del 80% del público objetivo estaría dispuesto a adoptar una tecnología de clasificación automatizada si cumple con tres condiciones clave:  
+1. **Costo accesible**,  
+2. **Interfaz simple**, y  
+3. **Impacto comprobable en la reducción de pérdidas**.  
+
 
 ## 2.3. Needfinding
 
@@ -1105,7 +939,20 @@ XXXXXXXXXXXXXXXXX
 
 ### 2.3.3. User Journey Mapping
 
-<!-- Contenido de User Journey Mapping -->
+##### Segmento 1: Productores Individuales
+
+[![Journey-Map-Productor.png](https://i.postimg.cc/vZ6ZxsW1/Journey-Map-Productor.png)](https://postimg.cc/WdTvxxYj)
+
+<!-- Descripcion -->
+La imagen ilustra el User Journey Map de un productor individual de café durante el proceso de clasificación post-cosecha. Se representan las etapas clave que atraviesa el usuario, desde la recolección y registro de lotes, pasando por la inspección manual y la identificación de defectos, hasta la generación de reportes y la toma de decisiones comerciales. El mapa visualiza las emociones, puntos de dolor y oportunidades de mejora en cada fase, permitiendo identificar momentos críticos donde la solución tecnológica puede aportar mayor valor y eficiencia.
+
+
+##### Segmento 2: Cooperativas cafeteras
+
+[![Mapa-de-Experiencia-Operativa-de-la-Cooperativa-Agr-cola-De-la-Captura-de-Datos-a-la-Mejora-Continu.png](https://i.postimg.cc/9Xk3RNCK/Mapa-de-Experiencia-Operativa-de-la-Cooperativa-Agr-cola-De-la-Captura-de-Datos-a-la-Mejora-Continu.png)](https://postimg.cc/Dm1pR6WP)
+
+<!-- Descripcion -->
+La imagen muestra el User Journey Map de una cooperativa cafetalera, detallando el flujo operativo desde la recepción de lotes de diferentes productores, la coordinación de procesos de clasificación y consolidación de reportes, hasta la integración con sistemas de trazabilidad y la entrega de resultados a los asociados. Se identifican los principales retos, necesidades y oportunidades de optimización en la experiencia colectiva, destacando cómo la digitalización y automatización pueden mejorar la gestión, la transparencia y la toma de decisiones dentro de la cooperativa.
 
 ### 2.3.4. Empathy Mapping
 
@@ -1242,7 +1089,7 @@ El proceso parte con captura de datos no estandarizada y registros dispersos. La
 
 ## Criterios de Aceptación
 
-### US01: Registro de Productor Pequeño/Mediano
+## US01: Registro de Productor Pequeño/Mediano
 **Relacionado con (Epic ID):** EP01  
 **Descripción:**  
 Como productor pequeño o mediano de café, deseo registrarme en BeanDetect AI con información básica de mi finca para acceder a tecnología de clasificación asequible.
@@ -1792,7 +1639,17 @@ Como productor en zona con conectividad limitada, deseo usar funcionalidades bá
 
 ## 3.3. Impact Mapping
 
-<!-- Contenido de Impact Mapping -->
+**Segmento 1: Productores Individuales**
+
+[![Impact-Map-Productores.png](https://i.postimg.cc/FRQyBvy0/Impact-Map-Productores.png)](https://postimg.cc/XZQBrTDv)
+
+La imagen muestra el Impact Mapping para el segmento de productores individuales de café. Se visualizan los objetivos principales del sistema, los actores involucrados (productores), los impactos esperados en sus actividades y las funcionalidades clave que permitirán alcanzar dichos objetivos. El mapa ayuda a entender cómo la solución BeanDetect AI contribuye a reducir pérdidas económicas, mejorar la calidad del café y facilitar el acceso a mercados internacionales, estableciendo una relación clara entre acciones, resultados y beneficios para el productor.
+
+**Segmento 2: Cooperativas cafeteras**
+
+[![Impact-Map-Cooperativas.png](https://i.postimg.cc/HxCwhmwZ/Impact-Map-Cooperativas.png)](https://postimg.cc/rdQRDvYx)
+
+La imagen presenta el Impact Mapping para el segmento de cooperativas cafetaleras. En el diagrama se identifican los objetivos estratégicos de la cooperativa, los actores clave (administradores, técnicos y productores asociados), los impactos deseados en la gestión colectiva y las funcionalidades del sistema que permiten lograrlos. El mapa destaca cómo la solución facilita la estandarización de calidad, la optimización de procesos grupales, la generación de reportes consolidados y la integración con sistemas de trazabilidad, fortaleciendo la competitividad y transparencia de la cooperativa en el mercado.
 
 ## 3.4. Product Backlog
 
@@ -1831,17 +1688,717 @@ Asimismo, utilizamos la herramienta "Planning Poker Online" para poder votar en 
 ---
 
 
-# Capítulo IV: Solution Software Design
+# Capítulo IV: Strategic-Level Software Design  
 
-## 4.1. Strategic-Level Domain-Driven Design
+## 4.1. Strategic-Level Attribute-Driven Design
 
-### 4.1.1. Event Storming
+### 4.1.1. Design Purpose
+
+El objetivo del diseño arquitectónico de BeanDetect AI es desarrollar una solución tecnológica sólida y ampliable que facilite el acceso a tecnología de clasificación de café de calidad superior, tanto para los productores medianos y pequeños como para las cooperativas cafetaleras en Perú. La arquitectura tiene que tratar el problema principal detectado: la falta de protocolos automatizados y precisos para clasificar granos de café según estándares de calidad, lo cual restringe la competitividad y la posibilidad de acceder a mercados premium en estos segmentos.
+
+La solución está dirigida a satisfacer las necesidades de dos segmentos clave: 
+
+- Primer segmento - Productores Independientes: Necesitan un instrumento intuitivo y asequible que les posibilite clasificar su producción de manera objetiva y precisa, disminuir las pérdidas por rechazos en exportación y optimizar su posición comercial sin tener que depender únicamente de clasificadores manuales o intermediarios. 
+
+- Segundo Segmento - Cooperativas de Café: Para fortalecer la transparencia de su cadena de valor y facilitar el comercio internacional, se requiere que administren la clasificación de varios productores asociados de forma consolidada, que unifiquen la calidad entre diversas procedencias y que produzcan reportes comparativos y certificaciones digitales.
+
+Para ello, el diseño arquitectónico tiene que asegurar que la solución sea accesible en áreas con poca conectividad, conserve estándares elevados de exactitud al detectar fallas críticas por medio de visión artificial y posibilite la escalabilidad futura para incluir funciones novedosas como blockchain y certificación digital.
+
+### 4.1.2. Attribute-Driven Design Inputs
+
+#### 4.1.2.1. Primary Functionality (Primary User Stories)
+
+En esta sección se especifican los Epics o User Stories que tienen mayor relevancia en términos de requisitos funcionales y que tienen impacto sobre la arquitectura de la solución. Se han seleccionado las historias de usuario con mayor impacto arquitectónico basándose en su complejidad técnica (Story Points) y su relevancia para los objetivos del negocio.
+
+| Epic / User Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
+|----------------------|---------|-------------|-------------------------|---------------------------|
+| US12 | Detección de Defectos Críticos | Como productor o cooperativa, deseo que el sistema detecte defectos que causan rechazos internacionales para prevenir pérdidas económicas. | - El sistema debe identificar y cuantificar defectos críticos (negro, quebrado, dañado por insectos, hongos)<br>- Clasificar defectos por nivel de impacto (crítico, mayor, menor)<br>- Precisión mínima del 95% en detección de defectos categoría 1<br>- Tiempo de procesamiento no mayor a 3 segundos por imagen | Epic: Clasificación Inteligente |
+| US14 | Clasificación por Estándares Internacionales | Como productor o cooperativa, deseo obtener clasificación automática según estándares de exportación reconocidos para acceder a mejores precios. | - Aplicar criterios específicos de estándares seleccionados (SCA, ICO, FNC)<br>- Generar pre-certificado de calidad automáticamente<br>- Mostrar clasificación según diferentes organismos internacionales<br>- Calcular puntaje SCA con precisión de ±2 puntos vs. catador Q Grader | Epic: Clasificación Inteligente |
+| US13 | Análisis de Color y Uniformidad | Como productor o cooperativa, deseo medir objetivamente color y tamaño para estandarizar calidad entre lotes de diferentes productores asociados. | - Medir color según escala estándar de café (verde, amarillo, marrón claro)<br>- Calcular coeficientes de variación para tamaño y color<br>- Comparar resultados con estándares internacionales (SCA, SCAA)<br>- Convertir mediciones RGB a escala Agtron | Epic: Clasificación Inteligente |
+| US22 | Integración con Blockchain | Como cooperativa innovadora, deseo la opción de registrar datos de clasificación en blockchain para mayor transparencia y confianza del mercado. | - Ofrecer registro opcional en blockchain para suscripción premium<br>- Generar hash inmutable de todos los datos de clasificación<br>- Tiempo de registro no mayor a 30 segundos<br>- Optimizar costos de transacción (gas fees) | Epic: Innovación y Diferenciación |
+| US26 | Modo Offline para Zonas Rurales | Como productor en zona con conectividad limitada, deseo usar funcionalidades básicas de clasificación sin requerir internet constante. | - Procesar clasificación localmente usando modelos descargados previamente<br>- Sincronizar automáticamente todos los datos pendientes al recuperar conexión<br>- Mostrar mensajes claros indicando funciones disponibles en modo offline<br>- Almacenamiento local de hasta 100 lotes | Epic: Accesibilidad Rural |
+| US16 | Reporte Consolidado para Cooperativas | Como cooperativa, deseo reportes consolidados que comparen la calidad entre diferentes productores asociados para optimizar procesos grupales. | - Mostrar ranking de calidad entre productores asociados<br>- Visualizar evolución de calidad por productor en el tiempo<br>- Gráficos de distribución de defectos por origen<br>- Exportación a PDF y Excel | Epic: Gestión Cooperativa |
+| US06 | Creación de Lotes | Como productor o cooperativa, deseo registrar mis lotes con información básica (fecha cosecha, variedad, origen) para organizar mi producción de forma eficiente. | - Crear lote con ID único automático<br>- Validar código de lote no duplicado, sugerir alternativas<br>- Campos obligatorios: código único, fecha cosecha, variedad, origen, peso estimado<br>- Mostrar lote en lista de lotes activos | Epic: Gestión de Producción |
+
+#### 4.1.2.2. Quality Attribute Scenarios 
+
+En esta sección se incluye la especificación de los escenarios de atributos de calidad que tienen mayor impacto en la arquitectura de la solución. Los atributos de calidad priorizados son aquellos críticos para el éxito del negocio y la experiencia de usuario en el contexto de productores de café en zonas rurales.
+
+| Atributo | Fuente | Estímulo | Artefacto | Entorno | Respuesta | Medida |
+|----------|---------|----------|-----------|---------|-----------|---------|
+| Performance | Usuario (productor/cooperativa) | Solicitud de clasificación de lote con 500 granos | Módulo de Visión Artificial (ML Model) | Operación normal con carga de hasta 50 usuarios concurrentes | El sistema procesa las imágenes, ejecuta el modelo de ML y retorna resultados de clasificación | Tiempo de respuesta ≤ 5 segundos para clasificación completa de un lote |
+| Availability | Usuario en zona rural | Intento de acceso al sistema en horario pico de cosecha | Sistema completo (Frontend, Backend, Base de Datos) | Operación normal durante temporada alta (abril-agosto) | El sistema permanece operativo y responde a las solicitudes | Disponibilidad ≥ 99.5% mensual (máximo 3.6 horas de downtime/mes) |
+| Usability | Productor pequeño con bajo nivel tecnológico | Primera interacción con interfaz de clasificación de lotes | Interfaz de usuario (Web/Mobile App) | Usuario nuevo sin capacitación previa | El usuario completa exitosamente el proceso de clasificación | ≥ 85% de usuarios completan primera clasificación sin ayuda externa en ≤ 10 minutos |
+| Reliability | Sistema de clasificación | Procesamiento de 1000 lotes durante un mes | Modelo de ML y pipeline de procesamiento de imágenes | Operación continua en producción | El sistema mantiene precisión constante sin degradación | Precisión ≥ 95% en detección de defectos críticos mantenida durante 30 días consecutivos |
+| Scalability | Crecimiento de base de usuarios | Incremento de 100 a 1000 usuarios activos en 6 meses | Infraestructura cloud (compute, storage, database) | Expansión a nuevas regiones cafetaleras | El sistema escala recursos automáticamente sin intervención manual | Tiempo de respuesta se mantiene ≤ 5 seg con aumento de 10x en usuarios; costo por usuario reduce en 20% |
+| Security | Atacante externo | Intento de acceso no autorizado a datos de clasificación de lotes | Sistema de autenticación y autorización | Conexión desde internet público | El sistema bloquea acceso, registra intento y notifica al administrador | 100% de intentos de acceso no autorizados bloqueados; alertas generadas en ≤ 1 segundo |
+| Interoperability | Sistema externo (ERP de cooperativa) | Solicitud de exportación de datos de clasificación vía API | API REST del backend | Integración con sistema de terceros | El sistema expone datos en formato estándar (JSON) mediante endpoints documentados | API responde con datos correctos en ≤ 2 segundos; documentación OpenAPI disponible |
+| Maintainability | Equipo de desarrollo | Actualización del modelo de ML con nueva versión mejorada | Módulo de ML y pipeline CI/CD | Ambiente de desarrollo y staging | El sistema permite actualizar modelo sin downtime y rollback si es necesario | Deployment de nueva versión ≤ 15 minutos; rollback automático si accuracy cae > 2% |
+
+#### 4.1.2.3. Constraints 
+
+En esta sección se incluyen las restricciones técnicas, de negocio y regulatorias que limitan las opciones de diseño arquitectónico. Estas restricciones son impuestas por el cliente, el contexto del negocio o limitaciones tecnológicas inherentes al dominio.
+
+| Technical Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
+|--------------------|---------|-------------|-------------------------|---------------------------|
+| TS01 | Compatibilidad con Conectividad Limitada | El sistema debe operar en zonas rurales con conectividad intermitente (2G/3G) y latencia alta (>500ms). Las funcionalidades críticas deben estar disponibles offline. | - Aplicación móvil funcional sin internet para clasificación básica<br>- Sincronización automática diferida<br>- Tamaño de app ≤ 50MB<br>- Consumo de datos ≤ 10MB por sesión promedio | US26 - Modo Offline |
+| TS02 | Restricción Presupuestaria de Infraestructura | El costo operativo mensual de infraestructura cloud no debe exceder $500 USD para soportar hasta 500 usuarios activos en fase inicial. | - Uso de servicios cloud con pricing optimizado<br>- Auto-scaling basado en demanda<br>- Implementación de caching efectivo<br>- Monitoreo de costos en tiempo real | Todos los User Stories |
+| TS03 | Compatibilidad con Dispositivos de Gama Baja | La aplicación móvil debe funcionar en smartphones Android desde versión 8.0 con al menos 2GB RAM y cámara de 8MP. | - App instalable en dispositivos con Android 8.0+<br>- Consumo de RAM ≤ 300MB<br>- Capturas de imágenes de calidad suficiente con cámaras básicas<br>- Interfaz responsive adaptada a pantallas pequeñas | US12, US13, US14 - Clasificación |
+| TS04 | Cumplimiento de Protección de Datos | El sistema debe cumplir con la Ley de Protección de Datos Personales del Perú (Ley N° 29733) y estar preparado para alineación futura con GDPR. | - Consentimiento explícito para uso de datos personales<br>- Encriptación de datos en tránsito y reposo<br>- Derecho de acceso, rectificación y eliminación de datos<br>- Auditoría de accesos a información sensible | US03 - Autenticación |
+| TS05 | Precisión Mínima del Modelo de ML | El modelo de clasificación debe alcanzar precisión ≥95% en detección de defectos críticos y ≥90% en clasificación general, validado contra dataset anotado por Q Graders certificados. | - Métricas de accuracy, precision, recall documentadas<br>- Validación cruzada con dataset de al menos 10,000 imágenes<br>- F1-score ≥ 0.93 para defectos críticos<br>- Matriz de confusión con falsos positivos ≤ 5% | US12, US14 - Clasificación |
+| TS06 | Tecnología de Procesamiento de Imágenes | Debe utilizarse framework de Deep Learning compatible con despliegue en edge devices y cloud (TensorFlow Lite, PyTorch Mobile u ONNX Runtime). | - Modelo exportable a formato optimizado (TFLite/ONNX)<br>- Inferencia en móvil ≤ 3 segundos<br>- Tamaño de modelo ≤ 20MB<br>- Soporte para cuantización de modelo | US12, US13, US14 - Clasificación |
+| TS07 | Interfaz Multilenguaje | La interfaz debe estar disponible en español con soporte futuro para quechua y aymara (lenguas indígenas prevalentes en zonas cafetaleras). | - Sistema de i18n implementado<br>- Textos externalizados en archivos de recursos<br>- Selector de idioma en configuración<br>- Validación con usuarios nativos | US01, US02 - Registro |
+| TS08 | Integración con Sistemas de Pago | El sistema debe integrarse con pasarelas de pago locales (Niubiz, Culqi) para suscripciones y transacciones, soportando tarjetas y billeteras digitales (Yape, Plin). | - SDK de pasarelas integrado<br>- Flujo de checkout seguro (PCI DSS compliant)<br>- Soporte para pagos recurrentes<br>- Webhooks para confirmación de pago | Modelo de negocio |
+| TS09 | Tiempo Máximo de Entrenamiento de Modelo | El reentrenamiento del modelo de ML con nuevos datos no debe exceder 4 horas para permitir iteraciones rápidas y mejora continua. | - Pipeline de entrenamiento automatizado<br>- Uso de GPUs en cloud para entrenamiento<br>- Versionado de modelos con MLflow o similar<br>- Validación automática post-entrenamiento | US12 - Detección de Defectos |
+| TS10 | Arquitectura Cloud-Native | El sistema debe desplegarse en arquitectura cloud-native utilizando servicios administrados para reducir overhead operativo, con preferencia por AWS o Google Cloud Platform. | - Uso de servicios PaaS/SaaS sobre IaaS<br>- Containerización con Docker<br>- Orquestación con Kubernetes o servicios equivalentes<br>- Infrastructure as Code (Terraform/CloudFormation) | Todos los User Stories |
+
+### 4.1.3. Architectural Drivers Backlog 
+
+En esta sección se establece el conjunto de Architectural Drivers acordados por el equipo, resultado del proceso iterativo del Quality Attribute Workshop. El Architectural Drivers Backlog incluye los Functional Drivers seleccionados, los Quality Attribute Drivers priorizados y todos los Constraints identificados. Los drivers están ordenados por importancia para stakeholders y su impacto en la complejidad técnica de la arquitectura.
+
+| Driver ID | Título de Driver | Descripción | Importancia para Stakeholders (High, Medium, Low) | Impacto en Architecture Technical Complexity (High, Medium, Low) |
+|-----------|------------------|-------------|---------------------------------------------------|------------------------------------------------------------------|
+| DR01 | Detección Precisa de Defectos Críticos | Implementar modelo de ML capaz de detectar automáticamente defectos críticos en granos de café (insectos, hongos, granos negros, quebrados) con precisión ≥95%, utilizando visión artificial sobre imágenes capturadas con cámara de smartphone. | High | High |
+| DR02 | Modo Offline Funcional | Permitir clasificación básica de lotes sin conexión a internet, con sincronización automática al recuperar conectividad. Crítico para zonas rurales con infraestructura limitada. | High | High |
+| DR03 | Performance en Clasificación | Garantizar tiempo de respuesta ≤5 segundos para clasificación completa de un lote, incluyendo procesamiento de imagen, inferencia de ML y generación de reporte. | High | High |
+| DR04 | Disponibilidad del Sistema | Mantener disponibilidad ≥99.5% mensual para asegurar acceso durante temporadas críticas de cosecha, con recuperación automática ante fallos. | High | Medium |
+| DR05 | Usabilidad para Usuarios No Técnicos | Diseñar interfaz intuitiva que permita a productores con bajo nivel tecnológico completar primera clasificación exitosamente en ≤10 minutos sin capacitación previa. | High | Low |
+| DR06 | Escalabilidad de Infraestructura | Soportar crecimiento de 100 a 1000+ usuarios activos sin degradación de performance, con auto-scaling automático y optimización de costos (reducción 20% costo/usuario). | High | High |
+| DR07 | Clasificación por Estándares Internacionales | Implementar algoritmos de clasificación según estándares SCA, SCAA y comercio justo, con asignación automática de grados de calidad y cálculo de puntaje SCA. | High | Medium |
+| DR08 | Reportes Consolidados para Cooperativas | Generar dashboards comparativos que agreguen datos de múltiples productores, con visualizaciones de distribución de calidad, ranking y exportación a PDF/Excel. | Medium | Medium |
+| DR09 | Seguridad de Datos | Implementar autenticación segura, encriptación de datos sensibles, y cumplimiento con Ley de Protección de Datos Personales del Perú (Ley N°29733). | High | Medium |
+| DR10 | Integración con Blockchain | Permitir registro opcional de certificados de calidad en blockchain (Ethereum/Polygon) para transparencia y verificación pública, con optimización de gas fees. | Medium | High |
+| DR11 | Compatibilidad con Dispositivos de Gama Baja | Asegurar funcionamiento en smartphones Android 8.0+ con 2GB RAM y cámara 8MP, con app ≤50MB y consumo RAM ≤300MB. | High | Medium |
+| DR12 | Restricción Presupuestaria Cloud | Mantener costo operativo mensual ≤$500 USD para infraestructura cloud soportando hasta 500 usuarios, mediante servicios optimizados y caching efectivo. | High | Medium |
+| DR13 | Análisis de Color y Uniformidad | Medir objetivamente color (RGB a Agtron), tamaño y uniformidad de granos, con detección de granos decolorados o inmaduros para estandarización entre lotes. | Medium | Medium |
+| DR14 | Mantenibilidad del Modelo ML | Facilitar actualización del modelo de ML con deployment ≤15 minutos, rollback automático si accuracy cae >2%, y reentrenamiento ≤4 horas. | Medium | Medium |
+| DR15 | Interoperabilidad con Sistemas Externos | Exponer API REST documentada (OpenAPI) para integración con ERPs de cooperativas, con respuesta ≤2 segundos y datos en formato JSON estándar. | Medium | Low |
+| DR16 | Certificación Digital Automática | Generar certificados digitales de calidad en formatos internacionales (PDF) con QR de verificación para agilizar comercialización internacional. | Medium | Low |
+| DR17 | Arquitectura Cloud-Native | Desplegar en arquitectura cloud-native usando servicios administrados (AWS/GCP), containerización Docker, orquestación Kubernetes e Infrastructure as Code. | Medium | Medium |
+| DR18 | Soporte Multilenguaje | Implementar i18n con español base y preparación para quechua/aymara, con textos externalizados y validación con usuarios nativos. | Low | Low |
+| DR19 | Integración con Pasarelas de Pago | Integrar con pasarelas locales (Niubiz, Culqi) para suscripciones, soportando tarjetas y billeteras digitales (Yape, Plin) con cumplimiento PCI DSS. | Medium | Low |
+| DR20 | Precisión Mínima Validada del Modelo | Validar modelo contra dataset anotado por Q Graders certificados, alcanzando F1-score ≥0.93 para defectos críticos y matriz de confusión con falsos positivos ≤5%. | High | Medium |
+
+### 4.1.4. Architectural Design Decisions 
+
+En esta sección el equipo redacta la explicación del proceso seguido en los Stages del Quality Attribute Workshop, resumiendo para cada iteración cuáles fueron los Drivers considerados, las tácticas y patrones evaluados y los criterios para llegar a las decisiones de diseño arquitectónico.
+
+#### Iteración 1: Fundamentos de la Arquitectura y Procesamiento de ML
+
+**Drivers considerados:**
+- DR01: Detección Precisa de Defectos Críticos (High/High)
+- DR03: Performance en Clasificación (High/High)
+- DR06: Escalabilidad de Infraestructura (High/High)
+- DR17: Arquitectura Cloud-Native (Medium/Medium)
+
+**Tácticas y patrones evaluados:**
+
+Para abordar estos drivers críticos, se evaluaron los siguientes patrones arquitectónicos:
+
+1. **Microservices Architecture**: Permite desacoplar el servicio de procesamiento de ML del resto del sistema, facilitando escalado independiente y actualización sin afectar otros componentes.
+
+2. **Serverless Computing**: AWS Lambda/Google Cloud Functions para ejecutar inferencia de ML bajo demanda, con auto-scaling automático y pago por uso.
+
+3. **Event-Driven Architecture**: Uso de colas de mensajes (SQS, Pub/Sub) para procesamiento asíncrono de imágenes, mejorando throughput y resiliencia.
+
+4. **API Gateway Pattern**: Punto único de entrada para todas las requests, con rate limiting, caching y routing inteligente.
+
+5. **Model Serving Patterns**:
+   - **Embedded Model**: Modelo ejecutándose en el mismo servicio de la aplicación
+   - **Model as a Service**: Servicio dedicado para inferencia de ML (TensorFlow Serving, TorchServe)
+   - **Hybrid Approach**: Modelo ligero en edge (mobile) para funcionalidad offline + modelo completo en cloud para mayor precisión
+
+| Driver ID | Título de Driver | Pattern 1: Serverless + Model as Service | Pattern 2: Microservices + Embedded Model | Pattern 3: Hybrid Edge-Cloud (SELECCIONADO) |
+|-----------|------------------|-------------------------------------------|-------------------------------------------|----------------------------------------------|
+|           |                  | Pro | Con | Pro | Con | Pro | Con |
+| DR01 | Detección Precisa de Defectos Críticos | Permite usar modelos más complejos y actualizados en cloud sin limitaciones de dispositivo | Requiere siempre conectividad para máxima precisión | Modelo completo siempre disponible pero requiere más recursos de servidor | Menor flexibilidad para A/B testing de modelos | Mejor de ambos mundos: modelo básico offline + modelo avanzado online cuando hay conexión | Complejidad en mantener dos versiones del modelo sincronizadas |
+| DR03 | Performance en Clasificación | Cold start de Lambda puede agregar 1-3 segundos de latencia inicial | Requiere pre-warming o provisioned concurrency (costo adicional) | Menor latencia al evitar cold starts, respuesta más predecible | Requiere gestión de capacidad y provisioning manual | Inferencia local en móvil más rápida (<2 seg), cloud solo cuando se necesita precisión máxima | Modelo mobile debe ser comprimido/cuantizado |
+| DR06 | Escalabilidad de Infraestructura | Auto-scaling perfecto, paga solo por uso real, maneja picos automáticamente | Límites de concurrency pueden requerir ajustes para picos extremos | Escalado más controlado pero requiere configuración de auto-scaling groups | Riesgo de sobre-provisioning o sub-provisioning | Edge computing reduce carga en cloud dramáticamente, escala naturalmente con número de dispositivos | Sincronización de modelos a múltiples clientes puede generar tráfico |
+| DR17 | Arquitectura Cloud-Native | Nativamente serverless, cumple perfectamente con paradigma cloud-native | Vendor lock-in más fuerte (difícil migrar de AWS Lambda a GCP Functions) | Contenedores Kubernetes nativos, portabilidad entre clouds | Más overhead operativo (gestión de clusters, etc.) | Combina beneficios de edge computing con servicios cloud administrados | Requiere estrategia de deployment más compleja |
+
+**Decisión seleccionada: Pattern 3 - Hybrid Edge-Cloud Architecture**
+
+**Justificación:**
+
+El patrón híbrido edge-cloud fue seleccionado porque ofrece el mejor balance entre los drivers críticos:
+
+- **DR01 (Detección Precisa)**: Permite tener un modelo TensorFlow Lite cuantizado en el dispositivo móvil para detección básica (~90% accuracy) que identifica defectos primarios (negro, quebrado, dañado por insectos), y un modelo completo en cloud (TensorFlow Serving) para clasificación definitiva cuando hay conectividad (≥95% accuracy) que incluye clasificación por severidad (crítico, mayor, menor).
+
+- **DR03 (Performance)**: La inferencia local en el dispositivo proporciona respuesta inmediata (<2 segundos) para feedback inicial al usuario cumpliendo el tiempo de procesamiento de 3 segundos por imagen, mientras el procesamiento en cloud se ejecuta en background cuando hay conexión para validación final.
+
+- **DR06 (Escalabilidad)**: Al procesar localmente las funciones básicas, se reduce drásticamente la carga en la infraestructura cloud. Estimamos que 70% de las clasificaciones pueden completarse en el dispositivo, requiriendo cloud solo para validación final o casos complejos, optimizando costos y permitiendo el crecimiento de 100 a 1000+ usuarios.
+
+- **DR17 (Cloud-Native)**: Utiliza contenedores Docker para el servicio de ML en cloud, desplegados en Kubernetes (GKE/EKS), con TensorFlow Serving para inferencia. La arquitectura es portable entre providers y permite actualización independiente de componentes.
+
+**Implicaciones arquitectónicas:**
+- Requiere pipeline CI/CD dual: uno para modelo mobile (TFLite) optimizado a ≤20MB y otro para modelo cloud (TensorFlow)
+- Necesita estrategia de sincronización de versiones de modelos con control de versiones MLflow
+- Implementar lógica de fallback: si cloud falla, el resultado local es válido (con advertencia de precisión reducida ~90% vs 95%)
+- Diseñar API de inferencia con respuesta progresiva (resultado preliminar rápido + resultado definitivo asíncrono)
+- Sistema de descarga previa de modelos para garantizar funcionamiento offline
+
+#### Iteración 2: Disponibilidad y Modo Offline
+
+**Drivers considerados:**
+- DR02: Modo Offline Funcional (High/High)
+- DR04: Disponibilidad del Sistema (High/Medium)
+- DR11: Compatibilidad con Dispositivos de Gama Baja (High/Medium)
+
+**Tácticas y patrones evaluados:**
+
+1. **Offline-First Architecture**: Toda la lógica de aplicación funciona primero offline, con sincronización como capa adicional.
+
+2. **Local-First Software**: Base de datos local (SQLite, Realm) como fuente de verdad, con replicación bidireccional a cloud.
+
+3. **Progressive Web App (PWA)**: Service Workers para caching de assets y funcionalidad offline limitada.
+
+4. **Conflict-Free Replicated Data Types (CRDTs)**: Para resolver conflictos automáticamente durante sincronización.
+
+5. **Multi-Region Deployment con CDN**: Distribución geográfica para reducir latencia y mejorar disponibilidad.
+
+| Driver ID | Título de Driver | Pattern 1: Offline-First con SQLite | Pattern 2: PWA con Service Workers | Pattern 3: Local-First con Sync Engine (SELECCIONADO) |
+|-----------|------------------|--------------------------------------|-------------------------------------|-------------------------------------------------------|
+|           |                  | Pro | Con | Pro | Con | Pro | Con |
+| DR02 | Modo Offline Funcional | Funcionalidad completa offline garantizada, sin diferencias con modo online | Base de datos local puede crecer y afectar performance en dispositivos limitados | Rápida implementación con tecnologías web estándar | Limitaciones de almacenamiento (5-50MB según navegador) | Combina robustez de base de datos nativa con sincronización inteligente y capacidad para 100 lotes | Complejidad en resolución de conflictos |
+| DR04 | Disponibilidad del Sistema | Sistema siempre "disponible" desde perspectiva del usuario aunque cloud esté caído | Datos pueden quedar desactualizados por períodos largos | Service Worker mantiene app funcionando aunque servidor caiga | Funcionalidad offline limitada comparada con app nativa | Alta disponibilidad percibida + sincronización eventual garantiza consistencia, cumple ≥99.5% disponibilidad | Requiere monitoreo de estado de sincronización |
+| DR11 | Compatibilidad con Dispositivos Gama Baja | SQLite muy eficiente en memoria y almacenamiento | Operaciones de sincronización masiva pueden consumir mucha batería | Menor huella de recursos al ser web-based | Performance inferior en procesamiento intensivo (imágenes) | Optimizado para dispositivos con recursos limitados mediante lazy loading, cumple ≤300MB RAM | Requiere testing exhaustivo en dispositivos objetivo |
+
+**Decisión seleccionada: Pattern 3 - Local-First Architecture con Sync Engine**
+
+**Justificación:**
+
+El patrón Local-First con motor de sincronización ofrece la mejor solución para el contexto de productores en zonas rurales:
+
+- **DR02 (Modo Offline)**: Toda la funcionalidad crítica está disponible sin conexión: registro de lotes con validación local, clasificación básica con modelo TFLite local procesando localmente usando modelos descargados previamente, y visualización de histórico. El motor de sincronización maneja automáticamente la replicación cuando hay conectividad, sincronizando todos los datos pendientes. Soporta almacenamiento de hasta 100 lotes localmente. El sistema muestra mensajes claros indicando qué funciones están disponibles en modo offline.
+
+- **DR04 (Disponibilidad)**: Desde la perspectiva del usuario, el sistema está "siempre disponible". Los datos se sincronizan en background de forma oportunista, cumpliendo con el requisito de ≥99.5% disponibilidad mensual. Implementamos estrategia de "eventual consistency" donde los datos se propagan cuando las condiciones de red lo permiten, garantizando máximo 3.6 horas de downtime mensual percibido.
+
+- **DR11 (Dispositivos Gama Baja)**: La base de datos local (Realm o SQLite con wrapper optimizado) es extremadamente eficiente en memoria, cumpliendo con el límite de ≤300MB de RAM. Implementamos paginación y lazy loading para evitar cargar todo el dataset en memoria. El modelo ML local (TFLite) está optimizado con cuantización de 8 bits para ejecutarse en dispositivos con solo 2GB RAM y cámaras de 8MP, con tamaño de app ≤50MB.
+
+**Estrategia de sincronización:**
+- **Optimistic UI**: Cambios reflejados inmediatamente en UI local, sincronización en background sin bloquear usuario
+- **Conflict Resolution**: Last-Write-Wins para campos editables (peso, notas, fecha cosecha); preservación de ambas versiones para campos críticos (resultados de clasificación) con flag de revisión manual
+- **Sync Priorities**: Cola con prioridades - clasificaciones nuevas (alta), ediciones de lotes (media), sincronización de reportes (baja)
+- **Bandwidth Awareness**: Sincronización de imágenes en alta calidad solo en WiFi (≤10MB por sesión), versiones comprimidas (50% calidad JPEG) en datos móviles
+- **Differential Sync**: Solo sincronizar cambios delta, no documentos completos, reduciendo consumo de datos
+
+**Implicaciones arquitectónicas:**
+- Backend debe exponer API de sincronización eficiente con endpoints de delta-sync
+- Implementar queue system robusto (Redis Queue o AWS SQS) para manejar sincronización asíncrona con retry exponencial
+- UI debe indicar claramente estado de sincronización con iconos (synced ✓, pending ⟳, offline ✕)
+- Sistema de versionado de documentos para detectar y resolver conflictos
+- Implementar circuit breaker para evitar reintentos infinitos cuando cloud está caído
+
+#### Iteración 3: Seguridad y Gestión Multiusuario
+
+**Drivers considerados:**
+- DR09: Seguridad de Datos (High/Medium)
+- DR08: Reportes Consolidados para Cooperativas (Medium/Medium)
+- DR05: Usabilidad para Usuarios No Técnicos (High/Low)
+
+**Tácticas y patrones evaluadas:**
+
+1. **Role-Based Access Control (RBAC)**: Control de acceso basado en roles (Productor, Cooperativa Admin, Cooperativa Viewer).
+
+2. **Multi-Tenancy Patterns**:
+   - **Shared Database, Shared Schema**: Todos los tenants comparten misma BD y esquema, separación por tenant_id
+   - **Shared Database, Separate Schema**: Cada tenant tiene su propio schema en misma BD
+   - **Separate Database**: Cada tenant tiene BD independiente
+
+3. **OAuth 2.0 + JWT**: Autenticación delegada con tokens de corta duración y refresh tokens.
+
+4. **Encryption at Rest and in Transit**: TLS 1.3 para tránsito, AES-256 para datos en reposo.
+
+5. **Audit Logging**: Registro inmutable de todas las operaciones sensibles para cumplimiento normativo.
+
+| Driver ID | Título de Driver | Pattern 1: RBAC + Shared DB/Schema | Pattern 2: RBAC + Separate Schema | Pattern 3: RBAC + Separate DB + JWT (SELECCIONADO) |
+|-----------|------------------|-------------------------------------|-----------------------------------|-----------------------------------------------------|
+|           |                  | Pro | Con | Pro | Con | Pro | Con |
+| DR09 | Seguridad de Datos | Simple implementación, bajo costo operativo | Riesgo de data leakage entre tenants por error de query | Mejor aislamiento que shared schema | Complejidad en migraciones de schema | Máximo aislamiento entre cooperativas, cumple Ley 29733 con encriptación por tenant | Mayor complejidad operativa y costos de BD |
+| DR08 | Reportes Consolidados para Cooperativas | Queries de agregación simples con GROUP BY | Performance degradada con millones de registros | Queries más eficientes al reducir scope | Necesita cross-schema queries para reportes consolidados | Perfecto para generar rankings y comparativos entre productores asociados sin interferencia | Requiere data warehouse separado para analytics cross-tenant |
+| DR05 | Usabilidad para Usuarios No Técnicos | UI puede ser más simple al tener modelo de datos unificado | Confusión si usuarios ven hints de otros tenants | Balance razonable entre simplicidad y seguridad | Complejidad en switching entre schemas | Experiencia personalizada por tipo de usuario (productor vs cooperativa), dashboards específicos | Overhead inicial en onboarding |
+
+**Decisión seleccionada: Pattern 3 - RBAC + Separate Database + JWT Authentication**
+
+**Justificación:**
+
+Este patrón ofrece el nivel de seguridad y segregación necesario para el contexto de cooperativas:
+
+- **DR09 (Seguridad)**: Máximo aislamiento de datos entre cooperativas cumple con Ley N°29733. Cada cooperativa tiene su BD independiente con encriptación AES-256 por tenant. JWT con RS256 para autenticación, tokens de corta duración (15 min) con refresh tokens (7 días). Sistema de auditoría registra todos los accesos a información sensible con alertas en ≤1 segundo ante intentos no autorizados. Implementación de 2FA opcional para administradores de cooperativas.
+
+- **DR08 (Reportes Consolidados)**: Cada cooperativa puede generar reportes comparativos entre sus productores asociados sin riesgo de ver datos de otras cooperativas. Queries optimizadas al reducir scope a una sola BD. Data warehouse separado (BigQuery/Redshift) para analytics agregados anónimos cross-tenant. Rankings de productores por calidad, distribución de defectos, evolución temporal con exportación a PDF/Excel.
+
+- **DR05 (Usabilidad)**: Experiencia personalizada por rol:
+  - **Productores**: Dashboard simple mostrando sus lotes, histórico de clasificaciones, reporte visual con gráficos circulares (verde=apto exportación, amarillo=mercado local, rojo=descarte)
+  - **Cooperativas**: Dashboard administrativo con vista agrupada por productor, resumen consolidado, gestión de permisos para múltiples administradores
+
+**Roles definidos:**
+- **Producer**: Acceso completo a sus propios lotes, clasificaciones y reportes. Puede crear, editar y eliminar sus lotes sin procesar.
+- **Cooperative Admin**: Gestión completa de productores asociados, acceso a todos los lotes de la cooperativa, generación de reportes consolidados, configuración de permisos.
+- **Cooperative Viewer**: Solo lectura de reportes consolidados y estadísticas, sin capacidad de modificación.
+- **System Admin**: Gestión de plataforma, acceso a logs de auditoría, configuración global.
+
+**Implicaciones arquitectónicas:**
+- Connection pooling por tenant con límites configurables para evitar resource starvation
+- Middleware de autenticación que valida JWT y extrae tenant_id para routing a BD correcta
+- Schema migration strategy: scripts versionados aplicados a cada tenant DB de forma controlada
+- Backup strategy: respaldos diarios por tenant con retención de 30 días, cumpliendo derecho de acceso y eliminación
+- API Gateway con rate limiting por tenant (100 req/min productor, 500 req/min cooperativa)
+
+#### Iteración 4: Generación de Reportes y Certificaciones
+
+**Drivers considerados:**
+- DR07: Clasificación por Estándares Internacionales (High/Medium)
+- DR16: Certificación Digital Automática (Medium/Low)
+- DR10: Integración con Blockchain (Medium/High)
+
+**Tácticas y patrones evaluados:**
+
+1. **Template Engine Pattern**: Generación de documentos usando templates (Handlebars, Jinja2) con datos dinámicos.
+
+2. **PDF Generation Strategies**:
+   - **HTML-to-PDF**: Render HTML/CSS a PDF (Puppeteer, WeasyPrint)
+   - **PDF Libraries**: Generación programática (PDFKit, ReportLab)
+   - **Serverless PDF**: AWS Lambda con headless Chrome
+
+3. **Standards Implementation**:
+   - **Rules Engine**: Motor de reglas configurable para diferentes estándares (SCA, SCAA, ICO, FNC)
+   - **Plugin Architecture**: Sistema de plugins para agregar nuevos estándares sin recompilar
+
+4. **Blockchain Integration Patterns**:
+   - **On-Chain Storage**: Almacenar todos los datos en blockchain
+   - **Hybrid Approach**: Hash en blockchain, datos completos en IPFS
+   - **Proof of Existence**: Solo hash del certificado en blockchain
+
+| Driver ID | Título de Driver | Pattern 1: HTML-to-PDF + Rules Engine | Pattern 2: PDF Library + Plugin Architecture | Pattern 3: Serverless PDF + Rules Engine + Blockchain Hash (SELECCIONADO) |
+|-----------|------------------|----------------------------------------|----------------------------------------------|---------------------------------------------------------------------------|
+|           |                  | Pro | Con | Pro | Con | Pro | Con |
+| DR07 | Clasificación por Estándares Internacionales | Templates HTML fáciles de editar y previsualizar | Inconsistencias entre navegadores en rendering | Control total sobre layout y elementos PDF | Curva de aprendizaje empinada para crear templates complejos | Combina flexibilidad de templates HTML con escalabilidad serverless, soporta múltiples estándares (SCA, ICO, FNC) | Cold start puede agregar latencia inicial |
+| DR16 | Certificación Digital Automática | Generación rápida de certificados profesionales con CSS | Difícil agregar elementos avanzados (códigos de barras, firmas digitales) | Fácil integración de QR codes, firmas digitales y watermarks | Requiere más código para cada tipo de certificado | Pre-certificados generados automáticamente post-clasificación, firma digital verificable, formatos según destino (EU, USA, Asia) | Requiere servicio de firma digital externo |
+| DR10 | Integración con Blockchain | Puede incluir hash en template pero requiere integración custom | No nativo para blockchain | Igual que Pattern 1 | Igual que Pattern 1 | Registro opcional en blockchain Polygon (low gas fees), hash inmutable SHA-256 del PDF, tiempo ≤30 segundos | Costo adicional de transacciones blockchain |
+
+**Decisión seleccionada: Pattern 3 - Serverless PDF Generation + Rules Engine + Blockchain Hash**
+
+**Justificación:**
+
+Este patrón proporciona la flexibilidad y escalabilidad necesarias para certificación internacional:
+
+- **DR07 (Clasificación por Estándares)**: Rules Engine implementado con JSON Schema + validación custom para cada estándar:
+  - **SCA (Specialty Coffee Association)**: Scoring de 0-100 puntos, categorías (Specialty ≥80, Premium 75-79, Standard 70-74, Below Standard <70)
+  - **SCAA**: Defectos primarios (valor 1) y secundarios (valor 0.2), máximo 5 defectos para Specialty Grade
+  - **ICO (International Coffee Organization)**: Clasificación por tamaño de grano (pantalla 18+, 17, 16, etc.)
+  - **FNC (Federación Nacional de Cafeteros)**: Estándares colombianos adaptables al contexto peruano
+  
+  Sistema genera pre-certificado automáticamente cuando lote cumple estándares, con puntaje SCA calculado con precisión de ±2 puntos. Comparación múltiple simultánea para mostrar clasificación según diferentes organismos.
+
+- **DR16 (Certificación Digital)**: AWS Lambda con Puppeteer renderiza templates HTML con branding personalizado por cooperativa. Certificados incluyen:
+  - Header con logo de cooperativa y sellos de estándares cumplidos
+  - Información del lote (origen, fecha, variedad, peso)
+  - Resultados de clasificación con gráficos de distribución de defectos
+  - Código QR para verificación pública (vincula a US20)
+  - Firma digital PKCS#7 con certificado X.509
+  - Formatos adaptados: EU (énfasis en trazabilidad), USA (scoring SCA), Asia (información de origen)
+  
+  Generación ≤5 segundos por certificado, almacenamiento en S3 con URLs firmadas temporales.
+
+- **DR10 (Integración Blockchain)**: Para cooperativas con suscripción premium, implementación opcional de registro en Polygon (Layer 2 de Ethereum con gas fees ~$0.01):
+  - Hash SHA-256 del PDF certificado se registra en smart contract
+  - Metadata: tenant_id, lote_id, timestamp, certification_standard
+  - Smart contract emite evento con hash y URL de verificación pública
+  - Frontend muestra enlace a explorador de blockchain (Polygonscan)
+  - Tiempo total de registro ≤30 segundos (confirmación de bloque)
+  
+  Sistema mantiene mapping hash→PDF_URL en base de datos para verificación sin necesidad de descentralizar todo el almacenamiento (enfoque híbrido más eficiente que IPFS).
+
+**Implicaciones arquitectónicas:**
+- Lambda functions con provisioned concurrency (warm pool) para reducir cold starts críticos
+- S3 lifecycle policies: PDFs activos en S3 Standard, >90 días a S3 Glacier para optimizar costos
+- CloudFront CDN para distribución global de certificados públicos
+- API de verificación pública sin autenticación para que compradores validen certificados
+- Smart contracts auditables y upgradeables usando patrón Proxy para corregir bugs sin perder histórico
+- Queue system para procesar registros blockchain en background sin bloquear generación de PDF
+
+#### Iteración 5: Optimización de Costos y Mantenibilidad
+
+**Drivers considerados:**
+- DR12: Restricción Presupuestaria Cloud (High/Medium)
+- DR14: Mantenibilidad del Modelo ML (Medium/Medium)
+- DR15: Interoperabilidad con Sistemas Externos (Medium/Low)
+
+**Tácticas y patrones evaluados:**
+
+1. **Cost Optimization Tactics**:
+   - **Reserved Instances vs Spot Instances**: Compromiso de capacidad con descuento vs instancias interrumpibles
+   - **Auto-Scaling Policies**: Scale-up/down basado en métricas (CPU, memory, custom metrics)
+   - **Caching Strategies**: Redis/Memcached para queries frecuentes, CDN para assets estáticos
+
+2. **ML Model Management**:
+   - **Model Versioning**: MLflow, DVC (Data Version Control)
+   - **A/B Testing Framework**: Gradual rollout de nuevos modelos
+   - **Monitoring & Observability**: Prometheus + Grafana, AWS CloudWatch, custom metrics
+
+3. **API Design Patterns**:
+   - **RESTful API**: Arquitectura tradicional con endpoints por recurso
+   - **GraphQL**: Query language flexible, cliente decide qué datos necesita
+   - **gRPC**: Protocol buffers para comunicación eficiente entre servicios
+
+| Driver ID | Título de Driver | Pattern 1: Reserved Instances + MLflow + REST | Pattern 2: Spot Instances + DVC + GraphQL | Pattern 3: Hybrid Cloud + MLflow + REST + Aggressive Caching (SELECCIONADO) |
+|-----------|------------------|------------------------------------------------|-------------------------------------------|------------------------------------------------------------------------------|
+|           |                  | Pro | Con | Pro | Con | Pro | Con |
+| DR12 | Restricción Presupuestaria Cloud | Costos predecibles, descuentos 30-50% vs on-demand | Requiere compromiso de 1-3 años, menos flexible | Costos hasta 90% menores para workloads tolerantes a interrupciones | Inestabilidad en availability, no apto para servicios críticos | Combina Reserved para servicios críticos + Spot para ML training, caching agresivo reduce 80% queries a BD, cumple ≤$500/mes para 500 usuarios | Complejidad en gestión de múltiples tipos de instancias |
+| DR14 | Mantenibilidad del Modelo ML | MLflow tracking de experimentos, versionado de modelos, UI intuitiva | Requiere servidor MLflow dedicado | DVC para versionar datasets grandes con Git | Curva de aprendizaje, integración menos madura | MLflow con artifact store en S3, deployment ≤15 minutos, rollback automático si accuracy cae >2%, reentrenamiento ≤4 horas con GPUs on-demand | Necesita pipeline CI/CD robusto |
+| DR15 | Interoperabilidad con Sistemas Externos | REST bien establecido, amplia compatibilidad, fácil debugging | Overfetching/underfetching de datos | GraphQL evita overfetching, schema fuertemente tipado | Mayor complejidad en backend, caching más difícil | REST API con OpenAPI 3.0 spec, respuesta ≤2 segundos, formato JSON estándar, fácil integración con ERPs | Requiere documentación exhaustiva |
+
+**Decisión seleccionada: Pattern 3 - Hybrid Cloud Strategy + MLflow + REST API + Aggressive Caching**
+
+**Justificación:**
+
+Este patrón optimiza costos mientras mantiene alta calidad de servicio:
+
+- **DR12 (Restricción Presupuestaria)**: Estrategia híbrida de compute:
+  - **Servicios críticos** (API Gateway, Auth Service, Database): AWS Reserved Instances con descuento 40%, siempre disponibles
+  - **ML Inference** (clasificación): Kubernetes cluster con mix de Reserved (baseline) + Spot Instances (burst), tolerancia a interrupciones con queue retry
+  - **ML Training**: 100% Spot Instances con checkpointing cada 10 min, ahorro 70% vs on-demand
+  - **Caching agresivo**:
+    - Redis Cluster para sesiones de usuario, resultados de clasificaciones recientes (TTL 24h): reduce 60% queries a BD
+    - CloudFront CDN para certificados PDF, imágenes de lotes: reduce 80% transferencia de S3
+    - API response caching con ETags: reduce latencia 50% para endpoints de reportes
+  
+  **Proyección de costos mensuales para 500 usuarios:**
+  - Compute (EKS Reserved + Spot): $180
+  - Database (RDS PostgreSQL Multi-AZ): $120
+  - Storage (S3 + Glacier): $40
+  - Redis Cache: $50
+  - ML Inference (GPU spot): $60
+  - CDN + Data Transfer: $30
+  - **Total: $480/mes** ✓ Cumple límite de $500
+
+- **DR14 (Mantenibilidad ML)**: Pipeline completo de MLOps:
+  - **MLflow Tracking**: Logs de experimentos con métricas (accuracy, precision, recall, F1-score), hiperparámetros, artifacts (modelos, plots)
+  - **Model Registry**: Versionado semántico (v1.2.3), estados (Staging, Production, Archived)
+  - **CI/CD Pipeline**:
+    1. Training con GPU spot instances, early stopping si val_loss no mejora en 10 epochs
+    2. Validación automática: accuracy ≥95%, F1 ≥0.93, falsos positivos ≤5%
+    3. Deploy a Staging, smoke tests automatizados
+    4. Gradual rollout: 5% → 25% → 100% de tráfico en 24h
+    5. Monitoring continuo: si accuracy cae >2%, rollback automático en 2 minutos
+  - **Retraining**: Pipeline automatizado trigger semanal con nuevos datos anotados, completa en ≤4 horas
+  - **A/B Testing**: Framework custom para comparar modelo actual vs candidato, decisión basada en métricas estadísticas
+
+- **DR15 (Interoperabilidad)**: REST API con diseño pragmático:
+  - **OpenAPI 3.0 Specification**: Documentación autogenerada con Swagger UI, ejemplos de requests/responses
+  - **Endpoints principales**:
+    - `POST /api/v1/batches`: Crear lote (US06)
+    - `GET /api/v1/batches/{id}`: Obtener detalles de lote
+    - `POST /api/v1/classifications`: Ejecutar clasificación (US12)
+    - `GET /api/v1/reports/consolidated`: Reporte consolidado cooperativa (US16)
+    - `POST /api/v1/exports/pdf`: Generar certificado PDF (US17)
+  - **Performance**: Respuesta ≤3 segundos
+  - **Autenticación**: Bearer token JWT en header Authorization
+
+**Implicaciones arquitectónicas:**
+- Monitoreo de costos en tiempo real con AWS Cost Explorer + alertas cuando spend proyectado >$450
+- Cache invalidation strategy: invalidar cache al crear/editar lotes, mantener para reads
+- Spot Instance interruption handling: Kubernetes node drain hooks para migrar pods gracefully
+- MLflow server deployment: ECS Fargate con RDS PostgreSQL backend, S3 artifact store
+- API versioning strategy: path-based (`/api/v1`, `/api/v2`), deprecation policy de 6 meses
+- Observability stack: Prometheus metrics, Jaeger distributed tracing, ELK para logs centralizados
+
+
+### 4.1.5. Quality Attribute Scenario Refinements. 
+
+En esta sección se especifica la relación de escenarios priorizados para atributos de calidad. Se presenta la versión final de los escenarios refinados en orden de prioridad, después de finalizar el proceso de Quality Attribute Workshop. Cada escenario se coloca como un cuadro con la estructura especificada.
+
+#### Scenario Refinement for Scenario 1: Performance en Clasificación de Lotes
+
+**Scenario(s):** Performance - Tiempo de Respuesta en Clasificación
+
+**Business Goals:** Garantizar experiencia de usuario fluida que no genere frustración en productores y cooperativas durante el proceso crítico de clasificación de café, maximizando la productividad operacional.
+
+**Relevant Quality Attributes:** Performance, Usability
+
+| Scenario Components | Detalles |
+|---------------------|----------|
+| **Stimulus:** | Productor captura imagen de muestra de 500 granos y solicita clasificación completa |
+| **Stimulus Source:** | Usuario (productor o cooperativa) desde aplicación móvil Android en zona rural |
+| **Environment:** | Operación normal con hasta 50 usuarios concurrentes clasificando lotes simultáneamente, red 3G con latencia 200-500ms |
+| **Artifact (if Known):** | Sistema completo: App móvil → API Gateway → ML Inference Service (TensorFlow Serving) → Database |
+| **Response:** | El sistema procesa imagen en dispositivo con modelo TFLite (detección preliminar), envía a cloud para clasificación definitiva en background, retorna resultados completos con: identificación de defectos por tipo y cantidad, clasificación por severidad (crítico/mayor/menor), porcentaje de café apto para exportación vs mercado local, recomendaciones comerciales |
+| **Response Measure:** | Tiempo total ≤5 segundos (P95), desglosado en: captura y preprocessing ≤1s, inferencia local ≤2s, inferencia cloud ≤2s (cuando disponible), rendering UI ≤0.5s. Feedback visual progresivo: barra de progreso actualizada cada 500ms |
+
+**Questions:** 
+- ¿Cómo manejar timeout si inferencia cloud excede 5 segundos en redes lentas?
+- ¿Es aceptable mostrar resultado preliminar (90% accuracy) inmediatamente y actualizar con resultado definitivo (95% accuracy) cuando cloud responda?
+
+**Issues:** 
+- Cold start de contenedores Kubernetes puede agregar 2-3 segundos en primera request del día
+- Imágenes de alta resolución (>5MB) pueden exceder timeout en conexiones 2G
+- Balance entre accuracy y latency: modelo más complejo mejora precisión pero aumenta tiempo de inferencia
+
+---
+
+#### Scenario Refinement for Scenario 2: Availability en Temporada Alta de Cosecha
+
+**Scenario(s):** Availability - Disponibilidad durante Temporada Crítica
+
+**Business Goals:** Asegurar que el sistema esté disponible durante los meses críticos de cosecha (abril-agosto) cuando los productores procesan la mayoría de su producción anual, evitando pérdidas económicas por clasificación retrasada.
+
+**Relevant Quality Attributes:** Availability, Reliability
+
+| Scenario Components | Detalles |
+|---------------------|----------|
+| **Stimulus:** | Múltiples usuarios intentan acceder al sistema simultáneamente durante horario pico (8am-12pm) en temporada de cosecha |
+| **Stimulus Source:** | 200 usuarios concurrentes (mix 70% productores, 30% cooperativas) |
+| **Environment:** | Operación normal en temporada alta con carga 4x mayor que promedio mensual, potencial fallo de zona de disponibilidad AWS |
+| **Artifact (if Known):** | Infraestructura completa: Load Balancer → Kubernetes Pods (API + ML Service) → RDS Multi-AZ → Redis Cluster |
+| **Response:** | Sistema permanece operativo y responsive. En caso de fallo de AZ: Load balancer redirige tráfico automáticamente a AZ secundaria en ≤30 segundos, RDS failover automático a standby replica en ≤60 segundos, notificación a equipo DevOps vía PagerDuty, logs detallados de incidente para post-mortem |
+| **Response Measure:** | Disponibilidad ≥99.5% mensual (máximo 3.6 horas downtime/mes), RTO (Recovery Time Objective) ≤5 minutos, RPO (Recovery Point Objective) ≤1 minuto (pérdida máxima de datos), tasa de error <0.5% requests |
+
+**Questions:** 
+- ¿Deberíamos implementar multi-region deployment para tolerar fallo completo de región AWS?
+- ¿Cómo comunicamos downtime planificado a usuarios en zonas rurales sin acceso constante a email?
+
+**Issues:** 
+- Costo de infraestructura Multi-AZ agrega ~$100/mes al presupuesto
+- Testing de disaster recovery requiere ambiente staging que replique producción fielmente
+- Definir SLA diferenciado: usuarios free tier pueden experimentar degradación antes que premium
+
+---
+
+#### Scenario Refinement for Scenario 3: Usability para Productores con Baja Alfabetización Digital
+
+**Scenario(s):** Usability - Primera Clasificación sin Capacitación
+
+**Business Goals:** Minimizar barrera de entrada tecnológica para maximizar adopción entre productores pequeños/medianos, muchos con educación primaria y limitada experiencia con smartphones.
+
+**Relevant Quality Attributes:** Usability, Accessibility
+
+| Scenario Components | Detalles |
+|---------------------|----------|
+| **Stimulus:** | Productor nuevo (55 años, educación primaria, primer smartphone) intenta realizar su primera clasificación de lote después de registrarse |
+| **Stimulus Source:** | Usuario productor sin capacitación previa ni soporte técnico presente |
+| **Environment:** | Primera interacción con la aplicación, sin acceso a tutoriales o manuales, ambiente ruidoso de beneficio de café |
+| **Artifact (if Known):** | Interfaz móvil completa: onboarding flow → creación de lote → captura de imagen → visualización de resultados |
+| **Response:** | Sistema guía al usuario paso a paso con: tutorial interactivo de 3 pasos con imágenes ilustrativas (no texto denso), instrucciones de voz en español (opcional quechua/aymara para soporte multilenguaje US24, US25), validación en tiempo real de cada paso con feedback visual (✓ verde, ✗ rojo), tooltips contextuales, confirmación antes de acciones críticas (eliminar lote US11), mensajes de éxito con lenguaje no técnico (¡Tu café está listo para exportar! vs Grade 1 Specialty compliant) |
+| **Response Measure:** | ≥85% de usuarios completan primera clasificación exitosamente en ≤10 minutos sin ayuda externa, tasa de abandono <15% en flujo de onboarding, NPS (Net Promoter Score) ≥40 en encuesta post-primera clasificación, ≤3 taps promedio para completar tarea común |
+
+**Questions:** 
+- ¿Deberíamos ofrecer modo "ultra simple" con funcionalidad reducida pero más intuitiva?
+- ¿Cómo balancear simplicidad con completitud de información para usuarios avanzados (cooperativas)?
+
+**Issues:** 
+- Producción de contenido en quechua/aymara requiere hablantes nativos para validación (TS07)
+- Testing de usabilidad debe realizarse en campo con usuarios reales, no en lab urbano
+- Accesibilidad para usuarios con discapacidad visual/motora no está cubierta en MVP
+
+---
+
+#### Scenario Refinement for Scenario 4: Security ante Intentos de Acceso No Autorizado
+
+**Scenario(s):** Security - Protección de Datos Sensibles
+
+**Business Goals:** Proteger información confidencial de productores y cooperativas (volúmenes de producción, calidad, ubicaciones) que podría ser explotada por competidores o intermediarios maliciosos, cumpliendo Ley 29733.
+
+**Relevant Quality Attributes:** Security, Privacy, Compliance
+
+| Scenario Components | Detalles |
+|---------------------|----------|
+| **Stimulus:** | Atacante externo intenta acceder a datos de clasificación de lotes de una cooperativa mediante: fuerza bruta de credenciales, inyección SQL en endpoints de API, token JWT robado/expirado, escalación de privilegios (productor intentando acceder a datos de cooperativa) |
+| **Stimulus Source:** | Atacante malicioso desde dirección IP no reconocida, múltiples intentos fallidos de autenticación |
+| **Environment:** | Sistema en producción conectado a internet público, tráfico mixto legítimo y malicioso |
+| **Artifact (if Known):** | Capa de seguridad completa: WAF (Web Application Firewall) → API Gateway → Auth Service (JWT validation) → RBAC middleware → Encrypted Database |
+| **Response:** | Sistema detecta y bloquea ataque: rate limiting bloquea IP después de 5 intentos fallidos en 15 min, WAF detecta y bloquea patrones de inyección SQL, tokens JWT expirados rechazados con HTTP 401 (US03), RBAC middleware valida permisos antes de cada operación, todos los intentos logueados en audit trail inmutable, alerta automática a admin de cooperativa y equipo seguridad vía email/SMS, IP atacante agregada a blocklist por 24h |
+| **Response Measure:** | 100% de intentos de acceso no autorizados bloqueados exitosamente, tiempo de detección ≤1 segundo, alerta generada en ≤1 segundo post-detección, audit log con retención 1 año, encriptación AES-256 para datos en reposo, TLS 1.3 para datos en tránsito, cero incidentes de data breach en producción |
+
+**Questions:** 
+- ¿Deberíamos implementar detección de anomalías basada en ML para identificar patrones de ataque sofisticados?
+- ¿Cómo manejar casos de falsos positivos que bloquean usuarios legítimos?
+
+**Issues:** 
+- Cumplimiento GDPR no es requisito inmediato pero debe considerarse para expansión futura
+- Penetration testing profesional agrega $5K-10K de costo anual
+- Definir proceso de incident response: quién responde, en qué timeframe, cómo se comunica a usuarios afectados
+
+---
+
+#### Scenario Refinement for Scenario 5: Reliability del Modelo de ML
+
+**Scenario(s):** Reliability - Consistencia en Precisión de Clasificación
+
+**Business Goals:** Mantener confianza de usuarios en la tecnología de clasificación, evitando pérdida de credibilidad por resultados inconsistentes o degradación de precisión que podría causar rechazo del sistema.
+
+**Relevant Quality Attributes:** Reliability, Accuracy
+
+| Scenario Components | Detalles |
+|---------------------|----------|
+| **Stimulus:** | Sistema procesa 1000 lotes de diferentes productores durante un mes completo de operación continua |
+| **Stimulus Source:** | Mix de productores (variedades: Caturra, Typica, Bourbon) y cooperativas procesando lotes en diferentes condiciones de iluminación y calidad de cámara |
+| **Environment:** | Operación continua en producción durante temporada alta, variabilidad en calidad de imágenes capturadas, diferentes contextos regionales (Junín, Cajamarca, Cusco) |
+| **Artifact (if Known):** | Modelo de ML completo: preprocessing pipeline → TFLite model (mobile) → TensorFlow Serving (cloud) → post-processing → validation |
+| **Response:** | Sistema mantiene precisión estable durante todo el período: detección de defectos críticos consistente (negro, quebrado, insectos, hongos US12), clasificación por severidad precisa, mediciones de color y uniformidad (US13) confiables, validación automática detecta drift en distribución de datos, alertas tempranas si métricas caen por debajo de umbrales, reentrenamiento automático programado semanalmente |
+| **Response Measure:** | Precisión ≥95% en detección de defectos críticos mantenida durante 30 días consecutivos, F1-score ≥0.93 constante, varianza en accuracy <2% entre semanas, falsos positivos ≤5%, tasa de drift detectado <1% de lotes, tiempo de recuperación ante degradación ≤4 horas mediante reentrenamiento |
+
+**Questions:** 
+- ¿Cómo manejar casos donde variedades de café no representadas en training data generan resultados imprecisos?
+- ¿Deberíamos implementar feedback loop donde Q Graders validen resultados y mejoren modelo continuamente?
+
+**Issues:** 
+- Dataset inicial de entrenamiento debe ser suficientemente diverso (≥10,000 imágenes US12)
+- Validación manual de resultados requiere acceso a Q Graders certificados (costoso)
+- Necesidad de monitoreo activo de model drift en producción con herramientas especializadas
+
+---
+
+#### Scenario Refinement for Scenario 6: Scalability ante Crecimiento Rápido
+
+**Scenario(s):** Scalability - Expansión de Base de Usuarios
+
+**Business Goals:** Soportar crecimiento orgánico de la plataforma sin interrupciones de servicio, manteniendo costos operativos controlados y permitiendo expansión a nuevas regiones cafetaleras.
+
+**Relevant Quality Attributes:** Scalability, Performance, Cost-Efficiency
+
+| Scenario Components | Detalles |
+|---------------------|----------|
+| **Stimulus:** | Base de usuarios crece de 100 a 1000 usuarios activos en 6 meses debido a campañas de marketing y recomendaciones boca-a-boca |
+| **Stimulus Source:** | Nuevos productores y cooperativas registrándose (US01, US02) en regiones adicionales (expansión de Junín a Cajamarca, San Martín, Puno) |
+| **Environment:** | Crecimiento orgánico sostenido con picos durante temporada de cosecha, aumento proporcional en volumen de lotes procesados, incremento en almacenamiento de imágenes y certificados |
+| **Artifact (if Known):** | Infraestructura completa: Kubernetes cluster → horizontal pod autoscaling → RDS read replicas → S3 storage → CDN → Redis cache |
+| **Response:** | Sistema escala automáticamente sin intervención manual: Kubernetes HPA aumenta pods de API y ML inference basado en CPU/memoria, RDS read replicas distribuyen carga de queries, S3 lifecycle policies mueven datos antiguos a Glacier, CDN cachea certificados PDF globalmente, Redis cache reduce 60% queries a BD, costos por usuario reducen 20% mediante economías de escala |
+| **Response Measure:** | Tiempo de respuesta se mantiene ≤5 segundos con 10x usuarios, throughput aumenta linealmente con recursos, costo por usuario cae de $1.00 a $0.80/mes, auto-scaling responde en ≤2 minutos a cambios de carga, zero downtime durante scaling events, utilización de recursos optimizada (70-80% CPU promedio) |
+
+**Questions:** 
+- ¿Cuál es el límite superior realista de usuarios antes de requerir re-arquitectura significativa?
+- ¿Deberíamos implementar multi-region deployment para soportar expansión internacional futura?
+
+**Issues:** 
+- Presupuesto de $500/mes limita capacidad máxima a ~500 usuarios en fase inicial (DR12)
+- Necesidad de dimensionamiento cuidadoso de base de datos para evitar cuellos de botella
+- Monitoreo proactivo de métricas de escalabilidad antes de que usuarios experimenten degradación
+
+---
+
+#### Scenario Refinement for Scenario 7: Offline Functionality en Zonas Remotas
+
+**Scenario(s):** Offline - Operación sin Conectividad
+
+**Business Goals:** Garantizar productividad de usuarios en zonas rurales con conectividad intermitente o inexistente, evitando que limitaciones de infraestructura impidan adopción de la tecnología.
+
+**Relevant Quality Attributes:** Availability, Usability, Resilience
+
+| Scenario Components | Detalles |
+|---------------------|----------|
+| **Stimulus:** | Productor en zona rural sin cobertura celular intenta clasificar lote recién cosechado |
+| **Stimulus Source:** | Usuario productor desde aplicación móvil Android sin conexión a internet durante 4-6 horas de jornada en campo |
+| **Environment:** | Zona rural remota sin conectividad 2G/3G/4G, dispositivo móvil con batería limitada (30-50% restante), modelo TFLite previamente descargado |
+| **Artifact (if Known):** | Aplicación móvil completa: local database (Realm/SQLite) → TFLite model → preprocessing pipeline → UI layer → sync queue |
+| **Response:** | Sistema opera completamente offline (US26): usuario crea nuevo lote (US06) con validación local, captura imagen con cámara, procesa clasificación básica con modelo local (90% accuracy), visualiza resultados preliminares con gráficos (US15), almacena hasta 100 lotes localmente, muestra indicador claro de modo offline, encola datos para sincronización posterior, al recuperar conexión sincroniza automáticamente todos los datos pendientes y actualiza con resultados definitivos del cloud (95% accuracy) |
+| **Response Measure:** | 100% de funcionalidad crítica disponible offline, tiempo de clasificación local ≤3 segundos, almacenamiento de ≥100 lotes sin degradación, consumo de batería ≤5% por hora de uso, sincronización completa en ≤2 minutos al recuperar conexión, conflictos de sincronización <1% de casos, mensajes claros indicando funciones limitadas offline |
+
+**Questions:** 
+- ¿Cómo priorizar qué lotes sincronizar primero cuando usuario tiene conectividad limitada (ej: solo 2 minutos de conexión)?
+- ¿Deberíamos permitir exportar certificados PDF offline con marca de agua "Pendiente de verificación"?
+
+**Issues:** 
+- Tamaño de app ≤50MB limita cantidad de modelos ML que pueden incluirse (TS01)
+- Balance entre funcionalidad offline y complejidad de sincronización
+- Necesidad de educación de usuarios sobre limitaciones de precisión en modo offline
+
+---
+
+#### Scenario Refinement for Scenario 8: Interoperability con Sistemas Externos
+
+**Scenario(s):** Interoperability - Integración con ERP de Cooperativa
+
+**Business Goals:** Facilitar integración con sistemas existentes de cooperativas para evitar doble entrada de datos y maximizar valor agregado de BeanDetect AI dentro del ecosistema tecnológico del cliente.
+
+**Relevant Quality Attributes:** Interoperability, Usability, Maintainability
+
+| Scenario Components | Detalles |
+|---------------------|----------|
+| **Stimulus:** | Cooperativa con sistema ERP existente (ej: SAP, Odoo) solicita integración para importar automáticamente datos de clasificación |
+| **Stimulus Source:** | Sistema externo ERP de cooperativa haciendo requests HTTP a API REST de BeanDetect AI |
+| **Environment:** | Operación normal con múltiples integraciones concurrentes, diferentes versiones de sistemas ERP, variabilidad en formatos de datos requeridos |
+| **Artifact (if Known):** | API REST completa: API Gateway → authentication layer → business logic → database → response formatter |
+| **Response:** | Sistema expone API REST bien documentada (US15, US17): endpoints para consultar lotes, obtener clasificaciones, descargar reportes consolidados (US16), exportar datos en JSON/CSV/Excel, webhooks para notificar eventos (nueva clasificación completada), documentación OpenAPI 3.0 interactiva con ejemplos, SDKs en lenguajes comunes (Python, JavaScript), soporte técnico para integración, rate limiting transparente con headers informativos |
+| **Response Measure:** | API responde en ≤2 segundos para queries simples, documentación OpenAPI actualizada automáticamente, ejemplos funcionales para casos de uso comunes, uptime de API ≥99.9%, tasa de errores de integración <0.1%, tiempo promedio de integración por cliente ≤5 días laborables, soporte para versionado de API sin breaking changes |
+
+**Questions:** 
+- ¿Deberíamos ofrecer integraciones pre-construidas con ERPs populares (Odoo, SAP B1) o solo API genérica?
+- ¿Cómo manejar limitaciones de rate limiting para cooperativas grandes con alto volumen de requests?
+
+**Issues:** 
+- Mantenimiento de compatibilidad backward cuando API evoluciona
+- Necesidad de ambientes sandbox para que clientes prueben integraciones sin afectar producción
+- Soporte técnico para integraciones puede consumir recursos significativos del equipo
+
+---
+
+#### Scenario Refinement for Scenario 9: Maintainability del Sistema ML
+
+**Scenario(s):** Maintainability - Actualización de Modelo sin Downtime
+
+**Business Goals:** Permitir mejora continua del modelo de clasificación sin interrumpir servicio a usuarios, manteniendo competitividad tecnológica y precisión actualizada.
+
+**Relevant Quality Attributes:** Maintainability, Availability, Reliability
+
+| Scenario Components | Detalles |
+|---------------------|----------|
+| **Stimulus:** | Equipo de ML entrena nueva versión del modelo con dataset ampliado (15,000 imágenes) que mejora accuracy de 95% a 97% |
+| **Stimulus Source:** | Equipo de desarrollo/data science ejecutando pipeline CI/CD de MLOps |
+| **Environment:** | Sistema en producción con usuarios activos, modelo actual sirviendo requests en tiempo real, necesidad de zero-downtime deployment |
+| **Artifact (if Known):** | Pipeline MLOps completo: MLflow → model registry → CI/CD (GitHub Actions) → Kubernetes deployment → canary release → monitoring |
+| **Response:** | Sistema actualiza modelo sin interrupciones: nueva versión pasa validación automática (accuracy ≥95%, F1 ≥0.93), deploy a staging para smoke tests, gradual rollout (5% → 25% → 100% tráfico en 24h), monitoring continuo de métricas clave, comparación A/B entre modelo actual y candidato, rollback automático si accuracy cae >2%, notificación a equipo de on-call, documentación automática de cambios en model registry |
+| **Response Measure:** | Deployment completo en ≤15 minutos, zero-downtime garantizado, rollback automático en ≤2 minutos si detecta problemas, precisión mantenida o mejorada en 100% de deployments, tasa de rollbacks <5%, logs completos de cambios para auditoría, sincronización de modelo mobile (TFLite) a dispositivos en ≤48 horas |
+
+**Questions:** 
+- ¿Cómo forzar actualización de modelo mobile en dispositivos que no se conectan frecuentemente?
+- ¿Deberíamos mantener múltiples versiones de modelo en producción simultáneamente para A/B testing?
+
+**Issues:** 
+- Reentrenamiento de modelo debe completarse en ≤4 horas para iteraciones rápidas (TS09, DR14)
+- Necesidad de dataset continuamente actualizado con nuevas variedades y defectos
+- Coordinación entre actualización de modelo cloud y mobile para evitar inconsistencias
+
+---
+
+#### Scenario Refinement for Scenario 10: Blockchain Transparency para Premium Users
+
+**Scenario(s):** Blockchain - Registro Inmutable de Certificaciones
+
+**Business Goals:** Diferenciación competitiva mediante transparencia verificable, permitiendo a cooperativas premium demostrar trazabilidad completa a compradores internacionales exigentes.
+
+**Relevant Quality Attributes:** Transparency, Security, Innovation
+
+| Scenario Components | Detalles |
+|---------------------|----------|
+| **Stimulus:** | Cooperativa con suscripción premium completa clasificación de lote de café especial y solicita registro en blockchain |
+| **Stimulus Source:** | Usuario cooperativa desde dashboard web después de obtener certificación de calidad |
+| **Environment:** | Operación normal con múltiples cooperativas premium, red Polygon Layer 2 operativa, precios de gas fees estables |
+| **Artifact (if Known):** | Sistema completo: Backend API → Smart Contract (Solidity) → Polygon network → IPFS (opcional) → Frontend verification UI |
+| **Response:** | Sistema registra certificación en blockchain (US22): genera hash SHA-256 del certificado PDF, crea transacción en smart contract con metadata (lote_id, timestamp, standard, producer_id), espera confirmación de bloque, emite evento on-chain, actualiza base de datos con transaction hash y URL de verificación, genera QR code (US20) que vincula a explorador blockchain, muestra confirmación visual en UI con enlace a Polygonscan, permite a cualquier persona verificar autenticidad escaneando QR |
+| **Response Measure:** | Tiempo total de registro ≤30 segundos desde solicitud hasta confirmación, costo de gas fees ≤$0.02 por transacción, 100% de transacciones exitosas (con retry automático en caso de falla), hash inmutable verificable perpetuamente, URL pública accesible sin autenticación, interfaz de verificación intuitiva para compradores no técnicos |
+
+**Questions:** 
+- ¿Deberíamos soportar múltiples blockchains (Ethereum mainnet, Polygon, BSC) para dar opciones a clientes?
+- ¿Cómo manejar migraciones si cambiamos de blockchain o smart contract en el futuro?
+
+**Issues:** 
+- Volatilidad de gas fees en redes blockchain puede afectar costos
+- Educación de usuarios sobre qué significa "blockchain" y cómo verificar
+- Necesidad de mantener claves privadas seguras para firmar transacciones
+- Consideraciones ambientales de uso de blockchain (aunque Polygon es Proof-of-Stake con bajo impacto)
+
+---
+
+## 4.2. Strategic-Level Domain-Driven Design. 
+
+### 4.2.1. EventStorming. 
 
 Con el objetivo de que todos los integrantes puedan mantener la misma comprensión del dominio de nuestro producto de software, se llevó a cabo una sesión de Event Storming de aproximadamente 1 hora. Esto permitió que nosotros como equipo organizaramos nuestras ideas y pensamientos para identificar los eventos clave, comandos, usuarios y agregados del sistema, lo cuales son importantes para ofrecer una primera visión integral de este.
 
 [![Captura-de-pantalla-2025-09-17-164413.png](https://i.postimg.cc/h4VRmT50/Captura-de-pantalla-2025-09-17-164413.png)](https://postimg.cc/grc7FXdw)
 
-#### 4.1.1.1 Candidate Context Discovery
+### 4.2.2. Candidate Context Discovery. 
 
 En esta sección se visualizan nuestros bounded context candidatos, los cuales se formaron a partir del event storming:
 
@@ -1873,18 +2430,17 @@ https://lucid.app/lucidchart/5207a245-2b65-413c-b65f-055daf5730ba/edit?viewport_
 
 [![Captura-de-pantalla-2025-09-20-150745.png](https://i.postimg.cc/6QchktGp/Captura-de-pantalla-2025-09-20-150745.png)](https://postimg.cc/rddWW6JB)
 
-
-#### 4.1.1.2 Domain Message Flows Modeling
+### 4.2.3. Domain Message Flows Modeling. 
 
 Para dar inicio con el diseño de nuestro software, es de suma importancia el uso de los Domain Message Flows Modeling, ya que nos permite ilustrar la transferencia de información entre los diferentes componentes que interactúan en nuestro sistema conjunto. Además, el uso de esta metodología permite detectar problemas potenciales en la lógica del negocio de manera más rápida y sencilla.
 
-<!-- Contenido de Domain Message Flows Modeling -->
+[![Captura-de-pantalla-2025-10-10-060714.png](https://i.postimg.cc/nzBxYyZg/Captura-de-pantalla-2025-10-10-060714.png)](https://postimg.cc/R6S2vbWL)
 
-#### 4.1.1.3 Bounded Context Canvases
+[![Captura-de-pantalla-2025-10-10-060727.png](https://i.postimg.cc/LXLSBcR0/Captura-de-pantalla-2025-10-10-060727.png)](https://postimg.cc/9RmscNDG)
+
+### 4.2.4. Bounded Context Canvases.  
 
 Los Bounded Context Canvas ayudan a definir claramente los límites de un bounded context y a capturar en un solo lugar la información clave del contexto, como el propósito, los usuarios principales, el lenguaje ubicuo, las entidades, reglas de negocio y relaciones con otros contextos.
-
-<!-- Contenido de Bounded Context Canvases -->
 
 **Bounded Context: IAM & Profile**
 
@@ -1911,16 +2467,15 @@ Los Bounded Context Canvas ayudan a definir claramente los límites de un bounde
 [![bc-canvas-6.jpg](https://i.postimg.cc/RZ21JmWg/bc-canvas-6.jpg)](https://postimg.cc/mPN1K0N9)
 
 
+### 4.2.5. Context Mapping. 
 
+[![Captura-de-pantalla-2025-10-10-205037.png](https://i.postimg.cc/NM9nn537/Captura-de-pantalla-2025-10-10-205037.png)](https://postimg.cc/S24V2NNJ)
+<!--descripcion-->
+La imagen muestra el Context Mapping de los bounded contexts identificados para el sistema BeanDetect AI. Se visualizan las relaciones y dependencias entre los principales contextos, como IAM & Profile, Coffee Lot Management, Grain Classification, Traceability & Certification y Reporting & Analytics. El diagrama ilustra los tipos de relaciones (por ejemplo, Partnership, Shared Kernel, Customer/Supplier) y los flujos de información clave entre contextos, permitiendo entender cómo se integran y colaboran los distintos módulos del sistema para soportar los procesos de negocio de la solución.
 
+## 4.3. Software Architecture. 
 
-### 4.1.2. Context Mapping
-
-<!-- Contenido de Context Mapping -->
-
-### 4.1.3. Software Architecture
-
-#### 4.1.3.1. Software Architecture System Landscape Diagram
+### 4.3.1. Software Architecture System Landscape Diagram.
 
 En el diseño de la arquitectura del sistema se empleó el modelo C4, específicamente los diagramas de Context y Container, con el fin de representar de manera jerárquica y clara los diferentes niveles de abstracción. El Context Diagram permitió identificar a los actores externos y su interacción con el sistema, mientras que el Container Diagram detalló los principales componentes lógicos, servicios y aplicaciones que conforman la solución, así como sus relaciones. Adicionalmente, se incluyó un Deployment Diagram, que describe cómo los distintos elementos se distribuyen en la nube. 
 
@@ -1928,30 +2483,34 @@ Para el desarrollo de los diagramas C4 se utilizó la plataforma de Structurizr 
 
 [![structurizr-106404-Dev-Beans-Diagram-Contenedores-key.png](https://i.postimg.cc/Kcs2Mp51/structurizr-106404-Dev-Beans-Diagram-Contenedores-key.png)](https://postimg.cc/kD8zrczC)
 
-#### 4.1.3.2. Software Architecture Context Level Diagrams
+### 4.3.2. Software Architecture Context Level Diagrams. 
 
 El Context Diagram muestra el sistema como una “caja negra” y lo ubica dentro de su ecosistema. En este nivel se identifican los usuarios, sistemas externos y actores clave, junto con las interacciones que tienen con la solución propuesta.
 
 [![structurizr-106404-Diagrama-Contexto.png](https://i.postimg.cc/cJq18k0R/structurizr-106404-Diagrama-Contexto.png)](https://postimg.cc/5X3Wh3Hy)
 
-#### 4.1.3.3. Software Architecture Container Level Diagrams
+### 4.3.3. Software Architecture Container Level Diagrams. 
 
 El Container Diagram descompone el sistema en sus principales contenedores de software (aplicaciones, bases de datos, APIs, bounded contexts, etc) y define cómo se comunican entre sí.
 
 [![structurizr-106404-Dev-Beans-Diagram-Contenedores.png](https://i.postimg.cc/c1fzsDbq/structurizr-106404-Dev-Beans-Diagram-Contenedores.png)](https://postimg.cc/CdL7740J)
 
-#### 4.1.3.4. Software Architecture Deployment Diagrams
+### 4.3.4. Software Architecture Deployment Diagrams. 
 
 [![Captura-de-pantalla-2025-09-20-172320.png](https://i.postimg.cc/TYwP8WtD/Captura-de-pantalla-2025-09-20-172320.png)](https://postimg.cc/xqwQMqDf)
 
 
-# 4.2. Tactical-Level Domain-Driven Design
 
-## 4.2.1. Bounded Context: IAM & Profile
+
+
+
+# Capítulo V: Tactical-Level Software Design
+
+## 5.1. Bounded Context: IAM & Profile
 
 El **IAM & Profile Bounded Context** es responsable de gestionar la autenticación, autorización y perfiles de usuarios en el sistema BeanDetect AI. Este contexto asegura que los usuarios (Productores Independientes y Cooperativas) puedan registrarse, iniciar sesión y gestionar sus perfiles de manera segura, cumpliendo con los estándares de seguridad y privacidad.
 
-### 4.2.1.1. Domain Layer
+### 5.1.1. Domain Layer
 
 La Domain Layer del IAM & Profile Bounded Context encapsula la lógica de negocio relacionada con la gestión de usuarios y perfiles. En esta capa se definen los elementos principales del dominio: agregados, entidades y objetos de valor que representan los conceptos clave del sistema.
 
@@ -2059,7 +2618,7 @@ La Domain Layer del IAM & Profile Bounded Context encapsula la lógica de negoci
    - Se dispara cuando se actualiza un perfil.
    - **Atributos**: `userId`, `updatedFields`.
 
-### 4.2.1.2. Interface Layer
+### 5.1.2. Interface Layer
 
 #### **Controllers**
 1. **AuthController**
@@ -2088,7 +2647,7 @@ La Domain Layer del IAM & Profile Bounded Context encapsula la lógica de negoci
 2. **UserResourceFromEntityAssembler**
 3. **ProfileResourceFromEntityAssembler**
 
-### 4.2.1.3. Application Layer
+### 5.1.3. Application Layer
 
 #### **Command Services**
 1. **UserCommandServiceImpl**
@@ -2105,7 +2664,7 @@ La Domain Layer del IAM & Profile Bounded Context encapsula la lógica de negoci
 2. **ProfileQueryServiceImpl**
    - **Métodos**: `handle(GetProducerProfileQuery)`, `handle(GetCooperativeProfileQuery)`
 
-### 4.2.1.4. Infrastructure Layer
+### 5.1.4. Infrastructure Layer
 
 #### **Persistencia (JPA Repositories)**
 1. **UserRepository**
@@ -2118,30 +2677,30 @@ La Domain Layer del IAM & Profile Bounded Context encapsula la lógica de negoci
 3. **CooperativeProfileRepository**
    - `findByUserId(Long userId)`
 
-#### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
+### 5.1.5. Bounded Context Software Architecture Component Level Diagrams
 
 [![structurizr-106404-IAMProfile-Component-Diagram.png](https://i.postimg.cc/GpcLQ8Tt/structurizr-106404-IAMProfile-Component-Diagram.png)](https://postimg.cc/G45n3pQn)
 
-### 4.2.1.6.  Bounded Context Software Architecture Code Level Diagrams
+### 5.1.6.  Bounded Context Software Architecture Code Level Diagrams
 
 En esta sección se presentan los diagramas UML a nivel de código para el contexto determinado.
 
-#### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams
+#### 5.1.6.1. Bounded Context Domain Layer Class Diagrams
 
 [![Captura-de-pantalla-2025-09-20-185251.png](https://i.postimg.cc/mgLP82nd/Captura-de-pantalla-2025-09-20-185251.png)](https://postimg.cc/dLfQ0vwd)
 
-#### 4.2.1.6.2. Bounded Context Database Design Diagram
+#### 5.1.6.2. Bounded Context Database Design Diagram
 
 [![Captura-de-pantalla-2025-09-20-185333.png](https://i.postimg.cc/bvdsfVpk/Captura-de-pantalla-2025-09-20-185333.png)](https://postimg.cc/SXFyWrXx)
 
 
 ---
 
-## 4.2.2. Bounded Context: Coffee Lot Management
+## 5.2. Bounded Context: Coffee Lot Management
 
 El **Coffee Lot Management Bounded Context** es responsable de gestionar la información y el ciclo de vida de los lotes de café en el sistema. Este contexto permite a productores y cooperativas registrar, visualizar, editar y eliminar lotes de café, incluyendo detalles como fecha de cosecha, variedad, origen y cantidad.
 
-### 4.2.2.1. Domain Layer
+### 5.2.1. Domain Layer
 
 La Domain Layer del Coffee Lot Management Bounded Context encapsula la lógica de negocio relacionada con la gestión del ciclo de vida de los lotes de café, desde su registro inicial hasta su estado final de envío.
 
@@ -2261,7 +2820,7 @@ La Domain Layer del Coffee Lot Management Bounded Context encapsula la lógica d
    - Se dispara cuando se elimina un lote.
    - **Atributos**: `lotId`, `lotNumber`, `deletionReason`.
 
-### 4.2.2.2. Interface Layer
+### 5.2.2. Interface Layer
 
 #### **Controllers**
 1. **CoffeeLotController**
@@ -2301,7 +2860,7 @@ La Domain Layer del Coffee Lot Management Bounded Context encapsula la lógica d
 3. **UpdateCoffeeLotCommandFromResourceAssembler**
    - Convierte `UpdateCoffeeLotResource` a `UpdateCoffeeLotCommand`.
 
-### 4.2.2.3. Application Layer
+### 5.2.3. Application Layer
 
 #### **Command Services**
 1. **CoffeeLotCommandServiceImpl**
@@ -2341,7 +2900,7 @@ La Domain Layer del Coffee Lot Management Bounded Context encapsula la lógica d
    - **Propósito**: Verifica autenticidad de información de origen.
    - **Métodos**: `verifyOriginData(OriginData data)`.
 
-### 4.2.2.4. Infrastructure Layer
+### 5.2.4. Infrastructure Layer
 
 #### **Persistencia (JPA Repositories)**
 1. **CoffeeLotRepository**
@@ -2372,30 +2931,30 @@ La Domain Layer del Coffee Lot Management Bounded Context encapsula la lógica d
 
 ---
 
-### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams
+### 5.2.5. Bounded Context Software Architecture Component Level Diagrams
 
 [![structurizr-106404-Coffee-Lot-Component-Diagram.png](https://i.postimg.cc/JnFRMp6H/structurizr-106404-Coffee-Lot-Component-Diagram.png)](https://postimg.cc/JDjfQ5WR)
 
-### 4.2.2.6.  Bounded Context Software Architecture Code Level Diagrams
+### 5.2.6.  Bounded Context Software Architecture Code Level Diagrams
 
 En esta sección se presentan los diagramas UML a nivel de código para el contexto determinado.
 
-#### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams
+#### 5.2.6.1. Bounded Context Domain Layer Class Diagrams
 
 [![Captura-de-pantalla-2025-09-20-185124.png](https://i.postimg.cc/vmv6GxVw/Captura-de-pantalla-2025-09-20-185124.png)](https://postimg.cc/JyGhqnxp)
 
-#### 4.2.2.6.2. Bounded Context Database Design Diagram
+#### 5.2.6.2. Bounded Context Database Design Diagram
 
 [![Captura-de-pantalla-2025-09-20-185158.png](https://i.postimg.cc/5NvBZ0nb/Captura-de-pantalla-2025-09-20-185158.png)](https://postimg.cc/Czhn8w3Q)
 
 
 ---
 
-## 4.2.3. Bounded Context: Grain Classification
+## 5.3. Bounded Context: Grain Classification
 
 El **Grain Classification Bounded Context** es el corazón del sistema BeanDetect AI, responsable de la clasificación automática de granos de café utilizando inteligencia artificial para el análisis de imágenes por computadora. Este contexto procesa imágenes de granos, detecta defectos y mide parámetros de calidad.
 
-### 4.2.3.1. Domain Layer
+### 5.3.1. Domain Layer
 
 La Domain Layer del Grain Classification Bounded Context encapsula la lógica de negocio más compleja del sistema, incluyendo algoritmos de clasificación, detección de defectos y cálculo de métricas de calidad basadas en estándares internacionales del café.
 
@@ -2559,7 +3118,7 @@ La Domain Layer del Grain Classification Bounded Context encapsula la lógica de
    - Se dispara al actualizar modelo de IA.
    - **Atributos**: `oldVersion`, `newVersion`, `improvementMetrics`.
 
-### 4.2.3.2. Interface Layer
+### 5.3.2. Interface Layer
 
 #### **Controllers**
 1. **ClassificationController**
@@ -2609,7 +3168,7 @@ La Domain Layer del Grain Classification Bounded Context encapsula la lógica de
 3. **DefectDetectionResourceFromEntityAssembler**
    - Convierte entidad `DefectDetection` a `DefectDetectionResource`.
 
-### 4.2.3.3. Application Layer
+### 5.3.3. Application Layer
 
 #### **Command Services**
 1. **ClassificationCommandServiceImpl**
@@ -2661,7 +3220,7 @@ La Domain Layer del Grain Classification Bounded Context encapsula la lógica de
      - `segmentGrains(Image image)`: Separa granos individuales en imagen.
      - `calibrateColorProfile(Image image)`: Calibra perfil de colores.
 
-### 4.2.3.4. Infrastructure Layer
+### 5.3.4. Infrastructure Layer
 
 #### **Persistencia (JPA Repositories)**
 1. **ClassificationSessionRepository**
@@ -2707,30 +3266,30 @@ La Domain Layer del Grain Classification Bounded Context encapsula la lógica de
      - `handle(DefectDetectedEvent)`: Alerta sistemas de calidad.
      - `handle(ModelRecalibrationEvent)`: Actualiza configuraciones dependientes.
 
-### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams
+### 5.3.5. Bounded Context Software Architecture Component Level Diagrams
 
 [![structurizr-106404-Grain-Classification-Component-Diagram.png](https://i.postimg.cc/W3zsBBnP/structurizr-106404-Grain-Classification-Component-Diagram.png)](https://postimg.cc/WFRRrfC9)
 
-### 4.2.3.6.  Bounded Context Software Architecture Code Level Diagrams
+### 5.3.6.  Bounded Context Software Architecture Code Level Diagrams
 
 En esta sección se presentan los diagramas UML a nivel de código para el contexto determinado.
 
-#### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams
+#### 5.3.6.1. Bounded Context Domain Layer Class Diagrams
 
 [![Captura-de-pantalla-2025-09-20-184956.png](https://i.postimg.cc/yx8mMXQG/Captura-de-pantalla-2025-09-20-184956.png)](https://postimg.cc/hzNQxxq8)
 
-#### 4.2.3.6.2. Bounded Context Database Design Diagram
+#### 5.3.6.2. Bounded Context Database Design Diagram
 
 [![Captura-de-pantalla-2025-09-20-185024.png](https://i.postimg.cc/PqnmXkVY/Captura-de-pantalla-2025-09-20-185024.png)](https://postimg.cc/qNQtwWTv)
 
 
 ---
 
-## 4.2.4. Bounded Context: Traceability & Certification
+## 5.4. Bounded Context: Traceability & Certification
 
 El **Traceability & Certification Bounded Context** es responsable de proporcionar trazabilidad y certificación digital para los lotes de café en el sistema BeanDetect AI. Este contexto garantiza la transparencia, confianza e inmutabilidad de los registros mediante tecnología blockchain, generando certificados digitales, códigos QR y manteniendo registros auditables desde el origen hasta el consumidor final.
 
-### 4.2.4.1. Domain Layer
+### 5.4.1. Domain Layer
 
 La Domain Layer del Traceability & Certification Bounded Context encapsula la lógica de negocio relacionada con la trazabilidad completa, certificación digital y verificación de autenticidad de los lotes de café según estándares internacionales de comercio justo y sostenibilidad.
 
@@ -2894,7 +3453,7 @@ La Domain Layer del Traceability & Certification Bounded Context encapsula la l�
    - Se dispara al revocar un certificado.
    - **Atributos**: `certificateId`, `revocationReason`, `timestamp`.
 
-### 4.2.4.2. Interface Layer
+### 5.4.2. Interface Layer
 
 #### **Controllers**
 1. **TraceabilityController**
@@ -2945,7 +3504,7 @@ La Domain Layer del Traceability & Certification Bounded Context encapsula la l�
 3. **CertificateResourceFromEntityAssembler**
    - Convierte entidad `Certificate` a `CertificateResource`.
 
-### 4.2.4.3. Application Layer
+### 5.4.3. Application Layer
 
 #### **Command Services**
 1. **TraceabilityCommandServiceImpl**
@@ -3006,7 +3565,7 @@ La Domain Layer del Traceability & Certification Bounded Context encapsula la l�
      - `verifySatelliteImagery(Coordinates coords)`: Verifica con imágenes satelitales.
      - `validateClimateData(OriginData data)`: Valida datos climáticos.
 
-### 4.2.4.4. Infrastructure Layer
+### 5.4.4. Infrastructure Layer
 
 #### **Persistencia (JPA Repositories)**
 1. **TraceabilityRecordRepository**
@@ -3051,29 +3610,29 @@ La Domain Layer del Traceability & Certification Bounded Context encapsula la l�
      - `handle(CoffeeLotClassifiedEvent)`: Registra etapa de clasificación.
      - `handle(CertificateIssuedEvent)`: Actualiza estado de trazabilidad.
 
-### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams
+### 5.4.5. Bounded Context Software Architecture Component Level Diagrams
 
 [![structurizr-106404-Traceability-Component-Diagram.png](https://i.postimg.cc/jS6qPQ5B/structurizr-106404-Traceability-Component-Diagram.png)](https://postimg.cc/nXzttmq1)
 
-### 4.2.4.6.  Bounded Context Software Architecture Code Level Diagrams
+### 5.4.6.  Bounded Context Software Architecture Code Level Diagrams
 
 En esta sección se presentan los diagramas UML a nivel de código para el contexto determinado.
 
-#### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams
+#### 5.4.6.1. Bounded Context Domain Layer Class Diagrams
 
 [![Captura-de-pantalla-2025-09-20-184806.png](https://i.postimg.cc/G3KzX97N/Captura-de-pantalla-2025-09-20-184806.png)](https://postimg.cc/Yj4192wf)
 
-#### 4.2.4.6.2. Bounded Context Database Design Diagram
+#### 5.4.6.2. Bounded Context Database Design Diagram
 
 [![Captura-de-pantalla-2025-09-20-184712.png](https://i.postimg.cc/xCKpfRPT/Captura-de-pantalla-2025-09-20-184712.png)](https://postimg.cc/FdHVG0q2)
 
 ---
 
-## 4.2.5. Bounded Context: Reporting & Analytics
+## 5.5. Bounded Context: Reporting & Analytics
 
 El **Reporting & Analytics Bounded Context** es responsable de transformar datos operacionales en insights accionables para productores y cooperativas en el sistema BeanDetect AI. Este contexto genera reportes comprehensivos, análisis de tendencias, dashboards interactivos y alertas automáticas basadas en métricas de calidad, rendimiento de cosecha y patrones históricos de producción cafetalera.
 
-### 4.2.5.1. Domain Layer
+### 5.5.1. Domain Layer
 
 La Domain Layer del Reporting & Analytics Bounded Context encapsula la lógica de negocio relacionada con la generación de reportes, cálculo de métricas agregadas, análisis de tendencias y generación de insights para la toma de decisiones en la industria cafetalera.
 
@@ -3245,7 +3804,7 @@ La Domain Layer del Reporting & Analytics Bounded Context encapsula la lógica d
    - Se dispara al completar análisis de tendencias.
    - **Atributos**: `analysisId`, `trendDirection`, `forecast`.
 
-### 4.2.5.2. Interface Layer
+### 5.5.2. Interface Layer
 
 #### **Controllers**
 1. **ReportController**
@@ -3296,7 +3855,7 @@ La Domain Layer del Reporting & Analytics Bounded Context encapsula la lógica d
 3. **QualityMetricsResourceFromEntityAssembler**
    - Convierte entidad `QualityMetrics` a `QualityMetricsResource`.
 
-### 4.2.5.3. Application Layer
+### 5.5.3. Application Layer
 
 #### **Command Services**
 1. **ReportCommandServiceImpl**
@@ -3349,7 +3908,7 @@ La Domain Layer del Reporting & Analytics Bounded Context encapsula la lógica d
      - `checkThresholds(MetricValue value)`: Verifica thresholds configurados.
      - `generateAlert(AlertCondition condition)`: Genera alerta apropiada.
 
-### 4.2.5.4. Infrastructure Layer
+### 5.5.4. Infrastructure Layer
 
 #### **Persistencia (JPA Repositories)**
 1. **ReportRepository**
@@ -3391,30 +3950,30 @@ La Domain Layer del Reporting & Analytics Bounded Context encapsula la lógica d
      - `handle(ClassificationCompletedEvent)`: Actualiza métricas con nueva clasificación.
      - `handle(CoffeeLotRegisteredEvent)`: Actualiza estadísticas de producción.
 
-### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams
+### 5.5.5. Bounded Context Software Architecture Component Level Diagrams
 
 [![structurizr-106404-Reporting-Component-Diagram.png](https://i.postimg.cc/1zJ9YmDH/structurizr-106404-Reporting-Component-Diagram.png)](https://postimg.cc/SXYFnpT2)
 
-### 4.2.5.6.  Bounded Context Software Architecture Code Level Diagrams
+### 5.5.6.  Bounded Context Software Architecture Code Level Diagrams
 
 En esta sección se presentan los diagramas UML a nivel de código para el contexto determinado.
 
-#### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams
+#### 5.5.6.1. Bounded Context Domain Layer Class Diagrams
 
 [![Captura-de-pantalla-2025-09-20-183847.png](https://i.postimg.cc/cHVkZz3z/Captura-de-pantalla-2025-09-20-183847.png)](https://postimg.cc/TLJJJCCj)
 
-#### 4.2.5.6.2. Bounded Context Database Design Diagram
+#### 5.5.6.2. Bounded Context Database Design Diagram
 
 [![Captura-de-pantalla-2025-09-20-184546.png](https://i.postimg.cc/2yQstYtG/Captura-de-pantalla-2025-09-20-184546.png)](https://postimg.cc/H8LvJqd8)
 
 
 ---
 
-## 4.2.6. Bounded Context: User Support
+## 5.6. Bounded Context: User Support
 
 El **User Support Bounded Context** gestiona el soporte técnico y atención al cliente, incluyendo canales como WhatsApp, soporte telefónico y documentación de ayuda. Además gestiona tickets de solicitudes para grabar la fecha en la base de datos.
 
-### 4.2.6.1. Domain Layer
+### 5.6.1. Domain Layer
 
 La Domain Layer del User Support Bounded Context encapsula la lógica de negocio relacionada con la gestión de tickets de soporte y el intercambio de mensajes entre usuarios y el equipo de soporte técnico. Además, genera los tickets de la solicitud a la consulta para que la hora quede registrada.
 
@@ -3537,7 +4096,7 @@ La Domain Layer del User Support Bounded Context encapsula la lógica de negocio
    - Se dispara al resolver ticket.
    - **Atributos**: `ticketId`, `resolutionTime`, `userId`.
 
-### 4.2.6.2. Interface Layer
+### 5.6.2. Interface Layer
 
 #### **Controllers**
 1. **SupportTicketController**
@@ -3581,7 +4140,7 @@ La Domain Layer del User Support Bounded Context encapsula la lógica de negocio
 3. **TicketMessageResourceFromEntityAssembler**
    - Convierte entidad `TicketMessage` a `TicketMessageResource`.
 
-### 4.2.6.3. Application Layer
+### 5.6.3. Application Layer
 
 #### **Command Services**
 1. **SupportTicketCommandServiceImpl**
@@ -3618,7 +4177,7 @@ La Domain Layer del User Support Bounded Context encapsula la lógica de negocio
      - `canUserUpdateTicket(Long userId, SupportTicket ticket)`: Verifica permisos.
      - `validateTicketContent(String title, String description)`: Valida contenido.
 
-### 4.2.6.4. Infrastructure Layer
+### 5.6.4. Infrastructure Layer
 
 #### **Persistencia (JPA Repositories)**
 1. **SupportTicketRepository**
@@ -3656,27 +4215,24 @@ La Domain Layer del User Support Bounded Context encapsula la lógica de negocio
      - `handle(TicketMessageAddedEvent)`: Procesa nuevo mensaje.
      - `handle(TicketResolvedEvent)`: Procesa resolución y actualiza métricas.
 
-### 4.2.6.5. Bounded Context Software Architecture Component Level Diagrams
+### 5.6.5. Bounded Context Software Architecture Component Level Diagrams
 
 [![structurizr-106404-User-Support-Component-Diagram.png](https://i.postimg.cc/YCBqvyp1/structurizr-106404-User-Support-Component-Diagram.png)](https://postimg.cc/CzJVt7n1)
 
-### 4.2.6.6.  Bounded Context Software Architecture Code Level Diagrams
+### 5.6.6.  Bounded Context Software Architecture Code Level Diagrams
 
 En esta sección se presentan los diagramas UML a nivel de código para el contexto determinado.
 
-#### 4.2.6.6.1. Bounded Context Domain Layer Class Diagrams
+#### 5.6.6.1. Bounded Context Domain Layer Class Diagrams
 
 [![Captura-de-pantalla-2025-09-20-183028.png](https://i.postimg.cc/RhS91qs9/Captura-de-pantalla-2025-09-20-183028.png)](https://postimg.cc/ygbws6Cr)
 
-#### 4.2.6.6.2. Bounded Context Database Design Diagram
+#### 5.6.6.2. Bounded Context Database Design Diagram
 
 [![Captura-de-pantalla-2025-09-20-182449.png](https://i.postimg.cc/BbTLb880/Captura-de-pantalla-2025-09-20-182449.png)](https://postimg.cc/bSvNFwHC)
 
 ---
-# Capítulo V: Tactical-Level Software Design
 
-
----
 # Capítulo VI: Solution UX Design.
 ## 6.1. Style Guidelines.
 ### 6.1.1. General Style Guidelines.
@@ -3802,21 +4358,313 @@ Enlace de figma: https://www.figma.com/design/ockCQUwKAM1FR422KyQtyB/DETECT-BEAN
 
 ### 6.4.1. Applications Wireframes.
 
+Los wireframes de la aplicación fueron desarrollados utilizando la herramienta Figma en el siguiente enlace:
+https://www.figma.com/design/g2Q08oeYK9nbmza7fBzN21/Dev-Beans?node-id=1-2
+
+**Wireframe 1: Registro de usuarios**
+
+[![Registro-como-cooperativa.png](https://i.postimg.cc/vTddLr4B/Registro-como-cooperativa.png)](https://postimg.cc/1nMTyNch)
+
+La imagen muestra la pantalla de registro para cooperativas cafetaleras. El formulario solicita datos clave como nombre de la cooperativa, representante legal, número de asociados, correo electrónico, teléfono y contraseña. El diseño es claro y accesible, facilitando el alta de nuevas organizaciones en la plataforma. Además tendra una barra conformada por dos botones seleccionables para acceder al registro del otro tipo de usuario.<br>
+
+**Wireframe 2: Inicio de sesión**
+
+[![Inicio-de-sesi-n.png](https://i.postimg.cc/8cVVBR7C/Inicio-de-sesi-n.png)](https://postimg.cc/TLQSTWq8)
+
+Esta imagen corresponde a la pantalla de inicio de sesión. Permite a productores y cooperativas acceder a sus cuentas ingresando correo electrónico y contraseña. Incluye opciones para recuperación de contraseña y registro, priorizando la simplicidad y seguridad.<br>
+
+**Wireframe 3: Dashboard**
+
+[![Dashboard.png](https://i.postimg.cc/prttYfmX/Dashboard.png)](https://postimg.cc/wyFP9s5S)
+
+La imagen presenta el dashboard principal de la aplicación. Aquí los usuarios visualizan métricas clave como cantidad de lotes, calidad promedio, lotes listos para exportar y defectos críticos detectados. El dashboard ofrece accesos rápidos a las principales funcionalidades y se adapta según el tipo de usuario.<br>
+
+**Wireframe 4: Coffee Lot Management**
+
+[![Lotes.png](https://i.postimg.cc/J0WWcNsr/Lotes.png)](https://postimg.cc/ZBjgJyP2)
+
+Esta pantalla muestra la sección de gestión de lotes de café. Los usuarios pueden ver la lista de lotes registrados, su estado (pendiente, clasificado, certificado), fechas y acceder a acciones como editar, eliminar o iniciar clasificación. La interfaz facilita el seguimiento y organización de la producción.<br>
+
+**Wireframe 5: Adding Coffee Lot**
+
+[![Creaci-n-de-nuevo-lote.png](https://i.postimg.cc/rsLLC1DL/Creaci-n-de-nuevo-lote.png)](https://postimg.cc/WFSKsJm9)
+
+Esta pantalla muestra el form de creación de un nuevo lote de granos de café para su consecuente clasificación automática.<br>
+
+**Wireframe 6: Reporting & Analytics**
+
+[![Reportes.png](https://i.postimg.cc/gjPPqVxc/Reportes.png)](https://postimg.cc/Vr4Tzb92)
+
+La imagen corresponde a la sección de reportes, donde se generan y visualizan informes de clasificación, calidad y trazabilidad. Los usuarios pueden descargar reportes, analizar tendencias históricas y comparar resultados entre lotes o productores.<br>
+
+**Wireframe 7: Settings**
+
+[![Ajustes.png](https://i.postimg.cc/J0WWcNs1/Ajustes.png)](https://postimg.cc/hzMwK78w)
+
+Esta pantalla muestra la sección de ajustes de la aplicación. Permite modificar información personal, cambiar contraseña, configurar preferencias de idioma y notificaciones, y gestionar opciones avanzadas como integración con sistemas externos.<br>
+
+
 ### 6.4.2. Applications Wireflow Diagrams.
 
+Esta sección presenta la propuesta de Wireflows para la aplicación, diseñados para visualizar de manera clara y secuencial los pasos que sigue un usuario para alcanzar un objetivo específico (User goal) dentro del sistema. Para cada User goal relevante, se ha considerado el User Persona correspondiente y se ha elaborado un Wireflow que ilustra la ruta típica de interacción, mostrando cómo las acciones del usuario provocan cambios en las pantallas (Wireframes) y el estado de la aplicación.
+
+### User Goal 1: Registrar y autenticar cuenta
+
+**Flujo:** El usuario accede al login, selecciona "Regístrate aquí", completa el formulario de cooperativa (nombre, correo, teléfono, NIT, ubicación, representante legal, contraseñas), valida que coincidan las contraseñas, presiona "Crear Cuenta de Cooperativa", y el sistema redirige al login para autenticación. Tras ingresar credenciales, accede al Dashboard con métricas de lotes, calidad y defectos.
+
+<img src="./assets/images/wireflow/UG01.png" style="display: block; margin: 0 auto;"/>
+
+**Interacciones clave:** Toggle Productor/Cooperativa, validación de contraseñas coincidentes, botón de acción naranja, redirección automática post-registro.
+
+***
+
+### User Goal 2: Gestionar lotes de café
+
+**Flujo:** Desde el Dashboard, el usuario visualiza métricas (24 lotes, 85.5% calidad promedio) y lotes recientes. Navega a "Lotes" en el menú lateral, donde ve una tabla con ID, fecha, peso, variedad, proceso, calidad y estado. Usa la barra de búsqueda para filtrar o presiona "+ Nuevo Lote" para crear uno. Completa campos y guarda. Puede ver detalles, editar o eliminar mediante iconos de acción en cada fila.
+
+<img src="./assets/images/wireflow/UG02.png" style="display: block; margin: 0 auto;"/>
+
+**Interacciones clave:** Tabla interactiva con badges de estado (verde/amarillo), barra de búsqueda, botones de acción por fila, formulario modal de creación.
+
+***
+
+### User Goal 3: Consultar reportes y certificados
+
+**Flujo:** El usuario accede a "Reportes" y visualiza tres secciones: Distribución de Calidad (Premium 45%, Estándar 35%, Básico 20%), Análisis de Defectos (granos negros: 2 lotes, granos partidos: 5 lotes), y Certificados de Exportación (LOT-2024-001, 003, 005). Puede "Ver QR" o "Descargar" certificados. Al final revisa recomendaciones del sistema sobre proceso de secado y selección manual.
+
+<img src="./assets/images/wireflow/UG03.png" style="display: block; margin: 0 auto;"/>
+
+**Interacciones clave:** Gráficos de barras horizontales, alertas con íconos de severidad, botones Ver QR/Descargar, lista de recomendaciones.
+
+***
+
+### User Goal 4: Configurar perfil y notificaciones
+
+**Flujo:** El usuario accede a "Configuración" y actualiza Información Personal (nombre, correo, teléfono, ubicación). Presiona "Guardar Cambios". En Notificaciones, activa/desactiva toggles de Email, WhatsApp y Alertas de Clasificación (guardado automático). En Seguridad, ingresa contraseña actual, nueva contraseña y confirmación, luego actualiza (requiere reinicio de sesión).
+
+<img src="./assets/images/wireflow/UG04.png" style="display: block; margin: 0 auto;"/>
+
+**Interacciones clave:** Formularios editables, toggles de notificación con guardado automático, validación de contraseñas, botón de guardado para información personal.
+
+
+
+### 6.4.3. Application Mock-ups.
+#### Login
+<img src="./assets/images/mockups/login.png" style="display: block; margin: 0 auto;"/>
+
+#### Register
+<img src="./assets/images/mockups/register.png" style="display: block; margin: 0 auto;"/>
+
+#### Main dashboard
+<img src="./assets/images/mockups/dashboard.png" style="display: block; margin: 0 auto;"/>
+
+#### Lotes
+<img src="./assets/images/mockups/lotes.png" style="display: block; margin: 0 auto;"/>
+
+#### Reportes
+<img src="./assets/images/mockups/reportes.png" style="display: block; margin: 0 auto;"/>
+
+#### Configuraciones
+<img src="./assets/images/mockups/configuracion.png" style="display: block; margin: 0 auto;"/>
+
+### 6.4.4. Applications User Flow Diagrams.
+### User Flow 1: Registro e inicio de sesión
+
+**Happy Path:**
+Usuario llega a login → Clic en "Regístrate aquí" → Selecciona tab "Cooperativa" → Completa campos (cooperativa, correo, teléfono, NIT, ubicación, representante, contraseñas) → Contraseñas coinciden → Presiona "Crear Cuenta de Cooperativa" → Sistema registra y redirige a login → Ingresa credenciales → Accede al Dashboard.
+
+<img src="./assets/images/userflow/UF01.png" style="display: block; margin: 0 auto;"/>
+
+**Unhappy Paths:**
+- Contraseñas no coinciden: error bajo campo "Confirmar Contraseña"
+- Email ya registrado: alerta con sugerencia de ir a login
+- Campos incompletos: marca campos vacíos en rojo
+- Credenciales incorrectas: mensaje de error con opción "¿Olvidaste tu contraseña?"
+
+---
+
+### User Flow 2: Gestión de lotes
+
+**Happy Path:**
+Usuario en Dashboard ve métricas → Clic en "Lotes" → Visualiza tabla completa → Presiona "+ Nuevo Lote" → Completa formulario (ID, fecha, peso, variedad, proceso) → Guarda → Sistema actualiza tabla con nuevo lote → Usuario busca lotes específicos → Clic en ícono "ojo" para ver detalles completos.
+
+<img src="./assets/images/userflow/UF02.png" style="display: block; margin: 0 auto;"/>
+
+**Unhappy Paths:**
+- Búsqueda sin resultados: "No se encontraron lotes"
+- Error al guardar: alerta de reintento
+- Campos incompletos: bloqueo de guardado
+- Eliminación: confirmación "¿Está seguro?"
+
+***
+
+### User Flow 3: Reportes y certificados
+
+**Happy Path:**
+Usuario en Dashboard → Clic en "Reportes" → Visualiza Distribución de Calidad con porcentajes → Scroll a Análisis de Defectos → Identifica defectos primarios/secundarios → Scroll a Certificados → Clic en "Ver QR" para LOT-2024-001 → Modal con código QR → Cierra modal → Clic en "Descargar" para LOT-2024-003 → PDF descargado → Revisa recomendaciones del sistema.
+
+<img src="./assets/images/userflow/UF03.png" style="display: block; margin: 0 auto;"/>
+
+**Unhappy Paths:**
+- Sin certificados: "No hay certificados disponibles aún"
+- Error al descargar: alerta de reintento
+- Defectos críticos altos: alerta roja "Acción requerida"
+- Datos insuficientes: "Registre más lotes para análisis"
+
+***
+
+### User Flow 4: Configuración de perfil
+
+**Happy Path:**
+Usuario → Clic en "Configuración" → Edita nombre y teléfono en Información Personal → Presiona "Guardar Cambios" → Confirmación exitosa → Activa toggles de notificaciones (guardado automático) → Ingresa contraseña actual en Seguridad → Escribe nueva contraseña → Confirma nueva contraseña → Actualiza → Sistema confirma y solicita reinicio de sesión.
+
+<img src="./assets/images/userflow/UF04.png" style="display: block; margin: 0 auto;"/>
+
+**Unhappy Paths:**
+- Contraseña actual incorrecta: error "Contraseña incorrecta"
+- Contraseñas nuevas no coinciden: error de validación
+- Email inválido: "Ingrese correo válido"
+- Error de conexión: "Verifique su conexión"
+- Contraseña débil: "Mínimo 8 caracteres"
+
+## 6.5. Application Prototyping. 
+<img src="./assets/images/prototype/prototype.png" style="display: block; margin: 0 auto;"/>
+
+URL del prototipo:   
+https://www.figma.com/proto/g2Q08oeYK9nbmza7fBzN21/Dev-Beans?node-id=1-3&t=NDgiyFs4mZ0vjUCf-1
+
+---
+# Capítulo VII: Product Implementation, Validation & Deployment 
+## 7.1. Software Configuration Management
+### 7.1.1. Software Development Environment Configuration
+A continuación, describiremos los productos de software que hemos empleado durante el desarrollo del proyecto.
+
+#### Project Management
+
+  * Trello: https://trello.com/  
+La plataforma de Trello se empleó para la gestión de las tareas y la organización del flujo del trabajo en el proyecto. Presentándose las tareas dentro de las tarjetas en listas con el integrante encargado de realizarlas. Además, utilizamos las funcionalidades como agregar las etiquetas de colores y marcar el proceso de las tareas. De esta manera pudimos hacer seguimiento a nuestros avances en el proyecto.
+  * Notion: https://www.notion.so/  
+La plataforma de Notion fue utilizada para la colaboración de los integrantes con el proyecto. Se crearon calendarios y listas con las fechas de las reuniones del equipo. Además, se hizo uso de herramientas como comentarios y menciones para fomentar el trabajo y colaboración en equipo.
+
+#### Requirements Management
+  * Trello: https://trello.com/  
+Empleamos Trello para organizar los requisitos de la aplicación. En el que tenemos al product backlog el cual ordenamos según la prioridad aplicando Fibonacci para enumerar las historias de usuario y en otra sección organizándolas según las épicas.
+
+* Product UX/UI Design
+  * Figma: https://www.figma.com/  
+La plataforma de Figma nos ayudó a desarrollar los wireframes, mockups y prototyping del mobile applications.
+  * Miro: https://miro.com/es/  
+Miro nos fue de utilidad para poder realizar los As-Is Scenario Mapping y  To-Be Scenraio Mapping para cada uno de los segmentos objetivos.
+  * UXPressia: https://uxpressia.com/  
+La plataforma UXPressia se empleó para la creación de los User Personas, Empathy Maps, Journey Maps e Impact Maps. Hemos hecho uso de las plantillas que UXPressia nos ofrece para elaborar cada una de ellas. Nos permitió exportar lo que se realizó para incluirlo en el trabajo.
+
+#### Software Development
+
+  * Landing Page:  
+Para el desarrollo de la landing page se hará empleó de HTML5, CSS y JavaScript.
+  * Frontend Web Application:  
+Para desarrollar la aplicación web frontend, es esencial tener una comprensión sólida de los fundamentos de HTML, CSS y JavaScript. En nuestro caso, optamos por utilizar Angular como framework de JavaScript. Además, para facilitar la creación de componentes reutilizables y accesibles, decidimos emplear PrimeNG como biblioteca de componentes UI. Nuestro stack tecnológico incluye el uso del lenguaje Java con el framework Spring Boot, junto con HTML, Angular, JavaScript, CSS y una base de datos MySQL.
+
+* Software Testing
+Para las pruebas funcionales del software, tanto como de la Landing page y de la aplicación web, hemos utilizado las herramientas de desarrollo de los navegadores web siguientes: Google Chrome (https://www.google.com/chrome/), Microsoft Edge (https://www.microsoft.com/en-us/edge) y Mozilla Firefox (https://www.mozilla.org/en-US/firefox/browsers/).
+
+#### Software Deployment
+  * Netlify: https://www.netlify.com/  
+Para implementar el despliegue de la Landing Page, se llevó a cabo la conexión entre el repositorio de Github y Netlify. Esto permite que Netlify maneje automáticamente la implementación de la Landing Page cada vez que se realice una actualización en el repositorio.
+
+#### Software Documentation
+  * Google Drive: https://www.google.com/intl/es-419_pe/drive/  
+Esta plataforma fue empleada para crear documentos mediante Google Docs, el cual nos permite trabajar de manera colaborativa los informes de las entregas.
+  * Structurizr: https://structurizr.com/  
+Herramienta utilizada para la creación de diagramas C4 (diagrama de contexto, diagrama de contenedor y diagrama de componentes). Para elaborar los diagramas fue necesario utilizar una sintaxis parecida a un lenguaje de programación.
+  * GitHub: https://github.com/  
+Plataforma empleada tanto como para la creación de la documentación y de la Landing page. Nuestro eligió esta plataforma debido a que nos permite trabajar de manera colaborativa.
+
+### 7.1.2. Source Code Management
+La administración y estructuración de las múltiples modificaciones se realizaron mediante la creación de un repositorio en GitHub para el proyecto. Nuestra organización se estructuró de la siguiente manera:
+
+* Organización: [https://github.com/upc-pre-202520-1asi0728-7291-DevBeans ](https://github.com/upc-pre-202520-1asi0728-7291-DevBeans)
+* Repositorio de la Landing page: [https://dev-beans-landing-page.netlify.app ](https://dev-beans-landing-page.netlify.app)
+
+Además, con el objetivo de mejorar el control sobre la creación de ramas y la implementación de cambios en el código fuente, se procedió a utilizar Gitflow.
+
+De esta forma, se establecieron 2 ramas principales: main y develop.
+
+#### Ramas principales:  
+  * Rama “main”:  
+  En esta rama se almacenan las versiones oficiales de nuestro repositorio para pasarlas a producción.
+  * Rama “develop”:  
+  Esta rama se utilizará como punto de integración para las ramas de “feature”. Una vez que el  “head” sea estable y el equipo lo considere listo para el lanzamiento, se fusionará con la rama “release”.
+
+#### Ramas auxiliares:  
+  * Rama “release”:  
+  La rama “release” se emplea para la preparación del lanzamiento de una nueva versión en la rama “main” ayudando a controlar las versiones de código. Aquí se pueden solucionar errores menores y preparar los datos para la versión. Esta rama permitirá liberar a la rama “develop” de estas tareas preparatorias y evita demoras en el desarrollo mientras se prepara para el lanzamiento. 
+  * Rama “feature”:  
+  En las ramas “feature” se desarrollan las características generales que se integrarán en la rama “develop”. Estas características son aquellas funcionalidades solicitadas por los usuarios tanto en la página de inicio como en la aplicación web. Por ejemplo, la rama feature/navbar.
+  * Rama “hotfix”:  
+  Esta rama se utiliza para corregir urgentemente errores en la última versión de la rama “main” que no pueden esperar hasta el próximo lanzamiento para ser solucionados.
+
+### 7.1.3. Source Code Style Guide & Conventions
+Utilizaremos el lenguaje de etiquetas HTML para el desarrollo principal de nuestra Landing page.
+* Utilizaremos el lenguaje CSS, que nos permitirá realizar los estilos de la estructura de nuestra Landing Page
+* Implementaremos el lenguaje de JavaScript para brindar las funcionalidades a nuestra Landing page. 
+* Utilizaremos el lenguaje Gherkin que se usará para realizar los diseños de prueba de cada historia de usuario, contando con su estructura básica. 
+
+#### Convenciones de Commits:  
+Nuestro equipo de desarrollo sigue las Convenciones de Commits, adoptando el formato de los “Conventional Commits” en su versión 1.0.0 (disponible en https://www.conventionalcommits.org/en/v1.0.0/) para garantizar una fácil comprensión de nuestros registros. Por lo tanto, nos regimos por la siguiente estructura:
+
+Donde:
+
+```<type>[scope opcional]: <description>```
+
+  * type: Indica el tipo de modificación realizada, limitado a opciones como feat, fix, docs, etc.
+  * scope: Define el alcance del cambio realizado en nuestro código.
+  * descripción: Ofrece un resumen conciso de los cambios implementados.
+
+#### Convenciones de versionado de lanzamientos
+Para la gestión de versiones, seguimos el estándar “Semantic Versioning 2.0.0”. En este formato las versiones se presentan como (X.Y.Z), con las siguientes interpretaciones: 
+  * X: Indica una versión principal que incorpora cambios incompatibles con versiones anteriores. Iniciamos en 0 durante la etapa de desarrollo inicial y transicionamos a 1 cuando la versión esté lista para su lanzamiento público. Por convención, Y y Z se reinician a 0 cuando X aumenta.
+  * Y: Representa una versión secundaria, que abarca cambios compatibles con versiones anteriores. Además, esta incluye los commits provenientes de las “release branches” cada vez que se agregan nuevas funcionalidades. Convencionalmente, Z se reinicia a 0 cuando Y aumenta.
+  * Z: Refleja parches y correcciones de errores menores, integrando commits realizados en la “rama de corrección” y fusionados con la rama principal.
+
+### 7.1.4. Software Deployment Configuration
+#### Acceder a Netlify y seleccionar “Import an existing project”
+Ingresa a la plataforma de Netlify con tu cuenta activa. Una vez dentro del panel principal, dirígete a la opción “Import an existing project”, que permite iniciar el proceso de despliegue de un proyecto previamente desarrollado y alojado en un repositorio externo.
+
+<img src="./assets/images/softwareDeploy/importProject.png" style="display: block; margin: 0 auto;">
+
+#### Elegir la opción “Deploy with GitHub” para vincular el repositorio
+En el siguiente paso, selecciona “Deploy with GitHub” para conectar tu cuenta de GitHub con Netlify. Esta integración permite importar directamente el código fuente desde el repositorio que contiene tu proyecto.
+
+<img src="./assets/images/softwareDeploy/deployProject.png" style="display: block; margin: 0 auto;">
+
+####  Seleccionar la organización y el repositorio correspondiente
+Una vez vinculada la cuenta, el sistema mostrará las organizaciones disponibles. Selecciona la organización adecuada y dentro de ella, busca el repositorio específico del proyecto que deseas subir a producción. Luego, configura los parámetros necesarios para el despliegue, como la rama principal, comandos de build y directorio de salida.
+
+#### Iniciar el despliegue presionando el botón del proyecto
+Finalmente, revisa la configuración y presiona el botón que lleva el nombre del proyecto para iniciar el proceso de despliegue. Netlify comenzará a compilar y publicar tu aplicación automáticamente en la web.
+
+
+<img src="./assets/images/softwareDeploy/clickDeploy.png" style="display: block; margin: 0 auto;">
+
+### Link de nuestra landing page: https://healthsyn-landing.netlify.app
+
+<img src="./assets/images/softwareDeploy/landing.png" style="display: block; margin: 0 auto;">
 ---
 
 # Conclusiones
 
 **TB1**<br>
 
-Identificar contextos candidatos es un paso clave para gestionar la complejidad en el desarrollo de sistemas. Se trata de un análisis minucioso que busca entender los elementos centrales del sistema y sus interconexiones. A partir de ahí, se procede a agrupar estos elementos en 'contextos delimitados' lógicos y coherentes. Esta separación no solo facilita el diseño y la implementación, sino que también tiene como meta principal potenciar la escalabilidad, el desempeño y la mantenibilidad del sistema resultante.
-
-Identificar sistemas externos es importante para definir con claridad los límites del sistema y comprender las dependencias con su entorno. Este análisis permite reconocer qué funcionalidades provienen de terceros, qué servicios deben integrarse y qué restricciones externas condicionan el diseño. Además, visibiliza riesgos asociados, como la disponibilidad o confiabilidad de dichos sistemas, y orienta la planificación de mecanismos de integración, seguridad y monitoreo. En consecuencia, este paso no solo aporta a la correcta delimitación de responsabilidades, sino que también fortalece la robustez y resiliencia de la arquitectura.
+El equipo demostró una comprensión sólida de los fundamentos de arquitectura y análisis de sistemas, identificando contextos y dependencias externas de manera precisa. Este trabajo permitió establecer límites claros, fortalecer la integración entre componentes y sentar una base técnica coherente para el desarrollo posterior. La entrega refleja organización, colaboración efectiva y compromiso con la calidad técnica del proyecto.
 
 **TP**<br>
 
 En este hito, logramos mostrar una primera versión operativa del sistema BeanDetect AI, desarrollado para identificar y clasificar granos de café. Esta entrega representa un progreso importante, dado que nos posibilitó verificar la arquitectura sugerida, ratificar la integración de los módulos iniciales y recibir comentarios anticipados en relación con la facilidad de uso y la exactitud del sistema. Por lo tanto, hemos llegado a la conclusión de que este resultado es fundamental para el proyecto, ya que establece las bases para el avance de los entregables posteriores y garantiza que las mejoras y optimizaciones se lleven a cabo sobre un prototipo validado.
+
+**TB2**<br>
+
+El equipo logró consolidar una versión funcional y documentada del proyecto, integrando avances técnicos, de diseño y validación. Se fortaleció la colaboración entre áreas, asegurando coherencia entre prototipo, desarrollo y despliegue. La entrega refleja madurez en la gestión ágil y compromiso con la calidad del producto.
 
 ---
 
@@ -3858,3 +4706,9 @@ https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218167_upc_edu_pe/EbnQ4lfh
 
 #### Entrevistas de Needfinding
 https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218167_upc_edu_pe/EbacacS3n11GmQli8ek0ltABesH4olt1EDMLUzs-FrNg6w?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=xJtssj
+
+### TP
+
+#### Exposición
+
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218167_upc_edu_pe/EbIFbveYnTlJryYSABHzHBgB7aooUo_DddILv5icXM_Tnw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=rClZAn
