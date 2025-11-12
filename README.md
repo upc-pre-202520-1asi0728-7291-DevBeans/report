@@ -4534,18 +4534,137 @@ URL del prototipo:
 https://www.figma.com/proto/g2Q08oeYK9nbmza7fBzN21/Dev-Beans?node-id=1-3&t=NDgiyFs4mZ0vjUCf-1
 
 ---
+# Capítulo VII: Product Implementation, Validation & Deployment 
+## 7.1. Software Configuration Management
+### 7.1.1. Software Development Environment Configuration
+A continuación, describiremos los productos de software que hemos empleado durante el desarrollo del proyecto.
+
+#### Project Management
+
+  * Trello: https://trello.com/  
+La plataforma de Trello se empleó para la gestión de las tareas y la organización del flujo del trabajo en el proyecto. Presentándose las tareas dentro de las tarjetas en listas con el integrante encargado de realizarlas. Además, utilizamos las funcionalidades como agregar las etiquetas de colores y marcar el proceso de las tareas. De esta manera pudimos hacer seguimiento a nuestros avances en el proyecto.
+  * Notion: https://www.notion.so/  
+La plataforma de Notion fue utilizada para la colaboración de los integrantes con el proyecto. Se crearon calendarios y listas con las fechas de las reuniones del equipo. Además, se hizo uso de herramientas como comentarios y menciones para fomentar el trabajo y colaboración en equipo.
+
+#### Requirements Management
+  * Trello: https://trello.com/  
+Empleamos Trello para organizar los requisitos de la aplicación. En el que tenemos al product backlog el cual ordenamos según la prioridad aplicando Fibonacci para enumerar las historias de usuario y en otra sección organizándolas según las épicas.
+
+* Product UX/UI Design
+  * Figma: https://www.figma.com/  
+La plataforma de Figma nos ayudó a desarrollar los wireframes, mockups y prototyping del mobile applications.
+  * Miro: https://miro.com/es/  
+Miro nos fue de utilidad para poder realizar los As-Is Scenario Mapping y  To-Be Scenraio Mapping para cada uno de los segmentos objetivos.
+  * UXPressia: https://uxpressia.com/  
+La plataforma UXPressia se empleó para la creación de los User Personas, Empathy Maps, Journey Maps e Impact Maps. Hemos hecho uso de las plantillas que UXPressia nos ofrece para elaborar cada una de ellas. Nos permitió exportar lo que se realizó para incluirlo en el trabajo.
+
+#### Software Development
+
+  * Landing Page:  
+Para el desarrollo de la landing page se hará empleó de HTML5, CSS y JavaScript.
+  * Frontend Web Application:  
+Para desarrollar la aplicación web frontend, es esencial tener una comprensión sólida de los fundamentos de HTML, CSS y JavaScript. En nuestro caso, optamos por utilizar Angular como framework de JavaScript. Además, para facilitar la creación de componentes reutilizables y accesibles, decidimos emplear PrimeNG como biblioteca de componentes UI. Nuestro stack tecnológico incluye el uso del lenguaje Java con el framework Spring Boot, junto con HTML, Angular, JavaScript, CSS y una base de datos MySQL.
+
+* Software Testing
+Para las pruebas funcionales del software, tanto como de la Landing page y de la aplicación web, hemos utilizado las herramientas de desarrollo de los navegadores web siguientes: Google Chrome (https://www.google.com/chrome/), Microsoft Edge (https://www.microsoft.com/en-us/edge) y Mozilla Firefox (https://www.mozilla.org/en-US/firefox/browsers/).
+
+#### Software Deployment
+  * Netlify: https://www.netlify.com/  
+Para implementar el despliegue de la Landing Page, se llevó a cabo la conexión entre el repositorio de Github y Netlify. Esto permite que Netlify maneje automáticamente la implementación de la Landing Page cada vez que se realice una actualización en el repositorio.
+
+#### Software Documentation
+  * Google Drive: https://www.google.com/intl/es-419_pe/drive/  
+Esta plataforma fue empleada para crear documentos mediante Google Docs, el cual nos permite trabajar de manera colaborativa los informes de las entregas.
+  * Structurizr: https://structurizr.com/  
+Herramienta utilizada para la creación de diagramas C4 (diagrama de contexto, diagrama de contenedor y diagrama de componentes). Para elaborar los diagramas fue necesario utilizar una sintaxis parecida a un lenguaje de programación.
+  * GitHub: https://github.com/  
+Plataforma empleada tanto como para la creación de la documentación y de la Landing page. Nuestro eligió esta plataforma debido a que nos permite trabajar de manera colaborativa.
+
+### 7.1.2. Source Code Management
+La administración y estructuración de las múltiples modificaciones se realizaron mediante la creación de un repositorio en GitHub para el proyecto. Nuestra organización se estructuró de la siguiente manera:
+
+* Organización: [https://github.com/upc-pre-202520-1asi0728-7291-DevBeans ](https://github.com/upc-pre-202520-1asi0728-7291-DevBeans)
+* Repositorio de la Landing page: [https://dev-beans-landing-page.netlify.app ](https://dev-beans-landing-page.netlify.app)
+
+Además, con el objetivo de mejorar el control sobre la creación de ramas y la implementación de cambios en el código fuente, se procedió a utilizar Gitflow.
+
+De esta forma, se establecieron 2 ramas principales: main y develop.
+
+#### Ramas principales:  
+  * Rama “main”:  
+  En esta rama se almacenan las versiones oficiales de nuestro repositorio para pasarlas a producción.
+  * Rama “develop”:  
+  Esta rama se utilizará como punto de integración para las ramas de “feature”. Una vez que el  “head” sea estable y el equipo lo considere listo para el lanzamiento, se fusionará con la rama “release”.
+
+#### Ramas auxiliares:  
+  * Rama “release”:  
+  La rama “release” se emplea para la preparación del lanzamiento de una nueva versión en la rama “main” ayudando a controlar las versiones de código. Aquí se pueden solucionar errores menores y preparar los datos para la versión. Esta rama permitirá liberar a la rama “develop” de estas tareas preparatorias y evita demoras en el desarrollo mientras se prepara para el lanzamiento. 
+  * Rama “feature”:  
+  En las ramas “feature” se desarrollan las características generales que se integrarán en la rama “develop”. Estas características son aquellas funcionalidades solicitadas por los usuarios tanto en la página de inicio como en la aplicación web. Por ejemplo, la rama feature/navbar.
+  * Rama “hotfix”:  
+  Esta rama se utiliza para corregir urgentemente errores en la última versión de la rama “main” que no pueden esperar hasta el próximo lanzamiento para ser solucionados.
+
+### 7.1.3. Source Code Style Guide & Conventions
+Utilizaremos el lenguaje de etiquetas HTML para el desarrollo principal de nuestra Landing page.
+* Utilizaremos el lenguaje CSS, que nos permitirá realizar los estilos de la estructura de nuestra Landing Page
+* Implementaremos el lenguaje de JavaScript para brindar las funcionalidades a nuestra Landing page. 
+* Utilizaremos el lenguaje Gherkin que se usará para realizar los diseños de prueba de cada historia de usuario, contando con su estructura básica. 
+
+#### Convenciones de Commits:  
+Nuestro equipo de desarrollo sigue las Convenciones de Commits, adoptando el formato de los “Conventional Commits” en su versión 1.0.0 (disponible en https://www.conventionalcommits.org/en/v1.0.0/) para garantizar una fácil comprensión de nuestros registros. Por lo tanto, nos regimos por la siguiente estructura:
+
+Donde:
+
+```<type>[scope opcional]: <description>```
+
+  * type: Indica el tipo de modificación realizada, limitado a opciones como feat, fix, docs, etc.
+  * scope: Define el alcance del cambio realizado en nuestro código.
+  * descripción: Ofrece un resumen conciso de los cambios implementados.
+
+#### Convenciones de versionado de lanzamientos
+Para la gestión de versiones, seguimos el estándar “Semantic Versioning 2.0.0”. En este formato las versiones se presentan como (X.Y.Z), con las siguientes interpretaciones: 
+  * X: Indica una versión principal que incorpora cambios incompatibles con versiones anteriores. Iniciamos en 0 durante la etapa de desarrollo inicial y transicionamos a 1 cuando la versión esté lista para su lanzamiento público. Por convención, Y y Z se reinician a 0 cuando X aumenta.
+  * Y: Representa una versión secundaria, que abarca cambios compatibles con versiones anteriores. Además, esta incluye los commits provenientes de las “release branches” cada vez que se agregan nuevas funcionalidades. Convencionalmente, Z se reinicia a 0 cuando Y aumenta.
+  * Z: Refleja parches y correcciones de errores menores, integrando commits realizados en la “rama de corrección” y fusionados con la rama principal.
+
+### 7.1.4. Software Deployment Configuration
+#### Acceder a Netlify y seleccionar “Import an existing project”
+Ingresa a la plataforma de Netlify con tu cuenta activa. Una vez dentro del panel principal, dirígete a la opción “Import an existing project”, que permite iniciar el proceso de despliegue de un proyecto previamente desarrollado y alojado en un repositorio externo.
+
+<img src="./assets/images/softwareDeploy/importProject.png" style="display: block; margin: 0 auto;">
+
+#### Elegir la opción “Deploy with GitHub” para vincular el repositorio
+En el siguiente paso, selecciona “Deploy with GitHub” para conectar tu cuenta de GitHub con Netlify. Esta integración permite importar directamente el código fuente desde el repositorio que contiene tu proyecto.
+
+<img src="./assets/images/softwareDeploy/deployProject.png" style="display: block; margin: 0 auto;">
+
+####  Seleccionar la organización y el repositorio correspondiente
+Una vez vinculada la cuenta, el sistema mostrará las organizaciones disponibles. Selecciona la organización adecuada y dentro de ella, busca el repositorio específico del proyecto que deseas subir a producción. Luego, configura los parámetros necesarios para el despliegue, como la rama principal, comandos de build y directorio de salida.
+
+#### Iniciar el despliegue presionando el botón del proyecto
+Finalmente, revisa la configuración y presiona el botón que lleva el nombre del proyecto para iniciar el proceso de despliegue. Netlify comenzará a compilar y publicar tu aplicación automáticamente en la web.
+
+
+<img src="./assets/images/softwareDeploy/clickDeploy.png" style="display: block; margin: 0 auto;">
+
+### Link de nuestra landing page: https://healthsyn-landing.netlify.app
+
+<img src="./assets/images/softwareDeploy/landing.png" style="display: block; margin: 0 auto;">
+---
 
 # Conclusiones
 
 **TB1**<br>
 
-Identificar contextos candidatos es un paso clave para gestionar la complejidad en el desarrollo de sistemas. Se trata de un análisis minucioso que busca entender los elementos centrales del sistema y sus interconexiones. A partir de ahí, se procede a agrupar estos elementos en 'contextos delimitados' lógicos y coherentes. Esta separación no solo facilita el diseño y la implementación, sino que también tiene como meta principal potenciar la escalabilidad, el desempeño y la mantenibilidad del sistema resultante.
-
-Identificar sistemas externos es importante para definir con claridad los límites del sistema y comprender las dependencias con su entorno. Este análisis permite reconocer qué funcionalidades provienen de terceros, qué servicios deben integrarse y qué restricciones externas condicionan el diseño. Además, visibiliza riesgos asociados, como la disponibilidad o confiabilidad de dichos sistemas, y orienta la planificación de mecanismos de integración, seguridad y monitoreo. En consecuencia, este paso no solo aporta a la correcta delimitación de responsabilidades, sino que también fortalece la robustez y resiliencia de la arquitectura.
+El equipo demostró una comprensión sólida de los fundamentos de arquitectura y análisis de sistemas, identificando contextos y dependencias externas de manera precisa. Este trabajo permitió establecer límites claros, fortalecer la integración entre componentes y sentar una base técnica coherente para el desarrollo posterior. La entrega refleja organización, colaboración efectiva y compromiso con la calidad técnica del proyecto.
 
 **TP**<br>
 
 En este hito, logramos mostrar una primera versión operativa del sistema BeanDetect AI, desarrollado para identificar y clasificar granos de café. Esta entrega representa un progreso importante, dado que nos posibilitó verificar la arquitectura sugerida, ratificar la integración de los módulos iniciales y recibir comentarios anticipados en relación con la facilidad de uso y la exactitud del sistema. Por lo tanto, hemos llegado a la conclusión de que este resultado es fundamental para el proyecto, ya que establece las bases para el avance de los entregables posteriores y garantiza que las mejoras y optimizaciones se lleven a cabo sobre un prototipo validado.
+
+**TB2**<br>
+
+El equipo logró consolidar una versión funcional y documentada del proyecto, integrando avances técnicos, de diseño y validación. Se fortaleció la colaboración entre áreas, asegurando coherencia entre prototipo, desarrollo y despliegue. La entrega refleja madurez en la gestión ágil y compromiso con la calidad del producto.
 
 ---
 
