@@ -4408,166 +4408,132 @@ Esta pantalla muestra la sección de ajustes de la aplicación. Permite modifica
 
 Esta sección presenta la propuesta de Wireflows para la aplicación, diseñados para visualizar de manera clara y secuencial los pasos que sigue un usuario para alcanzar un objetivo específico (User goal) dentro del sistema. Para cada User goal relevante, se ha considerado el User Persona correspondiente y se ha elaborado un Wireflow que ilustra la ruta típica de interacción, mostrando cómo las acciones del usuario provocan cambios en las pantallas (Wireframes) y el estado de la aplicación.
 
+### User Goal 1: Registrar y autenticar cuenta
 
-#### User Goal 1: Implementar la productividad del cultivo
+**Flujo:** El usuario accede al login, selecciona "Regístrate aquí", completa el formulario de cooperativa (nombre, correo, teléfono, NIT, ubicación, representante legal, contraseñas), valida que coincidan las contraseñas, presiona "Crear Cuenta de Cooperativa", y el sistema redirige al login para autenticación. Tras ingresar credenciales, accede al Dashboard con métricas de lotes, calidad y defectos.
 
-**User Persona:** José Ramírez (Productor de café en finca familiar)
+<img src="./assets/images/wireflow/UG01.png" style="display: block; margin: 0 auto;"/>
 
-**Descripción del Flujo:**
+**Interacciones clave:** Toggle Productor/Cooperativa, validación de contraseñas coincidentes, botón de acción naranja, redirección automática post-registro.
 
-Este wireflow describe el proceso mediante el cual un productor de café registra y gestiona nuevos lotes de café para monitorear y mejorar la productividad de su cultivo. El flujo comienza cuando el productor accede a la aplicación y se registra como usuario individual, posteriormente visualiza el dashboard y procede a crear nuevos lotes.
+***
 
-**Flujo Secuencial:**
+### User Goal 2: Gestionar lotes de café
 
-1. **Pantalla Inicial - Registro de Usuario (Wireframe 1):** El usuario accede a la aplicación y selecciona la opción "Productor" en la barra de selección de tipo de usuario. Completa el formulario de registro con información personal:
-   - Nombre completo del productor
-   - Correo electrónico
-   - Teléfono
-   - Nombre de la finca
-   - Contraseña y confirmación
+**Flujo:** Desde el Dashboard, el usuario visualiza métricas (24 lotes, 85.5% calidad promedio) y lotes recientes. Navega a "Lotes" en el menú lateral, donde ve una tabla con ID, fecha, peso, variedad, proceso, calidad y estado. Usa la barra de búsqueda para filtrar o presiona "+ Nuevo Lote" para crear uno. Completa campos y guarda. Puede ver detalles, editar o eliminar mediante iconos de acción en cada fila.
 
-2. **Acción - Crear Cuenta:** El usuario hace clic en el botón de registro para crear su cuenta como productor.
+<img src="./assets/images/wireflow/UG02.png" style="display: block; margin: 0 auto;"/>
 
-3. **Pantalla Secundaria - Inicio de Sesión (Wireframe 2):** Después del registro exitoso, el usuario es dirigido a la pantalla de inicio de sesión donde ingresa sus credenciales (correo electrónico y contraseña) para acceder a la plataforma.
+**Interacciones clave:** Tabla interactiva con badges de estado (verde/amarillo), barra de búsqueda, botones de acción por fila, formulario modal de creación.
 
-4. **Acción - Autenticación:** El usuario ingresa sus datos y hace clic en "Iniciar Sesión".
+***
 
-5. **Pantalla Terciaria - Dashboard (Wireframe 3):** Una vez autenticado, el usuario visualiza el dashboard principal que muestra métricas clave de su operación:
-   - **Total de Lotes:** 24 (+3 este mes)
-   - **Calidad Promedio:** 85.5% (+2.3% vs mes anterior)
-   - **Listos para Exportar:** 18 (75% del total)
-   - **Defectos Críticos:** 3 (-2 vs mes anterior)
-   
-   El dashboard también muestra una sección "Lotes Recientes" con los últimos registros (LOT-2024-001, LOT-2024-002, LOT-2024-003).
+### User Goal 3: Consultar reportes y certificados
 
-6. **Acción - Navegar a Gestión de Lotes:** El usuario hace clic en la opción "Lotes" del menú lateral para acceder a la gestión completa de lotes.
+**Flujo:** El usuario accede a "Reportes" y visualiza tres secciones: Distribución de Calidad (Premium 45%, Estándar 35%, Básico 20%), Análisis de Defectos (granos negros: 2 lotes, granos partidos: 5 lotes), y Certificados de Exportación (LOT-2024-001, 003, 005). Puede "Ver QR" o "Descargar" certificados. Al final revisa recomendaciones del sistema sobre proceso de secado y selección manual.
 
-7. **Pantalla Cuaternaria - Coffee Lot Management (Wireframe 4):** El usuario visualiza la página "Gestión de Lotes" con la tabla "Lotes Registrados" que muestra:
-   - ID del lote (LOT-2024-001, LOT-2024-002, LOT-2024-003)
-   - Fecha de cosecha
-   - Peso en kilogramos
-   - Variedad (Caturra, Castillo, Colombia)
-   - Proceso (Lavado, Natural, Honey)
-   - Calidad (Premium, Estándar)
-   - Estado (Clasificado, En proceso)
-   - Acciones disponibles (ver, editar, eliminar)
+<img src="./assets/images/wireflow/UG03.png" style="display: block; margin: 0 auto;"/>
 
-8. **Acción - Crear Nuevo Lote:** El usuario hace clic en el botón "Nuevo Lote" ubicado en la esquina superior derecha.
+**Interacciones clave:** Gráficos de barras horizontales, alertas con íconos de severidad, botones Ver QR/Descargar, lista de recomendaciones.
 
-9. **Pantalla Quincuagésima - Adding Coffee Lot (Wireframe 5):** Se abre un modal titulado "Crear Nuevo Lote" donde el usuario ingresa información detallada del nuevo lote:
-   - **ID del Lote:** Identificador único (ej: LOT-2024-004)
-   - **Fecha de Cosecha:** Selecciona fecha en formato dd/mm/aaaa
-   - **Peso (kg):** Cantidad de café recolectado (ej: 500 kg)
-   - **Variedad:** Selecciona de opciones disponibles (Caturra, Castillo, Colombia, etc.)
-   - **Proceso:** Selecciona tipo de procesamiento (Lavado, Natural, Honey)
+***
 
-10. **Validación de Datos:** El sistema valida que todos los campos obligatorios estén completos y sean válidos.
+### User Goal 4: Configurar perfil y notificaciones
 
-11. **Acción - Crear Lote:** El usuario hace clic en "Crear Lote" para guardar la información.
+**Flujo:** El usuario accede a "Configuración" y actualiza Información Personal (nombre, correo, teléfono, ubicación). Presiona "Guardar Cambios". En Notificaciones, activa/desactiva toggles de Email, WhatsApp y Alertas de Clasificación (guardado automático). En Seguridad, ingresa contraseña actual, nueva contraseña y confirmación, luego actualiza (requiere reinicio de sesión).
 
-12. **Confirmación - Lote Registrado:** El sistema registra el nuevo lote y el usuario es redirigido a la tabla de lotes donde aparece el nuevo registro con estado inicial "En proceso" o "Clasificado".
+<img src="./assets/images/wireflow/UG04.png" style="display: block; margin: 0 auto;"/>
 
-13. **Acción Complementaria - Visualizar Reportes:** El usuario puede hacer clic en "Reportes" del menú lateral para monitorear la productividad.
+**Interacciones clave:** Formularios editables, toggles de notificación con guardado automático, validación de contraseñas, botón de guardado para información personal.
 
-14. **Pantalla Sexta - Reporting & Analytics (Wireframe 6):** El usuario visualiza la sección "Reportes y Certificados" que muestra análisis detallados:
-   - **Calidad Promedio:** 85.5% (con variación de +2.3% vs mes anterior)
-   - **Lotes Certificados:** 18 de 24 lotes totales
-   - **Defectos Detectados:** 3 (con variación de -2 vs mes anterior)
-   - **Distribución de Calidad:** Gráfico que muestra:
-     - Premium (90-100%): 45%
-     - Estándar (75-89%): 35%
-     - Básico (60-74%): 20%
 
-**Resultado Esperado:** El productor ha completado exitosamente el ciclo de registro, autenticación, visualización de métricas y creación de nuevos lotes. Sistema ahora monitorea la productividad del cultivo proporcionando datos en tiempo real sobre calidad, clasificación y defectos detectados, permitiendo al productor optimizar sus operaciones y mejorar la rentabilidad de su finca.
 
-<!--Falta IMAGENES-->
+### 6.4.3. Application Mock-ups.
+#### Login
+<img src="./assets/images/mockups/login.png" style="display: block; margin: 0 auto;"/>
 
----
+#### Register
+<img src="./assets/images/mockups/register.png" style="display: block; margin: 0 auto;"/>
 
-#### User Goal 2: Mejorar la gestión financiera y logística de la cooperativa
+#### Main dashboard
+<img src="./assets/images/mockups/dashboard.png" style="display: block; margin: 0 auto;"/>
 
-**User Persona:** Luis Torres (Representante Legal de Cooperativa, Cooperativa Valle Verde)
+#### Lotes
+<img src="./assets/images/mockups/lotes.png" style="display: block; margin: 0 auto;"/>
 
-**Descripción del Flujo:**
+#### Reportes
+<img src="./assets/images/mockups/reportes.png" style="display: block; margin: 0 auto;"/>
 
-Este wireflow describe el proceso mediante el cual un representante legal de una cooperativa registra la organización en BeanDetect AI para mejorar la gestión financiera y logística. El flujo permite acceder a herramientas avanzadas de reportes, análisis y configuración que optimizan la comercialización de café a nivel organizacional.
+#### Configuraciones
+<img src="./assets/images/mockups/configuracion.png" style="display: block; margin: 0 auto;"/>
 
-**Flujo Secuencial:**
+### 6.4.4. Applications User Flow Diagrams.
+### User Flow 1: Registro e inicio de sesión
 
-1. **Pantalla Inicial - Registro de Usuario (Wireframe 1):** El usuario accede a la aplicación y visualiza el formulario "Crear Cuenta". Selecciona la opción "Cooperativa" en la barra de selección de tipo de usuario. Completa el formulario organizacional con información crítica:
-   - **Nombre de la Cooperativa:** "Cooperativa Cafetera del Sur"
-   - **Correo Electrónico:** Email corporativo para comunicaciones
-   - **Teléfono:** Número de contacto directo de la organización
-   - **NIT / Registro Legal:** Identificación legal única
-   - **Nombre del Representante Legal:** Responsable autorizado
-   - **Contraseña:** Credenciales seguras para acceso
+**Happy Path:**
+Usuario llega a login → Clic en "Regístrate aquí" → Selecciona tab "Cooperativa" → Completa campos (cooperativa, correo, teléfono, NIT, ubicación, representante, contraseñas) → Contraseñas coinciden → Presiona "Crear Cuenta de Cooperativa" → Sistema registra y redirige a login → Ingresa credenciales → Accede al Dashboard.
 
-2. **Validación:** El sistema verifica que el NIT sea válido, que no exista otra cooperativa registrada con el mismo identificador, y que todos los campos requeridos estén completos.
+<img src="./assets/images/userflow/UF01.png" style="display: block; margin: 0 auto;"/>
 
-3. **Acción - Crear Cuenta de Cooperativa:** El usuario hace clic en "Crear Cuenta de Cooperativa".
-
-4. **Pantalla Secundaria - Inicio de Sesión (Wireframe 2):** Después del registro exitoso, el usuario es dirigido a la pantalla de inicio de sesión. Ingresa el correo electrónico y contraseña de la cooperativa para acceder a la plataforma.
-
-5. **Acción - Autenticación:** El usuario hace clic en "Iniciar Sesión".
-
-6. **Pantalla Terciaria - Dashboard (Wireframe 3):** Una vez autenticado, el usuario visualiza el dashboard principal adaptado para cooperativas que muestra métricas agregadas:
-   - **Total de Lotes:** 24 lotes de todos los productores afiliados (+3 este mes)
-   - **Calidad Promedio:** 85.5% (+2.3% vs mes anterior)
-   - **Listos para Exportar:** 18 lotes certificados (75% del total)
-   - **Defectos Críticos:** 3 lotes con defectos (-2 vs mes anterior)
-   
-   La sección "Lotes Recientes" muestra los últimos registros de la cooperativa.
-
-7. **Acción - Navegar a Gestión de Lotes:** El usuario puede explorar la sección "Lotes" para visualizar todos los lotes de productores afiliados.
-
-8. **Pantalla Cuaternaria - Coffee Lot Management (Wireframe 4):** El usuario visualiza la tabla "Lotes Registrados" de toda la cooperativa, que incluye:
-   - Identificación completa de cada lote
-   - Datos de productor y finca
-   - Fechas y pesos de cosecha
-   - Variedad y proceso utilizado
-   - Clasificación de calidad actual
-   - Estado del lote en la cadena de suministro
-
-9. **Acción - Acceder a Reportes Estratégicos:** El usuario hace clic en "Reportes" del menú lateral para acceder a herramientas analíticas.
-
-10. **Pantalla Quinta - Reporting & Analytics (Wireframe 6):** El usuario visualiza la sección "Reportes y Certificados" con análisis estratégicos de la cooperativa:
-    - **Calidad Promedio:** 85.5% (con variación +2.3% vs mes anterior)
-    - **Lotes Certificados:** 18 de 24 lotes totales (75% de certificación)
-    - **Defectos Detectados:** 3 (con variación -2 vs mes anterior, mejora del 40%)
-    - **Distribución de Calidad:** Gráfico de barras horizontales mostrando:
-      - Premium (90-100%): 45% de los lotes
-      - Estándar (75-89%): 35% de los lotes
-      - Básico (60-74%): 20% de los lotes
-
-11. **Análisis Financiero y Logístico:** Basado en los reportes, la cooperativa puede:
-    - **Optimizar ingresos:** Identificar que el 45% de lotes son Premium (mayor valor comercial)
-    - **Planificar exportaciones:** 18 lotes certificados están listos para envío internacional
-    - **Control de calidad:** Detectar 3 defectos críticos requiere seguimiento
-    - **Tendencias:** Mejora del 40% en defectos vs mes anterior indica efectividad operativa
-
-12. **Acción - Configurar Parámetros Organizacionales:** El usuario hace clic en "Configuración" del menú lateral.
-
-13. **Pantalla Sexta - Settings (Wireframe 7):** El usuario accede a la sección de ajustes donde puede:
-    - **Actualizar Información Personal:** Nombre del representante legal, correo, teléfono
-    - **Información de la Cooperativa:** Nombre, ubicación, NIT
-    - **Preferencias de Notificaciones:** Configurar alertas para defectos críticos, lotes listos para exportar, etc.
-    - **Opciones Avanzadas:** Integración con sistemas externos, exportación de datos
-
-14. **Guardado de Cambios:** El usuario hace clic en "Guardar Cambios" para aplicar las configuraciones.
-
-**Resultado Esperado:** El representante legal de la cooperativa ha completado exitosamente el ciclo de registro organizacional, autenticación y acceso a herramientas avanzadas de gestión. La cooperativa dispone ahora de:
-- **Visibilidad completa** de todos los lotes de productores afiliados
-- **Análisis financiero** basado en clasificación de calidad (45% Premium = mayor rentabilidad)
-- **Planificación logística** con 18 lotes certificados listos para exportación
-- **Monitoreo de calidad** con detección temprana de defectos
-- **Tendencias históricas** para optimización continua
-
-Esta información integral permite a la cooperativa mejorar significativamente la gestión financiera y logística, aumentar márgenes de ganancia, fortalecer relaciones comerciales con compradores internacionales y posicionarse competitivamente en el mercado global de café.
-
-<!--Falta IMAGENES-->
+**Unhappy Paths:**
+- Contraseñas no coinciden: error bajo campo "Confirmar Contraseña"
+- Email ya registrado: alerta con sugerencia de ir a login
+- Campos incompletos: marca campos vacíos en rojo
+- Credenciales incorrectas: mensaje de error con opción "¿Olvidaste tu contraseña?"
 
 ---
 
+### User Flow 2: Gestión de lotes
+
+**Happy Path:**
+Usuario en Dashboard ve métricas → Clic en "Lotes" → Visualiza tabla completa → Presiona "+ Nuevo Lote" → Completa formulario (ID, fecha, peso, variedad, proceso) → Guarda → Sistema actualiza tabla con nuevo lote → Usuario busca lotes específicos → Clic en ícono "ojo" para ver detalles completos.
+
+<img src="./assets/images/userflow/UF02.png" style="display: block; margin: 0 auto;"/>
+
+**Unhappy Paths:**
+- Búsqueda sin resultados: "No se encontraron lotes"
+- Error al guardar: alerta de reintento
+- Campos incompletos: bloqueo de guardado
+- Eliminación: confirmación "¿Está seguro?"
+
+***
+
+### User Flow 3: Reportes y certificados
+
+**Happy Path:**
+Usuario en Dashboard → Clic en "Reportes" → Visualiza Distribución de Calidad con porcentajes → Scroll a Análisis de Defectos → Identifica defectos primarios/secundarios → Scroll a Certificados → Clic en "Ver QR" para LOT-2024-001 → Modal con código QR → Cierra modal → Clic en "Descargar" para LOT-2024-003 → PDF descargado → Revisa recomendaciones del sistema.
+
+<img src="./assets/images/userflow/UF03.png" style="display: block; margin: 0 auto;"/>
+
+**Unhappy Paths:**
+- Sin certificados: "No hay certificados disponibles aún"
+- Error al descargar: alerta de reintento
+- Defectos críticos altos: alerta roja "Acción requerida"
+- Datos insuficientes: "Registre más lotes para análisis"
+
+***
+
+### User Flow 4: Configuración de perfil
+
+**Happy Path:**
+Usuario → Clic en "Configuración" → Edita nombre y teléfono en Información Personal → Presiona "Guardar Cambios" → Confirmación exitosa → Activa toggles de notificaciones (guardado automático) → Ingresa contraseña actual en Seguridad → Escribe nueva contraseña → Confirma nueva contraseña → Actualiza → Sistema confirma y solicita reinicio de sesión.
+
+<img src="./assets/images/userflow/UF04.png" style="display: block; margin: 0 auto;"/>
+
+**Unhappy Paths:**
+- Contraseña actual incorrecta: error "Contraseña incorrecta"
+- Contraseñas nuevas no coinciden: error de validación
+- Email inválido: "Ingrese correo válido"
+- Error de conexión: "Verifique su conexión"
+- Contraseña débil: "Mínimo 8 caracteres"
+
+## 6.5. Application Prototyping. 
+<img src="./assets/images/prototype/prototype.png" style="display: block; margin: 0 auto;"/>
+
+URL del prototipo:   
+https://www.figma.com/proto/g2Q08oeYK9nbmza7fBzN21/Dev-Beans?node-id=1-3&t=NDgiyFs4mZ0vjUCf-1
+
+---
 
 # Conclusiones
 
