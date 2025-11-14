@@ -4962,7 +4962,7 @@ Cuando un lote tiene muchos defectos, la alerta no indica cuál debería ser el 
 **Recomendación:**
 Agregar texto accionable como:
 
-> “Se recomienda revisar los granos defectuosos o repetir la clasificación con una nueva muestra.”
+Se recomienda revisar los granos defectuosos o repetir la clasificación con una nueva muestra.
 
 ---
 
