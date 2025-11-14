@@ -4819,8 +4819,6 @@ xxxxxxxxxxxx
 
 ---
 
----
-
 # **7.3.3 Evaluaciones según heurísticas**
 
 ## **UX Heuristics & Principles Evaluation**
@@ -4828,10 +4826,15 @@ xxxxxxxxxxxx
 **Usability – Inclusive Design – Information Architecture**
 
 **CARRERA:** Ingeniería de Software
+
 **CURSO:** Arquitecturas de Software Emergentes
+
 **SECCIÓN:** 7291
+
 **PROFESORES:** Royer Edelwer Rojas Malasquez
+
 **AUDITOR:** DevBeans
+
 **CLIENTE(S):** Productores pequeños/medianos de café y Cooperativas Cafetaleras
 
 ---
