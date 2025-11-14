@@ -1012,94 +1012,94 @@ Esta sección corresponde al lenguaje ubicuo que asegura que los usuarios finale
 10. **Clasificación Automática (Automated Classification)**
     - Proceso de análisis de granos de café utilizando inteligencia artificial y análisis de imágenes para determinar calidad, detectar defectos y asignar grado según estándares internacionales.
 
-12. **Sesión de Clasificación (Classification Session)**
+11. **Sesión de Clasificación (Classification Session)**
     - Período de tiempo delimitado durante el cual se analizan granos de un lote específico. Tiene estado (iniciada, en progreso, completada), contador de granos procesados y resultados consolidados.
 
-13. **Grano de Café (Coffee Bean/Grain)**
+12. **Grano de Café (Coffee Bean/Grain)**
     - Unidad individual de análisis. Cada grano es fotografiado y analizado para detectar defectos, medir tamaño y color del tueste.
 
-14. **Defecto (Defect)**
+13. **Defecto (Defect)**
     - Anomalía o imperfección en un grano que reduce su calidad comercial.
 
-15. **Grano Negro (Black Bean)**
+14. **Grano Negro (Black Bean)**
     - Grano completamente oscuro/negro debido a fermentación excesiva. Causa rechazo automático en clasificaciones comerciales.
 
-16. **Grano Verde Agrio (Sour Green Bean)**
+15. **Grano Verde Agrio (Sour Green Bean)**
     - Grano con fermentación anormal que produce aromas desagradables. Rechazado por compradores debido a impacto negativo en taza.
 
-17. **Precisión del Algoritmo (Confidence Score)**
+16. **Precisión del Algoritmo (Confidence Score)**
     - Puntuación porcentual (0.0-1.0) que indica el nivel de certeza del modelo de IA al detectar un defecto o característica. Threshold mínimo típicamente 0.85.
 
 ### Estándares de Calidad
 
-18. **Grado de Calidad (Quality Grade)**
+17. **Grado de Calidad (Quality Grade)**
     - Clasificación final del café según estándares internacionales: A, B, C, Specialty, Premium. Basado en SCA (Specialty Coffee Association) y estándares ICO.
 
-19. **Puntuación SCA (SCA Score)**
+18. **Puntuación SCA (SCA Score)**
     - Puntuación numérica en escala de 100 que representa calidad general del café. Rango 80-100 es specialty; 75-79 es muy bueno; 70-74 es bueno; bajo 70 no es comercializable internacionalmente.
 
-20. **Café Apto para Exportación (Export-Ready Coffee)**
+19. **Café Apto para Exportación (Export-Ready Coffee)**
     - Café que cumple requisitos mínimos de calidad para comercialización internacional. Incluye métricas de defectos bajos, color uniforme, tamaño consistente.
 
 ### Conceptos de Verificación y Autenticación
 
-21. **Blockchain**
+20. **Blockchain**
     - Tecnología de registro distribuido e inmutable utilizada para garantizar integridad y transparencia de datos de clasificación y trazabilidad.
 
-22. **Hash Blockchain (Blockchain Hash)**
+21. **Hash Blockchain (Blockchain Hash)**
     - Identificador criptográfico único que representa una transacción o registro en la cadena blockchain. Garantiza inmutabilidad.
 
-23. **Firma Digital (Digital Signature)**
+22. **Firma Digital (Digital Signature)**
     - Firma criptográfica que verifica autenticidad e integridad de certificados digitales. Imposible de falsificar.
 
-24. **Métrica de Calidad (Quality Metrics)**
+23. **Métrica de Calidad (Quality Metrics)**
     - Conjunto de indicadores cuantitativos que miden calidad del café: grado promedio, porcentaje de exportabilidad, tasa de defectos, porcentaje specialty.
 
-25. **Reporte de Clasificación (Classification Report)**
+24. **Reporte de Clasificación (Classification Report)**
     - Documento que consolida resultados de una sesión de clasificación, incluyendo grado final, métricas de defectos, recomendaciones comerciales.
 
-26. **Análisis de Tendencias (Trend Analysis)**
+25. **Análisis de Tendencias (Trend Analysis)**
     - Estudio de patrones históricos en métricas de calidad a lo largo del tiempo. Identifica mejoras o deterioros en procesos.
 
-27. **Pronóstico (Forecast)**
+26. **Pronóstico (Forecast)**
     - Predicción estadística de métricas futuras basada en tendencias históricas y patrones estacionales.
 
-28. **Comparativa Histórica (Historical Comparison)**
+27. **Comparativa Histórica (Historical Comparison)**
     - Análisis que compara métricas de calidad entre diferentes períodos temporales para identificar evolución.
 
-29. **Dashboard Interactivo (Interactive Dashboard)**
+28. **Dashboard Interactivo (Interactive Dashboard)**
     - Interfaz visual que presenta métricas en tiempo real con capacidad de filtrado, personalización y actualización automática.
 
-30. **Widget**
+29. **Widget**
     - Componente visual individual en un dashboard que muestra métrica o visualización específica.
 
-31. **Alerta de Calidad (Quality Alert)**
+30. **Alerta de Calidad (Quality Alert)**
     - Notificación automática disparada cuando métricas caen por debajo de thresholds establecidos, alertando sobre posibles problemas.
 
 ### Conceptos Técnicos del Sistema
 
-32. **Bounded Context**
+31. **Bounded Context**
     - Límite explícito dentro del dominio que define conjunto específico de responsabilidades y conceptos únicos. BeanDetect AI posee 6 bounded contexts: IAM & Profile, Coffee Lot Management, Grain Classification, Traceability & Certification, Reporting & Analytics, User Support.
 
-33. **Agregado (Aggregate)**
+32. **Agregado (Aggregate)**
     - Conjunto de entidades y objetos de valor ligados juntos que actúan como unidad en operaciones de cambio. Cada bounded context tiene agregados específicos.
 
-34. **Entidad (Entity)**
+33. **Entidad (Entity)**
     - Objeto con identidad única dentro del dominio que cambia a lo largo del tiempo. Diferente de objetos de valor por poseer ciclo de vida.
 
-35. **Objeto de Valor (Value Object)**
+34. **Objeto de Valor (Value Object)**
     - Objeto sin identidad propia que representa concepto simple del dominio. Inmutable y definido completamente por sus atributos.
 
-36. **Servicio de Dominio (Domain Service)**
+34. **Servicio de Dominio (Domain Service)**
     - Lógica de negocio que no pertenece naturalmente a una entidad o agregado específico. Implementa operaciones transversales complejas.
 
-37. **Evento de Dominio (Domain Event)**
+35. **Evento de Dominio (Domain Event)**
     - Suceso significativo en el dominio que dispara lógica adicional. Ejemplo: "UserRegisteredEvent", "ClassificationCompletedEvent".
 
-38. **Comando (Command)**
+36. **Comando (Command)**
     - Solicitud de acción que intenta cambiar estado del sistema. Ejemplo: "RegisterCoffeeLotCommand", "StartClassificationCommand".
 
-39. **Consulta (Query)**
+37. **Consulta (Query)**
     - Solicitud de información del sistema que no altera su estado. Ejemplo: "GetCoffeeLotByIdQuery", "GetTrendAnalysisQuery".
 
 ---
