@@ -4650,6 +4650,175 @@ Finalmente, revisa la configuración y presiona el botón que lleva el nombre de
 ### Link de nuestra landing page: https://healthsyn-landing.netlify.app
 
 <img src="./assets/images/softwareDeploy/landing.png" style="display: block; margin: 0 auto;">
+
+## 7.3.  Validation Interviews.
+### 7.3.1. Diseño de Entrevistas (Versión enfocada en Landing Page y Front-End)
+
+
+### 7.3.2. Registro de Entrevistas.
+#### Objetivo  
+Validar la usabilidad, claridad y adecuación visual del prototipo digital (landing page y front-end), identificando puntos de mejora en navegación, contenido, alertas y experiencia de usuario para los distintos perfiles del entorno hospitalario.
+
+#### Alcance y Segmentos
+* S1 – Productores pequeños y medianos de café
+* S2 – Cooperativas cafetaleras
+
+#### Tipo de entrevista
+Semiestructurada (10–15 min), 1 a 1, centrada en observación del uso del prototipo, con grabación previa autorización.
+
+#### Buenas prácticas
+* Formular preguntas cortas y abiertas; evitar inducir respuestas.
+* Solicitar ejemplos o comentarios sobre secciones específicas de la interfaz.
+* Registrar impresiones visuales y de navegación (capturas o timestamps).
+* Evitar recopilar datos personales o información sensible.
+
+#### Guion de preguntas
+Nota: Iniciar con una breve introducción explicando propósito, duración y uso de la retroalimentación.
+
+#### A. Generales (para ambos segmentos)  
+1. ¿Qué impresión le genera la página al ingresar?  
+2. ¿Entendió de inmediato para qué sirve la plataforma?  
+3. ¿La navegación entre secciones le resultó clara y rápida?  
+4. ¿Los colores, íconos o textos le parecen adecuados para su trabajo?  
+5. ¿En qué parte sintió confusión o falta de información?  
+6. ¿Qué le pareció la ubicación de botones y menús principales?  
+7. ¿Qué cambiaría para que la página sea más intuitiva?  
+8. Si tuviera que usarla en su turno, ¿qué le facilitaría o dificultaría?
+
+
+#### B. Segmento S1 – Productores pequeños y medianos de café
+1. ¿La interfaz de clasificación de lotes le parece lo suficientemente simple considerando su nivel de experiencia tecnológica?​
+
+2. ¿Los reportes de calidad y defectos le proporcionan la información necesaria para tomar decisiones sobre sus lotes de café?​
+
+3. ¿El sistema de notificaciones (email/WhatsApp) le resulta útil para estar al tanto del estado de sus clasificaciones?​
+
+4. ¿Considera que el proceso de registro y gestión de lotes es lo suficientemente rápido para no interrumpir su trabajo diario?​
+
+5. ¿El modelo de suscripción propuesto le parece accesible y justificado por el valor que ofrece la plataforma?
+
+#### C. Segmento S2 – Cooperativas cafetaleras  
+1. ¿La plataforma le permite gestionar eficientemente múltiples lotes de diferentes productores asociados?​
+
+2. ¿Las funcionalidades de trazabilidad y certificación cumplen con los requisitos que demandan sus compradores internacionales?​
+
+3. ¿Los reportes comparativos entre lotes y productores le ayudan a estandarizar la calidad del café de su cooperativa?​
+
+4. ¿El sistema le facilita la generación de certificados de exportación y códigos QR para transparencia con compradores?​
+
+5. ¿Considera que la integración con sus procesos actuales de control de calidad sería viable y mejoraría la eficiencia operativa?
+
+### **Cierre**  
+- ¿Qué parte del diseño mejoraría primero?  
+- ¿Le gustaría participar en pruebas de la siguiente versión del prototipo?
+
+---
+
+### 6.3.2. Registro de Entrevistas
+
+### Segmento: Productores pequeños y medianos de café 
+
+**Entrevista 1:**  
+- **Nombres:** xxxxxx
+- **Apellidos:**  xxxxxxxx
+- **Edad:** xx
+- **Rol/Área:**  xxxxxxxxxx
+- **Lugar de residencia (distrito/ciudad):** xxxxxx
+
+**Evidencia de la entrevista:**  
+<img src="assets/xxxxxxxxx" alt="Screenshot ENTREVISTA_01">
+
+**Enlace del video (editado único) y timing:**  
+- URL: [https://…  ](xxxxxxx)
+- Tiempo: xxxxx
+
+**Resumen de la entrevista (8–12 líneas):**  
+xxxxxxxxxxxx
+
+**Entrevista 2:**  
+- **Nombres:** xxxxxx
+- **Apellidos:**  xxxxxxxx
+- **Edad:** xx
+- **Rol/Área:**  xxxxxxxxxx
+- **Lugar de residencia (distrito/ciudad):** xxxxxx
+
+**Evidencia de la entrevista:**  
+<img src="assets/xxxxxxxxx" alt="Screenshot ENTREVISTA_02">
+
+**Enlace del video (editado único) y timing:**  
+- URL: [https://…  ](xxxxxxx)
+- Tiempo: xxxxx
+
+**Resumen de la entrevista (8–12 líneas):**  
+xxxxxxxxxxxx
+
+**Entrevista 3:**  
+- **Nombres:** xxxxxx
+- **Apellidos:**  xxxxxxxx
+- **Edad:** xx
+- **Rol/Área:**  xxxxxxxxxx
+- **Lugar de residencia (distrito/ciudad):** xxxxxx
+
+**Evidencia de la entrevista:**  
+<img src="assets/xxxxxxxxx" alt="Screenshot ENTREVISTA_03">
+
+**Enlace del video (editado único) y timing:**  
+- URL: [https://…  ](xxxxxxx)
+- Tiempo: xxxxx
+
+**Resumen de la entrevista (8–12 líneas):**  
+xxxxxxxxxxxx
+
+### Segmento: Cooperativas cafetaleras 
+**Entrevista 1:**  
+- **Nombres:** xxxxxx
+- **Apellidos:**  xxxxxxxx
+- **Edad:** xx
+- **Rol/Área:**  xxxxxxxxxx
+- **Lugar de residencia (distrito/ciudad):** xxxxxx
+
+**Evidencia de la entrevista:**  
+<img src="assets/xxxxxxxxx" alt="Screenshot ENTREVISTA_01">
+
+**Enlace del video (editado único) y timing:**  
+- URL: [https://…  ](xxxxxxx)
+- Tiempo: xxxxx
+
+**Resumen de la entrevista (8–12 líneas):**  
+xxxxxxxxxxxx
+**Entrevista 2:**  
+- **Nombres:** xxxxxx
+- **Apellidos:**  xxxxxxxx
+- **Edad:** xx
+- **Rol/Área:**  xxxxxxxxxx
+- **Lugar de residencia (distrito/ciudad):** xxxxxx
+
+**Evidencia de la entrevista:**  
+<img src="assets/xxxxxxxxx" alt="Screenshot ENTREVISTA_02">
+
+**Enlace del video (editado único) y timing:**  
+- URL: [https://…  ](xxxxxxx)
+- Tiempo: xxxxx
+
+**Resumen de la entrevista (8–12 líneas):**  
+xxxxxxxxxxxx
+**Entrevista 3:**  
+- **Nombres:** xxxxxx
+- **Apellidos:**  xxxxxxxx
+- **Edad:** xx
+- **Rol/Área:**  xxxxxxxxxx
+- **Lugar de residencia (distrito/ciudad):** xxxxxx
+
+**Evidencia de la entrevista:**  
+<img src="assets/xxxxxxxxx" alt="Screenshot ENTREVISTA_03">
+
+**Enlace del video (editado único) y timing:**  
+- URL: [https://…  ](xxxxxxx)
+- Tiempo: xxxxx
+
+**Resumen de la entrevista (8–12 líneas):**  
+xxxxxxxxxxxx
+
 ---
 
 # Conclusiones
