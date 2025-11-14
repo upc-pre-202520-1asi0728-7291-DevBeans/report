@@ -1090,16 +1090,16 @@ Esta sección corresponde al lenguaje ubicuo que asegura que los usuarios finale
 34. **Objeto de Valor (Value Object)**
     - Objeto sin identidad propia que representa concepto simple del dominio. Inmutable y definido completamente por sus atributos.
 
-34. **Servicio de Dominio (Domain Service)**
+35. **Servicio de Dominio (Domain Service)**
     - Lógica de negocio que no pertenece naturalmente a una entidad o agregado específico. Implementa operaciones transversales complejas.
 
-35. **Evento de Dominio (Domain Event)**
+36. **Evento de Dominio (Domain Event)**
     - Suceso significativo en el dominio que dispara lógica adicional. Ejemplo: "UserRegisteredEvent", "ClassificationCompletedEvent".
 
-36. **Comando (Command)**
+37. **Comando (Command)**
     - Solicitud de acción que intenta cambiar estado del sistema. Ejemplo: "RegisterCoffeeLotCommand", "StartClassificationCommand".
 
-37. **Consulta (Query)**
+38. **Consulta (Query)**
     - Solicitud de información del sistema que no altera su estado. Ejemplo: "GetCoffeeLotByIdQuery", "GetTrendAnalysisQuery".
 
 ---
