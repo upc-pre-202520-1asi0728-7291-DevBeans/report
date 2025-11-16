@@ -5316,60 +5316,119 @@ Organización del GitHub: [`https://github.com/orgs/upc-pre-202520-1asi0728-7291
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>Landing-Page</td><td>main</td><td><em>a7c3d21</em></td>
-      <td>feat: add hero section</td>
-      <td>Implementación de sección principal con CTA</td>
-      <td><em>10/11/25</em></td>
-    </tr>
-    <tr>
-      <td>Landing-Page</td><td>main</td><td><em>b8d4e32</em></td>
-      <td>feat: add features section</td>
-      <td>Sección de características principales de BeanDetect AI</td>
-      <td><em>11/11/25</em></td>
-    </tr>
-    <tr>
-      <td>Landing-Page</td><td>main</td><td><em>c9e5f43</em></td>
-      <td>feat: add pricing plans</td>
-      <td>Implementación de planes de suscripción</td>
-      <td><em>12/11/25</em></td>
-    </tr>
-    <tr>
-      <td>Frontend-Web</td><td>develop</td><td><em>d1f6a54</em></td>
-      <td>feat: implement login view</td>
-      <td>Vista de inicio de sesión con validaciones</td>
-      <td><em>11/11/25</em></td>
-    </tr>
-    <tr>
-      <td>Frontend-Web</td><td>develop</td><td><em>e2g7b65</em></td>
-      <td>feat: implement register view</td>
-      <td>Formularios de registro para productor y cooperativa</td>
-      <td><em>12/11/25</em></td>
-    </tr>
-    <tr>
-      <td>Frontend-Web</td><td>develop</td><td><em>f3h8c76</em></td>
-      <td>feat: implement dashboard</td>
-      <td>Dashboard principal con métricas de lotes</td>
-      <td><em>13/11/25</em></td>
-    </tr>
-    <tr>
-      <td>Frontend-Web</td><td>develop</td><td><em>g4i9d87</em></td>
-      <td>feat: implement coffee lots management</td>
-      <td>Vista de gestión de lotes con tabla y filtros</td>
-      <td><em>14/11/25</em></td>
-    </tr>
-    <tr>
-      <td>Frontend-Web</td><td>develop</td><td><em>h5j0e98</em></td>
-      <td>feat: add i18n configuration</td>
-      <td>Sistema de internacionalización en español</td>
-      <td><em>14/11/25</em></td>
-    </tr>
-    <tr>
-      <td>Frontend-Web</td><td>develop</td><td><em>i6k1f09</em></td>
-      <td>style: implement responsive design</td>
-      <td>Breakpoints y layouts adaptativos</td>
-      <td><em>15/11/25</em></td>
-    </tr>
+ <!-- Web Application Repository -->
+<tr>
+  <td>web-application</td><td>main</td><td><em>d09f392</em></td>
+  <td>Feat: Update dashboard with backend data</td>
+  <td>Integración de datos del backend en el dashboard principal</td>
+  <td><em>14/11/25</em></td>
+</tr>
+<tr>
+  <td>web-application</td><td>main</td><td><em>03634f1</em></td>
+  <td>Merge branch 'development' into production</td>
+  <td>Merge de rama de desarrollo con producción</td>
+  <td><em>14/11/25</em></td>
+</tr>
+<tr>
+  <td>web-application</td><td>main</td><td><em>3415adf</em></td>
+  <td>Fix: Fix qr generation</td>
+  <td>Corrección en la generación de códigos QR para lotes</td>
+  <td><em>14/11/25</em></td>
+</tr>
+<tr>
+  <td>web-application</td><td>main</td><td><em>4031d2b</em></td>
+  <td>feat: add notification alerts and sharing options for classification reports</td>
+  <td>Sistema de notificaciones y opciones de compartir reportes</td>
+  <td><em>15/11/25</em></td>
+</tr>
+<tr>
+  <td>web-application</td><td>main</td><td><em>121acf7</em></td>
+  <td>feat: add notification alerts and sharing options for classification reports</td>
+  <td>Implementación completa de alertas y compartir (3/4 checks)</td>
+  <td><em>15/11/25</em></td>
+</tr>
+<tr>
+  <td>web-application</td><td>main</td><td><em>ac10b4f</em></td>
+  <td>Merge pull request #1 from upc-pre-202520-1asi0728-7291-DevBeans/production</td>
+  <td>Merge final de producción con verificación completa</td>
+  <td><em>15/11/25</em></td>
+</tr>
+
+<!-- API Platform Repository -->
+<tr>
+  <td>api-platform</td><td>main</td><td><em>4ed88da</em></td>
+  <td>Feat: Add cloudinary to storage coffee grain images</td>
+  <td>Integración con Cloudinary para almacenamiento de imágenes</td>
+  <td><em>14/11/25</em></td>
+</tr>
+<tr>
+  <td>api-platform</td><td>main</td><td><em>115b359</em></td>
+  <td>Feat: Update grading service</td>
+  <td>Actualización del servicio de clasificación por grados</td>
+  <td><em>14/11/25</em></td>
+</tr>
+<tr>
+  <td>api-platform</td><td>main</td><td><em>daecbe6</em></td>
+  <td>Feat: Update cloudinary service</td>
+  <td>Mejoras en el servicio de almacenamiento en la nube (2/2 checks)</td>
+  <td><em>14/11/25</em></td>
+</tr>
+<tr>
+  <td>api-platform</td><td>main</td><td><em>07dc19c</em></td>
+  <td>feat: implement email notification system for classification reports</td>
+  <td>Sistema de notificaciones por email para reportes</td>
+  <td><em>15/11/25</em></td>
+</tr>
+<tr>
+  <td>api-platform</td><td>main</td><td><em>fc26ce6</em></td>
+  <td>feat: implement email notification system for classification reports</td>
+  <td>Implementación completa con validaciones (2/2 checks)</td>
+  <td><em>15/11/25</em></td>
+</tr>
+<tr>
+  <td>api-platform</td><td>main</td><td><em>50b4b52</em></td>
+  <td>Merge pull request #1 from upc-pre-202520-1asi0728-7291-DevBeans/production</td>
+  <td>Merge final con verificación completa del backend</td>
+  <td><em>15/11/25</em></td>
+</tr>
+
+<!-- Detect Bean AI (ML Model) Repository -->
+<tr>
+  <td>detect-bean-ai</td><td>main</td><td><em>abraham...</em></td>
+  <td>feat: add the main project structure</td>
+  <td>Estructura base del proyecto de Machine Learning</td>
+  <td><em>01/10/25</em></td>
+</tr>
+<tr>
+  <td>detect-bean-ai</td><td>main</td><td><em>abraham...</em></td>
+  <td>fix: delete the np file</td>
+  <td>Limpieza de archivos temporales numpy</td>
+  <td><em>01/10/25</em></td>
+</tr>
+<tr>
+  <td>detect-bean-ai</td><td>main</td><td><em>OscarGAV</em></td>
+  <td>feature: add connection to kaggle repository</td>
+  <td>Conexión con dataset de Kaggle para entrenamiento</td>
+  <td><em>10/11/25</em></td>
+</tr>
+<tr>
+  <td>detect-bean-ai</td><td>main</td><td><em>OscarGAV</em></td>
+  <td>feat: update models and quality classifier</td>
+  <td>Actualización de modelos CNN y clasificador de calidad</td>
+  <td><em>10/11/25</em></td>
+</tr>
+<tr>
+  <td>detect-bean-ai</td><td>main</td><td><em>OscarGAV</em></td>
+  <td>fix: implement color-size-based quality scoring using trained 4-class CNN</td>
+  <td>Implementación de scoring basado en color y tamaño con CNN de 4 clases</td>
+  <td><em>10/11/25</em></td>
+</tr>
+<tr>
+  <td>detect-bean-ai</td><td>main</td><td><em>OscarGAV</em></td>
+  <td>feat: add README.md</td>
+  <td>Documentación del modelo de Machine Learning</td>
+  <td><em>10/11/25</em></td>
+</tr>
   </tbody>
 </table>
 
