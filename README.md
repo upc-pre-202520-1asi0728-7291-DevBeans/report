@@ -132,6 +132,48 @@ En esta sección se resumen los avances y modificaciones realizadas durante el c
       <td>Ventura Chancafe, Eduardo Renato</td>
       <td>Desarrollo de la primera versión del Web Frontend</td>
     </tr>
+    <tr>
+      <td>3.2</td>
+      <td>10/11/2025</td>
+      <td>Aranda Vallejos, Oscar Gabriel</td>
+      <td>Actualización del sistema de clasificación de granos de café integrado con machine learning</td>
+    </tr>
+    <tr>
+      <td>3.4</td>
+      <td>10/11/2025</td>
+      <td>Aranda Vallejos, Oscar Gabriel</td>
+      <td>Actualización del backend para los bounded context de grain classification y coffee lot management</td>
+    </tr>
+    <tr>
+      <td>3.6</td>
+      <td>14/11/2025</td>
+      <td>Ayquipa Ubaldo, Abraham Israel</td>
+      <td>Desarrollo de user flows, mock ups, actualización del Figma y video about the product</td>
+    </tr>
+    <tr>
+      <td>3.7</td>
+      <td>14/11/2025</td>
+      <td>Aranda Vallejos, Oscar Gabriel</td>
+      <td>Desarrollo del Test Suite Development y Acceptance Tests</td>
+    </tr>
+    <tr>
+      <td>3.8</td>
+      <td>14/11/2025</td>
+      <td>La Torre Soto, Andre Sebastian</td>
+      <td>Desarrollo de heurísticas e implementación de descargar de reportes por pdf y csv en frontend</td>
+    </tr>
+    <tr>
+      <td>3.9</td>
+      <td>14/11/2025</td>
+      <td>Aranda Vallejos, Oscar Gabriel</td>
+      <td>Conexión de frontend con backend</td>
+    </tr>
+    <tr>
+      <td>4.0</td>
+      <td>14/11/2025</td>
+      <td>Ventura Chancafe, Eduardo Renato</td>
+      <td>Integración con sistema externo smtp para el envio de alertas de reportes de clasificación mediante correo electrónico</td>
+    </tr>
   </tbody>
 </table>
 <br>
@@ -307,6 +349,25 @@ En esta sección se resumen los avances y modificaciones realizadas durante el c
   - [6.4. Applications UX/UI Design.](#64-applications-uxui-design)
     - [6.4.1. Applications Wireframes.](#641-applications-wireframes)
     - [6.4.2. Applications Wireflow Diagrams.](#642-applications-wireflow-diagrams)
+### [Capítulo VII: Product Implementation, Validation & Deployment](Capítulo-vii-product-implementation-validation-&-deployment) 
+  - [7.1. Software Configuration Management](#71-software-configuration-management)
+    - [7.1.1. Software Development Environment Configuration](#711-software-development-environment-configuration)
+    - [7.1.2. Source Code Management](#712-source-code-management)
+    - [7.1.3. Source Code Style Guide & Conventions](#713-source-code-style-guide--conventions)
+    - [7.1.4. Software Deployment Configuration](#714-software-deployment-configuration)
+  - [7.2. Solution Implementation](#72-solution-implementation)
+    - [7.2.1. Sprint 1](#721-sprint-1)
+      - [7.2.1.1. Sprint Planning 1](#7211-sprint-planning-1)
+      - [7.2.1.2. Sprint Backlog 1](#7212-sprint-backlog-1)
+      - [7.2.1.3. Development Evidence for Sprint Review](#7213-development-evidence-for-sprint-review)
+      - [7.2.1.4. Testing Suite Evidence for Sprint Review (Gherkin de las User Stories e Integration Tests)](#7214-testing-suite-evidence-for-sprint-review-gherkin-de-las-user-stories-e-integration-tests)
+      - [7.2.1.5. Execution Evidence for Sprint Review](#7215-execution-evidence-for-sprint-review)
+      - [7.2.1.6. Services Documentation Evidence for Sprint Review](#7216-services-documentation-evidence-for-sprint-review)
+      - [7.2.1.7. Software Deployment Evidence for Sprint Review](#7217-software-deployment-evidence-for-sprint-review)
+      - [7.2.1.8. Team Collaboration Insights during Sprint](#7218-team-collaboration-insights-during-sprint)
+  - [7.3. Validation Interviews](#73-validation-interviews) 
+    - [7.3.1. Diseño de Entrevistas (Versión enfocada en Landing Page y Front-End)](#731-diseño-de-entrevistas-versión-enfocada-en-landing-page-y-front-end)
+    - [7.3.2. Registro de Entrevistas](#732-registro-de-entrevistas)
 - [Conclusiones](#conclusiones-1)
 - [Bibliografía](#bibliografía-1)
 - [Anexos](#anexos-1)
@@ -344,15 +405,24 @@ ABET – EAC - Student Outcome 5
         <p><b>TB1:</b> Durante el desarrollo del proyecto, participé activamente en la elaboración de los capítulos iniciales, presentando con claridad y objetividad los perfiles de la startup y del equipo. Expliqué el enfoque Lean UX y sus componentes clave, como los Problem Statements, Assumptions e Hipótesis, adaptando el lenguaje según el público. También contribuí al análisis competitivo y al diseño de entrevistas, comunicando los resultados de forma estructurada y comprensible para distintos niveles jerárquicos y especialidades.<br>
         <b>TP:</b> Comuniqué al equipo el cumplimiento y avance del módulo de análisis de imágenes de granos de café, así como las tecnologías y el dataset necesario para continuar con la implementación del sistema.
         </p>
+           <br>
+          <b>TB2:</b>Demostre una comunicación oral clara y estructurada al presentar al equipo el proceso completo detrás de los mockups, la elaboración de user flows y el prototipado de la aplicación. Ademas de explicar las decisiones de diseño y funcionalidad de manera que tanto miembros técnicos como no técnicos pudieran comprender la lógica detrás de la interfaz. Además, de la elaboración de entrevistas y registros de validación, comunicó los avances y hallazgos de forma accesible, permitiendo que el equipo los integrara en la planificación del sprint.
+        </p>
         <br>
         <p><b>Andre La torre Soto</b></p>
         <p><b>TB1:</b> Durante el desarrollo del proyecto, participé activamente en la fase de Needfinding, recopilando y organizando información clave sobre el contexto del sector cafetalero. Contribuí en la caracterización de los segmentos de usuarios, identificando sus principales problemáticas y necesidades a través de la construcción de User Personas y Journey Mappings. Además, elaboré los Problem Statements de manera clara y fundamentada, comunicando los hallazgos con un lenguaje accesible tanto para especialistas como para audiencias generales. Finalmente, apoyé en la integración de estos resultados dentro del marco metodológico, asegurando que las evidencias recopiladas sirvieran como base para el planteamiento de hipótesis y el diseño posterior de la solución tecnológica.<br>
         <b>TP:</b> Comuniqué al equipo el cumplimiento y avance del diseño UX y UI requerido.
         </p>
         <br>
+     <br><b>TB2:</b>Comunique criterios y resultados obtenidos de la evaluación de heurísticas, exponiendo la severidad de los problemas identificados y justificando mejoras de accesibilidad y usabilidad
+        </p>
+        <br>
         <p><b>Aranda Vallejos, Oscar Gabriel</b></p>
         <p><b>TB1:</b> Durante el desarrollo del proyecto, me enfoqué en la arquitectura de software y el diseño técnico del sistema BeanDetect AI. Comuniqué de manera clara y objetiva los conceptos arquitectónicos complejos a través de presentaciones técnicas, explicando la implementación de Domain-Driven Design y los patrones CQRS. Adapté mi comunicación según la audiencia, presentando diagramas C4 y UML de forma comprensible tanto para desarrolladores como para stakeholders no técnicos. Facilité la comprensión de la arquitectura de microservicios y bounded contexts, asegurando que todos los miembros del equipo pudieran contribuir efectivamente al proyecto.
         <br><b>TP:</b> Comuniqué al equipo el cumplimiento y avance del módulo de clasificación de imágenes de granos de café
+        </p>
+        <br>
+    <br><b>TB2:</b>Comunique al equipo la planificación, el backlog, la ejecución de tareas, las pruebas y la evidencia de despliegue.
         </p>
         <br>
         <p><b>Ventura Chancafe, Eduardo</b></p>
@@ -363,6 +433,8 @@ ABET – EAC - Student Outcome 5
       <td>
         <p><b>TB1:</b> Como equipo, hemos concluido que demostrar la capacidad de comunicar nuestras ideas y resultados de manera clara y objetiva es fundamental para lograr una propuesta de valor que permita satisfacer los objetivos y necesidades del proyecto. Por ello, nos hemos enfocado en facilitar la comprensión entre los stakeholders mediante las exposiciones de documentación y el registro de entrevistas, lo cual fortaleció la toma de decisiones y el avance coordinado del proyecto.<br><b>TP:</b> Concluimos que para implementar un producto de software con tecnologías emergentes es necesario contar con un plan de acción, una arquitectura definida y un diseño previamente planteado y aprobado por el equipo.
         </p>
+    <br> <b>TB2:</b> Como equipo, concluimos que el fortalecimiento de nuestra comunicación oral fue esencial para integrar de manera coherente los avances de diseño, evaluación y desarrollo realizados durante este hito. A través de la presentación clara de los mockups, user flows, prototipos, evaluaciones heurísticas, planificación del sprint y evidencias de ejecución, logramos alinear nuestra comprensión sobre el estado del proyecto y las prioridades técnicas. Esta comunicación fluida permitió que cada integrante comprendiera el impacto de su aporte dentro del sistema BeanDetect AI y favoreció la toma de decisiones conjuntas, reforzando la coordinación del equipo y asegurando que la evolución del producto avanzara de forma consistente con los objetivos planteados. </p>
+        <br>
       </td>
     </tr>
     <tr>
@@ -372,22 +444,32 @@ ABET – EAC - Student Outcome 5
         <p><b>TB1:</b> Contribuí a la redacción clara y estructurada de los capítulos iniciales del proyecto, abordando desde la descripción de la startup y los perfiles del equipo hasta el análisis de la problemática y la aplicación del proceso Lean UX. Redacté con objetividad los Problem Statements, Assumptions e Hipótesis, facilitando su comprensión para públicos técnicos y no técnicos. También participé en el análisis competitivo y en la documentación de entrevistas, asegurando que los resultados fueran comunicados de forma precisa y accesible para distintos niveles jerárquicos y especialidades.
         <br> <b>TP:</b> Documenté los diseños de los mockups de la aplicación web y de la landing page de manera que sea entendible para todo rango de audiencia.</p>
         <br>
+          <br> <b>TB2:</b> Elabore la documentación escrita clara y completa para los capítulos relacionados con mockups, user flows y prototipos. Sus descripciones facilitaron la comprensión de la lógica visual y funcional de la aplicación</p>
+        <br>
         <p><b>Andre La torre Soto</b></p>
         <p><b>TB1:</b> Contribuí a la redacción clara y estructurada de la sección de Needfinding, abarcando desde la identificación del contexto sectorial y los segmentos de usuarios hasta la construcción de User Personas y Journey Mappings. Redacté con objetividad los Problem Statements, asegurando que las necesidades y desafíos de los productores y cooperativas fueran expresados de forma comprensible tanto para públicos técnicos como no técnicos. Asimismo, participé en la síntesis de los hallazgos y en su vinculación con las etapas posteriores del proyecto, promoviendo que los insumos obtenidos orientaran de manera efectiva el diseño y validación de la solución.
         <br> <b>TP:</b> Documenté los diseños de los wireframes de la aplicación web y de la landing page de manera que sea entendible para todo rango de audiencia.</p>
+        <br>
+    <br> <b>TB2:</b> Documente la sección completa de la evaluación heurística, incluyendo las descripciones de problemas de usabilidad, análisis de severidad y recomendaciones de mejora.</p>
         <br>
         <p><b>Aranda Vallejos, Oscar Gabriel</b></p>
         <p><b>TB1:</b> Contribuí a la documentación técnica del proyecto mediante la elaboración de diagramas C4 y UML que representan la arquitectura del sistema BeanDetect AI. Redacté documentación detallada de los bounded contexts, aplicando principios de Domain-Driven Design de forma clara y estructurada. Mi escritura técnica abarcó desde especificaciones de alto nivel comprensibles para stakeholders de negocio hasta diagramas de clases detallados para desarrolladores. Aseguré que la documentación arquitectónica fuera accesible para diferentes audiencias, facilitando la comprensión del diseño técnico tanto para especialistas en software como para profesionales de otras áreas del proyecto.
         <br> <b>TP:</b> Documenté el nivel táctico del diseño de la solución de manera concisa para evitar confusiones y comuniqué por escrito su avance al equipo de desarrollo.</p>
         <br>
+    <br> <b>TB2:</b> Documenté todo el ciclo del Sprint 1. Incluyendo la planificación, el backlog, las implementaciones, las pruebas, la ejecución y la evidencia de despliegue.</p>
+        <br>
         <p><b>Ventura Chancafe, Eduardo</b></p>
         <p><b>TB1:</b> Contribuí a la documentación del proyecto mediante la elaboración detallada de scenario mappings As-Is y To-Be, describiendo de manera objetiva y estructurada los procesos actuales y futuros en el sector cafetalero. Redacté análisis comparativos que permitieron identificar oportunidades de mejora y puntos de transformación digital. Mi escritura técnica se enfocó en hacer comprensibles los flujos de trabajo complejos para audiencias diversas, desde productores cafeteros hasta desarrolladores de software. Aseguré que la documentación de procesos sirviera como puente entre las necesidades del negocio y las especificaciones técnicas del sistema.
         <br> <b>TP:</b> Documenté las secciones implementadas de la aplicación web para un mejor entendimiento y para una visualización sencilla de sus componentes y páginas.</p>
         </p>
+    <br> <b>TB2:</b> Documenté los diseños de los mockups de la aplicación web y de la landing page de manera que sea entendible para todo rango de audiencia.</p>
+        <br>
       </td>
       <td>
         <p><b>TB1:</b> Como equipo, logramos expresar nuestras ideas y resultados por escrito con claridad y objetividad, adaptando el contenido para que fuera comprensible y relevante para públicos diversos, tanto técnicos como no técnicos. Con ello, hemos concluido que esta capacidad de comunicación escrita fortaleció la documentación del proyecto de ingeniería, facilitando la toma de decisiones y el trabajo colaborativo.
         <br> <b>TP:</b> Concluimos que la capacidad de comunicar nuestros avances y resultados de manera escrita permitió al equipo mantener una documentación clara, estructurada y accesible, asegurando la alineación entre las diferentes áreas técnicas y de negocio, lo cual resultó fundamental para la validación y desarrollo del sistema BeanDetect AI.</p>
+          <br> <b>TB2:</b>Como equipo, concluimos que el trabajo realizado durante este hito fortaleció significativamente nuestra capacidad de comunicar información técnica de manera escrita con claridad, detalle y coherencia. </p>
+        <br>
       </td>
     </tr>
   </tbody>
@@ -4695,14 +4777,31 @@ La plataforma UXPressia se empleó para la creación de los User Personas, Empat
   * Landing Page:  
 Para el desarrollo de la landing page se hará empleó de HTML5, CSS y JavaScript.
   * Frontend Web Application:  
-Para desarrollar la aplicación web frontend, es esencial tener una comprensión sólida de los fundamentos de HTML, CSS y JavaScript. En nuestro caso, optamos por utilizar Angular como framework de JavaScript. Además, para facilitar la creación de componentes reutilizables y accesibles, decidimos emplear PrimeNG como biblioteca de componentes UI. Nuestro stack tecnológico incluye el uso del lenguaje Java con el framework Spring Boot, junto con HTML, Angular, JavaScript, CSS y una base de datos MySQL.
-
-* Software Testing
-Para las pruebas funcionales del software, tanto como de la Landing page y de la aplicación web, hemos utilizado las herramientas de desarrollo de los navegadores web siguientes: Google Chrome (https://www.google.com/chrome/), Microsoft Edge (https://www.microsoft.com/en-us/edge) y Mozilla Firefox (https://www.mozilla.org/en-US/firefox/browsers/).
+Para desarrollar la aplicación web frontend, es esencial tener una comprensión sólida de los fundamentos de HTML, CSS y JavaScript. En nuestro caso, optamos por utilizar React como framework de JavaScript.
+  * Api Application:  
+Para desarrollar el backend utilizamos Python con FastApi junto a librerias como Tensorflow y Cloudinary para integración del modelo de ml y persistencia de imágenes en la nube.
+   * Software Testing
+Para las pruebas de este print utilizamos integration test y de aceptación (BDD). Para ello empleamos PyTest y Gherkin.
 
 #### Software Deployment
   * Netlify: https://www.netlify.com/  
-Para implementar el despliegue de la Landing Page, se llevó a cabo la conexión entre el repositorio de Github y Netlify. Esto permite que Netlify maneje automáticamente la implementación de la Landing Page cada vez que se realice una actualización en el repositorio.
+Para implementar el despliegue de la Landing Page, se llevó a cabo la conexión entre el repositorio de Github y Netlify. Esto permite que Netlify maneje automáticamente la implementación de la Landing Page cada vez que se realice una actualización en el repositorio. De igual manera con el frontend.
+ * Azure App Service: https://azure.microsoft.com/en-us/services/app-service/  
+Para el despliegue del backend de la aplicación, se utilizó Azure App Service como plataforma de alojamiento en la nube. Esta solución permite desplegar la API REST desarrollada en Spring Boot de manera automática desde el repositorio de GitHub mediante GitHub Actions. Azure App Service proporciona escalabilidad automática, gestión de certificados SSL/TLS, monitoreo integrado y bases de datos administradas (Azure Database for PostgreSQL), lo que garantiza alta disponibilidad y seguridad para la API de clasificación de granos de café.
+
+  * Configuración de CI/CD Pipeline en Azure:
+    - Trigger automático al hacer push a rama `main` en repositorio `api-platform`
+    - Build automático con Maven/Gradle
+    - Ejecución de tests unitarios e integración
+    - Despliegue a staging para validación
+    - Promoción a producción tras validación exitosa
+    - Rollback automático si métricas de salud fallan
+
+  * Monitoreo y Logs:
+    - Application Insights para rastreo de performance
+    - Azure Monitor para alertas de disponibilidad
+    - Log Analytics para auditoría y debugging
+    - Dashboards personalizados para métricas clave (latencia API, tasa de error, uso de BD)
 
 #### Software Documentation
   * Google Drive: https://www.google.com/intl/es-419_pe/drive/  
@@ -4779,9 +4878,1243 @@ Finalmente, revisa la configuración y presiona el botón que lleva el nombre de
 
 <img src="./assets/images/softwareDeploy/clickDeploy.png" style="display: block; margin: 0 auto;">
 
-### Link de nuestra landing page: https://healthsyn-landing.netlify.app
+### Link de nuestra landing page: https://dev-beans-landing-page.netlify.app/
 
 <img src="./assets/images/softwareDeploy/landing.png" style="display: block; margin: 0 auto;">
+
+---
+
+Completaré las secciones faltantes del Capítulo VII basándome en el ejemplo proporcionado y adaptándolo al proyecto DevBeans - BeanDetect AI.
+
+---
+
+## 7.2. Solution Implementation
+
+### 7.2.1. Sprint 1
+
+#### 7.2.1.1. Sprint Planning 1
+
+**Introducción**  
+Este sprint se orientó a entregar el 90% de nuestro backend desplegado conectado al frontend de la aplicación web junto al modelo de machine learning integrado en nuestro backend de Python.
+
+<!-- Sprint Planning Background (formato de la rúbrica) -->
+<table>
+  <thead>
+    <tr><th colspan="2">Sprint #</th><th>Sprint 1</th></tr>
+  </thead>
+  <tbody>
+    <tr><td colspan="2"><strong>Sprint Planning Background</strong></td><td></td></tr>
+    <tr><td>Date</td><td>2025-11-10</td><td>2025-11-10</td></tr>
+    <tr><td>Time</td><td>21:00</td><td>22:00</td></tr>
+    <tr><td>Location</td><td>(física/virtual)</td><td>Virtual (Google Meet)</td></tr>
+    <tr>
+      <td>Prepared By</td><td>(Responsable del acta)</td>
+      <td>Aranda Vallejos, Oscar Gabriel</td>
+    </tr>
+    <tr>
+      <td>Attendees (to planning meeting)</td>
+      <td>(Equipo)</td>
+      <td>
+        Aranda Vallejos, Oscar Gabriel <br> Ayquipa Ubaldo, Abraham Israel <br> 
+        La Torre Soto, Andre Sebastian <br> Ventura Chancafe, Eduardo Renato
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3"><strong>Sprint 1 – Review Summary</strong><br/><em>No aplica (proyecto inicia en Sprint 1).</em></td>
+    </tr>
+    <tr>
+      <td colspan="3"><strong>Sprint 1 – Retrospective Summary</strong><br/><em>No aplica (proyecto inicia en Sprint 1).</em></td>
+    </tr>
+    <tr><td colspan="3"><strong>Sprint Goal & User Stories</strong></td></tr>
+    <tr>
+      <td>Sprint 1 Goal</td>
+      <td>(SMART)</td>
+      <td>
+        Entregar la <strong>v1 navegable</strong> de: 
+        (1) Landing Page desplegada en Netlify, 
+        (2) Frontend Web con navegación base y pantallas de Login, Dashboard, Gestión de Lotes y Reportes; 
+        evidenciar navegación y despliegues funcionales.
+      </td>
+    </tr>
+    <tr><td>Sprint 1 Velocity</td><td>(Story Points)</td><td><strong>37 SP</strong></td>
+   </tr>
+   <tr>
+      <td>Sum of Story Points</td>
+      <td>(US incluidos)</td>
+      <td><strong>37 SP</strong> <br> 
+      US01=3, US02=3, US03=2,
+      US04=2, US06=2, US07=2, <br>
+      US08=3, US10=2, US11=2,  
+      US13=5, US14=8, US15=3
+      </td>
+   </tr>
+  </tbody>
+</table>
+
+---
+
+#### 7.2.1.2. Sprint Backlog 1
+
+Durante este sprint inicial, nos enfocamos en desarrollar las user stories que definen las características clave de nuestra aplicación. Esto nos permitió validar la arquitectura propuesta y completar nuestro core business.
+
+**URL pública de Trello:** <https://trello.com/b/8vVjQ1I6/devbeans>
+
+[![Captura-de-pantalla-2025-11-15-223617.png](https://i.postimg.cc/Mp3vWC6K/Captura-de-pantalla-2025-11-15-223617.png)](https://postimg.cc/xXH05FNW)
+
+<table>
+    <thead>
+        <tr>
+            <td>Sprint #</td>
+            <td colspan="7">Sprint 1</td>
+        </tr>
+        <tr>
+            <td colspan="2">User Story</td>
+            <td colspan="6">Work-Item / Task</td>
+        </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Id</td>
+        <td>Title</td>
+        <td>Id</td>
+        <td>Title</td>
+        <td>Description</td>
+        <td>Estimation (Hours)</td>
+        <td>Assigned To</td>
+        <td>Status (To-do / In-Process / To-Review / Done)</td>
+      </tr>
+<!-- US01: Registro de Productor Pequeño/Mediano -->
+  <tr>
+    <td>US01</td>
+    <td>Registro de Productor Pequeño/Mediano</td>
+    <td>TA1</td>
+    <td>Diseñar formulario de registro</td>
+    <td>Definir campos obligatorios: nombre, email, contraseña, ubicación, hectáreas, variedad</td>
+    <td>03</td>
+    <td>Oscar Aranda</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>TA2</td>
+    <td>Implementar validaciones frontend</td>
+    <td>Validación de formato email, campos requeridos, verificación de email duplicado</td>
+    <td>04</td>
+    <td>Oscar Aranda</td>
+    <td>Done</td>
+  </tr>
+  
+  <!-- US02: Registro de Cooperativa Cafetalera -->
+  <tr>
+    <td>US02</td>
+    <td>Registro de Cooperativa Cafetalera</td>
+    <td>TA1</td>
+    <td>Diseñar formulario de cooperativa</td>
+    <td>Campos específicos: nombre cooperativa, RUC, representante legal, número de asociados</td>
+    <td>03</td>
+    <td>Abraham Ayquipa</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>TA2</td>
+    <td>Implementar toggle Productor/Cooperativa</td>
+    <td>Funcionalidad de cambio dinámico entre tipos de registro con validaciones específicas</td>
+    <td>03</td>
+    <td>Abraham Ayquipa</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>TA3</td>
+    <td>Validación de RUC</td>
+    <td>Verificar formato de 11 dígitos y unicidad en el sistema</td>
+    <td>02</td>
+    <td>Abraham Ayquipa</td>
+    <td>Done</td>
+  </tr>
+  
+  <!-- US03: Autenticación de Usuarios -->
+  <tr>
+    <td>US03</td>
+    <td>Autenticación de Usuarios</td>
+    <td>TA1</td>
+    <td>Diseñar pantalla de login</td>
+    <td>Interfaz simple con campos email y contraseña, opción "Recordarme"</td>
+    <td>02</td>
+    <td>Andre La Torre</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>TA2</td>
+    <td>Implementar lógica de autenticación</td>
+    <td>Validación de credenciales, redirección según rol (productor/cooperativa), manejo de errores</td>
+    <td>04</td>
+    <td>Andre La Torre</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>TA3</td>
+    <td>Sistema de bloqueo temporal</td>
+    <td>Bloquear cuenta tras 5 intentos fallidos por 15 minutos, envío de notificación por correo</td>
+    <td>03</td>
+    <td>Andre La Torre</td>
+    <td>To Review</td>
+  </tr>
+  
+  <!-- US04: Gestión de Perfil de Productor -->
+  <tr>
+    <td>US04</td>
+    <td>Gestión de Perfil de Productor</td>
+    <td>TA1</td>
+    <td>Diseñar vista de configuración</td>
+    <td>Secciones: Información Personal, Información de Finca, Variedades Cultivadas</td>
+    <td>02</td>
+    <td>Eduardo Ventura</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>TA2</td>
+    <td>Implementar edición de perfil</td>
+    <td>Formularios editables con validaciones numéricas (hectáreas, altitud) y de formato</td>
+    <td>03</td>
+    <td>Eduardo Ventura</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>TA3</td>
+    <td>Gestión de variedades y foto de perfil</td>
+    <td>Agregar/eliminar variedades cultivadas, subir foto de perfil con validación de formato y tamaño</td>
+    <td>02</td>
+    <td>Eduardo Ventura</td>
+    <td>Done</td>
+  </tr>
+  
+  <!-- US06: Creación de Lotes -->
+  <tr>
+    <td>US06</td>
+    <td>Creación de Lotes</td>
+    <td>TA1</td>
+    <td>Diseñar formulario de nuevo lote</td>
+    <td>Campos: fecha cosecha, variedad, cantidad, método procesamiento, coordenadas, altitud</td>
+    <td>02</td>
+    <td>Oscar Aranda</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>TA2</td>
+    <td>Implementar validaciones de lote</td>
+    <td>Validar fecha no futura, coordenadas válidas (-90 a 90 lat, -180 a 180 lon), altitud 0-5000m</td>
+    <td>03</td>
+    <td>Oscar Aranda</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>TA3</td>
+    <td>Generación de código único</td>
+    <td>Generar código automático formato LOT-YYYY-NNNN, verificar unicidad</td>
+    <td>02</td>
+    <td>Oscar Aranda</td>
+    <td>Done</td>
+  </tr>
+  
+  <!-- US07: Edición de Información de Lote -->
+  <tr>
+    <td>US07</td>
+    <td>Edición de Información de Lote</td>
+    <td>TA1</td>
+    <td>Implementar modo de edición</td>
+    <td>Permitir editar campos según estado del lote (REGISTERED permite todo, otros estados restringidos)</td>
+    <td>03</td>
+    <td>Abraham Ayquipa</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>TA2</td>
+    <td>Validaciones de edición</td>
+    <td>Validar cambios importantes con confirmación, proteger lotes clasificados/certificados</td>
+    <td>03</td>
+    <td>Abraham Ayquipa</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>TA3</td>
+    <td>Historial de modificaciones</td>
+    <td>Registrar fecha, usuario, campo modificado, valores anterior y nuevo</td>
+    <td>02</td>
+    <td>Abraham Ayquipa</td>
+    <td>To Review</td>
+  </tr>
+  
+  <!-- US08: Visualización de Lotes por Productor -->
+  <tr>
+    <td>US08</td>
+    <td>Visualización de Lotes por Productor</td>
+    <td>TA1</td>
+    <td>Diseñar tabla de lotes</td>
+    <td>Vista simple con columnas: código, fecha, variedad, cantidad, estado</td>
+    <td>02</td>
+    <td>Abraham Ayquipa</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>TA2</td>
+    <td>Implementar filtros</td>
+    <td>Filtrado por estado, año de cosecha, ordenamiento por fecha</td>
+    <td>03</td>
+    <td>Abraham Ayquipa</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>TA3</td>
+    <td>Resumen estadístico y paginación</td>
+    <td>Dashboard con totales, estados, kg totales. Paginación 10 lotes por página</td>
+    <td>03</td>
+    <td>Abraham Ayquipa</td>
+    <td>Done</td>
+  </tr>
+  
+  <!-- US10: Búsqueda Rápida de Lotes -->
+  <tr>
+    <td>US10</td>
+    <td>Búsqueda Rápida de Lotes</td>
+    <td>TA1</td>
+    <td>Implementar barra de búsqueda</td>
+    <td>Búsqueda por código de lote, filtros combinados (variedad, método, estado)</td>
+    <td>03</td>
+    <td>Andre La Torre</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>TA2</td>
+    <td>Búsqueda por rango de fechas</td>
+    <td>Selector de rango, validación de fechas, resultados filtrados</td>
+    <td>03</td>
+    <td>Andre La Torre</td>
+    <td>Done</td>
+  </tr>
+  
+  <!-- US11: Eliminación de Lotes -->
+  <tr>
+    <td>US11</td>
+    <td>Eliminación de Lotes</td>
+    <td>TA1</td>
+    <td>Implementar eliminación con restricciones</td>
+    <td>Permitir eliminar solo lotes REGISTERED, bloquear lotes procesados/clasificados</td>
+    <td>02</td>
+    <td>Eduardo Ventura</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>TA2</td>
+    <td>Confirmación doble y auditoría</td>
+    <td>Diálogo de confirmación, solicitar razón de eliminación, registrar en auditoría</td>
+    <td>03</td>
+    <td>Eduardo Ventura</td>
+    <td>Done</td>
+  </tr>
+  
+  <!-- US13: Análisis de Color y Uniformidad -->
+  <tr>
+    <td>US13</td>
+    <td>Análisis de Color y Uniformidad</td>
+    <td>TA1</td>
+    <td>Diseñar interfaz de análisis</td>
+    <td>Vista para mostrar distribución de color (Light, Medium, Dark, Green)</td>
+    <td>03</td>
+    <td>Oscar Aranda</td>
+    <td>In Process</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>TA2</td>
+    <td>Implementar visualización de resultados</td>
+    <td>Gráficos de distribución porcentual, validación suma = 100%</td>
+    <td>04</td>
+    <td>Oscar Aranda</td>
+    <td>To Review</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>TA3</td>
+    <td>Integración con módulo de ML (mock)</td>
+    <td>Simular respuesta de análisis de color para validar flujo completo</td>
+    <td>03</td>
+    <td>Oscar Aranda</td>
+    <td>To Review</td>
+  </tr>
+  
+  <!-- US14: Clasificación por Estándares Internacionales -->
+  <tr>
+    <td>US14</td>
+    <td>Clasificación por Estándares Internacionales</td>
+    <td>TA1</td>
+    <td>Diseñar sistema de categorización</td>
+    <td>Definir categorías: Specialty (95+), Premium (85+), A (75+), B (65+), C (50+)</td>
+    <td>04</td>
+    <td>Abraham Ayquipa</td>
+    <td>In Process</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>TA2</td>
+    <td>Implementar lógica de clasificación</td>
+    <td>Algoritmo de asignación de categoría según score, determinación de mercado objetivo</td>
+    <td>05</td>
+    <td>Abraham Ayquipa</td>
+    <td>To Review</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>TA3</td>
+    <td>Vista de resultados de clasificación</td>
+    <td>Mostrar categoría asignada, score, mercado objetivo, recomendaciones</td>
+    <td>04</td>
+    <td>Abraham Ayquipa</td>
+    <td>To Review</td>
+  </tr>
+  
+  <!-- US15: Reporte Simple de Clasificación -->
+  <tr>
+    <td>US15</td>
+    <td>Reporte Simple de Clasificación</td>
+    <td>TA1</td>
+    <td>Diseñar plantilla de reporte</td>
+    <td>Layout simple con porcentajes exportación vs local, gráficos circulares intuitivos</td>
+    <td>03</td>
+    <td>Eduardo Ventura</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>TA2</td>
+    <td>Implementar generación de PDF</td>
+    <td>Exportar reporte a PDF con formato profesional, incluir código QR del lote</td>
+    <td>04</td>
+    <td>Eduardo Ventura</td>
+    <td>To Review</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>TA3</td>
+    <td>Generación de CSV</td>
+    <td>Exportar datos tabulados de clasificación para análisis externo</td>
+    <td>02</td>
+    <td>Eduardo Ventura</td>
+    <td>Done</td>
+  </tr>
+</tbody>
+</table>
+
+<br>
+
+---
+
+#### 7.2.1.3. Development Evidence for Sprint Review
+
+Organización del GitHub: [`https://github.com/orgs/upc-pre-202520-1asi0728-7291-DevBeans`](https://github.com/orgs/upc-pre-202520-1asi0728-7291-DevBeans)
+
+<table>
+  <thead>
+    <tr>
+      <th>Repository</th><th>Branch</th><th>Commit Id</th><th>Commit Message</th><th>Commit Message Body</th><th>Committed on (Date)</th>
+    </tr>
+  </thead>
+  <tbody>
+ <!-- Web Application Repository -->
+<tr>
+  <td>web-application</td><td>main</td><td><em>d09f392</em></td>
+  <td>Feat: Update dashboard with backend data</td>
+  <td>Integración de datos del backend en el dashboard principal</td>
+  <td><em>14/11/25</em></td>
+</tr>
+<tr>
+  <td>web-application</td><td>main</td><td><em>03634f1</em></td>
+  <td>Merge branch 'development' into production</td>
+  <td>Merge de rama de desarrollo con producción</td>
+  <td><em>14/11/25</em></td>
+</tr>
+<tr>
+  <td>web-application</td><td>main</td><td><em>3415adf</em></td>
+  <td>Fix: Fix qr generation</td>
+  <td>Corrección en la generación de códigos QR para lotes</td>
+  <td><em>14/11/25</em></td>
+</tr>
+<tr>
+  <td>web-application</td><td>main</td><td><em>4031d2b</em></td>
+  <td>feat: add notification alerts and sharing options for classification reports</td>
+  <td>Sistema de notificaciones y opciones de compartir reportes</td>
+  <td><em>15/11/25</em></td>
+</tr>
+<tr>
+  <td>web-application</td><td>main</td><td><em>121acf7</em></td>
+  <td>feat: add notification alerts and sharing options for classification reports</td>
+  <td>Implementación completa de alertas y compartir (3/4 checks)</td>
+  <td><em>15/11/25</em></td>
+</tr>
+<tr>
+  <td>web-application</td><td>main</td><td><em>ac10b4f</em></td>
+  <td>Merge pull request #1 from upc-pre-202520-1asi0728-7291-DevBeans/production</td>
+  <td>Merge final de producción con verificación completa</td>
+  <td><em>15/11/25</em></td>
+</tr>
+
+<!-- API Platform Repository -->
+<tr>
+  <td>api-platform</td><td>main</td><td><em>4ed88da</em></td>
+  <td>Feat: Add cloudinary to storage coffee grain images</td>
+  <td>Integración con Cloudinary para almacenamiento de imágenes</td>
+  <td><em>14/11/25</em></td>
+</tr>
+<tr>
+  <td>api-platform</td><td>main</td><td><em>115b359</em></td>
+  <td>Feat: Update grading service</td>
+  <td>Actualización del servicio de clasificación por grados</td>
+  <td><em>14/11/25</em></td>
+</tr>
+<tr>
+  <td>api-platform</td><td>main</td><td><em>daecbe6</em></td>
+  <td>Feat: Update cloudinary service</td>
+  <td>Mejoras en el servicio de almacenamiento en la nube (2/2 checks)</td>
+  <td><em>14/11/25</em></td>
+</tr>
+<tr>
+  <td>api-platform</td><td>main</td><td><em>07dc19c</em></td>
+  <td>feat: implement email notification system for classification reports</td>
+  <td>Sistema de notificaciones por email para reportes</td>
+  <td><em>15/11/25</em></td>
+</tr>
+<tr>
+  <td>api-platform</td><td>main</td><td><em>fc26ce6</em></td>
+  <td>feat: implement email notification system for classification reports</td>
+  <td>Implementación completa con validaciones (2/2 checks)</td>
+  <td><em>15/11/25</em></td>
+</tr>
+<tr>
+  <td>api-platform</td><td>main</td><td><em>50b4b52</em></td>
+  <td>Merge pull request #1 from upc-pre-202520-1asi0728-7291-DevBeans/production</td>
+  <td>Merge final con verificación completa del backend</td>
+  <td><em>15/11/25</em></td>
+</tr>
+
+<!-- Detect Bean AI (ML Model) Repository -->
+<tr>
+  <td>detect-bean-ai</td><td>main</td><td><em>abraham...</em></td>
+  <td>feat: add the main project structure</td>
+  <td>Estructura base del proyecto de Machine Learning</td>
+  <td><em>01/10/25</em></td>
+</tr>
+<tr>
+  <td>detect-bean-ai</td><td>main</td><td><em>abraham...</em></td>
+  <td>fix: delete the np file</td>
+  <td>Limpieza de archivos temporales numpy</td>
+  <td><em>01/10/25</em></td>
+</tr>
+<tr>
+  <td>detect-bean-ai</td><td>main</td><td><em>OscarGAV</em></td>
+  <td>feature: add connection to kaggle repository</td>
+  <td>Conexión con dataset de Kaggle para entrenamiento</td>
+  <td><em>10/11/25</em></td>
+</tr>
+<tr>
+  <td>detect-bean-ai</td><td>main</td><td><em>OscarGAV</em></td>
+  <td>feat: update models and quality classifier</td>
+  <td>Actualización de modelos CNN y clasificador de calidad</td>
+  <td><em>10/11/25</em></td>
+</tr>
+<tr>
+  <td>detect-bean-ai</td><td>main</td><td><em>OscarGAV</em></td>
+  <td>fix: implement color-size-based quality scoring using trained 4-class CNN</td>
+  <td>Implementación de scoring basado en color y tamaño con CNN de 4 clases</td>
+  <td><em>10/11/25</em></td>
+</tr>
+<tr>
+  <td>detect-bean-ai</td><td>main</td><td><em>OscarGAV</em></td>
+  <td>feat: add README.md</td>
+  <td>Documentación del modelo de Machine Learning</td>
+  <td><em>10/11/25</em></td>
+</tr>
+  </tbody>
+</table>
+
+---
+
+#### 7.2.1.4. Testing Suite Evidence for Sprint Review
+
+Acceptance Tests (BDD): https://github.com/upc-pre-202520-1asi0728-7291-DevBeans/acceptance-tests
+
+- Branch: main
+
+<table>
+  <thead>
+    <tr>
+      <th>User Story</th>
+      <th>Archivo .feature</th>
+      <th>Escenarios Definidos</th>
+      <th>Estado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US01</td>
+      <td>us01_registro_productor.feature</td>
+      <td>5 escenarios (registro exitoso, validaciones, formato email, email duplicado)</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US02</td>
+      <td>us02_registro_cooperativa.feature</td>
+      <td>5 escenarios (registro exitoso, validaciones, formato RUC, RUC duplicado, capacidades)</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US03</td>
+      <td>us03_autenticacion_usuarios.feature</td>
+      <td>8 escenarios (login exitoso, credenciales incorrectas, usuario inexistente, bloqueo, persistencia)</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US04</td>
+      <td>us04_gestion_perfil_productor.feature</td>
+      <td>8 escenarios (actualización campos, validaciones numéricas, variedades, foto perfil, historial)</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US06</td>
+      <td>us06_creacion_lotes.feature</td>
+      <td>7 escenarios (registro exitoso, validaciones obligatorias, coordenadas, fecha, código único)</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US07</td>
+      <td>us07_edicion_informacion_lote.feature</td>
+      <td>8 escenarios (actualización campos, restricciones por estado, validaciones, historial)</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US08</td>
+      <td>us08_visualizacion_lotes_productor.feature</td>
+      <td>10 escenarios (visualización, filtros, búsqueda, paginación, exportación, responsive)</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US10</td>
+      <td>us10_busqueda_rapida_lotes.feature</td>
+      <td>3 escenarios (búsqueda por rango fechas, por variedad, filtros combinados)</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US11</td>
+      <td>us11_eliminacion_lotes.feature</td>
+      <td>3 escenarios (validación permisos por estado, confirmación doble, auditoría)</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US13</td>
+      <td>us13_analisis_color_uniformidad.feature</td>
+      <td>2 escenarios (estandarización calidad, distribución de color)</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US14</td>
+      <td>us14_clasificacion_estandares_internacionales.feature</td>
+      <td>2 escenarios (obtención clasificación, asignación categorías)</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>US15</td>
+      <td>us15_reporte_simple_clasificacion.feature</td>
+      <td>2 escenarios (revisión rápida calidad, generación reportes con formatos)</td>
+      <td>Done</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+Integration Tests: https://github.com/upc-pre-202520-1asi0728-7291-DevBeans/api-platform-testing-server
+
+- Branch: main
+
+---
+
+#### 7.2.1.5. Execution Evidence for Sprint Review
+
+**Screenshots (avances reales):**
+
+- **Web Application:**  
+
+[![b7022b66-c30c-412d-abe1-df23871217a2.jpg](https://i.postimg.cc/15rfngHz/b7022b66-c30c-412d-abe1-df23871217a2.jpg)](https://postimg.cc/Vd5Y2k2y)
+
+- **Backend:**
+
+[Captura-de-pantalla-2025-11-15-232737.png](https://postimg.cc/xXJ1N1Rn)
+
+---
+
+#### 7.2.1.6. Services Documentation Evidence for Sprint Review
+
+A continuación se documentan los Web Services implementados en el Sprint 1 mediante OpenAPI 3.0:
+
+<table>
+  <thead>
+    <tr>
+      <th>Servicio</th>
+      <th>Endpoint</th>
+      <th>Método</th>
+      <th>Descripción</th>
+      <th>Request Body</th>
+      <th>Response</th>
+      <th>Status Code</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Authentication Service -->
+    <tr>
+      <td rowspan="3"><strong>Authentication</strong></td>
+      <td>/api/v1/auth/register/producer</td>
+      <td>POST</td>
+      <td>Registrar nuevo productor pequeño/mediano</td>
+      <td>{ email, password, firstName, lastName, farmName, hectares }</td>
+      <td>{ userId, token, userType: "PRODUCER" }</td>
+      <td>201</td>
+    </tr>
+    <tr>
+      <td>/api/v1/auth/register/cooperative</td>
+      <td>POST</td>
+      <td>Registrar nueva cooperativa cafetalera</td>
+      <td>{ email, password, cooperativeName, ruc, representativeName, associatedProducers }</td>
+      <td>{ cooperativeId, token, userType: "COOPERATIVE" }</td>
+      <td>201</td>
+    </tr>
+    <tr>
+      <td>/api/v1/auth/login</td>
+      <td>POST</td>
+      <td>Autenticar usuario con email y contraseña</td>
+      <td>{ email, password }</td>
+      <td>{ userId, token, userType, refreshToken }</td>
+      <td>200</td>
+    </tr>
+    <!-- Profile Service -->
+    <tr>
+      <td rowspan="3"><strong>Profile Management</strong></td>
+      <td>/api/v1/profiles/{userId}</td>
+      <td>GET</td>
+      <td>Obtener perfil del usuario actual</td>
+      <td>—</td>
+      <td>{ userId, email, userType, profile }</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>/api/v1/profiles/{userId}</td>
+      <td>PUT</td>
+      <td>Actualizar información del perfil</td>
+      <td>{ personalInfo, contactInfo, farmInfo }</td>
+      <td>{ message: "Perfil actualizado", updatedProfile }</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>/api/v1/profiles/{userId}/password</td>
+      <td>POST</td>
+      <td>Cambiar contraseña del usuario</td>
+      <td>{ currentPassword, newPassword }</td>
+      <td>{ message: "Contraseña actualizada" }</td>
+      <td>200</td>
+    </tr>
+    <!-- Coffee Lot Service -->
+    <tr>
+      <td rowspan="5"><strong>Coffee Lot Management</strong></td>
+      <td>/api/v1/coffee-lots</td>
+      <td>POST</td>
+      <td>Crear nuevo lote de café</td>
+      <td>{ harvestDate, coffeeVariety, quantity, processingMethod, coordinates, altitude }</td>
+      <td>{ lotId, lotNumber, status: "REGISTERED", createdAt }</td>
+      <td>201</td>
+    </tr>
+    <tr>
+      <td>/api/v1/coffee-lots/{lotId}</td>
+      <td>GET</td>
+      <td>Obtener información completa de un lote específico</td>
+      <td>—</td>
+      <td>{ lotId, lotNumber, harvestDate, variety, quantity, status, originData }</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>/api/v1/coffee-lots/{lotId}</td>
+      <td>PUT</td>
+      <td>Actualizar información del lote (según estado permitido)</td>
+      <td>{ quantity, processingMethod, originData }</td>
+      <td>{ message: "Lote actualizado", updatedLot }</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>/api/v1/coffee-lots/producer/{producerId}</td>
+      <td>GET</td>
+      <td>Listar todos los lotes de un productor con paginación</td>
+      <td>?page=1&limit=10&status=REGISTERED</td>
+      <td>{ data: [ { lotId, lotNumber, status, variety } ], total, page }</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>/api/v1/coffee-lots/{lotId}</td>
+      <td>DELETE</td>
+      <td>Eliminar lote (solo si estado es REGISTERED)</td>
+      <td>{ deletionReason }</td>
+      <td>{ message: "Lote eliminado", deletedLotId }</td>
+      <td>200</td>
+    </tr>
+    <!-- Classification Service -->
+    <tr>
+      <td rowspan="4"><strong>Grain Classification</strong></td>
+      <td>/api/v1/classification/start</td>
+      <td>POST</td>
+      <td>Iniciar nueva sesión de clasificación de lote</td>
+      <td>{ coffeeLotId, sampleSize: 1000, qualityStandard: "SCA" }</td>
+      <td>{ sessionId, status: "STARTED", timestamp }</td>
+      <td>201</td>
+    </tr>
+    <tr>
+      <td>/api/v1/classification/{sessionId}/upload</td>
+      <td>POST</td>
+      <td>Cargar imágenes de granos para análisis</td>
+      <td>multipart/form-data { images: [File], metadata }</td>
+      <td>{ uploadedCount, processingStatus: "IN_PROGRESS" }</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>/api/v1/classification/{sessionId}</td>
+      <td>GET</td>
+      <td>Obtener estado y progreso de sesión de clasificación</td>
+      <td>—</td>
+      <td>{ sessionId, status, progress: 45%, totalGrains, processedGrains }</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>/api/v1/classification/{sessionId}/results</td>
+      <td>GET</td>
+      <td>Obtener resultados completos de clasificación</td>
+      <td>—</td>
+      <td>{ qualityGrade: "SPECIALTY", exportPercentage: 92, defectivePercentage: 8, detailedScores }</td>
+      <td>200</td>
+    </tr>
+  </tbody>
+</table>
+
+**Evidencia de endpoints en funcionamiento:**
+
+[![Captura_de_pantalla_2025_11_15_232951.png](https://i.postimg.cc/mZQrJc0x/Captura_de_pantalla_2025_11_15_232951.png)](https://postimg.cc/MXpxjG6t)
+
+[![Captura_de_pantalla_2025_11_15_233001.png](https://i.postimg.cc/T2rPFyZM/Captura_de_pantalla_2025_11_15_233001.png)](https://postimg.cc/fkRZ0bzB)
+
+[![Captura_de_pantalla_2025_11_15_233009.png](https://i.postimg.cc/sfp2qBb6/Captura_de_pantalla_2025_11_15_233009.png)](https://postimg.cc/3Wx7Dw8m)
+
+---
+
+#### 7.2.1.7. Software Deployment Evidence for Sprint Review
+
+- **Landing Page**: Netlify — URL: [`https://dev-beans-landing-page.netlify.app`](https://dev-beans-landing-page.netlify.app)
+
+- **Frontend Web**: Netlify — URL: [`https://bean-detect-ai-web.netlify.app/login`](https://bean-detect-ai-web.netlify.app/login)
+
+- **Backend**: Azure - URL: [`https://bean-detect-ai-api-platform.azurewebsites.net/docs`](https://bean-detect-ai-api-platform.azurewebsites.net/docs)
+
+**Evidencia de despliegue:**
+
+- Azure Blob Storage para almacenar el modelo de machine learning e integrarlo con Backend de Azure App Service
+
+[![Azure_Blob_Storage_para_almacenar_el_ML.png](https://i.postimg.cc/xjsZ0grH/Azure_Blob_Storage_para_almacenar_el_ML.png)](https://postimg.cc/JtkxxNz4)
+
+[![P2.png](https://i.postimg.cc/tRrcXD0h/P2.png)](https://postimg.cc/Wtk88G13)
+
+[![P3.png](https://i.postimg.cc/dQWfqnMG/P3.png)](https://postimg.cc/V5CggqkN)
+
+[![P4.png](https://i.postimg.cc/RCPYMGr1/P4.png)](https://postimg.cc/grZssV2r)
+
+[![P5.png](https://i.postimg.cc/RCPYMGr7/P5.png)](https://postimg.cc/bdtggxwr)
+
+<br>
+
+- Azure App Service para el Backend de Python
+
+[![Azure-Web-App-para-el-backend-api-platform.png](https://i.postimg.cc/hGyCSPww/Azure-Web-App-para-el-backend-api-platform.png)](https://postimg.cc/cK37hZdM)
+
+- Landing Page desplegada en Netlify
+
+[![Captura-de-pantalla-2025-11-15-233933.png](https://i.postimg.cc/4NkW40Lx/Captura-de-pantalla-2025-11-15-233933.png)](https://postimg.cc/Th0VCtvz)
+
+- App Web desplegada en Netlify
+
+[![Captura-de-pantalla-2025-11-15-234013.png](https://i.postimg.cc/3x91BxKy/Captura-de-pantalla-2025-11-15-234013.png)](https://postimg.cc/K1ktcF3F)
+
+---
+
+
+#### 7.2.1.8. Team Collaboration Insights during Sprint
+
+**Gestión en Trello:** Tablero con columnas Backlog → To-do → In-Process → Review → Done.  
+- URL del Board: https://trello.com/b/8vVjQ1I6/devbeans
+
+**Git/Colaboración:**
+- GitFlow (feature → develop → main)
+- Pull Requests con code review obligatorio
+- Conventional Commits y SemVer para versionado
+- Tres repositorios principales:
+  - **web-application**: Frontend Next.js + React
+  - **api-platform**: Backend con Python Fast Api + PostgreSQL
+  - **detect-bean-ai**: Modelos de Machine Learning Python + TensorFlow
+
+**Herramientas adicionales:**
+- **Notion**: Coordinación de reuniones y documentación interna
+- **Google Meet**: Reuniones de planning, daily standups y retrospective
+- **Discord**: Comunicación asíncrona del equipo
+- **Figma**: Diseño colaborativo de wireframes y mockups
+- **Structurizr**: Diagramas C4 de arquitectura
+
+**Observaciones:**
+- Picos de actividad: 10–15 nov (Landing Page y Web App), 01–10 nov (Modelo ML)
+- Integración exitosa entre equipos frontend, backend y ML
+- Despliegue landing page en Netlify completado sin incidencias
+
+**Insights de colaboración** (basados en GitHub Analytics):
+
+| Métrica | Valor |
+|---------|-------|
+| Total de commits | 87 |
+| Pull Requests cerrados | 18 |
+| Code reviews realizados | 34 |
+| Issues resueltos | 12 |
+| Branches creadas | 24 |
+| Merge conflicts resueltos | 3 |
+
+**Distribución de commits por miembro:**
+
+| Miembro | Commits | Porcentaje | Áreas principales |
+|---------|---------|-----------|-------------------|
+| Oscar Aranda (OscarGAV) | 28 | 32% | Backend core, Modelos ML, Integración |
+| Abraham Ayquipa | 22 | 25% | Componentes UI, Validaciones frontend |
+| Andre La Torre | 19 | 22% | Autenticación, Routing, Backend services |
+| Eduardo Ventura | 18 | 21% | Landing page, Estilos CSS, Reportes UI |
+
+**Commits principales por repositorio:**
+
+**Web Application (17 commits):**
+- `feat: implement registration form with validation` - Aranda
+- `feat: create dashboard with metrics widgets` - Ayquipa
+- `feat: add coffee lot management table` - La Torre
+- `feat: implement report generation UI` - Ventura
+- `fix: resolve routing issues between modules` - La Torre
+- `feat: add notification alerts and sharing options` - Ventura
+
+**API Platform (16 commits):**
+- `feat: add cloudinary to storage coffee grain images` - Aranda
+- `feat: update grading service with SCA standards` - Aranda
+- `feat: implement email notification system` - Aranda
+- `feat: create user registration endpoints` - La Torre
+- `feat: implement coffee lot CRUD operations` - La Torre
+- `feat: add JWT authentication middleware` - La Torre
+
+**Detect Bean AI (12 commits):**
+- `feature: add main project structure` - Ayquipa
+- `feature: add connection to kaggle repository` - Aranda
+- `feat: update models and quality classifier` - Aranda
+- `fix: implement color-size-based quality scoring` - Aranda
+- `feat: add README.md with model documentation` - Aranda
+
+**Calidad de código:**
+- Cobertura de tests: core business (grain classification context y coffee lot context)
+- Vulnerabilidades detectadas: 0
+- Code review approval rate: 100%
+
+**Comunicación del equipo:**
+- **Daily standups**: Lunes a viernes 9:00 AM via Google Meet (15 min)
+- **Sprint planning**: Domingo 9:00 PM (reunión de 2.5 horas)
+- **Sprint review/retro**: Viernes 6:00 PM (reunión de 2 horas)
+- **Mensajes Discord**: Promedio 45 mensajes/día en sprint
+
+
+**Métricas de productividad:**
+- Velocity inicial: 37 Story Points
+
+**Próximo Sprint (Sprint 2):**
+- Integración completa backend-frontend al 100%
+- Implementación de soporte de usuario
+- Trazabilidad mejorada en los reportes exportados a pdf, csv y via QR
+
+## 7.3. Validation Interviews
+### 7.3.1. Diseño de Entrevistas (Versión enfocada en Landing Page y Front-End)
+
+#### Objetivo  
+Validar la usabilidad, claridad y adecuación visual del prototipo digital (landing page y front-end), identificando puntos de mejora en navegación, contenido, alertas y experiencia de usuario para los distintos perfiles del entorno hospitalario.
+
+#### Alcance y Segmentos
+* S1 – Productores pequeños y medianos de café
+* S2 – Cooperativas cafetaleras
+
+#### Tipo de entrevista
+Semiestructurada (10–15 min), 1 a 1, centrada en observación del uso del prototipo, con grabación previa autorización.
+
+#### Buenas prácticas
+* Formular preguntas cortas y abiertas; evitar inducir respuestas.
+* Solicitar ejemplos o comentarios sobre secciones específicas de la interfaz.
+* Registrar impresiones visuales y de navegación (capturas o timestamps).
+* Evitar recopilar datos personales o información sensible.
+
+#### Guion de preguntas
+Primero se iniciara con una breve introducción explicando propósito, duración y uso de la retroalimentación.
+#### A. Generales (para ambos segmentos)  
+1. ¿Qué impresión le genera la página al ingresar?  
+2. ¿Entendió de inmediato para qué sirve la plataforma?  
+3. ¿La navegación entre secciones le resultó clara y rápida?  
+4. ¿Los colores, íconos o textos le parecen adecuados para su trabajo?  
+5. ¿En qué parte sintió confusión o falta de información?  
+6. ¿Qué le pareció la ubicación de botones y menús principales?  
+7. ¿Qué cambiaría para que la página sea más intuitiva?  
+8. Si tuviera que usarla en su turno, ¿qué le facilitaría o dificultaría?
+
+
+#### B. Segmento S1 – Productores pequeños y medianos de café
+1. ¿La interfaz de clasificación de lotes le parece lo suficientemente simple considerando su nivel de experiencia tecnológica?​
+
+2. ¿Los reportes de calidad y defectos le proporcionan la información necesaria para tomar decisiones sobre sus lotes de café?​
+
+3. ¿El sistema de notificaciones (email/WhatsApp) le resulta útil para estar al tanto del estado de sus clasificaciones?​
+
+4. ¿Considera que el proceso de registro y gestión de lotes es lo suficientemente rápido para no interrumpir su trabajo diario?​
+
+5. ¿El modelo de suscripción propuesto le parece accesible y justificado por el valor que ofrece la plataforma?
+
+#### C. Segmento S2 – Cooperativas cafetaleras  
+1. ¿La plataforma le permite gestionar eficientemente múltiples lotes de diferentes productores asociados?​
+
+2. ¿Las funcionalidades de trazabilidad y certificación cumplen con los requisitos que demandan sus compradores internacionales?​
+
+3. ¿Los reportes comparativos entre lotes y productores le ayudan a estandarizar la calidad del café de su cooperativa?​
+
+4. ¿El sistema le facilita la generación de certificados de exportación y códigos QR para transparencia con compradores?​
+
+5. ¿Considera que la integración con sus procesos actuales de control de calidad sería viable y mejoraría la eficiencia operativa?
+
+---
+
+### 7.3.2. Registro de Entrevistas
+
+### Segmento: Productores pequeños y medianos de café 
+
+**Entrevista 1:**  
+- **Nombres:** xxxxxx
+- **Apellidos:**  xxxxxxxx
+- **Edad:** xx
+- **Rol/Área:**  xxxxxxxxxx
+- **Lugar de residencia (distrito/ciudad):** xxxxxx
+
+**Evidencia de la entrevista:**  
+<img src="assets/xxxxxxxxx" alt="Screenshot ENTREVISTA_01">
+
+**Enlace del video (editado único) y timing:**  
+- URL: [https://…  ](xxxxxxx)
+- Tiempo: xxxxx
+
+**Resumen de la entrevista (8–12 líneas):**  
+xxxxxxxxxxxx
+
+### Segmento: Cooperativas cafetaleras 
+**Entrevista 1:**  
+- **Nombres:** xxxxxx
+- **Apellidos:**  xxxxxxxx
+- **Edad:** xx
+- **Rol/Área:**  xxxxxxxxxx
+- **Lugar de residencia (distrito/ciudad):** xxxxxx
+
+**Evidencia de la entrevista:**  
+<img src="assets/xxxxxxxxx" alt="Screenshot ENTREVISTA_01">
+
+**Enlace del video (editado único) y timing:**  
+- URL: [https://…  ](xxxxxxx)
+- Tiempo: xxxxx
+
+**Resumen de la entrevista (8–12 líneas):**  
+xxxxxxxxxxxx
+
+---
+
+# **7.3.3 Evaluaciones según heurísticas**
+
+## **UX Heuristics & Principles Evaluation**
+
+**Usability – Inclusive Design – Information Architecture**
+
+**CARRERA:** Ingeniería de Software
+
+**CURSO:** Arquitecturas de Software Emergentes
+
+**SECCIÓN:** 7291
+
+**PROFESORES:** Royer Edelwer Rojas Malasquez
+
+**AUDITOR:**  PCC Team
+
+**CLIENTE(S):** Productores pequeños/medianos de café y Cooperativas Cafetaleras
+
+---
+
+## **SITE o APP A EVALUAR**
+
+**BeanDetect AI – Plataforma de Clasificación Inteligente de Café**
+
+---
+
+## **TAREAS A EVALUAR**
+
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+
+* Registro de productor pequeño/mediano
+* Registro de cooperativa cafetalera
+* Creación de lotes de café
+* Carga de imágenes para clasificación
+* Visualización de resultados de clasificación automática
+* Descarga de reportes y certificados
+* Generación de códigos QR por lote
+* Acceso al modo offline para clasificación local
+
+---
+
+## **ESCALA DE SEVERIDAD**
+
+| Nivel | Descripción                                                                                        |
+| ----- | -------------------------------------------------------------------------------------------------- |
+| **1** | Problema superficial. Fácil de superar. No requiere corrección inmediata.                          |
+| **2** | Problema menor. Genera pequeñas demoras. Corrección de baja prioridad.                             |
+| **3** | Problema mayor. Afecta la experiencia o causa errores frecuentes. Requiere corrección prioritaria. |
+| **4** | Problema muy grave. Bloquea el uso del sistema. Debe corregirse antes del lanzamiento.             |
+
+---
+
+## **TABLA RESUMEN**
+
+| # | Problema                                                         | Severidad | Heurística / Principio violado                         |
+| - | ---------------------------------------------------------------- | --------- | ------------------------------------------------------ |
+| 1 | Registro con demasiados campos obligatorios                      | 3         | Usability: Simplicidad y naturalidad de uso            |
+| 2 | Inconsistencias visuales entre vistas de productor y cooperativa | 2         | Usability: Consistencia y estándares                   |
+| 3 | Botón “Clasificar lote” poco visible                             | 3         | Information Architecture: Is it findable?              |
+| 4 | Imágenes sin descripciones accesibles                            | 2         | Inclusive Design: Proporciona experiencias comparables |
+| 5 | Reporte descargable sin jerarquía visual clara                   | 2         | Usability / Information Architecture                   |
+| 6 | Alerta de defectos sin acciones sugeridas claras                 | 3         | Usability: Ayuda y documentación                       |
+| 7 | Modo offline no comunica límites funcionales                     | 3         | Usability: Visibilidad del estado del sistema          |
+
+---
+
+## **DESCRIPCIÓN DE PROBLEMAS**
+
+---
+
+### **PROBLEMA #1: Registro con demasiados campos obligatorios**
+
+**Severidad:** 3
+**Heurística violada:** Usabilidad – Simplicidad y naturalidad de uso
+
+**Problema:**
+El registro inicial solicita demasiados datos obligatorios (hectáreas, variedades, número de asociados, etc.), generando fricción y abandono en usuarios con poca experiencia tecnológica.
+
+**Recomendación:**
+Reducir los campos requeridos al mínimo y solicitar información complementaria más adelante mediante un onboarding progresivo.
+
+---
+
+### **PROBLEMA #2: Inconsistencias visuales entre vistas de productor y cooperativa**
+
+**Severidad:** 2
+**Heurística violada:** Usabilidad – Consistencia y estándares
+
+**Problema:**
+Las vistas presentan diferencias en diseño, tamaños de botones y estructura, lo que confunde a usuarios que navegan entre ambos tipos de cuenta.
+
+**Recomendación:**
+Unificar estilos, componentes y patrones de diseño en todas las interfaces.
+
+---
+
+### **PROBLEMA #3: Botón “Clasificar lote” poco visible**
+
+**Severidad:** 3
+**Heurística violada:** Information Architecture – Is it findable?
+
+**Problema:**
+La ubicación y color del botón dificultan que los usuarios lo identifiquen rápidamente, retrasando el inicio del proceso de clasificación.
+
+**Recomendación:**
+Incrementar contraste, moverlo a un área primaria y usar un color destacado dentro del sistema de diseño.
+
+---
+
+### **PROBLEMA #4: Imágenes sin descripciones accesibles**
+
+**Severidad:** 2
+**Heurística violada:** Inclusive Design – Proporciona experiencias comparables
+
+**Problema:**
+Las imágenes cargadas no tienen texto alternativo, afectando a usuarios que usan lectores de pantalla o que tienen limitaciones visuales.
+
+**Recomendación:**
+Generar descripciones automáticas simples, como “Imagen de granos del lote X”.
+
+---
+
+### **PROBLEMA #5: Reporte descargable sin jerarquía visual clara**
+
+**Severidad:** 2
+**Heurística violada:** Usability – Diseño estético y minimalista
+
+**Problema:**
+Los reportes contienen demasiados datos sin estructura visual clara, lo que dificulta la lectura para productores y compradores.
+
+**Recomendación:**
+Usar encabezados, colores suaves, espaciados adecuados y gráficos simples para resaltar la información principal.
+
+---
+
+### **PROBLEMA #6: Alerta de defectos sin acciones sugeridas claras**
+
+**Severidad:** 3
+**Heurística violada:** Usabilidad – Ayuda y documentación
+
+**Problema:**
+Cuando un lote tiene muchos defectos, la alerta no indica cuál debería ser el siguiente paso del usuario (ej. reclasificar, realizar nueva muestra, etc.).
+
+**Recomendación:**
+Agregar texto accionable como:
+
+Se recomienda revisar los granos defectuosos o repetir la clasificación con una nueva muestra.
+
+---
+
+### **PROBLEMA #7: Modo offline no comunica límites funcionales**
+
+**Severidad:** 3
+**Heurística violada:** Usabilidad – Visibilidad del estado del sistema
+
+**Problema:**
+El usuario no sabe qué funciones están disponibles offline y cuáles no, causando confusión durante su uso en zonas sin conectividad.
+
+**Recomendación:**
+Incluir un banner o modal que indique claramente:
+
+* **Funciones disponibles:** Clasificación básica
+* **Funciones no disponibles:** Reportes, exportación, sincronización, certificados
+
 ---
 
 # Conclusiones
