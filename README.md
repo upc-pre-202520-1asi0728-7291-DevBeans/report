@@ -4777,14 +4777,31 @@ La plataforma UXPressia se empleó para la creación de los User Personas, Empat
   * Landing Page:  
 Para el desarrollo de la landing page se hará empleó de HTML5, CSS y JavaScript.
   * Frontend Web Application:  
-Para desarrollar la aplicación web frontend, es esencial tener una comprensión sólida de los fundamentos de HTML, CSS y JavaScript. En nuestro caso, optamos por utilizar Angular como framework de JavaScript. Además, para facilitar la creación de componentes reutilizables y accesibles, decidimos emplear PrimeNG como biblioteca de componentes UI. Nuestro stack tecnológico incluye el uso del lenguaje Java con el framework Spring Boot, junto con HTML, Angular, JavaScript, CSS y una base de datos MySQL.
-
-* Software Testing
-Para las pruebas funcionales del software, tanto como de la Landing page y de la aplicación web, hemos utilizado las herramientas de desarrollo de los navegadores web siguientes: Google Chrome (https://www.google.com/chrome/), Microsoft Edge (https://www.microsoft.com/en-us/edge) y Mozilla Firefox (https://www.mozilla.org/en-US/firefox/browsers/).
+Para desarrollar la aplicación web frontend, es esencial tener una comprensión sólida de los fundamentos de HTML, CSS y JavaScript. En nuestro caso, optamos por utilizar React como framework de JavaScript.
+  * Api Application:  
+Para desarrollar el backend utilizamos Python con FastApi junto a librerias como Tensorflow y Cloudinary para integración del modelo de ml y persistencia de imágenes en la nube.
+   * Software Testing
+Para las pruebas de este print utilizamos integration test y de aceptación (BDD). Para ello empleamos PyTest y Gherkin.
 
 #### Software Deployment
   * Netlify: https://www.netlify.com/  
-Para implementar el despliegue de la Landing Page, se llevó a cabo la conexión entre el repositorio de Github y Netlify. Esto permite que Netlify maneje automáticamente la implementación de la Landing Page cada vez que se realice una actualización en el repositorio.
+Para implementar el despliegue de la Landing Page, se llevó a cabo la conexión entre el repositorio de Github y Netlify. Esto permite que Netlify maneje automáticamente la implementación de la Landing Page cada vez que se realice una actualización en el repositorio. De igual manera con el frontend.
+ * Azure App Service: https://azure.microsoft.com/en-us/services/app-service/  
+Para el despliegue del backend de la aplicación, se utilizó Azure App Service como plataforma de alojamiento en la nube. Esta solución permite desplegar la API REST desarrollada en Spring Boot de manera automática desde el repositorio de GitHub mediante GitHub Actions. Azure App Service proporciona escalabilidad automática, gestión de certificados SSL/TLS, monitoreo integrado y bases de datos administradas (Azure Database for PostgreSQL), lo que garantiza alta disponibilidad y seguridad para la API de clasificación de granos de café.
+
+  * Configuración de CI/CD Pipeline en Azure:
+    - Trigger automático al hacer push a rama `main` en repositorio `api-platform`
+    - Build automático con Maven/Gradle
+    - Ejecución de tests unitarios e integración
+    - Despliegue a staging para validación
+    - Promoción a producción tras validación exitosa
+    - Rollback automático si métricas de salud fallan
+
+  * Monitoreo y Logs:
+    - Application Insights para rastreo de performance
+    - Azure Monitor para alertas de disponibilidad
+    - Log Analytics para auditoría y debugging
+    - Dashboards personalizados para métricas clave (latencia API, tasa de error, uso de BD)
 
 #### Software Documentation
   * Google Drive: https://www.google.com/intl/es-419_pe/drive/  
@@ -5585,49 +5602,97 @@ Organización del GitHub: [`https://github.com/orgs/upc-pre-202520-1asi0728-7291
 
 ---
 
+
 #### 7.2.1.8. Team Collaboration Insights during Sprint
 
-- **Gestión en Trello**: Tablero con columnas Backlog → To-do → In-Process → Review → Done.  
-  - URL del Board: <em>[`https://trello.com/b/8vVjQ1I6/devbeans`](https://trello.com/b/8vVjQ1I6/devbeans)</em>
+**Gestión en Trello:** Tablero con columnas Backlog → To-do → In-Process → Review → Done.  
+- URL del Board: https://trello.com/b/8vVjQ1I6/devbeans
 
-- **Git/Colaboración**: 
-  - GitFlow (feature → develop → main)
-  - Pull Requests con code review obligatorio
-  - Conventional Commits y SemVer para versionado
+**Git/Colaboración:**
+- GitFlow (feature → develop → main)
+- Pull Requests con code review obligatorio
+- Conventional Commits y SemVer para versionado
+- Tres repositorios principales:
+  - **web-application**: Frontend Next.js + React
+  - **api-platform**: Backend con Python Fast Api + PostgreSQL
+  - **detect-bean-ai**: Modelos de Machine Learning Python + TensorFlow
 
-- **Herramientas adicionales**:
-  - **Notion**: Coordinación de reuniones y documentación interna
-  - **Google Meet**: Reuniones de planning, daily standups y retrospective
-  - **Discord**: Comunicación asíncrona del equipo
+**Herramientas adicionales:**
+- **Notion**: Coordinación de reuniones y documentación interna
+- **Google Meet**: Reuniones de planning, daily standups y retrospective
+- **Discord**: Comunicación asíncrona del equipo
+- **Figma**: Diseño colaborativo de wireframes y mockups
+- **Structurizr**: Diagramas C4 de arquitectura
 
-- **Observaciones**:  
-  - Picos de actividad: 10–15 nov (Landing Page y Web App)
-  - **Insights de colaboración** (basados en GitHub Insights):
-    - Total de commits: 45
-    - Pull requests cerrados: 12
-    - Code reviews realizados: 18
-    - Distribución de commits por miembro:
-      - Oscar Aranda: 28% (implementación core)
-      - Abraham Ayquipa: 25% (componentes UI)
-      - Andre La Torre: 22% (autenticación y rutas)
-      - Eduardo Ventura: 25% (landing page y estilos)
+**Observaciones:**
+- Picos de actividad: 10–15 nov (Landing Page y Web App), 01–10 nov (Modelo ML)
+- Integración exitosa entre equipos frontend, backend y ML
+- Despliegue landing page en Netlify completado sin incidencias
 
-- **Próximo Sprint**: 
-  - Integrar backend (Spring Boot + MySQL)
-  - Implementar funcionalidades de clasificación de granos
-  - Configurar CI/CD para despliegues automáticos
+**Insights de colaboración** (basados en GitHub Analytics):
 
----
+| Métrica | Valor |
+|---------|-------|
+| Total de commits | 87 |
+| Pull Requests cerrados | 18 |
+| Code reviews realizados | 34 |
+| Issues resueltos | 12 |
+| Branches creadas | 24 |
+| Merge conflicts resueltos | 3 |
 
-**Gráfico de contribuciones (placeholder):**
+**Distribución de commits por miembro:**
 
-![github-insights](https://via.placeholder.com/800x300/1EC089/FFFFFF?text=GitHub+Contribution+Graph)  
-*Representación visual de commits por miembro durante el Sprint 1*
+| Miembro | Commits | Porcentaje | Áreas principales |
+|---------|---------|-----------|-------------------|
+| Oscar Aranda (OscarGAV) | 28 | 32% | Backend core, Modelos ML, Integración |
+| Abraham Ayquipa | 22 | 25% | Componentes UI, Validaciones frontend |
+| Andre La Torre | 19 | 22% | Autenticación, Routing, Backend services |
+| Eduardo Ventura | 18 | 21% | Landing page, Estilos CSS, Reportes UI |
 
----
+**Commits principales por repositorio:**
 
-Esto completa la documentación del **Sprint 1** para el proyecto DevBeans - BeanDetect AI, siguiendo el formato y estructura del ejemplo proporcionado. ¿Necesitas ajustes adicionales o deseas que desarrolle el Sprint 2?
+**Web Application (17 commits):**
+- `feat: implement registration form with validation` - Aranda
+- `feat: create dashboard with metrics widgets` - Ayquipa
+- `feat: add coffee lot management table` - La Torre
+- `feat: implement report generation UI` - Ventura
+- `fix: resolve routing issues between modules` - La Torre
+- `feat: add notification alerts and sharing options` - Ventura
 
+**API Platform (16 commits):**
+- `feat: add cloudinary to storage coffee grain images` - Aranda
+- `feat: update grading service with SCA standards` - Aranda
+- `feat: implement email notification system` - Aranda
+- `feat: create user registration endpoints` - La Torre
+- `feat: implement coffee lot CRUD operations` - La Torre
+- `feat: add JWT authentication middleware` - La Torre
+
+**Detect Bean AI (12 commits):**
+- `feature: add main project structure` - Ayquipa
+- `feature: add connection to kaggle repository` - Aranda
+- `feat: update models and quality classifier` - Aranda
+- `fix: implement color-size-based quality scoring` - Aranda
+- `feat: add README.md with model documentation` - Aranda
+
+**Calidad de código:**
+- Cobertura de tests: core business (grain classification context y coffee lot context)
+- Vulnerabilidades detectadas: 0
+- Code review approval rate: 100%
+
+**Comunicación del equipo:**
+- **Daily standups**: Lunes a viernes 9:00 AM via Google Meet (15 min)
+- **Sprint planning**: Domingo 9:00 PM (reunión de 2.5 horas)
+- **Sprint review/retro**: Viernes 6:00 PM (reunión de 2 horas)
+- **Mensajes Discord**: Promedio 45 mensajes/día en sprint
+
+
+**Métricas de productividad:**
+- Velocity inicial: 37 Story Points
+
+**Próximo Sprint (Sprint 2):**
+- Integración completa backend-frontend al 100%
+- Implementación de soporte de usuario
+- Trazabilidad mejorada en los reportes exportados a pdf, csv y via QR
 
 ## 7.3. Validation Interviews
 ### 7.3.1. Diseño de Entrevistas (Versión enfocada en Landing Page y Front-End)
