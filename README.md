@@ -307,6 +307,15 @@ En esta sección se resumen los avances y modificaciones realizadas durante el c
   - [6.4. Applications UX/UI Design.](#64-applications-uxui-design)
     - [6.4.1. Applications Wireframes.](#641-applications-wireframes)
     - [6.4.2. Applications Wireflow Diagrams.](#642-applications-wireflow-diagrams)
+### [Capítulo VII: Product Implementation, Validation & Deployment](Capítulo-vii-product-implementation-validation-&-deployment) 
+  - [7.1. Software Configuration Management](#71-software-configuration-management)
+    - [7.1.1. Software Development Environment Configuration](#711-software-development-environment-configuration)
+    - [7.1.2. Source Code Management](#712-source-code-management)
+    - [7.1.3. Source Code Style Guide & Conventions](#713-source-code-style-guide--conventions)
+    - [7.1.4. Software Deployment Configuration](#714-software-deployment-configuration)
+  - [7.3. Validation Interviews.](#73-validation-interviews) 
+    - [7.3.1. Diseño de Entrevistas (Versión enfocada en Landing Page y Front-End)](#731-diseño-de-entrevistas-versión-enfocada-en-landing-page-y-front-end)
+    - [7.3.2. Registro de Entrevistas](#732-registro-de-entrevistas)
 - [Conclusiones](#conclusiones-1)
 - [Bibliografía](#bibliografía-1)
 - [Anexos](#anexos-1)
@@ -4651,7 +4660,7 @@ Finalmente, revisa la configuración y presiona el botón que lleva el nombre de
 
 <img src="./assets/images/softwareDeploy/landing.png" style="display: block; margin: 0 auto;">
 
-## 7.3.  Validation Interviews.
+## 7.3.  Validation Interviews
 ### 7.3.1. Diseño de Entrevistas (Versión enfocada en Landing Page y Front-End)
 
 #### Objetivo  
@@ -4833,7 +4842,7 @@ xxxxxxxxxxxx
 
 **PROFESORES:** Royer Edelwer Rojas Malasquez
 
-**AUDITOR:** DevBeans
+**AUDITOR:**  PCC Team
 
 **CLIENTE(S):** Productores pequeños/medianos de café y Cooperativas Cafetaleras
 
