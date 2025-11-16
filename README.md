@@ -5453,11 +5453,13 @@ Organización del GitHub: [`https://github.com/orgs/upc-pre-202520-1asi0728-7291
 
 #### 7.2.1.4. Testing Suite Evidence for Sprint Review
 
+Acceptance Tests (BDD): https://github.com/upc-pre-202520-1asi0728-7291-DevBeans/acceptance-tests
+
+- Branch: main
+
 <table>
   <thead>
     <tr>
-      <th>Repository</th>
-      <th>Branch</th>
       <th>User Story</th>
       <th>Archivo .feature</th>
       <th>Escenarios Definidos</th>
@@ -5466,8 +5468,6 @@ Organización del GitHub: [`https://github.com/orgs/upc-pre-202520-1asi0728-7291
   </thead>
   <tbody>
     <tr>
-      <td rowspan="11">https://github.com/upc-pre-202520-1asi0728-7291-DevBeans/acceptance-tests</td>
-      <td rowspan="11">main</td>
       <td>US01</td>
       <td>us01_registro_productor.feature</td>
       <td>5 escenarios (registro exitoso, validaciones, formato email, email duplicado)</td>
@@ -5543,6 +5543,12 @@ Organización del GitHub: [`https://github.com/orgs/upc-pre-202520-1asi0728-7291
     </tr>
   </tbody>
 </table>
+
+<br>
+
+Integration Tests: https://github.com/upc-pre-202520-1asi0728-7291-DevBeans/api-platform-testing-server
+
+- Branch: main
 
 ---
 
