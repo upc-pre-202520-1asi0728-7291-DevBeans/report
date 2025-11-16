@@ -4753,108 +4753,46 @@ Primero se iniciara con una breve introducción explicando propósito, duración
 
 ### 7.3.2. Registro de Entrevistas
 
-### Segmento: Productores pequeños y medianos de café 
+
+### Segmento: Productores pequeños y medianos de café
 
 **Entrevista 1:**  
-- **Nombres:** xxxxxx
-- **Apellidos:**  xxxxxxxx
-- **Edad:** xx
-- **Rol/Área:**  xxxxxxxxxx
-- **Lugar de residencia (distrito/ciudad):** xxxxxx
+- **Nombres:** Jorge  
+- **Apellidos:** Sánchez Gutiérrez Ramírez  
+- **Edad:** 38  
+- **Rol/Área:** Productor de café  
+- **Lugar de residencia (distrito/ciudad):** Cajamarca, Perú
 
 **Evidencia de la entrevista:**  
-<img src="assets/xxxxxxxxx" alt="Screenshot ENTREVISTA_01">
+<img src="assets/ENTREVISTA_PRODUCTOR_01.png" alt="Screenshot ENTREVISTA_01">
 
 **Enlace del video (editado único) y timing:**  
-- URL: [https://…  ](xxxxxxx)
-- Tiempo: xxxxx
+- URL: [https://…](xxxxxxx)  
+- Tiempo: 00:00 – 03:15
 
 **Resumen de la entrevista (8–12 líneas):**  
-xxxxxxxxxxxx
+La entrevista con Jorge Sánchez Gutiérrez, productor cafetalero de Cajamarca, brindó una visión clara desde la perspectiva de un usuario con nivel tecnológico intermedio. Destacó positivamente que la plataforma luce ordenada, moderna y adecuada para el trabajo con café, y que en pocos segundos comprendió que la herramienta sirve para clasificar y analizar la calidad de los granos. Valoró la navegación general y los reportes de calidad, indicando que la información presentada lo ayuda a decidir qué lotes vender o separar. También resaltó que las notificaciones, especialmente por WhatsApp, serían muy útiles debido al uso frecuente de este medio en campo. Sin embargo, identificó oportunidades de mejora en la guía de subida de imágenes, el tamaño de algunos botones y la necesidad de pasos más explicativos para usuarios con menor experiencia digital. Finalmente, recomendó incluir ejemplos visuales y señaló que la conectividad limitada podría afectar la velocidad de carga de imágenes, aunque mostró interés en participar en nuevas pruebas del prototipo.
 
-**Entrevista 2:**  
-- **Nombres:** xxxxxx
-- **Apellidos:**  xxxxxxxx
-- **Edad:** xx
-- **Rol/Área:**  xxxxxxxxxx
-- **Lugar de residencia (distrito/ciudad):** xxxxxx
 
-**Evidencia de la entrevista:**  
-<img src="assets/xxxxxxxxx" alt="Screenshot ENTREVISTA_02">
 
-**Enlace del video (editado único) y timing:**  
-- URL: [https://…  ](xxxxxxx)
-- Tiempo: xxxxx
+### Segmento: Cooperativas cafetaleras  
 
-**Resumen de la entrevista (8–12 líneas):**  
-xxxxxxxxxxxx
-
-**Entrevista 3:**  
-- **Nombres:** xxxxxx
-- **Apellidos:**  xxxxxxxx
-- **Edad:** xx
-- **Rol/Área:**  xxxxxxxxxx
-- **Lugar de residencia (distrito/ciudad):** xxxxxx
-
-**Evidencia de la entrevista:**  
-<img src="assets/xxxxxxxxx" alt="Screenshot ENTREVISTA_03">
-
-**Enlace del video (editado único) y timing:**  
-- URL: [https://…  ](xxxxxxx)
-- Tiempo: xxxxx
-
-**Resumen de la entrevista (8–12 líneas):**  
-xxxxxxxxxxxx
-
-### Segmento: Cooperativas cafetaleras 
 **Entrevista 1:**  
-- **Nombres:** xxxxxx
-- **Apellidos:**  xxxxxxxx
-- **Edad:** xx
-- **Rol/Área:**  xxxxxxxxxx
-- **Lugar de residencia (distrito/ciudad):** xxxxxx
+- **Nombres:** José  
+- **Apellidos:** Gutiérrez Ramírez  
+- **Edad:** 38  
+- **Rol/Área:** Calidad y Acopio – Cooperativa Cafetalera  
+- **Lugar de residencia (distrito/ciudad):** Cajamarca, Perú
 
 **Evidencia de la entrevista:**  
-<img src="assets/xxxxxxxxx" alt="Screenshot ENTREVISTA_01">
+<img src="assets/ENTREVISTA_COOP_01.png" alt="Screenshot ENTREVISTA_01">
 
 **Enlace del video (editado único) y timing:**  
-- URL: [https://…  ](xxxxxxx)
-- Tiempo: xxxxx
+- URL: [https://…](xxxxxxx)  
+- Tiempo: 00:00 – 04:32
 
 **Resumen de la entrevista (8–12 líneas):**  
-xxxxxxxxxxxx
-**Entrevista 2:**  
-- **Nombres:** xxxxxx
-- **Apellidos:**  xxxxxxxx
-- **Edad:** xx
-- **Rol/Área:**  xxxxxxxxxx
-- **Lugar de residencia (distrito/ciudad):** xxxxxx
-
-**Evidencia de la entrevista:**  
-<img src="assets/xxxxxxxxx" alt="Screenshot ENTREVISTA_02">
-
-**Enlace del video (editado único) y timing:**  
-- URL: [https://…  ](xxxxxxx)
-- Tiempo: xxxxx
-
-**Resumen de la entrevista (8–12 líneas):**  
-xxxxxxxxxxxx
-**Entrevista 3:**  
-- **Nombres:** xxxxxx
-- **Apellidos:**  xxxxxxxx
-- **Edad:** xx
-- **Rol/Área:**  xxxxxxxxxx
-- **Lugar de residencia (distrito/ciudad):** xxxxxx
-
-**Evidencia de la entrevista:**  
-<img src="assets/xxxxxxxxx" alt="Screenshot ENTREVISTA_03">
-
-**Enlace del video (editado único) y timing:**  
-- URL: [https://…  ](xxxxxxx)
-- Tiempo: xxxxx
-
-**Resumen de la entrevista (8–12 líneas):**  
-xxxxxxxxxxxx
+La entrevista con José Gutiérrez Ramírez, responsable de Calidad y Acopio en una cooperativa cafetalera de Cajamarca, reveló una perspectiva avanzada sobre la gestión de múltiples lotes y la necesidad de herramientas digitales más eficientes. Valoró la interfaz moderna, el uso de filtros y el buscador para manejar microlotes de distintos productores, indicando que esto atiende uno de sus mayores puntos de dolor operativo. También destacó la utilidad del código QR para la transparencia con compradores nacionales e internacionales. Sin embargo, señaló oportunidades de mejora, como aclarar con precisión el alcance real de la plataforma y demostrar sus capacidades automatizadas, por ejemplo, el conteo de defectos mediante fotos. Además, pidió una mayor flexibilidad en la gestión de certificados, distinguiendo entre documentos maestros y formatos oficiales exigidos por compradores externos. Finalmente, sugirió implementar un modo offline debido a los problemas de conectividad en zonas de acopio y reforzar el dashboard con alertas visuales tipo semáforo para monitorear estados de lotes y vencimientos de certificados.
 
 ---
 
