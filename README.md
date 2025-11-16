@@ -5023,6 +5023,15 @@ Incluir un banner o modal que indique claramente:
 * **Funciones no disponibles:** Reportes, exportación, sincronización, certificados
 
 ---
+## 7.4. Video About-the-Product
+
+En este video que se presenta a continuación, describimos el contenido de nuestra aplicación DetectBean AI. Este video está dirigido tanto a los visitantes de nuestra landing page, que desean conocer sobre nuestro modelo de negocio y las características principales de nuestro software, como a los usuarios de las aplicaciones que buscan realizar tareas relacionadas con los procesos soportados por nuestra solución.
+
+<img src="assets/About" alt="product">
+
+### URLs de las versiones publicadas
+
+- **YouTube:** [https://youtu.be/Oj_0vCletRY  ](https://www.youtube.com/watch?v=ewp0oIa4cMU)
 
 # Conclusiones
 
