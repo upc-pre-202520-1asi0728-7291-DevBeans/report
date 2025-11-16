@@ -4687,7 +4687,7 @@ Finalmente, revisa la configuración y presiona el botón que lleva el nombre de
 
 <img src="./assets/images/softwareDeploy/clickDeploy.png" style="display: block; margin: 0 auto;">
 
-### Link de nuestra landing page: https://healthsyn-landing.netlify.app
+### Link de nuestra landing page: https://dev-beans-landing-page.netlify.app/
 
 <img src="./assets/images/softwareDeploy/landing.png" style="display: block; margin: 0 auto;">
 
