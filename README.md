@@ -132,6 +132,48 @@ En esta sección se resumen los avances y modificaciones realizadas durante el c
       <td>Ventura Chancafe, Eduardo Renato</td>
       <td>Desarrollo de la primera versión del Web Frontend</td>
     </tr>
+    <tr>
+      <td>3.2</td>
+      <td>10/11/2025</td>
+      <td>Aranda Vallejos, Oscar Gabriel</td>
+      <td>Actualización del sistema de clasificación de granos de café integrado con machine learning</td>
+    </tr>
+    <tr>
+      <td>3.4</td>
+      <td>10/11/2025</td>
+      <td>Aranda Vallejos, Oscar Gabriel</td>
+      <td>Actualización del backend para los bounded context de grain classification y coffee lot management</td>
+    </tr>
+    <tr>
+      <td>3.6</td>
+      <td>14/11/2025</td>
+      <td>Ayquipa Ubaldo, Abraham Israel</td>
+      <td>Desarrollo de user flows, mock ups, actualización del Figma y video about the product</td>
+    </tr>
+    <tr>
+      <td>3.7</td>
+      <td>14/11/2025</td>
+      <td>Aranda Vallejos, Oscar Gabriel</td>
+      <td>Desarrollo del Test Suite Development y Acceptance Tests</td>
+    </tr>
+    <tr>
+      <td>3.8</td>
+      <td>14/11/2025</td>
+      <td>La Torre Soto, Andre Sebastian</td>
+      <td>Desarrollo de heurísticas e implementación de descargar de reportes por pdf y csv en frontend</td>
+    </tr>
+    <tr>
+      <td>3.9</td>
+      <td>14/11/2025</td>
+      <td>Aranda Vallejos, Oscar Gabriel</td>
+      <td>Conexión de frontend con backend</td>
+    </tr>
+    <tr>
+      <td>4.0</td>
+      <td>14/11/2025</td>
+      <td>Ventura Chancafe, Eduardo Renato</td>
+      <td>Integración con sistema externo smtp para el envio de alertas de reportes de clasificación mediante correo electrónico</td>
+    </tr>
   </tbody>
 </table>
 <br>
