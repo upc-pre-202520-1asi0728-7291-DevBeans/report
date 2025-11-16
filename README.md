@@ -4660,7 +4660,7 @@ Finalmente, revisa la configuración y presiona el botón que lleva el nombre de
 
 <img src="./assets/images/softwareDeploy/landing.png" style="display: block; margin: 0 auto;">
 
-## 7.3.  Validation Interviews
+## 7.3. Validation Interviews
 ### 7.3.1. Diseño de Entrevistas (Versión enfocada en Landing Page y Front-End)
 
 #### Objetivo  
