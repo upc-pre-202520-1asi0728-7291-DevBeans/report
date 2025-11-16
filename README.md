@@ -313,7 +313,7 @@ En esta sección se resumen los avances y modificaciones realizadas durante el c
     - [7.1.2. Source Code Management](#712-source-code-management)
     - [7.1.3. Source Code Style Guide & Conventions](#713-source-code-style-guide--conventions)
     - [7.1.4. Software Deployment Configuration](#714-software-deployment-configuration)
-  - [7.3. Validation Interviews.](#73-validation-interviews) 
+  - [7.3. Validation Interviews](#73-validation-interviews) 
     - [7.3.1. Diseño de Entrevistas (Versión enfocada en Landing Page y Front-End)](#731-diseño-de-entrevistas-versión-enfocada-en-landing-page-y-front-end)
     - [7.3.2. Registro de Entrevistas](#732-registro-de-entrevistas)
 - [Conclusiones](#conclusiones-1)
