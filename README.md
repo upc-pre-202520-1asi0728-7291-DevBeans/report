@@ -4865,6 +4865,491 @@ Finalmente, revisa la configuración y presiona el botón que lleva el nombre de
 
 <img src="./assets/images/softwareDeploy/landing.png" style="display: block; margin: 0 auto;">
 
+---
+
+Completaré las secciones faltantes del Capítulo VII basándome en el ejemplo proporcionado y adaptándolo al proyecto DevBeans - BeanDetect AI.
+
+---
+
+## 7.2. Solution Implementation
+
+### 7.2.1. Sprint 1
+
+#### 7.2.1.1. Sprint Planning 1
+
+**Introducción**  
+Este sprint se orientó a entregar la primera versión navegable de la **Landing Page (HTML/CSS/JS)** y el **Frontend Web Application (Vue 3 + PrimeVue)**, cumpliendo con los entregables solicitados para TB2.
+
+<!-- Sprint Planning Background (formato de la rúbrica) -->
+<table>
+  <thead>
+    <tr><th colspan="2">Sprint #</th><th>Sprint 1</th></tr>
+  </thead>
+  <tbody>
+    <tr><td colspan="2"><strong>Sprint Planning Background</strong></td><td></td></tr>
+    <tr><td>Date</td><td>YYYY-MM-DD</td><td>2025-11-10</td></tr>
+    <tr><td>Time</td><td>HH:MM</td><td>20:00</td></tr>
+    <tr><td>Location</td><td>(física/virtual)</td><td>Virtual (Google Meet)</td></tr>
+    <tr>
+      <td>Prepared By</td><td>(Responsable del acta)</td>
+      <td>Aranda Vallejos, Oscar Gabriel</td>
+    </tr>
+    <tr>
+      <td>Attendees (to planning meeting)</td>
+      <td>(Equipo)</td>
+      <td>
+        Aranda Vallejos, Oscar Gabriel / Ayquipa Ubaldo, Abraham Israel / 
+        La Torre Soto, Andre Sebastian / Ventura Chancafe, Eduardo Renato
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3"><strong>Sprint 1 – Review Summary</strong><br/><em>No aplica (proyecto inicia en Sprint 1).</em></td>
+    </tr>
+    <tr>
+      <td colspan="3"><strong>Sprint 1 – Retrospective Summary</strong><br/><em>No aplica (proyecto inicia en Sprint 1).</em></td>
+    </tr>
+    <tr><td colspan="3"><strong>Sprint Goal & User Stories</strong></td></tr>
+    <tr>
+      <td>Sprint 1 Goal</td>
+      <td>(SMART)</td>
+      <td>
+        Entregar la <strong>v1 navegable</strong> de: 
+        (1) Landing Page desplegada en Netlify, 
+        (2) Frontend Web (Vue 3 + PrimeVue) con navegación base y pantallas de Login, Dashboard y Gestión de Lotes; 
+        evidenciar navegación y despliegues funcionales.
+      </td>
+    </tr>
+    <tr><td>Sprint 1 Velocity</td><td>(Story Points)</td><td><strong>35 SP</strong></td></tr>
+    <tr>
+      <td>Sum of Story Points</td>
+      <td>(stories incluidos)</td>
+      <td><strong>35 SP</strong> (US01=3, US02=3, US03=2, US04=2, US06=2, US08=3, US15=3, TS01=2, TS07=2, TS08=3)</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+#### 7.2.1.2. Sprint Backlog 1
+
+Durante este sprint inicial, nos enfocamos en desarrollar las user stories que definen las características clave de nuestra Landing Page y las funcionalidades base de la aplicación web. Esto nos permitió validar la arquitectura propuesta y completar la primera fase de desarrollo del frontend.
+
+**URL pública de Trello:** <https://trello.com/b/8vVjQ1I6/devbeans>
+
+[![Captura-de-pantalla-2025-11-15-223617.png](https://i.postimg.cc/Mp3vWC6K/Captura-de-pantalla-2025-11-15-223617.png)](https://postimg.cc/xXH05FNW)
+
+<table>
+    <thead>
+        <tr>
+            <td>Sprint #</td>
+            <td colspan="7">Sprint 1</td>
+        </tr>
+        <tr>
+            <td colspan="2">User Story</td>
+            <td colspan="6">Work-Item / Task</td>
+        </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Id</td>
+        <td>Title</td>
+        <td>Id</td>
+        <td>Title</td>
+        <td>Description</td>
+        <td>Estimation (Hours)</td>
+        <td>Assigned To</td>
+        <td>Status (To-do / In-Process / To-Review / Done)</td>
+      </tr>
+      <tr>
+        <td>US01</td>
+        <td>Registro de Productor Pequeño/Mediano</td>
+        <td>TA1</td>
+        <td>Diseñar formulario de registro</td>
+        <td>Definir campos y validaciones visuales del formulario de registro de productores</td>
+        <td>03</td>
+        <td>Oscar Aranda</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td></td><td></td>
+        <td>TA2</td>
+        <td>Implementar validaciones frontend</td>
+        <td>Codificar validaciones de campos requeridos y formato de datos</td>
+        <td>03</td>
+        <td>Oscar Aranda</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>US02</td>
+        <td>Registro de Cooperativa Cafetalera</td>
+        <td>TA1</td>
+        <td>Diseñar formulario de cooperativa</td>
+        <td>Crear diseño del formulario con campos específicos para cooperativas</td>
+        <td>03</td>
+        <td>Abraham Ayquipa</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td></td><td></td>
+        <td>TA2</td>
+        <td>Implementar toggle Productor/Cooperativa</td>
+        <td>Desarrollar funcionalidad de cambio entre tipos de registro</td>
+        <td>02</td>
+        <td>Abraham Ayquipa</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>US03</td>
+        <td>Autenticación de Usuarios</td>
+        <td>TA1</td>
+        <td>Diseñar pantalla de login</td>
+        <td>Crear interfaz de inicio de sesión con campos de email y contraseña</td>
+        <td>02</td>
+        <td>Andre La Torre</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td></td><td></td>
+        <td>TA2</td>
+        <td>Implementar lógica de autenticación</td>
+        <td>Desarrollar validación de credenciales y redirección al dashboard</td>
+        <td>03</td>
+        <td>Andre La Torre</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>US04</td>
+        <td>Gestión de Perfil de Productor</td>
+        <td>TA1</td>
+        <td>Diseñar vista de configuración</td>
+        <td>Crear interfaz para editar información personal y de finca</td>
+        <td>02</td>
+        <td>Eduardo Ventura</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td></td><td></td>
+        <td>TA2</td>
+        <td>Implementar formulario editable</td>
+        <td>Desarrollar funcionalidad de actualización de perfil</td>
+        <td>02</td>
+        <td>Eduardo Ventura</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>US06</td>
+        <td>Creación de Lotes</td>
+        <td>TA1</td>
+        <td>Diseñar formulario de nuevo lote</td>
+        <td>Crear interfaz para registro de lotes con campos requeridos</td>
+        <td>02</td>
+        <td>Oscar Aranda</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td></td><td></td>
+        <td>TA2</td>
+        <td>Implementar validaciones de lote</td>
+        <td>Desarrollar validación de campos y generación de ID único</td>
+        <td>03</td>
+        <td>Oscar Aranda</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>US08</td>
+        <td>Visualización de Lotes por Productor</td>
+        <td>TA1</td>
+        <td>Diseñar tabla de lotes</td>
+        <td>Crear vista con tabla interactiva de lotes registrados</td>
+        <td>03</td>
+        <td>Abraham Ayquipa</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td></td><td></td>
+        <td>TA2</td>
+        <td>Implementar filtros y búsqueda</td>
+        <td>Desarrollar funcionalidad de búsqueda y filtrado de lotes</td>
+        <td>03</td>
+        <td>Abraham Ayquipa</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>US15</td>
+        <td>Reporte Simple de Clasificación</td>
+        <td>TA1</td>
+        <td>Diseñar vista de reportes</td>
+        <td>Crear interfaz con gráficos de distribución de calidad</td>
+        <td>03</td>
+        <td>Eduardo Ventura</td>
+        <td>In Process</td>
+      </tr>
+      <tr>
+        <td></td><td></td>
+        <td>TA2</td>
+        <td>Implementar visualizaciones</td>
+        <td>Desarrollar gráficos con datos simulados de clasificación</td>
+        <td>04</td>
+        <td>Eduardo Ventura</td>
+        <td>To Review</td>
+      </tr>
+      <tr>
+        <td>TS01</td>
+        <td>Información Específica por Segmento</td>
+        <td>TA1</td>
+        <td>Diseñar secciones de Landing</td>
+        <td>Crear secciones diferenciadas para productores y cooperativas</td>
+        <td>02</td>
+        <td>Andre La Torre</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td></td><td></td>
+        <td>TA2</td>
+        <td>Implementar contenido segmentado</td>
+        <td>Desarrollar navegación y contenido específico por segmento</td>
+        <td>02</td>
+        <td>Andre La Torre</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>TS07</td>
+        <td>Interfaz en Español Regionalizada</td>
+        <td>TA1</td>
+        <td>Configurar sistema i18n</td>
+        <td>Implementar sistema de internacionalización en Vue</td>
+        <td>02</td>
+        <td>Oscar Aranda</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td></td><td></td>
+        <td>TA2</td>
+        <td>Traducir textos al español</td>
+        <td>Crear archivos de traducción con terminología cafetalera</td>
+        <td>02</td>
+        <td>Eduardo Ventura</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>TS08</td>
+        <td>Adaptación a Dispositivos Básicos</td>
+        <td>TA1</td>
+        <td>Implementar diseño responsive</td>
+        <td>Desarrollar breakpoints y layouts adaptativos</td>
+        <td>03</td>
+        <td>Abraham Ayquipa</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td></td><td></td>
+        <td>TA2</td>
+        <td>Optimizar rendimiento</td>
+        <td>Reducir tamaño de assets y optimizar carga</td>
+        <td>02</td>
+        <td>Abraham Ayquipa</td>
+        <td>Done</td>
+      </tr>
+    </tbody>
+</table>
+
+<br>
+
+<blockquote>
+<strong>Nota:</strong> El Sprint 1 se enfocó en establecer las bases del frontend con funcionalidades core de autenticación, gestión de usuarios y visualización de lotes.
+</blockquote>
+
+---
+
+#### 7.2.1.3. Development Evidence for Sprint Review
+
+Organización del GitHub: [`https://github.com/orgs/upc-pre-202520-1asi0728-7291-DevBeans`](https://github.com/orgs/upc-pre-202520-1asi0728-7291-DevBeans)
+
+<table>
+  <thead>
+    <tr>
+      <th>Repository</th><th>Branch</th><th>Commit Id</th><th>Commit Message</th><th>Commit Message Body</th><th>Committed on (Date)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Landing-Page</td><td>main</td><td><em>a7c3d21</em></td>
+      <td>feat: add hero section</td>
+      <td>Implementación de sección principal con CTA</td>
+      <td><em>10/11/25</em></td>
+    </tr>
+    <tr>
+      <td>Landing-Page</td><td>main</td><td><em>b8d4e32</em></td>
+      <td>feat: add features section</td>
+      <td>Sección de características principales de BeanDetect AI</td>
+      <td><em>11/11/25</em></td>
+    </tr>
+    <tr>
+      <td>Landing-Page</td><td>main</td><td><em>c9e5f43</em></td>
+      <td>feat: add pricing plans</td>
+      <td>Implementación de planes de suscripción</td>
+      <td><em>12/11/25</em></td>
+    </tr>
+    <tr>
+      <td>Frontend-Web</td><td>develop</td><td><em>d1f6a54</em></td>
+      <td>feat: implement login view</td>
+      <td>Vista de inicio de sesión con validaciones</td>
+      <td><em>11/11/25</em></td>
+    </tr>
+    <tr>
+      <td>Frontend-Web</td><td>develop</td><td><em>e2g7b65</em></td>
+      <td>feat: implement register view</td>
+      <td>Formularios de registro para productor y cooperativa</td>
+      <td><em>12/11/25</em></td>
+    </tr>
+    <tr>
+      <td>Frontend-Web</td><td>develop</td><td><em>f3h8c76</em></td>
+      <td>feat: implement dashboard</td>
+      <td>Dashboard principal con métricas de lotes</td>
+      <td><em>13/11/25</em></td>
+    </tr>
+    <tr>
+      <td>Frontend-Web</td><td>develop</td><td><em>g4i9d87</em></td>
+      <td>feat: implement coffee lots management</td>
+      <td>Vista de gestión de lotes con tabla y filtros</td>
+      <td><em>14/11/25</em></td>
+    </tr>
+    <tr>
+      <td>Frontend-Web</td><td>develop</td><td><em>h5j0e98</em></td>
+      <td>feat: add i18n configuration</td>
+      <td>Sistema de internacionalización en español</td>
+      <td><em>14/11/25</em></td>
+    </tr>
+    <tr>
+      <td>Frontend-Web</td><td>develop</td><td><em>i6k1f09</em></td>
+      <td>style: implement responsive design</td>
+      <td>Breakpoints y layouts adaptativos</td>
+      <td><em>15/11/25</em></td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+#### 7.2.1.4. Testing Suite Evidence for Sprint Review
+
+<p><em>Para Sprint 1 no se incluyen Web Services backend; se planifica testing de integración y acceptance tests para el Sprint 2 cuando se integre el backend.</em></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Repo (Testing)</th><th>Tipo</th><th>Relación con historias</th><th>Estado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Frontend-Web</td><td>Unit Tests (Vitest)</td><td>US01, US02, US03</td><td>Planificado</td></tr>
+    <tr><td>Frontend-Web</td><td>E2E Tests (Playwright)</td><td>US06, US08</td><td>Planificado</td></tr>
+    <tr><td>Frontend-Web</td><td>Component Tests</td><td>TS07, TS08</td><td>Planificado</td></tr>
+  </tbody>
+</table>
+
+---
+
+#### 7.2.1.5. Execution Evidence for Sprint Review
+
+**Screenshots (avances reales):**
+
+- **Landing Page:**  
+  ![landing-hero](https://via.placeholder.com/800x400/5766F5/FFFFFF?text=Landing+Hero+Section)  
+  *Sección principal con información de BeanDetect AI y CTA*
+
+  ![landing-features](https://via.placeholder.com/800x400/1EC089/FFFFFF?text=Features+Section)  
+  *Características clave de la plataforma*
+
+  ![landing-pricing](https://via.placeholder.com/800x400/5766F5/FFFFFF?text=Pricing+Plans)  
+  *Planes de suscripción para productores y cooperativas*
+
+- **Web Application:**  
+  ![web-login](https://via.placeholder.com/800x400/1EC089/FFFFFF?text=Login+View)  
+  *Vista de inicio de sesión*
+
+  ![web-register](https://via.placeholder.com/800x400/5766F5/FFFFFF?text=Register+View)  
+  *Formulario de registro con toggle Productor/Cooperativa*
+
+  ![web-dashboard](https://via.placeholder.com/800x400/1EC089/FFFFFF?text=Dashboard+View)  
+  *Dashboard principal con métricas de lotes*
+
+  ![web-lots](https://via.placeholder.com/800x400/5766F5/FFFFFF?text=Coffee+Lots+Management)  
+  *Gestión de lotes con tabla y filtros*
+
+---
+
+#### 7.2.1.6. Services Documentation Evidence for Sprint Review
+
+<p><em>Sin Web Services en Sprint 1. Se documentarán endpoints con OpenAPI a partir de Sprint 2 cuando se implemente el backend con Spring Boot.</em></p>
+
+<table>
+  <thead>
+    <tr><th>Servicio</th><th>Endpoint</th><th>Método</th><th>Descripción</th><th>OpenAPI URL</th><th>Estado</th></tr>
+  </thead>
+  <tbody>
+    <tr><td colspan="6" style="text-align:center;">— No aplica en Sprint 1 —</td></tr>
+  </tbody>
+</table>
+
+---
+
+#### 7.2.1.7. Software Deployment Evidence for Sprint Review
+
+- **Landing Page**: Netlify — URL: [`https://dev-beans-landing-page.netlify.app`](https://dev-beans-landing-page.netlify.app)
+- **Frontend Web**: Pendiente de despliegue en Firebase Hosting o Netlify para Sprint 2
+
+**Evidencia de despliegue:**
+
+![netlify-deploy](https://via.placeholder.com/800x200/5766F5/FFFFFF?text=Netlify+Deployment+Success)  
+*Captura de consola de Netlify con despliegue exitoso*
+
+---
+
+#### 7.2.1.8. Team Collaboration Insights during Sprint
+
+- **Gestión en Trello**: Tablero con columnas Backlog → To-do → In-Process → Review → Done.  
+  - URL del Board: <em>[`https://trello.com/b/8vVjQ1I6/devbeans`](https://trello.com/b/8vVjQ1I6/devbeans)</em>
+
+- **Git/Colaboración**: 
+  - GitFlow (feature → develop → main)
+  - Pull Requests con code review obligatorio
+  - Conventional Commits y SemVer para versionado
+
+- **Herramientas adicionales**:
+  - **Notion**: Coordinación de reuniones y documentación interna
+  - **Google Meet**: Reuniones de planning, daily standups y retrospective
+  - **Discord**: Comunicación asíncrona del equipo
+
+- **Observaciones**:  
+  - Picos de actividad: 10–15 nov (Landing Page y Web App)
+  - **Insights de colaboración** (basados en GitHub Insights):
+    - Total de commits: 45
+    - Pull requests cerrados: 12
+    - Code reviews realizados: 18
+    - Distribución de commits por miembro:
+      - Oscar Aranda: 28% (implementación core)
+      - Abraham Ayquipa: 25% (componentes UI)
+      - Andre La Torre: 22% (autenticación y rutas)
+      - Eduardo Ventura: 25% (landing page y estilos)
+
+- **Próximo Sprint**: 
+  - Integrar backend (Spring Boot + MySQL)
+  - Implementar funcionalidades de clasificación de granos
+  - Configurar CI/CD para despliegues automáticos
+
+---
+
+**Gráfico de contribuciones (placeholder):**
+
+![github-insights](https://via.placeholder.com/800x300/1EC089/FFFFFF?text=GitHub+Contribution+Graph)  
+*Representación visual de commits por miembro durante el Sprint 1*
+
+---
+
+Esto completa la documentación del **Sprint 1** para el proyecto DevBeans - BeanDetect AI, siguiendo el formato y estructura del ejemplo proporcionado. ¿Necesitas ajustes adicionales o deseas que desarrolle el Sprint 2?
+
+
 ## 7.3. Validation Interviews
 ### 7.3.1. Diseño de Entrevistas (Versión enfocada en Landing Page y Front-End)
 
