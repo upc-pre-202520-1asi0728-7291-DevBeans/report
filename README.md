@@ -4690,8 +4690,7 @@ Semiestructurada (10–15 min), 1 a 1, centrada en observación del uso del prot
 * Evitar recopilar datos personales o información sensible.
 
 #### Guion de preguntas
-Nota: Iniciar con una breve introducción explicando propósito, duración y uso de la retroalimentación.
-
+Primero se iniciara con una breve introducción explicando propósito, duración y uso de la retroalimentación.
 #### A. Generales (para ambos segmentos)  
 1. ¿Qué impresión le genera la página al ingresar?  
 2. ¿Entendió de inmediato para qué sirve la plataforma?  
