@@ -5556,55 +5556,209 @@ Integration Tests: https://github.com/upc-pre-202520-1asi0728-7291-DevBeans/api-
 
 **Screenshots (avances reales):**
 
-- **Landing Page:**  
-  ![landing-hero](https://via.placeholder.com/800x400/5766F5/FFFFFF?text=Landing+Hero+Section)  
-  *Sección principal con información de BeanDetect AI y CTA*
-
-  ![landing-features](https://via.placeholder.com/800x400/1EC089/FFFFFF?text=Features+Section)  
-  *Características clave de la plataforma*
-
-  ![landing-pricing](https://via.placeholder.com/800x400/5766F5/FFFFFF?text=Pricing+Plans)  
-  *Planes de suscripción para productores y cooperativas*
-
 - **Web Application:**  
-  ![web-login](https://via.placeholder.com/800x400/1EC089/FFFFFF?text=Login+View)  
-  *Vista de inicio de sesión*
 
-  ![web-register](https://via.placeholder.com/800x400/5766F5/FFFFFF?text=Register+View)  
-  *Formulario de registro con toggle Productor/Cooperativa*
+[![b7022b66-c30c-412d-abe1-df23871217a2.jpg](https://i.postimg.cc/15rfngHz/b7022b66-c30c-412d-abe1-df23871217a2.jpg)](https://postimg.cc/Vd5Y2k2y)
 
-  ![web-dashboard](https://via.placeholder.com/800x400/1EC089/FFFFFF?text=Dashboard+View)  
-  *Dashboard principal con métricas de lotes*
+- **Backend:**
 
-  ![web-lots](https://via.placeholder.com/800x400/5766F5/FFFFFF?text=Coffee+Lots+Management)  
-  *Gestión de lotes con tabla y filtros*
+[Captura-de-pantalla-2025-11-15-232737.png](https://postimg.cc/xXJ1N1Rn)
 
 ---
 
 #### 7.2.1.6. Services Documentation Evidence for Sprint Review
 
-<p><em>Sin Web Services en Sprint 1. Se documentarán endpoints con OpenAPI a partir de Sprint 2 cuando se implemente el backend con Spring Boot.</em></p>
+A continuación se documentan los Web Services implementados en el Sprint 1 mediante OpenAPI 3.0:
 
 <table>
   <thead>
-    <tr><th>Servicio</th><th>Endpoint</th><th>Método</th><th>Descripción</th><th>OpenAPI URL</th><th>Estado</th></tr>
+    <tr>
+      <th>Servicio</th>
+      <th>Endpoint</th>
+      <th>Método</th>
+      <th>Descripción</th>
+      <th>Request Body</th>
+      <th>Response</th>
+      <th>Status Code</th>
+    </tr>
   </thead>
   <tbody>
-    <tr><td colspan="6" style="text-align:center;">— No aplica en Sprint 1 —</td></tr>
+    <!-- Authentication Service -->
+    <tr>
+      <td rowspan="3"><strong>Authentication</strong></td>
+      <td>/api/v1/auth/register/producer</td>
+      <td>POST</td>
+      <td>Registrar nuevo productor pequeño/mediano</td>
+      <td>{ email, password, firstName, lastName, farmName, hectares }</td>
+      <td>{ userId, token, userType: "PRODUCER" }</td>
+      <td>201</td>
+    </tr>
+    <tr>
+      <td>/api/v1/auth/register/cooperative</td>
+      <td>POST</td>
+      <td>Registrar nueva cooperativa cafetalera</td>
+      <td>{ email, password, cooperativeName, ruc, representativeName, associatedProducers }</td>
+      <td>{ cooperativeId, token, userType: "COOPERATIVE" }</td>
+      <td>201</td>
+    </tr>
+    <tr>
+      <td>/api/v1/auth/login</td>
+      <td>POST</td>
+      <td>Autenticar usuario con email y contraseña</td>
+      <td>{ email, password }</td>
+      <td>{ userId, token, userType, refreshToken }</td>
+      <td>200</td>
+    </tr>
+    <!-- Profile Service -->
+    <tr>
+      <td rowspan="3"><strong>Profile Management</strong></td>
+      <td>/api/v1/profiles/{userId}</td>
+      <td>GET</td>
+      <td>Obtener perfil del usuario actual</td>
+      <td>—</td>
+      <td>{ userId, email, userType, profile }</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>/api/v1/profiles/{userId}</td>
+      <td>PUT</td>
+      <td>Actualizar información del perfil</td>
+      <td>{ personalInfo, contactInfo, farmInfo }</td>
+      <td>{ message: "Perfil actualizado", updatedProfile }</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>/api/v1/profiles/{userId}/password</td>
+      <td>POST</td>
+      <td>Cambiar contraseña del usuario</td>
+      <td>{ currentPassword, newPassword }</td>
+      <td>{ message: "Contraseña actualizada" }</td>
+      <td>200</td>
+    </tr>
+    <!-- Coffee Lot Service -->
+    <tr>
+      <td rowspan="5"><strong>Coffee Lot Management</strong></td>
+      <td>/api/v1/coffee-lots</td>
+      <td>POST</td>
+      <td>Crear nuevo lote de café</td>
+      <td>{ harvestDate, coffeeVariety, quantity, processingMethod, coordinates, altitude }</td>
+      <td>{ lotId, lotNumber, status: "REGISTERED", createdAt }</td>
+      <td>201</td>
+    </tr>
+    <tr>
+      <td>/api/v1/coffee-lots/{lotId}</td>
+      <td>GET</td>
+      <td>Obtener información completa de un lote específico</td>
+      <td>—</td>
+      <td>{ lotId, lotNumber, harvestDate, variety, quantity, status, originData }</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>/api/v1/coffee-lots/{lotId}</td>
+      <td>PUT</td>
+      <td>Actualizar información del lote (según estado permitido)</td>
+      <td>{ quantity, processingMethod, originData }</td>
+      <td>{ message: "Lote actualizado", updatedLot }</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>/api/v1/coffee-lots/producer/{producerId}</td>
+      <td>GET</td>
+      <td>Listar todos los lotes de un productor con paginación</td>
+      <td>?page=1&limit=10&status=REGISTERED</td>
+      <td>{ data: [ { lotId, lotNumber, status, variety } ], total, page }</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>/api/v1/coffee-lots/{lotId}</td>
+      <td>DELETE</td>
+      <td>Eliminar lote (solo si estado es REGISTERED)</td>
+      <td>{ deletionReason }</td>
+      <td>{ message: "Lote eliminado", deletedLotId }</td>
+      <td>200</td>
+    </tr>
+    <!-- Classification Service -->
+    <tr>
+      <td rowspan="4"><strong>Grain Classification</strong></td>
+      <td>/api/v1/classification/start</td>
+      <td>POST</td>
+      <td>Iniciar nueva sesión de clasificación de lote</td>
+      <td>{ coffeeLotId, sampleSize: 1000, qualityStandard: "SCA" }</td>
+      <td>{ sessionId, status: "STARTED", timestamp }</td>
+      <td>201</td>
+    </tr>
+    <tr>
+      <td>/api/v1/classification/{sessionId}/upload</td>
+      <td>POST</td>
+      <td>Cargar imágenes de granos para análisis</td>
+      <td>multipart/form-data { images: [File], metadata }</td>
+      <td>{ uploadedCount, processingStatus: "IN_PROGRESS" }</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>/api/v1/classification/{sessionId}</td>
+      <td>GET</td>
+      <td>Obtener estado y progreso de sesión de clasificación</td>
+      <td>—</td>
+      <td>{ sessionId, status, progress: 45%, totalGrains, processedGrains }</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>/api/v1/classification/{sessionId}/results</td>
+      <td>GET</td>
+      <td>Obtener resultados completos de clasificación</td>
+      <td>—</td>
+      <td>{ qualityGrade: "SPECIALTY", exportPercentage: 92, defectivePercentage: 8, detailedScores }</td>
+      <td>200</td>
+    </tr>
   </tbody>
 </table>
+
+**Evidencia de endpoints en funcionamiento:**
+
+[![Captura_de_pantalla_2025_11_15_232951.png](https://i.postimg.cc/mZQrJc0x/Captura_de_pantalla_2025_11_15_232951.png)](https://postimg.cc/MXpxjG6t)
+
+[![Captura_de_pantalla_2025_11_15_233001.png](https://i.postimg.cc/T2rPFyZM/Captura_de_pantalla_2025_11_15_233001.png)](https://postimg.cc/fkRZ0bzB)
+
+[![Captura_de_pantalla_2025_11_15_233009.png](https://i.postimg.cc/sfp2qBb6/Captura_de_pantalla_2025_11_15_233009.png)](https://postimg.cc/3Wx7Dw8m)
 
 ---
 
 #### 7.2.1.7. Software Deployment Evidence for Sprint Review
 
 - **Landing Page**: Netlify — URL: [`https://dev-beans-landing-page.netlify.app`](https://dev-beans-landing-page.netlify.app)
-- **Frontend Web**: Pendiente de despliegue en Firebase Hosting o Netlify para Sprint 2
+
+- **Frontend Web**: Netlify — URL: [`https://bean-detect-ai-web.netlify.app/login`](https://bean-detect-ai-web.netlify.app/login)
+
+- **Backend**: Azure - URL: [`https://bean-detect-ai-api-platform.azurewebsites.net/docs`](https://bean-detect-ai-api-platform.azurewebsites.net/docs)
 
 **Evidencia de despliegue:**
 
-![netlify-deploy](https://via.placeholder.com/800x200/5766F5/FFFFFF?text=Netlify+Deployment+Success)  
-*Captura de consola de Netlify con despliegue exitoso*
+- Azure Blob Storage para almacenar el modelo de machine learning e integrarlo con Backend de Azure App Service
+
+[![Azure_Blob_Storage_para_almacenar_el_ML.png](https://i.postimg.cc/xjsZ0grH/Azure_Blob_Storage_para_almacenar_el_ML.png)](https://postimg.cc/JtkxxNz4)
+
+[![P2.png](https://i.postimg.cc/tRrcXD0h/P2.png)](https://postimg.cc/Wtk88G13)
+
+[![P3.png](https://i.postimg.cc/dQWfqnMG/P3.png)](https://postimg.cc/V5CggqkN)
+
+[![P4.png](https://i.postimg.cc/RCPYMGr1/P4.png)](https://postimg.cc/grZssV2r)
+
+[![P5.png](https://i.postimg.cc/RCPYMGr7/P5.png)](https://postimg.cc/bdtggxwr)
+
+<br>
+
+- Azure App Service para el Backend de Python
+
+[![Azure-Web-App-para-el-backend-api-platform.png](https://i.postimg.cc/hGyCSPww/Azure-Web-App-para-el-backend-api-platform.png)](https://postimg.cc/cK37hZdM)
+
+- Landing Page desplegada en Netlify
+
+[![Captura-de-pantalla-2025-11-15-233933.png](https://i.postimg.cc/4NkW40Lx/Captura-de-pantalla-2025-11-15-233933.png)](https://postimg.cc/Th0VCtvz)
+
+- App Web desplegada en Netlify
+
+[![Captura-de-pantalla-2025-11-15-234013.png](https://i.postimg.cc/3x91BxKy/Captura-de-pantalla-2025-11-15-234013.png)](https://postimg.cc/K1ktcF3F)
 
 ---
 
