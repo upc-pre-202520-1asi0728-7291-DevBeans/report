@@ -363,15 +363,24 @@ ABET – EAC - Student Outcome 5
         <p><b>TB1:</b> Durante el desarrollo del proyecto, participé activamente en la elaboración de los capítulos iniciales, presentando con claridad y objetividad los perfiles de la startup y del equipo. Expliqué el enfoque Lean UX y sus componentes clave, como los Problem Statements, Assumptions e Hipótesis, adaptando el lenguaje según el público. También contribuí al análisis competitivo y al diseño de entrevistas, comunicando los resultados de forma estructurada y comprensible para distintos niveles jerárquicos y especialidades.<br>
         <b>TP:</b> Comuniqué al equipo el cumplimiento y avance del módulo de análisis de imágenes de granos de café, así como las tecnologías y el dataset necesario para continuar con la implementación del sistema.
         </p>
+           <br>
+          <b>TB2:</b>Demostre una comunicación oral clara y estructurada al presentar al equipo el proceso completo detrás de los mockups, la elaboración de user flows y el prototipado de la aplicación. Ademas de explicar las decisiones de diseño y funcionalidad de manera que tanto miembros técnicos como no técnicos pudieran comprender la lógica detrás de la interfaz. Además, de la elaboración de entrevistas y registros de validación, comunicó los avances y hallazgos de forma accesible, permitiendo que el equipo los integrara en la planificación del sprint.
+        </p>
         <br>
         <p><b>Andre La torre Soto</b></p>
         <p><b>TB1:</b> Durante el desarrollo del proyecto, participé activamente en la fase de Needfinding, recopilando y organizando información clave sobre el contexto del sector cafetalero. Contribuí en la caracterización de los segmentos de usuarios, identificando sus principales problemáticas y necesidades a través de la construcción de User Personas y Journey Mappings. Además, elaboré los Problem Statements de manera clara y fundamentada, comunicando los hallazgos con un lenguaje accesible tanto para especialistas como para audiencias generales. Finalmente, apoyé en la integración de estos resultados dentro del marco metodológico, asegurando que las evidencias recopiladas sirvieran como base para el planteamiento de hipótesis y el diseño posterior de la solución tecnológica.<br>
         <b>TP:</b> Comuniqué al equipo el cumplimiento y avance del diseño UX y UI requerido.
         </p>
         <br>
+     <br><b>TB2:</b>Comunique criterios y resultados obtenidos de la evaluación de heurísticas, exponiendo la severidad de los problemas identificados y justificando mejoras de accesibilidad y usabilidad
+        </p>
+        <br>
         <p><b>Aranda Vallejos, Oscar Gabriel</b></p>
         <p><b>TB1:</b> Durante el desarrollo del proyecto, me enfoqué en la arquitectura de software y el diseño técnico del sistema BeanDetect AI. Comuniqué de manera clara y objetiva los conceptos arquitectónicos complejos a través de presentaciones técnicas, explicando la implementación de Domain-Driven Design y los patrones CQRS. Adapté mi comunicación según la audiencia, presentando diagramas C4 y UML de forma comprensible tanto para desarrolladores como para stakeholders no técnicos. Facilité la comprensión de la arquitectura de microservicios y bounded contexts, asegurando que todos los miembros del equipo pudieran contribuir efectivamente al proyecto.
         <br><b>TP:</b> Comuniqué al equipo el cumplimiento y avance del módulo de clasificación de imágenes de granos de café
+        </p>
+        <br>
+    <br><b>TB2:</b>Comunique al equipo la planificación, el backlog, la ejecución de tareas, las pruebas y la evidencia de despliegue.
         </p>
         <br>
         <p><b>Ventura Chancafe, Eduardo</b></p>
@@ -382,6 +391,8 @@ ABET – EAC - Student Outcome 5
       <td>
         <p><b>TB1:</b> Como equipo, hemos concluido que demostrar la capacidad de comunicar nuestras ideas y resultados de manera clara y objetiva es fundamental para lograr una propuesta de valor que permita satisfacer los objetivos y necesidades del proyecto. Por ello, nos hemos enfocado en facilitar la comprensión entre los stakeholders mediante las exposiciones de documentación y el registro de entrevistas, lo cual fortaleció la toma de decisiones y el avance coordinado del proyecto.<br><b>TP:</b> Concluimos que para implementar un producto de software con tecnologías emergentes es necesario contar con un plan de acción, una arquitectura definida y un diseño previamente planteado y aprobado por el equipo.
         </p>
+    <br> <b>TB2:</b> Como equipo, concluimos que el fortalecimiento de nuestra comunicación oral fue esencial para integrar de manera coherente los avances de diseño, evaluación y desarrollo realizados durante este hito. A través de la presentación clara de los mockups, user flows, prototipos, evaluaciones heurísticas, planificación del sprint y evidencias de ejecución, logramos alinear nuestra comprensión sobre el estado del proyecto y las prioridades técnicas. Esta comunicación fluida permitió que cada integrante comprendiera el impacto de su aporte dentro del sistema BeanDetect AI y favoreció la toma de decisiones conjuntas, reforzando la coordinación del equipo y asegurando que la evolución del producto avanzara de forma consistente con los objetivos planteados. </p>
+        <br>
       </td>
     </tr>
     <tr>
@@ -391,22 +402,32 @@ ABET – EAC - Student Outcome 5
         <p><b>TB1:</b> Contribuí a la redacción clara y estructurada de los capítulos iniciales del proyecto, abordando desde la descripción de la startup y los perfiles del equipo hasta el análisis de la problemática y la aplicación del proceso Lean UX. Redacté con objetividad los Problem Statements, Assumptions e Hipótesis, facilitando su comprensión para públicos técnicos y no técnicos. También participé en el análisis competitivo y en la documentación de entrevistas, asegurando que los resultados fueran comunicados de forma precisa y accesible para distintos niveles jerárquicos y especialidades.
         <br> <b>TP:</b> Documenté los diseños de los mockups de la aplicación web y de la landing page de manera que sea entendible para todo rango de audiencia.</p>
         <br>
+          <br> <b>TB2:</b> Elabore la documentación escrita clara y completa para los capítulos relacionados con mockups, user flows y prototipos. Sus descripciones facilitaron la comprensión de la lógica visual y funcional de la aplicación</p>
+        <br>
         <p><b>Andre La torre Soto</b></p>
         <p><b>TB1:</b> Contribuí a la redacción clara y estructurada de la sección de Needfinding, abarcando desde la identificación del contexto sectorial y los segmentos de usuarios hasta la construcción de User Personas y Journey Mappings. Redacté con objetividad los Problem Statements, asegurando que las necesidades y desafíos de los productores y cooperativas fueran expresados de forma comprensible tanto para públicos técnicos como no técnicos. Asimismo, participé en la síntesis de los hallazgos y en su vinculación con las etapas posteriores del proyecto, promoviendo que los insumos obtenidos orientaran de manera efectiva el diseño y validación de la solución.
         <br> <b>TP:</b> Documenté los diseños de los wireframes de la aplicación web y de la landing page de manera que sea entendible para todo rango de audiencia.</p>
+        <br>
+    <br> <b>TB2:</b> Documente la sección completa de la evaluación heurística, incluyendo las descripciones de problemas de usabilidad, análisis de severidad y recomendaciones de mejora.</p>
         <br>
         <p><b>Aranda Vallejos, Oscar Gabriel</b></p>
         <p><b>TB1:</b> Contribuí a la documentación técnica del proyecto mediante la elaboración de diagramas C4 y UML que representan la arquitectura del sistema BeanDetect AI. Redacté documentación detallada de los bounded contexts, aplicando principios de Domain-Driven Design de forma clara y estructurada. Mi escritura técnica abarcó desde especificaciones de alto nivel comprensibles para stakeholders de negocio hasta diagramas de clases detallados para desarrolladores. Aseguré que la documentación arquitectónica fuera accesible para diferentes audiencias, facilitando la comprensión del diseño técnico tanto para especialistas en software como para profesionales de otras áreas del proyecto.
         <br> <b>TP:</b> Documenté el nivel táctico del diseño de la solución de manera concisa para evitar confusiones y comuniqué por escrito su avance al equipo de desarrollo.</p>
         <br>
+    <br> <b>TB2:</b> Documenté todo el ciclo del Sprint 1. Incluyendo la planificación, el backlog, las implementaciones, las pruebas, la ejecución y la evidencia de despliegue.</p>
+        <br>
         <p><b>Ventura Chancafe, Eduardo</b></p>
         <p><b>TB1:</b> Contribuí a la documentación del proyecto mediante la elaboración detallada de scenario mappings As-Is y To-Be, describiendo de manera objetiva y estructurada los procesos actuales y futuros en el sector cafetalero. Redacté análisis comparativos que permitieron identificar oportunidades de mejora y puntos de transformación digital. Mi escritura técnica se enfocó en hacer comprensibles los flujos de trabajo complejos para audiencias diversas, desde productores cafeteros hasta desarrolladores de software. Aseguré que la documentación de procesos sirviera como puente entre las necesidades del negocio y las especificaciones técnicas del sistema.
         <br> <b>TP:</b> Documenté las secciones implementadas de la aplicación web para un mejor entendimiento y para una visualización sencilla de sus componentes y páginas.</p>
         </p>
+    <br> <b>TB2:</b> Documenté los diseños de los mockups de la aplicación web y de la landing page de manera que sea entendible para todo rango de audiencia.</p>
+        <br>
       </td>
       <td>
         <p><b>TB1:</b> Como equipo, logramos expresar nuestras ideas y resultados por escrito con claridad y objetividad, adaptando el contenido para que fuera comprensible y relevante para públicos diversos, tanto técnicos como no técnicos. Con ello, hemos concluido que esta capacidad de comunicación escrita fortaleció la documentación del proyecto de ingeniería, facilitando la toma de decisiones y el trabajo colaborativo.
         <br> <b>TP:</b> Concluimos que la capacidad de comunicar nuestros avances y resultados de manera escrita permitió al equipo mantener una documentación clara, estructurada y accesible, asegurando la alineación entre las diferentes áreas técnicas y de negocio, lo cual resultó fundamental para la validación y desarrollo del sistema BeanDetect AI.</p>
+          <br> <b>TB2:</b>Como equipo, concluimos que el trabajo realizado durante este hito fortaleció significativamente nuestra capacidad de comunicar información técnica de manera escrita con claridad, detalle y coherencia. </p>
+        <br>
       </td>
     </tr>
   </tbody>
