@@ -188,7 +188,7 @@ En esta sección se resumen los avances y modificaciones realizadas durante el c
 | Repositorio de la documentación    | https://github.com/upc-pre-202520-1asi0728-7291-DevBeans/report         |
 | Organización del proyecto     | https://github.com/upc-pre-202520-1asi0728-7291-DevBeans                    |
 
-[![Captura-de-pantalla-2025-09-20-234150.png](https://i.postimg.cc/WbP9wnFw/Captura-de-pantalla-2025-09-20-234150.png)](https://postimg.cc/grNqY3Kx)
+[![Captura-de-pantalla-2025-11-16-030140.png](https://i.postimg.cc/rmRgTDbt/Captura-de-pantalla-2025-11-16-030140.png)](https://postimg.cc/jwKyQSRs)
 
 <br>
 
