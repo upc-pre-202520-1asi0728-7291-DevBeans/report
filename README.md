@@ -4878,7 +4878,7 @@ Completaré las secciones faltantes del Capítulo VII basándome en el ejemplo p
 #### 7.2.1.1. Sprint Planning 1
 
 **Introducción**  
-Este sprint se orientó a entregar la primera versión navegable de la **Landing Page (HTML/CSS/JS)** y el **Frontend Web Application (Vue 3 + PrimeVue)**, cumpliendo con los entregables solicitados para TB2.
+Este sprint se orientó a entregar el 90% de nuestro backend desplegado conectado al frontend de la aplicación web junto al modelo de machine learning integrado en nuestro backend de Python.
 
 <!-- Sprint Planning Background (formato de la rúbrica) -->
 <table>
@@ -4887,8 +4887,8 @@ Este sprint se orientó a entregar la primera versión navegable de la **Landing
   </thead>
   <tbody>
     <tr><td colspan="2"><strong>Sprint Planning Background</strong></td><td></td></tr>
-    <tr><td>Date</td><td>YYYY-MM-DD</td><td>2025-11-10</td></tr>
-    <tr><td>Time</td><td>HH:MM</td><td>20:00</td></tr>
+    <tr><td>Date</td><td>2025-11-10</td><td>2025-11-10</td></tr>
+    <tr><td>Time</td><td>21:00</td><td>22:00</td></tr>
     <tr><td>Location</td><td>(física/virtual)</td><td>Virtual (Google Meet)</td></tr>
     <tr>
       <td>Prepared By</td><td>(Responsable del acta)</td>
@@ -4898,8 +4898,8 @@ Este sprint se orientó a entregar la primera versión navegable de la **Landing
       <td>Attendees (to planning meeting)</td>
       <td>(Equipo)</td>
       <td>
-        Aranda Vallejos, Oscar Gabriel / Ayquipa Ubaldo, Abraham Israel / 
-        La Torre Soto, Andre Sebastian / Ventura Chancafe, Eduardo Renato
+        Aranda Vallejos, Oscar Gabriel <br> Ayquipa Ubaldo, Abraham Israel <br> 
+        La Torre Soto, Andre Sebastian <br> Ventura Chancafe, Eduardo Renato
       </td>
     </tr>
     <tr>
@@ -4915,16 +4915,22 @@ Este sprint se orientó a entregar la primera versión navegable de la **Landing
       <td>
         Entregar la <strong>v1 navegable</strong> de: 
         (1) Landing Page desplegada en Netlify, 
-        (2) Frontend Web (Vue 3 + PrimeVue) con navegación base y pantallas de Login, Dashboard y Gestión de Lotes; 
+        (2) Frontend Web con navegación base y pantallas de Login, Dashboard, Gestión de Lotes y Reportes; 
         evidenciar navegación y despliegues funcionales.
       </td>
     </tr>
-    <tr><td>Sprint 1 Velocity</td><td>(Story Points)</td><td><strong>35 SP</strong></td></tr>
-    <tr>
+    <tr><td>Sprint 1 Velocity</td><td>(Story Points)</td><td><strong>37 SP</strong></td>
+   </tr>
+   <tr>
       <td>Sum of Story Points</td>
-      <td>(stories incluidos)</td>
-      <td><strong>35 SP</strong> (US01=3, US02=3, US03=2, US04=2, US06=2, US08=3, US15=3, TS01=2, TS07=2, TS08=3)</td>
-    </tr>
+      <td>(US incluidos)</td>
+      <td><strong>37 SP</strong> <br> 
+      US01=3, US02=3, US03=2,
+      US04=2, US06=2, US07=2, <br>
+      US08=3, US10=2, US11=2,  
+      US13=5, US14=8, US15=3
+      </td>
+   </tr>
   </tbody>
 </table>
 
@@ -4932,7 +4938,7 @@ Este sprint se orientó a entregar la primera versión navegable de la **Landing
 
 #### 7.2.1.2. Sprint Backlog 1
 
-Durante este sprint inicial, nos enfocamos en desarrollar las user stories que definen las características clave de nuestra Landing Page y las funcionalidades base de la aplicación web. Esto nos permitió validar la arquitectura propuesta y completar la primera fase de desarrollo del frontend.
+Durante este sprint inicial, nos enfocamos en desarrollar las user stories que definen las características clave de nuestra aplicación. Esto nos permitió validar la arquitectura propuesta y completar nuestro core business.
 
 **URL pública de Trello:** <https://trello.com/b/8vVjQ1I6/devbeans>
 
@@ -4960,204 +4966,342 @@ Durante este sprint inicial, nos enfocamos en desarrollar las user stories que d
         <td>Assigned To</td>
         <td>Status (To-do / In-Process / To-Review / Done)</td>
       </tr>
-      <tr>
-        <td>US01</td>
-        <td>Registro de Productor Pequeño/Mediano</td>
-        <td>TA1</td>
-        <td>Diseñar formulario de registro</td>
-        <td>Definir campos y validaciones visuales del formulario de registro de productores</td>
-        <td>03</td>
-        <td>Oscar Aranda</td>
-        <td>Done</td>
-      </tr>
-      <tr>
-        <td></td><td></td>
-        <td>TA2</td>
-        <td>Implementar validaciones frontend</td>
-        <td>Codificar validaciones de campos requeridos y formato de datos</td>
-        <td>03</td>
-        <td>Oscar Aranda</td>
-        <td>Done</td>
-      </tr>
-      <tr>
-        <td>US02</td>
-        <td>Registro de Cooperativa Cafetalera</td>
-        <td>TA1</td>
-        <td>Diseñar formulario de cooperativa</td>
-        <td>Crear diseño del formulario con campos específicos para cooperativas</td>
-        <td>03</td>
-        <td>Abraham Ayquipa</td>
-        <td>Done</td>
-      </tr>
-      <tr>
-        <td></td><td></td>
-        <td>TA2</td>
-        <td>Implementar toggle Productor/Cooperativa</td>
-        <td>Desarrollar funcionalidad de cambio entre tipos de registro</td>
-        <td>02</td>
-        <td>Abraham Ayquipa</td>
-        <td>Done</td>
-      </tr>
-      <tr>
-        <td>US03</td>
-        <td>Autenticación de Usuarios</td>
-        <td>TA1</td>
-        <td>Diseñar pantalla de login</td>
-        <td>Crear interfaz de inicio de sesión con campos de email y contraseña</td>
-        <td>02</td>
-        <td>Andre La Torre</td>
-        <td>Done</td>
-      </tr>
-      <tr>
-        <td></td><td></td>
-        <td>TA2</td>
-        <td>Implementar lógica de autenticación</td>
-        <td>Desarrollar validación de credenciales y redirección al dashboard</td>
-        <td>03</td>
-        <td>Andre La Torre</td>
-        <td>Done</td>
-      </tr>
-      <tr>
-        <td>US04</td>
-        <td>Gestión de Perfil de Productor</td>
-        <td>TA1</td>
-        <td>Diseñar vista de configuración</td>
-        <td>Crear interfaz para editar información personal y de finca</td>
-        <td>02</td>
-        <td>Eduardo Ventura</td>
-        <td>Done</td>
-      </tr>
-      <tr>
-        <td></td><td></td>
-        <td>TA2</td>
-        <td>Implementar formulario editable</td>
-        <td>Desarrollar funcionalidad de actualización de perfil</td>
-        <td>02</td>
-        <td>Eduardo Ventura</td>
-        <td>Done</td>
-      </tr>
-      <tr>
-        <td>US06</td>
-        <td>Creación de Lotes</td>
-        <td>TA1</td>
-        <td>Diseñar formulario de nuevo lote</td>
-        <td>Crear interfaz para registro de lotes con campos requeridos</td>
-        <td>02</td>
-        <td>Oscar Aranda</td>
-        <td>Done</td>
-      </tr>
-      <tr>
-        <td></td><td></td>
-        <td>TA2</td>
-        <td>Implementar validaciones de lote</td>
-        <td>Desarrollar validación de campos y generación de ID único</td>
-        <td>03</td>
-        <td>Oscar Aranda</td>
-        <td>Done</td>
-      </tr>
-      <tr>
-        <td>US08</td>
-        <td>Visualización de Lotes por Productor</td>
-        <td>TA1</td>
-        <td>Diseñar tabla de lotes</td>
-        <td>Crear vista con tabla interactiva de lotes registrados</td>
-        <td>03</td>
-        <td>Abraham Ayquipa</td>
-        <td>Done</td>
-      </tr>
-      <tr>
-        <td></td><td></td>
-        <td>TA2</td>
-        <td>Implementar filtros y búsqueda</td>
-        <td>Desarrollar funcionalidad de búsqueda y filtrado de lotes</td>
-        <td>03</td>
-        <td>Abraham Ayquipa</td>
-        <td>Done</td>
-      </tr>
-      <tr>
-        <td>US15</td>
-        <td>Reporte Simple de Clasificación</td>
-        <td>TA1</td>
-        <td>Diseñar vista de reportes</td>
-        <td>Crear interfaz con gráficos de distribución de calidad</td>
-        <td>03</td>
-        <td>Eduardo Ventura</td>
-        <td>In Process</td>
-      </tr>
-      <tr>
-        <td></td><td></td>
-        <td>TA2</td>
-        <td>Implementar visualizaciones</td>
-        <td>Desarrollar gráficos con datos simulados de clasificación</td>
-        <td>04</td>
-        <td>Eduardo Ventura</td>
-        <td>To Review</td>
-      </tr>
-      <tr>
-        <td>TS01</td>
-        <td>Información Específica por Segmento</td>
-        <td>TA1</td>
-        <td>Diseñar secciones de Landing</td>
-        <td>Crear secciones diferenciadas para productores y cooperativas</td>
-        <td>02</td>
-        <td>Andre La Torre</td>
-        <td>Done</td>
-      </tr>
-      <tr>
-        <td></td><td></td>
-        <td>TA2</td>
-        <td>Implementar contenido segmentado</td>
-        <td>Desarrollar navegación y contenido específico por segmento</td>
-        <td>02</td>
-        <td>Andre La Torre</td>
-        <td>Done</td>
-      </tr>
-      <tr>
-        <td>TS07</td>
-        <td>Interfaz en Español Regionalizada</td>
-        <td>TA1</td>
-        <td>Configurar sistema i18n</td>
-        <td>Implementar sistema de internacionalización en Vue</td>
-        <td>02</td>
-        <td>Oscar Aranda</td>
-        <td>Done</td>
-      </tr>
-      <tr>
-        <td></td><td></td>
-        <td>TA2</td>
-        <td>Traducir textos al español</td>
-        <td>Crear archivos de traducción con terminología cafetalera</td>
-        <td>02</td>
-        <td>Eduardo Ventura</td>
-        <td>Done</td>
-      </tr>
-      <tr>
-        <td>TS08</td>
-        <td>Adaptación a Dispositivos Básicos</td>
-        <td>TA1</td>
-        <td>Implementar diseño responsive</td>
-        <td>Desarrollar breakpoints y layouts adaptativos</td>
-        <td>03</td>
-        <td>Abraham Ayquipa</td>
-        <td>Done</td>
-      </tr>
-      <tr>
-        <td></td><td></td>
-        <td>TA2</td>
-        <td>Optimizar rendimiento</td>
-        <td>Reducir tamaño de assets y optimizar carga</td>
-        <td>02</td>
-        <td>Abraham Ayquipa</td>
-        <td>Done</td>
-      </tr>
-    </tbody>
+<!-- US01: Registro de Productor Pequeño/Mediano -->
+  <tr>
+    <td>US01</td>
+    <td>Registro de Productor Pequeño/Mediano</td>
+    <td>TA1</td>
+    <td>Diseñar formulario de registro</td>
+    <td>Definir campos obligatorios: nombre, email, contraseña, ubicación, hectáreas, variedad</td>
+    <td>03</td>
+    <td>Oscar Aranda</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>TA2</td>
+    <td>Implementar validaciones frontend</td>
+    <td>Validación de formato email, campos requeridos, verificación de email duplicado</td>
+    <td>04</td>
+    <td>Oscar Aranda</td>
+    <td>Done</td>
+  </tr>
+  
+  <!-- US02: Registro de Cooperativa Cafetalera -->
+  <tr>
+    <td>US02</td>
+    <td>Registro de Cooperativa Cafetalera</td>
+    <td>TA1</td>
+    <td>Diseñar formulario de cooperativa</td>
+    <td>Campos específicos: nombre cooperativa, RUC, representante legal, número de asociados</td>
+    <td>03</td>
+    <td>Abraham Ayquipa</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>TA2</td>
+    <td>Implementar toggle Productor/Cooperativa</td>
+    <td>Funcionalidad de cambio dinámico entre tipos de registro con validaciones específicas</td>
+    <td>03</td>
+    <td>Abraham Ayquipa</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>TA3</td>
+    <td>Validación de RUC</td>
+    <td>Verificar formato de 11 dígitos y unicidad en el sistema</td>
+    <td>02</td>
+    <td>Abraham Ayquipa</td>
+    <td>Done</td>
+  </tr>
+  
+  <!-- US03: Autenticación de Usuarios -->
+  <tr>
+    <td>US03</td>
+    <td>Autenticación de Usuarios</td>
+    <td>TA1</td>
+    <td>Diseñar pantalla de login</td>
+    <td>Interfaz simple con campos email y contraseña, opción "Recordarme"</td>
+    <td>02</td>
+    <td>Andre La Torre</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>TA2</td>
+    <td>Implementar lógica de autenticación</td>
+    <td>Validación de credenciales, redirección según rol (productor/cooperativa), manejo de errores</td>
+    <td>04</td>
+    <td>Andre La Torre</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>TA3</td>
+    <td>Sistema de bloqueo temporal</td>
+    <td>Bloquear cuenta tras 5 intentos fallidos por 15 minutos, envío de notificación por correo</td>
+    <td>03</td>
+    <td>Andre La Torre</td>
+    <td>To Review</td>
+  </tr>
+  
+  <!-- US04: Gestión de Perfil de Productor -->
+  <tr>
+    <td>US04</td>
+    <td>Gestión de Perfil de Productor</td>
+    <td>TA1</td>
+    <td>Diseñar vista de configuración</td>
+    <td>Secciones: Información Personal, Información de Finca, Variedades Cultivadas</td>
+    <td>02</td>
+    <td>Eduardo Ventura</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>TA2</td>
+    <td>Implementar edición de perfil</td>
+    <td>Formularios editables con validaciones numéricas (hectáreas, altitud) y de formato</td>
+    <td>03</td>
+    <td>Eduardo Ventura</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>TA3</td>
+    <td>Gestión de variedades y foto de perfil</td>
+    <td>Agregar/eliminar variedades cultivadas, subir foto de perfil con validación de formato y tamaño</td>
+    <td>02</td>
+    <td>Eduardo Ventura</td>
+    <td>Done</td>
+  </tr>
+  
+  <!-- US06: Creación de Lotes -->
+  <tr>
+    <td>US06</td>
+    <td>Creación de Lotes</td>
+    <td>TA1</td>
+    <td>Diseñar formulario de nuevo lote</td>
+    <td>Campos: fecha cosecha, variedad, cantidad, método procesamiento, coordenadas, altitud</td>
+    <td>02</td>
+    <td>Oscar Aranda</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>TA2</td>
+    <td>Implementar validaciones de lote</td>
+    <td>Validar fecha no futura, coordenadas válidas (-90 a 90 lat, -180 a 180 lon), altitud 0-5000m</td>
+    <td>03</td>
+    <td>Oscar Aranda</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>TA3</td>
+    <td>Generación de código único</td>
+    <td>Generar código automático formato LOT-YYYY-NNNN, verificar unicidad</td>
+    <td>02</td>
+    <td>Oscar Aranda</td>
+    <td>Done</td>
+  </tr>
+  
+  <!-- US07: Edición de Información de Lote -->
+  <tr>
+    <td>US07</td>
+    <td>Edición de Información de Lote</td>
+    <td>TA1</td>
+    <td>Implementar modo de edición</td>
+    <td>Permitir editar campos según estado del lote (REGISTERED permite todo, otros estados restringidos)</td>
+    <td>03</td>
+    <td>Abraham Ayquipa</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>TA2</td>
+    <td>Validaciones de edición</td>
+    <td>Validar cambios importantes con confirmación, proteger lotes clasificados/certificados</td>
+    <td>03</td>
+    <td>Abraham Ayquipa</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>TA3</td>
+    <td>Historial de modificaciones</td>
+    <td>Registrar fecha, usuario, campo modificado, valores anterior y nuevo</td>
+    <td>02</td>
+    <td>Abraham Ayquipa</td>
+    <td>To Review</td>
+  </tr>
+  
+  <!-- US08: Visualización de Lotes por Productor -->
+  <tr>
+    <td>US08</td>
+    <td>Visualización de Lotes por Productor</td>
+    <td>TA1</td>
+    <td>Diseñar tabla de lotes</td>
+    <td>Vista simple con columnas: código, fecha, variedad, cantidad, estado</td>
+    <td>02</td>
+    <td>Abraham Ayquipa</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>TA2</td>
+    <td>Implementar filtros</td>
+    <td>Filtrado por estado, año de cosecha, ordenamiento por fecha</td>
+    <td>03</td>
+    <td>Abraham Ayquipa</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>TA3</td>
+    <td>Resumen estadístico y paginación</td>
+    <td>Dashboard con totales, estados, kg totales. Paginación 10 lotes por página</td>
+    <td>03</td>
+    <td>Abraham Ayquipa</td>
+    <td>Done</td>
+  </tr>
+  
+  <!-- US10: Búsqueda Rápida de Lotes -->
+  <tr>
+    <td>US10</td>
+    <td>Búsqueda Rápida de Lotes</td>
+    <td>TA1</td>
+    <td>Implementar barra de búsqueda</td>
+    <td>Búsqueda por código de lote, filtros combinados (variedad, método, estado)</td>
+    <td>03</td>
+    <td>Andre La Torre</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>TA2</td>
+    <td>Búsqueda por rango de fechas</td>
+    <td>Selector de rango, validación de fechas, resultados filtrados</td>
+    <td>03</td>
+    <td>Andre La Torre</td>
+    <td>Done</td>
+  </tr>
+  
+  <!-- US11: Eliminación de Lotes -->
+  <tr>
+    <td>US11</td>
+    <td>Eliminación de Lotes</td>
+    <td>TA1</td>
+    <td>Implementar eliminación con restricciones</td>
+    <td>Permitir eliminar solo lotes REGISTERED, bloquear lotes procesados/clasificados</td>
+    <td>02</td>
+    <td>Eduardo Ventura</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>TA2</td>
+    <td>Confirmación doble y auditoría</td>
+    <td>Diálogo de confirmación, solicitar razón de eliminación, registrar en auditoría</td>
+    <td>03</td>
+    <td>Eduardo Ventura</td>
+    <td>Done</td>
+  </tr>
+  
+  <!-- US13: Análisis de Color y Uniformidad -->
+  <tr>
+    <td>US13</td>
+    <td>Análisis de Color y Uniformidad</td>
+    <td>TA1</td>
+    <td>Diseñar interfaz de análisis</td>
+    <td>Vista para mostrar distribución de color (Light, Medium, Dark, Green)</td>
+    <td>03</td>
+    <td>Oscar Aranda</td>
+    <td>In Process</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>TA2</td>
+    <td>Implementar visualización de resultados</td>
+    <td>Gráficos de distribución porcentual, validación suma = 100%</td>
+    <td>04</td>
+    <td>Oscar Aranda</td>
+    <td>To Review</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>TA3</td>
+    <td>Integración con módulo de ML (mock)</td>
+    <td>Simular respuesta de análisis de color para validar flujo completo</td>
+    <td>03</td>
+    <td>Oscar Aranda</td>
+    <td>To Review</td>
+  </tr>
+  
+  <!-- US14: Clasificación por Estándares Internacionales -->
+  <tr>
+    <td>US14</td>
+    <td>Clasificación por Estándares Internacionales</td>
+    <td>TA1</td>
+    <td>Diseñar sistema de categorización</td>
+    <td>Definir categorías: Specialty (95+), Premium (85+), A (75+), B (65+), C (50+)</td>
+    <td>04</td>
+    <td>Abraham Ayquipa</td>
+    <td>In Process</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>TA2</td>
+    <td>Implementar lógica de clasificación</td>
+    <td>Algoritmo de asignación de categoría según score, determinación de mercado objetivo</td>
+    <td>05</td>
+    <td>Abraham Ayquipa</td>
+    <td>To Review</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>TA3</td>
+    <td>Vista de resultados de clasificación</td>
+    <td>Mostrar categoría asignada, score, mercado objetivo, recomendaciones</td>
+    <td>04</td>
+    <td>Abraham Ayquipa</td>
+    <td>To Review</td>
+  </tr>
+  
+  <!-- US15: Reporte Simple de Clasificación -->
+  <tr>
+    <td>US15</td>
+    <td>Reporte Simple de Clasificación</td>
+    <td>TA1</td>
+    <td>Diseñar plantilla de reporte</td>
+    <td>Layout simple con porcentajes exportación vs local, gráficos circulares intuitivos</td>
+    <td>03</td>
+    <td>Eduardo Ventura</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>TA2</td>
+    <td>Implementar generación de PDF</td>
+    <td>Exportar reporte a PDF con formato profesional, incluir código QR del lote</td>
+    <td>04</td>
+    <td>Eduardo Ventura</td>
+    <td>To Review</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>TA3</td>
+    <td>Generación de CSV</td>
+    <td>Exportar datos tabulados de clasificación para análisis externo</td>
+    <td>02</td>
+    <td>Eduardo Ventura</td>
+    <td>Done</td>
+  </tr>
+</tbody>
 </table>
 
 <br>
-
-<blockquote>
-<strong>Nota:</strong> El Sprint 1 se enfocó en establecer las bases del frontend con funcionalidades core de autenticación, gestión de usuarios y visualización de lotes.
-</blockquote>
 
 ---
 
@@ -5233,18 +5377,94 @@ Organización del GitHub: [`https://github.com/orgs/upc-pre-202520-1asi0728-7291
 
 #### 7.2.1.4. Testing Suite Evidence for Sprint Review
 
-<p><em>Para Sprint 1 no se incluyen Web Services backend; se planifica testing de integración y acceptance tests para el Sprint 2 cuando se integre el backend.</em></p>
-
 <table>
   <thead>
     <tr>
-      <th>Repo (Testing)</th><th>Tipo</th><th>Relación con historias</th><th>Estado</th>
+      <th>Repository</th>
+      <th>Branch</th>
+      <th>User Story</th>
+      <th>Archivo .feature</th>
+      <th>Escenarios Definidos</th>
+      <th>Estado</th>
     </tr>
   </thead>
   <tbody>
-    <tr><td>Frontend-Web</td><td>Unit Tests (Vitest)</td><td>US01, US02, US03</td><td>Planificado</td></tr>
-    <tr><td>Frontend-Web</td><td>E2E Tests (Playwright)</td><td>US06, US08</td><td>Planificado</td></tr>
-    <tr><td>Frontend-Web</td><td>Component Tests</td><td>TS07, TS08</td><td>Planificado</td></tr>
+    <tr>
+      <td rowspan="11">https://github.com/upc-pre-202520-1asi0728-7291-DevBeans/acceptance-tests</td>
+      <td rowspan="11">main</td>
+      <td>US01</td>
+      <td>us01_registro_productor.feature</td>
+      <td>5 escenarios (registro exitoso, validaciones, formato email, email duplicado)</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US02</td>
+      <td>us02_registro_cooperativa.feature</td>
+      <td>5 escenarios (registro exitoso, validaciones, formato RUC, RUC duplicado, capacidades)</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US03</td>
+      <td>us03_autenticacion_usuarios.feature</td>
+      <td>8 escenarios (login exitoso, credenciales incorrectas, usuario inexistente, bloqueo, persistencia)</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US04</td>
+      <td>us04_gestion_perfil_productor.feature</td>
+      <td>8 escenarios (actualización campos, validaciones numéricas, variedades, foto perfil, historial)</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US06</td>
+      <td>us06_creacion_lotes.feature</td>
+      <td>7 escenarios (registro exitoso, validaciones obligatorias, coordenadas, fecha, código único)</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US07</td>
+      <td>us07_edicion_informacion_lote.feature</td>
+      <td>8 escenarios (actualización campos, restricciones por estado, validaciones, historial)</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US08</td>
+      <td>us08_visualizacion_lotes_productor.feature</td>
+      <td>10 escenarios (visualización, filtros, búsqueda, paginación, exportación, responsive)</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US10</td>
+      <td>us10_busqueda_rapida_lotes.feature</td>
+      <td>3 escenarios (búsqueda por rango fechas, por variedad, filtros combinados)</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US11</td>
+      <td>us11_eliminacion_lotes.feature</td>
+      <td>3 escenarios (validación permisos por estado, confirmación doble, auditoría)</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US13</td>
+      <td>us13_analisis_color_uniformidad.feature</td>
+      <td>2 escenarios (estandarización calidad, distribución de color)</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US14</td>
+      <td>us14_clasificacion_estandares_internacionales.feature</td>
+      <td>2 escenarios (obtención clasificación, asignación categorías)</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>US15</td>
+      <td>us15_reporte_simple_clasificacion.feature</td>
+      <td>2 escenarios (revisión rápida calidad, generación reportes con formatos)</td>
+      <td>Done</td>
+    </tr>
   </tbody>
 </table>
 
@@ -5404,10 +5624,6 @@ Primero se iniciara con una breve introducción explicando propósito, duración
 
 5. ¿Considera que la integración con sus procesos actuales de control de calidad sería viable y mejoraría la eficiencia operativa?
 
-### **Cierre**  
-- ¿Qué parte del diseño mejoraría primero?  
-- ¿Le gustaría participar en pruebas de la siguiente versión del prototipo?
-
 ---
 
 ### 7.3.2. Registro de Entrevistas
@@ -5431,40 +5647,6 @@ Primero se iniciara con una breve introducción explicando propósito, duración
 **Resumen de la entrevista (8–12 líneas):**  
 xxxxxxxxxxxx
 
-**Entrevista 2:**  
-- **Nombres:** xxxxxx
-- **Apellidos:**  xxxxxxxx
-- **Edad:** xx
-- **Rol/Área:**  xxxxxxxxxx
-- **Lugar de residencia (distrito/ciudad):** xxxxxx
-
-**Evidencia de la entrevista:**  
-<img src="assets/xxxxxxxxx" alt="Screenshot ENTREVISTA_02">
-
-**Enlace del video (editado único) y timing:**  
-- URL: [https://…  ](xxxxxxx)
-- Tiempo: xxxxx
-
-**Resumen de la entrevista (8–12 líneas):**  
-xxxxxxxxxxxx
-
-**Entrevista 3:**  
-- **Nombres:** xxxxxx
-- **Apellidos:**  xxxxxxxx
-- **Edad:** xx
-- **Rol/Área:**  xxxxxxxxxx
-- **Lugar de residencia (distrito/ciudad):** xxxxxx
-
-**Evidencia de la entrevista:**  
-<img src="assets/xxxxxxxxx" alt="Screenshot ENTREVISTA_03">
-
-**Enlace del video (editado único) y timing:**  
-- URL: [https://…  ](xxxxxxx)
-- Tiempo: xxxxx
-
-**Resumen de la entrevista (8–12 líneas):**  
-xxxxxxxxxxxx
-
 ### Segmento: Cooperativas cafetaleras 
 **Entrevista 1:**  
 - **Nombres:** xxxxxx
@@ -5475,38 +5657,6 @@ xxxxxxxxxxxx
 
 **Evidencia de la entrevista:**  
 <img src="assets/xxxxxxxxx" alt="Screenshot ENTREVISTA_01">
-
-**Enlace del video (editado único) y timing:**  
-- URL: [https://…  ](xxxxxxx)
-- Tiempo: xxxxx
-
-**Resumen de la entrevista (8–12 líneas):**  
-xxxxxxxxxxxx
-**Entrevista 2:**  
-- **Nombres:** xxxxxx
-- **Apellidos:**  xxxxxxxx
-- **Edad:** xx
-- **Rol/Área:**  xxxxxxxxxx
-- **Lugar de residencia (distrito/ciudad):** xxxxxx
-
-**Evidencia de la entrevista:**  
-<img src="assets/xxxxxxxxx" alt="Screenshot ENTREVISTA_02">
-
-**Enlace del video (editado único) y timing:**  
-- URL: [https://…  ](xxxxxxx)
-- Tiempo: xxxxx
-
-**Resumen de la entrevista (8–12 líneas):**  
-xxxxxxxxxxxx
-**Entrevista 3:**  
-- **Nombres:** xxxxxx
-- **Apellidos:**  xxxxxxxx
-- **Edad:** xx
-- **Rol/Área:**  xxxxxxxxxx
-- **Lugar de residencia (distrito/ciudad):** xxxxxx
-
-**Evidencia de la entrevista:**  
-<img src="assets/xxxxxxxxx" alt="Screenshot ENTREVISTA_03">
 
 **Enlace del video (editado único) y timing:**  
 - URL: [https://…  ](xxxxxxx)
