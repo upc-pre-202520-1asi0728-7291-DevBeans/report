@@ -5333,7 +5333,6 @@ Organización del GitHub: [`https://github.com/orgs/upc-pre-202520-1asi0728-7291
     </tr>
   </thead>
   <tbody>
- <!-- Web Application Repository -->
 <tr>
   <td>web-application</td><td>main</td><td><em>d09f392</em></td>
   <td>Feat: Update dashboard with backend data</td>
@@ -5370,8 +5369,6 @@ Organización del GitHub: [`https://github.com/orgs/upc-pre-202520-1asi0728-7291
   <td>Merge final de producción con verificación completa</td>
   <td><em>15/11/25</em></td>
 </tr>
-
-<!-- API Platform Repository -->
 <tr>
   <td>api-platform</td><td>main</td><td><em>4ed88da</em></td>
   <td>Feat: Add cloudinary to storage coffee grain images</td>
@@ -5408,8 +5405,6 @@ Organización del GitHub: [`https://github.com/orgs/upc-pre-202520-1asi0728-7291
   <td>Merge final con verificación completa del backend</td>
   <td><em>15/11/25</em></td>
 </tr>
-
-<!-- Detect Bean AI (ML Model) Repository -->
 <tr>
   <td>detect-bean-ai</td><td>main</td><td><em>abraham...</em></td>
   <td>feat: add the main project structure</td>
