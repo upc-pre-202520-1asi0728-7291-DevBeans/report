@@ -307,6 +307,25 @@ En esta sección se resumen los avances y modificaciones realizadas durante el c
   - [6.4. Applications UX/UI Design.](#64-applications-uxui-design)
     - [6.4.1. Applications Wireframes.](#641-applications-wireframes)
     - [6.4.2. Applications Wireflow Diagrams.](#642-applications-wireflow-diagrams)
+### [Capítulo VII: Product Implementation, Validation & Deployment](Capítulo-vii-product-implementation-validation-&-deployment) 
+  - [7.1. Software Configuration Management](#71-software-configuration-management)
+    - [7.1.1. Software Development Environment Configuration](#711-software-development-environment-configuration)
+    - [7.1.2. Source Code Management](#712-source-code-management)
+    - [7.1.3. Source Code Style Guide & Conventions](#713-source-code-style-guide--conventions)
+    - [7.1.4. Software Deployment Configuration](#714-software-deployment-configuration)
+  - [7.2. Solution Implementation](#72-solution-implementation)
+    - [7.2.1. Sprint 1](#721-sprint-1)
+      - [7.2.1.1. Sprint Planning 1](#7211-sprint-planning-1)
+      - [7.2.1.2. Sprint Backlog 1](#7212-sprint-backlog-1)
+      - [7.2.1.3. Development Evidence for Sprint Review](#7213-development-evidence-for-sprint-review)
+      - [7.2.1.4. Testing Suite Evidence for Sprint Review (Gherkin de las User Stories e Integration Tests)](#7214-testing-suite-evidence-for-sprint-review-gherkin-de-las-user-stories-e-integration-tests)
+      - [7.2.1.5. Execution Evidence for Sprint Review](#7215-execution-evidence-for-sprint-review)
+      - [7.2.1.6. Services Documentation Evidence for Sprint Review](#7216-services-documentation-evidence-for-sprint-review)
+      - [7.2.1.7. Software Deployment Evidence for Sprint Review](#7217-software-deployment-evidence-for-sprint-review)
+      - [7.2.1.8. Team Collaboration Insights during Sprint](#7218-team-collaboration-insights-during-sprint)
+  - [7.3. Validation Interviews](#73-validation-interviews) 
+    - [7.3.1. Diseño de Entrevistas (Versión enfocada en Landing Page y Front-End)](#731-diseño-de-entrevistas-versión-enfocada-en-landing-page-y-front-end)
+    - [7.3.2. Registro de Entrevistas](#732-registro-de-entrevistas)
 - [Conclusiones](#conclusiones-1)
 - [Bibliografía](#bibliografía-1)
 - [Anexos](#anexos-1)
@@ -344,15 +363,24 @@ ABET – EAC - Student Outcome 5
         <p><b>TB1:</b> Durante el desarrollo del proyecto, participé activamente en la elaboración de los capítulos iniciales, presentando con claridad y objetividad los perfiles de la startup y del equipo. Expliqué el enfoque Lean UX y sus componentes clave, como los Problem Statements, Assumptions e Hipótesis, adaptando el lenguaje según el público. También contribuí al análisis competitivo y al diseño de entrevistas, comunicando los resultados de forma estructurada y comprensible para distintos niveles jerárquicos y especialidades.<br>
         <b>TP:</b> Comuniqué al equipo el cumplimiento y avance del módulo de análisis de imágenes de granos de café, así como las tecnologías y el dataset necesario para continuar con la implementación del sistema.
         </p>
+           <br>
+          <b>TB2:</b>Demostre una comunicación oral clara y estructurada al presentar al equipo el proceso completo detrás de los mockups, la elaboración de user flows y el prototipado de la aplicación. Ademas de explicar las decisiones de diseño y funcionalidad de manera que tanto miembros técnicos como no técnicos pudieran comprender la lógica detrás de la interfaz. Además, de la elaboración de entrevistas y registros de validación, comunicó los avances y hallazgos de forma accesible, permitiendo que el equipo los integrara en la planificación del sprint.
+        </p>
         <br>
         <p><b>Andre La torre Soto</b></p>
         <p><b>TB1:</b> Durante el desarrollo del proyecto, participé activamente en la fase de Needfinding, recopilando y organizando información clave sobre el contexto del sector cafetalero. Contribuí en la caracterización de los segmentos de usuarios, identificando sus principales problemáticas y necesidades a través de la construcción de User Personas y Journey Mappings. Además, elaboré los Problem Statements de manera clara y fundamentada, comunicando los hallazgos con un lenguaje accesible tanto para especialistas como para audiencias generales. Finalmente, apoyé en la integración de estos resultados dentro del marco metodológico, asegurando que las evidencias recopiladas sirvieran como base para el planteamiento de hipótesis y el diseño posterior de la solución tecnológica.<br>
         <b>TP:</b> Comuniqué al equipo el cumplimiento y avance del diseño UX y UI requerido.
         </p>
         <br>
+     <br><b>TB2:</b>Comunique criterios y resultados obtenidos de la evaluación de heurísticas, exponiendo la severidad de los problemas identificados y justificando mejoras de accesibilidad y usabilidad
+        </p>
+        <br>
         <p><b>Aranda Vallejos, Oscar Gabriel</b></p>
         <p><b>TB1:</b> Durante el desarrollo del proyecto, me enfoqué en la arquitectura de software y el diseño técnico del sistema BeanDetect AI. Comuniqué de manera clara y objetiva los conceptos arquitectónicos complejos a través de presentaciones técnicas, explicando la implementación de Domain-Driven Design y los patrones CQRS. Adapté mi comunicación según la audiencia, presentando diagramas C4 y UML de forma comprensible tanto para desarrolladores como para stakeholders no técnicos. Facilité la comprensión de la arquitectura de microservicios y bounded contexts, asegurando que todos los miembros del equipo pudieran contribuir efectivamente al proyecto.
         <br><b>TP:</b> Comuniqué al equipo el cumplimiento y avance del módulo de clasificación de imágenes de granos de café
+        </p>
+        <br>
+    <br><b>TB2:</b>Comunique al equipo la planificación, el backlog, la ejecución de tareas, las pruebas y la evidencia de despliegue.
         </p>
         <br>
         <p><b>Ventura Chancafe, Eduardo</b></p>
@@ -363,6 +391,8 @@ ABET – EAC - Student Outcome 5
       <td>
         <p><b>TB1:</b> Como equipo, hemos concluido que demostrar la capacidad de comunicar nuestras ideas y resultados de manera clara y objetiva es fundamental para lograr una propuesta de valor que permita satisfacer los objetivos y necesidades del proyecto. Por ello, nos hemos enfocado en facilitar la comprensión entre los stakeholders mediante las exposiciones de documentación y el registro de entrevistas, lo cual fortaleció la toma de decisiones y el avance coordinado del proyecto.<br><b>TP:</b> Concluimos que para implementar un producto de software con tecnologías emergentes es necesario contar con un plan de acción, una arquitectura definida y un diseño previamente planteado y aprobado por el equipo.
         </p>
+    <br> <b>TB2:</b> Como equipo, concluimos que el fortalecimiento de nuestra comunicación oral fue esencial para integrar de manera coherente los avances de diseño, evaluación y desarrollo realizados durante este hito. A través de la presentación clara de los mockups, user flows, prototipos, evaluaciones heurísticas, planificación del sprint y evidencias de ejecución, logramos alinear nuestra comprensión sobre el estado del proyecto y las prioridades técnicas. Esta comunicación fluida permitió que cada integrante comprendiera el impacto de su aporte dentro del sistema BeanDetect AI y favoreció la toma de decisiones conjuntas, reforzando la coordinación del equipo y asegurando que la evolución del producto avanzara de forma consistente con los objetivos planteados. </p>
+        <br>
       </td>
     </tr>
     <tr>
@@ -372,22 +402,32 @@ ABET – EAC - Student Outcome 5
         <p><b>TB1:</b> Contribuí a la redacción clara y estructurada de los capítulos iniciales del proyecto, abordando desde la descripción de la startup y los perfiles del equipo hasta el análisis de la problemática y la aplicación del proceso Lean UX. Redacté con objetividad los Problem Statements, Assumptions e Hipótesis, facilitando su comprensión para públicos técnicos y no técnicos. También participé en el análisis competitivo y en la documentación de entrevistas, asegurando que los resultados fueran comunicados de forma precisa y accesible para distintos niveles jerárquicos y especialidades.
         <br> <b>TP:</b> Documenté los diseños de los mockups de la aplicación web y de la landing page de manera que sea entendible para todo rango de audiencia.</p>
         <br>
+          <br> <b>TB2:</b> Elabore la documentación escrita clara y completa para los capítulos relacionados con mockups, user flows y prototipos. Sus descripciones facilitaron la comprensión de la lógica visual y funcional de la aplicación</p>
+        <br>
         <p><b>Andre La torre Soto</b></p>
         <p><b>TB1:</b> Contribuí a la redacción clara y estructurada de la sección de Needfinding, abarcando desde la identificación del contexto sectorial y los segmentos de usuarios hasta la construcción de User Personas y Journey Mappings. Redacté con objetividad los Problem Statements, asegurando que las necesidades y desafíos de los productores y cooperativas fueran expresados de forma comprensible tanto para públicos técnicos como no técnicos. Asimismo, participé en la síntesis de los hallazgos y en su vinculación con las etapas posteriores del proyecto, promoviendo que los insumos obtenidos orientaran de manera efectiva el diseño y validación de la solución.
         <br> <b>TP:</b> Documenté los diseños de los wireframes de la aplicación web y de la landing page de manera que sea entendible para todo rango de audiencia.</p>
+        <br>
+    <br> <b>TB2:</b> Documente la sección completa de la evaluación heurística, incluyendo las descripciones de problemas de usabilidad, análisis de severidad y recomendaciones de mejora.</p>
         <br>
         <p><b>Aranda Vallejos, Oscar Gabriel</b></p>
         <p><b>TB1:</b> Contribuí a la documentación técnica del proyecto mediante la elaboración de diagramas C4 y UML que representan la arquitectura del sistema BeanDetect AI. Redacté documentación detallada de los bounded contexts, aplicando principios de Domain-Driven Design de forma clara y estructurada. Mi escritura técnica abarcó desde especificaciones de alto nivel comprensibles para stakeholders de negocio hasta diagramas de clases detallados para desarrolladores. Aseguré que la documentación arquitectónica fuera accesible para diferentes audiencias, facilitando la comprensión del diseño técnico tanto para especialistas en software como para profesionales de otras áreas del proyecto.
         <br> <b>TP:</b> Documenté el nivel táctico del diseño de la solución de manera concisa para evitar confusiones y comuniqué por escrito su avance al equipo de desarrollo.</p>
         <br>
+    <br> <b>TB2:</b> Documenté todo el ciclo del Sprint 1. Incluyendo la planificación, el backlog, las implementaciones, las pruebas, la ejecución y la evidencia de despliegue.</p>
+        <br>
         <p><b>Ventura Chancafe, Eduardo</b></p>
         <p><b>TB1:</b> Contribuí a la documentación del proyecto mediante la elaboración detallada de scenario mappings As-Is y To-Be, describiendo de manera objetiva y estructurada los procesos actuales y futuros en el sector cafetalero. Redacté análisis comparativos que permitieron identificar oportunidades de mejora y puntos de transformación digital. Mi escritura técnica se enfocó en hacer comprensibles los flujos de trabajo complejos para audiencias diversas, desde productores cafeteros hasta desarrolladores de software. Aseguré que la documentación de procesos sirviera como puente entre las necesidades del negocio y las especificaciones técnicas del sistema.
         <br> <b>TP:</b> Documenté las secciones implementadas de la aplicación web para un mejor entendimiento y para una visualización sencilla de sus componentes y páginas.</p>
         </p>
+    <br> <b>TB2:</b> Documenté los diseños de los mockups de la aplicación web y de la landing page de manera que sea entendible para todo rango de audiencia.</p>
+        <br>
       </td>
       <td>
         <p><b>TB1:</b> Como equipo, logramos expresar nuestras ideas y resultados por escrito con claridad y objetividad, adaptando el contenido para que fuera comprensible y relevante para públicos diversos, tanto técnicos como no técnicos. Con ello, hemos concluido que esta capacidad de comunicación escrita fortaleció la documentación del proyecto de ingeniería, facilitando la toma de decisiones y el trabajo colaborativo.
         <br> <b>TP:</b> Concluimos que la capacidad de comunicar nuestros avances y resultados de manera escrita permitió al equipo mantener una documentación clara, estructurada y accesible, asegurando la alineación entre las diferentes áreas técnicas y de negocio, lo cual resultó fundamental para la validación y desarrollo del sistema BeanDetect AI.</p>
+          <br> <b>TB2:</b>Como equipo, concluimos que el trabajo realizado durante este hito fortaleció significativamente nuestra capacidad de comunicar información técnica de manera escrita con claridad, detalle y coherencia. </p>
+        <br>
       </td>
     </tr>
   </tbody>
@@ -4779,9 +4819,341 @@ Finalmente, revisa la configuración y presiona el botón que lleva el nombre de
 
 <img src="./assets/images/softwareDeploy/clickDeploy.png" style="display: block; margin: 0 auto;">
 
-### Link de nuestra landing page: https://healthsyn-landing.netlify.app
+### Link de nuestra landing page: https://dev-beans-landing-page.netlify.app/
 
 <img src="./assets/images/softwareDeploy/landing.png" style="display: block; margin: 0 auto;">
+
+## 7.3. Validation Interviews
+### 7.3.1. Diseño de Entrevistas (Versión enfocada en Landing Page y Front-End)
+
+#### Objetivo  
+Validar la usabilidad, claridad y adecuación visual del prototipo digital (landing page y front-end), identificando puntos de mejora en navegación, contenido, alertas y experiencia de usuario para los distintos perfiles del entorno hospitalario.
+
+#### Alcance y Segmentos
+* S1 – Productores pequeños y medianos de café
+* S2 – Cooperativas cafetaleras
+
+#### Tipo de entrevista
+Semiestructurada (10–15 min), 1 a 1, centrada en observación del uso del prototipo, con grabación previa autorización.
+
+#### Buenas prácticas
+* Formular preguntas cortas y abiertas; evitar inducir respuestas.
+* Solicitar ejemplos o comentarios sobre secciones específicas de la interfaz.
+* Registrar impresiones visuales y de navegación (capturas o timestamps).
+* Evitar recopilar datos personales o información sensible.
+
+#### Guion de preguntas
+Primero se iniciara con una breve introducción explicando propósito, duración y uso de la retroalimentación.
+#### A. Generales (para ambos segmentos)  
+1. ¿Qué impresión le genera la página al ingresar?  
+2. ¿Entendió de inmediato para qué sirve la plataforma?  
+3. ¿La navegación entre secciones le resultó clara y rápida?  
+4. ¿Los colores, íconos o textos le parecen adecuados para su trabajo?  
+5. ¿En qué parte sintió confusión o falta de información?  
+6. ¿Qué le pareció la ubicación de botones y menús principales?  
+7. ¿Qué cambiaría para que la página sea más intuitiva?  
+8. Si tuviera que usarla en su turno, ¿qué le facilitaría o dificultaría?
+
+
+#### B. Segmento S1 – Productores pequeños y medianos de café
+1. ¿La interfaz de clasificación de lotes le parece lo suficientemente simple considerando su nivel de experiencia tecnológica?​
+
+2. ¿Los reportes de calidad y defectos le proporcionan la información necesaria para tomar decisiones sobre sus lotes de café?​
+
+3. ¿El sistema de notificaciones (email/WhatsApp) le resulta útil para estar al tanto del estado de sus clasificaciones?​
+
+4. ¿Considera que el proceso de registro y gestión de lotes es lo suficientemente rápido para no interrumpir su trabajo diario?​
+
+5. ¿El modelo de suscripción propuesto le parece accesible y justificado por el valor que ofrece la plataforma?
+
+#### C. Segmento S2 – Cooperativas cafetaleras  
+1. ¿La plataforma le permite gestionar eficientemente múltiples lotes de diferentes productores asociados?​
+
+2. ¿Las funcionalidades de trazabilidad y certificación cumplen con los requisitos que demandan sus compradores internacionales?​
+
+3. ¿Los reportes comparativos entre lotes y productores le ayudan a estandarizar la calidad del café de su cooperativa?​
+
+4. ¿El sistema le facilita la generación de certificados de exportación y códigos QR para transparencia con compradores?​
+
+5. ¿Considera que la integración con sus procesos actuales de control de calidad sería viable y mejoraría la eficiencia operativa?
+
+### **Cierre**  
+- ¿Qué parte del diseño mejoraría primero?  
+- ¿Le gustaría participar en pruebas de la siguiente versión del prototipo?
+
+---
+
+### 7.3.2. Registro de Entrevistas
+
+### Segmento: Productores pequeños y medianos de café 
+
+**Entrevista 1:**  
+- **Nombres:** xxxxxx
+- **Apellidos:**  xxxxxxxx
+- **Edad:** xx
+- **Rol/Área:**  xxxxxxxxxx
+- **Lugar de residencia (distrito/ciudad):** xxxxxx
+
+**Evidencia de la entrevista:**  
+<img src="assets/xxxxxxxxx" alt="Screenshot ENTREVISTA_01">
+
+**Enlace del video (editado único) y timing:**  
+- URL: [https://…  ](xxxxxxx)
+- Tiempo: xxxxx
+
+**Resumen de la entrevista (8–12 líneas):**  
+xxxxxxxxxxxx
+
+**Entrevista 2:**  
+- **Nombres:** xxxxxx
+- **Apellidos:**  xxxxxxxx
+- **Edad:** xx
+- **Rol/Área:**  xxxxxxxxxx
+- **Lugar de residencia (distrito/ciudad):** xxxxxx
+
+**Evidencia de la entrevista:**  
+<img src="assets/xxxxxxxxx" alt="Screenshot ENTREVISTA_02">
+
+**Enlace del video (editado único) y timing:**  
+- URL: [https://…  ](xxxxxxx)
+- Tiempo: xxxxx
+
+**Resumen de la entrevista (8–12 líneas):**  
+xxxxxxxxxxxx
+
+**Entrevista 3:**  
+- **Nombres:** xxxxxx
+- **Apellidos:**  xxxxxxxx
+- **Edad:** xx
+- **Rol/Área:**  xxxxxxxxxx
+- **Lugar de residencia (distrito/ciudad):** xxxxxx
+
+**Evidencia de la entrevista:**  
+<img src="assets/xxxxxxxxx" alt="Screenshot ENTREVISTA_03">
+
+**Enlace del video (editado único) y timing:**  
+- URL: [https://…  ](xxxxxxx)
+- Tiempo: xxxxx
+
+**Resumen de la entrevista (8–12 líneas):**  
+xxxxxxxxxxxx
+
+### Segmento: Cooperativas cafetaleras 
+**Entrevista 1:**  
+- **Nombres:** xxxxxx
+- **Apellidos:**  xxxxxxxx
+- **Edad:** xx
+- **Rol/Área:**  xxxxxxxxxx
+- **Lugar de residencia (distrito/ciudad):** xxxxxx
+
+**Evidencia de la entrevista:**  
+<img src="assets/xxxxxxxxx" alt="Screenshot ENTREVISTA_01">
+
+**Enlace del video (editado único) y timing:**  
+- URL: [https://…  ](xxxxxxx)
+- Tiempo: xxxxx
+
+**Resumen de la entrevista (8–12 líneas):**  
+xxxxxxxxxxxx
+**Entrevista 2:**  
+- **Nombres:** xxxxxx
+- **Apellidos:**  xxxxxxxx
+- **Edad:** xx
+- **Rol/Área:**  xxxxxxxxxx
+- **Lugar de residencia (distrito/ciudad):** xxxxxx
+
+**Evidencia de la entrevista:**  
+<img src="assets/xxxxxxxxx" alt="Screenshot ENTREVISTA_02">
+
+**Enlace del video (editado único) y timing:**  
+- URL: [https://…  ](xxxxxxx)
+- Tiempo: xxxxx
+
+**Resumen de la entrevista (8–12 líneas):**  
+xxxxxxxxxxxx
+**Entrevista 3:**  
+- **Nombres:** xxxxxx
+- **Apellidos:**  xxxxxxxx
+- **Edad:** xx
+- **Rol/Área:**  xxxxxxxxxx
+- **Lugar de residencia (distrito/ciudad):** xxxxxx
+
+**Evidencia de la entrevista:**  
+<img src="assets/xxxxxxxxx" alt="Screenshot ENTREVISTA_03">
+
+**Enlace del video (editado único) y timing:**  
+- URL: [https://…  ](xxxxxxx)
+- Tiempo: xxxxx
+
+**Resumen de la entrevista (8–12 líneas):**  
+xxxxxxxxxxxx
+
+---
+
+# **7.3.3 Evaluaciones según heurísticas**
+
+## **UX Heuristics & Principles Evaluation**
+
+**Usability – Inclusive Design – Information Architecture**
+
+**CARRERA:** Ingeniería de Software
+
+**CURSO:** Arquitecturas de Software Emergentes
+
+**SECCIÓN:** 7291
+
+**PROFESORES:** Royer Edelwer Rojas Malasquez
+
+**AUDITOR:**  PCC Team
+
+**CLIENTE(S):** Productores pequeños/medianos de café y Cooperativas Cafetaleras
+
+---
+
+## **SITE o APP A EVALUAR**
+
+**BeanDetect AI – Plataforma de Clasificación Inteligente de Café**
+
+---
+
+## **TAREAS A EVALUAR**
+
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+
+* Registro de productor pequeño/mediano
+* Registro de cooperativa cafetalera
+* Creación de lotes de café
+* Carga de imágenes para clasificación
+* Visualización de resultados de clasificación automática
+* Descarga de reportes y certificados
+* Generación de códigos QR por lote
+* Acceso al modo offline para clasificación local
+
+---
+
+## **ESCALA DE SEVERIDAD**
+
+| Nivel | Descripción                                                                                        |
+| ----- | -------------------------------------------------------------------------------------------------- |
+| **1** | Problema superficial. Fácil de superar. No requiere corrección inmediata.                          |
+| **2** | Problema menor. Genera pequeñas demoras. Corrección de baja prioridad.                             |
+| **3** | Problema mayor. Afecta la experiencia o causa errores frecuentes. Requiere corrección prioritaria. |
+| **4** | Problema muy grave. Bloquea el uso del sistema. Debe corregirse antes del lanzamiento.             |
+
+---
+
+## **TABLA RESUMEN**
+
+| # | Problema                                                         | Severidad | Heurística / Principio violado                         |
+| - | ---------------------------------------------------------------- | --------- | ------------------------------------------------------ |
+| 1 | Registro con demasiados campos obligatorios                      | 3         | Usability: Simplicidad y naturalidad de uso            |
+| 2 | Inconsistencias visuales entre vistas de productor y cooperativa | 2         | Usability: Consistencia y estándares                   |
+| 3 | Botón “Clasificar lote” poco visible                             | 3         | Information Architecture: Is it findable?              |
+| 4 | Imágenes sin descripciones accesibles                            | 2         | Inclusive Design: Proporciona experiencias comparables |
+| 5 | Reporte descargable sin jerarquía visual clara                   | 2         | Usability / Information Architecture                   |
+| 6 | Alerta de defectos sin acciones sugeridas claras                 | 3         | Usability: Ayuda y documentación                       |
+| 7 | Modo offline no comunica límites funcionales                     | 3         | Usability: Visibilidad del estado del sistema          |
+
+---
+
+## **DESCRIPCIÓN DE PROBLEMAS**
+
+---
+
+### **PROBLEMA #1: Registro con demasiados campos obligatorios**
+
+**Severidad:** 3
+**Heurística violada:** Usabilidad – Simplicidad y naturalidad de uso
+
+**Problema:**
+El registro inicial solicita demasiados datos obligatorios (hectáreas, variedades, número de asociados, etc.), generando fricción y abandono en usuarios con poca experiencia tecnológica.
+
+**Recomendación:**
+Reducir los campos requeridos al mínimo y solicitar información complementaria más adelante mediante un onboarding progresivo.
+
+---
+
+### **PROBLEMA #2: Inconsistencias visuales entre vistas de productor y cooperativa**
+
+**Severidad:** 2
+**Heurística violada:** Usabilidad – Consistencia y estándares
+
+**Problema:**
+Las vistas presentan diferencias en diseño, tamaños de botones y estructura, lo que confunde a usuarios que navegan entre ambos tipos de cuenta.
+
+**Recomendación:**
+Unificar estilos, componentes y patrones de diseño en todas las interfaces.
+
+---
+
+### **PROBLEMA #3: Botón “Clasificar lote” poco visible**
+
+**Severidad:** 3
+**Heurística violada:** Information Architecture – Is it findable?
+
+**Problema:**
+La ubicación y color del botón dificultan que los usuarios lo identifiquen rápidamente, retrasando el inicio del proceso de clasificación.
+
+**Recomendación:**
+Incrementar contraste, moverlo a un área primaria y usar un color destacado dentro del sistema de diseño.
+
+---
+
+### **PROBLEMA #4: Imágenes sin descripciones accesibles**
+
+**Severidad:** 2
+**Heurística violada:** Inclusive Design – Proporciona experiencias comparables
+
+**Problema:**
+Las imágenes cargadas no tienen texto alternativo, afectando a usuarios que usan lectores de pantalla o que tienen limitaciones visuales.
+
+**Recomendación:**
+Generar descripciones automáticas simples, como “Imagen de granos del lote X”.
+
+---
+
+### **PROBLEMA #5: Reporte descargable sin jerarquía visual clara**
+
+**Severidad:** 2
+**Heurística violada:** Usability – Diseño estético y minimalista
+
+**Problema:**
+Los reportes contienen demasiados datos sin estructura visual clara, lo que dificulta la lectura para productores y compradores.
+
+**Recomendación:**
+Usar encabezados, colores suaves, espaciados adecuados y gráficos simples para resaltar la información principal.
+
+---
+
+### **PROBLEMA #6: Alerta de defectos sin acciones sugeridas claras**
+
+**Severidad:** 3
+**Heurística violada:** Usabilidad – Ayuda y documentación
+
+**Problema:**
+Cuando un lote tiene muchos defectos, la alerta no indica cuál debería ser el siguiente paso del usuario (ej. reclasificar, realizar nueva muestra, etc.).
+
+**Recomendación:**
+Agregar texto accionable como:
+
+Se recomienda revisar los granos defectuosos o repetir la clasificación con una nueva muestra.
+
+---
+
+### **PROBLEMA #7: Modo offline no comunica límites funcionales**
+
+**Severidad:** 3
+**Heurística violada:** Usabilidad – Visibilidad del estado del sistema
+
+**Problema:**
+El usuario no sabe qué funciones están disponibles offline y cuáles no, causando confusión durante su uso en zonas sin conectividad.
+
+**Recomendación:**
+Incluir un banner o modal que indique claramente:
+
+* **Funciones disponibles:** Clasificación básica
+* **Funciones no disponibles:** Reportes, exportación, sincronización, certificados
+
 ---
 
 # Conclusiones
