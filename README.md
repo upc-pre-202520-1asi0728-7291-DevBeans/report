@@ -5529,8 +5529,6 @@ Acceptance Tests (BDD): https://github.com/upc-pre-202520-1asi0728-7291-DevBeans
       <td>Done</td>
     </tr>
     <tr>
-      <td></td>
-      <td></td>
       <td>US15</td>
       <td>us15_reporte_simple_clasificacion.feature</td>
       <td>2 escenarios (revisión rápida calidad, generación reportes con formatos)</td>
@@ -5578,7 +5576,6 @@ A continuación se documentan los Web Services implementados en el Sprint 1 medi
     </tr>
   </thead>
   <tbody>
-    <!-- Authentication Service -->
     <tr>
       <td rowspan="3"><strong>Authentication</strong></td>
       <td>/api/v1/auth/register/producer</td>
@@ -5604,7 +5601,6 @@ A continuación se documentan los Web Services implementados en el Sprint 1 medi
       <td>{ userId, token, userType, refreshToken }</td>
       <td>200</td>
     </tr>
-    <!-- Profile Service -->
     <tr>
       <td rowspan="3"><strong>Profile Management</strong></td>
       <td>/api/v1/profiles/{userId}</td>
@@ -5630,7 +5626,6 @@ A continuación se documentan los Web Services implementados en el Sprint 1 medi
       <td>{ message: "Contraseña actualizada" }</td>
       <td>200</td>
     </tr>
-    <!-- Coffee Lot Service -->
     <tr>
       <td rowspan="5"><strong>Coffee Lot Management</strong></td>
       <td>/api/v1/coffee-lots</td>
@@ -5672,7 +5667,6 @@ A continuación se documentan los Web Services implementados en el Sprint 1 medi
       <td>{ message: "Lote eliminado", deletedLotId }</td>
       <td>200</td>
     </tr>
-    <!-- Classification Service -->
     <tr>
       <td rowspan="4"><strong>Grain Classification</strong></td>
       <td>/api/v1/classification/start</td>
@@ -5907,42 +5901,44 @@ Primero se iniciara con una breve introducción explicando propósito, duración
 
 ### 7.3.2. Registro de Entrevistas
 
-### Segmento: Productores pequeños y medianos de café 
+### Segmento: Productores pequeños y medianos de café
 
 **Entrevista 1:**  
-- **Nombres:** xxxxxx
-- **Apellidos:**  xxxxxxxx
-- **Edad:** xx
-- **Rol/Área:**  xxxxxxxxxx
-- **Lugar de residencia (distrito/ciudad):** xxxxxx
+- **Nombres:** Jorge  
+- **Apellidos:** Sánchez Gutiérrez Ramírez  
+- **Edad:** 38  
+- **Rol/Área:** Productor de café  
+- **Lugar de residencia (distrito/ciudad):** Cajamarca, Perú
 
 **Evidencia de la entrevista:**  
-<img src="assets/xxxxxxxxx" alt="Screenshot ENTREVISTA_01">
+[![Captura-de-pantalla-2025-11-16-013333.png](https://i.postimg.cc/pXFvSyyL/Captura-de-pantalla-2025-11-16-013333.png)](https://postimg.cc/BX4RLSxr)
 
-**Enlace del video (editado único) y timing:**  
-- URL: [https://…  ](xxxxxxx)
-- Tiempo: xxxxx
+**Enlace del video y timing:**  
+- URL: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218167_upc_edu_pe/IQDSa7XDQhSxSK2GZb1djCuSATCxTrc7xVbnmkP1OzVYgD4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=p0j0Fi](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218167_upc_edu_pe/IQDSa7XDQhSxSK2GZb1djCuSATCxTrc7xVbnmkP1OzVYgD4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=p0j0Fi)  
+- Tiempo: 00:07 – 08:15
 
-**Resumen de la entrevista (8–12 líneas):**  
-xxxxxxxxxxxx
+**Resumen de la entrevista:**  
+La entrevista con Jorge Sánchez Gutiérrez, productor cafetalero de Cajamarca, brindó una visión clara desde la perspectiva de un usuario con nivel tecnológico intermedio. Destacó positivamente que la plataforma luce ordenada, moderna y adecuada para el trabajo con café, y que en pocos segundos comprendió que la herramienta sirve para clasificar y analizar la calidad de los granos. Valoró la navegación general y los reportes de calidad, indicando que la información presentada lo ayuda a decidir qué lotes vender o separar. También resaltó que las notificaciones, especialmente por WhatsApp, serían muy útiles debido al uso frecuente de este medio en campo. Sin embargo, identificó oportunidades de mejora en la guía de subida de imágenes, el tamaño de algunos botones y la necesidad de pasos más explicativos para usuarios con menor experiencia digital. Finalmente, recomendó incluir ejemplos visuales y señaló que la conectividad limitada podría afectar la velocidad de carga de imágenes, aunque mostró interés en participar en nuevas pruebas del prototipo.
 
-### Segmento: Cooperativas cafetaleras 
+
+### Segmento: Cooperativas cafetaleras  
+
 **Entrevista 1:**  
-- **Nombres:** xxxxxx
-- **Apellidos:**  xxxxxxxx
-- **Edad:** xx
-- **Rol/Área:**  xxxxxxxxxx
-- **Lugar de residencia (distrito/ciudad):** xxxxxx
+- **Nombres:** José  
+- **Apellidos:** Gutiérrez Ramírez  
+- **Edad:** 21  
+- **Rol/Área:** Calidad y Acopio – Parte del staff de una cooperativa cafetalera  
+- **Lugar de residencia (distrito/ciudad):** Cajamarca, Perú
 
 **Evidencia de la entrevista:**  
-<img src="assets/xxxxxxxxx" alt="Screenshot ENTREVISTA_01">
+[![Captura-de-pantalla-2025-11-16-013857.png](https://i.postimg.cc/j54c2HMv/Captura-de-pantalla-2025-11-16-013857.png)](https://postimg.cc/R6qKbH5n)
 
-**Enlace del video (editado único) y timing:**  
-- URL: [https://…  ](xxxxxxx)
-- Tiempo: xxxxx
+**Enlace del video y timing:**  
+- URL: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218167_upc_edu_pe/IQDSa7XDQhSxSK2GZb1djCuSATCxTrc7xVbnmkP1OzVYgD4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=p0j0Fi](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218167_upc_edu_pe/IQDSa7XDQhSxSK2GZb1djCuSATCxTrc7xVbnmkP1OzVYgD4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=p0j0Fi) 
+- Tiempo: 08:17 – 16:00
 
 **Resumen de la entrevista (8–12 líneas):**  
-xxxxxxxxxxxx
+La entrevista con José Gutiérrez Ramírez, responsable de Calidad y Acopio en una cooperativa cafetalera de Cajamarca, reveló una perspectiva avanzada sobre la gestión de múltiples lotes y la necesidad de herramientas digitales más eficientes. Valoró la interfaz moderna, el uso de filtros y el buscador para manejar microlotes de distintos productores, indicando que esto atiende uno de sus mayores puntos de dolor operativo. También destacó la utilidad del código QR para la transparencia con compradores nacionales e internacionales. Sin embargo, señaló oportunidades de mejora, como aclarar con precisión el alcance real de la plataforma y mejorar la trazabilidad de los certificados para mostrar no solo el resultado final sino el origen del lote y toda su información relevante.
 
 ---
 
