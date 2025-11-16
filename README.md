@@ -6158,17 +6158,24 @@ DevBeans. (2025). BeanDetect AI Technical Overview. [Documento interno]
 
 ## Videos
 
+### Needfinding Interviews
+
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218167_upc_edu_pe/EbacacS3n11GmQli8ek0ltABesH4olt1EDMLUzs-FrNg6w?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=xJtssj
+
+### Validation Interviews
+
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218167_upc_edu_pe/IQDSa7XDQhSxSK2GZb1djCuSATCxTrc7xVbnmkP1OzVYgD4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=p0j0Fi
+
 ### TB1
 
 #### Exposición
 
 https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218167_upc_edu_pe/EbnQ4lfhO5xMgzpNYDoHRPgBwUoL_oFi_Eh4wyIIYKtItQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=pE1xYm
 
-#### Entrevistas de Needfinding
-https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218167_upc_edu_pe/EbacacS3n11GmQli8ek0ltABesH4olt1EDMLUzs-FrNg6w?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=xJtssj
-
 ### TP
 
 #### Exposición
 
 https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218167_upc_edu_pe/EbIFbveYnTlJryYSABHzHBgB7aooUo_DddILv5icXM_Tnw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=rClZAn
+
+
