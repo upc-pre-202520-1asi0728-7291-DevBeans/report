@@ -4983,7 +4983,6 @@ Durante este sprint inicial, nos enfocamos en desarrollar las user stories que d
         <td>Assigned To</td>
         <td>Status (To-do / In-Process / To-Review / Done)</td>
       </tr>
-<!-- US01: Registro de Productor Pequeño/Mediano -->
   <tr>
     <td>US01</td>
     <td>Registro de Productor Pequeño/Mediano</td>
@@ -5003,8 +5002,6 @@ Durante este sprint inicial, nos enfocamos en desarrollar las user stories que d
     <td>Oscar Aranda</td>
     <td>Done</td>
   </tr>
-  
-  <!-- US02: Registro de Cooperativa Cafetalera -->
   <tr>
     <td>US02</td>
     <td>Registro de Cooperativa Cafetalera</td>
@@ -5033,8 +5030,6 @@ Durante este sprint inicial, nos enfocamos en desarrollar las user stories que d
     <td>Abraham Ayquipa</td>
     <td>Done</td>
   </tr>
-  
-  <!-- US03: Autenticación de Usuarios -->
   <tr>
     <td>US03</td>
     <td>Autenticación de Usuarios</td>
@@ -5063,8 +5058,6 @@ Durante este sprint inicial, nos enfocamos en desarrollar las user stories que d
     <td>Andre La Torre</td>
     <td>To Review</td>
   </tr>
-  
-  <!-- US04: Gestión de Perfil de Productor -->
   <tr>
     <td>US04</td>
     <td>Gestión de Perfil de Productor</td>
@@ -5093,8 +5086,6 @@ Durante este sprint inicial, nos enfocamos en desarrollar las user stories que d
     <td>Eduardo Ventura</td>
     <td>Done</td>
   </tr>
-  
-  <!-- US06: Creación de Lotes -->
   <tr>
     <td>US06</td>
     <td>Creación de Lotes</td>
@@ -5123,8 +5114,6 @@ Durante este sprint inicial, nos enfocamos en desarrollar las user stories que d
     <td>Oscar Aranda</td>
     <td>Done</td>
   </tr>
-  
-  <!-- US07: Edición de Información de Lote -->
   <tr>
     <td>US07</td>
     <td>Edición de Información de Lote</td>
@@ -5153,8 +5142,6 @@ Durante este sprint inicial, nos enfocamos en desarrollar las user stories que d
     <td>Abraham Ayquipa</td>
     <td>To Review</td>
   </tr>
-  
-  <!-- US08: Visualización de Lotes por Productor -->
   <tr>
     <td>US08</td>
     <td>Visualización de Lotes por Productor</td>
@@ -5183,8 +5170,6 @@ Durante este sprint inicial, nos enfocamos en desarrollar las user stories que d
     <td>Abraham Ayquipa</td>
     <td>Done</td>
   </tr>
-  
-  <!-- US10: Búsqueda Rápida de Lotes -->
   <tr>
     <td>US10</td>
     <td>Búsqueda Rápida de Lotes</td>
@@ -5204,8 +5189,6 @@ Durante este sprint inicial, nos enfocamos en desarrollar las user stories que d
     <td>Andre La Torre</td>
     <td>Done</td>
   </tr>
-  
-  <!-- US11: Eliminación de Lotes -->
   <tr>
     <td>US11</td>
     <td>Eliminación de Lotes</td>
@@ -5225,8 +5208,6 @@ Durante este sprint inicial, nos enfocamos en desarrollar las user stories que d
     <td>Eduardo Ventura</td>
     <td>Done</td>
   </tr>
-  
-  <!-- US13: Análisis de Color y Uniformidad -->
   <tr>
     <td>US13</td>
     <td>Análisis de Color y Uniformidad</td>
@@ -5255,8 +5236,6 @@ Durante este sprint inicial, nos enfocamos en desarrollar las user stories que d
     <td>Oscar Aranda</td>
     <td>To Review</td>
   </tr>
-  
-  <!-- US14: Clasificación por Estándares Internacionales -->
   <tr>
     <td>US14</td>
     <td>Clasificación por Estándares Internacionales</td>
@@ -5285,8 +5264,6 @@ Durante este sprint inicial, nos enfocamos en desarrollar las user stories que d
     <td>Abraham Ayquipa</td>
     <td>To Review</td>
   </tr>
-  
-  <!-- US15: Reporte Simple de Clasificación -->
   <tr>
     <td>US15</td>
     <td>Reporte Simple de Clasificación</td>
@@ -5333,7 +5310,6 @@ Organización del GitHub: [`https://github.com/orgs/upc-pre-202520-1asi0728-7291
     </tr>
   </thead>
   <tbody>
- <!-- Web Application Repository -->
 <tr>
   <td>web-application</td><td>main</td><td><em>d09f392</em></td>
   <td>Feat: Update dashboard with backend data</td>
@@ -5370,8 +5346,6 @@ Organización del GitHub: [`https://github.com/orgs/upc-pre-202520-1asi0728-7291
   <td>Merge final de producción con verificación completa</td>
   <td><em>15/11/25</em></td>
 </tr>
-
-<!-- API Platform Repository -->
 <tr>
   <td>api-platform</td><td>main</td><td><em>4ed88da</em></td>
   <td>Feat: Add cloudinary to storage coffee grain images</td>
@@ -5408,8 +5382,6 @@ Organización del GitHub: [`https://github.com/orgs/upc-pre-202520-1asi0728-7291
   <td>Merge final con verificación completa del backend</td>
   <td><em>15/11/25</em></td>
 </tr>
-
-<!-- Detect Bean AI (ML Model) Repository -->
 <tr>
   <td>detect-bean-ai</td><td>main</td><td><em>abraham...</em></td>
   <td>feat: add the main project structure</td>
@@ -5534,8 +5506,6 @@ Acceptance Tests (BDD): https://github.com/upc-pre-202520-1asi0728-7291-DevBeans
       <td>Done</td>
     </tr>
     <tr>
-      <td></td>
-      <td></td>
       <td>US15</td>
       <td>us15_reporte_simple_clasificacion.feature</td>
       <td>2 escenarios (revisión rápida calidad, generación reportes con formatos)</td>
@@ -5562,7 +5532,7 @@ Integration Tests: https://github.com/upc-pre-202520-1asi0728-7291-DevBeans/api-
 
 - **Backend:**
 
-[Captura-de-pantalla-2025-11-15-232737.png](https://postimg.cc/xXJ1N1Rn)
+[![Captura-de-pantalla-2025-11-15-232737.png](https://i.postimg.cc/BnNLy8PL/Captura-de-pantalla-2025-11-15-232737.png)](https://postimg.cc/xXJ1N1Rn)
 
 ---
 
@@ -5583,7 +5553,6 @@ A continuación se documentan los Web Services implementados en el Sprint 1 medi
     </tr>
   </thead>
   <tbody>
-    <!-- Authentication Service -->
     <tr>
       <td rowspan="3"><strong>Authentication</strong></td>
       <td>/api/v1/auth/register/producer</td>
@@ -5609,7 +5578,6 @@ A continuación se documentan los Web Services implementados en el Sprint 1 medi
       <td>{ userId, token, userType, refreshToken }</td>
       <td>200</td>
     </tr>
-    <!-- Profile Service -->
     <tr>
       <td rowspan="3"><strong>Profile Management</strong></td>
       <td>/api/v1/profiles/{userId}</td>
@@ -5635,7 +5603,6 @@ A continuación se documentan los Web Services implementados en el Sprint 1 medi
       <td>{ message: "Contraseña actualizada" }</td>
       <td>200</td>
     </tr>
-    <!-- Coffee Lot Service -->
     <tr>
       <td rowspan="5"><strong>Coffee Lot Management</strong></td>
       <td>/api/v1/coffee-lots</td>
@@ -5677,7 +5644,6 @@ A continuación se documentan los Web Services implementados en el Sprint 1 medi
       <td>{ message: "Lote eliminado", deletedLotId }</td>
       <td>200</td>
     </tr>
-    <!-- Classification Service -->
     <tr>
       <td rowspan="4"><strong>Grain Classification</strong></td>
       <td>/api/v1/classification/start</td>
@@ -5912,42 +5878,44 @@ Primero se iniciara con una breve introducción explicando propósito, duración
 
 ### 7.3.2. Registro de Entrevistas
 
-### Segmento: Productores pequeños y medianos de café 
+### Segmento: Productores pequeños y medianos de café
 
 **Entrevista 1:**  
-- **Nombres:** xxxxxx
-- **Apellidos:**  xxxxxxxx
-- **Edad:** xx
-- **Rol/Área:**  xxxxxxxxxx
-- **Lugar de residencia (distrito/ciudad):** xxxxxx
+- **Nombres:** Jorge  
+- **Apellidos:** Sánchez Gutiérrez Ramírez  
+- **Edad:** 38  
+- **Rol/Área:** Productor de café  
+- **Lugar de residencia (distrito/ciudad):** Cajamarca, Perú
 
 **Evidencia de la entrevista:**  
-<img src="assets/xxxxxxxxx" alt="Screenshot ENTREVISTA_01">
+[![Captura-de-pantalla-2025-11-16-013333.png](https://i.postimg.cc/pXFvSyyL/Captura-de-pantalla-2025-11-16-013333.png)](https://postimg.cc/BX4RLSxr)
 
-**Enlace del video (editado único) y timing:**  
-- URL: [https://…  ](xxxxxxx)
-- Tiempo: xxxxx
+**Enlace del video y timing:**  
+- URL: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218167_upc_edu_pe/IQDSa7XDQhSxSK2GZb1djCuSATCxTrc7xVbnmkP1OzVYgD4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=p0j0Fi](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218167_upc_edu_pe/IQDSa7XDQhSxSK2GZb1djCuSATCxTrc7xVbnmkP1OzVYgD4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=p0j0Fi)  
+- Tiempo: 00:07 – 08:15
 
-**Resumen de la entrevista (8–12 líneas):**  
-xxxxxxxxxxxx
+**Resumen de la entrevista:**  
+La entrevista con Jorge Sánchez Gutiérrez, productor cafetalero de Cajamarca, brindó una visión clara desde la perspectiva de un usuario con nivel tecnológico intermedio. Destacó positivamente que la plataforma luce ordenada, moderna y adecuada para el trabajo con café, y que en pocos segundos comprendió que la herramienta sirve para clasificar y analizar la calidad de los granos. Valoró la navegación general y los reportes de calidad, indicando que la información presentada lo ayuda a decidir qué lotes vender o separar. También resaltó que las notificaciones, especialmente por WhatsApp, serían muy útiles debido al uso frecuente de este medio en campo. Sin embargo, identificó oportunidades de mejora en la guía de subida de imágenes, el tamaño de algunos botones y la necesidad de pasos más explicativos para usuarios con menor experiencia digital. Finalmente, recomendó incluir ejemplos visuales y señaló que la conectividad limitada podría afectar la velocidad de carga de imágenes, aunque mostró interés en participar en nuevas pruebas del prototipo.
 
-### Segmento: Cooperativas cafetaleras 
+
+### Segmento: Cooperativas cafetaleras  
+
 **Entrevista 1:**  
-- **Nombres:** xxxxxx
-- **Apellidos:**  xxxxxxxx
-- **Edad:** xx
-- **Rol/Área:**  xxxxxxxxxx
-- **Lugar de residencia (distrito/ciudad):** xxxxxx
+- **Nombres:** José  
+- **Apellidos:** Gutiérrez Ramírez  
+- **Edad:** 21  
+- **Rol/Área:** Calidad y Acopio – Parte del staff de una cooperativa cafetalera  
+- **Lugar de residencia (distrito/ciudad):** Cajamarca, Perú
 
 **Evidencia de la entrevista:**  
-<img src="assets/xxxxxxxxx" alt="Screenshot ENTREVISTA_01">
+[![Captura-de-pantalla-2025-11-16-013857.png](https://i.postimg.cc/j54c2HMv/Captura-de-pantalla-2025-11-16-013857.png)](https://postimg.cc/R6qKbH5n)
 
-**Enlace del video (editado único) y timing:**  
-- URL: [https://…  ](xxxxxxx)
-- Tiempo: xxxxx
+**Enlace del video y timing:**  
+- URL: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218167_upc_edu_pe/IQDSa7XDQhSxSK2GZb1djCuSATCxTrc7xVbnmkP1OzVYgD4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=p0j0Fi](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218167_upc_edu_pe/IQDSa7XDQhSxSK2GZb1djCuSATCxTrc7xVbnmkP1OzVYgD4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=p0j0Fi) 
+- Tiempo: 08:17 – 16:00
 
 **Resumen de la entrevista (8–12 líneas):**  
-xxxxxxxxxxxx
+La entrevista con José Gutiérrez Ramírez, responsable de Calidad y Acopio en una cooperativa cafetalera de Cajamarca, reveló una perspectiva avanzada sobre la gestión de múltiples lotes y la necesidad de herramientas digitales más eficientes. Valoró la interfaz moderna, el uso de filtros y el buscador para manejar microlotes de distintos productores, indicando que esto atiende uno de sus mayores puntos de dolor operativo. También destacó la utilidad del código QR para la transparencia con compradores nacionales e internacionales. Sin embargo, señaló oportunidades de mejora, como aclarar con precisión el alcance real de la plataforma y mejorar la trazabilidad de los certificados para mostrar no solo el resultado final sino el origen del lote y toda su información relevante.
 
 ---
 
@@ -6163,17 +6131,24 @@ DevBeans. (2025). BeanDetect AI Technical Overview. [Documento interno]
 
 ## Videos
 
+### Needfinding Interviews
+
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218167_upc_edu_pe/EbacacS3n11GmQli8ek0ltABesH4olt1EDMLUzs-FrNg6w?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=xJtssj
+
+### Validation Interviews
+
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218167_upc_edu_pe/IQDSa7XDQhSxSK2GZb1djCuSATCxTrc7xVbnmkP1OzVYgD4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=p0j0Fi
+
 ### TB1
 
 #### Exposición
 
 https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218167_upc_edu_pe/EbnQ4lfhO5xMgzpNYDoHRPgBwUoL_oFi_Eh4wyIIYKtItQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=pE1xYm
 
-#### Entrevistas de Needfinding
-https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218167_upc_edu_pe/EbacacS3n11GmQli8ek0ltABesH4olt1EDMLUzs-FrNg6w?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=xJtssj
-
 ### TP
 
 #### Exposición
 
 https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218167_upc_edu_pe/EbIFbveYnTlJryYSABHzHBgB7aooUo_DddILv5icXM_Tnw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=rClZAn
+
+
