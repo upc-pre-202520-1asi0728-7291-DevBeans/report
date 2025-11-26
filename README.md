@@ -5654,6 +5654,86 @@ Repositorio: https://github.com/upc-pre-202520-1asi0728-7291-DevBeans/api-platfo
 
 Rama: main
 
+Integration Test 01<br>
+*US06*
+
+[![Captura-de-pantalla-2025-11-26-002132.png](https://i.postimg.cc/gJ5PQNQq/Captura-de-pantalla-2025-11-26-002132.png)](https://postimg.cc/G8kNsJcH)
+
+<!--DESCRIPCION BREVE-->
+Captura del test de integración que valida la creación de un lote (US06). Se muestra la petición POST de registro de lote, la respuesta del backend con lotId/lotNumber y la aparición del lote en la lista del productor (esperado: HTTP 201 y registro persistido).
+
+<br>
+
+Integration Test 02<br>
+*US07*
+
+[![Captura-de-pantalla-2025-11-26-002424.png](https://i.postimg.cc/L5KmhxTW/Captura-de-pantalla-2025-11-26-002424.png)](https://postimg.cc/TL9z4qBj)
+
+<!--DESCRIPCION BREVE-->
+Evidencia del test que verifica la edición de información de un lote (US07). Muestra la petición PUT para actualizar campos del lote, la respuesta 200 y la confirmación de los valores modificados en la vista/DB.
+
+<br>
+
+Integration Test 03<br>
+*US08*
+
+[![Captura-de-pantalla-2025-11-26-003250.png](https://i.postimg.cc/VNmM0F7D/Captura-de-pantalla-2025-11-26-003250.png)](https://postimg.cc/gxtrf3bZ)
+
+<!--DESCRIPCION BREVE-->
+Captura del test de integración para la visualización de lotes por productor (US08). Verifica que el endpoint y la UI devuelvan la lista paginada de lotes, con filtros activos y columnas esperadas (código, fecha, variedad, estado).
+
+<br>
+
+Integration Test 04 <br>
+*US10*
+
+[![Captura-de-pantalla-2025-11-26-003512.png](https://i.postimg.cc/SQJTDW4Z/Captura-de-pantalla-2025-11-26-003512.png)](https://postimg.cc/z3YFfHVW)
+
+<!--DESCRIPCION BREVE-->
+Resultado del test de búsqueda rápida de lotes (US10). Muestra la ejecución de consultas con filtros (fecha/variedad/estado) y la respuesta con los lotes coincidentes, validando tiempos y precisión del filtrado.
+
+<br>
+
+Integration Test 05 <br>
+*US11*
+
+[![Captura-de-pantalla-2025-11-26-003809.png](https://i.postimg.cc/T1JprKth/Captura-de-pantalla-2025-11-26-003809.png)](https://postimg.cc/5Qj4J2dM)
+
+<!--DESCRIPCION BREVE-->
+Evidencia del test de eliminación de lotes (US11). Se observa la petición DELETE sobre un lote en estado REGISTERED, la respuesta de confirmación (HTTP 200) y el registro de auditoría que documenta la operación.
+
+<br>
+
+Integration Test 06 <br>
+*US12*
+
+[![Captura-de-pantalla-2025-11-26-004001.png](https://i.postimg.cc/nVGzSQ1h/Captura-de-pantalla-2025-11-26-004001.png)](https://postimg.cc/MXXqvH4C)
+
+<!--DESCRIPCION BREVE-->
+Captura del test de integración para la detección de defectos críticos (US12). Muestra el flujo de clasificación: inicio de sesión de sesión, subida de imágenes y la respuesta con conteo de defectos, tipos detectados y scores de confianza.
+
+<br>
+
+Integration Test 07 <br>
+*US13*
+
+[![Captura-de-pantalla-2025-11-26-004123.png](https://i.postimg.cc/Nj9QtyRm/Captura-de-pantalla-2025-11-26-004123.png)](https://postimg.cc/87S2BzKz)
+
+<!--DESCRIPCION BREVE-->
+Resultado del test de análisis de color y uniformidad (US13). Presenta datos devueltos por el servicio de análisis: distribución porcentual de colores, métricas de uniformidad y la visualización utilizada para validar los cálculos.
+
+<br>
+
+Integration Test 08 <br>
+*US14*
+
+[![Captura-de-pantalla-2025-11-26-004251.png](https://i.postimg.cc/KzQ6BFn8/Captura-de-pantalla-2025-11-26-004251.png)](https://postimg.cc/r00Z2BnB)
+
+<!--DESCRIPCION BREVE-->
+Evidencia del test de clasificación por estándares internacionales (US14). Muestra la respuesta final con grado de calidad asignado (ej. SPECIALTY/PREMIUM), puntuación SCA estimada y generación del pre-certificado asociado.
+
+<br>
+
 ---
 
 #### 7.2.1.5. Execution Evidence for Sprint Review
