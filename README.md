@@ -5425,9 +5425,11 @@ Organización del GitHub: [`https://github.com/orgs/upc-pre-202520-1asi0728-7291
 
 #### 7.2.1.4. Testing Suite Evidence for Sprint Review
 
-Acceptance Tests (BDD): https://github.com/upc-pre-202520-1asi0728-7291-DevBeans/acceptance-tests
+**Acceptance Tests (BDD)** 
 
-- Branch: main
+Repositorio: https://github.com/upc-pre-202520-1asi0728-7291-DevBeans/acceptance-tests
+
+Rama: main
 
 <table>
   <thead>
@@ -5516,9 +5518,141 @@ Acceptance Tests (BDD): https://github.com/upc-pre-202520-1asi0728-7291-DevBeans
 
 <br>
 
-Integration Tests: https://github.com/upc-pre-202520-1asi0728-7291-DevBeans/api-platform-testing-server
+Feature 01<br>
+*US01:	us01_registro_productor.feature*
+<!--CAPTURAS DEL ARCHIVO .FEATURE-->
 
-- Branch: main
+[![us01_parte1.png](https://i.postimg.cc/Y21dF496/us01_parte1.png)](https://postimg.cc/rzwGXw5s)
+
+[![us01_parte2.png](https://i.postimg.cc/VsjKtS6M/us01_parte2.png)](https://postimg.cc/6TpVJpC5)
+
+<br>
+
+
+Feature 02<br>
+*US02:	us02_registro_cooperativa.feature*
+<!--CAPTURAS DEL ARCHIVO .FEATURE-->
+
+[![us02_parte1.png](https://i.postimg.cc/FFjTSfR0/us02_parte1.png)](https://postimg.cc/6TpVJpCQ)
+
+[![us02_parte2.png](https://i.postimg.cc/HWQ6MJx8/us02_parte2.png)](https://postimg.cc/jCS60SyR)
+
+<br>
+
+
+Feature 03<br>
+*US03:	us03_autenticacion_usuarios.feature*
+<!--CAPTURAS DEL ARCHIVO .FEATURE-->
+
+[![us03_parte1.png](https://i.postimg.cc/G3kXDB2B/us03_parte1.png)](https://postimg.cc/mhg3fg7R)
+
+[![us03_parte2.png](https://i.postimg.cc/VsjKtS66/us03_parte2.png)](https://postimg.cc/4nxvkxpk)
+
+[![us03_parte3.png](https://i.postimg.cc/qB81KtRv/us03_parte3.png)](https://postimg.cc/3Wxj5xms)
+
+<br>
+
+
+Feature 04<br>
+*US04:	us04_gestion_perfil_productor.feature*
+<!--CAPTURAS DEL ARCHIVO .FEATURE-->
+
+[![us04_parte1.png](https://i.postimg.cc/vTLXwKkF/us04_parte1.png)](https://postimg.cc/JH0jbpRP)
+
+[![us04_parte2.png](https://i.postimg.cc/tJtDGcfL/us04_parte2.png)](https://postimg.cc/30N2gt3B)
+
+[![us04_parte3.png](https://i.postimg.cc/NF7bvnVS/us04_parte3.png)](https://postimg.cc/N2FR1dQk)
+
+<br>
+
+
+Feature 05<br>
+*US06:	us06_creacion_lotes.feature*
+<!--CAPTURAS DEL ARCHIVO .FEATURE-->
+
+[![us06_parte1.png](https://i.postimg.cc/J0cKCFgS/us06_parte1.png)](https://postimg.cc/D401qx7c)
+
+[![us06_parte2.png](https://i.postimg.cc/5yqpWrGR/us06_parte2.png)](https://postimg.cc/SYRcWgm6)
+
+<br>
+
+
+Feature 06<br>
+*US07:	us07_edicion_informacion_lote.feature*
+<!--CAPTURAS DEL ARCHIVO .FEATURE-->
+
+[![us07_parte1.png](https://i.postimg.cc/3NC9Qq6b/us07_parte1.png)](https://postimg.cc/64qCdMBd)
+
+[![us07_parte2.png](https://i.postimg.cc/J0cKCFg6/us07_parte2.png)](https://postimg.cc/JH0jbpRZ)
+
+<br>
+
+
+Feature 07<br>
+*US08:	us08_visualizacion_lotes_productor.feature*
+<!--CAPTURAS DEL ARCHIVO .FEATURE-->
+
+[![us08_parte1.png](https://i.postimg.cc/Hn431NK6/us08_parte1.png)](https://postimg.cc/QKCcpfj7)
+
+[![us08_parte2.png](https://i.postimg.cc/cCMTGzjT/us08_parte2.png)](https://postimg.cc/GTtvkXbs)
+
+[![us08_parte3.png](https://i.postimg.cc/1XcM1dTB/us08_parte3.png)](https://postimg.cc/7JhSgKqJ)
+
+<br>
+
+
+Feature 08<br>
+*US10:	us10_busqueda_rapida_lotes.feature*
+<!--CAPTURAS DEL ARCHIVO .FEATURE-->
+
+[![us10_partefull.png](https://i.postimg.cc/Hn431NK0/us10_partefull.png)](https://postimg.cc/jn2yzMRC)
+
+<br>
+
+
+Feature 09<br>
+*US11:	us11_eliminacion_lotes.feature*
+<!--CAPTURAS DEL ARCHIVO .FEATURE-->
+
+[![us11_partefull.png](https://i.postimg.cc/8cBwgY3h/us11_partefull.png)](https://postimg.cc/rRs5Sfqm)
+
+<br>
+
+
+Feature 10<br>
+*US13:	us13_analisis_color_uniformidad.feature*
+<!--CAPTURAS DEL ARCHIVO .FEATURE-->
+
+[![us13_partefull.png](https://i.postimg.cc/Xqcx6PhF/us13_partefull.png)](https://postimg.cc/zHvTnxqX)
+
+<br>
+
+
+Feature 11<br>
+*US14:	us14_clasificacion_estandares_internacionales.feature*
+<!--CAPTURAS DEL ARCHIVO .FEATURE-->
+
+[![us14_partefull.png](https://i.postimg.cc/J0cKCFgj/us14_partefull.png)](https://postimg.cc/9w0yGLcf)
+
+<br>
+
+
+Feature 12<br>
+*US15:	us15_reporte_simple_clasificacion.feature*
+<!--CAPTURAS DEL ARCHIVO .FEATURE-->
+
+[![us15_partefull.png](https://i.postimg.cc/D0K5DhCr/us15_partefull.png)](https://postimg.cc/phqDhwMr)
+
+<br>
+
+
+
+
+**Integration Tests** 
+
+Repositorio: https://github.com/upc-pre-202520-1asi0728-7291-DevBeans/api-platform-testing-server
+
+Rama: main
 
 ---
 
