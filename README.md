@@ -6336,16 +6336,14 @@ DevBeans. (2025). BeanDetect AI Technical Overview. [Documento interno]
 
 ## Figuras
 
-### TB1
-
-#### Database Diagram
+### Database Diagram
 [![1-11zon.png](https://i.postimg.cc/8z7mtH9X/1-11zon.png)](https://postimg.cc/G41Dpkcv)
 
-#### Class Diagram
+### Class Diagram
 
 [![beans-diagram-class.png](https://i.postimg.cc/h4M8n6q3/beans-diagram-class.png)](https://postimg.cc/Z0BvFfnr)
 
-## Videos
+## Entrevistas
 
 ### Needfinding Interviews
 
@@ -6355,16 +6353,20 @@ https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218167_upc_edu_pe/EbacacS3
 
 https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218167_upc_edu_pe/IQDSa7XDQhSxSK2GZb1djCuSATCxTrc7xVbnmkP1OzVYgD4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=p0j0Fi
 
-### TB1
+## Videos
 
-#### Exposición
+### Exposición TB1
 
 https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218167_upc_edu_pe/EbnQ4lfhO5xMgzpNYDoHRPgBwUoL_oFi_Eh4wyIIYKtItQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=pE1xYm
 
-### TP
-
-#### Exposición
+### Exposición TP
 
 https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218167_upc_edu_pe/EbIFbveYnTlJryYSABHzHBgB7aooUo_DddILv5icXM_Tnw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=rClZAn
 
+### Exposición TB2
 
+<!--NOS FALTÓ EXPO DE LA ANTERIOR ENTREGA-->
+
+### Exposición TF
+
+<!--PENDIENTE-->
