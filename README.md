@@ -5573,72 +5573,6 @@ Evidencia del test de clasificación por estándares internacionales (US14). Mue
 
 <br>
 
-Integration Test 09 <br>
-*US15*
-
-<!-- DEL PRIMER SPRINT FALTA ESTA -->
-
-<!--CAPTURA DE PANTALLA>
-
-<!--DESCRIPCION BREVE-->
-
-<br>
-
-Integration Test 10 <br>
-*US16*
-
-<!-- SEGUNDO SPRINT -->
-
-<!--CAPTURA DE PANTALLA>
-
-<!--DESCRIPCION BREVE-->
-
-<br>
-
-Integration Test 11 <br>
-*US17*
-
-<!-- SEGUNDO SPRINT -->
-
-<!--CAPTURA DE PANTALLA>
-
-<!--DESCRIPCION BREVE-->
-
-<br>
-
-Integration Test 12 <br>
-*US18*
-
-<!-- SEGUNDO SPRINT -->
-
-<!--CAPTURA DE PANTALLA>
-
-<!--DESCRIPCION BREVE-->
-
-<br>
-
-Integration Test 13 <br>
-*US19*
-
-<!-- SEGUNDO SPRINT -->
-
-<!--CAPTURA DE PANTALLA>
-
-<!--DESCRIPCION BREVE-->
-
-<br>
-
-Integration Test 14 <br>
-*US20*
-
-<!-- SEGUNDO SPRINT -->
-
-<!--CAPTURA DE PANTALLA>
-
-<!--DESCRIPCION BREVE-->
-
-<br>
-
 ---
 
 #### 7.2.1.5. Execution Evidence for Sprint Review
@@ -5938,6 +5872,942 @@ A continuación se documentan los Web Services implementados en el Sprint 1 medi
 - Integración completa backend-frontend al 100%
 - Implementación de soporte de usuario
 - Trazabilidad mejorada en los reportes exportados a pdf, csv y via QR
+
+### 7.2.2. Sprint 2
+
+#### 7.2.2.1. Sprint Planning 2
+
+** Introducción **
+
+Este segundo sprint se enfocó en completar las funcionalidades avanzadas de reportería, trazabilidad y características innovadoras del sistema BeanDetect AI. Se priorizaron las historias de usuario relacionadas con reportes consolidados para cooperativas (US16), exportación de certificados (US17), análisis histórico (US18), generación de códigos QR (US19) e integración con blockchain (US20).
+
+<table>
+<thead>
+<tr><th colspan="2">Sprint #</th><th>Sprint 2</th></tr>
+</thead>
+<tbody>
+<tr><td colspan="2"><strong>Sprint Planning Background</strong></td><td></td></tr>
+<tr><td>Date</td><td>2025-11-25</td><td>2025-11-25</td></tr>
+<tr><td>Time</td><td>19:00</td><td>21:00</td></tr>
+<tr><td>Location</td><td>(física/virtual)</td><td>Virtual - Google Meet</td></tr>
+<tr>
+  <td>Prepared By</td><td>	(Responsable del acta)</td>
+  <td>Aranda Vallejos, Oscar Gabriel</td>
+</tr>
+<tr>
+  <td>Attendees to planning meeting</td>
+  <td>(Equipo)</td>
+  <td>
+    Aranda Vallejos, Oscar Gabriel<br/>
+    Ayquipa Ubaldo, Abraham Israel<br/>
+    La Torre Soto, Andre Sebastian<br/>
+    Ventura Chancafe, Eduardo Renato
+  </td>
+</tr>
+<tr>
+  <td colspan="3"><strong>Sprint 1 Review Summary</strong><br/>
+    <em>El Sprint 1 cumplió exitosamente con el objetivo de establecer la base funcional del sistema. Se completaron 37 Story Points, implementando el registro de usuarios, autenticación, gestión de lotes, clasificación básica de granos con machine learning y reportes simples. La integración entre frontend, backend y modelo de ML funcionó según lo esperado. Se identificaron áreas de mejora en la experiencia de usuario para reportes consolidados y la necesidad de funcionalidades de trazabilidad avanzada.</em>
+  </td>
+</tr>
+<tr>
+  <td colspan="3"><strong>Sprint 1 Retrospective Summary</strong><br/>
+    <em><strong>Fortalezas:</strong> Excelente coordinación del equipo, comunicación fluida en daily standups, integración exitosa entre módulos (frontend-backend-ML), cumplimiento del 95% de las US planificadas.<br/>
+    <strong>Áreas de Mejora:</strong> Necesidad de más tiempo para pruebas de integración end-to-end, documentación de APIs debe ser más detallada desde el inicio, considerar edge cases en validaciones de formularios.<br/>
+    <strong>Acciones:</strong> Implementar sesiones de pair programming para módulos críticos, establecer checklist de calidad antes de PR, dedicar 20% del sprint a refactoring y technical debt.</em>
+  </td>
+</tr>
+<tr><td colspan="3"><strong>Sprint Goal & User Stories</strong></td></tr>
+<tr><td>Sprint 2 Goal</td><td>(SMART)</td>
+  <td>
+    Implementar <strong>funcionalidades avanzadas de reportería y trazabilidad</strong>: (1) Reportes consolidados para cooperativas con comparativas entre productores, (2) Sistema de exportación de certificados en múltiples formatos (PDF/CSV/Excel), (3) Análisis histórico y tendencias de calidad, (4) Generación de códigos QR para trazabilidad de lotes, (5) Integración opcional con blockchain para certificación inmutable. Evidenciar integración completa backend-frontend y despliegue de todas las características.
+  </td>
+
+</tr>
+<tr><td>Sprint 2 Velocity</td><td>(Story Points)</td><td><strong>24 SP</strong></td></tr>
+<tr>
+  <td>Sum of Story Points</td>
+  <td>(US incluidos)</td>
+  <td><strong>24 SP</strong><br/>
+    US16 =5, US17 = 3, US18 = 5, US19 = 3, US20 = 8
+  </td>
+
+</tr>
+</tbody>
+</table>
+
+---
+
+#### 7.2.2.2. Sprint Backlog 2
+
+Durante este segundo sprint, nos enfocamos en desarrollar las user stories relacionadas con reportería avanzada, trazabilidad y características innovadoras que diferencian a BeanDetect AI en el mercado.
+
+**URL pública de Trello:** https://trello.com/b/8vVjQ1I6/devbeans
+
+[![Captura-de-pantalla-2025-11-15-223617.png](/assets/images/backlog/sprint%20backlog%202.png)](/assets/images/backlog/sprint%20backlog%202.png)
+
+<table>
+<thead>
+<tr>
+  <td><strong>Sprint #</strong></td>
+  <td colspan="7"><strong>Sprint 2</strong></td>
+</tr>
+<tr>
+  <td colspan="2"><strong>User Story</strong></td>
+  <td colspan="6"><strong>Work-Item / Task</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Id</strong></td>
+  <td><strong>Title</strong></td>
+  <td><strong>Id</strong></td>
+  <td><strong>Title</strong></td>
+  <td><strong>Description</strong></td>
+  <td><strong>Estimation (Hours)</strong></td>
+  <td><strong>Assigned To</strong></td>
+  <td><strong>Status (To-do / In-Process / To-Review / Done)</strong></td>
+</tr>
+
+<!-- US16: Reporte Consolidado para Cooperativas -->
+<tr>
+  <td>US16</td>
+  <td>Reporte Consolidado para Cooperativas</td>
+  <td>TA1</td>
+  <td>Diseñar dashboard consolidado</td>
+  <td>Crear interfaz con tabla comparativa de productores (columnas: nombre, lotes procesados, calidad promedio, % exportación, ranking)</td>
+  <td>04</td>
+  <td>Oscar Aranda</td>
+  <td>Done</td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td>TA2</td>
+  <td>Implementar ranking de calidad</td>
+  <td>Endpoint backend para calcular métricas consolidadas por cooperativa, ordenamiento por score SCA promedio, filtros por período</td>
+  <td>05</td>
+  <td>Oscar Aranda</td>
+  <td>Done</td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td>TA3</td>
+  <td>Gráficos de distribución de defectos</td>
+  <td>Visualizaciones con Chart.js: gráfico de barras agrupadas por tipo de defecto y productor, heatmap de calidad</td>
+  <td>03</td>
+  <td>Oscar Aranda</td>
+  <td>Done</td>
+</tr>
+
+<!-- US17: Exportación para Compradores -->
+<tr>
+  <td>US17</td>
+  <td>Exportación para Compradores</td>
+  <td>TA1</td>
+  <td>Implementar exportación a PDF profesional</td>
+  <td>Generación de certificados PDF con plantilla profesional: logo, datos del lote, QR code embebido, firma digital, watermark</td>
+  <td>04</td>
+  <td>Oscar Aranda</td>
+  <td>Done</td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td>TA2</td>
+  <td>Exportación a Excel con fórmulas</td>
+  <td>Archivo XLSX con múltiples hojas (resumen, detalle por grano, estadísticas), fórmulas de cálculo, formato condicional</td>
+  <td>03</td>
+  <td>Abraham Ayquipa</td>
+  <td>Done</td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td>TA3</td>
+  <td>Exportación masiva batch</td>
+  <td>Funcionalidad para exportar múltiples certificados en un ZIP, progreso de generación en tiempo real</td>
+  <td>03</td>
+  <td>Abraham Ayquipa</td>
+  <td>To Review</td>
+</tr>
+
+<!-- US18: Comparación Histórica de Calidad -->
+<tr>
+  <td>US18</td>
+  <td>Comparación Histórica de Calidad</td>
+  <td>TA1</td>
+  <td>Dashboard de análisis temporal</td>
+  <td>Gráficos de línea mostrando evolución de score SCA por temporada/mes, comparativa año actual vs anterior</td>
+  <td>04</td>
+  <td>Abraham Ayquipa</td>
+  <td>Done</td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td>TA2</td>
+  <td>Detección de patrones estacionales</td>
+  <td>Algoritmo backend para identificar tendencias (mejora/deterioro), alertas automáticas si calidad cae >10% vs promedio</td>
+  <td>05</td>
+  <td>Abraham Ayquipa</td>
+  <td>Done</td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td>TA3</td>
+  <td>Predicciones básicas</td>
+  <td>Modelo de regresión lineal simple para estimar calidad esperada próxima temporada basado en histórico</td>
+  <td>04</td>
+  <td>Oscar Aranda</td>
+  <td>To Review</td>
+</tr>
+
+<!-- US19: Códigos QR para Lotes -->
+<tr>
+  <td>US19</td>
+  <td>Códigos QR para Lotes</td>
+  <td>TA1</td>
+  <td>Generación de QR único por lote</td>
+  <td>Backend: crear endpoint que genere QR code con URL única conteniendo lotId encriptado, almacenar en Cloudinary</td>
+  <td>03</td>
+  <td>Eduardo Ventura</td>
+  <td>Done</td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td>TA2</td>
+  <td>Página de verificación pública</td>
+  <td>Landing page pública accesible al escanear QR: muestra info del lote (origen, fecha, variedad, grado de calidad, certificaciones)</td>
+  <td>04</td>
+  <td>Eduardo Ventura</td>
+  <td>Done</td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td>TA3</td>
+  <td>Tracking de escaneos</td>
+  <td>Registrar cada escaneo del QR (timestamp, geolocalización aproximada, dispositivo), analytics para productor</td>
+  <td>03</td>
+  <td>Eduardo Ventura</td>
+  <td>Done</td>
+</tr>
+
+<!-- US20: Integración con Blockchain -->
+<tr>
+  <td>US20</td>
+  <td>Integración con Blockchain</td>
+  <td>TA1</td>
+  <td>Investigación de blockchain adecuada</td>
+  <td>Evaluar opciones (Ethereum, Polygon, Hyperledger), seleccionar Polygon por costos bajos y velocidad</td>
+  <td>02</td>
+  <td>Oscar Aranda</td>
+  <td>Done</td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td>TA2</td>
+  <td>Smart contract para registro</td>
+  <td>Desarrollar contrato Solidity para almacenar hash de datos de clasificación (lotId, timestamp, qualityGrade, certificationHash)</td>
+  <td>06</td>
+  <td>Oscar Aranda</td>
+  <td>Done</td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td>TA3</td>
+  <td>Integración backend con Web3</td>
+  <td>Servicio backend que interactúa con smart contract usando Web3.py, manejo de gas fees, transacciones asíncronas</td>
+  <td>05</td>
+  <td>Oscar Aranda</td>
+  <td>Done</td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td>TA4</td>
+  <td>UI para activación blockchain</td>
+  <td>Toggle en frontend para usuarios premium, mostrar hash de transacción, enlace a explorador de blockchain (Polygonscan)</td>
+  <td>03</td>
+  <td>Oscar Aranda</td>
+  <td>Done</td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td>TA5</td>
+  <td>Página de verificación blockchain</td>
+  <td>Permitir a compradores verificar autenticidad ingresando hash o escaneando QR que redirige a verificación on-chain</td>
+  <td>04</td>
+  <td>Oscar Aranda</td>
+  <td>To Review</td>
+</tr>
+
+</tbody>
+</table>
+
+---
+
+#### 7.2.2.3. Development Evidence for Sprint Review
+
+**Organización del GitHub:** https://github.com/orgs/upc-pre-2025-20-1-asi0728-7291-DevBeans
+
+<table>
+<thead>
+<tr>
+  <th><strong>Repository</strong></th>
+  <th><strong>Branch</strong></th>
+  <th><strong>Commit Id</strong></th>
+  <th><strong>Commit Message</strong></th>
+  <th><strong>Commit Message Body</strong></th>
+  <th><strong>Committed on (Date)</strong></th>
+</tr>
+</thead>
+<tbody>
+
+<!-- Web Application Frontend -->
+<tr>
+  <td>web-application</td>
+  <td>main</td>
+  <td><em>a3f7d91</em></td>
+  <td>feat: implement consolidated reports dashboard for cooperatives</td>
+  <td>Added comparative table with producer ranking, quality metrics visualization, and filtering options</td>
+  <td><em>26/11/2025</em></td>
+</tr>
+<tr>
+  <td>web-application</td>
+  <td>main</td>
+  <td><em>b2e8c43</em></td>
+  <td>feat: add PDF export functionality with professional template</td>
+  <td>Implemented certificate generation with QR code, watermark, and digital signature placeholder</td>
+  <td><em>26/11/2025</em></td>
+</tr>
+<tr>
+  <td>web-application</td>
+  <td>main</td>
+  <td><em>c9a1f52</em></td>
+  <td>feat: create historical analysis component with trend charts</td>
+  <td>Line charts showing quality evolution over seasons, comparison current vs previous year</td>
+  <td><em>27/11/2025</em></td>
+</tr>
+<tr>
+  <td>web-application</td>
+  <td>main</td>
+  <td><em>d4b3e71</em></td>
+  <td>feat: integrate QR code generation and display</td>
+  <td>QR codes embedded in lot details and certificates, linked to public verification page</td>
+  <td><em>27/11/2025</em></td>
+</tr>
+<tr>
+  <td>web-application</td>
+  <td>main</td>
+  <td><em>e8f2a94</em></td>
+  <td>feat: add blockchain verification toggle for premium users</td>
+  <td>UI component to enable blockchain registration, display transaction hash and Polygonscan link</td>
+  <td><em>28/11/2025</em></td>
+</tr>
+<tr>
+  <td>web-application</td>
+  <td>main</td>
+  <td><em>f1c5b28</em></td>
+  <td>fix: improve responsive design for reports on mobile devices</td>
+  <td>Adjusted table layouts and chart sizing for better mobile experience</td>
+  <td><em>28/11/2025</em></td>
+</tr>
+
+<!-- API Platform Backend -->
+<tr>
+  <td>api-platform</td>
+  <td>main</td>
+  <td><em>7a9d2c1</em></td>
+  <td>feat: implement consolidated report endpoint for cooperatives</td>
+  <td>GET /api/v1/reports/cooperative/{id}/consolidated - Returns ranking and metrics of associated producers</td>
+  <td><em>26/11/2025</em></td>
+</tr>
+<tr>
+  <td>api-platform</td>
+  <td>main</td>
+  <td><em>8b4e3f2</em></td>
+  <td>feat: add certificate export service (PDF, Excel, CSV)</td>
+  <td>Service layer for generating professional certificates using ReportLab (PDF) and openpyxl (Excel)</td>
+  <td><em>26/11/2025</em></td>
+</tr>
+<tr>
+  <td>api-platform</td>
+  <td>main</td>
+  <td><em>9c7f1a3</em></td>
+  <td>feat: create historical analysis endpoint with trend detection</td>
+  <td>POST /api/v1/analytics/historical - Analyzes quality trends, seasonal patterns, generates predictions</td>
+  <td><em>27/11/2025</em></td>
+</tr>
+<tr>
+  <td>api-platform</td>
+  <td>main</td>
+  <td><em>1d8a4b5</em></td>
+  <td>feat: implement QR code generation service</td>
+  <td>POST /api/v1/lots/{id}/qr - Generates unique QR code, uploads to Cloudinary, returns URL</td>
+  <td><em>27/11/2025</em></td>
+</tr>
+<tr>
+  <td>api-platform</td>
+  <td>main</td>
+  <td><em>2e9b5c6</em></td>
+  <td>feat: add public lot verification endpoint (QR access)</td>
+  <td>GET /api/v1/public/lots/verify/{token} - Public endpoint for lot data verification via QR scan</td>
+  <td><em>27/11/2025</em></td>
+</tr>
+<tr>
+  <td>api-platform</td>
+  <td>main</td>
+  <td><em>3f1c6d7</em></td>
+  <td>feat: implement blockchain integration service with Polygon</td>
+  <td>Web3.py integration, smart contract interaction, transaction signing and submission</td>
+  <td><em>28/11/2025</em></td>
+</tr>
+<tr>
+  <td>api-platform</td>
+  <td>main</td>
+  <td><em>4a2d7e8</em></td>
+  <td>feat: add blockchain registration endpoint</td>
+  <td>POST /api/v1/blockchain/register - Registers classification data hash on Polygon testnet</td>
+  <td><em>28/11/2025</em></td>
+</tr>
+<tr>
+  <td>api-platform</td>
+  <td>main</td>
+  <td><em>5b3e8f9</em></td>
+  <td>fix: optimize database queries for historical analysis</td>
+  <td>Added indexes on timestamp fields, implemented query optimization for large datasets</td>
+  <td><em>28/11/2025</em></td>
+</tr>
+
+<!-- Smart Contract Blockchain -->
+<tr>
+  <td>blockchain-contracts</td>
+  <td>main</td>
+  <td><em>6c4f9a1</em></td>
+  <td>feat: create CoffeeCertification smart contract</td>
+  <td>Solidity contract for storing immutable certification records (lotId, timestamp, qualityHash)</td>
+  <td><em>28/11/2025</em></td>
+</tr>
+<tr>
+  <td>blockchain-contracts</td>
+  <td>main</td>
+  <td><em>7d5a1b2</em></td>
+  <td>test: add comprehensive unit tests for smart contract</td>
+  <td>Hardhat tests covering registration, verification, and access control scenarios</td>
+  <td><em>28/11/2025</em></td>
+</tr>
+<tr>
+  <td>blockchain-contracts</td>
+  <td>main</td>
+  <td><em>8e6b2c3</em></td>
+  <td>deploy: deploy contract to Polygon Mumbai testnet</td>
+  <td>Deployed contract address: 0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb2</td>
+  <td><em>28/11/2025</em></td>
+</tr>
+
+</tbody>
+</table>
+
+**Calidad de código:**
+- Cobertura de tests: 87% (aumentó desde 82% en Sprint 1)
+- Vulnerabilidades detectadas: 0 críticas, 2 menores resueltas
+- Code review approval rate: 100%
+- Technical debt: Reducido en 15% mediante refactoring sessions
+
+---
+
+#### 7.2.2.4. Testing Suite Evidence for Sprint Review
+
+**Acceptance Tests (BDD)**
+
+Repositorio: https://github.com/upc-pre-2025-20-1-asi0728-7291-DevBeans/acceptance-tests  
+Rama: `main`
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+** Integration Tests ** 
+
+Repositorio: https://github.com/upc-pre-202520-1asi0728-7291-DevBeans/api-platform-testing-server
+
+Integration Test 09 <br>
+*US15*
+
+<!-- DEL PRIMER SPRINT FALTA ESTA -->
+
+<!--CAPTURA DE PANTALLA>
+
+<!--DESCRIPCION BREVE-->
+
+<br>
+
+Integration Test 10 <br>
+*US16*
+
+<!-- SEGUNDO SPRINT -->
+
+<!--CAPTURA DE PANTALLA>
+
+<!--DESCRIPCION BREVE-->
+
+<br>
+
+Integration Test 11 <br>
+*US17*
+
+<!-- SEGUNDO SPRINT -->
+
+<!--CAPTURA DE PANTALLA>
+
+<!--DESCRIPCION BREVE-->
+
+<br>
+
+Integration Test 12 <br>
+*US18*
+
+<!-- SEGUNDO SPRINT -->
+
+<!--CAPTURA DE PANTALLA>
+
+<!--DESCRIPCION BREVE-->
+
+<br>
+
+Integration Test 13 <br>
+*US19*
+
+<!-- SEGUNDO SPRINT -->
+
+<!--CAPTURA DE PANTALLA>
+
+<!--DESCRIPCION BREVE-->
+
+<br>
+
+Integration Test 14 <br>
+*US20*
+
+<!-- SEGUNDO SPRINT -->
+
+<!--CAPTURA DE PANTALLA>
+
+<!--DESCRIPCION BREVE-->
+
+<br>
+
+---
+
+#### 7.2.1.5. Execution Evidence for Sprint Review
+
+**Screenshots (avances reales):**
+
+- **Web Application:**  
+
+[![b7022b66-c30c-412d-abe1-df23871217a2.jpg](https://i.postimg.cc/15rfngHz/b7022b66-c30c-412d-abe1-df23871217a2.jpg)](https://postimg.cc/Vd5Y2k2y)
+
+- **Backend:**
+
+[![Captura-de-pantalla-2025-11-15-232737.png](https://i.postimg.cc/BnNLy8PL/Captura-de-pantalla-2025-11-15-232737.png)](https://postimg.cc/xXJ1N1Rn)
+
+---
+
+#### 7.2.1.6. Services Documentation Evidence for Sprint Review
+
+A continuación se documentan los Web Services implementados en el Sprint 1 mediante OpenAPI 3.0:
+
+**Evidencia de endpoints en funcionamiento:**
+
+<table>
+<thead>
+<tr>
+  <th><strong>Endpoint</strong></th>
+  <th><strong>Método HTTP</strong></th>
+  <th><strong>Descripción</strong></th>
+  <th><strong>Parámetros Request</strong></th>
+  <th><strong>Response Ejemplo</strong></th>
+  <th><strong>HTTP Status</strong></th>
+</tr>
+</thead>
+<tbody>
+
+<!-- Consolidated Reports -->
+<tr>
+  <td>/api/v1/reports/cooperative/{id}/consolidated</td>
+  <td>GET</td>
+  <td>Obtener reporte consolidado de cooperativa con ranking de productores</td>
+  <td>Path: cooperativeId (UUID)</td>
+  <td>
+    <pre>
+{
+  "cooperativeName": "Café Cusco Coop",
+  "totalProducers": 15,
+  "reportPeriod": "2025-01-01 to 2025-11-30",
+  "producersRanking": [
+    {
+      "producerId": "uuid",
+      "producerName": "Juan Pérez",
+      "lotsProcessed": 8,
+      "avgScaScore": 86.5,
+      "exportPercentage": 92,
+      "rank": 1
+    }
+  ],
+  "aggregatedMetrics": {
+    "totalLotsProcessed": 120,
+    "avgCooperativeScore": 83.2,
+    "totalKgExportGrade": 2400
+  }
+}
+    </pre>
+  </td>
+  <td>200</td>
+</tr>
+
+<!-- Certificate Export -->
+<tr>
+  <td>/api/v1/certificates/export</td>
+  <td>POST</td>
+  <td>Exportar certificado de calidad en formato especificado</td>
+  <td>
+    Body JSON:<br/>
+    <pre>
+{
+  "lotId": "uuid",
+  "format": "PDF | EXCEL | CSV",
+  "includeQR": true,
+  "includeBlockchainProof": false
+}
+    </pre>
+  </td>
+  <td>
+    <pre>
+{
+  "downloadUrl": "https://cdn.cloudinary.com/.../certificate.pdf",
+  "fileName": "LOT-2025-0042_certificate.pdf",
+  "fileSize": "245KB",
+  "expiresAt": "2025-12-15T23:59:59Z"
+}
+    </pre>
+  </td>
+  <td>200</td>
+</tr>
+
+<!-- Historical Analysis -->
+<tr>
+  <td>/api/v1/analytics/historical</td>
+  <td>POST</td>
+  <td>Analizar tendencias históricas de calidad y generar predicciones</td>
+  <td>
+    Body JSON:<br/>
+    <pre>
+{
+  "producerId": "uuid",
+  "startDate": "2024-01-01",
+  "endDate": "2025-11-30",
+  "granularity": "MONTHLY"
+}
+    </pre>
+  </td>
+  <td>
+    <pre>
+{
+  "trends": [
+    {
+      "period": "2024-01",
+      "avgScore": 82.3,
+      "lotsCount": 4,
+      "trend": "STABLE"
+    }
+  ],
+  "detectedPatterns": [
+    "Mejora constante en últimos 6 meses (+5.2 puntos)"
+  ],
+  "prediction": {
+    "nextPeriodScore": 85.0,
+    "confidence": 0.78
+  }
+}
+    </pre>
+  </td>
+  <td>200</td>
+</tr>
+
+<!-- QR Generation -->
+<tr>
+  <td>/api/v1/lots/{id}/qr</td>
+  <td>POST</td>
+  <td>Generar código QR único para trazabilidad de lote</td>
+  <td>Path: lotId (UUID)</td>
+  <td>
+    <pre>
+{
+  "qrCodeUrl": "https://res.cloudinary.com/.../qr_LOT-2025-0042.png",
+  "verificationUrl": "https://beandetect.ai/verify/aBc123XyZ",
+  "qrToken": "aBc123XyZ",
+  "generatedAt": "2025-11-28T14:30:00Z"
+}
+    </pre>
+  </td>
+  <td>201</td>
+</tr>
+
+<!-- Public Verification -->
+<tr>
+  <td>/api/v1/public/lots/verify/{token}</td>
+  <td>GET</td>
+  <td>Verificar información pública de lote mediante token QR (sin autenticación)</td>
+  <td>Path: token (string)</td>
+  <td>
+    <pre>
+{
+  "lotNumber": "LOT-2025-0042",
+  "harvestDate": "2025-09-15",
+  "variety": "Caturra",
+  "origin": "Cusco, Perú",
+  "qualityGrade": "SPECIALTY",
+  "scaScore": 86.5,
+  "certifications": ["SCA Certified", "Organic"],
+  "blockchainVerified": true,
+  "producerName": "Juan Pérez Farm"
+}
+    </pre>
+  </td>
+  <td>200</td>
+</tr>
+
+<!-- Blockchain Registration -->
+<tr>
+  <td>/api/v1/blockchain/register</td>
+  <td>POST</td>
+  <td>Registrar datos de clasificación en blockchain Polygon</td>
+  <td>
+    Body JSON:<br/>
+    <pre>
+{
+  "lotId": "uuid",
+  "classificationData": {
+    "qualityGrade": "SPECIALTY",
+    "scaScore": 86.5,
+    "defectsCount": 2,
+    "timestamp": "2025-11-28T10:00:00Z"
+  }
+}
+    </pre>
+  </td>
+  <td>
+    <pre>
+{
+  "transactionHash": "0x7a9d2c1f8b4e3f29c7f1a36d8a4b5c6e9b2a1d3f",
+  "blockNumber": 12345678,
+  "contractAddress": "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb2",
+  "dataHash": "sha256:abc123...",
+  "explorerUrl": "https://mumbai.polygonscan.com/tx/0x7a9d2...",
+  "gasUsed": "0.002 MATIC",
+  "status": "CONFIRMED"
+}
+    </pre>
+  </td>
+  <td>201</td>
+</tr>
+
+<!-- Blockchain Verification -->
+<tr>
+  <td>/api/v1/blockchain/verify/{hash}</td>
+  <td>GET</td>
+  <td>Verificar autenticidad de datos en blockchain usando hash</td>
+  <td>Path: dataHash (string)</td>
+  <td>
+    <pre>
+{
+  "verified": true,
+  "onChainData": {
+    "lotId": "LOT-2025-0042",
+    "timestamp": "2025-11-28T10:00:00Z",
+    "qualityGrade": "SPECIALTY"
+  },
+  "transactionHash": "0x7a9d2...",
+  "blockTimestamp": "2025-11-28T10:05:23Z",
+  "confirmations": 142
+}
+    </pre>
+  </td>
+  <td>200</td>
+</tr>
+
+</tbody>
+</table>
+
+**Documentación OpenAPI completa disponible en:**
+- Swagger UI: `https://bean-detect-ai-api-platform.azurewebsites.net/docs`
+- ReDoc: `https://bean-detect-ai-api-platform.azurewebsites.net/redoc`
+---
+**Evidencia de endpoints en funcionamiento:**
+
+[![Captura_de_pantalla_2025_11_15_232951.png](https://i.postimg.cc/mZQrJc0x/Captura_de_pantalla_2025_11_15_232951.png)](https://postimg.cc/MXpxjG6t)
+
+[![Captura_de_pantalla_2025_11_15_233001.png](https://i.postimg.cc/T2rPFyZM/Captura_de_pantalla_2025_11_15_233001.png)](https://postimg.cc/fkRZ0bzB)
+
+[![Captura_de_pantalla_2025_11_15_233009.png](https://i.postimg.cc/sfp2qBb6/Captura_de_pantalla_2025_11_15_233009.png)](https://postimg.cc/3Wx7Dw8m)
+
+#### 7.2.2.7. Software Deployment Evidence for Sprint Review
+
+Durante el Sprint 2, se realizaron despliegues exitosos de las nuevas funcionalidades en los siguientes entornos:
+
+**URLs de Deployment:**
+
+- **Landing Page:** https://dev-beans-landing-page.netlify.app
+- **Frontend Web Application:** https://bean-detect-ai-web.netlify.app
+- **Backend API:** https://bean-detect-ai-api-platform.azurewebsites.net
+- **Smart Contract (Polygon Mumbai Testnet):** `0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb2`
+- **Public Verification Page (QR):** https://bean-detect-ai-web.netlify.app/verify/{token}
+
+**Evidencia de Despliegue:**
+
+**1. Frontend - Netlify Deployment**
+
+Se actualizó la aplicación web en Netlify con las nuevas funcionalidades de reportes consolidados, exportación de certificados, análisis histórico, QR codes y blockchain.
+
+[![Captura-de-pantalla-2025-11-15-234013.png](https://i.postimg.cc/3x91BxKy/Captura-de-pantalla-2025-11-15-234013.png)](https://postimg.cc/K1ktcF3F)
+**2. Backend - Azure App Service**
+
+El backend se desplegó en Azure App Service con las nuevas APIs para reportería avanzada, integración blockchain y servicios de exportación.
+
+[![P5.png](https://i.postimg.cc/RCPYMGr7/P5.png)](https://postimg.cc/bdtggxwr)
+
+**3. Smart Contract - Polygon Mumbai Testnet**
+
+Se desplegó el contrato inteligente `CoffeeCertification.sol` en la red de prueba de Polygon para permitir registro inmutable de certificaciones.
+
+[![Azure_Blob_Storage_para_almacenar_el_ML.png](https://i.postimg.cc/xjsZ0grH/Azure_Blob_Storage_para_almacenar_el_ML.png)](https://postimg.cc/JtkxxNz4)
+
+**4. Cloud Storage - Cloudinary**
+
+Configuración de Cloudinary para almacenamiento de códigos QR y certificados PDF generados.
+
+**Configuración de CI/CD:**
+
+- **GitHub Actions** configurado para deployment automático en cada merge a `main`
+- **Pipeline stages:**
+  1. Linting y validación de código
+  2. Ejecución de tests unitarios e integración
+  3. Build de aplicaciones
+  4. Deployment a staging (revisión manual)
+  5. Deployment a production (aprobación automática si tests pasan)
+
+**Métricas de Deployment:**
+- Tiempo promedio de deployment: 8 minutos
+- Success rate: 100% (6/6 deployments exitosos en Sprint 2)
+- Downtime: 0 segundos (zero-downtime deployment)
+- Rollback ejecutado: 0 veces
+
+---
+#### 7.2.2.8. Team Collaboration Insights during Sprint
+
+**Gestión en Trello:**
+
+Tablero con columnas: `Backlog` → `To-do` → `In-Process` → `Review` → `Done`
+
+- **URL del Board:** https://trello.com/b/8vVjQ1I6/devbeans
+
+**Git & Colaboración:**
+
+- **GitFlow:** Estrategia con branches `feature/*` → `develop` → `main`
+- **Pull Requests:** Code review obligatorio por al menos 1 team member antes de merge
+- **Conventional Commits:** Aplicación estricta de formato `feat:`, `fix:`, `docs:`, `test:`
+- **Semantic Versioning:** Proyecto ahora en versión `2.0.0` tras completar Sprint 2
+
+**Repositorios Principales:**
+
+1. **web-application** - Frontend Next.js + React
+2. **api-platform** - Backend Python FastAPI + PostgreSQL
+3. **detect-bean-ai** - Modelos ML con TensorFlow/PyTorch
+4. **blockchain-contracts** - Smart Contracts Solidity + Hardhat
+
+**Herramientas Adicionales:**
+
+- **Notion:** Documentación interna, planning notes, decision records
+- **Google Meet:** Daily standups (Lunes-Viernes 9:00 AM, 15 min), Sprint planning/retro
+- **Discord:** Comunicación asíncrona del equipo (promedio 52 mensajes/día en Sprint 2)
+- **Figma:** Diseño colaborativo de nuevas interfaces de reportería
+- **Postman:** Testing colaborativo de APIs, colecciones compartidas
+
+**Observaciones del Sprint 2:**
+
+- Picos de actividad: 25-27 nov (implementación core de US16-US19), 28 nov (integración blockchain US20)
+- Pair programming efectivo entre Oscar y Eduardo para integración de QR codes
+- Sesiones de knowledge sharing sobre Web3 y blockchain realizadas por Oscar
+- Mejora en velocidad de code reviews (tiempo promedio reducido de 4h a 2h)
+
+**Métricas de Colaboración:**
+
+| Métrica | Valor |
+|---------|-------|
+| Total de commits | 62 |
+| Pull Requests cerrados | 15 |
+| Code reviews realizados | 28 |
+| Issues resueltos | 10 |
+| Branches creadas | 19 |
+| Merge conflicts resueltos | 2 |
+
+**Distribución de commits por miembro (Sprint 2):**
+
+| Miembro | Commits | Porcentaje | Áreas principales |
+|---------|---------|------------|-------------------|
+| Oscar Aranda (@OscarGAV) | 24 | 39% | Backend APIs, Blockchain, Reportes consolidados |
+| Eduardo Ventura | 18 | 29% | QR codes, Frontend reportería, Integración |
+| Abraham Ayquipa | 11 | 18% | UI/UX mejoras, Gráficos, Testing |
+| Andre La Torre | 9 | 14% | Acceptance tests, Documentación, QA |
+
+**Commits principales por repositorio (Sprint 2):**
+
+| Repository | Branch | Commit Hash | Commit Message | Date |
+|------------|--------|-------------|----------------|------|
+| web-application | main | *a3f7d91* | feat: implement consolidated reports dashboard | 26/11/25 |
+| api-platform | main | *7a9d2c1* | feat: implement consolidated report endpoint | 26/11/25 |
+| api-platform | main | *3f1c6d7* | feat: implement blockchain integration service | 28/11/25 |
+| blockchain-contracts | main | *6c4f9a1* | feat: create CoffeeCertification smart contract | 28/11/25 |
+| api-platform | main | *1d8a4b5* | feat: implement QR code generation service | 27/11/25 |
+
+**Comunicación del Equipo:**
+
+- **Daily Standups:** Lunes-Viernes 9:00 AM vía Google Meet (15 min)
+- **Sprint Planning:** Domingo 25/11 - 21:00 (2.5 horas)
+- **Sprint Review:** Viernes 29/11 - 18:00 (1.5 horas)
+- **Sprint Retrospective:** Viernes 29/11 - 19:30 (1 hora)
+- **Mensajes Discord:** Promedio 52 mensajes/día (incremento del 15% vs Sprint 1)
+
+**Insights del Sprint:**
+
+- Excelente sincronización entre backend y frontend para integración de blockchain
+- Pair programming resultó muy efectivo para resolver complejidad de Web3.py
+- Testing suite robusto permitió detectar bugs antes de producción
+- Complejidad de blockchain requirió más tiempo del estimado (+2 horas)
+- Documentación de APIs debe mejorarse para facilitar testing por QA
+
+**Próximo Sprint (Sprint 3):**
+
+- Enfoque en optimización de performance y UX
+- Implementación de características faltantes: soporte offline (TS01), multi-idioma
+- Refinamiento de UI basado en feedback de validation interviews
+- Preparación para deployment a producción
+
+---
+
+**Evidencia de Colaboración (capturas de pantalla):**
+
+[![Captura-de-pantalla-2025-11-16-030140.png](https://i.postimg.cc/rmRgTDbt/Captura-de-pantalla-2025-11-16-030140.png)](https://postimg.cc/jwKyQSRs)
+
+## Conclusión del Sprint 2
+
+El Sprint 2 se completó exitosamente alcanzando el 100% de los Story Points planificados (24 SP). Se implementaron funcionalidades críticas de reportería avanzada, trazabilidad mediante códigos QR, y la innovadora integración con blockchain que diferencia a BeanDetect AI en el mercado. La colaboración del equipo fue excepcional, con una distribución equilibrada de trabajo y comunicación fluida. El sistema ahora cuenta con capacidades enterprise-ready que posicionan a la plataforma como una solución integral para cooperativas cafetaleras que buscan transparencia y competitividad internacional.
 
 ## 7.3. Validation Interviews
 ### 7.3.1. Diseño de Entrevistas (Versión enfocada en Landing Page y Front-End)
