@@ -1234,43 +1234,13 @@ Esta sección corresponde al lenguaje ubicuo que asegura que los usuarios finale
 | US16          | Reporte Consolidado para Cooperativas    | Como cooperativa, deseo reportes consolidados que comparen la calidad entre diferentes productores asociados para optimizar procesos grupales.      |
 | US17          | Exportación para Compradores             | Como productor o cooperativa, deseo exportar certificados de calidad en formatos reconocidos internacionalmente (PDF, Excel) para presentar a compradores. |
 | US18          | Comparación Histórica de Calidad        | Como cooperativa, deseo comparar calidad por temporadas para identificar patrones y mejorar prácticas agrícolas de mis asociados.                   |
-| US19          | Alertas de Calidad Crítica              | Como usuario (productor o cooperativa), deseo recibir alertas inmediatas cuando un lote tenga alto porcentaje de defectos para tomar acciones correctivas antes de comercializar. |
-
----
-
-### Integración de certificados de trazabilidad
-**EP05: Como cooperativa o productor que busca acceso a mercados premium, deseo integrar BeanDetect AI con sistemas de trazabilidad para brindar transparencia y confianza a compradores finales.**
-
-| User Story ID | Título                                    | Descripción                                                                                                                                          |
-|---------------|-------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| US20          | Códigos QR para Lotes                   | Como productor o cooperativa, deseo generar códigos QR únicos por lote que permitan a compradores verificar origen, calidad y proceso de clasificación.          |
-| US21          | Certificación Digital Automática       | Como cooperativa que exporta, deseo generar certificados digitales de calidad automáticamente para agilizar procesos de comercialización internacional. |
-| US22         | Integración con Blockchain              | Como cooperativa innovadora, deseo la opción de registrar datos de clasificación en blockchain para mayor transparencia y confianza del mercado.    |
-| US23          | Reportes de Transparencia para Consumidores | Como cooperativa con marca propia, deseo generar reportes de transparencia que mis consumidores finales puedan consultar sobre el origen del café. |
-
----
-
-### Soporte Accesible
-**EP06: Como productor pequeño/mediano o cooperativa con limitaciones técnicas, deseo contar con un canal de soporte para maximizar el beneficio de BeanDetect AI.**
-
-| User Story ID | Título                                | Descripción                                                                                                                                      |
-|---------------|---------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| US24         | Soporte por WhatsApp                 | Como usuario con acceso limitado a internet, deseo recibir soporte técnico básico a través de WhatsApp para resolver dudas rápidamente.        |
-| US25          | Soporte Telefónico en Horarios Rurales | Como productor en zona rural, deseo soporte telefónico en horarios que se adapten a mis rutinas de trabajo de campo.                         |
-
----
-
-### Configuración Adaptable del Sistema
-**EP07: Como productor pequeño/mediano o cooperativa, deseo configurar BeanDetect AI de forma simple para adaptarlo a mis recursos disponibles y procesos actuales sin complejidad técnica.**
-
-| User Story ID | Título                                | Descripción                                                                                                                                      |
-|---------------|---------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| US26          | Modo Offline para Zonas Rurales      | Como productor en zona con conectividad limitada, deseo usar funcionalidades básicas de clasificación sin requerir internet constante.          |
+| US19          | Códigos QR para Lotes                   | Como productor o cooperativa, deseo generar códigos QR únicos por lote que permitan a compradores verificar origen, calidad y proceso de clasificación.          |
+| US20         | Integración con Blockchain              | Como cooperativa innovadora, deseo la opción de registrar datos de clasificación en blockchain para mayor transparencia y confianza del mercado.    |
 
 ---
 
 ### Navegación y Funcionalidades de la Landing Page
-**EP08: Como visitante (productor pequeño/mediano o cooperativa), deseo explorar la página principal de DevBeans para entender cómo BeanDetect AI puede resolver mis problemas específicos de clasificación y acceso a mercados.**
+**EP05: Como visitante (productor pequeño/mediano o cooperativa), deseo explorar la página principal de DevBeans para entender cómo BeanDetect AI puede resolver mis problemas específicos de clasificación y acceso a mercados.**
 
 | User Story ID | Título                                     | Descripción                                                                                                                                                      |
 |---------------|-------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1284,12 +1254,13 @@ Esta sección corresponde al lenguaje ubicuo que asegura que los usuarios finale
 ---
 
 ### Funcionalidades de Idioma y Accesibilidad
-**EP09: Como productor pequeño/mediano o cooperativa en América Latina, deseo utilizar BeanDetect AI en mi idioma local y con características que faciliten su uso considerando mis limitaciones tecnológicas.**
+**EP06: Como productor pequeño/mediano o cooperativa en América Latina, deseo utilizar BeanDetect AI en mi idioma local y con características que faciliten su uso considerando mis limitaciones tecnológicas.**
 
 | User Story ID | Título                             | Descripción                                                                                                                                                    |
 |---------------|------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | TS07          | Interfaz en Español Regionalizada  | Como productor latinoamericano, deseo usar el sistema en español con terminología cafetalera específica de mi región para mejor comprensión.                 |
 | TS08          | Adaptación a Dispositivos Básicos | Como usuario, deseo que la aplicación funcione correctamente en variedad de dispositivos.              |
+| TS09         | Modo Offline para Zonas Rurales      | Como productor en zona con conectividad limitada, deseo usar funcionalidades básicas de clasificación sin requerir internet constante.          |
 
 
 
@@ -1685,26 +1656,8 @@ Como cooperativa, deseo comparar calidad por temporadas para identificar patrone
 
 ---
 
-## US19: Alertas de Calidad Crítica
+## US19: Códigos QR para Lotes
 **Relacionado con (Epic ID):** EP04  
-**Descripción:**  
-Como usuario, deseo recibir alertas inmediatas cuando un lote tenga alto porcentaje de defectos para tomar acciones correctivas.
-
-### Criterios de Aceptación:
-- **Escenario 1:** Alerta automática crítica  
-  - **Dado que** un lote supera 20% de defectos primarios  
-  - **Cuando** se completa la clasificación  
-  - **Entonces** el sistema debe enviar alerta inmediata por email y notificación push
-
-- **Escenario 2:** Niveles de alerta configurables  
-  - **Dado que** el usuario quiere personalizar umbrales  
-  - **Cuando** configura alertas personalizadas  
-  - **Entonces** el sistema debe respetar los umbrales configurados
-
----
-
-## US20: Códigos QR para Lotes
-**Relacionado con (Epic ID):** EP05  
 **Descripción:**  
 Como productor o cooperativa, deseo generar códigos QR únicos por lote que permitan a compradores verificar origen, calidad y proceso de clasificación.
 
@@ -1721,30 +1674,7 @@ Como productor o cooperativa, deseo generar códigos QR únicos por lote que per
 
 ---
 
-## US21: Certificación Digital Automática
-**Relacionado con (Epic ID):** EP05  
-**Descripción:**  
-Como cooperativa que exporta, deseo generar certificados digitales de calidad automáticamente para agilizar procesos de comercialización internacional.
-
-### Criterios de Aceptación:
-- **Escenario 1:** Generación automática post-clasificación  
-  - **Dado que** un lote cumple estándares de exportación  
-  - **Cuando** se completa la clasificación  
-  - **Entonces** el sistema debe generar certificado digital automáticamente
-
-- **Escenario 2:** Firma digital integrada  
-  - **Dado que** se genera un certificado  
-  - **Cuando** se completa el documento  
-  - **Entonces** el sistema debe incluir firma digital verificable
-
-- **Escenario 3:** Formatos estándar internacionales  
-  - **Dado que** se exporta a diferentes mercados  
-  - **Cuando** se genera certificado  
-  - **Entonces** el sistema debe ofrecer formatos según destino (EU, USA, Asia)
-
----
-
-## US22: Integración con Blockchain
+## US20: Integración con Blockchain
 **Relacionado con (Epic ID):** EP05  
 **Descripción:**  
 Como cooperativa innovadora, deseo la opción de registrar datos de clasificación en blockchain para mayor transparencia y confianza del mercado.
@@ -1759,88 +1689,6 @@ Como cooperativa innovadora, deseo la opción de registrar datos de clasificaci�
   - **Dado que** se registra en blockchain  
   - **Cuando** se completa la transacción  
   - **Entonces** el sistema debe generar hash inmutable de todos los datos de clasificación
-
----
-
-## US23: Reportes de Transparencia para Consumidores
-**Relacionado con (Epic ID):** EP05  
-**Descripción:**  
-Como cooperativa con marca propia, deseo generar reportes de transparencia que mis consumidores finales puedan consultar sobre el origen del café.
-
-### Criterios de Aceptación:
-- **Escenario 1:** Reporte público simplificado  
-  - **Dado que** la cooperativa tiene marca propia  
-  - **Cuando** genera reporte de transparencia  
-  - **Entonces** el sistema debe crear un reporte público con la información relevante del producto y su clasificación
-
-- **Escenario 2:** Historia del lote  
-  - **Dado que** un usuario accede al reporte de transparencia  
-  - **Cuando** consulta un lote específico  
-  - **Entonces** debe ver historia simplificada (productor, fecha, producto, calidad)
-
----
-
-## US24: Soporte por WhatsApp
-**Relacionado con (Epic ID):** EP06  
-**Descripción:**  
-Como usuario con acceso limitado a internet, deseo recibir soporte técnico básico a través de WhatsApp para resolver dudas rápidamente.
-
-### Criterios de Aceptación:
-- **Escenario 1:** Consulta básica por WhatsApp  
-  - **Dado que** el usuario tiene dudas sobre el sistema  
-  - **Cuando** envía mensaje al número de soporte  
-  - **Entonces** debe recibir respuesta automatizada inicial con opciones comunes
-
-- **Escenario 2:** Escalamiento a soporte humano  
-  - **Dado que** la consulta no se resuelve con respuestas automatizadas  
-  - **Cuando** solicita ayuda personalizada  
-  - **Entonces** debe ser derivado a un técnico en horario laboral
-
----
-
-## US25: Soporte Telefónico en Horarios Rurales
-**Relacionado con (Epic ID):** EP06  
-**Descripción:**  
-Como productor en zona rural, deseo soporte telefónico en horarios que se adapten a mis rutinas de trabajo de campo.
-
-### Criterios de Aceptación:
-- **Escenario 1:** Horarios extendidos de soporte  
-  - **Dado que** el productor trabaja en horarios rurales (6am-6pm)  
-  - **Cuando** llama en estos horarios  
-  - **Entonces** debe encontrar soporte técnico disponible
-
-- **Escenario 2:** Callback programado  
-  - **Dado que** el productor no puede llamar en horarios de oficina  
-  - **Cuando** programa una llamada de retorno  
-  - **Entonces** el sistema debe llamar en el horario solicitado
-
-- **Escenario 3:** Soporte en idiomas locales  
-  - **Dado que** el productor habla idioma local/regional  
-  - **Cuando** solicita soporte  
-  - **Entonces** debe recibir atención en su idioma preferido
-
----
-
-## US26: Modo Offline para Zonas Rurales
-**Relacionado con (Epic ID):** EP07  
-**Descripción:**  
-Como productor en zona con conectividad limitada, deseo usar funcionalidades básicas de clasificación sin requerir internet constante.
-
-### Criterios de Aceptación:
-- **Escenario 1:** Clasificación offline básica  
-  - **Dado que** el productor no tiene conexión a internet  
-  - **Cuando** realiza una clasificación  
-  - **Entonces** el sistema debe procesar localmente usando modelos descargados previamente
-
-- **Escenario 2:** Sincronización diferida  
-  - **Dado que** se realizaron clasificaciones offline  
-  - **Cuando** se restablece la conexión  
-  - **Entonces** el sistema debe sincronizar automáticamente todos los datos pendientes
-
-- **Escenario 3:** Alertas de funcionalidad limitada  
-  - **Dado que** el usuario está en modo offline  
-  - **Cuando** intenta acceder a funciones que requieren internet  
-  - **Entonces** el sistema debe mostrar mensaje claro indicando qué funciones están disponibles
 
 
 
@@ -1868,29 +1716,23 @@ Asimismo, utilizamos la herramienta "Planning Poker Online" para poder votar en 
 | 1      | US12           | Detección de Defectos Críticos           | Como productor o cooperativa, deseo que el sistema detecte defectos que causan rechazos internacionales para prevenir pérdidas económicas. | 8            |
 | 2      | US14           | Clasificación por Estándares Internacionales | Como productor o cooperativa, deseo obtener clasificación automática según estándares de exportación reconocidos para acceder a mejores precios. | 8            |
 | 3      | US13           | Análisis de Color y Uniformidad          | Como productor o cooperativa, deseo medir objetivamente color y tamaño para estandarizar calidad entre lotes de diferentes productores asociados. | 5            |
-| 4      | US22           | Integración con Blockchain                | Como cooperativa innovadora, deseo la opción de registrar datos de clasificación en blockchain para mayor transparencia y confianza del mercado. | 8            |
-| 5      | US21           | Certificación Digital Automática         | Como cooperativa que exporta, deseo generar certificados digitales de calidad automáticamente para agilizar procesos de comercialización internacional. | 5            |
-| 6      | US26           | Modo Offline para Zonas Rurales          | Como productor en zona con conectividad limitada, deseo usar funcionalidades básicas de clasificación sin requerir internet constante. | 8            |
-| 7      | US16           | Reporte Consolidado para Cooperativas    | Como cooperativa, deseo reportes consolidados que comparen la calidad entre diferentes productores asociados para optimizar procesos grupales. | 5            |
-| 8      | US18           | Comparación Histórica de Calidad         | Como cooperativa, deseo comparar calidad por temporadas para identificar patrones y mejorar prácticas agrícolas de mis asociados. | 5            |
-| 9      | US19           | Alertas de Calidad Crítica               | Como usuario (productor o cooperativa), deseo recibir alertas inmediatas cuando un lote tenga alto porcentaje de defectos para tomar acciones correctivas antes de comercializar. | 3            |
-| 10     | US17           | Exportación para Compradores              | Como productor o cooperativa, deseo exportar certificados de calidad en formatos reconocidos internacionalmente (PDF, Excel) para presentar a compradores. | 3            |
-| 11     | US15           | Reporte Simple de Clasificación          | Como productor, deseo un reporte fácil de entender que muestre el porcentaje de café apto para exportación vs. mercado local. | 3            |
-| 12     | US23           | Reportes de Transparencia para Consumidores | Como cooperativa con marca propia, deseo generar reportes de transparencia que mis consumidores finales puedan consultar sobre el origen del café. | 3            |
-| 13     | US20           | Códigos QR para Lotes                     | Como productor o cooperativa, deseo generar códigos QR únicos por lote que permitan a compradores verificar origen, calidad y proceso de clasificación. | 3            |
-| 14     | US05           | Gestión de Perfil de Cooperativa         | Como cooperativa, deseo gestionar información de mis productores asociados y volúmenes de procesamiento para optimizar operaciones. | 3            |
-| 15     | US09           | Visualización de Lotes por Cooperativa   | Como cooperativa, deseo visualizar lotes agrupados por productor asociado para facilitar la gestión y seguimiento de múltiples orígenes. | 3            |
-| 16     | US10           | Búsqueda Rápida de Lotes                  | Como usuario (productor o cooperativa), deseo buscar lotes por fecha, productor o variedad para acceder rápidamente a información específica. | 2            |
-| 17     | US08           | Visualización de Lotes por Productor     | Como productor, deseo ver todos mis lotes en una vista simple para revisar mi histórico de producción sin complejidad técnica. | 2            |
-| 18     | US07           | Edición de Información de Lote            | Como productor o cooperativa, deseo editar datos de mis lotes cuando detecte errores o cambios en la información de cosecha. | 2            |
-| 19     | US11           | Eliminación de Lotes                      | Como usuario, deseo eliminar lotes erróneos o duplicados para mantener limpia mi base de datos de producción. | 2            |
-| 20     | US04           | Gestión de Perfil de Productor           | Como productor pequeño/mediano, deseo mantener actualizada la información de mi finca (ubicación, hectáreas, variedades) para personalizar mi experiencia. | 2            |
-| 21     | US06           | Creación de Lotes                         | Como productor o cooperativa, deseo registrar mis lotes con información básica (fecha cosecha, variedad, origen) para organizar mi producción de forma eficiente. | 2            |
-| 22     | US24           | Soporte por WhatsApp                      | Como usuario con acceso limitado a internet, deseo recibir soporte técnico básico a través de WhatsApp para resolver dudas rápidamente. | 3            |
-| 23     | US25           | Soporte Telefónico en Horarios Rurales   | Como productor en zona rural, deseo soporte telefónico en horarios que se adapten a mis rutinas de trabajo de campo. | 3            |
-| 24     | US02           | Registro de Cooperativa Cafetalera       | Como administrador de cooperativa cafetalera, deseo registrar mi organización para gestionar la clasificación de múltiples productores asociados. | 3            |
-| 25     | US01           | Registro de Productor Pequeño/Mediano    | Como productor pequeño o mediano de café, deseo registrarme en BeanDetect AI con información básica de mi finca para acceder a tecnología de clasificación asequible. | 3            |
-| 26     | US03           | Autenticación de Usuarios                 | Como usuario registrado (productor o cooperativa), deseo iniciar sesión de forma segura para acceder a los servicios de clasificación según mi perfil. | 2            |
+| 4      | US20           | Integración con Blockchain                | Como cooperativa innovadora, deseo la opción de registrar datos de clasificación en blockchain para mayor transparencia y confianza del mercado. | 8            |
+| 5      | US16           | Reporte Consolidado para Cooperativas    | Como cooperativa, deseo reportes consolidados que comparen la calidad entre diferentes productores asociados para optimizar procesos grupales. | 5            |
+| 6      | US18           | Comparación Histórica de Calidad         | Como cooperativa, deseo comparar calidad por temporadas para identificar patrones y mejorar prácticas agrícolas de mis asociados. | 5            |
+| 7     | US17           | Exportación para Compradores              | Como productor o cooperativa, deseo exportar certificados de calidad en formatos reconocidos internacionalmente (PDF, Excel) para presentar a compradores. | 3            |
+| 8     | US15           | Reporte Simple de Clasificación          | Como productor, deseo un reporte fácil de entender que muestre el porcentaje de café apto para exportación vs. mercado local. | 3            |
+| 9     | US19           | Códigos QR para Lotes                     | Como productor o cooperativa, deseo generar códigos QR únicos por lote que permitan a compradores verificar origen, calidad y proceso de clasificación. | 3            |
+| 10     | US05           | Gestión de Perfil de Cooperativa         | Como cooperativa, deseo gestionar información de mis productores asociados y volúmenes de procesamiento para optimizar operaciones. | 3            |
+| 11     | US09           | Visualización de Lotes por Cooperativa   | Como cooperativa, deseo visualizar lotes agrupados por productor asociado para facilitar la gestión y seguimiento de múltiples orígenes. | 3            |
+| 12     | US10           | Búsqueda Rápida de Lotes                  | Como usuario (productor o cooperativa), deseo buscar lotes por fecha, productor o variedad para acceder rápidamente a información específica. | 2            |
+| 13     | US08           | Visualización de Lotes por Productor     | Como productor, deseo ver todos mis lotes en una vista simple para revisar mi histórico de producción sin complejidad técnica. | 2            |
+| 14     | US07           | Edición de Información de Lote            | Como productor o cooperativa, deseo editar datos de mis lotes cuando detecte errores o cambios en la información de cosecha. | 2            |
+| 15     | US11           | Eliminación de Lotes                      | Como usuario, deseo eliminar lotes erróneos o duplicados para mantener limpia mi base de datos de producción. | 2            |
+| 16     | US04           | Gestión de Perfil de Productor           | Como productor pequeño/mediano, deseo mantener actualizada la información de mi finca (ubicación, hectáreas, variedades) para personalizar mi experiencia. | 2            |
+| 17     | US06           | Creación de Lotes                         | Como productor o cooperativa, deseo registrar mis lotes con información básica (fecha cosecha, variedad, origen) para organizar mi producción de forma eficiente. | 2            |
+| 18     | US02           | Registro de Cooperativa Cafetalera       | Como administrador de cooperativa cafetalera, deseo registrar mi organización para gestionar la clasificación de múltiples productores asociados. | 3            |
+| 19     | US01           | Registro de Productor Pequeño/Mediano    | Como productor pequeño o mediano de café, deseo registrarme en BeanDetect AI con información básica de mi finca para acceder a tecnología de clasificación asequible. | 3            |
+| 20     | US03           | Autenticación de Usuarios                 | Como usuario registrado (productor o cooperativa), deseo iniciar sesión de forma segura para acceder a los servicios de clasificación según mi perfil. | 2            |
 
 ---
 
@@ -5639,6 +5481,10 @@ Feature 12<br>
 <br>
 
 
+<!-- Continuar con -->
+<!-- Features Desde la US16 hatsa la US20 Para el Sprint 2 -->
+
+
 
 
 **Integration Tests** 
@@ -5724,6 +5570,72 @@ Integration Test 08 <br>
 
 <!--DESCRIPCION BREVE-->
 Evidencia del test de clasificación por estándares internacionales (US14). Muestra la respuesta final con grado de calidad asignado (ej. SPECIALTY/PREMIUM), puntuación SCA estimada y generación del pre-certificado asociado.
+
+<br>
+
+Integration Test 09 <br>
+*US15*
+
+<!-- DEL PRIMER SPRINT FALTA ESTA -->
+
+<!--CAPTURA DE PANTALLA>
+
+<!--DESCRIPCION BREVE-->
+
+<br>
+
+Integration Test 10 <br>
+*US16*
+
+<!-- SEGUNDO SPRINT -->
+
+<!--CAPTURA DE PANTALLA>
+
+<!--DESCRIPCION BREVE-->
+
+<br>
+
+Integration Test 11 <br>
+*US17*
+
+<!-- SEGUNDO SPRINT -->
+
+<!--CAPTURA DE PANTALLA>
+
+<!--DESCRIPCION BREVE-->
+
+<br>
+
+Integration Test 12 <br>
+*US18*
+
+<!-- SEGUNDO SPRINT -->
+
+<!--CAPTURA DE PANTALLA>
+
+<!--DESCRIPCION BREVE-->
+
+<br>
+
+Integration Test 13 <br>
+*US19*
+
+<!-- SEGUNDO SPRINT -->
+
+<!--CAPTURA DE PANTALLA>
+
+<!--DESCRIPCION BREVE-->
+
+<br>
+
+Integration Test 14 <br>
+*US20*
+
+<!-- SEGUNDO SPRINT -->
+
+<!--CAPTURA DE PANTALLA>
+
+<!--DESCRIPCION BREVE-->
 
 <br>
 
