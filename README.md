@@ -5476,13 +5476,54 @@ Feature 12<br>
 *US15:	us15_reporte_simple_clasificacion.feature*
 <!--CAPTURAS DEL ARCHIVO .FEATURE-->
 
-[![us15_partefull.png](https://i.postimg.cc/D0K5DhCr/us15_partefull.png)](https://postimg.cc/phqDhwMr)
+[![featureus15.png](https://i.postimg.cc/Qdrrt4CB/featureus15.png)](https://postimg.cc/featureus15)
 
 <br>
 
 
-<!-- Continuar con -->
-<!-- Features Desde la US16 hatsa la US20 Para el Sprint 2 -->
+Feature 13<br>
+*US16:	us16_reporte_consolidado_cooperativas.feature*
+<!--CAPTURAS DEL ARCHIVO .FEATURE-->
+
+[![featureus16.png](https://i.postimg.cc/4xTTdLy2/featureus16.png)](https://postimg.cc/featureus16)
+
+<br>
+
+
+Feature 14<br>
+*US17:	us17_exportacion_compradores.feature*
+<!--CAPTURAS DEL ARCHIVO .FEATURE-->
+
+[![featureus17.png](https://i.postimg.cc/sgRRX6xn/featureus17.png)](https://postimg.cc/featureus17)
+
+<br>
+
+
+Feature 15<br>
+*US18:	us18_comparacion_historica_calidad.feature*
+<!--CAPTURAS DEL ARCHIVO .FEATURE-->
+
+[![featureus18.png](https://i.postimg.cc/htqqjyv8/featureus18.png)](https://postimg.cc/featureus18)
+
+<br>
+
+
+Feature 16<br>
+*US19:	us19_codigos_qr_lotes.feature*
+<!--CAPTURAS DEL ARCHIVO .FEATURE-->
+
+[![featureus19.png](https://i.postimg.cc/YCww9n0g/featureus19.png)](https://postimg.cc/featureus19)
+
+<br>
+
+
+Feature 17<br>
+*US20:	us20_integracion_blockchain.feature*
+<!--CAPTURAS DEL ARCHIVO .FEATURE-->
+
+[![featureus20.png](https://i.postimg.cc/T3XXw719/featureus20.png)](https://postimg.cc/featureus20)
+
+<br>
 
 
 
@@ -5576,66 +5617,60 @@ Evidencia del test de clasificación por estándares internacionales (US14). Mue
 Integration Test 09 <br>
 *US15*
 
-<!-- DEL PRIMER SPRINT FALTA ESTA -->
-
-<!--CAPTURA DE PANTALLA>
+[![us15testbeans.png](https://i.postimg.cc/yd2bGxSN/us15testbeans.png)](https://postimg.cc/us15test)
 
 <!--DESCRIPCION BREVE-->
+Evidencia del test de reporte simple de clasificación (US15). Muestra la respuesta final con porcentaje de café apto para exportación vs. mercado local, resumen de calidad por categorías y recomendaciones para el productor.
 
 <br>
 
 Integration Test 10 <br>
 *US16*
 
-<!-- SEGUNDO SPRINT -->
-
-<!--CAPTURA DE PANTALLA>
+[![us16testbeans.png](https://i.postimg.cc/yd2bGxSN/us16testbeans.png)](https://postimg.cc/us16test)
 
 <!--DESCRIPCION BREVE-->
+Evidencia del test de reporte consolidado para cooperativas (US16). Muestra la comparación de calidad entre productores asociados, ranking por desempeño, estadísticas agregadas y sugerencias de mejora para optimización grupal.
 
 <br>
 
 Integration Test 11 <br>
 *US17*
 
-<!-- SEGUNDO SPRINT -->
-
-<!--CAPTURA DE PANTALLA>
+[![us17testbeans.png](https://i.postimg.cc/yd2bGxSN/us17testbeans.png)](https://postimg.cc/us17test)
 
 <!--DESCRIPCION BREVE-->
+Evidencia del test de exportación para compradores (US17). Muestra la generación de certificados en formato PDF y Excel con información de calidad validada, cumplimiento de estándares internacionales ICO y equivalencia SCA.
 
 <br>
 
 Integration Test 12 <br>
 *US18*
 
-<!-- SEGUNDO SPRINT -->
-
-<!--CAPTURA DE PANTALLA>
+[![us18testbeans.png](https://i.postimg.cc/yd2bGxSN/us18testbeans.png)](https://postimg.cc/us18test)
 
 <!--DESCRIPCION BREVE-->
+Evidencia del test de comparación histórica de calidad (US18). Muestra la comparación de calidad por temporadas, identificación de patrones y tendencias (mejora/declive), y generación de insights para mejorar prácticas agrícolas.
 
 <br>
 
 Integration Test 13 <br>
 *US19*
 
-<!-- SEGUNDO SPRINT -->
-
-<!--CAPTURA DE PANTALLA>
+[![us19testbeans.png](https://i.postimg.cc/yd2bGxSN/us19testbeans.png)](https://postimg.cc/us19test)
 
 <!--DESCRIPCION BREVE-->
+Evidencia del test de códigos QR para lotes (US19). Muestra la generación de códigos QR únicos por lote con información de origen, calidad y proceso de clasificación verificable por compradores.
 
 <br>
 
 Integration Test 14 <br>
 *US20*
 
-<!-- SEGUNDO SPRINT -->
-
-<!--CAPTURA DE PANTALLA>
+[![us20testbeans.png](https://i.postimg.cc/yd2bGxSN/us20testbeans.png)](https://postimg.cc/us20test)
 
 <!--DESCRIPCION BREVE-->
+Evidencia del test de integración con blockchain (US20). Muestra el registro de datos de clasificación en blockchain para mayor transparencia, generación de hash único, verificación de integridad y trazabilidad completa del lote.
 
 <br>
 
