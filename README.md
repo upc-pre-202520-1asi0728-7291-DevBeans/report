@@ -6805,6 +6805,29 @@ El backend se desplegó en Azure App Service con las nuevas APIs para reporterí
 
 Se desplegó el contrato inteligente `CoffeeCertification.sol` en la red de prueba de Polygon para permitir registro inmutable de certificaciones.
 
+[![imagen-subir-1.jpg](https://i.postimg.cc/bSNBxyZd/imagen-subir-1.jpg)](https://postimg.cc/bSNBxyZd)
+
+[![imagen-subir-10.jpg](https://i.postimg.cc/K3vHPG1s/imagen-subir-10.jpg)](https://postimg.cc/K3vHPG1s)
+
+[![imagen-subir-11.jpg](https://i.postimg.cc/Lg6bt9Jb/imagen-subir-11.jpg)](https://postimg.cc/Lg6bt9Jb)
+
+[![imagen-subir-2.jpg](https://i.postimg.cc/CnLQGhRf/imagen-subir-2.jpg)](https://postimg.cc/CnLQGhRf)
+
+[![imagen-subir-3.jpg](https://i.postimg.cc/7JYW3H50/imagen-subir-3.jpg)](https://postimg.cc/7JYW3H50)
+
+[![imagen-subir-4.jpg](https://i.postimg.cc/n9cP4FXj/imagen-subir-4.jpg)](https://postimg.cc/n9cP4FXj)
+
+[![imagen-subir-5.jpg](https://i.postimg.cc/QKxyQ8Fg/imagen-subir-5.jpg)](https://postimg.cc/QKxyQ8Fg)
+
+[![imagen-subir-6.jpg](https://i.postimg.cc/T5Y4VdK0/imagen-subir-6.jpg)](https://postimg.cc/T5Y4VdK0)
+
+[![imagen-subir-7.jpg](https://i.postimg.cc/N2fz6sKx/imagen-subir-7.jpg)](https://postimg.cc/N2fz6sKx)
+
+[![imagen-subir-8.jpg](https://i.postimg.cc/m125YLPV/imagen-subir-8.jpg)](https://postimg.cc/m125YLPV)
+
+[![imagen-subir-9.jpg](https://i.postimg.cc/D4yMrvSp/imagen-subir-9.jpg)](https://postimg.cc/D4yMrvSp)
+
+
 [![Azure_Blob_Storage_para_almacenar_el_ML.png](https://i.postimg.cc/xjsZ0grH/Azure_Blob_Storage_para_almacenar_el_ML.png)](https://postimg.cc/JtkxxNz4)
 
 **4. Cloud Storage - Cloudinary**
@@ -7230,7 +7253,7 @@ El equipo logró consolidar una versión funcional y bien documentada del proyec
 [![Captura-de-pantalla-2025-12-05-174953.png](https://i.postimg.cc/SxX1W6hs/Captura-de-pantalla-2025-12-05-174953.png)](https://postimg.cc/FY4xvJ15)
 
 
-- **Enlace al video** [Enlace del video About-the-Team](https://upcedupe-my.sharepoint.com/personal/u202217772_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202217772%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202502%2Dsi728%2D7291%2DDevBeans%2Dabout%2Dthe%2Dteam%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E7ba5b230%2D4b3d%2D481c%2Db220%2D907e77a42a57)
+- **Enlace al video** [Enlace del video About-the-Team](https://upcedupe-my.sharepoint.com/personal/u202212645_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202212645_upc_edu_pe%2FDocuments%2Fupc-pre-202502-si728-7291-DevBeans-about-the-team.mp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&ga=1&startedResponseCatch=true&referrer=StreamWebApp.Web&referrerScenario=AddressBarCopied.view.c0815409-fa57-4c5c-a490-b091a93f9875)
 ---
 
 
