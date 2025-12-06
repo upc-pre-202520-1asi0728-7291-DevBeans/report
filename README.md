@@ -7250,6 +7250,19 @@ El equipo logró consolidar una versión funcional y bien documentada del proyec
 
 # Anexos
 
+organizacion:
+https://github.com/upc-pre-202520-1asi0728-7291-DevBeans
+
+backend deployed:
+https://bean-detect-ai-api-platform.azurewebsites.net/docs
+
+landing page deployed:
+https://dev-beans-landing-page.netlify.app/
+
+web app deployed:
+https://bean-detect-ai-web.netlify.app/login
+
+
 ## Figuras
 
 ### Database Diagram
@@ -7258,6 +7271,7 @@ El equipo logró consolidar una versión funcional y bien documentada del proyec
 ### Class Diagram
 
 [![beans-diagram-class.png](https://i.postimg.cc/h4M8n6q3/beans-diagram-class.png)](https://postimg.cc/Z0BvFfnr)
+
 
 ## Entrevistas
 
