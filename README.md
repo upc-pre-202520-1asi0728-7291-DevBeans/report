@@ -6340,7 +6340,120 @@ Durante este segundo sprint, nos enfocamos en desarrollar las user stories relac
 Repositorio: https://github.com/upc-pre-2025-20-1-asi0728-7291-DevBeans/acceptance-tests  
 Rama: `main`
 
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+<table>
+  <thead>
+    <tr>
+      <th>User Story</th>
+      <th>Archivo .feature</th>
+      <th>Escenarios Definidos</th>
+      <th>Estado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US01</td>
+      <td>us01_registro_productor.feature</td>
+      <td>5 escenarios (registro exitoso, validaciones, formato email, email duplicado)</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US02</td>
+      <td>us02_registro_cooperativa.feature</td>
+      <td>5 escenarios (registro exitoso, validaciones, formato RUC, RUC duplicado, capacidades)</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US03</td>
+      <td>us03_autenticacion_usuarios.feature</td>
+      <td>8 escenarios (login exitoso, credenciales incorrectas, usuario inexistente, bloqueo, persistencia)</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US04</td>
+      <td>us04_gestion_perfil_productor.feature</td>
+      <td>8 escenarios (actualización campos, validaciones numéricas, variedades, foto perfil, historial)</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US06</td>
+      <td>us06_creacion_lotes.feature</td>
+      <td>7 escenarios (registro exitoso, validaciones obligatorias, coordenadas, fecha, código único)</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US07</td>
+      <td>us07_edicion_informacion_lote.feature</td>
+      <td>8 escenarios (actualización campos, restricciones por estado, validaciones, historial)</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US08</td>
+      <td>us08_visualizacion_lotes_productor.feature</td>
+      <td>10 escenarios (visualización, filtros, búsqueda, paginación, exportación, responsive)</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US10</td>
+      <td>us10_busqueda_rapida_lotes.feature</td>
+      <td>3 escenarios (búsqueda por rango fechas, por variedad, filtros combinados)</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US11</td>
+      <td>us11_eliminacion_lotes.feature</td>
+      <td>3 escenarios (validación permisos por estado, confirmación doble, auditoría)</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US13</td>
+      <td>us13_analisis_color_uniformidad.feature</td>
+      <td>2 escenarios (estandarización calidad, distribución de color)</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US14</td>
+      <td>us14_clasificacion_estandares_internacionales.feature</td>
+      <td>2 escenarios (obtención clasificación, asignación categorías)</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US15</td>
+      <td>us15_reporte_simple_clasificacion.feature</td>
+      <td>2 escenarios (revisión rápida calidad, generación reportes con formatos)</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US16</td>
+      <td>us16_reporte_consolidado_cooperativas.feature</td>
+      <td>5 escenarios (comparación calidad productores, ranking, estadísticas agregadas, comparación específica, sugerencias)</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US17</td>
+      <td>us17_exportacion_compradores.feature</td>
+      <td>6 escenarios (generación certificado, exportación PDF/Excel, validación información, equivalencia SCA, formato internacional)</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US18</td>
+      <td>us18_comparacion_historica_calidad.feature</td>
+      <td>8 escenarios (identificación patrones, tendencia mejora/deterioro, year-over-year, filtrado período, variabilidad, insights, mejor temporada)</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US19</td>
+      <td>us19_codigos_qr_lotes.feature</td>
+      <td>9 escenarios (verificación origen/calidad, generación única, información origen/calidad, proceso clasificación, URL verificación, verificación compradores, impresión)</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US20</td>
+      <td>us20_integracion_blockchain.feature</td>
+      <td>10 escenarios (registro inmutable, verificabilidad, hash único, integridad datos, trazabilidad, cadena enlazada, eventos, score transparencia, URL pública)</td>
+      <td>Done</td>
+    </tr>
+  </tbody>
+</table>
 
 
 ** Integration Tests ** 
