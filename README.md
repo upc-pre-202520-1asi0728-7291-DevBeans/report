@@ -6270,7 +6270,7 @@ El equipo logró consolidar una versión funcional y documentada del proyecto, i
 [![Captura-de-pantalla-2025-12-05-174953.png](https://i.postimg.cc/SxX1W6hs/Captura-de-pantalla-2025-12-05-174953.png)](https://postimg.cc/FY4xvJ15)
 
 
-- **Enlace al video** [Enlace del video About-the-Team]([https://www.youtube.com/watch?v=ewp0oIa4cMU](https://upcedupe-my.sharepoint.com/personal/u202217772_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202217772%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202502%2Dsi728%2D7291%2DDevBeans%2Dabout%2Dthe%2Dteam%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E7ba5b230%2D4b3d%2D481c%2Db220%2D907e77a42a57))
+- **Enlace al video** [Enlace del video About-the-Team](https://upcedupe-my.sharepoint.com/personal/u202217772_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202217772%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202502%2Dsi728%2D7291%2DDevBeans%2Dabout%2Dthe%2Dteam%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E7ba5b230%2D4b3d%2D481c%2Db220%2D907e77a42a57)
 ---
 
 # Bibliografía
