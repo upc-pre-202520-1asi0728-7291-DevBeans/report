@@ -2546,13 +2546,13 @@ Para el desarrollo de los diagramas C4 se utilizó la plataforma de Structurizr 
 
 El Context Diagram muestra el sistema como una “caja negra” y lo ubica dentro de su ecosistema. En este nivel se identifican los usuarios, sistemas externos y actores clave, junto con las interacciones que tienen con la solución propuesta.
 
-[![structurizr-106404-Diagrama-Contexto.png](https://i.postimg.cc/cJq18k0R/structurizr-106404-Diagrama-Contexto.png)](https://postimg.cc/5X3Wh3Hy)
+[![structurizr-106404-Diagrama-Contexto.png](https://i.postimg.cc/bJMPpQ1Q/structurizr-106404-Diagrama-Contexto.png)](https://postimg.cc/0MpFCKWQ)
 
 ### 4.3.3. Software Architecture Container Level Diagrams. 
 
 El Container Diagram descompone el sistema en sus principales contenedores de software (aplicaciones, bases de datos, APIs, bounded contexts, etc) y define cómo se comunican entre sí.
 
-[![structurizr-106404-Dev-Beans-Diagram-Contenedores.png](https://i.postimg.cc/c1fzsDbq/structurizr-106404-Dev-Beans-Diagram-Contenedores.png)](https://postimg.cc/CdL7740J)
+[![structurizr-106404-Dev-Beans-Diagram-Contenedores.png](https://i.postimg.cc/w3Ydsgf5/structurizr-106404-Dev-Beans-Diagram-Contenedores.png)](https://postimg.cc/fSCPGnhk)
 
 ### 4.3.4. Software Architecture Deployment Diagrams. 
 
@@ -7112,17 +7112,16 @@ El equipo logró consolidar una versión funcional y documentada del proyecto, i
 ---
 
 # Bibliografía
-- Brown, S. (s.f.). The C4 model. https://c4model.com/
-- Chollet, F. (2018). Deep Learning with Python. https://www.manning.com/books/deep-learning-with-python
-- OpenCV Team. (s.f.). OpenCV Documentation. https://docs.opencv.org/
-- Microsoft Azure. (s.f.). Computer Vision API. https://learn.microsoft.com/en-us/azure/cognitive-services/computer-vision/
-- GitHub. (s.f.). Awesome Computer Vision. https://github.com/jbhuang0604/awesome-computer-vision
-- FAO. (2021). Digital Agriculture Report: Rural transformation enabled by digital tools. https://www.fao.org/documents/card/en/c/cb4476en
-- GS1. (s.f.). Traceability in Agriculture. https://www.gs1.org/industries/agriculture
-- TensorFlow. (s.f.). TensorFlow for Agriculture. https://www.tensorflow.org/agriculture
-- ISO. (s.f.). ISO 22000: Food safety management systems. https://www.iso.org/iso-22000-food-safety-management.html
-
-DevBeans. (2025). BeanDetect AI Technical Overview. [Documento interno]
+- Brown, S. (s.f.). *The C4 model*. https://c4model.com/
+- Chollet, F. (2018). *Deep Learning with Python*. https://www.manning.com/books/deep-learning-with-python
+- OpenCV Team. (s.f.). *OpenCV Documentation*. https://docs.opencv.org/
+- Microsoft Azure. (s.f.). *Computer Vision API*. https://learn.microsoft.com/en-us/azure/cognitive-services/computer-vision/
+- GitHub. (s.f.). *Awesome Computer Vision*. https://github.com/jbhuang0604/awesome-computer-vision
+- FAO. (2021). *Digital Agriculture Report: Rural transformation enabled by digital tools*. https://www.fao.org/documents/card/en/c/cb4476en
+- GS1. (s.f.). *Traceability in Agriculture*. https://www.gs1.org/industries/agriculture
+- TensorFlow. (s.f.). *TensorFlow for Agriculture*. https://www.tensorflow.org/agriculture
+- ISO. (s.f.). *ISO 22000: Food safety management systems*. https://www.iso.org/iso-22000-food-safety-management.html
+- Cacho, S. (2025). *¿Qué es la SCA y cómo clasifica el café de especialidad? Cafés El Criollo*. https://cafeselcriollo.com/articulos/que-es-sca/
 
 ---
 
@@ -7159,7 +7158,7 @@ https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218167_upc_edu_pe/EbIFbveY
 
 ### Exposición TB2
 
-<!--NOS FALTÓ EXPO DE LA ANTERIOR ENTREGA-->
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218167_upc_edu_pe/IQBW-j3KfCQqTKrMb1BTnMHzAfthgDXDgXgalygUYJ3CFS4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=gLMBL3
 
 ### Exposición TF
 
