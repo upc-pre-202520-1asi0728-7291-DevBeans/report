@@ -6816,27 +6816,27 @@ El backend se desplegó en Azure App Service con las nuevas APIs para reporterí
 
 Se desplegó el contrato inteligente `CoffeeCertification.sol` en la red de prueba de Polygon para permitir registro inmutable de certificaciones.
 
-[![imagen-subir-1.jpg](https://i.postimg.cc/yDQYcxWb/imagen-subir-1.jpg)](https://postimg.cc/yDQYcxWb)
+[![imagen-1](https://i.postimg.cc/QCpZrVsg/imagen-subir-1.jpg)](https://postimg.cc/bSNBxyZd)
 
-[![imagen-subir-10.jpg](https://i.postimg.cc/8F7kHGr0/imagen-subir-10.jpg)](https://postimg.cc/8F7kHGr0)
+[![imagen-10](https://i.postimg.cc/BbxfGt4s/imagen-subir-10.jpg)](https://postimg.cc/K3vHPG1s)
 
-[![imagen-subir-11.jpg](https://i.postimg.cc/Z9WYcmyQ/imagen-subir-11.jpg)](https://postimg.cc/Z9WYcmyQ)
+[![imagen-11](https://i.postimg.cc/WzMcPtTT/imagen-subir-11.jpg)](https://postimg.cc/Lg6bt9Jb)
 
-[![imagen-subir-2.jpg](https://i.postimg.cc/hXyPTvhH/imagen-subir-2.jpg)](https://postimg.cc/hXyPTvhH)
+[![imagen-2](https://i.postimg.cc/SRWbpjqV/imagen-subir-2.jpg)](https://postimg.cc/CnLQGhRf)
 
-[![imagen-subir-3.jpg](https://i.postimg.cc/gxSk8jrQ/imagen-subir-3.jpg)](https://postimg.cc/gxSk8jrQ)
+[![imagen-3](https://i.postimg.cc/rsS2Lzcn/imagen-subir-3.jpg)](https://postimg.cc/7JYW3H50)
 
-[![imagen-subir-4.jpg](https://i.postimg.cc/w1fTLM3n/imagen-subir-4.jpg)](https://postimg.cc/w1fTLM3n)
+[![imagen-4](https://i.postimg.cc/J0bCWtmq/imagen-subir-4.jpg)](https://postimg.cc/n9cP4FXj)
 
-[![imagen-subir-5.jpg](https://i.postimg.cc/XrH7dqpM/imagen-subir-5.jpg)](https://postimg.cc/XrH7dqpM)
+[![imagen-5](https://i.postimg.cc/d38cKDvf/imagen-subir-5.jpg)](https://postimg.cc/QKxyQ8Fg)
 
-[![imagen-subir-6.jpg](https://i.postimg.cc/XZrN8Wy2/imagen-subir-6.jpg)](https://postimg.cc/XZrN8Wy2)
+[![imagen-6](https://i.postimg.cc/HnQ1CjHq/imagen-subir-6.jpg)](https://postimg.cc/T5Y4VdK0)
 
-[![imagen-subir-7.jpg](https://i.postimg.cc/2q1jwYB0/imagen-subir-7.jpg)](https://postimg.cc/2q1jwYB0)
+[![imagen-7](https://i.postimg.cc/rsS2Lzc7/imagen-subir-7.jpg)](https://postimg.cc/N2fz6sKx)
 
-[![imagen-subir-8.jpg](https://i.postimg.cc/PLCf4H83/imagen-subir-8.jpg)](https://postimg.cc/PLCf4H83)
+[![imagen-8](https://i.postimg.cc/D0q3KmnV/imagen-subir-8.jpg)](https://postimg.cc/m125YLPV)
 
-[![imagen-subir-9.jpg](https://i.postimg.cc/jWDqXTJk/imagen-subir-9.jpg)](https://postimg.cc/jWDqXTJk)
+[![imagen-9](https://i.postimg.cc/brQfjdpP/imagen-subir-9.jpg)](https://postimg.cc/D4yMrvSp)
 
 
 
