@@ -403,7 +403,7 @@ En esta sección se resumen los avances y modificaciones realizadas durante el c
 El curso contribuye al cumplimiento del Student Outcome ABET: 
 ABET – EAC - Student Outcome 3
 
-**Criterio:** La capacidad de comunicarse efectivamente con un rango de audiencias.
+*Criterio:* La capacidad de comunicarse efectivamente con un rango de audiencias.
 
 En la siguiente tabla se describen las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 3. 
 
@@ -420,27 +420,32 @@ En la siguiente tabla se describen las acciones realizadas y enunciados de concl
         <p><b>Abraham Ayquipa Ubaldo</b></p>
         <p><i>TB1</i> <br>Durante el desarrollo del proyecto, participé activamente en la elaboración de los capítulos iniciales, presentando con claridad y objetividad los perfiles de la startup y del equipo. Expliqué el enfoque Lean UX y sus componentes clave, como los Problem Statements, Assumptions e Hipótesis, adaptando el lenguaje según el público. También contribuí al análisis competitivo y al diseño de entrevistas, comunicando los resultados de forma estructurada y comprensible para distintos niveles jerárquicos y especialidades.<br>
         <i>TP</i> <br>Comuniqué al equipo el cumplimiento y avance del módulo de análisis de imágenes de granos de café, así como las tecnologías y el dataset necesario para continuar con la implementación del sistema.<br>
-        <i>TB2</i> <br>Demostré una comunicación oral clara y estructurada al presentar al equipo el proceso completo detrás de los mockups, la elaboración de user flows y el prototipado de la aplicación. Ademas de explicar las decisiones de diseño y funcionalidad de manera que tanto miembros técnicos como no técnicos pudieran comprender la lógica detrás de la interfaz. Además, de la elaboración de entrevistas y registros de validación, comunicó los avances y hallazgos de forma accesible, permitiendo que el equipo los integrara en la planificación del sprint.</p>
+        <i>TB2</i> <br>Demostré una comunicación oral clara y estructurada al presentar al equipo el proceso completo detrás de los mockups, la elaboración de user flows y el prototipado de la aplicación. Ademas de explicar las decisiones de diseño y funcionalidad de manera que tanto miembros técnicos como no técnicos pudieran comprender la lógica detrás de la interfaz. Además, de la elaboración de entrevistas y registros de validación, comunicó los avances y hallazgos de forma accesible, permitiendo que el equipo los integrara en la planificación del sprint.<br>
+        <i>TF</i> <br>Comuniqué al equipo las mejoras implementadas en la aplicación web, explicando de forma clara las optimizaciones de la interfaz de usuario, la integración de nuevas funcionalidades y las correcciones aplicadas. Presenté los resultados de las pruebas de usabilidad y rendimiento, asegurando que tanto desarrolladores como stakeholders no técnicos comprendieran el impacto de estas mejoras en la experiencia del usuario final y en la estabilidad del sistema BeanDetect AI.</p>
         <br>
         <p><b>Andre La torre Soto</b></p>
         <p><i>TB1</i> <br>Durante el desarrollo del proyecto, participé activamente en la fase de Needfinding, recopilando y organizando información clave sobre el contexto del sector cafetalero. Contribuí en la caracterización de los segmentos de usuarios, identificando sus principales problemáticas y necesidades a través de la construcción de User Personas y Journey Mappings. Además, elaboré los Problem Statements de manera clara y fundamentada, comunicando los hallazgos con un lenguaje accesible tanto para especialistas como para audiencias generales. Finalmente, apoyé en la integración de estos resultados dentro del marco metodológico, asegurando que las evidencias recopiladas sirvieran como base para el planteamiento de hipótesis y el diseño posterior de la solución tecnológica.<br>
         <i>TP</i> <br>Comuniqué al equipo el cumplimiento y avance del diseño UX y UI requerido.<br>
-        <i>TB2</i> <br>Comuniqué criterios y resultados obtenidos de la evaluación de heurísticas, exponiendo la severidad de los problemas identificados y justificando mejoras de accesibilidad y usabilidad.</p>
+        <i>TB2</i> <br>Comuniqué criterios y resultados obtenidos de la evaluación de heurísticas, exponiendo la severidad de los problemas identificados y justificando mejoras de accesibilidad y usabilidad.<br>
+        <i>TF</i> <br>Comuniqué al equipo los resultados de las pruebas de aceptación realizadas, presentando de manera estructurada los escenarios evaluados, los criterios de validación y los hallazgos identificados. Expliqué con claridad tanto los casos exitosos como las discrepancias encontradas, adaptando mi comunicación para que fuera comprensible tanto para el equipo técnico como para los stakeholders del proyecto, facilitando así la toma de decisiones sobre ajustes necesarios antes del despliegue final.</p>
         <br>
         <p><b>Aranda Vallejos, Oscar Gabriel</b></p>
         <p><i>TB1</i> <br>Durante el desarrollo del proyecto, me enfoqué en la arquitectura de software y el diseño técnico del sistema BeanDetect AI. Comuniqué de manera clara y objetiva los conceptos arquitectónicos complejos a través de presentaciones técnicas, explicando la implementación de Domain-Driven Design y los patrones CQRS. Adapté mi comunicación según la audiencia, presentando diagramas C4 y UML de forma comprensible tanto para desarrolladores como para stakeholders no técnicos. Facilité la comprensión de la arquitectura de microservicios y bounded contexts, asegurando que todos los miembros del equipo pudieran contribuir efectivamente al proyecto.<br>
         <i>TP</i> <br>Comuniqué al equipo el cumplimiento y avance del módulo de clasificación de imágenes de granos de café.<br>
-        <i>TB2</i> <br>Comunique al equipo la planificación, el backlog, la ejecución de tareas, las pruebas y la evidencia de despliegue.</p>
+        <i>TB2</i> <br>Comunique al equipo la planificación, el backlog, la ejecución de tareas, las pruebas y la evidencia de despliegue.<br>
+        <i>TF</i> <br>Comuniqué al equipo las mejoras implementadas en el backend y en la aplicación web, explicando de manera técnica pero accesible las optimizaciones de la API REST, la integración de blockchain con Polygon e IPFS para certificados inmutables, y las mejoras en el rendimiento del sistema de clasificación. Presenté los resultados de las pruebas de carga y las validaciones de seguridad, asegurando que todos los miembros del equipo comprendieran el impacto de estas mejoras en la escalabilidad, trazabilidad y confiabilidad del sistema BeanDetect AI.</p>
         <br>
         <p><b>Ventura Chancafe, Eduardo</b></p>
         <p><i>TB1</i> <br>Durante el desarrollo del proyecto, me concentré en el análisis y diseño de procesos de negocio a través de la elaboración de scenario mappings As-Is y To-Be. Comuniqué de forma clara y objetiva los flujos de trabajo actuales y los procesos optimizados propuestos, adaptando mi presentación para que fuera comprensible tanto para stakeholders técnicos como de negocio. Expliqué las mejoras y transformaciones digitales necesarias en el sector cafetalero, facilitando la comprensión de cómo la solución tecnológica impactaría en los procesos existentes y generaría valor agregado para los usuarios finales.<br>
         <i>TP</i> <br>Comuniqué al equipo el avance de la implementación del diseño del aplicación web en su primera versión para el sprint actual.<br>
-        <i>TB2</i> <br>Comuniqué y compartí con el equipo los resultados de la integración del API "SMTP" para permitir el envío de correos electrónicos por cada clasificación realizada.</p>
+        <i>TB2</i> <br>Comuniqué y compartí con el equipo los resultados de la integración del API "SMTP" para permitir el envío de correos electrónicos por cada clasificación realizada.<br>
+        <i>TF</i> <br>Comuniqué al equipo los resultados de las pruebas de integración realizadas, presentando de manera clara y objetiva los casos de prueba ejecutados, las interacciones entre componentes validadas y los problemas detectados en la comunicación entre servicios. Expliqué las métricas de cobertura y confiabilidad obtenidas, adaptando mi comunicación para que fuera comprensible tanto para desarrolladores como para responsables de calidad, facilitando la identificación de áreas críticas y la priorización de correcciones necesarias.</p>
       </td>
       <td>
         <p><i>TB1</i> <br>Como equipo, hemos concluido que demostrar la capacidad de comunicar nuestras ideas y resultados de manera clara y objetiva es fundamental para lograr una propuesta de valor que permita satisfacer los objetivos y necesidades del proyecto. Por ello, nos hemos enfocado en facilitar la comprensión entre los stakeholders mediante las exposiciones de documentación y el registro de entrevistas, lo cual fortaleció la toma de decisiones y el avance coordinado del proyecto.
         <br><i>TP</i> <br>Concluimos que para implementar un producto de software con tecnologías emergentes es necesario contar con un plan de acción, una arquitectura definida y un diseño previamente planteado y aprobado por el equipo.
-        <br><i>TB2</i> <br>Como equipo, concluimos que el fortalecimiento de nuestra comunicación oral fue esencial para integrar de manera coherente los avances de diseño, evaluación y desarrollo realizados durante este hito. A través de la presentación clara de los mockups, user flows, prototipos, evaluaciones heurísticas, planificación del sprint y evidencias de ejecución, logramos alinear nuestra comprensión sobre el estado del proyecto y las prioridades técnicas. Esta comunicación fluida permitió que cada integrante comprendiera el impacto de su aporte dentro del sistema BeanDetect AI y favoreció la toma de decisiones conjuntas, reforzando la coordinación del equipo y asegurando que la evolución del producto avanzara de forma consistente con los objetivos planteados.</p>
+        <br><i>TB2</i> <br>Como equipo, concluimos que el fortalecimiento de nuestra comunicación oral fue esencial para integrar de manera coherente los avances de diseño, evaluación y desarrollo realizados durante este hito. A través de la presentación clara de los mockups, user flows, prototipos, evaluaciones heurísticas, planificación del sprint y evidencias de ejecución, logramos alinear nuestra comprensión sobre el estado del proyecto y las prioridades técnicas. Esta comunicación fluida permitió que cada integrante comprendiera el impacto de su aporte dentro del sistema BeanDetect AI y favoreció la toma de decisiones conjuntas, reforzando la coordinación del equipo y asegurando que la evolución del producto avanzara de forma consistente con los objetivos planteados.
+        <br><i>TF</i> <br>Como equipo, concluimos que durante la entrega final fortalecimos significativamente nuestra capacidad de comunicar oralmente mejoras técnicas complejas de manera clara y objetiva. La presentación de las optimizaciones del backend, las integraciones de blockchain, las pruebas de integración y aceptación, y las mejoras en la aplicación web, permitió que todos los miembros del equipo y stakeholders comprendieran el estado final del sistema BeanDetect AI. Esta comunicación efectiva facilitó la validación del cumplimiento de los objetivos del proyecto y demostró nuestra capacidad de adaptar el discurso técnico a diferentes niveles de especialización, asegurando una comprensión integral del valor entregado.</p>
         <br>
       </td>
     </tr>
@@ -450,27 +455,33 @@ En la siguiente tabla se describen las acciones realizadas y enunciados de concl
         <p><b>Abraham Ayquipa Ubaldo</b></p>
         <p><i>TB1</i> <br>Contribuí a la redacción clara y estructurada de los capítulos iniciales del proyecto, abordando desde la descripción de la startup y los perfiles del equipo hasta el análisis de la problemática y la aplicación del proceso Lean UX. Redacté con objetividad los Problem Statements, Assumptions e Hipótesis, facilitando su comprensión para públicos técnicos y no técnicos. También participé en el análisis competitivo y en la documentación de entrevistas, asegurando que los resultados fueran comunicados de forma precisa y accesible para distintos niveles jerárquicos y especialidades.<br> 
         <i>TP</i> <br>Documenté los diseños de los mockups de la aplicación web y de la landing page de manera que sea entendible para todo rango de audiencia.<br>
-        <i>TB2</i> <br>Elabore la documentación escrita clara y completa para los capítulos relacionados con mockups, user flows y prototipos. Sus descripciones facilitaron la comprensión de la lógica visual y funcional de la aplicación</p>
+        <i>TB2</i> <br>Elabore la documentación escrita clara y completa para los capítulos relacionados con mockups, user flows y prototipos. Sus descripciones facilitaron la comprensión de la lógica visual y funcional de la aplicación.<br>
+        <i>TF</i> <br>Documenté de manera detallada las mejoras implementadas en la aplicación web, incluyendo especificaciones técnicas de las nuevas funcionalidades, guías de uso de la interfaz mejorada y reportes de pruebas de usabilidad. Redacté documentación técnica que abarcó desde manuales de usuario para productores y cooperativas hasta especificaciones de componentes para desarrolladores, asegurando que la información fuera accesible y comprensible para diferentes audiencias y niveles de especialización técnica.</p>
         <br>
         <p><b>Andre La torre Soto</b></p>
         <p><i>TB1</i> <br>Contribuí a la redacción clara y estructurada de la sección de Needfinding, abarcando desde la identificación del contexto sectorial y los segmentos de usuarios hasta la construcción de User Personas y Journey Mappings. Redacté con objetividad los Problem Statements, asegurando que las necesidades y desafíos de los productores y cooperativas fueran expresados de forma comprensible tanto para públicos técnicos como no técnicos. Asimismo, participé en la síntesis de los hallazgos y en su vinculación con las etapas posteriores del proyecto, promoviendo que los insumos obtenidos orientaran de manera efectiva el diseño y validación de la solución.<br>
         <i>TP</i> <br>Documenté los diseños de los wireframes de la aplicación web y de la landing page de manera que sea entendible para todo rango de audiencia.<br>
-        <i>TB2</i> <br>Documente la sección completa de la evaluación heurística, incluyendo las descripciones de problemas de usabilidad, análisis de severidad y recomendaciones de mejora.</p>
+        <i>TB2</i> <br>Documente la sección completa de la evaluación heurística, incluyendo las descripciones de problemas de usabilidad, análisis de severidad y recomendaciones de mejora.<br>
+        <i>TF</i> <br>Documenté de manera exhaustiva las pruebas de aceptación realizadas, incluyendo la especificación de criterios de validación, escenarios de prueba, resultados obtenidos y análisis de conformidad con los requisitos del sistema. Redacté reportes técnicos que detallaron tanto los casos de prueba exitosos como las no conformidades encontradas, utilizando un lenguaje claro y estructurado que permitió a diferentes audiencias (desde desarrolladores hasta stakeholders de negocio) comprender el estado de calidad del producto final.</p>
         <br>
         <p><b>Aranda Vallejos, Oscar Gabriel</b></p>
         <p><i>TB1</i> <br>Contribuí a la documentación técnica del proyecto mediante la elaboración de diagramas C4 y UML que representan la arquitectura del sistema BeanDetect AI. Redacté documentación detallada de los bounded contexts, aplicando principios de Domain-Driven Design de forma clara y estructurada. Mi escritura técnica abarcó desde especificaciones de alto nivel comprensibles para stakeholders de negocio hasta diagramas de clases detallados para desarrolladores. Aseguré que la documentación arquitectónica fuera accesible para diferentes audiencias, facilitando la comprensión del diseño técnico tanto para especialistas en software como para profesionales de otras áreas del proyecto.<br>
         <i>TP</i> <br>Documenté el nivel táctico del diseño de la solución de manera concisa para evitar confusiones y comuniqué por escrito su avance al equipo de desarrollo.<br>
-        <i>TB2</i> <br>Documenté todo el ciclo del Sprint 1. Incluyendo la planificación, el backlog, las implementaciones, las pruebas, la ejecución y la evidencia de despliegue.</p>
+        <i>TB2</i> <br>Documenté todo el ciclo del Sprint 1. Incluyendo la planificación, el backlog, las implementaciones, las pruebas, la ejecución y la evidencia de despliegue.<br>
+        <i>TF</i> <br>Documenté de forma exhaustiva las mejoras implementadas en el backend y la aplicación web, incluyendo especificaciones técnicas de la integración blockchain con Polygon e IPFS, documentación de APIs REST optimizadas, guías de configuración de certificados inmutables y análisis de rendimiento del sistema. Redacté documentación arquitectónica actualizada que abarcó desde diagramas de secuencia de las transacciones blockchain hasta manuales de despliegue, asegurando que tanto desarrolladores como stakeholders técnicos y de negocio pudieran comprender las capacidades avanzadas del sistema final.</p>
         <br>
         <p><b>Ventura Chancafe, Eduardo</b></p>
         <p><i>TB1</i> <br>Contribuí a la documentación del proyecto mediante la elaboración detallada de scenario mappings As-Is y To-Be, describiendo de manera objetiva y estructurada los procesos actuales y futuros en el sector cafetalero. Redacté análisis comparativos que permitieron identificar oportunidades de mejora y puntos de transformación digital. Mi escritura técnica se enfocó en hacer comprensibles los flujos de trabajo complejos para audiencias diversas, desde productores cafeteros hasta desarrolladores de software. Aseguré que la documentación de procesos sirviera como puente entre las necesidades del negocio y las especificaciones técnicas del sistema.<br>
-        <i>TP</i> <br>Documenté las secciones implementadas de la aplicación web para un mejor entendimiento y para una visualización sencilla de sus componentes y páginas.<br> <i>TB2</i> <br>Documenté los diseños de los mockups de la aplicación web y de la landing page de manera que sea entendible para todo rango de audiencia.</p>
+        <i>TP</i> <br>Documenté las secciones implementadas de la aplicación web para un mejor entendimiento y para una visualización sencilla de sus componentes y páginas.<br> 
+        <i>TB2</i> <br>Documenté los diseños de los mockups de la aplicación web y de la landing page de manera que sea entendible para todo rango de audiencia.<br>
+        <i>TF</i> <br>Documenté de manera detallada las pruebas de integración realizadas, incluyendo especificaciones de casos de prueba, matrices de trazabilidad, análisis de cobertura de componentes y reportes de resultados. Redacté documentación técnica que describió las interacciones validadas entre servicios, los protocolos de comunicación probados y las métricas de confiabilidad obtenidas, utilizando un lenguaje estructurado y objetivo que permitió a diferentes audiencias (equipos de desarrollo, QA y gestión) evaluar la robustez de la integración del sistema BeanDetect AI.</p>
         <br>
       </td>
       <td>
         <p><i>TB1</i> <br>Como equipo, logramos expresar nuestras ideas y resultados por escrito con claridad y objetividad, adaptando el contenido para que fuera comprensible y relevante para públicos diversos, tanto técnicos como no técnicos. Con ello, hemos concluido que esta capacidad de comunicación escrita fortaleció la documentación del proyecto de ingeniería, facilitando la toma de decisiones y el trabajo colaborativo.
         <br> <i>TP</i> <br>Concluimos que la capacidad de comunicar nuestros avances y resultados de manera escrita permitió al equipo mantener una documentación clara, estructurada y accesible, asegurando la alineación entre las diferentes áreas técnicas y de negocio, lo cual resultó fundamental para la validación y desarrollo del sistema BeanDetect AI.
-        <br> <i>TB2</i> <br>Como equipo, concluimos que el trabajo realizado durante este hito fortaleció significativamente nuestra capacidad de comunicar información técnica de manera escrita con claridad, detalle y coherencia. 
+        <br> <i>TB2</i> <br>Como equipo, concluimos que el trabajo realizado durante este hito fortaleció significativamente nuestra capacidad de comunicar información técnica de manera escrita con claridad, detalle y coherencia.
+        <br> <i>TF</i> <br>Como equipo, concluimos que durante la entrega final consolidamos nuestra capacidad de comunicar de forma escrita resultados técnicos complejos con alta objetividad y claridad. La documentación elaborada para las mejoras del backend, las integraciones blockchain, las pruebas de integración y aceptación, y las optimizaciones de la aplicación web, demostró nuestra habilidad para adaptar el nivel de detalle técnico según la audiencia objetivo. Esta documentación integral facilitó la transferencia de conocimiento, la validación de requisitos y la evaluación del cumplimiento de objetivos del proyecto BeanDetect AI, evidenciando nuestra madurez en la comunicación escrita profesional en proyectos de ingeniería de software.
         </p>
         <br>
       </td>
@@ -6805,27 +6816,28 @@ El backend se desplegó en Azure App Service con las nuevas APIs para reporterí
 
 Se desplegó el contrato inteligente `CoffeeCertification.sol` en la red de prueba de Polygon para permitir registro inmutable de certificaciones.
 
-[![imagen-subir-1.jpg](https://i.postimg.cc/bSNBxyZd/imagen-subir-1.jpg)](https://postimg.cc/bSNBxyZd)
+[![imagen-subir-1.jpg](https://i.postimg.cc/yDQYcxWb/imagen-subir-1.jpg)](https://postimg.cc/yDQYcxWb)
 
-[![imagen-subir-10.jpg](https://i.postimg.cc/K3vHPG1s/imagen-subir-10.jpg)](https://postimg.cc/K3vHPG1s)
+[![imagen-subir-10.jpg](https://i.postimg.cc/8F7kHGr0/imagen-subir-10.jpg)](https://postimg.cc/8F7kHGr0)
 
-[![imagen-subir-11.jpg](https://i.postimg.cc/Lg6bt9Jb/imagen-subir-11.jpg)](https://postimg.cc/Lg6bt9Jb)
+[![imagen-subir-11.jpg](https://i.postimg.cc/Z9WYcmyQ/imagen-subir-11.jpg)](https://postimg.cc/Z9WYcmyQ)
 
-[![imagen-subir-2.jpg](https://i.postimg.cc/CnLQGhRf/imagen-subir-2.jpg)](https://postimg.cc/CnLQGhRf)
+[![imagen-subir-2.jpg](https://i.postimg.cc/hXyPTvhH/imagen-subir-2.jpg)](https://postimg.cc/hXyPTvhH)
 
-[![imagen-subir-3.jpg](https://i.postimg.cc/7JYW3H50/imagen-subir-3.jpg)](https://postimg.cc/7JYW3H50)
+[![imagen-subir-3.jpg](https://i.postimg.cc/gxSk8jrQ/imagen-subir-3.jpg)](https://postimg.cc/gxSk8jrQ)
 
-[![imagen-subir-4.jpg](https://i.postimg.cc/n9cP4FXj/imagen-subir-4.jpg)](https://postimg.cc/n9cP4FXj)
+[![imagen-subir-4.jpg](https://i.postimg.cc/w1fTLM3n/imagen-subir-4.jpg)](https://postimg.cc/w1fTLM3n)
 
-[![imagen-subir-5.jpg](https://i.postimg.cc/QKxyQ8Fg/imagen-subir-5.jpg)](https://postimg.cc/QKxyQ8Fg)
+[![imagen-subir-5.jpg](https://i.postimg.cc/XrH7dqpM/imagen-subir-5.jpg)](https://postimg.cc/XrH7dqpM)
 
-[![imagen-subir-6.jpg](https://i.postimg.cc/T5Y4VdK0/imagen-subir-6.jpg)](https://postimg.cc/T5Y4VdK0)
+[![imagen-subir-6.jpg](https://i.postimg.cc/XZrN8Wy2/imagen-subir-6.jpg)](https://postimg.cc/XZrN8Wy2)
 
-[![imagen-subir-7.jpg](https://i.postimg.cc/N2fz6sKx/imagen-subir-7.jpg)](https://postimg.cc/N2fz6sKx)
+[![imagen-subir-7.jpg](https://i.postimg.cc/2q1jwYB0/imagen-subir-7.jpg)](https://postimg.cc/2q1jwYB0)
 
-[![imagen-subir-8.jpg](https://i.postimg.cc/m125YLPV/imagen-subir-8.jpg)](https://postimg.cc/m125YLPV)
+[![imagen-subir-8.jpg](https://i.postimg.cc/PLCf4H83/imagen-subir-8.jpg)](https://postimg.cc/PLCf4H83)
 
-[![imagen-subir-9.jpg](https://i.postimg.cc/D4yMrvSp/imagen-subir-9.jpg)](https://postimg.cc/D4yMrvSp)
+[![imagen-subir-9.jpg](https://i.postimg.cc/jWDqXTJk/imagen-subir-9.jpg)](https://postimg.cc/jWDqXTJk)
+
 
 
 [![Azure_Blob_Storage_para_almacenar_el_ML.png](https://i.postimg.cc/xjsZ0grH/Azure_Blob_Storage_para_almacenar_el_ML.png)](https://postimg.cc/JtkxxNz4)
