@@ -7109,7 +7109,21 @@ En este hito, logramos mostrar una primera versión operativa del sistema BeanDe
 
 El equipo logró consolidar una versión funcional y documentada del proyecto, integrando avances técnicos, de diseño y validación. Se fortaleció la colaboración entre áreas, asegurando coherencia entre prototipo, desarrollo y despliegue. La entrega refleja madurez en la gestión ágil y compromiso con la calidad del producto.
 
+
+**TF**<br>
+
+El equipo logró culminar de manera satisfactoria todas las fases del proyecto, integrando desarrollo, validación, despliegue y documentación en un producto maduro y coherente. Cada uno de los módulos —desde los dashboards consolidados y las exportaciones avanzadas, hasta la trazabilidad mediante QR y la integración con blockchain— fue implementado, probado y refinado con rigurosidad técnica. La coordinación entre los integrantes permitió mantener una línea de trabajo consistente, asegurando que las mejoras se construyeran de forma incremental y alineada con los objetivos del proyecto. En conjunto, esta entrega final evidencia un dominio integral del ciclo de desarrollo, una sólida aplicación de prácticas ágiles y un compromiso constante con la calidad y la usabilidad del sistema.
+
+
 ---
+# Video About-the-Team
+
+[![Captura-de-pantalla-2025-12-05-174953.png](https://i.postimg.cc/SxX1W6hs/Captura-de-pantalla-2025-12-05-174953.png)](https://postimg.cc/FY4xvJ15)
+
+
+- **Enlace al video** [Enlace del video About-the-Team](https://upcedupe-my.sharepoint.com/personal/u202217772_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202217772%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202502%2Dsi728%2D7291%2DDevBeans%2Dabout%2Dthe%2Dteam%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E7ba5b230%2D4b3d%2D481c%2Db220%2D907e77a42a57)
+---
+
 
 # Bibliografía
 - Brown, S. (s.f.). *The C4 model*. https://c4model.com/
