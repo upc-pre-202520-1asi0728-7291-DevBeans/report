@@ -7265,7 +7265,7 @@ El equipo logró consolidar una versión funcional y bien documentada del proyec
 [![Captura-de-pantalla-2025-12-05-174953.png](https://i.postimg.cc/SxX1W6hs/Captura-de-pantalla-2025-12-05-174953.png)](https://postimg.cc/FY4xvJ15)
 
 
-- **Enlace al video** [Enlace del video About-the-Team](https://upcedupe-my.sharepoint.com/personal/u202212645_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202212645_upc_edu_pe%2FDocuments%2Fupc-pre-202502-si728-7291-DevBeans-about-the-team.mp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&ga=1&startedResponseCatch=true&referrer=StreamWebApp.Web&referrerScenario=AddressBarCopied.view.c0815409-fa57-4c5c-a490-b091a93f9875)
+- **Enlace al video** [Enlace del video About-the-Team](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202217772_upc_edu_pe/IQDFz_GVyxvgSrWtiIzWBRIgAQekpeCGzYwH60HitZmEjJE?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ms1Dgj)
 ---
 
 
@@ -7312,7 +7312,7 @@ https://bean-detect-ai-web.netlify.app/login
 
 ### Needfinding Interviews
 
-https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218167_upc_edu_pe/EbacacS3n11GmQli8ek0ltABesH4olt1EDMLUzs-FrNg6w?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=xJtssj
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218167_upc_edu_pe/IQC2nGnEt59dRpkJYvHpNJbQAZo42p6AJniVdaPxtXT406A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=o4Ygna
 
 ### Validation Interviews
 
@@ -7322,7 +7322,7 @@ https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218167_upc_edu_pe/IQDSa7XD
 
 ### Exposición TB1
 
-https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218167_upc_edu_pe/EbnQ4lfhO5xMgzpNYDoHRPgBwUoL_oFi_Eh4wyIIYKtItQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=pE1xYm
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218167_upc_edu_pe/IQC50OJX4TucTIM6TWA6B0T4ARi_qEJ4JsqK4eA3wdNzMXg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=BUWUAU
 
 ### Exposición TP
 
@@ -7334,4 +7334,4 @@ https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218167_upc_edu_pe/IQBW-j3K
 
 ### Exposición TF
 
-<!--PENDIENTE-->
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u202218167_upc_edu_pe/IQC7ja46UaDYSo9dmJnRWvBLAdSVnP3l2uRGZwXT1SP-jrI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=7n82he
