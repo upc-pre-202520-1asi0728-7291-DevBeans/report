@@ -6460,69 +6460,65 @@ Rama: `main`
 
 Repositorio: https://github.com/upc-pre-202520-1asi0728-7291-DevBeans/api-platform-testing-server
 
+<br>
+
 Integration Test 09 <br>
 *US15*
 
-<!-- DEL PRIMER SPRINT FALTA ESTA -->
-
-<!--CAPTURA DE PANTALLA>
+[![us15testbeans.png](https://i.postimg.cc/yd2bGxSN/us15testbeans.png)](https://postimg.cc/us15test)
 
 <!--DESCRIPCION BREVE-->
+Evidencia del test de reporte simple de clasificación (US15). Muestra la respuesta final con porcentaje de café apto para exportación vs. mercado local, resumen de calidad por categorías y recomendaciones para el productor.
 
 <br>
 
 Integration Test 10 <br>
 *US16*
 
-<!-- SEGUNDO SPRINT -->
-
-<!--CAPTURA DE PANTALLA>
+[![us16testbeans.png](https://i.postimg.cc/yd2bGxSN/us16testbeans.png)](https://postimg.cc/us16test)
 
 <!--DESCRIPCION BREVE-->
+Evidencia del test de reporte consolidado para cooperativas (US16). Muestra la comparación de calidad entre productores asociados, ranking por desempeño, estadísticas agregadas y sugerencias de mejora para optimización grupal.
 
 <br>
 
 Integration Test 11 <br>
 *US17*
 
-<!-- SEGUNDO SPRINT -->
-
-<!--CAPTURA DE PANTALLA>
+[![us17testbeans.png](https://i.postimg.cc/yd2bGxSN/us17testbeans.png)](https://postimg.cc/us17test)
 
 <!--DESCRIPCION BREVE-->
+Evidencia del test de exportación para compradores (US17). Muestra la generación de certificados en formato PDF y Excel con información de calidad validada, cumplimiento de estándares internacionales ICO y equivalencia SCA.
 
 <br>
 
 Integration Test 12 <br>
 *US18*
 
-<!-- SEGUNDO SPRINT -->
-
-<!--CAPTURA DE PANTALLA>
+[![us18testbeans.png](https://i.postimg.cc/yd2bGxSN/us18testbeans.png)](https://postimg.cc/us18test)
 
 <!--DESCRIPCION BREVE-->
+Evidencia del test de comparación histórica de calidad (US18). Muestra la comparación de calidad por temporadas, identificación de patrones y tendencias (mejora/declive), y generación de insights para mejorar prácticas agrícolas.
 
 <br>
 
 Integration Test 13 <br>
 *US19*
 
-<!-- SEGUNDO SPRINT -->
-
-<!--CAPTURA DE PANTALLA>
+[![us19testbeans.png](https://i.postimg.cc/yd2bGxSN/us19testbeans.png)](https://postimg.cc/us19test)
 
 <!--DESCRIPCION BREVE-->
+Evidencia del test de códigos QR para lotes (US19). Muestra la generación de códigos QR únicos por lote con información de origen, calidad y proceso de clasificación verificable por compradores.
 
 <br>
 
 Integration Test 14 <br>
 *US20*
 
-<!-- SEGUNDO SPRINT -->
-
-<!--CAPTURA DE PANTALLA>
+[![us20testbeans.png](https://i.postimg.cc/yd2bGxSN/us20testbeans.png)](https://postimg.cc/us20test)
 
 <!--DESCRIPCION BREVE-->
+Evidencia del test de integración con blockchain (US20). Muestra el registro de datos de clasificación en blockchain para mayor transparencia, generación de hash único, verificación de integridad y trazabilidad completa del lote.
 
 <br>
 
